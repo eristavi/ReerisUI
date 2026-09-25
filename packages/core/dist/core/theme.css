@@ -1,0 +1,82 @@
+@layer reeris.tokens {
+  :root {
+    color-scheme: light dark;
+    --reeris-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --reeris-font-body: var(--reeris-font-sans);
+    --reeris-font-heading: var(--reeris-font-sans);
+    --reeris-font-ui: var(--reeris-font-sans);
+    --reeris-font-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    --reeris-color-primary: light-dark(var(--reeris-indigo-600), var(--reeris-indigo-400));
+    --reeris-color-on-primary: light-dark(white, var(--reeris-slate-950));
+    --reeris-color-accent: light-dark(var(--reeris-cyan-600), var(--reeris-cyan-400));
+    --reeris-color-on-accent: light-dark(white, var(--reeris-slate-950));
+    --reeris-color-success: light-dark(var(--reeris-emerald-600), var(--reeris-emerald-400));
+    --reeris-color-on-success: light-dark(white, var(--reeris-slate-950));
+    --reeris-color-warning: light-dark(var(--reeris-amber-600), var(--reeris-amber-400));
+    --reeris-color-on-warning: light-dark(white, var(--reeris-slate-950));
+    --reeris-color-danger: light-dark(var(--reeris-red-600), var(--reeris-red-400));
+    --reeris-color-on-danger: light-dark(white, var(--reeris-slate-950));
+    --reeris-color-info: light-dark(var(--reeris-blue-600), var(--reeris-blue-400));
+    --reeris-color-on-info: light-dark(white, var(--reeris-slate-950));
+
+    --reeris-color-canvas: light-dark(var(--reeris-slate-50), var(--reeris-slate-950));
+    --reeris-color-surface: light-dark(white, var(--reeris-slate-900));
+    --reeris-color-surface-muted: light-dark(var(--reeris-slate-100), var(--reeris-slate-800));
+    --reeris-color-surface-subtle: light-dark(var(--reeris-slate-50), var(--reeris-slate-900));
+    --reeris-color-surface-raised: light-dark(white, var(--reeris-slate-800));
+    --reeris-color-background: var(--reeris-color-canvas);
+    --reeris-color-text: light-dark(var(--reeris-slate-900), var(--reeris-slate-100));
+    --reeris-color-text-muted: light-dark(var(--reeris-slate-600), var(--reeris-slate-400));
+    --reeris-color-on-surface: var(--reeris-color-text);
+    --reeris-color-on-surface-muted: var(--reeris-color-text-muted);
+    --reeris-color-primary-subtle: light-dark(var(--reeris-indigo-50), color-mix(in oklch, var(--reeris-indigo-900) 58%, var(--reeris-slate-950)));
+    --reeris-color-border: light-dark(var(--reeris-slate-200), var(--reeris-slate-700));
+    --reeris-color-border-muted: light-dark(var(--reeris-slate-100), var(--reeris-slate-800));
+    --reeris-color-border-strong: light-dark(var(--reeris-slate-400), var(--reeris-slate-600));
+    --reeris-color-border-primary: var(--reeris-color-primary);
+    --reeris-color-border-success: var(--reeris-color-success);
+    --reeris-color-border-warning: var(--reeris-color-warning);
+    --reeris-color-border-danger: var(--reeris-color-danger);
+
+    --reeris-gradient-primary: linear-gradient(135deg, light-dark(var(--reeris-indigo-600), var(--reeris-indigo-400)), light-dark(var(--reeris-cyan-600), var(--reeris-cyan-400)));
+    --reeris-gradient-accent: linear-gradient(135deg, light-dark(var(--reeris-cyan-600), var(--reeris-cyan-400)), light-dark(var(--reeris-blue-600), var(--reeris-blue-400)));
+    --reeris-gradient-success: linear-gradient(135deg, light-dark(var(--reeris-emerald-600), var(--reeris-emerald-400)), light-dark(var(--reeris-teal-600), var(--reeris-teal-400)));
+    --reeris-gradient-warning: linear-gradient(135deg, light-dark(var(--reeris-amber-600), var(--reeris-amber-400)), light-dark(var(--reeris-orange-600), var(--reeris-orange-400)));
+    --reeris-gradient-danger: linear-gradient(135deg, light-dark(var(--reeris-red-600), var(--reeris-red-400)), light-dark(var(--reeris-rose-600), var(--reeris-rose-400)));
+    --reeris-gradient-surface: linear-gradient(135deg, var(--reeris-color-surface), var(--reeris-color-surface-muted));
+    --reeris-gradient-brand: linear-gradient(135deg, var(--reeris-slate-900), var(--reeris-indigo-600) 55%, var(--reeris-cyan-500));
+
+    --reeris-dropdown-shadow: var(--reeris-shadow-lg);
+    --reeris-font-size-base: var(--reeris-font-size-md);
+    --reeris-focus-color: var(--reeris-color-primary);
+    --reeris-focus-width: 2px;
+    --reeris-focus-offset: 2px;
+    --reeris-focus-style: solid;
+    --reeris-safe-top: env(safe-area-inset-top, 0px);
+    --reeris-safe-right: env(safe-area-inset-right, 0px);
+    --reeris-safe-bottom: env(safe-area-inset-bottom, 0px);
+    --reeris-safe-left: env(safe-area-inset-left, 0px);
+    --reeris-safe-inline-start: var(--reeris-safe-left);
+    --reeris-safe-inline-end: var(--reeris-safe-right);
+  }
+  :where(:root:dir(rtl)) {
+    --reeris-safe-inline-start: var(--reeris-safe-right);
+    --reeris-safe-inline-end: var(--reeris-safe-left);
+  }
+
+  [data-theme="light"] { color-scheme: light; }
+  [data-theme="dark"] { color-scheme: dark; }
+}
+
+@layer reeris.tokens {
+  @media (prefers-contrast: more) {
+    :root {
+      --reeris-color-text-muted: light-dark(var(--reeris-slate-800), var(--reeris-slate-200));
+      --reeris-color-border: light-dark(var(--reeris-slate-500), var(--reeris-slate-400));
+      --reeris-color-border-muted: light-dark(var(--reeris-slate-400), var(--reeris-slate-500));
+      --reeris-color-border-strong: light-dark(var(--reeris-slate-700), var(--reeris-slate-300));
+      --reeris-focus-width: 3px;
+    }
+  }
+}

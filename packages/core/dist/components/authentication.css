@@ -1,0 +1,80 @@
+@layer reeris.components {
+  :root {
+    --reeris-auth-max-width: 28rem;
+    --reeris-auth-panel-padding: var(--reeris-space-6);
+    --reeris-auth-gap: var(--reeris-space-5);
+  }
+
+  :where(.auth-shell) {
+    min-block-size: 100dvh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 42%);
+    background: var(--reeris-color-surface);
+  }
+  :where(.auth-brand) {
+    display: grid;
+    align-content: end;
+    padding: max(var(--reeris-space-fluid-lg), var(--reeris-safe-top)) max(var(--reeris-space-fluid-lg), var(--reeris-safe-right)) max(var(--reeris-space-fluid-lg), var(--reeris-safe-bottom)) max(var(--reeris-space-fluid-lg), var(--reeris-safe-left));
+    background: var(--reeris-gradient-primary);
+    color: var(--reeris-color-on-primary);
+  }
+  :where(.auth-brand-content) { max-inline-size: 38rem; display:grid; gap:var(--reeris-space-3); }
+  :where(.auth-brand-title) { margin:0; font-size:clamp(2rem,5cqi,4.5rem); line-height:1.02; letter-spacing:-.035em; text-wrap:balance; }
+  :where(.auth-brand-copy) { margin:0; max-inline-size:50ch; opacity:.88; text-wrap:pretty; }
+
+  :where(.auth-main) {
+    display:grid;
+    place-items:center;
+    padding: max(var(--reeris-space-fluid-md), var(--reeris-safe-top)) max(var(--reeris-space-fluid-md), var(--reeris-safe-right)) max(var(--reeris-space-fluid-md), var(--reeris-safe-bottom)) max(var(--reeris-space-fluid-md), var(--reeris-safe-left));
+    container-type:inline-size;
+  }
+  :where(.auth-card) { inline-size:min(100%, var(--reeris-auth-max-width)); display:grid; gap:var(--reeris-auth-gap); }
+  :where(.auth-header) { display:grid; gap:var(--reeris-space-2); }
+  :where(.auth-title) { margin:0; font-size:var(--reeris-font-size-2xl); line-height:1.15; letter-spacing:-.02em; text-wrap:balance; }
+  :where(.auth-description) { margin:0; color:var(--reeris-color-text-muted); text-wrap:pretty; }
+  :where(.auth-form) { display:grid; gap:calc(var(--reeris-space-4) * var(--reeris-density-factor)); }
+  :where(.auth-options) { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--reeris-space-3); font-size:var(--reeris-font-size-sm); }
+  :where(.auth-submit) { inline-size:100%; }
+  :where(.auth-footer) { margin:0; color:var(--reeris-color-text-muted); text-align:center; font-size:var(--reeris-font-size-sm); }
+  :where(.auth-footer a, .auth-options a) { color:var(--reeris-color-primary); font-weight:var(--reeris-font-weight-medium); }
+
+  :where(.auth-divider) { display:grid; grid-template-columns:1fr auto 1fr; gap:var(--reeris-space-3); align-items:center; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+  :where(.auth-divider)::before, :where(.auth-divider)::after { content:""; block-size:1px; background:var(--reeris-color-border); }
+  :where(.auth-providers) { display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:var(--reeris-space-2); }
+
+  :where(.verification-code) { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:var(--reeris-space-2); }
+  :where(.verification-code .field) { min-inline-size:0; padding-inline:.25rem; text-align:center; font-variant-numeric:tabular-nums; font-size:var(--reeris-font-size-lg); font-weight:var(--reeris-font-weight-semibold); }
+  :where(.verification-meta) { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--reeris-space-2); color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+
+  :where(.onboarding) { inline-size:min(100%, 52rem); display:grid; gap:var(--reeris-space-6); }
+  :where(.onboarding-header) { display:grid; gap:var(--reeris-space-3); }
+  :where(.onboarding-progress) { display:grid; grid-template-columns:repeat(var(--reeris-onboarding-steps, 4),1fr); gap:var(--reeris-space-2); }
+  :where(.onboarding-progress > *) { block-size:.35rem; border-radius:var(--reeris-radius-full); background:var(--reeris-color-surface-muted); }
+  :where(.onboarding-progress > .complete) { background:var(--reeris-color-primary); }
+  :where(.onboarding-progress > [aria-current="step"]) { background:color-mix(in oklch,var(--reeris-color-primary) 55%,var(--reeris-color-surface-muted)); }
+  :where(.onboarding-panel) { display:grid; gap:var(--reeris-space-5); padding:calc(var(--reeris-auth-panel-padding) * var(--reeris-density-factor)); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-component-radius); background:var(--reeris-color-surface); box-shadow:var(--reeris-component-shadow); }
+  :where(.onboarding-choices) { display:grid; grid-template-columns:repeat(auto-fit,minmax(11rem,1fr)); gap:var(--reeris-space-3); }
+  :where(.onboarding-choice) { display:grid; gap:var(--reeris-space-2); padding:var(--reeris-space-4); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-radius-lg); background:var(--reeris-color-surface); color:var(--reeris-color-text); cursor:pointer; }
+  :where(.onboarding-choice:hover) { border-color:var(--reeris-color-border-strong); background:var(--reeris-color-surface-muted); }
+  :where(.onboarding-choice:has(:checked)) { border-color:var(--reeris-color-primary); box-shadow:0 0 0 1px var(--reeris-color-primary); background:color-mix(in oklch,var(--reeris-color-primary) 5%,var(--reeris-color-surface)); }
+  :where(.onboarding-choice input) { margin:0; }
+  :where(.onboarding-actions) { display:flex; flex-wrap:wrap; justify-content:space-between; gap:var(--reeris-space-3); }
+
+  @container (max-width: 32rem) {
+    :where(.verification-code) { gap:var(--reeris-space-1); }
+    :where(.onboarding-panel) { padding:var(--reeris-space-4); }
+  }
+  @media (max-width: 52rem) {
+    :where(.auth-shell) { grid-template-columns:1fr; }
+    :where(.auth-brand) { min-block-size:12rem; align-content:center; }
+    :where(.auth-brand-title) { font-size:clamp(1.75rem,8vw,3rem); }
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    :where(.auth-brand) { background:var(--reeris-color-primary); }
+  }
+  @media (forced-colors: active) {
+    :where(.onboarding-panel, .onboarding-choice) { border-color:CanvasText; }
+    :where(.onboarding-choice:has(:checked)) { outline:2px solid Highlight; outline-offset:2px; }
+    :where(.onboarding-progress > .complete, .onboarding-progress > [aria-current="step"]) { background:Highlight; }
+  }
+}

@@ -1,0 +1,87 @@
+@layer reeris.components {
+  :where(.choice-grid) {
+    --reeris-choice-min: 13rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--reeris-choice-min)), 1fr));
+    gap: var(--reeris-space-3);
+  }
+
+  :where(.choice) {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: start;
+    gap: var(--reeris-space-3);
+    min-block-size: var(--reeris-control-xl);
+    padding: var(--reeris-space-4);
+    border: var(--reeris-border-1) solid var(--reeris-color-border);
+    border-radius: var(--reeris-radius-lg);
+    background: var(--reeris-color-surface);
+    color: var(--reeris-color-on-surface);
+    cursor: pointer;
+    transition: border-color var(--reeris-duration-fast) var(--reeris-ease-standard), background-color var(--reeris-duration-fast) var(--reeris-ease-standard), box-shadow var(--reeris-duration-fast) var(--reeris-ease-standard);
+  }
+  :where(.choice:hover) { border-color: var(--reeris-color-border-strong); background: var(--reeris-color-surface-subtle); }
+  :where(.choice:has(:focus-visible)) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
+  :where(.choice:has(:checked), .choice[aria-selected="true"], .choice.selected) { border-color: var(--reeris-color-primary); background: var(--reeris-color-primary-subtle); }
+  :where(.choice:has(:disabled), .choice[aria-disabled="true"]) { opacity: .55; cursor: not-allowed; }
+  :where(.choice > :is(input[type="radio"], input[type="checkbox"])) { margin-block-start: .15em; }
+  :where(.choice-content) { min-inline-size: 0; display: grid; gap: var(--reeris-space-1); }
+  :where(.choice-title) { font-weight: var(--reeris-font-weight-semibold); line-height: 1.3; }
+  :where(.choice-description) { color: var(--reeris-color-on-surface-muted); font-size: .875rem; line-height: 1.45; }
+  :where(.choice-meta) { min-inline-size:0; color: var(--reeris-color-on-surface-muted); font-size: .875rem; overflow-wrap:anywhere; }
+  :where(.choice.compact) { padding: var(--reeris-space-2) var(--reeris-space-3); gap: var(--reeris-space-2); }
+  :where(.choice.featured) { border-color: var(--reeris-color-primary); box-shadow: var(--reeris-shadow-sm); }
+
+  :where(.rating) {
+    --reeris-rating-size: 1.25rem;
+    --reeris-rating-color: var(--reeris-color-warning);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--reeris-space-1);
+  }
+  :where(.rating-stars) { display: inline-flex; gap: .125rem; color: var(--reeris-color-border-strong); }
+  :where(.rating-star) { inline-size: var(--reeris-rating-size); block-size: var(--reeris-rating-size); display: inline-grid; place-items: center; line-height: 1; }
+  :where(.rating-star::before) { content: "☆"; font-size: var(--reeris-rating-size); }
+  :where(.rating-star.filled::before, .rating-star[aria-checked="true"]::before) { content: "★"; color: var(--reeris-rating-color); }
+  :where(button.rating-star) { min-inline-size: var(--reeris-target-min); min-block-size: var(--reeris-target-min); padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+  :where(button.rating-star:focus-visible) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); border-radius: var(--reeris-radius-sm); }
+  :where(.rating-value) { font-weight: var(--reeris-font-weight-semibold); font-variant-numeric: tabular-nums; }
+  :where(.rating-count) { color: var(--reeris-color-on-surface-muted); font-size: .875rem; }
+  :where(.rating.sm) { --reeris-rating-size: 1rem; }
+  :where(.rating.lg) { --reeris-rating-size: 1.5rem; }
+
+  :where(.reaction-group) { display: flex; flex-wrap: wrap; gap: var(--reeris-space-2); }
+  :where(.reaction) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--reeris-space-1-5);
+    min-block-size: var(--reeris-control-sm);
+    padding-inline: var(--reeris-space-3);
+    border: var(--reeris-border-1) solid var(--reeris-color-border);
+    border-radius: var(--reeris-radius-full);
+    background: var(--reeris-color-surface);
+    color: var(--reeris-color-on-surface);
+    font: inherit;
+    cursor: pointer;
+  }
+  :where(.reaction:hover) { background: var(--reeris-color-surface-subtle); }
+  :where(.reaction[aria-pressed="true"], .reaction.selected) { border-color: var(--reeris-color-primary); background: var(--reeris-color-primary-subtle); color: var(--reeris-color-primary); }
+  :where(.reaction:focus-visible) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
+  :where(.reaction-count) { font-size: .875em; font-variant-numeric: tabular-nums; }
+
+  :where(.vote) { display: inline-grid; grid-template-columns: auto auto auto; align-items: center; gap: var(--reeris-space-1); }
+  :where(.vote-score) { min-inline-size: 2ch; text-align: center; font-weight: var(--reeris-font-weight-semibold); font-variant-numeric: tabular-nums; }
+  :where(.vote-button) { inline-size: var(--reeris-control-sm); block-size: var(--reeris-control-sm); display: inline-grid; place-items: center; border: var(--reeris-border-1) solid var(--reeris-color-border); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface); color: var(--reeris-color-on-surface); cursor: pointer; }
+  :where(.vote-button[aria-pressed="true"]) { border-color: var(--reeris-color-primary); background: var(--reeris-color-primary-subtle); color: var(--reeris-color-primary); }
+  :where(.vote-button:focus-visible) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
+
+  :where([data-density="compact"] .choice) { padding: var(--reeris-space-2) var(--reeris-space-3); }
+  :where([data-density="comfortable"] .choice) { padding: var(--reeris-space-5); }
+
+  @media (prefers-reduced-motion: reduce) { :where(.choice) { transition: none; } }
+  @media (forced-colors: active) {
+    :where(.choice:has(:checked), .choice[aria-selected="true"], .choice.selected, .reaction[aria-pressed="true"], .vote-button[aria-pressed="true"]) { border-color: Highlight; outline: 1px solid Highlight; }
+    :where(.rating-star.filled::before, .rating-star[aria-checked="true"]::before) { color: Highlight; }
+  }
+}

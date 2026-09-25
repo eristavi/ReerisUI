@@ -1,0 +1,60 @@
+@layer reeris.components {
+  :root {
+    --reeris-file-icon-size: 2.5rem;
+    --reeris-file-card-min: 13rem;
+    --reeris-dropzone-min-height: 9rem;
+    --reeris-dropzone-bg: color-mix(in oklch, var(--reeris-color-primary) 4%, var(--reeris-color-surface));
+  }
+
+  :where(.file-browser) { container-type:inline-size; display:grid; min-inline-size:0; background:var(--reeris-color-surface); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-component-radius); overflow:hidden; }
+  :where(.file-browser-header,.file-browser-footer) { display:flex; align-items:center; justify-content:space-between; gap:var(--reeris-space-3); padding:calc(var(--reeris-space-3) * var(--reeris-density-factor)) var(--reeris-space-4); }
+  :where(.file-browser-header) { border-block-end:1px solid var(--reeris-color-border-muted); }
+  :where(.file-browser-footer) { border-block-start:1px solid var(--reeris-color-border-muted); color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+  :where(.file-list,.upload-queue) { display:grid; margin:0; padding:0; list-style:none; }
+  :where(.file-row,.upload-item) { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:var(--reeris-space-3); min-inline-size:0; padding:calc(var(--reeris-space-3) * var(--reeris-density-factor)) var(--reeris-space-4); border-block-end:1px solid var(--reeris-color-border-muted); }
+  :where(.file-row:last-child,.upload-item:last-child) { border-block-end:0; }
+  :where(.file-row:hover) { background:var(--reeris-color-surface-muted); }
+  :where(.file-row[aria-selected="true"]) { background:color-mix(in oklch,var(--reeris-color-primary) 9%,var(--reeris-color-surface)); }
+  :where(.file-icon) { display:grid; place-items:center; inline-size:var(--reeris-file-icon-size); block-size:var(--reeris-file-icon-size); flex:none; border-radius:var(--reeris-radius-md); color:var(--reeris-color-primary); background:var(--reeris-color-surface-muted); }
+  :where(.file-content) { min-inline-size:0; }
+  :where(.file-name) { min-inline-size:0; margin:0; overflow-wrap:anywhere; font-weight:var(--reeris-font-weight-medium); }
+  :where(.file-meta) { display:flex; flex-wrap:wrap; gap:var(--reeris-space-1) var(--reeris-space-3); margin-block-start:.125rem; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); }
+  :where(.file-actions) { display:flex; align-items:center; gap:var(--reeris-space-1); }
+
+  :where(.file-grid) { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--reeris-file-card-min)),1fr)); gap:var(--reeris-space-3); }
+  :where(.file-card) { display:grid; gap:var(--reeris-space-3); min-inline-size:0; padding:var(--reeris-space-4); background:var(--reeris-color-surface); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-component-radius); }
+  :where(.file-card[aria-selected="true"]) { border-color:var(--reeris-color-primary); box-shadow:0 0 0 1px var(--reeris-color-primary); }
+  :where(.file-card-preview) { display:grid; place-items:center; aspect-ratio:4/3; overflow:hidden; border-radius:var(--reeris-radius-lg); background:var(--reeris-color-surface-muted); }
+  :where(.file-card-preview img) { inline-size:100%; block-size:100%; object-fit:cover; }
+
+  :where(.dropzone) { display:grid; place-items:center; min-block-size:var(--reeris-dropzone-min-height); padding:var(--reeris-space-6); text-align:center; background:var(--reeris-dropzone-bg); border:2px dashed var(--reeris-color-border-strong); border-radius:var(--reeris-component-radius); transition:border-color var(--reeris-duration-fast) var(--reeris-ease-standard),background var(--reeris-duration-fast) var(--reeris-ease-standard); }
+  :where(.dropzone:hover,.dropzone:focus-within,.dropzone[data-reeris-state="dragover"]) { border-color:var(--reeris-color-primary); background:color-mix(in oklch,var(--reeris-color-primary) 9%,var(--reeris-color-surface)); }
+  :where(.dropzone-content) { display:grid; justify-items:center; gap:var(--reeris-space-2); max-inline-size:32rem; }
+  :where(.dropzone-title) { margin:0; font-weight:var(--reeris-font-weight-semibold); }
+  :where(.dropzone-description) { margin:0; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+
+  :where(.upload-item[data-reeris-state="error"]) { background:color-mix(in oklch,var(--reeris-color-danger) 7%,var(--reeris-color-surface)); }
+  :where(.upload-item[data-reeris-state="success"]) .file-icon { color:var(--reeris-color-success); }
+  :where(.upload-status) { min-inline-size:0; }
+  :where(.upload-status .progress) { margin-block-start:var(--reeris-space-2); }
+  :where(.upload-error) { margin-block-start:var(--reeris-space-1); color:var(--reeris-color-danger); font-size:var(--reeris-font-size-xs); }
+
+  :where(.attachment-list) { display:flex; flex-wrap:wrap; gap:var(--reeris-space-2); }
+  :where(.attachment) { display:inline-flex; align-items:center; gap:var(--reeris-space-2); min-inline-size:0; max-inline-size:100%; padding:var(--reeris-space-2) var(--reeris-space-3); color:inherit; background:var(--reeris-color-surface-muted); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-radius-lg); text-decoration:none; }
+  :where(.attachment-name) { min-inline-size:0; overflow-wrap:anywhere; }
+
+  :where(.storage-meter) { display:grid; gap:var(--reeris-space-2); }
+  :where(.storage-meter-header) { display:flex; justify-content:space-between; gap:var(--reeris-space-3); font-size:var(--reeris-font-size-sm); }
+
+  @container (max-width: 34rem) {
+    :where(.file-row,.upload-item) { grid-template-columns:auto minmax(0,1fr); }
+    :where(.file-actions) { grid-column:2; justify-self:start; }
+    :where(.file-browser-header,.file-browser-footer) { align-items:flex-start; flex-direction:column; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { :where(.dropzone) { transition:none; } }
+  @media (forced-colors: active) {
+    :where(.dropzone,.file-card[aria-selected="true"],.file-row[aria-selected="true"]) { forced-color-adjust:auto; }
+    :where(.dropzone[data-reeris-state="dragover"],.file-card[aria-selected="true"]) { border-color:Highlight; }
+  }
+}

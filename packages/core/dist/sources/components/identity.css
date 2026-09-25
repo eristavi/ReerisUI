@@ -1,0 +1,83 @@
+@layer reeris.components {
+  :root {
+    --reeris-profile-bg: var(--reeris-color-surface);
+    --reeris-profile-border-color: var(--reeris-color-border);
+    --reeris-profile-radius: var(--reeris-component-radius);
+    --reeris-profile-padding: var(--reeris-space-5);
+    --reeris-presence-size: .7rem;
+  }
+
+  :where(.avatar.presence) { overflow:visible; }
+  :where(.avatar.presence)::after {
+    content:""; position:absolute; inset-block-end:0; inset-inline-end:0;
+    inline-size:var(--reeris-presence-size); block-size:var(--reeris-presence-size);
+    border:2px solid var(--reeris-color-surface); border-radius:50%; background:var(--reeris-color-text-muted);
+  }
+  :where(.avatar.presence.online)::after { background:var(--reeris-color-success); }
+  :where(.avatar.presence.busy)::after { background:var(--reeris-color-danger); }
+  :where(.avatar.presence.away)::after { background:var(--reeris-color-warning); }
+  :where(.avatar.presence.offline)::after { background:var(--reeris-color-text-muted); }
+  :where(.avatar.square) { border-radius:var(--reeris-radius-lg); }
+  :where(.avatar.2xl) { --_avatar-size:4.5rem; }
+
+  :where(.identity) { container-type:inline-size; display:flex; min-inline-size:0; align-items:center; gap:var(--reeris-space-3); }
+  :where(.identity-content) { min-inline-size:0; }
+  :where(.identity-name) { margin:0; min-inline-size:0; overflow-wrap:anywhere; color:var(--reeris-color-text); font-weight:var(--reeris-font-weight-semibold); line-height:1.3; }
+  :where(.identity-meta) { margin:.2rem 0 0; min-inline-size:0; overflow-wrap:anywhere; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); line-height:1.35; }
+  :where(.identity-actions) { display:flex; flex:none; align-items:center; gap:var(--reeris-space-2); margin-inline-start:auto; }
+
+  :where(.user-row) {
+    display:flex; min-inline-size:0; align-items:center; gap:var(--reeris-space-3);
+    padding:calc(var(--reeris-space-3) * var(--reeris-density-factor));
+    border-radius:var(--reeris-radius-md);
+  }
+  :where(a.user-row, button.user-row) { inline-size:100%; border:0; background:transparent; color:inherit; text-align:start; text-decoration:none; }
+  :where(a.user-row:hover, button.user-row:hover) { background:var(--reeris-color-surface-muted); }
+  :where(.user-row[aria-current="true"], .user-row[aria-selected="true"]) { background:color-mix(in oklch,var(--reeris-color-primary) 10%,var(--reeris-color-surface)); }
+  :where(.user-row-meta) { min-inline-size:0; margin-inline-start:auto; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); overflow-wrap:anywhere; }
+
+  :where(.profile-card) {
+    display:grid; gap:var(--reeris-space-4); padding:calc(var(--reeris-profile-padding) * var(--reeris-density-factor));
+    background:var(--reeris-profile-bg); border:1px solid var(--reeris-profile-border-color);
+    border-radius:var(--reeris-profile-radius); box-shadow:var(--reeris-shadow-sm);
+  }
+  :where(.profile-card-header) { display:flex; align-items:flex-start; gap:var(--reeris-space-4); }
+  :where(.profile-card-content) { min-inline-size:0; flex:1; }
+  :where(.profile-card-name) { margin:0; font-size:var(--reeris-font-size-lg); font-weight:var(--reeris-font-weight-semibold); line-height:1.25; text-wrap:balance; }
+  :where(.profile-card-role) { margin:.25rem 0 0; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+  :where(.profile-card-bio) { margin:0; color:var(--reeris-color-text-muted); text-wrap:pretty; }
+  :where(.profile-card-actions) { display:flex; flex-wrap:wrap; gap:var(--reeris-space-2); }
+  :where(.profile-stats) { display:grid; grid-template-columns:repeat(auto-fit,minmax(6rem,1fr)); gap:var(--reeris-space-3); padding-block-start:var(--reeris-space-3); border-block-start:1px solid var(--reeris-color-border-muted); }
+  :where(.profile-stat) { min-inline-size:0; }
+  :where(.profile-stat-value) { display:block; color:var(--reeris-color-text); font-size:var(--reeris-font-size-lg); font-weight:var(--reeris-font-weight-semibold); font-variant-numeric:tabular-nums; }
+  :where(.profile-stat-label) { display:block; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); }
+
+  :where(.profile-header) {
+    container-type:inline-size; display:grid; gap:var(--reeris-space-4);
+    padding:var(--reeris-space-fluid-md); background:var(--reeris-profile-bg);
+    border:1px solid var(--reeris-profile-border-color); border-radius:var(--reeris-profile-radius);
+  }
+  :where(.profile-header-main) { display:flex; min-inline-size:0; align-items:center; gap:var(--reeris-space-4); }
+  :where(.profile-header-copy) { min-inline-size:0; flex:1; }
+  :where(.profile-header-title) { margin:0; font-size:clamp(1.35rem,4cqi,2rem); line-height:1.15; text-wrap:balance; }
+  :where(.profile-header-subtitle) { margin:.35rem 0 0; color:var(--reeris-color-text-muted); text-wrap:pretty; }
+  :where(.profile-header-actions) { display:flex; flex-wrap:wrap; gap:var(--reeris-space-2); margin-inline-start:auto; }
+  @container (max-width: 36rem) {
+    :where(.profile-header-main) { align-items:flex-start; flex-wrap:wrap; }
+    :where(.profile-header-actions) { inline-size:100%; margin-inline-start:0; }
+  }
+
+  :where(.member-grid) { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap:var(--reeris-space-4); }
+  :where(.member-card) { display:grid; justify-items:center; gap:var(--reeris-space-3); padding:calc(var(--reeris-space-5) * var(--reeris-density-factor)); text-align:center; background:var(--reeris-color-surface); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-component-radius); }
+  :where(.member-card .identity-meta) { white-space:normal; }
+  :where(.member-card-actions) { display:flex; flex-wrap:wrap; justify-content:center; gap:var(--reeris-space-2); }
+
+  :where(.account-menu) { inline-size:min(16rem,100%); min-inline-size:0; }
+  :where(.account-menu-header) { padding:var(--reeris-space-3); border-block-end:1px solid var(--reeris-color-border-muted); }
+  :where(.account-menu-footer) { padding:var(--reeris-space-2); border-block-start:1px solid var(--reeris-color-border-muted); }
+
+  @media (forced-colors: active) {
+    :where(.profile-card,.profile-header,.member-card) { border-color:CanvasText; }
+    :where(.avatar.presence)::after { border-color:Canvas; forced-color-adjust:auto; }
+  }
+}

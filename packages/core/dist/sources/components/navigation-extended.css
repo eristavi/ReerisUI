@@ -1,0 +1,221 @@
+@layer reeris.components {
+  :root {
+    --reeris-navbar-panel-bg: var(--reeris-color-surface);
+    --reeris-navbar-panel-border: var(--reeris-color-border);
+    --reeris-navbar-panel-shadow: var(--reeris-shadow-lg);
+    --reeris-navbar-toggle-size: var(--reeris-control-md);
+    --reeris-mega-menu-width: 46rem;
+    --reeris-mega-menu-gap: var(--reeris-space-5);
+    --reeris-mega-menu-padding: var(--reeris-space-5);
+    --reeris-hover-card-width: 20rem;
+    --reeris-glide-bg: color-mix(in oklch, var(--reeris-color-primary) 12%, transparent);
+    --reeris-glide-color: var(--reeris-color-primary);
+    --reeris-glide-duration: var(--reeris-duration-normal);
+    --reeris-glide-ease: var(--reeris-ease-standard);
+    --reeris-glide-radius: var(--reeris-nav-radius);
+  }
+
+  /* Responsive navbar: native <details> is the no-JS disclosure primitive. */
+  :where(.navbar.responsive) { container-type:inline-size; }
+  :where(.navbar-disclosure) { display:contents; }
+  :where(.navbar-toggle) {
+    display:none;
+    min-inline-size:var(--reeris-navbar-toggle-size);
+    min-block-size:calc(var(--reeris-navbar-toggle-size) * var(--reeris-density-factor));
+    align-items:center;
+    justify-content:center;
+    gap:var(--reeris-space-2);
+    padding-inline:var(--reeris-space-3);
+    border:1px solid var(--reeris-color-border);
+    border-radius:var(--reeris-radius-md);
+    background:var(--reeris-color-surface);
+    color:var(--reeris-color-text);
+    font:inherit;
+    font-weight:var(--reeris-font-weight-medium);
+    list-style:none;
+    cursor:pointer;
+  }
+  :where(.navbar-toggle::-webkit-details-marker) { display:none; }
+  :where(.navbar-toggle:hover) { background:var(--reeris-color-surface-muted); }
+  :where(.navbar-toggle:focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
+  :where(.navbar-toggle-icon) { display:inline-grid; inline-size:1.25rem; block-size:1.25rem; place-items:center; }
+  :where(.navbar-panel) { display:flex; min-inline-size:0; flex:1; align-items:center; gap:var(--reeris-space-4); }
+  :where(.navbar-panel > .navbar-actions) { margin-inline-start:auto; }
+
+  /* Mega menu: <details> works with keyboard, pointer and touch without Reeris JS. */
+  :where(.mega-menu) { position:relative; }
+  :where(.mega-menu > summary) { list-style:none; cursor:pointer; }
+  :where(.mega-menu > summary::-webkit-details-marker) { display:none; }
+  :where(.mega-menu > summary .mega-menu-chevron) { transition:transform var(--reeris-duration-fast) var(--reeris-ease-standard); }
+  :where(.mega-menu[open] > summary .mega-menu-chevron) { transform:rotate(180deg); }
+  :where(.mega-menu-panel) {
+    position:absolute;
+    z-index:var(--reeris-z-dropdown,40);
+    inset-block-start:calc(100% + var(--reeris-space-2));
+    inset-inline-start:0;
+    display:grid;
+    grid-template-columns:repeat(var(--reeris-mega-menu-columns,3), minmax(0,1fr));
+    gap:var(--reeris-mega-menu-gap);
+    inline-size:min(var(--reeris-mega-menu-width), calc(100vi - 2 * var(--reeris-space-4)));
+    padding:var(--reeris-mega-menu-padding);
+    border:1px solid var(--reeris-color-border);
+    border-radius:var(--reeris-radius-xl);
+    background:var(--reeris-color-surface);
+    box-shadow:var(--reeris-dropdown-shadow);
+  }
+  :where(.mega-menu.end .mega-menu-panel) { inset-inline-start:auto; inset-inline-end:0; }
+  :where(.mega-menu-section) { display:grid; align-content:start; gap:var(--reeris-space-2); min-inline-size:0; }
+  :where(.mega-menu-title) { margin:0 0 var(--reeris-space-1); color:var(--reeris-color-text); font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-semibold); }
+  :where(.mega-menu-link) {
+    display:grid;
+    gap:.125rem;
+    min-inline-size:0;
+    padding:var(--reeris-space-2) var(--reeris-space-3);
+    border-radius:var(--reeris-radius-md);
+    color:var(--reeris-color-text);
+    text-decoration:none;
+  }
+  :where(.mega-menu-link:hover,.mega-menu-link:focus-visible) { background:var(--reeris-color-surface-muted); }
+  :where(.mega-menu-link:focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
+  :where(.mega-menu-link-title) { font-weight:var(--reeris-font-weight-medium); }
+  :where(.mega-menu-link-description) { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); line-height:1.4; }
+
+  /* Hover card: hover/focus preview with native <details> persistence for touch/click. */
+  :where(.hover-card) { position:relative; display:inline-block; }
+  :where(.hover-card > summary) { list-style:none; cursor:pointer; }
+  :where(.hover-card > summary::-webkit-details-marker) { display:none; }
+  :where(.hover-card-panel) {
+    position:absolute;
+    z-index:var(--reeris-z-popover,50);
+    inset-block-start:calc(100% + var(--reeris-space-2));
+    inset-inline-start:0;
+    inline-size:min(var(--reeris-hover-card-width), calc(100vi - 2 * var(--reeris-space-4)));
+    padding:var(--reeris-space-4);
+    border:1px solid var(--reeris-color-border);
+    border-radius:var(--reeris-radius-lg);
+    background:var(--reeris-color-surface);
+    box-shadow:var(--reeris-dropdown-shadow);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transform:translateY(-.25rem);
+    transition:opacity var(--reeris-duration-fast) var(--reeris-ease-standard), transform var(--reeris-duration-fast) var(--reeris-ease-standard), visibility 0s linear var(--reeris-duration-fast);
+  }
+  :where(.hover-card.end .hover-card-panel) { inset-inline-start:auto; inset-inline-end:0; }
+  :where(.hover-card:hover > .hover-card-panel,.hover-card:focus-within > .hover-card-panel,.hover-card[open] > .hover-card-panel) {
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:none;
+    transition-delay:0s;
+  }
+
+  /* Glide navigation. CSS is the fallback; @reeris/js sets the geometry variables. */
+  :where(.nav.glide,.navbar-nav.glide,.tabs.glide) {
+    --_reeris-glide-x:0px;
+    --_reeris-glide-y:0px;
+    --_reeris-glide-width:0px;
+    --_reeris-glide-height:0px;
+    position:relative;
+    isolation:isolate;
+  }
+  :where(.nav.glide,.navbar-nav.glide) { border-radius:var(--reeris-glide-radius); }
+  :where(.nav.glide,.navbar-nav.glide,.tabs.glide)::before {
+    content:"";
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:0;
+    inline-size:var(--_reeris-glide-width);
+    block-size:var(--_reeris-glide-height);
+    border-radius:var(--reeris-glide-radius);
+    background:var(--reeris-glide-bg);
+    opacity:var(--_reeris-glide-opacity,0);
+    pointer-events:none;
+    translate:var(--_reeris-glide-x) var(--_reeris-glide-y);
+    transition:translate var(--reeris-glide-duration) var(--reeris-glide-ease), inline-size var(--reeris-glide-duration) var(--reeris-glide-ease), block-size var(--reeris-glide-duration) var(--reeris-glide-ease), opacity var(--reeris-duration-fast) var(--reeris-ease-standard);
+  }
+  :where(.nav.glide[data-reeris-glide-instant],.navbar-nav.glide[data-reeris-glide-instant],.tabs.glide[data-reeris-glide-instant])::before { transition:none; }
+  :where(.nav.glide > *,.navbar-nav.glide > *,.tabs.glide > *) { position:relative; z-index:1; }
+  :where(.nav.glide .nav-link,.navbar-nav.glide .nav-link) { background:transparent; }
+  :where(.nav.glide .nav-link:hover,.navbar-nav.glide .nav-link:hover) { background:var(--reeris-color-surface-muted); }
+  :where(.nav.glide[data-reeris-glide-ready] .nav-link:hover,.navbar-nav.glide[data-reeris-glide-ready] .nav-link:hover) { background:transparent; }
+  :where(.nav.glide[data-reeris-glide-ready] .nav-link[aria-current="page"],.nav.glide[data-reeris-glide-ready] .nav-link.active,
+         .navbar-nav.glide[data-reeris-glide-ready] .nav-link[aria-current="page"],.navbar-nav.glide[data-reeris-glide-ready] .nav-link.active) { background:transparent; color:var(--reeris-glide-color); }
+
+  :where(.tabs.glide)::before {
+    top:auto;
+    bottom:0;
+    translate:var(--_reeris-glide-x) 0;
+    block-size:2px;
+    border-radius:var(--reeris-radius-full);
+    background:var(--reeris-color-primary);
+  }
+  :where(.tabs.glide[data-reeris-glide-ready] .tab) { border-block-end-color:transparent; }
+
+  :where(.glide.underline)::before {
+    top:auto;
+    bottom:0;
+    translate:var(--_reeris-glide-x) 0;
+    block-size:2px;
+    border-radius:var(--reeris-radius-full);
+    background:var(--reeris-color-primary);
+  }
+  :where(.glide.underline[data-reeris-glide-ready] .nav-link[aria-current="page"],.glide.underline[data-reeris-glide-ready] .nav-link.active) { background:transparent; }
+
+  @container (max-width: 48rem) {
+    :where(.navbar.responsive) { align-items:center; }
+    :where(.navbar.responsive .navbar-disclosure) { display:block; margin-inline-start:auto; }
+    :where(.navbar.responsive .navbar-toggle) { display:inline-flex; }
+    :where(.navbar.responsive .navbar-panel) {
+      position:absolute;
+      z-index:var(--reeris-z-dropdown,40);
+      inset-block-start:calc(100% + 1px);
+      inset-inline:var(--reeris-space-3);
+      display:none;
+      max-block-size:min(75dvh,36rem);
+      overflow:auto;
+      align-items:stretch;
+      gap:var(--reeris-space-3);
+      padding:var(--reeris-space-3);
+      border:1px solid var(--reeris-navbar-panel-border);
+      border-radius:var(--reeris-radius-lg);
+      background:var(--reeris-navbar-panel-bg);
+      box-shadow:var(--reeris-navbar-panel-shadow);
+    }
+    :where(.navbar.responsive .navbar-disclosure[open] > .navbar-panel) { display:grid; }
+    :where(.navbar.responsive .navbar-panel .navbar-nav) { display:grid; inline-size:100%; overflow:visible; }
+    :where(.navbar.responsive .navbar-panel .nav-link) { inline-size:100%; }
+    :where(.navbar.responsive .navbar-panel .navbar-actions) { inline-size:100%; margin-inline-start:0; justify-content:stretch; }
+    :where(.navbar.responsive .navbar-panel .navbar-actions > *) { flex:1; }
+    :where(.navbar.responsive) { position:relative; }
+
+    :where(.mega-menu) { position:static; }
+    :where(.mega-menu-panel) {
+      position:static;
+      grid-template-columns:1fr;
+      inline-size:100%;
+      margin-block-start:var(--reeris-space-1);
+      padding:var(--reeris-space-3);
+      box-shadow:none;
+    }
+    :where(.hover-card-panel) { inline-size:min(var(--reeris-hover-card-width),calc(100vi - 2 * var(--reeris-space-3))); }
+  }
+
+  @media (hover: none) {
+    :where(.hover-card:not([open]):hover > .hover-card-panel) { opacity:0; visibility:hidden; pointer-events:none; transform:translateY(-.25rem); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(.mega-menu-chevron,.hover-card-panel,.nav.glide::before,.navbar-nav.glide::before,.tabs.glide::before) { transition:none; }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    :where(.mega-menu-panel,.hover-card-panel,.navbar-panel) { background:var(--reeris-color-surface); }
+  }
+
+  @media (forced-colors: active) {
+    :where(.navbar-toggle,.navbar-panel,.mega-menu-panel,.hover-card-panel) { border-color:CanvasText; background:Canvas; box-shadow:none; }
+    :where(.nav.glide,.navbar-nav.glide,.tabs.glide)::before { background:Highlight; forced-color-adjust:none; }
+  }
+}

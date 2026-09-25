@@ -1,0 +1,68 @@
+@layer reeris.components {
+  :root {
+    --reeris-workflow-line: var(--reeris-color-border);
+    --reeris-workflow-complete: var(--reeris-color-success);
+    --reeris-workflow-current: var(--reeris-color-primary);
+    --reeris-workflow-pending: var(--reeris-color-text-muted);
+    --reeris-workflow-danger: var(--reeris-color-danger);
+    --reeris-workflow-marker-size: 2rem;
+    --reeris-workflow-gap: var(--reeris-space-4);
+  }
+
+  :where(.stepper) { container-type:inline-size; margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(var(--reeris-step-count,4),minmax(0,1fr)); }
+  :where(.step) { position:relative; display:grid; justify-items:center; gap:var(--reeris-space-2); min-inline-size:0; color:var(--reeris-workflow-pending); text-align:center; }
+  :where(.step)::before { content:""; position:absolute; z-index:0; inset-block-start:calc(var(--reeris-workflow-marker-size) / 2); inset-inline-start:-50%; inline-size:100%; block-size:2px; background:var(--reeris-workflow-line); }
+  :where(.step:first-child)::before { display:none; }
+  :where(.step-marker) { position:relative; z-index:1; display:grid; place-items:center; inline-size:var(--reeris-workflow-marker-size); aspect-ratio:1; border:2px solid var(--reeris-workflow-line); border-radius:50%; background:var(--reeris-color-surface); color:inherit; font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-semibold); font-variant-numeric:tabular-nums; }
+  :where(.step-label) { font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-medium); }
+  :where(.step-description) { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); }
+  :where(.step[data-reeris-state="complete"]) { color:var(--reeris-workflow-complete); }
+  :where(.step[data-reeris-state="complete"])::before { background:var(--reeris-workflow-complete); }
+  :where(.step[data-reeris-state="complete"] .step-marker) { border-color:var(--reeris-workflow-complete); background:var(--reeris-workflow-complete); color:var(--reeris-color-on-success); }
+  :where(.step[aria-current="step"],.step[data-reeris-state="current"]) { color:var(--reeris-workflow-current); }
+  :where(.step[aria-current="step"] .step-marker,.step[data-reeris-state="current"] .step-marker) { border-color:var(--reeris-workflow-current); box-shadow:0 0 0 var(--reeris-focus-offset) color-mix(in oklch,var(--reeris-workflow-current) 22%,transparent); }
+  :where(.step[data-reeris-state="error"]) { color:var(--reeris-workflow-danger); }
+  :where(.step[data-reeris-state="error"] .step-marker) { border-color:var(--reeris-workflow-danger); }
+
+  :where(.workflow) { display:grid; gap:0; margin:0; padding:0; list-style:none; }
+  :where(.workflow-item) { position:relative; display:grid; grid-template-columns:auto minmax(0,1fr); gap:var(--reeris-workflow-gap); padding-block-end:var(--reeris-space-6); }
+  :where(.workflow-item)::before { content:""; position:absolute; inset-block-start:var(--reeris-workflow-marker-size); inset-block-end:0; inset-inline-start:calc(var(--reeris-workflow-marker-size) / 2 - 1px); inline-size:2px; background:var(--reeris-workflow-line); }
+  :where(.workflow-item:last-child)::before { display:none; }
+  :where(.workflow-marker) { position:relative; z-index:1; display:grid; place-items:center; inline-size:var(--reeris-workflow-marker-size); aspect-ratio:1; border:2px solid var(--reeris-workflow-line); border-radius:50%; background:var(--reeris-color-surface); color:var(--reeris-workflow-pending); font-size:var(--reeris-font-size-xs); font-weight:var(--reeris-font-weight-bold); }
+  :where(.workflow-content) { min-inline-size:0; padding-block-start:.25rem; }
+  :where(.workflow-title) { margin:0; font-weight:var(--reeris-font-weight-semibold); }
+  :where(.workflow-meta) { margin-block-start:var(--reeris-space-1); color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+  :where(.workflow-item[data-reeris-state="complete"] .workflow-marker) { border-color:var(--reeris-workflow-complete); background:var(--reeris-workflow-complete); color:var(--reeris-color-on-success); }
+  :where(.workflow-item[aria-current="step"] .workflow-marker,.workflow-item[data-reeris-state="current"] .workflow-marker) { border-color:var(--reeris-workflow-current); color:var(--reeris-workflow-current); }
+  :where(.workflow-item[data-reeris-state="error"] .workflow-marker) { border-color:var(--reeris-workflow-danger); color:var(--reeris-workflow-danger); }
+
+  :where(.wizard) { container-type:inline-size; display:grid; gap:var(--reeris-space-6); }
+  :where(.wizard-header,.wizard-footer) { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--reeris-space-3); }
+  :where(.wizard-body) { min-inline-size:0; }
+  :where(.wizard-progress) { display:grid; gap:var(--reeris-space-2); }
+  :where(.wizard-progress-meta) { display:flex; justify-content:space-between; gap:var(--reeris-space-3); color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); font-variant-numeric:tabular-nums; }
+
+  :where(.status-flow) { display:flex; flex-wrap:wrap; align-items:center; gap:var(--reeris-space-2); margin:0; padding:0; list-style:none; }
+  :where(.status-flow > li) { display:inline-flex; align-items:center; gap:var(--reeris-space-2); color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+  :where(.status-flow > li:not(:last-child))::after { content:"→"; color:var(--reeris-color-text-muted); }
+  :dir(rtl) :where(.status-flow > li:not(:last-child))::after { content:"←"; }
+  :where(.status-flow > li[aria-current="step"]) { color:var(--reeris-color-primary); font-weight:var(--reeris-font-weight-semibold); }
+  :where(.status-flow > li[data-reeris-state="complete"]) { color:var(--reeris-color-success); }
+
+  [data-density="compact"] :where(.stepper,.workflow,.wizard) { --reeris-workflow-gap:var(--reeris-space-3); --reeris-workflow-marker-size:1.75rem; }
+  [data-density="comfortable"] :where(.stepper,.workflow,.wizard) { --reeris-workflow-gap:var(--reeris-space-5); --reeris-workflow-marker-size:2.25rem; }
+
+  @container (max-width: 34rem) {
+    :where(.stepper) { grid-template-columns:1fr; gap:0; }
+    :where(.step) { grid-template-columns:auto minmax(0,1fr); justify-items:start; align-items:start; gap:var(--reeris-space-3); padding-block-end:var(--reeris-space-4); text-align:start; }
+    :where(.step)::before { inset-block-start:var(--reeris-workflow-marker-size); inset-block-end:0; inset-inline-start:calc(var(--reeris-workflow-marker-size) / 2 - 1px); inline-size:2px; block-size:auto; }
+    :where(.step-label,.step-description) { grid-column:2; }
+    :where(.step-description) { margin-block-start:calc(var(--reeris-space-2) * -1); }
+  }
+
+  @media (forced-colors: active) {
+    :where(.step-marker,.workflow-marker) { border-color:CanvasText; }
+    :where(.step[aria-current="step"] .step-marker,.step[data-reeris-state="current"] .step-marker,.workflow-item[aria-current="step"] .workflow-marker,.workflow-item[data-reeris-state="current"] .workflow-marker) { border-color:Highlight; color:Highlight; box-shadow:none; }
+    :where(.step[data-reeris-state="complete"] .step-marker,.workflow-item[data-reeris-state="complete"] .workflow-marker) { border-color:Highlight; background:Highlight; color:HighlightText; forced-color-adjust:none; }
+  }
+}

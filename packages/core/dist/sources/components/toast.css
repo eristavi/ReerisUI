@@ -1,0 +1,154 @@
+@layer reeris.components {
+  :root {
+    --reeris-toast-width: 24rem;
+    --reeris-toast-gap: var(--reeris-space-3);
+    --reeris-toast-padding: var(--reeris-space-4);
+    --reeris-toast-radius: var(--reeris-component-radius);
+    --reeris-toast-bg: var(--reeris-color-surface);
+    --reeris-toast-color: var(--reeris-color-text);
+    --reeris-toast-border-color: var(--reeris-color-border);
+    --reeris-toast-shadow: var(--reeris-shadow-lg);
+    --reeris-toast-offset: var(--reeris-space-4);
+  }
+
+  :where(.toast-region) {
+    position: fixed;
+    z-index: var(--reeris-z-toast, 50);
+    display: grid;
+    gap: var(--reeris-toast-gap);
+    inline-size: min(var(--reeris-toast-width), calc(100vi - var(--reeris-safe-left) - var(--reeris-safe-right) - (var(--reeris-toast-offset) * 2)));
+    max-block-size: calc(100dvh - var(--reeris-safe-top) - var(--reeris-safe-bottom) - (var(--reeris-toast-offset) * 2));
+    overflow: auto;
+    overscroll-behavior: contain;
+    pointer-events: none;
+    scrollbar-width: thin;
+  }
+
+  :where(.toast-region:not(.bottom)) {
+    inset-block-start: max(var(--reeris-toast-offset), var(--reeris-safe-top));
+  }
+
+  :where(.toast-region.bottom) {
+    inset-block-end: max(var(--reeris-toast-offset), var(--reeris-safe-bottom));
+  }
+
+  :where(.toast-region:not(.start):not(.center), .toast-region.end) {
+    inset-inline-end: max(var(--reeris-toast-offset), var(--reeris-safe-inline-end));
+  }
+
+  :where(.toast-region.start) {
+    inset-inline-start: max(var(--reeris-toast-offset), var(--reeris-safe-inline-start));
+  }
+
+  :where(.toast-region.center) {
+    inset-inline: 0;
+    margin-inline: auto;
+  }
+
+  :where(.toast) {
+    --_tone: var(--reeris-color-info);
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: start;
+    gap: var(--reeris-space-3);
+    min-inline-size: 0;
+    padding: calc(var(--reeris-toast-padding) * var(--reeris-density-factor));
+    color: var(--reeris-toast-color);
+    background: color-mix(in oklch, var(--_tone) 4%, var(--reeris-toast-bg));
+    border: var(--reeris-border-1) solid color-mix(in oklch, var(--_tone) 24%, var(--reeris-toast-border-color));
+    border-radius: var(--reeris-toast-radius);
+    box-shadow: var(--reeris-toast-shadow);
+    pointer-events: auto;
+    animation: reeris-toast-enter var(--reeris-duration-normal) var(--reeris-ease-enter) both;
+  }
+
+  :where(.toast.primary) { --_tone: var(--reeris-color-primary); }
+  :where(.toast.success) { --_tone: var(--reeris-color-success); }
+  :where(.toast.warning) { --_tone: var(--reeris-color-warning); }
+  :where(.toast.danger, .toast.error) { --_tone: var(--reeris-color-danger); }
+
+  :where(.toast-icon) {
+    display: grid;
+    place-items: center;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    color: var(--_tone);
+  }
+
+  :where(.toast-content) { min-inline-size: 0; }
+  :where(.toast-title) {
+    margin: 0;
+    color: var(--reeris-color-text);
+    font-weight: var(--reeris-font-weight-semibold);
+    line-height: var(--reeris-line-height-snug);
+  }
+  :where(.toast-description) {
+    margin: var(--reeris-space-1) 0 0;
+    color: var(--reeris-color-text-muted);
+    font-size: var(--reeris-font-size-sm);
+    text-wrap: pretty;
+  }
+  :where(.toast-actions) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--reeris-space-2);
+    margin-block-start: var(--reeris-space-3);
+  }
+  :where(.toast-close) { align-self: start; }
+
+  :where(.toast[data-reeris-state="closing"]) {
+    animation: reeris-toast-exit var(--reeris-duration-fast) var(--reeris-ease-exit) both;
+    pointer-events: none;
+  }
+
+  @keyframes reeris-toast-enter {
+    from { opacity: 0; translate: 0 -.5rem; scale: .98; }
+    to { opacity: 1; translate: 0 0; scale: 1; }
+  }
+
+  @keyframes reeris-toast-exit {
+    from { opacity: 1; translate: 0 0; scale: 1; }
+    to { opacity: 0; translate: 0 -.35rem; scale: .98; }
+  }
+
+  :where(.toast-region.bottom .toast) { animation-name: reeris-toast-enter-bottom; }
+  :where(.toast-region.bottom .toast[data-reeris-state="closing"]) { animation-name: reeris-toast-exit-bottom; }
+
+  @keyframes reeris-toast-enter-bottom {
+    from { opacity: 0; translate: 0 .5rem; scale: .98; }
+    to { opacity: 1; translate: 0 0; scale: 1; }
+  }
+
+  @keyframes reeris-toast-exit-bottom {
+    from { opacity: 1; translate: 0 0; scale: 1; }
+    to { opacity: 0; translate: 0 .35rem; scale: .98; }
+  }
+
+  @media (max-width: 30rem) {
+    :where(.toast-region) {
+      inset-inline: max(var(--reeris-space-2), var(--reeris-safe-inline-start)) max(var(--reeris-space-2), var(--reeris-safe-inline-end));
+      inline-size: auto;
+      margin-inline: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(.toast, .toast[data-reeris-state="closing"], .toast-region.bottom .toast, .toast-region.bottom .toast[data-reeris-state="closing"]) {
+      animation: none;
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    :where(.toast) { background: var(--reeris-toast-bg); }
+  }
+
+  @media (forced-colors: active) {
+    :where(.toast) {
+      color: CanvasText;
+      background: Canvas;
+      border-color: CanvasText;
+      box-shadow: none;
+    }
+    :where(.toast-icon) { color: Highlight; }
+  }
+}
