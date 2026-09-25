@@ -5,3 +5,4 @@ coverage/
 # Visual regression working output (baselines are committed intentionally)
 tests/visual/current/**/*.png
 tests/visual/diff/**/*.png
+.reeris-docs-site/

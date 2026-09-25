@@ -47,7 +47,8 @@
     "audit:external-lab": "node tooling/external-release-lab.mjs audit",
     "lab:prepare": "npm run evidence:templates && npm run lab:generate",
     "audit:naming": "node tooling/naming-clearance-audit.mjs",
-    "audit:identity-reservation": "node tooling/identity-reservation-audit.mjs"
+    "audit:identity-reservation": "node tooling/identity-reservation-audit.mjs",
+    "docs:site": "npm run build && node tooling/build-docs-site.mjs"
   },
   "license": "MIT",
   "engines": {
