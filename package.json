@@ -17,7 +17,7 @@
     "audit:css": "node tooling/css-architecture-audit.mjs",
     "audit:all": "npm run audit:scope && npm run audit:forms && npm run audit:content-states && npm run audit:a11y && npm run audit:browser-reflow && npm run audit:css && npm run audit:visual && npm run audit:i18n && npm run audit:theme && npm run audit:repro && npm run docs:api && npm run audit:docs && npm run audit:starters && npm run audit:security && npm run audit:packages && npm run audit:rc-browser && npm run audit:local-browser && npm run lab:generate && npm run audit:external-lab && npm run audit:evidence && npm run audit:naming && npm run audit:identity-reservation && npm run audit:rc",
     "docs:api": "node tooling/generate-api-reference.mjs",
-    "audit:docs": "node tooling/documentation-audit.mjs",
+    "audit:docs": "node tooling/documentation-audit.mjs && npm run audit:docs-css",
     "audit:starters": "node tooling/starters-integration-audit.mjs",
     "audit:security": "node tooling/security-audit.mjs",
     "audit:packages": "node tooling/package-release-audit.mjs",
@@ -48,7 +48,8 @@
     "lab:prepare": "npm run evidence:templates && npm run lab:generate",
     "audit:naming": "node tooling/naming-clearance-audit.mjs",
     "audit:identity-reservation": "node tooling/identity-reservation-audit.mjs",
-    "docs:site": "npm run build && node tooling/build-docs-site.mjs"
+    "docs:site": "npm run build && node tooling/build-docs-site.mjs",
+    "audit:docs-css": "node tooling/docs-css-architecture-audit.mjs"
   },
   "license": "MIT",
   "engines": {
