@@ -1,0 +1,191 @@
+{
+  "version": "0.52.0",
+  "policy": "All automated gates must pass for an RC source/tarball build. Gates marked blocks1_0 must be completed with recorded evidence before Reeris 1.0. Gates marked blocksPublicPublication must be completed before publishing the corresponding public registry/repository artifacts.",
+  "gates": [
+    {
+      "id": "desktop-browser-matrix",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Current stable Chrome, Edge, Firefox and Safari on supported desktop operating systems.",
+      "evidence": "Manual/browser-service run using the canonical fixtures and component acceptance matrix.",
+      "automation": "Playwright CI covers Chromium, Firefox and WebKit on Linux plus Microsoft Edge on Windows. Real Safari remains manual and Edge/Chrome branded-current validation remains an external release-lab check.",
+      "criteriaStatus": {
+        "chrome-desktop-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "edge-desktop-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "firefox-desktop-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "safari-desktop-real": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "local-chromium-desktop-browser-matrix-0.49.0",
+        "local-chromium-desktop-browser-matrix-0.50.0"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Safari on iOS/iPadOS and Chrome on Android, including touch, safe areas and native form controls.",
+      "evidence": "Real-device or trusted device-cloud results.",
+      "automation": "Playwright emulates mobile Chromium and mobile WebKit for layout/touch prerequisites. Real iOS/iPadOS Safari and Android Chrome remain device/manual evidence.",
+      "criteriaStatus": {
+        "safari-ios-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "safari-ipados-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "chrome-android-real": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": []
+    },
+    {
+      "id": "assistive-technology",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Keyboard-only review plus representative screen-reader combinations such as NVDA/Firefox or Edge, VoiceOver/Safari and TalkBack/Chrome.",
+      "evidence": "Manual interaction notes for dialogs, popovers, forms, navigation, tables, disclosure and dynamic feedback.",
+      "automation": "Playwright keyboard flows verify focus order, native dialog/disclosure interaction and form controls; screen readers remain manual.",
+      "criteriaStatus": {
+        "keyboard-manual": {
+          "status": "open",
+          "evidence": []
+        },
+        "nvda-desktop": {
+          "status": "open",
+          "evidence": []
+        },
+        "voiceover-safari": {
+          "status": "open",
+          "evidence": []
+        },
+        "talkback-chrome": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "local-chromium-assistive-technology-0.49.0",
+        "local-chromium-assistive-technology-0.50.0"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Real-browser 200% and 400% zoom/reflow, text expansion, coarse pointer and touch-target review.",
+      "evidence": "Completed browser/reflow fixture matrix with screenshots or test notes.",
+      "automation": "Playwright runs desktop/mobile viewport and touch-emulation smoke flows; real 200%/400% browser zoom remains manual.",
+      "criteriaStatus": {
+        "zoom-200-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "zoom-400-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "touch-targets-real": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "local-chromium-zoom-reflow-touch-0.49.0",
+        "local-chromium-zoom-reflow-touch-0.50.0"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Windows forced-colors/high-contrast review and prefers-contrast validation where available.",
+      "evidence": "Manual screenshots/notes demonstrating focus, selection, errors, boundaries and interactive controls.",
+      "automation": "Static forced-colors and contrast audits remain automated; Windows High Contrast visual confirmation remains manual.",
+      "criteriaStatus": {
+        "windows-forced-colors-real": {
+          "status": "open",
+          "evidence": []
+        },
+        "prefers-contrast-review": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "local-chromium-forced-colors-high-contrast-0.49.0",
+        "local-chromium-forced-colors-high-contrast-0.50.0"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines",
+      "status": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "scope": "Capture and approve the canonical visual matrix in a functioning browser/CI environment.",
+      "evidence": "Versioned PNG baselines plus a passing visual comparison run.",
+      "automation": "Playwright screenshot specs and snapshot update/compare commands are provided. Baselines require human approval before this gate can pass.",
+      "criteriaStatus": {
+        "baseline-human-approved": {
+          "status": "open",
+          "evidence": []
+        },
+        "baseline-compare-pass": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "local-chromium-visual-regression-baselines-0.49.0",
+        "local-chromium-visual-regression-baselines-0.50.0"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance",
+      "status": "open",
+      "blocks1_0": false,
+      "blocksPublicPublication": true,
+      "scope": "Confirm final project/package/repository/domain naming and perform appropriate trademark/conflict review before public launch.",
+      "evidence": "Recorded availability/clearance decision for Reeris UI and intended public package/repository names.",
+      "criteriaStatus": {
+        "project-name-clearance": {
+          "status": "open",
+          "evidence": []
+        },
+        "package-namespace-clearance": {
+          "status": "open",
+          "evidence": []
+        },
+        "repository-domain-clearance": {
+          "status": "open",
+          "evidence": []
+        }
+      },
+      "supplementalEvidence": [
+        "naming-research-0.51.0",
+        "naming-research-0.52.0"
+      ]
+    }
+  ]
+}

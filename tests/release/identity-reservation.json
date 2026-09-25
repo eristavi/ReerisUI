@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "version": "0.52.0",
+  "auditedAt": "2026-09-25",
+  "brand": "Reeris UI",
+  "shortBrand": "Reeris",
+  "canonicalRepository": "Eristavi/ReerisUI",
+  "npmScope": "@reeris",
+  "status": "promising-pending-account-level-reservation-and-formal-clearance",
+  "npm": {
+    "registryVerification": "blocked-by-anonymous-403-in-research-environment",
+    "indexedExactPackagesFound": false,
+    "targets": [
+      "@reeris/core",
+      "@reeris/icons",
+      "@reeris/js",
+      "@reeris/react",
+      "@reeris/vue",
+      "@reeris/svelte"
+    ],
+    "reservationRequired": true
+  },
+  "github": {
+    "target": "Eristavi/ReerisUI",
+    "publicFetchStatus": 404,
+    "interpretation": "not-publicly-resolvable-at-check-time",
+    "reservationRequired": true
+  },
+  "domains": {
+    "indexedMaterialUseFound": false,
+    "dnsRecordsObserved": false,
+    "registrarAvailabilityVerified": false,
+    "preferred": [
+      "reeris.dev",
+      "reerisui.dev",
+      "reeris.com",
+      "reerisui.com",
+      "reeris.io",
+      "reeris.org"
+    ],
+    "reservationRequired": true
+  },
+  "trademark": {
+    "materialExactReerisUiSoftwareMarkSurfaced": false,
+    "formalSimilaritySearchCompleted": false,
+    "legalOpinion": false,
+    "recommendedClasses": [9, 42],
+    "formalClearanceRequired": true
+  },
+  "criteria": {
+    "project-name-clearance": "open",
+    "package-namespace-clearance": "open",
+    "repository-domain-clearance": "open"
+  },
+  "decision": "Continue development under Reeris UI, but do not publicly publish packages or claim final trademark/domain clearance until the account-level reservations and formal trademark review are completed."
+}

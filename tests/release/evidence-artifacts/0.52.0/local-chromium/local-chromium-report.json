@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "version": "0.52.0",
+  "generatedAt": "2026-09-25T13:08:33.105Z",
+  "browser": {
+    "product": "Chrome/144.0.7559.96",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "revision": "@d7b80622cfab91c265741194e7942eefd2d21811",
+    "protocolVersion": "1.3",
+    "executable": "/usr/bin/chromium"
+  },
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v22.16.0",
+    "navigationMode": "injected",
+    "httpNavigationPolicy": "localhost navigation blocked by administrator; fixtures rendered through DevTools Page.setDocumentContent with exact built Core CSS and docs CSS injected"
+  },
+  "summary": {
+    "passed": 15,
+    "failed": 0,
+    "total": 15,
+    "visualCandidates": 14,
+    "visualCandidateFailures": 0
+  },
+  "tests": [
+    {
+      "name": "smoke /docs/foundation.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris Foundation 0.1",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 4,
+          "main": 1,
+          "heading": 4,
+          "paragraph": 3,
+          "generic": 5,
+          "StaticText": 12,
+          "link": 1,
+          "InlineTextBox": 12
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /docs/forms-complete.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris UI 0.34 — Forms Completeness",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 55,
+          "main": 1,
+          "sectionheader": 1,
+          "generic": 23,
+          "StaticText": 59,
+          "heading": 7,
+          "paragraph": 1,
+          "LabelText": 20,
+          "group": 2,
+          "switch": 1,
+          "InlineTextBox": 62,
+          "textbox": 9,
+          "Legend": 2,
+          "radio": 3,
+          "combobox": 1,
+          "listbox": 1,
+          "spinbutton": 7,
+          "searchbox": 1,
+          "Date": 1,
+          "InputTime": 1,
+          "slider": 1,
+          "button": 3,
+          "ColorWell": 1,
+          "checkbox": 2,
+          "MenuListPopup": 1,
+          "option": 8
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /docs/navigation-completion.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris 0.33 — Navigation Completion",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 11,
+          "main": 1,
+          "sectionheader": 2,
+          "generic": 6,
+          "heading": 6,
+          "paragraph": 2,
+          "navigation": 3,
+          "group": 3,
+          "StaticText": 24,
+          "link": 11,
+          "DisclosureTriangle": 3,
+          "InlineTextBox": 24
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /docs/overlays.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris Overlays & Disclosure",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 15,
+          "main": 1,
+          "heading": 6,
+          "paragraph": 2,
+          "generic": 9,
+          "StaticText": 20,
+          "button": 4,
+          "group": 3,
+          "InlineTextBox": 24,
+          "DisclosureTriangle": 3
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /docs/tables.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris UI — Tables",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 12,
+          "main": 1,
+          "sectionheader": 1,
+          "generic": 5,
+          "heading": 3,
+          "paragraph": 2,
+          "searchbox": 1,
+          "table": 2,
+          "StaticText": 36,
+          "button": 2,
+          "caption": 1,
+          "rowgroup": 2,
+          "row": 7,
+          "InlineTextBox": 37,
+          "code": 1,
+          "rowheader": 3,
+          "cell": 15,
+          "columnheader": 7
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /docs/browser-reflow.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris UI — Browser, Keyboard & Reflow Acceptance Fixture",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 38,
+          "main": 1,
+          "sectionheader": 1,
+          "generic": 6,
+          "region": 1,
+          "heading": 5,
+          "paragraph": 6,
+          "navigation": 1,
+          "group": 2,
+          "button": 2,
+          "link": 5,
+          "LabelText": 3,
+          "StaticText": 37,
+          "textbox": 1,
+          "list": 2,
+          "table": 1,
+          "DisclosureTriangle": 1,
+          "InlineTextBox": 42,
+          "Legend": 1,
+          "listitem": 2,
+          "rowgroup": 1,
+          "row": 2,
+          "radio": 2,
+          "cell": 3,
+          "columnheader": 3
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /tests/i18n/index.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris i18n stress fixture",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 24,
+          "main": 1,
+          "sectionheader": 1,
+          "generic": 8,
+          "StaticText": 51,
+          "heading": 6,
+          "paragraph": 5,
+          "navigation": 1,
+          "LabelText": 2,
+          "textbox": 2,
+          "term": 2,
+          "definition": 2,
+          "link": 4,
+          "group": 1,
+          "button": 2,
+          "table": 1,
+          "InlineTextBox": 54,
+          "time": 3,
+          "DisclosureTriangle": 1,
+          "strong": 1,
+          "rowgroup": 1,
+          "row": 3,
+          "cell": 8,
+          "columnheader": 4
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "smoke /examples/starters/dashboard.html",
+      "pass": true,
+      "detail": {
+        "title": "Reeris Starter — Dashboard",
+        "runtimeErrors": [],
+        "consoleErrors": [],
+        "axRoles": {
+          "RootWebArea": 1,
+          "none": 52,
+          "complementary": 1,
+          "banner": 1,
+          "main": 1,
+          "strong": 5,
+          "navigation": 1,
+          "StaticText": 59,
+          "heading": 6,
+          "button": 5,
+          "sectionheader": 5,
+          "region": 1,
+          "generic": 2,
+          "link": 5,
+          "InlineTextBox": 59,
+          "paragraph": 9,
+          "article": 7,
+          "table": 1,
+          "list": 1,
+          "rowgroup": 1,
+          "row": 4,
+          "listitem": 3,
+          "rowheader": 3,
+          "cell": 6,
+          "columnheader": 3
+        },
+        "mode": "injected"
+      }
+    },
+    {
+      "name": "keyboard switch toggles with Space",
+      "pass": true,
+      "detail": {
+        "before": {
+          "checked": true,
+          "focused": true
+        },
+        "after": {
+          "checked": false,
+          "focused": true
+        }
+      }
+    },
+    {
+      "name": "native dialog opens and Escape closes",
+      "pass": true,
+      "detail": {
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "name": "native disclosure opens with Enter",
+      "pass": true,
+      "detail": {
+        "before": false,
+        "after": true
+      }
+    },
+    {
+      "name": "glide navigation initializes",
+      "pass": true,
+      "detail": {
+        "ready": true,
+        "links": 5
+      }
+    },
+    {
+      "name": "320px viewport has no document overflow",
+      "pass": true,
+      "detail": {
+        "overflow": 0
+      }
+    },
+    {
+      "name": "forced-colors media emulation activates",
+      "pass": true,
+      "detail": {
+        "active": true,
+        "screenshot": {
+          "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/forced-colors.png",
+          "bytes": 37527,
+          "sha256": "d36f34def448a084afcd2b600bf74489934b96370e2afce774b12362f08faf14"
+        }
+      }
+    },
+    {
+      "name": "prefers-contrast media emulation activates",
+      "pass": true,
+      "detail": {
+        "active": true,
+        "screenshot": {
+          "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/prefers-contrast-more.png",
+          "bytes": 76464,
+          "sha256": "d3063e753a0b0c08f564e04a21f065f431b3d5637dd19e438930d0d731ae243e"
+        }
+      }
+    }
+  ],
+  "visualCandidates": [
+    {
+      "id": "core-system-default-ltr",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-system-default-ltr.png",
+        "bytes": 221713,
+        "sha256": "56e701e6458b16ef51480203057790c266a9ef72ff43bec3f72cd50dbdd6405b"
+      }
+    },
+    {
+      "id": "core-light-default-ltr",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-light-default-ltr.png",
+        "bytes": 221176,
+        "sha256": "fb9b07e95549c5c1d104ea2e31da175da6cd44aa64fff01d2e66c98fa6d041e4"
+      }
+    },
+    {
+      "id": "core-dark-default-ltr",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-dark-default-ltr.png",
+        "bytes": 230821,
+        "sha256": "fa880f0d988fcb92c7c6d1350a00c8b622ac29c17c55edf9ce6f3b81eba23ca7"
+      }
+    },
+    {
+      "id": "core-light-compact-ltr",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-light-compact-ltr.png",
+        "bytes": 221737,
+        "sha256": "9362cdf7b0cbfe7ae1fb0491976448b03d62aea2c1040a0f339ffacd905cb5e4"
+      }
+    },
+    {
+      "id": "core-dark-comfortable-ltr",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-dark-comfortable-ltr.png",
+        "bytes": 237478,
+        "sha256": "0fe67f1193324806aa52238b55be0c5d9daa053e7071a01f447c4d3574a12532"
+      }
+    },
+    {
+      "id": "core-light-default-rtl",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-light-default-rtl.png",
+        "bytes": 221431,
+        "sha256": "6179b9d1aa03d850c0369de5c59aab2d2014a2720cc12e9c54c46d2cfcb3291a"
+      }
+    },
+    {
+      "id": "core-dark-soft-rtl",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-dark-soft-rtl.png",
+        "bytes": 243352,
+        "sha256": "9bccc330e332080a6a34bb9ffd5c2a62f479f55450f8b26bcfe08c8c39a9f0a8"
+      }
+    },
+    {
+      "id": "core-mobile-system",
+      "pass": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-mobile-system.png",
+        "bytes": 192616,
+        "sha256": "9d0c150402118f370831fcc6ddae2fb59a82ba42cc01355143afc5b211e41170"
+      }
+    },
+    {
+      "id": "core-mobile-dark-compact",
+      "pass": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/core-mobile-dark-compact.png",
+        "bytes": 196101,
+        "sha256": "bd7b37289fbd2b792f71a28c39570c4498dbcf2724482818b700e4807e992590"
+      }
+    },
+    {
+      "id": "starter-dashboard-system",
+      "pass": true,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/starter-dashboard-system.png",
+        "bytes": 118195,
+        "sha256": "8b565c5d42ed710a5f2bef7bcb69c8ea0d41f38f72a4ba91f2a0dabb817f00aa"
+      }
+    },
+    {
+      "id": "starter-data-system",
+      "pass": true,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/starter-data-system.png",
+        "bytes": 101488,
+        "sha256": "58c6bdb50a1e00b308dd41759c156d85f570183582733a3c3e28edcdc3e7d76b"
+      }
+    },
+    {
+      "id": "starter-marketing-system",
+      "pass": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/starter-marketing-system.png",
+        "bytes": 329442,
+        "sha256": "0fd8f4afd4b08d53d68ee78d84559fee015a1a46a94bc7e8b7fe8ac6b3718739"
+      }
+    },
+    {
+      "id": "i18n-rtl-desktop",
+      "pass": true,
+      "viewport": {
+        "width": 1280,
+        "height": 1600
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/i18n-rtl-desktop.png",
+        "bytes": 150279,
+        "sha256": "389a4daac81a9f3d36a2b1b4a434c2a82563f259c3f65a61c64fdba0352014a9"
+      }
+    },
+    {
+      "id": "i18n-rtl-mobile",
+      "pass": true,
+      "viewport": {
+        "width": 390,
+        "height": 1200
+      },
+      "overflow": 0,
+      "image": {
+        "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/visual/i18n-rtl-mobile.png",
+        "bytes": 148552,
+        "sha256": "33456ee6d86e987c1bbcbf0f07a674d765c9b3becc53de4fc62d7151be4df1ff"
+      }
+    }
+  ],
+  "boundary": "Supplemental local Chromium evidence only. Injected mode is a render/interaction fallback for a managed environment that blocks localhost navigation. This run does not satisfy branded Chrome/Edge/Firefox/Safari, real mobile device, screen-reader, real zoom/touch, Windows High Contrast, or human-approved visual baseline closure criteria."
+}

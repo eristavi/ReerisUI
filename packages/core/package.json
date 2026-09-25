@@ -1,0 +1,42 @@
+{
+  "name": "@reeris/core",
+  "version": "0.52.0",
+  "type": "module",
+  "sideEffects": [
+    "*.css",
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./dist/reeris.css",
+    "./reeris.css": "./dist/reeris.css",
+    "./components/*.css": "./dist/components/*.css",
+    "./forms/*.css": "./dist/forms/*.css",
+    "./layout/*.css": "./dist/layout/*.css",
+    "./utilities/*.css": "./dist/utilities/*.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./tokens.js": "./dist/tokens.js",
+    "./reeris.min.css": "./dist/reeris.min.css",
+    "./reeris.css.map": "./dist/reeris.css.map",
+    "./reeris.min.css.map": "./dist/reeris.min.css.map",
+    "./sources/*": "./dist/sources/*"
+  },
+  "license": "MIT",
+  "description": "Reeris UI Core — native-web CSS components, design tokens, forms, layout and utilities.",
+  "keywords": [
+    "css",
+    "ui",
+    "design-system",
+    "components",
+    "native-web",
+    "accessibility"
+  ],
+  "style": "./dist/reeris.css",
+  "unpkg": "./dist/reeris.min.css",
+  "jsdelivr": "./dist/reeris.min.css",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

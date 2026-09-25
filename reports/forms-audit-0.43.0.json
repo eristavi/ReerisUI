@@ -1,0 +1,137 @@
+{
+  "version": "0.43.0",
+  "generatedAt": "2026-09-25T08:53:27.786Z",
+  "source": "packages/core/src/forms/forms.css",
+  "checks": [
+    {
+      "name": "text controls",
+      "passed": true
+    },
+    {
+      "name": "five control sizes",
+      "passed": true
+    },
+    {
+      "name": "textarea size variants",
+      "passed": true
+    },
+    {
+      "name": "native invalid state",
+      "passed": true
+    },
+    {
+      "name": "server/custom invalid state",
+      "passed": true
+    },
+    {
+      "name": "native valid state",
+      "passed": true
+    },
+    {
+      "name": "disabled state",
+      "passed": true
+    },
+    {
+      "name": "read-only state",
+      "passed": true
+    },
+    {
+      "name": "checkbox and radio",
+      "passed": true
+    },
+    {
+      "name": "indeterminate checkbox",
+      "passed": true
+    },
+    {
+      "name": "switch",
+      "passed": true
+    },
+    {
+      "name": "choice groups",
+      "passed": true
+    },
+    {
+      "name": "input groups and addons",
+      "passed": true
+    },
+    {
+      "name": "decorated inputs and actions",
+      "passed": true
+    },
+    {
+      "name": "floating labels",
+      "passed": true
+    },
+    {
+      "name": "search input",
+      "passed": true
+    },
+    {
+      "name": "native date and time controls",
+      "passed": true
+    },
+    {
+      "name": "file input",
+      "passed": true
+    },
+    {
+      "name": "drop-zone presentation",
+      "passed": true
+    },
+    {
+      "name": "range input",
+      "passed": true
+    },
+    {
+      "name": "color input",
+      "passed": true
+    },
+    {
+      "name": "OTP/PIN layout",
+      "passed": true
+    },
+    {
+      "name": "strength presentation",
+      "passed": true
+    },
+    {
+      "name": "loading state",
+      "passed": true
+    },
+    {
+      "name": "ARIA busy state",
+      "passed": true
+    },
+    {
+      "name": "form grid",
+      "passed": true
+    },
+    {
+      "name": "responsive horizontal fields",
+      "passed": true
+    },
+    {
+      "name": "fieldsets",
+      "passed": true
+    },
+    {
+      "name": "progressive customizable select",
+      "passed": true
+    },
+    {
+      "name": "RTL-specific handling",
+      "passed": true
+    },
+    {
+      "name": "forced-colors handling",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion handling",
+      "passed": true
+    }
+  ],
+  "passed": 32,
+  "failed": 0
+}

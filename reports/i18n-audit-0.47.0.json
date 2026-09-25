@@ -1,0 +1,129 @@
+{
+  "version": "0.47.0",
+  "generatedAt": "2026-09-25T10:45:38.371Z",
+  "summary": {
+    "passed": 22,
+    "total": 22,
+    "failed": 0
+  },
+  "manualGate": [
+    "Screen-reader reading order in Arabic/Hebrew",
+    "Native control rendering under RTL in Safari/iOS and Chrome/Android",
+    "Locale-formatted dates/numbers supplied by applications",
+    "Font fallback quality for Arabic, Hebrew and CJK",
+    "Directional icon review for application-provided icon sets"
+  ],
+  "failures": [],
+  "checks": [
+    {
+      "name": "i18n stress fixture exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture language represented: ar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture language represented: he",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture language represented: de",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture language represented: ja",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Arabic RTL fixture represented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Hebrew RTL fixture represented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bidi isolation examples use bdi",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic time examples included",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Long translation stress included",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core does not globally force direction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core avoids physical text alignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core uses logical inline spacing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Logical safe-area start token exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Logical safe-area end token exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "RTL swaps logical safe-area tokens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "FAB uses logical safe-area end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Toast start/end use logical safe-area aliases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sidebar subnav indentation is logical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Tree directional disclosure mirrors in RTL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No physical directional box properties remain",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Only documented physical left anchor is glide geometry",
+      "pass": true,
+      "detail": "left declarations=1"
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "version": "0.52.0",
+  "generatedAt": "2026-09-25T13:08:45.358Z",
+  "criteria": [
+    {
+      "id": "desktop-browser-matrix/chrome-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "chrome-desktop-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/desktop-browser-matrix--chrome-desktop-real.md",
+      "template": "tests/release/evidence-templates/desktop-browser-matrix--chrome-desktop-real.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/edge-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "edge-desktop-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/desktop-browser-matrix--edge-desktop-real.md",
+      "template": "tests/release/evidence-templates/desktop-browser-matrix--edge-desktop-real.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/firefox-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "firefox-desktop-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/desktop-browser-matrix--firefox-desktop-real.md",
+      "template": "tests/release/evidence-templates/desktop-browser-matrix--firefox-desktop-real.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/safari-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "safari-desktop-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/desktop-browser-matrix--safari-desktop-real.md",
+      "template": "tests/release/evidence-templates/desktop-browser-matrix--safari-desktop-real.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/safari-ios-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "safari-ios-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/mobile-browser-matrix--safari-ios-real.md",
+      "template": "tests/release/evidence-templates/mobile-browser-matrix--safari-ios-real.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/safari-ipados-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "safari-ipados-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/mobile-browser-matrix--safari-ipados-real.md",
+      "template": "tests/release/evidence-templates/mobile-browser-matrix--safari-ipados-real.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/chrome-android-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "chrome-android-real",
+      "kind": "manual-browser",
+      "pack": "tests/release/external-lab/packs/mobile-browser-matrix--chrome-android-real.md",
+      "template": "tests/release/evidence-templates/mobile-browser-matrix--chrome-android-real.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "assistive-technology/keyboard-manual",
+      "gateId": "assistive-technology",
+      "criterionId": "keyboard-manual",
+      "kind": "assistive-technology",
+      "pack": "tests/release/external-lab/packs/assistive-technology--keyboard-manual.md",
+      "template": "tests/release/evidence-templates/assistive-technology--keyboard-manual.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/browser-reflow.html"
+      ]
+    },
+    {
+      "id": "assistive-technology/nvda-desktop",
+      "gateId": "assistive-technology",
+      "criterionId": "nvda-desktop",
+      "kind": "assistive-technology",
+      "pack": "tests/release/external-lab/packs/assistive-technology--nvda-desktop.md",
+      "template": "tests/release/evidence-templates/assistive-technology--nvda-desktop.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "assistive-technology/voiceover-safari",
+      "gateId": "assistive-technology",
+      "criterionId": "voiceover-safari",
+      "kind": "assistive-technology",
+      "pack": "tests/release/external-lab/packs/assistive-technology--voiceover-safari.md",
+      "template": "tests/release/evidence-templates/assistive-technology--voiceover-safari.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "assistive-technology/talkback-chrome",
+      "gateId": "assistive-technology",
+      "criterionId": "talkback-chrome",
+      "kind": "assistive-technology",
+      "pack": "tests/release/external-lab/packs/assistive-technology--talkback-chrome.md",
+      "template": "tests/release/evidence-templates/assistive-technology--talkback-chrome.json",
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/zoom-200-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "zoom-200-real",
+      "kind": "zoom-reflow",
+      "pack": "tests/release/external-lab/packs/zoom-reflow-touch--zoom-200-real.md",
+      "template": "tests/release/evidence-templates/zoom-reflow-touch--zoom-200-real.json",
+      "fixtures": [
+        "docs/browser-reflow.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/tables.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/zoom-400-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "zoom-400-real",
+      "kind": "zoom-reflow",
+      "pack": "tests/release/external-lab/packs/zoom-reflow-touch--zoom-400-real.md",
+      "template": "tests/release/evidence-templates/zoom-reflow-touch--zoom-400-real.json",
+      "fixtures": [
+        "docs/browser-reflow.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/tables.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/touch-targets-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "touch-targets-real",
+      "kind": "zoom-reflow",
+      "pack": "tests/release/external-lab/packs/zoom-reflow-touch--touch-targets-real.md",
+      "template": "tests/release/evidence-templates/zoom-reflow-touch--touch-targets-real.json",
+      "fixtures": [
+        "docs/button.html",
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/choice.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast/windows-forced-colors-real",
+      "gateId": "forced-colors-high-contrast",
+      "criterionId": "windows-forced-colors-real",
+      "kind": "forced-colors",
+      "pack": "tests/release/external-lab/packs/forced-colors-high-contrast--windows-forced-colors-real.md",
+      "template": "tests/release/evidence-templates/forced-colors-high-contrast--windows-forced-colors-real.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast/prefers-contrast-review",
+      "gateId": "forced-colors-high-contrast",
+      "criterionId": "prefers-contrast-review",
+      "kind": "forced-colors",
+      "pack": "tests/release/external-lab/packs/forced-colors-high-contrast--prefers-contrast-review.md",
+      "template": "tests/release/evidence-templates/forced-colors-high-contrast--prefers-contrast-review.json",
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/content-states.html"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines/baseline-human-approved",
+      "gateId": "visual-regression-baselines",
+      "criterionId": "baseline-human-approved",
+      "kind": "visual-review",
+      "pack": "tests/release/external-lab/packs/visual-regression-baselines--baseline-human-approved.md",
+      "template": "tests/release/evidence-templates/visual-regression-baselines--baseline-human-approved.json",
+      "fixtures": [
+        "docs/visual-regression.html",
+        "examples/starters/dashboard.html",
+        "examples/starters/data-management.html",
+        "examples/starters/marketing.html",
+        "tests/i18n/index.html"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines/baseline-compare-pass",
+      "gateId": "visual-regression-baselines",
+      "criterionId": "baseline-compare-pass",
+      "kind": "visual-review",
+      "pack": "tests/release/external-lab/packs/visual-regression-baselines--baseline-compare-pass.md",
+      "template": "tests/release/evidence-templates/visual-regression-baselines--baseline-compare-pass.json",
+      "fixtures": [
+        "docs/visual-regression.html"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance/project-name-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "project-name-clearance",
+      "kind": "name-clearance",
+      "pack": "tests/release/external-lab/packs/public-name-namespace-clearance--project-name-clearance.md",
+      "template": "tests/release/evidence-templates/public-name-namespace-clearance--project-name-clearance.json",
+      "fixtures": []
+    },
+    {
+      "id": "public-name-namespace-clearance/package-namespace-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "package-namespace-clearance",
+      "kind": "name-clearance",
+      "pack": "tests/release/external-lab/packs/public-name-namespace-clearance--package-namespace-clearance.md",
+      "template": "tests/release/evidence-templates/public-name-namespace-clearance--package-namespace-clearance.json",
+      "fixtures": []
+    },
+    {
+      "id": "public-name-namespace-clearance/repository-domain-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "repository-domain-clearance",
+      "kind": "name-clearance",
+      "pack": "tests/release/external-lab/packs/public-name-namespace-clearance--repository-domain-clearance.md",
+      "template": "tests/release/evidence-templates/public-name-namespace-clearance--repository-domain-clearance.json",
+      "fixtures": []
+    }
+  ]
+}

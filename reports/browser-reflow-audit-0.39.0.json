@@ -1,0 +1,319 @@
+{
+  "version": "0.39.0",
+  "generatedAt": "2026-09-25T08:21:52.695Z",
+  "scope": "Static keyboard, browser-prerequisite, zoom/reflow acceptance audit for feature-frozen Reeris Core",
+  "environment": {
+    "chromiumDetected": true,
+    "runtimeNote": "This audit is static. The build container Chromium process is not a substitute for the published desktop/mobile browser matrix; interactive verification remains a manual/release-lab gate."
+  },
+  "summary": {
+    "total": 41,
+    "passed": 41,
+    "failed": 0,
+    "docsChecked": 33,
+    "cssFiles": 36
+  },
+  "nowrapDeclarations": [
+    {
+      "file": "packages/core/src/components/app-shell.css",
+      "line": 42,
+      "text": ":where(.app-shell[data-reeris-state=\"collapsed\"] .app-sidebar-label) { position:absolute; inline-size:1px; block-size:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }"
+    },
+    {
+      "file": "packages/core/src/components/commerce.css",
+      "line": 15,
+      "text": ":where(.product-price,.order-total,.transaction-amount,.money) { font-variant-numeric:tabular-nums; font-weight:var(--reeris-font-weight-semibold); text-align:end; white-space:nowrap; }"
+    },
+    {
+      "file": "packages/core/src/components/messaging.css",
+      "line": 28,
+      "text": ":where(.message-sender,.message-subject,.message-preview) { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }"
+    },
+    {
+      "file": "packages/core/src/components/messaging.css",
+      "line": 30,
+      "text": ":where(.message-time) { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); white-space:nowrap; }"
+    },
+    {
+      "file": "packages/core/src/components/tables.css",
+      "line": 21,
+      "text": ":where(.table .nowrap) { white-space:nowrap; }"
+    },
+    {
+      "file": "packages/core/src/components/tables.css",
+      "line": 22,
+      "text": ":where(.table .cell-actions) { inline-size:1%; white-space:nowrap; text-align:end; }"
+    },
+    {
+      "file": "packages/core/src/components/tables.css",
+      "line": 50,
+      "text": ":where(.table.stack thead) { position:absolute; inline-size:1px; block-size:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }"
+    },
+    {
+      "file": "packages/core/src/utilities/accessibility.css",
+      "line": 10,
+      "text": "white-space: nowrap !important;"
+    },
+    {
+      "file": "packages/core/src/utilities/accessibility.css",
+      "line": 21,
+      "text": "white-space: nowrap !important;"
+    }
+  ],
+  "checks": [
+    {
+      "id": "global-focus-visible",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Global :focus-visible indicator is present."
+    },
+    {
+      "id": "no-outline-suppression",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Core CSS does not suppress focus outlines."
+    },
+    {
+      "id": "hover-card-focus-path",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Hover-card content opens for keyboard focus as well as pointer hover."
+    },
+    {
+      "id": "dropzone-focus-path",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Drop-zone highlight has a focus-within path."
+    },
+    {
+      "id": "glide-follow-focus",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Optional glide navigation follows keyboard focus."
+    },
+    {
+      "id": "glide-pointer-not-touch-only",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Glide pointer enhancement avoids relying on touch hover."
+    },
+    {
+      "id": "aria-disabled-not-pointer-blocked",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "ARIA-disabled controls are not pointer-only disabled in CSS."
+    },
+    {
+      "id": "native-details-used",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Documentation exercises native details/summary disclosure patterns."
+    },
+    {
+      "id": "native-dialog-used",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Documentation exercises native dialog semantics."
+    },
+    {
+      "id": "no-inline-event-handlers",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Documentation does not depend on inline event handlers."
+    },
+    {
+      "id": "no-div-button-pattern",
+      "category": "keyboard",
+      "pass": true,
+      "detail": "Documentation does not model generic div/span button or link roles."
+    },
+    {
+      "id": "text-size-adjust",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Browser text-size adjustment is not disabled."
+    },
+    {
+      "id": "long-content-wrap",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Long prose/table content has a global overflow-wrap safety net."
+    },
+    {
+      "id": "button-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Buttons may grow and wrap long/translated labels."
+    },
+    {
+      "id": "input-group-shrink-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Input groups can shrink inside narrow containers."
+    },
+    {
+      "id": "input-addon-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Input addons wrap instead of forcing horizontal overflow."
+    },
+    {
+      "id": "dialog-viewport-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Dialog width is capped to the logical viewport."
+    },
+    {
+      "id": "drawer-viewport-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Drawers use logical/dynamic viewport constraints."
+    },
+    {
+      "id": "mega-menu-viewport-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Mega-menu width is capped to the logical viewport."
+    },
+    {
+      "id": "hover-card-viewport-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Hover-card width is capped to the logical viewport."
+    },
+    {
+      "id": "command-palette-viewport-safe",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Command palette width is capped to the logical viewport."
+    },
+    {
+      "id": "identity-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Identity text wraps instead of being permanently ellipsized."
+    },
+    {
+      "id": "file-name-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "File names can wrap at narrow widths."
+    },
+    {
+      "id": "tree-label-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Tree labels can wrap at narrow widths."
+    },
+    {
+      "id": "message-narrow-wrap",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Inbox/message text unwraps in narrow containers."
+    },
+    {
+      "id": "app-title-wraps",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Application title can wrap rather than clip."
+    },
+    {
+      "id": "table-horizontal-fallback",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Wide semantic tables have an explicit scrolling fallback."
+    },
+    {
+      "id": "table-stack-mode",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Tables provide an opt-in container-aware stacked presentation."
+    },
+    {
+      "id": "no-100vw-in-core",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Core does not use physical 100vw sizing that can induce scrollbar overflow."
+    },
+    {
+      "id": "no-100vh-in-core",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Core uses dynamic/logical viewport units rather than 100vh."
+    },
+    {
+      "id": "no-root-overflow-hidden",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Core does not globally hide horizontal overflow."
+    },
+    {
+      "id": "responsive-breakpoints-rem",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Viewport breakpoints are not hard-coded in px."
+    },
+    {
+      "id": "container-query-coverage",
+      "category": "reflow",
+      "pass": true,
+      "detail": "Core contains broad container-query coverage for component reflow."
+    },
+    {
+      "id": "nowrap-is-intentional",
+      "category": "reflow",
+      "pass": true,
+      "detail": "9 nowrap declarations found; 9 match the intentional allowlist."
+    },
+    {
+      "id": "logical-properties-present",
+      "category": "browser",
+      "pass": true,
+      "detail": "Logical properties are used for direction-independent layout."
+    },
+    {
+      "id": "progressive-support-guards",
+      "category": "browser",
+      "pass": true,
+      "detail": "Progressive browser features are protected with @supports."
+    },
+    {
+      "id": "forced-colors-present",
+      "category": "browser",
+      "pass": true,
+      "detail": "Forced-colors adaptations are present."
+    },
+    {
+      "id": "reduced-motion-present",
+      "category": "browser",
+      "pass": true,
+      "detail": "Reduced-motion adaptations are present."
+    },
+    {
+      "id": "touch-capability-query",
+      "category": "browser",
+      "pass": true,
+      "detail": "At least one touch/no-hover capability adaptation is present."
+    },
+    {
+      "id": "safe-area-support",
+      "category": "browser",
+      "pass": true,
+      "detail": "Safe-area insets are exposed/used for mobile browser UI."
+    },
+    {
+      "id": "print-support",
+      "category": "browser",
+      "pass": true,
+      "detail": "Print fallback rules are present."
+    }
+  ],
+  "manualGate": [
+    "Keyboard-only traversal: Tab/Shift+Tab, Enter/Space, Escape, native details/dialog/popover behavior, visible focus, no focus traps outside modals.",
+    "Zoom/reflow at 200% and 400% at a 1280 CSS-pixel desktop baseline and narrow mobile widths; verify no loss of content/functionality and no two-dimensional scrolling except data tables or intentionally scrollable regions.",
+    "Safari macOS/iOS/iPadOS, Chrome/Edge/Firefox desktop, Chrome Android using the release-specific tested version matrix.",
+    "Touch target and gesture review on physical/mobile emulation, including fixed bottom navigation and drawers.",
+    "RTL plus long translated strings at 200%/400% zoom.",
+    "Screen-reader pass for dynamic overlays, menus, validation, loading and transient feedback."
+  ]
+}

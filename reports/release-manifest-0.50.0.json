@@ -1,0 +1,277 @@
+{
+  "name": "Reeris UI",
+  "version": "0.50.0",
+  "generatedAt": "2026-09-25T11:24:52.358Z",
+  "license": "MIT",
+  "artifacts": [
+    {
+      "file": "packages/core/dist/reeris.css",
+      "bytes": 224540,
+      "sha256": "000574189e982c891caa3c6183a8a0e22da10684e970d1b6a5a6965240e3d0f5"
+    },
+    {
+      "file": "packages/core/dist/reeris.min.css",
+      "bytes": 204334,
+      "sha256": "c47af348333128893a7f5ab21649e0c764323f2baf6279d07f326b823d928fed"
+    },
+    {
+      "file": "packages/core/dist/reeris.css.map",
+      "bytes": 16993,
+      "sha256": "8ca63737a1be2fa1f7bda229dad4a57b57264568dd3741d177db9ba434e73b3d"
+    },
+    {
+      "file": "packages/core/dist/reeris.min.css.map",
+      "bytes": 17672,
+      "sha256": "bfb85cb11eb68ac7bd1b87acec3bf6edcd2b44434746c5c4aae1dafcad877b65"
+    },
+    {
+      "file": "packages/core/dist/tokens.json",
+      "bytes": 8959,
+      "sha256": "f62a7a396c708b7d6c42aa7b9f465f8b1f90b6d5dcecc83bb8afa0a69b3eea4e"
+    },
+    {
+      "file": "packages/core/dist/tokens.js",
+      "bytes": 8982,
+      "sha256": "058b8a6abe9c5f1adbc6e68b30a93e27a0b1f71b731c4e3f010b59aeb582aa4e"
+    },
+    {
+      "file": "packages/js/dist/index.js",
+      "bytes": 1208,
+      "sha256": "bac2d8288fe5b0797ef27ba075358374096a6e03802cd9e50852baa36286b716"
+    },
+    {
+      "file": "packages/js/dist/glide-navigation.js",
+      "bytes": 4243,
+      "sha256": "5d47c976016363b04fd869f9417367bab5dff8f4bea6605fa4b1b268fd697f05"
+    }
+  ],
+  "releaseEvidence": [
+    {
+      "file": "tests/release/public-api-freeze.json",
+      "bytes": 66600,
+      "sha256": "34a6a64144a63c986113dbcb2fc30e368019453b778bec11169e8cca6eb0896d"
+    },
+    {
+      "file": "tests/release/external-lab/test-catalog.json",
+      "bytes": 46729,
+      "sha256": "6f19116e431865293619d972bc7ef06c6ffc9c8381917760cb79f22d71c5b726"
+    },
+    {
+      "file": "tests/release/external-lab/manifest.json",
+      "bytes": 13042,
+      "sha256": "fa7ca1f23ad38d3e06cac2f3ce798114352a7439b4214e1cd391ec9931483b66"
+    },
+    {
+      "file": "tests/release/evidence-artifacts/0.50.0/local-chromium/local-chromium-report.json",
+      "bytes": 14683,
+      "sha256": "ac1e3794cb04cfdd087659f95010f68f8eca940e049171f0ca3d008071c79798"
+    },
+    {
+      "file": "tests/release/manual-gates.json",
+      "bytes": 6717,
+      "sha256": "5aa1062a612e1c9a37441db7f398be87291bc33dfc419afc5330193108f37fef"
+    },
+    {
+      "file": "tests/release/gate-criteria.json",
+      "bytes": 5566,
+      "sha256": "272e997fc798c97d1526d0925659e334f2523ad21faa688ebf21f9835ee27803"
+    },
+    {
+      "file": "tests/release/evidence-schema.json",
+      "bytes": 1783,
+      "sha256": "382b49133fc3c1cf51fc5a56fa779e4845e15ddefd815d0039c9f3a6a9b69df8"
+    },
+    {
+      "file": "tests/release/browser-evidence-schema.json",
+      "bytes": 810,
+      "sha256": "5da1a7b9196a8d1a3223d3da7fff72f7ab424dc344044f262125bf00863a2eba"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "bytes": 1508,
+      "sha256": "49d5b1e500910def0df58065fd36d39867966c8ff801cade924039ff59c0a218"
+    },
+    {
+      "file": ".github/workflows/rc-browser-matrix.yml",
+      "bytes": 2358,
+      "sha256": "697ff361e32f2651635304156621cc26ac176cc5319e850de4ce36aaebb36bf2"
+    },
+    {
+      "file": "DEPRECATIONS.md",
+      "bytes": 1754,
+      "sha256": "c33d4ec1b48e385ff18c5c287a0bfd1e1fd69c9c903a65cefe858468136d02ac"
+    }
+  ],
+  "audits": {
+    "core-scope": {
+      "file": "reports/core-scope-0.50.0.json"
+    },
+    "forms-audit": {
+      "file": "reports/forms-audit-0.50.0.json"
+    },
+    "content-states-audit": {
+      "file": "reports/content-states-audit-0.50.0.json"
+    },
+    "accessibility-audit": {
+      "file": "reports/accessibility-audit-0.50.0.json",
+      "summary": {
+        "total": 51,
+        "passed": 51,
+        "failed": 0,
+        "docsChecked": 42
+      }
+    },
+    "browser-reflow-audit": {
+      "file": "reports/browser-reflow-audit-0.50.0.json",
+      "summary": {
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "docsChecked": 42,
+        "cssFiles": 36
+      }
+    },
+    "css-architecture-audit": {
+      "file": "reports/css-architecture-audit-0.50.0.json",
+      "summary": {
+        "total": 14,
+        "passed": 14,
+        "failed": 0,
+        "qualifiedRules": 1440,
+        "individualSelectors": 1462,
+        "sourceCssModules": 35
+      }
+    },
+    "documentation-audit": {
+      "file": "reports/documentation-audit-0.50.0.json",
+      "summary": {
+        "passed": 1540,
+        "total": 1540,
+        "failed": 0,
+        "sourceModules": 36,
+        "classes": 732,
+        "tokens": 518,
+        "definedTokens": 491,
+        "overrideHooks": 27,
+        "dataAttributes": 11,
+        "packageExports": 14,
+        "jsApi": 5
+      }
+    },
+    "starters-integration-audit": {
+      "file": "reports/starters-integration-audit-0.50.0.json",
+      "summary": {
+        "passed": 104,
+        "total": 104,
+        "failed": 0,
+        "starters": 5,
+        "publicClassesAvailable": 732
+      }
+    },
+    "security-audit": {
+      "file": "reports/security-audit-0.50.0.json",
+      "summary": {
+        "passed": 399,
+        "total": 399,
+        "failed": 0,
+        "jsFiles": 4,
+        "cssFiles": 108
+      }
+    },
+    "package-release-audit": {
+      "file": "reports/package-release-audit-0.50.0.json",
+      "summary": {
+        "passed": 82,
+        "total": 82,
+        "failed": 0,
+        "packages": 2
+      }
+    },
+    "build-reproducibility-audit": {
+      "file": "reports/build-reproducibility-audit-0.50.0.json",
+      "summary": {
+        "passed": 286,
+        "total": 286,
+        "failed": 0,
+        "artifacts": 78,
+        "sourceModules": 36,
+        "treeHash": "7b70eb198cb1585dd1f543f38e0a6707532e592b1daf5cfe2761e75c0e5ca697",
+        "fullMapSources": 36,
+        "fullMapSegments": 3129,
+        "minMapSources": 36,
+        "minMapSegments": 2783
+      }
+    },
+    "visual-regression-audit": {
+      "file": "reports/visual-regression-audit-0.50.0.json",
+      "summary": {
+        "passed": 169,
+        "total": 169,
+        "failed": 0,
+        "cases": 14,
+        "htmlPages": 48
+      }
+    },
+    "i18n-audit": {
+      "file": "reports/i18n-audit-0.50.0.json",
+      "summary": {
+        "passed": 22,
+        "total": 22,
+        "failed": 0
+      }
+    },
+    "theme-audit": {
+      "file": "reports/theme-audit-0.50.0.json",
+      "summary": {
+        "passed": 114,
+        "total": 114,
+        "failed": 0,
+        "officialContrastCases": 28,
+        "customContrastCases": 42
+      }
+    },
+    "rc-browser-infrastructure-audit": {
+      "file": "reports/rc-browser-infrastructure-audit-0.50.0.json",
+      "summary": {
+        "passed": 52,
+        "total": 52,
+        "failed": 0
+      }
+    },
+    "local-chromium-evidence-audit": {
+      "file": "reports/local-chromium-evidence-audit-0.50.0.json",
+      "summary": {
+        "passed": 66,
+        "total": 66,
+        "failed": 0
+      }
+    },
+    "external-release-lab-audit": {
+      "file": "reports/external-release-lab-audit-0.50.0.json",
+      "summary": {
+        "passed": 482,
+        "total": 482,
+        "failed": 0
+      }
+    },
+    "release-lab-audit": {
+      "file": "reports/release-lab-audit-0.50.0.json",
+      "summary": {
+        "passed": 13,
+        "total": 13,
+        "failed": 0
+      }
+    },
+    "rc-readiness-audit": {
+      "file": "reports/rc-readiness-audit-0.50.0.json",
+      "summary": {
+        "passed": 87,
+        "total": 87,
+        "failed": 0
+      }
+    }
+  },
+  "securityPolicy": "SECURITY.md",
+  "changelog": "CHANGELOG.md",
+  "rcStatus": "ready-for-rc-validation"
+}

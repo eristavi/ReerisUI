@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Reeris i18n stress fixture</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+</head>
+<body>
+<main class="l-stack" style="max-inline-size:76rem;margin-inline:auto;padding:var(--reeris-space-6)">
+  <header class="l-stack"><span class="badge primary">0.44 i18n fixture</span><h1>Direction, translation and mixed-content stress</h1><p>Reference fixture for RTL, long translations, CJK, bidi isolation, dates and numbers.</p></header>
+
+  <section class="card" dir="rtl" lang="ar"><div class="card-body l-stack">
+    <h2 class="card-title">واجهة عربية من اليمين إلى اليسار</h2>
+    <nav class="nav" aria-label="التنقل الرئيسي"><a class="nav-link" aria-current="page" href="#">الرئيسية</a><a class="nav-link" href="#">الحجوزات والطلبات</a><a class="nav-link" href="#">إعدادات الحساب</a></nav>
+    <div class="field"><label class="field-label" for="ar-name">الاسم الكامل</label><input id="ar-name" class="input" value="ليلى منصور"></div>
+    <p>مرجع مختلط: <bdi>INV-2026-00142</bdi> — <bdi>reeris@example.com</bdi> — <bdi>€12,450.75</bdi></p>
+    <div class="data-list"><dt>الإجمالي</dt><dd>١٢٬٤٥٠٫٧٥ €</dd><dt>التاريخ</dt><dd><time datetime="2026-09-25">٢٥ سبتمبر ٢٠٢٦</time></dd></div>
+  </div></section>
+
+  <section class="card" dir="rtl" lang="he"><div class="card-body l-stack">
+    <h2 class="card-title">ממשק עברי עם תוכן מעורב</h2>
+    <div class="sidebar-nav"><a class="sidebar-link" aria-current="page" href="#"><span class="sidebar-label">לוח בקרה</span><span class="sidebar-meta">12</span></a><details class="sidebar-group"><summary class="sidebar-link"><span class="sidebar-label">ניהול חשבון</span><span class="sidebar-chevron" aria-hidden="true">›</span></summary><ul class="sidebar-subnav"><li><a class="sidebar-link" href="#">פרטי חיוב</a></li></ul></details></div>
+    <p>מספר הזמנה <bdi>#BK-88517</bdi> וכתובת <bdi>guest@example.org</bdi>.</p>
+  </div></section>
+
+  <section class="card" lang="de"><div class="card-body l-stack">
+    <h2 class="card-title">Sehr lange deutsche Übersetzungen</h2>
+    <div class="l-cluster"><button class="btn primary">Änderungen an den Benachrichtigungseinstellungen dauerhaft speichern</button><button class="btn outline">Ausgewählte Benutzerzugriffsberechtigungen vollständig zurücksetzen</button></div>
+    <div class="field"><label class="field-label" for="de-label">Zusätzliche Rechnungs- und Unternehmensinformationen für internationale Geschäftskunden</label><input id="de-label" class="input" placeholder="Umsatzsteuer-Identifikationsnummer und weitere Angaben"></div>
+    <p class="field-help">Donaudampfschifffahrtsgesellschaftskapitänsversicherungsbescheinigungsnummer-2026-EXTREM-LANG</p>
+  </div></section>
+
+  <section class="card" lang="ja"><div class="card-body l-stack"><h2 class="card-title">日本語と CJK レイアウト</h2><p>予約管理システムでは、長い説明文や改行位置が異なる文字体系でもレイアウトが崩れないことを確認します。</p><div class="list-group"><div class="list-item"><div class="list-content"><strong>東京都千代田区丸の内一丁目</strong><span>顧客アカウント設定と請求情報</span></div><span class="badge success">有効</span></div></div></div></section>
+
+  <section class="card"><div class="card-body l-stack"><h2 class="card-title">Bidirectional table and numeric content</h2><div class="table-responsive"><table class="table striped"><thead><tr><th>Customer</th><th>Reference</th><th class="numeric">Amount</th><th>Date</th></tr></thead><tbody><tr><td dir="rtl" lang="ar">شركة النور</td><td><bdi>TRX-2026-A91</bdi></td><td class="numeric">€123,456.78</td><td><time datetime="2026-09-25">25/09/2026</time></td></tr><tr><td dir="rtl" lang="he">חברת אור</td><td><bdi>INV-88517</bdi></td><td class="numeric">₪ 9,876.50</td><td><time datetime="2026-10-03">03.10.2026</time></td></tr></tbody></table></div></div></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Release Lab Evidence 0.49</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="assets/docs.css">
+  <script type="module" src="assets/docs.js"></script>
+</head>
+<body class="docs-body">
+<header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a href="api-reference.html">API</a></nav></header>
+<main class="docs-home">
+  <section class="docs-hero"><span class="badge primary">Reeris UI 0.49</span><h1>Release Lab evidence</h1><p>Manual and external gates are closed from reviewed evidence, not from an unchecked status flag. Reeris keeps automated prerequisite evidence separate from evidence that is allowed to close a 1.0 gate.</p></section>
+  <section class="docs-section"><h2>Closure model</h2><div class="l-stack"><div class="card"><div class="card-body"><strong>1. Capture</strong><p>Create evidence for one or more explicit gate criteria.</p></div></div><div class="card"><div class="card-body"><strong>2. Verify</strong><p>Artifacts are repository-relative and SHA-256 verified; records must match the release and allowed evidence type.</p></div></div><div class="card"><div class="card-body"><strong>3. Review</strong><p>Closing evidence must have a passing outcome and an explicit approved review. Pending or rejected records cannot close anything.</p></div></div><div class="card"><div class="card-body"><strong>4. Reconcile</strong><p><code>npm run evidence:sync</code> derives each gate from its criteria. Every required criterion must pass before the gate changes to <code>passed</code>.</p></div></div></div></section>
+  <section class="docs-section"><h2>Commands</h2><pre><code>npm run evidence:templates
+npm run audit:evidence
+npm run evidence:sync
+node tooling/release-lab-evidence.mjs import evidence.json
+node tooling/release-lab-evidence.mjs import-browser --latest</code></pre><p><code>audit:evidence</code> never mutates release state. <code>evidence:sync</code> is deliberately separate so gate closure is always an explicit action.</p></section>
+  <section class="docs-section"><h2>21 closure criteria</h2><p>The seven release gates are decomposed into 21 independently auditable criteria: four desktop browsers, three real mobile browsers, four assistive-technology checks, three zoom/touch checks, two contrast/high-contrast checks, two visual-baseline checks, and three public-name/namespace clearance checks.</p><p>The policy lives in <code>tests/release/gate-criteria.json</code>; the current derived state lives in <code>tests/release/manual-gates.json</code>.</p></section>
+  <section class="docs-section"><h2>Supplemental evidence is intentionally weaker</h2><p>Playwright Chromium, Firefox, WebKit, Edge CI, and mobile emulation remain valuable release evidence. The CI workflow normalizes them into Release Lab records, but marks them <code>supplemental</code>. They cannot satisfy criteria such as real Safari, real iOS/Android, NVDA/VoiceOver/TalkBack, real browser zoom, Windows High Contrast, or human-approved visual baselines.</p></section>
+  <section class="docs-section"><h2>Evidence record contract</h2><p>Every record has a stable ID, release version, gate, evidence kind, role, collection time, outcome, claimed criteria, test environment, hashed artifacts, notes, and review state. A passing closing record must include at least one verifiable artifact. Name/namespace clearance is marked persistent across versions; ordinary test evidence must target the current release.</p></section>
+  <section class="docs-section"><h2>0.49 state</h2><div class="l-cluster"><span class="badge warning">7 gates open</span><span class="badge warning">21 criteria open</span><span class="badge success">Evidence infrastructure ready</span></div><p>Five supplemental local-Chromium evidence records are now stored and verified, while all seven external/manual gates remain open. They close only when allowed closing evidence is imported, approved, and reconciled.</p></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris Starter — Authentication</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+</head>
+<body>
+<main class="auth-shell">
+  <section class="auth-brand">
+    <div class="auth-brand-content">
+      <span class="badge primary">Reeris UI</span>
+      <h1 class="auth-brand-title">Welcome back.</h1>
+      <p class="auth-brand-copy">An accessible account-entry starter built from native form controls and the Reeris authentication composition.</p>
+    </div>
+  </section>
+
+  <section class="auth-main">
+    <div class="auth-card">
+      <header class="auth-header">
+        <h2 class="auth-title">Sign in</h2>
+        <p class="auth-description">Use your work account to continue.</p>
+      </header>
+
+      <form class="auth-form" action="#" method="post">
+        <label><span class="field-label">Email</span><input class="field" type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label><span class="field-label">Password</span><input class="field" type="password" name="password" autocomplete="current-password" required></label>
+        <div class="auth-options">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+          <a href="#reset">Forgot password?</a>
+        </div>
+        <button class="btn primary auth-submit" type="submit">Sign in</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+      <div class="auth-providers"><button class="btn outline" type="button">Continue with provider</button><button class="btn outline" type="button">Company SSO</button></div>
+      <p class="auth-footer">New to the workspace? <a href="#register">Create an account</a></p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

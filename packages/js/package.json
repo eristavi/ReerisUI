@@ -1,0 +1,24 @@
+{
+  "name": "@reeris/js",
+  "version": "0.52.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js",
+    "./glide-navigation": "./dist/glide-navigation.js"
+  },
+  "license": "MIT",
+  "description": "Optional native ES-module enhancements for Reeris UI.",
+  "keywords": [
+    "ui",
+    "javascript",
+    "progressive-enhancement",
+    "native-web"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

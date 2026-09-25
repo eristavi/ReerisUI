@@ -1,0 +1,126 @@
+{
+  "name": "Reeris UI",
+  "version": "0.41.0",
+  "generatedAt": "2026-09-25T08:35:51.841Z",
+  "license": "MIT",
+  "artifacts": [
+    {
+      "file": "packages/core/dist/reeris.css",
+      "bytes": 224202,
+      "sha256": "551671464dac98f2cd8f178b1ccf96d1cb8fadac238124a857cbba2fa587c287"
+    },
+    {
+      "file": "packages/core/dist/reeris.min.css",
+      "bytes": 204024,
+      "sha256": "5b2ecba18de72937dab62e9c55c80bcc93cd3abc71fabe7bc3ffa017d7c18fbf"
+    },
+    {
+      "file": "packages/core/dist/tokens.json",
+      "bytes": 8959,
+      "sha256": "f62a7a396c708b7d6c42aa7b9f465f8b1f90b6d5dcecc83bb8afa0a69b3eea4e"
+    },
+    {
+      "file": "packages/core/dist/tokens.js",
+      "bytes": 8982,
+      "sha256": "058b8a6abe9c5f1adbc6e68b30a93e27a0b1f71b731c4e3f010b59aeb582aa4e"
+    },
+    {
+      "file": "packages/js/dist/index.js",
+      "bytes": 1208,
+      "sha256": "bac2d8288fe5b0797ef27ba075358374096a6e03802cd9e50852baa36286b716"
+    },
+    {
+      "file": "packages/js/dist/glide-navigation.js",
+      "bytes": 4243,
+      "sha256": "5d47c976016363b04fd869f9417367bab5dff8f4bea6605fa4b1b268fd697f05"
+    }
+  ],
+  "audits": {
+    "core-scope": {
+      "file": "reports/core-scope-0.41.0.json"
+    },
+    "forms-audit": {
+      "file": "reports/forms-audit-0.41.0.json"
+    },
+    "content-states-audit": {
+      "file": "reports/content-states-audit-0.41.0.json"
+    },
+    "accessibility-audit": {
+      "file": "reports/accessibility-audit-0.41.0.json",
+      "summary": {
+        "total": 51,
+        "passed": 51,
+        "failed": 0,
+        "docsChecked": 35
+      }
+    },
+    "browser-reflow-audit": {
+      "file": "reports/browser-reflow-audit-0.41.0.json",
+      "summary": {
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "docsChecked": 35,
+        "cssFiles": 36
+      }
+    },
+    "css-architecture-audit": {
+      "file": "reports/css-architecture-audit-0.41.0.json",
+      "summary": {
+        "total": 14,
+        "passed": 14,
+        "failed": 0,
+        "qualifiedRules": 1439,
+        "individualSelectors": 1461,
+        "sourceCssModules": 35
+      }
+    },
+    "documentation-audit": {
+      "file": "reports/documentation-audit-0.41.0.json",
+      "summary": {
+        "passed": 1431,
+        "total": 1431,
+        "failed": 0,
+        "sourceModules": 36,
+        "classes": 732,
+        "tokens": 516,
+        "definedTokens": 489,
+        "overrideHooks": 27,
+        "dataAttributes": 11,
+        "packageExports": 11,
+        "jsApi": 5
+      }
+    },
+    "starters-integration-audit": {
+      "file": "reports/starters-integration-audit-0.41.0.json",
+      "summary": {
+        "passed": 104,
+        "total": 104,
+        "failed": 0,
+        "starters": 5,
+        "publicClassesAvailable": 732
+      }
+    },
+    "security-audit": {
+      "file": "reports/security-audit-0.41.0.json",
+      "summary": {
+        "passed": 291,
+        "total": 291,
+        "failed": 0,
+        "jsFiles": 4,
+        "cssFiles": 72
+      }
+    },
+    "package-release-audit": {
+      "file": "reports/package-release-audit-0.41.0.json",
+      "summary": {
+        "passed": 73,
+        "total": 73,
+        "failed": 0,
+        "packages": 2
+      }
+    }
+  },
+  "securityPolicy": "SECURITY.md",
+  "changelog": "CHANGELOG.md"
+}

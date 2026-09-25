@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reeris release-lab evidence record",
+  "type": "object",
+  "required": ["schemaVersion", "evidenceId", "releaseVersion", "gateId", "kind", "role", "collectedAt", "outcome", "claims", "environment", "artifacts", "review"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "evidenceId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$" },
+    "releaseVersion": { "type": "string" },
+    "gateId": { "type": "string" },
+    "kind": { "enum": ["manual-browser", "device-cloud", "assistive-technology", "zoom-reflow", "forced-colors", "visual-review", "name-clearance", "automated-ci", "other"] },
+    "role": { "enum": ["closing", "supplemental"] },
+    "collectedAt": { "type": "string" },
+    "outcome": { "enum": ["pass", "fail", "inconclusive"] },
+    "claims": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "coverage": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "environment": { "type": "object" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "string" },
+    "review": {
+      "type": "object",
+      "required": ["status", "reviewedBy", "reviewedAt", "notes"],
+      "properties": {
+        "status": { "enum": ["pending", "approved", "rejected"] },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewedAt": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

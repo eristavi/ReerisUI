@@ -1,0 +1,3 @@
+@layer reeris.overrides {
+  body { padding: var(--reeris-space-fluid-md); }
+}

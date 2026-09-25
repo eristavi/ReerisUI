@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "version": "0.52.0",
+  "policy": "A gate passes only when every required criterion has approved closing evidence with a passing outcome. Unless persistentAcrossVersions is true, evidence must target the current release.",
+  "gates": {
+    "desktop-browser-matrix": {
+      "criteria": [
+        {
+          "id": "chrome-desktop-real",
+          "description": "Current stable Google Chrome on a supported desktop OS.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        },
+        {
+          "id": "edge-desktop-real",
+          "description": "Current stable Microsoft Edge on a supported desktop OS.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        },
+        {
+          "id": "firefox-desktop-real",
+          "description": "Current stable Mozilla Firefox on a supported desktop OS.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        },
+        {
+          "id": "safari-desktop-real",
+          "description": "Current stable Safari on supported macOS hardware/OS.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        }
+      ]
+    },
+    "mobile-browser-matrix": {
+      "criteria": [
+        {
+          "id": "safari-ios-real",
+          "description": "Safari on a real/current iPhone or trusted real-device cloud.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        },
+        {
+          "id": "safari-ipados-real",
+          "description": "Safari on a real/current iPad or trusted real-device cloud.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        },
+        {
+          "id": "chrome-android-real",
+          "description": "Chrome on a real/current Android device or trusted real-device cloud.",
+          "allowedKinds": [
+            "manual-browser",
+            "device-cloud"
+          ]
+        }
+      ]
+    },
+    "assistive-technology": {
+      "criteria": [
+        {
+          "id": "keyboard-manual",
+          "description": "Manual keyboard-only review of representative interactive components.",
+          "allowedKinds": [
+            "assistive-technology"
+          ]
+        },
+        {
+          "id": "nvda-desktop",
+          "description": "NVDA with a supported desktop browser.",
+          "allowedKinds": [
+            "assistive-technology"
+          ]
+        },
+        {
+          "id": "voiceover-safari",
+          "description": "VoiceOver with Safari on macOS/iOS.",
+          "allowedKinds": [
+            "assistive-technology"
+          ]
+        },
+        {
+          "id": "talkback-chrome",
+          "description": "TalkBack with Chrome on Android.",
+          "allowedKinds": [
+            "assistive-technology"
+          ]
+        }
+      ]
+    },
+    "zoom-reflow-touch": {
+      "criteria": [
+        {
+          "id": "zoom-200-real",
+          "description": "Real-browser 200% zoom/reflow review.",
+          "allowedKinds": [
+            "zoom-reflow"
+          ]
+        },
+        {
+          "id": "zoom-400-real",
+          "description": "Real-browser 400% zoom/reflow review.",
+          "allowedKinds": [
+            "zoom-reflow"
+          ]
+        },
+        {
+          "id": "touch-targets-real",
+          "description": "Coarse-pointer/touch-target review on real hardware or trusted device cloud.",
+          "allowedKinds": [
+            "zoom-reflow",
+            "device-cloud"
+          ]
+        }
+      ]
+    },
+    "forced-colors-high-contrast": {
+      "criteria": [
+        {
+          "id": "windows-forced-colors-real",
+          "description": "Windows forced-colors/high-contrast visual and interaction review.",
+          "allowedKinds": [
+            "forced-colors"
+          ]
+        },
+        {
+          "id": "prefers-contrast-review",
+          "description": "prefers-contrast behavior reviewed where supported.",
+          "allowedKinds": [
+            "forced-colors",
+            "manual-browser"
+          ]
+        }
+      ]
+    },
+    "visual-regression-baselines": {
+      "criteria": [
+        {
+          "id": "baseline-human-approved",
+          "description": "Canonical PNG baseline set reviewed and explicitly approved by a human reviewer.",
+          "allowedKinds": [
+            "visual-review"
+          ]
+        },
+        {
+          "id": "baseline-compare-pass",
+          "description": "A comparison run against the approved baseline set passes.",
+          "allowedKinds": [
+            "visual-review",
+            "automated-ci"
+          ]
+        }
+      ]
+    },
+    "public-name-namespace-clearance": {
+      "persistentAcrossVersions": true,
+      "criteria": [
+        {
+          "id": "project-name-clearance",
+          "description": "Recorded final Reeris UI naming/trademark/conflict decision.",
+          "allowedKinds": [
+            "name-clearance"
+          ]
+        },
+        {
+          "id": "package-namespace-clearance",
+          "description": "Recorded npm/package namespace availability and decision.",
+          "allowedKinds": [
+            "name-clearance"
+          ]
+        },
+        {
+          "id": "repository-domain-clearance",
+          "description": "Recorded repository/domain naming decision appropriate for public launch.",
+          "allowedKinds": [
+            "name-clearance"
+          ]
+        }
+      ]
+    }
+  }
+}

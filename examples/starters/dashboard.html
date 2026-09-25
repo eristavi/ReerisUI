@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris Starter — Dashboard</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="app-sidebar">
+    <div class="app-sidebar-header"><strong>Reeris</strong></div>
+    <div class="app-sidebar-body">
+      <nav class="nav vertical" aria-label="Primary navigation">
+        <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
+        <a class="nav-link" href="#performance">Performance</a>
+        <a class="nav-link" href="#activity">Activity</a>
+        <a class="nav-link" href="#reports">Reports</a>
+      </nav>
+    </div>
+    <div class="app-sidebar-footer"><span class="app-sidebar-label">Acme Workspace</span></div>
+  </aside>
+
+  <header class="app-topbar">
+    <h1 class="app-topbar-title">Dashboard</h1>
+    <div class="app-topbar-actions">
+      <button class="btn outline sm" type="button">Export</button>
+      <button class="btn primary sm" type="button">New report</button>
+    </div>
+  </header>
+
+  <main class="app-main" id="overview">
+    <div class="app-workspace l-stack" style="--reeris-layout-gap:var(--reeris-space-6)">
+      <header class="page-header">
+        <div class="page-header-main">
+          <span class="badge primary">Official starter</span>
+          <h2 class="page-title">Business overview</h2>
+          <p class="page-description">A complete dashboard composition using only Reeris Core classes and tokens.</p>
+        </div>
+        <div class="page-header-actions">
+          <button class="btn outline" type="button">Last 30 days</button>
+          <button class="btn primary" type="button">Create report</button>
+        </div>
+      </header>
+
+      <section class="stats" aria-label="Key metrics">
+        <article class="stat">
+          <span class="stat-label">Revenue</span>
+          <strong class="stat-value">€284,900</strong>
+          <div class="stat-meta"><span class="trend up">+12.4%</span> vs previous period</div>
+        </article>
+        <article class="stat">
+          <span class="stat-label">Conversion</span>
+          <strong class="stat-value">8.7%</strong>
+          <div class="stat-meta"><span class="trend up">+0.8%</span> this month</div>
+        </article>
+        <article class="stat">
+          <span class="stat-label">Active customers</span>
+          <strong class="stat-value">1,842</strong>
+          <div class="stat-meta"><span class="trend neutral">+36</span> this week</div>
+        </article>
+      </section>
+
+      <section class="dashboard-grid" id="performance">
+        <article class="widget span-8">
+          <header class="widget-header">
+            <div class="widget-heading">
+              <h3 class="widget-title">Channel performance</h3>
+              <p class="widget-description">Presentation primitives remain independent of application data logic.</p>
+            </div>
+            <div class="widget-actions"><button class="btn ghost sm" type="button" aria-label="More performance actions">•••</button></div>
+          </header>
+          <div class="widget-body">
+            <div class="viz-bar">
+              <div class="viz-bar-row"><span class="viz-bar-label">Direct</span><div class="viz-bar-track"><div class="viz-bar-fill" style="--reeris-value:78%"></div></div><span class="viz-bar-value">78%</span></div>
+              <div class="viz-bar-row"><span class="viz-bar-label">Partners</span><div class="viz-bar-track"><div class="viz-bar-fill accent" style="--reeris-value:54%"></div></div><span class="viz-bar-value">54%</span></div>
+              <div class="viz-bar-row"><span class="viz-bar-label">Organic</span><div class="viz-bar-track"><div class="viz-bar-fill success" style="--reeris-value:41%"></div></div><span class="viz-bar-value">41%</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="widget span-4">
+          <header class="widget-header"><div class="widget-heading"><h3 class="widget-title">Goal progress</h3><p class="widget-description">Quarterly revenue target</p></div></header>
+          <div class="widget-body"><div class="viz-ring" style="--reeris-value:72%"><strong class="viz-ring-value">72%</strong></div></div>
+        </article>
+
+        <article class="widget span-8" id="reports">
+          <header class="widget-header"><div class="widget-heading"><h3 class="widget-title">Recent accounts</h3></div><div class="widget-actions"><a class="btn link sm" href="#">View all</a></div></header>
+          <div class="widget-body">
+            <div class="table-wrap">
+              <table class="table hover">
+                <thead><tr><th scope="col">Account</th><th scope="col">Status</th><th scope="col" class="numeric">Value</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Northstar Labs</th><td><span class="badge success">Active</span></td><td class="numeric">€18,400</td></tr>
+                  <tr><th scope="row">Meridian Group</th><td><span class="badge warning">Review</span></td><td class="numeric">€12,750</td></tr>
+                  <tr><th scope="row">Cobalt Studio</th><td><span class="badge">Trial</span></td><td class="numeric">€4,900</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="widget span-4" id="activity">
+          <header class="widget-header"><div class="widget-heading"><h3 class="widget-title">Recent activity</h3></div></header>
+          <div class="widget-body">
+            <ul class="activity-feed">
+              <li class="activity-item"><span class="activity-marker success" aria-hidden="true"></span><div class="activity-content"><p class="activity-title">Contract approved</p><p class="activity-meta">8 minutes ago</p></div></li>
+              <li class="activity-item"><span class="activity-marker" aria-hidden="true"></span><div class="activity-content"><p class="activity-title">Report generated</p><p class="activity-meta">32 minutes ago</p></div></li>
+              <li class="activity-item"><span class="activity-marker warning" aria-hidden="true"></span><div class="activity-content"><p class="activity-title">Invoice needs review</p><p class="activity-meta">2 hours ago</p></div></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

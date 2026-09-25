@@ -1,0 +1,344 @@
+{
+  "version": "0.51.0",
+  "generatedAt": "2026-09-25T12:54:17.013Z",
+  "status": "supplemental-evidence-ready",
+  "summary": {
+    "passed": 66,
+    "total": 66,
+    "failed": 0
+  },
+  "boundary": "Validates local Chromium supplemental evidence only. It intentionally does not close real branded-browser, real-device, assistive-technology, zoom/touch, Windows High Contrast, or human-approved visual gates.",
+  "failures": [],
+  "checks": [
+    {
+      "name": "Local Chromium report exists",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/local-chromium-report.json"
+    },
+    {
+      "name": "Local Chromium report version matches release",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Local Chromium product is recorded",
+      "pass": true,
+      "detail": "Chrome/144.0.7559.96"
+    },
+    {
+      "name": "Local Chromium report has zero failed smoke/interaction checks",
+      "pass": true,
+      "detail": "{\"passed\":15,\"failed\":0,\"total\":15,\"visualCandidates\":14,\"visualCandidateFailures\":0}"
+    },
+    {
+      "name": "Local Chromium report captures all canonical visual cases",
+      "pass": true,
+      "detail": "14"
+    },
+    {
+      "name": "Local Chromium visual candidates have zero layout failures",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "Candidate screenshot exists: core-system-default-ltr",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-system-default-ltr.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-system-default-ltr",
+      "pass": true,
+      "detail": "56e701e6458b16ef51480203057790c266a9ef72ff43bec3f72cd50dbdd6405b"
+    },
+    {
+      "name": "Candidate screenshot exists: core-light-default-ltr",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-light-default-ltr.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-light-default-ltr",
+      "pass": true,
+      "detail": "fb9b07e95549c5c1d104ea2e31da175da6cd44aa64fff01d2e66c98fa6d041e4"
+    },
+    {
+      "name": "Candidate screenshot exists: core-dark-default-ltr",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-dark-default-ltr.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-dark-default-ltr",
+      "pass": true,
+      "detail": "fa880f0d988fcb92c7c6d1350a00c8b622ac29c17c55edf9ce6f3b81eba23ca7"
+    },
+    {
+      "name": "Candidate screenshot exists: core-light-compact-ltr",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-light-compact-ltr.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-light-compact-ltr",
+      "pass": true,
+      "detail": "9362cdf7b0cbfe7ae1fb0491976448b03d62aea2c1040a0f339ffacd905cb5e4"
+    },
+    {
+      "name": "Candidate screenshot exists: core-dark-comfortable-ltr",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-dark-comfortable-ltr.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-dark-comfortable-ltr",
+      "pass": true,
+      "detail": "0fe67f1193324806aa52238b55be0c5d9daa053e7071a01f447c4d3574a12532"
+    },
+    {
+      "name": "Candidate screenshot exists: core-light-default-rtl",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-light-default-rtl.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-light-default-rtl",
+      "pass": true,
+      "detail": "6179b9d1aa03d850c0369de5c59aab2d2014a2720cc12e9c54c46d2cfcb3291a"
+    },
+    {
+      "name": "Candidate screenshot exists: core-dark-soft-rtl",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-dark-soft-rtl.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-dark-soft-rtl",
+      "pass": true,
+      "detail": "9bccc330e332080a6a34bb9ffd5c2a62f479f55450f8b26bcfe08c8c39a9f0a8"
+    },
+    {
+      "name": "Candidate screenshot exists: core-mobile-system",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-mobile-system.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-mobile-system",
+      "pass": true,
+      "detail": "9d0c150402118f370831fcc6ddae2fb59a82ba42cc01355143afc5b211e41170"
+    },
+    {
+      "name": "Candidate screenshot exists: core-mobile-dark-compact",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/core-mobile-dark-compact.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: core-mobile-dark-compact",
+      "pass": true,
+      "detail": "bd7b37289fbd2b792f71a28c39570c4498dbcf2724482818b700e4807e992590"
+    },
+    {
+      "name": "Candidate screenshot exists: starter-dashboard-system",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/starter-dashboard-system.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: starter-dashboard-system",
+      "pass": true,
+      "detail": "8b565c5d42ed710a5f2bef7bcb69c8ea0d41f38f72a4ba91f2a0dabb817f00aa"
+    },
+    {
+      "name": "Candidate screenshot exists: starter-data-system",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/starter-data-system.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: starter-data-system",
+      "pass": true,
+      "detail": "58c6bdb50a1e00b308dd41759c156d85f570183582733a3c3e28edcdc3e7d76b"
+    },
+    {
+      "name": "Candidate screenshot exists: starter-marketing-system",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/starter-marketing-system.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: starter-marketing-system",
+      "pass": true,
+      "detail": "0fd8f4afd4b08d53d68ee78d84559fee015a1a46a94bc7e8b7fe8ac6b3718739"
+    },
+    {
+      "name": "Candidate screenshot exists: i18n-rtl-desktop",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/i18n-rtl-desktop.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: i18n-rtl-desktop",
+      "pass": true,
+      "detail": "389a4daac81a9f3d36a2b1b4a434c2a82563f259c3f65a61c64fdba0352014a9"
+    },
+    {
+      "name": "Candidate screenshot exists: i18n-rtl-mobile",
+      "pass": true,
+      "detail": "tests/release/evidence-artifacts/0.51.0/local-chromium/visual/i18n-rtl-mobile.png"
+    },
+    {
+      "name": "Candidate screenshot hash matches: i18n-rtl-mobile",
+      "pass": true,
+      "detail": "33456ee6d86e987c1bbcbf0f07a674d765c9b3becc53de4fc62d7151be4df1ff"
+    },
+    {
+      "name": "Forced-colors candidate was exercised",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "prefers-contrast candidate was exercised",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Keyboard switch interaction passed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dialog Escape interaction passed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Disclosure keyboard interaction passed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Glide initialization passed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320px overflow interaction passed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Supplemental evidence exists: desktop-browser-matrix",
+      "pass": true,
+      "detail": "tests/release/evidence/desktop-browser-matrix/local-chromium-desktop-browser-matrix-0.51.0.json"
+    },
+    {
+      "name": "Supplemental evidence remains non-closing: desktop-browser-matrix",
+      "pass": true,
+      "detail": "supplemental/0"
+    },
+    {
+      "name": "Supplemental evidence targets current release: desktop-browser-matrix",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Supplemental evidence outcome passes: desktop-browser-matrix",
+      "pass": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Supplemental evidence exists: assistive-technology",
+      "pass": true,
+      "detail": "tests/release/evidence/assistive-technology/local-chromium-assistive-technology-0.51.0.json"
+    },
+    {
+      "name": "Supplemental evidence remains non-closing: assistive-technology",
+      "pass": true,
+      "detail": "supplemental/0"
+    },
+    {
+      "name": "Supplemental evidence targets current release: assistive-technology",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Supplemental evidence outcome passes: assistive-technology",
+      "pass": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Supplemental evidence exists: zoom-reflow-touch",
+      "pass": true,
+      "detail": "tests/release/evidence/zoom-reflow-touch/local-chromium-zoom-reflow-touch-0.51.0.json"
+    },
+    {
+      "name": "Supplemental evidence remains non-closing: zoom-reflow-touch",
+      "pass": true,
+      "detail": "supplemental/0"
+    },
+    {
+      "name": "Supplemental evidence targets current release: zoom-reflow-touch",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Supplemental evidence outcome passes: zoom-reflow-touch",
+      "pass": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Supplemental evidence exists: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "tests/release/evidence/forced-colors-high-contrast/local-chromium-forced-colors-high-contrast-0.51.0.json"
+    },
+    {
+      "name": "Supplemental evidence remains non-closing: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "supplemental/0"
+    },
+    {
+      "name": "Supplemental evidence targets current release: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Supplemental evidence outcome passes: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Supplemental evidence exists: visual-regression-baselines",
+      "pass": true,
+      "detail": "tests/release/evidence/visual-regression-baselines/local-chromium-visual-regression-baselines-0.51.0.json"
+    },
+    {
+      "name": "Supplemental evidence remains non-closing: visual-regression-baselines",
+      "pass": true,
+      "detail": "supplemental/0"
+    },
+    {
+      "name": "Supplemental evidence targets current release: visual-regression-baselines",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Supplemental evidence outcome passes: visual-regression-baselines",
+      "pass": true,
+      "detail": "pass"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: desktop-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: assistive-technology",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: zoom-reflow-touch",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: visual-regression-baselines",
+      "pass": true,
+      "detail": "open"
+    }
+  ]
+}

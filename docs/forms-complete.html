@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-density="default">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI 0.34 — Forms Completeness</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <style>
+    body{padding:clamp(1rem,3vw,2rem)}
+    .demo{max-inline-size:76rem;margin-inline:auto}
+    .panel{container-type:inline-size;padding:var(--reeris-space-fluid-sm);border:1px solid var(--reeris-color-border);border-radius:var(--reeris-radius-xl);background:var(--reeris-color-surface)}
+    .demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:var(--reeris-space-6)}
+  </style>
+</head>
+<body>
+<main class="demo l-stack" style="--reeris-stack-gap:var(--reeris-space-8)">
+  <header class="l-stack">
+    <span class="badge primary">0.34</span>
+    <h1>Forms Completeness</h1>
+    <p>Native-first form controls, validation, sizing, groups, accessibility states, and progressive enhancements.</p>
+  </header>
+
+  <div class="demo-grid">
+    <section class="panel l-stack">
+      <h2>Five-size text controls</h2>
+      <label class="field"><span class="field-label">Extra small</span><input class="input xs" value="Reeris xs"></label>
+      <label class="field"><span class="field-label">Small</span><input class="input sm" value="Reeris sm"></label>
+      <label class="field"><span class="field-label">Default</span><input class="input" value="Reeris md"></label>
+      <label class="field"><span class="field-label">Large</span><input class="input lg" value="Reeris lg"></label>
+      <label class="field"><span class="field-label">Extra large textarea</span><textarea class="textarea xl">Textarea sizing now follows the shared control scale.</textarea></label>
+    </section>
+
+    <section class="panel l-stack">
+      <h2>Validation & state</h2>
+      <label class="field"><span class="field-label">Email</span><input class="input" type="email" required value="wrong@" aria-invalid="true" aria-describedby="bad-email"><span class="field-error field-status" id="bad-email">Enter a valid email address.</span></label>
+      <label class="field"><span class="field-label">Read-only</span><input class="input" value="Readable and selectable" readonly></label>
+      <label class="field"><span class="field-label">Disabled</span><input class="input" value="Unavailable" disabled></label>
+      <label class="field" aria-busy="true"><span class="field-label">Remote lookup</span><span class="field-control"><input class="input" value="Checking company…" readonly><span class="field-help">ARIA busy and Reeris loading presentation share one contract.</span></span></label>
+    </section>
+
+    <section class="panel l-stack">
+      <h2>Choice groups</h2>
+      <fieldset class="choice-group">
+        <legend>Notification channel</legend>
+        <label class="choice"><input type="checkbox" checked><span>Email<span class="choice-description">Daily operational summary.</span></span></label>
+        <label class="choice"><input type="checkbox"><span>SMS<span class="choice-description">Urgent alerts only.</span></span></label>
+      </fieldset>
+      <fieldset class="choice-group inline">
+        <legend>Plan</legend>
+        <label class="choice"><input type="radio" name="plan" checked> Standard</label>
+        <label class="choice"><input type="radio" name="plan"> Pro</label>
+        <label class="choice"><input type="radio" name="plan" disabled> Enterprise</label>
+      </fieldset>
+      <label class="switch"><input type="checkbox" role="switch" checked> Automatic updates</label>
+    </section>
+
+    <section class="panel l-stack">
+      <h2>Native select + progressive customization</h2>
+      <label class="field"><span class="field-label">Country</span><select class="select customizable"><option>Cyprus</option><option>Greece</option><option>Belgium</option><option>Georgia</option></select><span class="field-help">Uses normal native select behavior everywhere; compatible browsers progressively use customizable select.</span></label>
+      <label class="field"><span class="field-label">Multiple selection</span><select class="select" multiple size="4"><option selected>Operations</option><option>Finance</option><option selected>Sales</option><option>Technology</option></select></label>
+    </section>
+
+    <section class="panel l-stack">
+      <h2>Horizontal & grouped controls</h2>
+      <label class="field horizontal"><span class="field-label">Monthly budget</span><span class="field-control"><span class="input-group"><span class="input-addon">€</span><input class="input" type="number" value="3500"><span class="input-addon">/ month</span></span><span class="field-help">Horizontal fields collapse inside narrow containers.</span></span></label>
+      <label class="field horizontal"><span class="field-label">Search</span><span class="field-control"><span class="input-wrap has-start"><span class="input-decor start" aria-hidden="true">⌕</span><input class="input" type="search" placeholder="Search records"></span></span></label>
+    </section>
+
+    <section class="panel l-stack">
+      <h2>Specialized native inputs</h2>
+      <div class="form-row">
+        <label class="field"><span class="field-label">Date</span><input class="input" type="date"></label>
+        <label class="field"><span class="field-label">Time</span><input class="input" type="time"></label>
+      </div>
+      <label class="field"><span class="field-label">Range</span><input class="range" type="range" min="0" max="100" value="65"></label>
+      <label class="field"><span class="field-label">Attachment</span><input class="file" type="file"></label>
+      <label class="field"><span class="field-label">Brand color</span><input class="color-input" type="color" value="#4f46e5"></label>
+    </section>
+  </div>
+</main>
+</body>
+</html>

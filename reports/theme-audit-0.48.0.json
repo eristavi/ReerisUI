@@ -1,0 +1,582 @@
+{
+  "version": "0.48.0",
+  "summary": {
+    "passed": 114,
+    "total": 114,
+    "failed": 0,
+    "officialContrastCases": 28,
+    "customContrastCases": 42
+  },
+  "checks": [
+    {
+      "name": "Official light pair primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "5.56:1"
+    },
+    {
+      "name": "Official light pair accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "4.60:1"
+    },
+    {
+      "name": "Official light pair success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "4.79:1"
+    },
+    {
+      "name": "Official light pair warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "5.34:1"
+    },
+    {
+      "name": "Official light pair danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "5.87:1"
+    },
+    {
+      "name": "Official light pair info/on-info contrast >= 4.5",
+      "pass": true,
+      "detail": "5.21:1"
+    },
+    {
+      "name": "Official light pair surface/on-surface contrast >= 4.5",
+      "pass": true,
+      "detail": "17.72:1"
+    },
+    {
+      "name": "Official light pair surface-muted/on-surface-muted contrast >= 4.5",
+      "pass": true,
+      "detail": "12.20:1"
+    },
+    {
+      "name": "Official light pair canvas/text contrast >= 4.5",
+      "pass": true,
+      "detail": "16.73:1"
+    },
+    {
+      "name": "Official light gradient gradient-primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "4.60:1"
+    },
+    {
+      "name": "Official light gradient gradient-accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "4.60:1"
+    },
+    {
+      "name": "Official light gradient gradient-success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "4.67:1"
+    },
+    {
+      "name": "Official light gradient gradient-warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "5.34:1"
+    },
+    {
+      "name": "Official light gradient gradient-danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "5.87:1"
+    },
+    {
+      "name": "Official dark pair primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "7.86:1"
+    },
+    {
+      "name": "Official dark pair accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "8.36:1"
+    },
+    {
+      "name": "Official dark pair success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.43:1"
+    },
+    {
+      "name": "Official dark pair warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.93:1"
+    },
+    {
+      "name": "Official dark pair danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.52:1"
+    },
+    {
+      "name": "Official dark pair info/on-info contrast >= 4.5",
+      "pass": true,
+      "detail": "8.07:1"
+    },
+    {
+      "name": "Official dark pair surface/on-surface contrast >= 4.5",
+      "pass": true,
+      "detail": "15.31:1"
+    },
+    {
+      "name": "Official dark pair surface-muted/on-surface-muted contrast >= 4.5",
+      "pass": true,
+      "detail": "10.47:1"
+    },
+    {
+      "name": "Official dark pair canvas/text contrast >= 4.5",
+      "pass": true,
+      "detail": "17.20:1"
+    },
+    {
+      "name": "Official dark gradient gradient-primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "7.86:1"
+    },
+    {
+      "name": "Official dark gradient gradient-accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "8.07:1"
+    },
+    {
+      "name": "Official dark gradient gradient-success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.41:1"
+    },
+    {
+      "name": "Official dark gradient gradient-warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.73:1"
+    },
+    {
+      "name": "Official dark gradient gradient-danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.50:1"
+    },
+    {
+      "name": "Official theme uses browser-native light/dark negotiation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Explicit light override sets color-scheme only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Explicit dark override sets color-scheme only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic theme uses light-dark()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Semantic color token exists: info",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paired foreground token exists: on-info",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Additional gradient exists: brand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom theme fixture exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom fixture contains multiple theme blocks",
+      "pass": true,
+      "detail": "2 blocks"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "6.00:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "6.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "4.79:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "5.34:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "5.87:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair info/on-info contrast >= 4.5",
+      "pass": true,
+      "detail": "5.21:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair surface/on-surface contrast >= 4.5",
+      "pass": true,
+      "detail": "17.72:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair surface-muted/on-surface-muted contrast >= 4.5",
+      "pass": true,
+      "detail": "12.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light pair canvas/text contrast >= 4.5",
+      "pass": true,
+      "detail": "16.73:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light gradient gradient-primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "6.00:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light gradient gradient-accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "6.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light gradient gradient-success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "4.67:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light gradient gradient-warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "5.34:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] light gradient gradient-danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "5.87:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "6.00:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "6.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.43:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.93:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.52:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair info/on-info contrast >= 4.5",
+      "pass": true,
+      "detail": "8.07:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair surface/on-surface contrast >= 4.5",
+      "pass": true,
+      "detail": "15.31:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair surface-muted/on-surface-muted contrast >= 4.5",
+      "pass": true,
+      "detail": "10.47:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark pair canvas/text contrast >= 4.5",
+      "pass": true,
+      "detail": "17.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark gradient gradient-primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "6.00:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark gradient gradient-accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "6.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark gradient gradient-success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.41:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark gradient gradient-warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.73:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean\"] dark gradient gradient-danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.50:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "8.19:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "9.36:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.43:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.93:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.52:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair info/on-info contrast >= 4.5",
+      "pass": true,
+      "detail": "8.07:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair surface/on-surface contrast >= 4.5",
+      "pass": true,
+      "detail": "15.31:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair surface-muted/on-surface-muted contrast >= 4.5",
+      "pass": true,
+      "detail": "10.47:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark pair canvas/text contrast >= 4.5",
+      "pass": true,
+      "detail": "17.20:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark gradient gradient-primary/on-primary contrast >= 4.5",
+      "pass": true,
+      "detail": "8.19:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark gradient gradient-accent/on-accent contrast >= 4.5",
+      "pass": true,
+      "detail": "8.07:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark gradient gradient-success/on-success contrast >= 4.5",
+      "pass": true,
+      "detail": "8.41:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark gradient gradient-warning/on-warning contrast >= 4.5",
+      "pass": true,
+      "detail": "7.73:1"
+    },
+    {
+      "name": "Custom [data-theme=\"ocean-night\"] dark gradient gradient-danger/on-danger contrast >= 4.5",
+      "pass": true,
+      "detail": "7.50:1"
+    },
+    {
+      "name": "Partial custom theme does not duplicate the primitive palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Partial custom theme overrides semantic tokens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom theme demonstrates gradient override",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom theme demonstrates explicit nested dark scheme",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-radius=\"sharp\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-radius=\"rounded\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-radius=\"soft\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-elevation=\"flat\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-elevation=\"subtle\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-elevation=\"floating\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-density=\"compact\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-density=\"comfortable\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-motion=\"none\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-motion=\"reduced\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Personality contract remains available: [data-motion=\"expressive\"]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme fixture does not override personality tokens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core has no required JavaScript theme engine",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme validator CLI is present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme documentation page exists",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

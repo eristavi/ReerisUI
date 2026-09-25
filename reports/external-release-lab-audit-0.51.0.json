@@ -1,0 +1,2426 @@
+{
+  "version": "0.51.0",
+  "generatedAt": "2026-09-25T12:54:17.681Z",
+  "summary": {
+    "passed": 482,
+    "total": 482,
+    "failed": 0
+  },
+  "catalog": {
+    "criteria": 21,
+    "gates": 7,
+    "packs": 21
+  },
+  "checks": [
+    {
+      "name": "Catalog version matches release",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Criteria policy version matches release",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Catalog contains exactly one item per policy criterion",
+      "pass": true,
+      "detail": "21 vs 21"
+    },
+    {
+      "name": "Catalog IDs are unique",
+      "pass": true,
+      "detail": "21 ids"
+    },
+    {
+      "name": "Criterion mapped: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/desktop-browser-matrix--chrome-desktop-real.md"
+    },
+    {
+      "name": "Pack names criterion: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/desktop-browser-matrix--chrome-desktop-real.json"
+    },
+    {
+      "name": "Evidence template version is current: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "desktop-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": "[\"chrome-desktop-real\"]"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/chrome-desktop-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/desktop-browser-matrix--edge-desktop-real.md"
+    },
+    {
+      "name": "Pack names criterion: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/desktop-browser-matrix--edge-desktop-real.json"
+    },
+    {
+      "name": "Evidence template version is current: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "desktop-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": "[\"edge-desktop-real\"]"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/edge-desktop-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/desktop-browser-matrix--firefox-desktop-real.md"
+    },
+    {
+      "name": "Pack names criterion: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/desktop-browser-matrix--firefox-desktop-real.json"
+    },
+    {
+      "name": "Evidence template version is current: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "desktop-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": "[\"firefox-desktop-real\"]"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/firefox-desktop-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/desktop-browser-matrix--safari-desktop-real.md"
+    },
+    {
+      "name": "Pack names criterion: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/desktop-browser-matrix--safari-desktop-real.json"
+    },
+    {
+      "name": "Evidence template version is current: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "desktop-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": "[\"safari-desktop-real\"]"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: desktop-browser-matrix/safari-desktop-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/mobile-browser-matrix--safari-ios-real.md"
+    },
+    {
+      "name": "Pack names criterion: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/mobile-browser-matrix--safari-ios-real.json"
+    },
+    {
+      "name": "Evidence template version is current: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "mobile-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": "[\"safari-ios-real\"]"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → docs/advanced-navigation.html",
+      "pass": true,
+      "detail": "docs/advanced-navigation.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → docs/authentication.html",
+      "pass": true,
+      "detail": "docs/authentication.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ios-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/mobile-browser-matrix--safari-ipados-real.md"
+    },
+    {
+      "name": "Pack names criterion: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/mobile-browser-matrix--safari-ipados-real.json"
+    },
+    {
+      "name": "Evidence template version is current: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "mobile-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": "[\"safari-ipados-real\"]"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → docs/advanced-navigation.html",
+      "pass": true,
+      "detail": "docs/advanced-navigation.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → docs/authentication.html",
+      "pass": true,
+      "detail": "docs/authentication.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/safari-ipados-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "manual-browser; allowed manual-browser, device-cloud"
+    },
+    {
+      "name": "Objective present: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "9"
+    },
+    {
+      "name": "Generated pack exists: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/mobile-browser-matrix--chrome-android-real.md"
+    },
+    {
+      "name": "Pack names criterion: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/mobile-browser-matrix--chrome-android-real.json"
+    },
+    {
+      "name": "Evidence template version is current: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "mobile-browser-matrix"
+    },
+    {
+      "name": "Evidence template maps correct criterion: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": "[\"chrome-android-real\"]"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → docs/advanced-navigation.html",
+      "pass": true,
+      "detail": "docs/advanced-navigation.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → docs/authentication.html",
+      "pass": true,
+      "detail": "docs/authentication.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: mobile-browser-matrix/chrome-android-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "assistive-technology; allowed assistive-technology"
+    },
+    {
+      "name": "Objective present: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "Generated pack exists: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/assistive-technology--keyboard-manual.md"
+    },
+    {
+      "name": "Pack names criterion: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/assistive-technology--keyboard-manual.json"
+    },
+    {
+      "name": "Evidence template version is current: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "assistive-technology"
+    },
+    {
+      "name": "Evidence template maps correct criterion: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": "[\"keyboard-manual\"]"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/toast.html",
+      "pass": true,
+      "detail": "docs/toast.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/keyboard-manual → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Criterion mapped: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "assistive-technology; allowed assistive-technology"
+    },
+    {
+      "name": "Objective present: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "name": "Generated pack exists: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/assistive-technology--nvda-desktop.md"
+    },
+    {
+      "name": "Pack names criterion: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/assistive-technology--nvda-desktop.json"
+    },
+    {
+      "name": "Evidence template version is current: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "assistive-technology"
+    },
+    {
+      "name": "Evidence template maps correct criterion: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": "[\"nvda-desktop\"]"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/toast.html",
+      "pass": true,
+      "detail": "docs/toast.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → docs/content-states.html",
+      "pass": true,
+      "detail": "docs/content-states.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/nvda-desktop → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "assistive-technology; allowed assistive-technology"
+    },
+    {
+      "name": "Objective present: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Generated pack exists: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/assistive-technology--voiceover-safari.md"
+    },
+    {
+      "name": "Pack names criterion: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/assistive-technology--voiceover-safari.json"
+    },
+    {
+      "name": "Evidence template version is current: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "assistive-technology"
+    },
+    {
+      "name": "Evidence template maps correct criterion: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": "[\"voiceover-safari\"]"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/toast.html",
+      "pass": true,
+      "detail": "docs/toast.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → docs/content-states.html",
+      "pass": true,
+      "detail": "docs/content-states.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/voiceover-safari → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "assistive-technology; allowed assistive-technology"
+    },
+    {
+      "name": "Objective present: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Evidence artifacts specified: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Generated pack exists: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/assistive-technology--talkback-chrome.md"
+    },
+    {
+      "name": "Pack names criterion: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/assistive-technology--talkback-chrome.json"
+    },
+    {
+      "name": "Evidence template version is current: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "assistive-technology"
+    },
+    {
+      "name": "Evidence template maps correct criterion: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": "[\"talkback-chrome\"]"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/toast.html",
+      "pass": true,
+      "detail": "docs/toast.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → docs/content-states.html",
+      "pass": true,
+      "detail": "docs/content-states.html"
+    },
+    {
+      "name": "Fixture exists: assistive-technology/talkback-chrome → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "zoom-reflow; allowed zoom-reflow"
+    },
+    {
+      "name": "Objective present: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "Evidence artifacts specified: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "name": "Generated pack exists: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/zoom-reflow-touch--zoom-200-real.md"
+    },
+    {
+      "name": "Pack names criterion: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/zoom-reflow-touch--zoom-200-real.json"
+    },
+    {
+      "name": "Evidence template version is current: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "zoom-reflow-touch"
+    },
+    {
+      "name": "Evidence template maps correct criterion: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": "[\"zoom-200-real\"]"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-200-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "zoom-reflow; allowed zoom-reflow"
+    },
+    {
+      "name": "Objective present: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "6 steps"
+    },
+    {
+      "name": "Pass criteria present: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "Evidence artifacts specified: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "name": "Generated pack exists: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/zoom-reflow-touch--zoom-400-real.md"
+    },
+    {
+      "name": "Pack names criterion: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/zoom-reflow-touch--zoom-400-real.json"
+    },
+    {
+      "name": "Evidence template version is current: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "zoom-reflow-touch"
+    },
+    {
+      "name": "Evidence template maps correct criterion: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": "[\"zoom-400-real\"]"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → docs/browser-reflow.html",
+      "pass": true,
+      "detail": "docs/browser-reflow.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/zoom-400-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "zoom-reflow; allowed zoom-reflow, device-cloud"
+    },
+    {
+      "name": "Objective present: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "5 steps"
+    },
+    {
+      "name": "Pass criteria present: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "Evidence artifacts specified: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Generated pack exists: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/zoom-reflow-touch--touch-targets-real.md"
+    },
+    {
+      "name": "Pack names criterion: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/zoom-reflow-touch--touch-targets-real.json"
+    },
+    {
+      "name": "Evidence template version is current: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "zoom-reflow-touch"
+    },
+    {
+      "name": "Evidence template maps correct criterion: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": "[\"touch-targets-real\"]"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → docs/button.html",
+      "pass": true,
+      "detail": "docs/button.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → docs/advanced-navigation.html",
+      "pass": true,
+      "detail": "docs/advanced-navigation.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → docs/choice.html",
+      "pass": true,
+      "detail": "docs/choice.html"
+    },
+    {
+      "name": "Fixture exists: zoom-reflow-touch/touch-targets-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "forced-colors; allowed forced-colors"
+    },
+    {
+      "name": "Objective present: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "5 steps"
+    },
+    {
+      "name": "Pass criteria present: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "Evidence artifacts specified: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "Generated pack exists: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/forced-colors-high-contrast--windows-forced-colors-real.md"
+    },
+    {
+      "name": "Pack names criterion: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/forced-colors-high-contrast--windows-forced-colors-real.json"
+    },
+    {
+      "name": "Evidence template version is current: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "forced-colors-high-contrast"
+    },
+    {
+      "name": "Evidence template maps correct criterion: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": "[\"windows-forced-colors-real\"]"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/overlays.html",
+      "pass": true,
+      "detail": "docs/overlays.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/tables.html",
+      "pass": true,
+      "detail": "docs/tables.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → docs/content-states.html",
+      "pass": true,
+      "detail": "docs/content-states.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/windows-forced-colors-real → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Criterion mapped: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "forced-colors; allowed forced-colors, manual-browser"
+    },
+    {
+      "name": "Objective present: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "4 steps"
+    },
+    {
+      "name": "Pass criteria present: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Evidence artifacts specified: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Generated pack exists: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/forced-colors-high-contrast--prefers-contrast-review.md"
+    },
+    {
+      "name": "Pack names criterion: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/forced-colors-high-contrast--prefers-contrast-review.json"
+    },
+    {
+      "name": "Evidence template version is current: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "forced-colors-high-contrast"
+    },
+    {
+      "name": "Evidence template maps correct criterion: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": "[\"prefers-contrast-review\"]"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/prefers-contrast-review → docs/foundation.html",
+      "pass": true,
+      "detail": "docs/foundation.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/prefers-contrast-review → docs/forms-complete.html",
+      "pass": true,
+      "detail": "docs/forms-complete.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/prefers-contrast-review → docs/navigation-completion.html",
+      "pass": true,
+      "detail": "docs/navigation-completion.html"
+    },
+    {
+      "name": "Fixture exists: forced-colors-high-contrast/prefers-contrast-review → docs/content-states.html",
+      "pass": true,
+      "detail": "docs/content-states.html"
+    },
+    {
+      "name": "Criterion mapped: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "visual-review; allowed visual-review"
+    },
+    {
+      "name": "Objective present: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "5 steps"
+    },
+    {
+      "name": "Pass criteria present: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Evidence artifacts specified: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "Generated pack exists: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/visual-regression-baselines--baseline-human-approved.md"
+    },
+    {
+      "name": "Pack names criterion: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/visual-regression-baselines--baseline-human-approved.json"
+    },
+    {
+      "name": "Evidence template version is current: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "visual-regression-baselines"
+    },
+    {
+      "name": "Evidence template maps correct criterion: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": "[\"baseline-human-approved\"]"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-human-approved → docs/visual-regression.html",
+      "pass": true,
+      "detail": "docs/visual-regression.html"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-human-approved → examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-human-approved → examples/starters/data-management.html",
+      "pass": true,
+      "detail": "examples/starters/data-management.html"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-human-approved → examples/starters/marketing.html",
+      "pass": true,
+      "detail": "examples/starters/marketing.html"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-human-approved → tests/i18n/index.html",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Criterion mapped: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "visual-review; allowed visual-review, automated-ci"
+    },
+    {
+      "name": "Objective present: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "4 steps"
+    },
+    {
+      "name": "Pass criteria present: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Evidence artifacts specified: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Environment fields specified: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Generated pack exists: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/visual-regression-baselines--baseline-compare-pass.md"
+    },
+    {
+      "name": "Pack names criterion: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/visual-regression-baselines--baseline-compare-pass.json"
+    },
+    {
+      "name": "Evidence template version is current: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "visual-regression-baselines"
+    },
+    {
+      "name": "Evidence template maps correct criterion: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": "[\"baseline-compare-pass\"]"
+    },
+    {
+      "name": "Fixture exists: visual-regression-baselines/baseline-compare-pass → docs/visual-regression.html",
+      "pass": true,
+      "detail": "docs/visual-regression.html"
+    },
+    {
+      "name": "Criterion mapped: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "name-clearance; allowed name-clearance"
+    },
+    {
+      "name": "Objective present: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "3 steps"
+    },
+    {
+      "name": "Pass criteria present: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Evidence artifacts specified: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Generated pack exists: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/public-name-namespace-clearance--project-name-clearance.md"
+    },
+    {
+      "name": "Pack names criterion: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/public-name-namespace-clearance--project-name-clearance.json"
+    },
+    {
+      "name": "Evidence template version is current: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "public-name-namespace-clearance"
+    },
+    {
+      "name": "Evidence template maps correct criterion: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": "[\"project-name-clearance\"]"
+    },
+    {
+      "name": "Criterion mapped: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "name-clearance; allowed name-clearance"
+    },
+    {
+      "name": "Objective present: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "3 steps"
+    },
+    {
+      "name": "Pass criteria present: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Evidence artifacts specified: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Generated pack exists: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/public-name-namespace-clearance--package-namespace-clearance.md"
+    },
+    {
+      "name": "Pack names criterion: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/public-name-namespace-clearance--package-namespace-clearance.json"
+    },
+    {
+      "name": "Evidence template version is current: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "public-name-namespace-clearance"
+    },
+    {
+      "name": "Evidence template maps correct criterion: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": "[\"package-namespace-clearance\"]"
+    },
+    {
+      "name": "Criterion mapped: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence kind is allowed: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "name-clearance; allowed name-clearance"
+    },
+    {
+      "name": "Objective present: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Procedure is actionable: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "3 steps"
+    },
+    {
+      "name": "Pass criteria present: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Evidence artifacts specified: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Environment fields specified: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "Generated pack exists: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "tests/release/external-lab/packs/public-name-namespace-clearance--repository-domain-clearance.md"
+    },
+    {
+      "name": "Pack names criterion: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack references template: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack preserves approval boundary: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence template exists: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "tests/release/evidence-templates/public-name-namespace-clearance--repository-domain-clearance.json"
+    },
+    {
+      "name": "Evidence template version is current: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Evidence template maps correct gate: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "public-name-namespace-clearance"
+    },
+    {
+      "name": "Evidence template maps correct criterion: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": "[\"repository-domain-clearance\"]"
+    },
+    {
+      "name": "No unknown catalog criterion: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No unknown catalog criterion: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "External Lab README exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "External Lab manifest exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "External Lab documentation page exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: desktop-browser-matrix/chrome-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: desktop-browser-matrix/edge-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: desktop-browser-matrix/firefox-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: desktop-browser-matrix/safari-desktop-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: mobile-browser-matrix/safari-ios-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: mobile-browser-matrix/safari-ipados-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: mobile-browser-matrix/chrome-android-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: assistive-technology/keyboard-manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: assistive-technology/nvda-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: assistive-technology/voiceover-safari",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: assistive-technology/talkback-chrome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: zoom-reflow-touch/zoom-200-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: zoom-reflow-touch/zoom-400-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: zoom-reflow-touch/touch-targets-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: forced-colors-high-contrast/windows-forced-colors-real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: forced-colors-high-contrast/prefers-contrast-review",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: visual-regression-baselines/baseline-human-approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: visual-regression-baselines/baseline-compare-pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: public-name-namespace-clearance/project-name-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: public-name-namespace-clearance/package-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs exposes criterion: public-name-namespace-clearance/repository-domain-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs follows native/system color scheme",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs does not force root light/dark theme",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "External Lab generation does not close gates",
+      "pass": true,
+      "detail": "0 passed"
+    }
+  ]
+}

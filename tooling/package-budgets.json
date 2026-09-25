@@ -1,0 +1,12 @@
+{
+  "@reeris/core": {
+    "maxPackedBytes": 150000,
+    "maxUnpackedBytes": 1100000,
+    "maxFiles": 90
+  },
+  "@reeris/js": {
+    "maxPackedBytes": 20000,
+    "maxUnpackedBytes": 50000,
+    "maxFiles": 12
+  }
+}

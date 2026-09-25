@@ -1,0 +1,89 @@
+@layer reeris.utilities {
+  :where(.block) { display: block; }
+  :where(.inline-block) { display: inline-block; }
+  :where(.inline) { display: inline; }
+  :where(.flex) { display: flex; }
+  :where(.inline-flex) { display: inline-flex; }
+  :where(.grid) { display: grid; }
+  :where(.hidden) { display: none; }
+
+  :where(.flex-row) { flex-direction: row; }
+  :where(.flex-col) { flex-direction: column; }
+  :where(.flex-wrap) { flex-wrap: wrap; }
+  :where(.items-start) { align-items: flex-start; }
+  :where(.items-center) { align-items: center; }
+  :where(.items-end) { align-items: flex-end; }
+  :where(.justify-start) { justify-content: flex-start; }
+  :where(.justify-center) { justify-content: center; }
+  :where(.justify-between) { justify-content: space-between; }
+  :where(.justify-end) { justify-content: flex-end; }
+
+  :where(.gap-1) { gap: var(--reeris-space-1); }
+  :where(.gap-2) { gap: var(--reeris-space-2); }
+  :where(.gap-3) { gap: var(--reeris-space-3); }
+  :where(.gap-4) { gap: var(--reeris-space-4); }
+  :where(.gap-6) { gap: var(--reeris-space-6); }
+  :where(.gap-8) { gap: var(--reeris-space-8); }
+
+  :where(.m-0) { margin: 0; }
+  :where(.mt-2) { margin-block-start: var(--reeris-space-2); }
+  :where(.mt-4) { margin-block-start: var(--reeris-space-4); }
+  :where(.mb-2) { margin-block-end: var(--reeris-space-2); }
+  :where(.mb-4) { margin-block-end: var(--reeris-space-4); }
+  :where(.ms-2) { margin-inline-start: var(--reeris-space-2); }
+  :where(.ms-4) { margin-inline-start: var(--reeris-space-4); }
+  :where(.me-2) { margin-inline-end: var(--reeris-space-2); }
+  :where(.me-4) { margin-inline-end: var(--reeris-space-4); }
+  :where(.mx-auto) { margin-inline: auto; }
+  :where(.p-2) { padding: var(--reeris-space-2); }
+  :where(.p-4) { padding: var(--reeris-space-4); }
+  :where(.p-6) { padding: var(--reeris-space-6); }
+  :where(.ps-2) { padding-inline-start: var(--reeris-space-2); }
+  :where(.ps-4) { padding-inline-start: var(--reeris-space-4); }
+  :where(.pe-2) { padding-inline-end: var(--reeris-space-2); }
+  :where(.pe-4) { padding-inline-end: var(--reeris-space-4); }
+
+  :where(.w-full) { inline-size: 100%; }
+  :where(.max-w-full) { max-inline-size: 100%; }
+  :where(.overflow-auto) { overflow: auto; }
+  :where(.overflow-hidden) { overflow: hidden; }
+  :where(.relative) { position: relative; }
+  :where(.sticky) { position: sticky; }
+
+  :where(.text-start) { text-align: start; }
+  :where(.text-center) { text-align: center; }
+  :where(.text-end) { text-align: end; }
+  :where(.font-normal) { font-weight: var(--reeris-font-weight-normal); }
+  :where(.font-medium) { font-weight: var(--reeris-font-weight-medium); }
+  :where(.font-semibold) { font-weight: var(--reeris-font-weight-semibold); }
+  :where(.font-bold) { font-weight: var(--reeris-font-weight-bold); }
+
+  :where(.rounded) { border-radius: var(--reeris-radius-md); }
+  :where(.rounded-lg) { border-radius: var(--reeris-radius-lg); }
+  :where(.rounded-full) { border-radius: var(--reeris-radius-full); }
+  :where(.border) { border: var(--reeris-border-1) solid var(--reeris-color-border); }
+  :where(.shadow-sm) { box-shadow: var(--reeris-shadow-sm); }
+  :where(.shadow-md) { box-shadow: var(--reeris-shadow-md); }
+}
+
+@media (min-width: 48rem) {
+  @layer reeris.utilities {
+    :where(.md\:block) { display: block; }
+    :where(.md\:flex) { display: flex; }
+    :where(.md\:grid) { display: grid; }
+    :where(.md\:hidden) { display: none; }
+    :where(.md\:flex-row) { flex-direction: row; }
+    :where(.md\:text-center) { text-align: center; }
+    :where(.md\:cols-2) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+}
+@media (min-width: 64rem) {
+  @layer reeris.utilities {
+    :where(.lg\:block) { display: block; }
+    :where(.lg\:flex) { display: flex; }
+    :where(.lg\:grid) { display: grid; }
+    :where(.lg\:hidden) { display: none; }
+    :where(.lg\:cols-3) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    :where(.lg\:cols-4) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+}

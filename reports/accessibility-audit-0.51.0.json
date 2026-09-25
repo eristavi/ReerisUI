@@ -1,0 +1,423 @@
+{
+  "version": "0.51.0",
+  "generatedAt": "2026-09-25T12:54:07.173Z",
+  "scope": "Static accessibility acceptance audit for Reeris Core and documentation examples",
+  "note": "Passing this audit does not by itself establish full WCAG 2.2 AA conformance. Manual/browser checks remain required for keyboard behavior, screen readers, zoom/reflow, touch behavior, native-control rendering, and visual regression.",
+  "summary": {
+    "total": 51,
+    "passed": 51,
+    "failed": 0,
+    "docsChecked": 42
+  },
+  "contrastResults": [
+    {
+      "name": "text-canvas",
+      "scheme": "light",
+      "ratio": 16.72574553276095
+    },
+    {
+      "name": "text-canvas",
+      "scheme": "dark",
+      "ratio": 17.20480326317728
+    },
+    {
+      "name": "muted-canvas",
+      "scheme": "light",
+      "ratio": 5.910395069119918
+    },
+    {
+      "name": "muted-canvas",
+      "scheme": "dark",
+      "ratio": 8.026699422493234
+    },
+    {
+      "name": "text-surface",
+      "scheme": "light",
+      "ratio": 17.71668150032072
+    },
+    {
+      "name": "text-surface",
+      "scheme": "dark",
+      "ratio": 15.311811827746817
+    },
+    {
+      "name": "muted-surface",
+      "scheme": "light",
+      "ratio": 6.260563200340556
+    },
+    {
+      "name": "muted-surface",
+      "scheme": "dark",
+      "ratio": 7.143546443111341
+    },
+    {
+      "name": "primary",
+      "scheme": "light",
+      "ratio": 5.559586634167599
+    },
+    {
+      "name": "primary",
+      "scheme": "dark",
+      "ratio": 7.86204197248551
+    },
+    {
+      "name": "accent",
+      "scheme": "light",
+      "ratio": 4.603366791596004
+    },
+    {
+      "name": "accent",
+      "scheme": "dark",
+      "ratio": 8.36450633984606
+    },
+    {
+      "name": "success",
+      "scheme": "light",
+      "ratio": 4.78903250026474
+    },
+    {
+      "name": "success",
+      "scheme": "dark",
+      "ratio": 8.426637773535525
+    },
+    {
+      "name": "warning",
+      "scheme": "light",
+      "ratio": 5.3444514669515994
+    },
+    {
+      "name": "warning",
+      "scheme": "dark",
+      "ratio": 7.934404289026411
+    },
+    {
+      "name": "danger",
+      "scheme": "light",
+      "ratio": 5.866097448235085
+    },
+    {
+      "name": "danger",
+      "scheme": "dark",
+      "ratio": 7.517612230109945
+    },
+    {
+      "name": "info",
+      "scheme": "light",
+      "ratio": 5.212142139745884
+    },
+    {
+      "name": "info",
+      "scheme": "dark",
+      "ratio": 8.066448117981482
+    }
+  ],
+  "docIssues": [],
+  "checks": [
+    {
+      "id": "focus-visible-global",
+      "category": "static",
+      "pass": true,
+      "detail": "Global :focus-visible outline exists."
+    },
+    {
+      "id": "focus-token-width",
+      "category": "static",
+      "pass": true,
+      "detail": "Focus ring width is 2px."
+    },
+    {
+      "id": "forced-colors",
+      "category": "static",
+      "pass": true,
+      "detail": "Forced-colors handling is present."
+    },
+    {
+      "id": "prefers-contrast",
+      "category": "static",
+      "pass": true,
+      "detail": "Explicit prefers-contrast: more handling is present."
+    },
+    {
+      "id": "reduced-motion",
+      "category": "static",
+      "pass": true,
+      "detail": "Reduced-motion handling is present."
+    },
+    {
+      "id": "reduced-transparency",
+      "category": "static",
+      "pass": true,
+      "detail": "Reduced-transparency fallbacks are present."
+    },
+    {
+      "id": "screen-reader-utility",
+      "category": "static",
+      "pass": true,
+      "detail": "Screen-reader-only utilities are present."
+    },
+    {
+      "id": "no-outline-removal",
+      "category": "static",
+      "pass": true,
+      "detail": "No outline: 0/none declarations found in Core CSS."
+    },
+    {
+      "id": "logical-properties",
+      "category": "static",
+      "pass": true,
+      "detail": "Logical properties are used throughout Core."
+    },
+    {
+      "id": "target-token",
+      "category": "static",
+      "pass": true,
+      "detail": "24px minimum-target token exists."
+    },
+    {
+      "id": "xs-control-target",
+      "category": "static",
+      "pass": true,
+      "detail": "Smallest standard control is 28px, above WCAG 2.2 AA 24px target minimum."
+    },
+    {
+      "id": "chip-remove-target",
+      "category": "static",
+      "pass": true,
+      "detail": "Chip remove action uses minimum target token."
+    },
+    {
+      "id": "filter-remove-target",
+      "category": "static",
+      "pass": true,
+      "detail": "Filter remove action uses minimum target token."
+    },
+    {
+      "id": "rating-target",
+      "category": "static",
+      "pass": true,
+      "detail": "Interactive rating stars use minimum target token."
+    },
+    {
+      "id": "button-loading-reduced-motion",
+      "category": "static",
+      "pass": true,
+      "detail": "Button loading indicator stops motion when reduced motion is requested."
+    },
+    {
+      "id": "aria-disabled-pointer-consistency",
+      "category": "static",
+      "pass": true,
+      "detail": "ARIA-disabled navigation/menu items are not pointer-disabled in CSS; application logic must suppress activation consistently for keyboard and pointer."
+    },
+    {
+      "id": "contrast-text-canvas-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "text-canvas light: 16.73:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-text-canvas-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "text-canvas dark: 17.20:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-muted-canvas-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "muted-canvas light: 5.91:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-muted-canvas-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "muted-canvas dark: 8.03:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-text-surface-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "text-surface light: 17.72:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-text-surface-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "text-surface dark: 15.31:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-muted-surface-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "muted-surface light: 6.26:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-muted-surface-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "muted-surface dark: 7.14:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-primary-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "primary light: 5.56:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-primary-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "primary dark: 7.86:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-accent-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "accent light: 4.60:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-accent-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "accent dark: 8.36:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-success-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "success light: 4.79:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-success-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "success dark: 8.43:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-warning-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "warning light: 5.34:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-warning-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "warning dark: 7.93:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-danger-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "danger light: 5.87:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-danger-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "danger dark: 7.52:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-info-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "info light: 5.21:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "contrast-info-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "info dark: 8.07:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "focus-contrast-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "Focus color vs canvas light: 5.25:1 (non-text indicator target ≥ 3:1)."
+    },
+    {
+      "id": "focus-contrast-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "Focus color vs canvas dark: 7.86:1 (non-text indicator target ≥ 3:1)."
+    },
+    {
+      "id": "gradient-contrast-primary-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "primary gradient light: endpoint minimum 4.60:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-primary-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "primary gradient dark: endpoint minimum 7.86:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-accent-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "accent gradient light: endpoint minimum 4.60:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-accent-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "accent gradient dark: endpoint minimum 8.07:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-success-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "success gradient light: endpoint minimum 4.67:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-success-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "success gradient dark: endpoint minimum 8.41:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-warning-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "warning gradient light: endpoint minimum 5.34:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-warning-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "warning gradient dark: endpoint minimum 7.73:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-danger-light",
+      "category": "contrast",
+      "pass": true,
+      "detail": "danger gradient light: endpoint minimum 5.87:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "gradient-contrast-danger-dark",
+      "category": "contrast",
+      "pass": true,
+      "detail": "danger gradient dark: endpoint minimum 7.50:1 (required ≥ 4.5:1)."
+    },
+    {
+      "id": "docs-accessible-names",
+      "category": "docs",
+      "pass": true,
+      "detail": "42 HTML demos checked; 0 accessible-name issues found."
+    },
+    {
+      "id": "js-no-eval",
+      "category": "js",
+      "pass": true,
+      "detail": "No eval/new Function in optional JS."
+    },
+    {
+      "id": "js-no-innerhtml",
+      "category": "js",
+      "pass": true,
+      "detail": "Optional JS does not inject HTML with innerHTML/outerHTML."
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "version": "0.40.0",
+  "generatedAt": "2026-09-25T08:27:43.073Z",
+  "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
+  "budgets": {
+    "fullRawBytes": 245760,
+    "minRawBytes": 220160,
+    "minGzipBytes": 32768,
+    "minBrotliBytes": 27648,
+    "largestModuleBytes": 26624,
+    "maxSelectorLength": 400,
+    "maxSpecificity": [
+      0,
+      1,
+      1
+    ],
+    "maxUnlayeredQualifiedRules": 0,
+    "maxExactDuplicateRules": 0,
+    "maxIdSelectors": 0
+  },
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "qualifiedRules": 1439,
+    "individualSelectors": 1461,
+    "sourceCssModules": 35
+  },
+  "bundle": {
+    "full": {
+      "raw": 224202,
+      "gzip": 32064,
+      "brotli": 26457
+    },
+    "minified": {
+      "raw": 204024,
+      "gzip": 29602,
+      "brotli": 24697
+    },
+    "optionalJsAllModules": {
+      "raw": 5451,
+      "gzip": 1570,
+      "brotli": 1332
+    }
+  },
+  "architecture": {
+    "maxSpecificity": {
+      "selector": ":dir(rtl) :where(.status-flow > li:not(:last-child))::after",
+      "context": [
+        "layer:reeris.components"
+      ],
+      "specificity": [
+        0,
+        1,
+        1
+      ]
+    },
+    "longestSelector": {
+      "length": 332,
+      "selector": ":where(.app-shell[data-reeris-state=\"collapsed\"] .sidebar-section-title,\n         .app-shell[data-reeris-state=\"collapsed\"] .sidebar-label,\n         .app-shell[data-reeris-state=\"collapsed\"] .sidebar-meta,\n         .app-shell[data-reeris-state=\"collapsed\"] .sidebar-chevron,\n         .app-shell[data-reeris-state=\"collapsed\"] .sidebar-subnav)"
+    },
+    "unlayeredQualifiedRules": [],
+    "idSelectorCount": 0,
+    "exactDuplicateRules": 0,
+    "importantUses": [
+      {
+        "file": "components/commerce.css",
+        "line": 65,
+        "text": ":where(.receipt .btn,.invoice .btn,.receipt .no-print,.invoice .no-print) { display:none !important; }"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 3,
+        "text": "position: absolute !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 4,
+        "text": "inline-size: 1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 5,
+        "text": "block-size: 1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 6,
+        "text": "padding: 0 !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 7,
+        "text": "margin: -1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 8,
+        "text": "overflow: hidden !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 9,
+        "text": "clip: rect(0, 0, 0, 0) !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 10,
+        "text": "white-space: nowrap !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 11,
+        "text": "border: 0 !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 14,
+        "text": "position: absolute !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 15,
+        "text": "inline-size: 1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 16,
+        "text": "block-size: 1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 17,
+        "text": "padding: 0 !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 18,
+        "text": "margin: -1px !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 19,
+        "text": "overflow: hidden !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 20,
+        "text": "clip: rect(0, 0, 0, 0) !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 21,
+        "text": "white-space: nowrap !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 22,
+        "text": "border: 0 !important;"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 25,
+        "text": ":where(.print-only) { display: none !important; }"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 29,
+        "text": ":where(.no-print) { display: none !important; }"
+      },
+      {
+        "file": "utilities/accessibility.css",
+        "line": 30,
+        "text": ":where(.print-only) { display: revert !important; }"
+      }
+    ],
+    "disallowedImportant": [],
+    "physicalDirectionUses": [
+      {
+        "file": "components/navigation-extended.css",
+        "line": 128,
+        "text": "left:0;"
+      }
+    ],
+    "physicalDirectionExceptions": [
+      {
+        "file": "components/navigation-extended.css",
+        "line": 128,
+        "text": "left:0;"
+      }
+    ]
+  },
+  "duplication": {
+    "note": "Repeated declaration blocks are informational because semantic components may intentionally share declarations. Exact duplicate rules are a release-gating error.",
+    "repeatedDeclarationBlocks": [
+      {
+        "occurrences": 8,
+        "bytes": 121,
+        "selectors": [
+          ":where(.nav-link:focus-visible)",
+          ":where(.page-link:focus-visible)",
+          ":where(.dialog:focus-visible)",
+          ":where(.sort-button:focus-visible,.table :is(a,button,input,select):focus-visible)",
+          ":where(.sidebar-link:focus-visible,.mobile-nav-link:focus-visible,.secondary-nav-link:focus-visible)",
+          ":where(.navbar-toggle:focus-visible)"
+        ]
+      },
+      {
+        "occurrences": 6,
+        "bytes": 123,
+        "selectors": [
+          ":focus-visible",
+          ":where(.file:focus-visible)::file-selector-button",
+          ":where(.tree-row:focus-visible)",
+          ":where(.choice:has(:focus-visible))",
+          ":where(.reaction:focus-visible)",
+          ":where(.vote-button:focus-visible)"
+        ]
+      },
+      {
+        "occurrences": 3,
+        "bytes": 202,
+        "selectors": [
+          ":where(.notification-center)",
+          ":where(.inbox)",
+          ":where(.file-browser)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 253,
+        "selectors": [
+          ":where(.sr-only)",
+          ":where(.sr-only-focusable:not(:focus):not(:focus-within))"
+        ]
+      },
+      {
+        "occurrences": 4,
+        "bytes": 91,
+        "selectors": [
+          ":where(.feature-title)",
+          ":where(.pricing-name)",
+          ":where(.notification-title)",
+          ":where(.summary-title)"
+        ]
+      },
+      {
+        "occurrences": 3,
+        "bytes": 115,
+        "selectors": [
+          ":where(.stat-label)",
+          ":where(.command-label,.filter-label)",
+          ":where(.metric-label)"
+        ]
+      },
+      {
+        "occurrences": 3,
+        "bytes": 113,
+        "selectors": [
+          ":where(.chip[aria-pressed=\"true\"], .chip.selected)",
+          ":where(.page-link[aria-current=\"page\"],.page-link.active)",
+          ":where(.step[aria-current=\"step\"])::before"
+        ]
+      },
+      {
+        "occurrences": 6,
+        "bytes": 55,
+        "selectors": [
+          ":where(.list-title)",
+          ":where(.timeline-title,.activity-title)",
+          ":where(.workflow-title)",
+          ":where(.media-title)",
+          ":where(.dropzone-title)",
+          ":where(.product-title,.order-title,.transaction-title)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 157,
+        "selectors": [
+          ":where(.card-title)",
+          ":where(.content-state-title)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 146,
+        "selectors": [
+          ":where(.tabs.glide)::before",
+          ":where(.glide.underline)::before"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 137,
+        "selectors": [
+          ":where(.legend-item)",
+          ":where(.status-flow > li)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 132,
+        "selectors": [
+          ":where(.tab:focus-visible)",
+          ":where(.list-item.interactive:focus-visible)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 130,
+        "selectors": [
+          ":where(.content-state.offline)",
+          ":where(.content-state.maintenance)"
+        ]
+      },
+      {
+        "occurrences": 2,
+        "bytes": 129,
+        "selectors": [
+          ":where(.btn-group > .btn:first-child)",
+          ":where(.split-btn > .btn:first-child)"
+        ]
+      },
+      {
+        "occurrences": 3,
+        "bytes": 84,
+        "selectors": [
+          ":where(.navbar-actions)",
+          ":where(.app-topbar-actions)",
+          ":where(.widget-actions)"
+        ]
+      }
+    ]
+  },
+  "modules": {
+    "largest": [
+      {
+        "file": "forms/forms.css",
+        "bytes": 23093
+      },
+      {
+        "file": "components/surfaces.css",
+        "bytes": 11034
+      },
+      {
+        "file": "components/navigation-extended.css",
+        "bytes": 10968
+      },
+      {
+        "file": "components/button.css",
+        "bytes": 10731
+      },
+      {
+        "file": "tokens/generated.css",
+        "bytes": 9607
+      },
+      {
+        "file": "components/navigation.css",
+        "bytes": 9537
+      },
+      {
+        "file": "components/overlays.css",
+        "bytes": 8589
+      },
+      {
+        "file": "components/advanced-navigation.css",
+        "bytes": 8089
+      },
+      {
+        "file": "components/marketing.css",
+        "bytes": 8025
+      },
+      {
+        "file": "components/messaging.css",
+        "bytes": 7537
+      },
+      {
+        "file": "components/workflow.css",
+        "bytes": 7166
+      },
+      {
+        "file": "components/feedback.css",
+        "bytes": 7001
+      },
+      {
+        "file": "components/commerce.css",
+        "bytes": 6813
+      },
+      {
+        "file": "components/media.css",
+        "bytes": 6707
+      },
+      {
+        "file": "components/app-shell.css",
+        "bytes": 6523
+      }
+    ],
+    "orphanModules": [],
+    "missingImports": [],
+    "modularMismatches": []
+  },
+  "checks": [
+    {
+      "id": "all-qualified-rules-layered",
+      "category": "cascade",
+      "pass": true,
+      "detail": "0 qualified rules are outside Reeris cascade layers."
+    },
+    {
+      "id": "specificity-budget",
+      "category": "specificity",
+      "pass": true,
+      "detail": "Maximum approximate specificity is 0,1,1 (:dir(rtl) :where(.status-flow > li:not(:last-child))::after)."
+    },
+    {
+      "id": "no-id-selectors",
+      "category": "specificity",
+      "pass": true,
+      "detail": "0 selectors contain an ID contribution."
+    },
+    {
+      "id": "selector-length-budget",
+      "category": "specificity",
+      "pass": true,
+      "detail": "Longest individual selector is 332 characters."
+    },
+    {
+      "id": "no-exact-duplicate-rules",
+      "category": "duplication",
+      "pass": true,
+      "detail": "0 exact duplicate rule signatures found."
+    },
+    {
+      "id": "important-allowlist",
+      "category": "cascade",
+      "pass": true,
+      "detail": "22 !important declarations found; 0 fall outside the accessibility/print allowlist."
+    },
+    {
+      "id": "logical-property-policy",
+      "category": "rtl",
+      "pass": true,
+      "detail": "1 physical direction declarations found; 1 are the documented glide-geometry exception."
+    },
+    {
+      "id": "entry-import-completeness",
+      "category": "modules",
+      "pass": true,
+      "detail": "0 orphan source modules; 0 missing import targets."
+    },
+    {
+      "id": "modular-dist-consistency",
+      "category": "modules",
+      "pass": true,
+      "detail": "0 modular dist copies differ from source."
+    },
+    {
+      "id": "full-raw-budget",
+      "category": "size",
+      "pass": true,
+      "detail": "reeris.css raw 224202 / 245760 bytes."
+    },
+    {
+      "id": "min-raw-budget",
+      "category": "size",
+      "pass": true,
+      "detail": "reeris.min.css raw 204024 / 220160 bytes."
+    },
+    {
+      "id": "min-gzip-budget",
+      "category": "size",
+      "pass": true,
+      "detail": "reeris.min.css gzip 29602 / 32768 bytes."
+    },
+    {
+      "id": "min-brotli-budget",
+      "category": "size",
+      "pass": true,
+      "detail": "reeris.min.css brotli 24697 / 27648 bytes."
+    },
+    {
+      "id": "module-size-budget",
+      "category": "size",
+      "pass": true,
+      "detail": "Largest CSS source module is forms/forms.css at 23093 / 26624 bytes."
+    }
+  ]
+}

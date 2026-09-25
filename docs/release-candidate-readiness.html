@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Release Candidate Readiness 0.50</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="assets/docs.css">
+  <script type="module" src="assets/docs.js"></script>
+</head>
+<body class="docs-body">
+<header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a href="api-reference.html">API</a></nav></header>
+<main class="docs-home">
+  <section class="docs-hero">
+    <span class="badge primary">Reeris UI 0.50</span>
+    <h1>Release Candidate readiness</h1>
+    <p>Core is feature-frozen. The RC gate now distinguishes reproducible automated evidence from real-browser, assistive-technology, visual-baseline and public-publication checks that must still be completed outside this build environment.</p>
+  </section>
+
+  <section class="docs-section">
+    <h2>RC public API freeze</h2>
+    <p>The normalized public Core and optional-JavaScript surface is captured in <code>tests/release/public-api-freeze.json</code>. The snapshot covers public class selectors, public <code>--reeris-*</code> tokens and hooks, Reeris-owned data attributes and their documented values, package exports, optional JavaScript APIs, and published Core source-module names.</p>
+    <div class="l-cluster">
+      <span class="badge success">732 classes</span>
+      <span class="badge success">518 tokens/hooks</span>
+      <span class="badge success">11 data attributes</span>
+      <span class="badge success">14 package exports</span>
+      <span class="badge success">5 JS API entries</span>
+    </div>
+    <p>During the RC cycle, changing this snapshot requires an intentional review and changelog entry instead of silently drifting the public contract.</p>
+  </section>
+
+  <section class="docs-section">
+    <h2>Automated RC gate</h2>
+    <pre><code>npm run release:check</code></pre>
+    <p>The full release command rebuilds Reeris, runs all acceptance audits, verifies deterministic output and package payloads, validates documentation and starters, checks the RC API freeze, and writes release evidence. It does not publish to npm.</p>
+  </section>
+
+  <section class="docs-section">
+    <h2>Manual gates before 1.0</h2>
+    <p>Passing automation qualifies a source/tarball build for the RC validation cycle, not for final 1.0 conformance. The following evidence remains required:</p>
+    <ul>
+      <li>Desktop Chrome, Edge, Firefox and Safari browser matrix.</li>
+      <li>Safari on iOS/iPadOS and Chrome on Android, including native controls and safe areas.</li>
+      <li>Keyboard-only and representative screen-reader testing.</li>
+      <li>Real-browser 200%/400% zoom and reflow plus coarse-pointer/touch checks.</li>
+      <li>Windows forced-colors/high-contrast review.</li>
+      <li>Approved PNG visual-regression baselines in a functioning browser/CI environment.</li>
+    </ul>
+    <p>The machine-readable registry is <code>tests/release/manual-gates.json</code>.</p>
+  </section>
+
+  <section class="docs-section">
+    <h2>Public publication gate</h2>
+    <p>Before a public registry/repository launch, the final Reeris UI project name, package namespace, repository naming and appropriate trademark/conflict review must be confirmed. That external clearance is deliberately tracked separately from code quality.</p>
+  </section>
+
+  <section class="docs-section">
+    <h2>Deprecation contract</h2>
+    <p><code>DEPRECATIONS.md</code> formalizes the lifecycle: Supported → Deprecated → Migration period → Removed in the next major version. There are currently no deprecated APIs.</p>
+  </section>
+<section class="card"><div class="card-body"><h2>0.47 browser evidence</h2><p>Playwright CI now covers Chromium, Firefox, WebKit, mobile emulation and an Edge-on-Windows project. Real Safari/mobile devices, screen readers, real zoom/high-contrast and approved screenshot baselines remain manual release gates.</p></div></section><section class="docs-section"><h2>Release Lab gate closure</h2><p>0.48 decomposes the seven remaining gates into 21 explicit criteria. Approved, hashed evidence is reconciled by <code>npm run evidence:sync</code>; supplemental CI evidence cannot impersonate real manual/device evidence.</p><p><a class="btn outline" href="release-lab.html">Open Release Lab documentation</a></p></section><section class="docs-section"><h2>0.49 local Chromium evidence</h2><p>Chromium 144 now has a real Release Lab render/interaction run: 15/15 smoke/interaction checks and 14/14 canonical visual candidates passed. The evidence remains supplemental because this managed environment blocks localhost browser navigation and because Chromium cannot substitute for branded desktop browsers, real devices, assistive technology, real zoom, Windows High Contrast, or human-approved visual baselines.</p><p><a class="btn outline" href="local-chromium-evidence-0.49.md">Read the 0.49 evidence report</a></p></section><section class="docs-section"><h2>0.50 external test packs</h2><p>Every one of the 21 remaining closing criteria now has a dedicated real-world test/decision procedure, required evidence list, current JSON template and browser-native documentation entry. These packs prepare external validation; they do not mark any gate as passed.</p><p><a class="btn outline" href="external-release-lab.html">Open the External Release Lab</a></p></section></main>
+</body>
+</html>

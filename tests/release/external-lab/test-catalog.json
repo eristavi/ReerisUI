@@ -1,0 +1,1017 @@
+{
+  "schemaVersion": 1,
+  "version": "0.52.0",
+  "purpose": "Criterion-specific external Release Lab test catalog. Each entry maps one-to-one to a closing criterion in tests/release/gate-criteria.json.",
+  "items": [
+    {
+      "id": "desktop-browser-matrix/chrome-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "chrome-desktop-real",
+      "title": "Google Chrome \u2014 desktop",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris Core in current stable Google Chrome \u2014 desktop using the canonical release fixtures.",
+      "prerequisites": [
+        "A checkout of the exact Reeris release under test",
+        "Run `node tooling/test-server.mjs` from the repository root",
+        "Disable browser extensions that alter page rendering",
+        "Record exact browser and OS versions before testing"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every listed fixture through the Reeris test server, not from a stale cache.",
+        "Check the default system theme, then explicitly test light and dark theme overrides where the fixture exposes them.",
+        "Exercise links, buttons, native form controls, details/disclosure, dialog/popover flows and keyboard focus where present.",
+        "Resize the viewport from a normal desktop width down to approximately 320 CSS pixels and confirm the browser-reflow fixture has no page-level horizontal overflow.",
+        "Inspect the developer console for uncaught Reeris errors or missing local assets.",
+        "Review forms, tables, navigation, overlays, RTL content and the dashboard starter for clipping, inaccessible focus, broken native controls or unreadable text."
+      ],
+      "passCriteria": [
+        "All listed fixtures render without Reeris-caused layout breakage or missing assets.",
+        "Representative interactions work with pointer and keyboard.",
+        "No uncaught Reeris runtime errors occur.",
+        "No unexpected page-level horizontal scrolling appears in the canonical reflow fixture.",
+        "Light/dark and RTL presentations remain legible and structurally correct."
+      ],
+      "requiredArtifacts": [
+        "Completed tester notes including exact browser/OS version and result for every fixture.",
+        "At least four screenshots: foundation, forms, overlays and RTL/reflow or dashboard.",
+        "Console-error note or export showing whether uncaught Reeris errors occurred."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "deviceOrHardware",
+        "viewport",
+        "displayScale",
+        "theme",
+        "tester"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/edge-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "edge-desktop-real",
+      "title": "Microsoft Edge \u2014 desktop",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris Core in current stable Microsoft Edge \u2014 desktop using the canonical release fixtures.",
+      "prerequisites": [
+        "A checkout of the exact Reeris release under test",
+        "Run `node tooling/test-server.mjs` from the repository root",
+        "Disable browser extensions that alter page rendering",
+        "Record exact browser and OS versions before testing"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every listed fixture through the Reeris test server, not from a stale cache.",
+        "Check the default system theme, then explicitly test light and dark theme overrides where the fixture exposes them.",
+        "Exercise links, buttons, native form controls, details/disclosure, dialog/popover flows and keyboard focus where present.",
+        "Resize the viewport from a normal desktop width down to approximately 320 CSS pixels and confirm the browser-reflow fixture has no page-level horizontal overflow.",
+        "Inspect the developer console for uncaught Reeris errors or missing local assets.",
+        "Review forms, tables, navigation, overlays, RTL content and the dashboard starter for clipping, inaccessible focus, broken native controls or unreadable text."
+      ],
+      "passCriteria": [
+        "All listed fixtures render without Reeris-caused layout breakage or missing assets.",
+        "Representative interactions work with pointer and keyboard.",
+        "No uncaught Reeris runtime errors occur.",
+        "No unexpected page-level horizontal scrolling appears in the canonical reflow fixture.",
+        "Light/dark and RTL presentations remain legible and structurally correct."
+      ],
+      "requiredArtifacts": [
+        "Completed tester notes including exact browser/OS version and result for every fixture.",
+        "At least four screenshots: foundation, forms, overlays and RTL/reflow or dashboard.",
+        "Console-error note or export showing whether uncaught Reeris errors occurred."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "deviceOrHardware",
+        "viewport",
+        "displayScale",
+        "theme",
+        "tester"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/firefox-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "firefox-desktop-real",
+      "title": "Mozilla Firefox \u2014 desktop",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris Core in current stable Mozilla Firefox \u2014 desktop using the canonical release fixtures.",
+      "prerequisites": [
+        "A checkout of the exact Reeris release under test",
+        "Run `node tooling/test-server.mjs` from the repository root",
+        "Disable browser extensions that alter page rendering",
+        "Record exact browser and OS versions before testing"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every listed fixture through the Reeris test server, not from a stale cache.",
+        "Check the default system theme, then explicitly test light and dark theme overrides where the fixture exposes them.",
+        "Exercise links, buttons, native form controls, details/disclosure, dialog/popover flows and keyboard focus where present.",
+        "Resize the viewport from a normal desktop width down to approximately 320 CSS pixels and confirm the browser-reflow fixture has no page-level horizontal overflow.",
+        "Inspect the developer console for uncaught Reeris errors or missing local assets.",
+        "Review forms, tables, navigation, overlays, RTL content and the dashboard starter for clipping, inaccessible focus, broken native controls or unreadable text."
+      ],
+      "passCriteria": [
+        "All listed fixtures render without Reeris-caused layout breakage or missing assets.",
+        "Representative interactions work with pointer and keyboard.",
+        "No uncaught Reeris runtime errors occur.",
+        "No unexpected page-level horizontal scrolling appears in the canonical reflow fixture.",
+        "Light/dark and RTL presentations remain legible and structurally correct."
+      ],
+      "requiredArtifacts": [
+        "Completed tester notes including exact browser/OS version and result for every fixture.",
+        "At least four screenshots: foundation, forms, overlays and RTL/reflow or dashboard.",
+        "Console-error note or export showing whether uncaught Reeris errors occurred."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "deviceOrHardware",
+        "viewport",
+        "displayScale",
+        "theme",
+        "tester"
+      ]
+    },
+    {
+      "id": "desktop-browser-matrix/safari-desktop-real",
+      "gateId": "desktop-browser-matrix",
+      "criterionId": "safari-desktop-real",
+      "title": "Safari \u2014 macOS desktop",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris Core in current stable Safari \u2014 macOS desktop using the canonical release fixtures.",
+      "prerequisites": [
+        "A checkout of the exact Reeris release under test",
+        "Run `node tooling/test-server.mjs` from the repository root",
+        "Disable browser extensions that alter page rendering",
+        "Record exact browser and OS versions before testing"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every listed fixture through the Reeris test server, not from a stale cache.",
+        "Check the default system theme, then explicitly test light and dark theme overrides where the fixture exposes them.",
+        "Exercise links, buttons, native form controls, details/disclosure, dialog/popover flows and keyboard focus where present.",
+        "Resize the viewport from a normal desktop width down to approximately 320 CSS pixels and confirm the browser-reflow fixture has no page-level horizontal overflow.",
+        "Inspect the developer console for uncaught Reeris errors or missing local assets.",
+        "Review forms, tables, navigation, overlays, RTL content and the dashboard starter for clipping, inaccessible focus, broken native controls or unreadable text."
+      ],
+      "passCriteria": [
+        "All listed fixtures render without Reeris-caused layout breakage or missing assets.",
+        "Representative interactions work with pointer and keyboard.",
+        "No uncaught Reeris runtime errors occur.",
+        "No unexpected page-level horizontal scrolling appears in the canonical reflow fixture.",
+        "Light/dark and RTL presentations remain legible and structurally correct."
+      ],
+      "requiredArtifacts": [
+        "Completed tester notes including exact browser/OS version and result for every fixture.",
+        "At least four screenshots: foundation, forms, overlays and RTL/reflow or dashboard.",
+        "Console-error note or export showing whether uncaught Reeris errors occurred."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "deviceOrHardware",
+        "viewport",
+        "displayScale",
+        "theme",
+        "tester"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/safari-ios-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "safari-ios-real",
+      "title": "Safari \u2014 real iPhone",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris on Safari \u2014 real iPhone, including touch, safe areas and native form controls.",
+      "prerequisites": [
+        "Use a real current device or a trusted real-device cloud session",
+        "Record exact device model, OS version and browser version",
+        "Serve the exact Reeris release over HTTP/HTTPS",
+        "Test both portrait and landscape when supported"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every fixture and confirm the page honors the device safe area and does not create unexpected horizontal overflow.",
+        "Exercise native select, date/time, file and text inputs; open/close the virtual keyboard and confirm focused controls remain usable.",
+        "Exercise bottom/mobile navigation, dialog/drawer/disclosure controls and scrollable table/content regions.",
+        "Rotate between portrait and landscape and repeat representative interactions.",
+        "Verify touch interactions do not require hover and that visible controls can be activated without accidental neighboring activation.",
+        "Check RTL/i18n fixture, long strings and authentication/dashboard starters for clipping or inaccessible content."
+      ],
+      "passCriteria": [
+        "No Reeris-caused layout clipping or page-level overflow in canonical fixtures.",
+        "Native controls remain usable with the platform keyboard/pickers.",
+        "Safe-area-aware fixed UI does not collide with device insets.",
+        "Touch interactions work without hover dependency.",
+        "Portrait and landscape remain usable."
+      ],
+      "requiredArtifacts": [
+        "Completed device/browser notes.",
+        "Portrait and landscape screenshots from at least three representative fixtures.",
+        "Screenshot or short recording showing native form control/virtual-keyboard behavior."
+      ],
+      "environmentFields": [
+        "deviceModel",
+        "osName",
+        "osVersion",
+        "browserName",
+        "browserVersion",
+        "orientation",
+        "displayScale",
+        "tester",
+        "deviceCloudProvider"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/safari-ipados-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "safari-ipados-real",
+      "title": "Safari \u2014 real iPad",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris on Safari \u2014 real iPad, including touch, safe areas and native form controls.",
+      "prerequisites": [
+        "Use a real current device or a trusted real-device cloud session",
+        "Record exact device model, OS version and browser version",
+        "Serve the exact Reeris release over HTTP/HTTPS",
+        "Test both portrait and landscape when supported"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every fixture and confirm the page honors the device safe area and does not create unexpected horizontal overflow.",
+        "Exercise native select, date/time, file and text inputs; open/close the virtual keyboard and confirm focused controls remain usable.",
+        "Exercise bottom/mobile navigation, dialog/drawer/disclosure controls and scrollable table/content regions.",
+        "Rotate between portrait and landscape and repeat representative interactions.",
+        "Verify touch interactions do not require hover and that visible controls can be activated without accidental neighboring activation.",
+        "Check RTL/i18n fixture, long strings and authentication/dashboard starters for clipping or inaccessible content."
+      ],
+      "passCriteria": [
+        "No Reeris-caused layout clipping or page-level overflow in canonical fixtures.",
+        "Native controls remain usable with the platform keyboard/pickers.",
+        "Safe-area-aware fixed UI does not collide with device insets.",
+        "Touch interactions work without hover dependency.",
+        "Portrait and landscape remain usable."
+      ],
+      "requiredArtifacts": [
+        "Completed device/browser notes.",
+        "Portrait and landscape screenshots from at least three representative fixtures.",
+        "Screenshot or short recording showing native form control/virtual-keyboard behavior."
+      ],
+      "environmentFields": [
+        "deviceModel",
+        "osName",
+        "osVersion",
+        "browserName",
+        "browserVersion",
+        "orientation",
+        "displayScale",
+        "tester",
+        "deviceCloudProvider"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix/chrome-android-real",
+      "gateId": "mobile-browser-matrix",
+      "criterionId": "chrome-android-real",
+      "title": "Chrome \u2014 real Android",
+      "kind": "manual-browser",
+      "objective": "Validate Reeris on Chrome \u2014 real Android, including touch, safe areas and native form controls.",
+      "prerequisites": [
+        "Use a real current device or a trusted real-device cloud session",
+        "Record exact device model, OS version and browser version",
+        "Serve the exact Reeris release over HTTP/HTTPS",
+        "Test both portrait and landscape when supported"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/authentication.html",
+        "docs/browser-reflow.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Open every fixture and confirm the page honors the device safe area and does not create unexpected horizontal overflow.",
+        "Exercise native select, date/time, file and text inputs; open/close the virtual keyboard and confirm focused controls remain usable.",
+        "Exercise bottom/mobile navigation, dialog/drawer/disclosure controls and scrollable table/content regions.",
+        "Rotate between portrait and landscape and repeat representative interactions.",
+        "Verify touch interactions do not require hover and that visible controls can be activated without accidental neighboring activation.",
+        "Check RTL/i18n fixture, long strings and authentication/dashboard starters for clipping or inaccessible content."
+      ],
+      "passCriteria": [
+        "No Reeris-caused layout clipping or page-level overflow in canonical fixtures.",
+        "Native controls remain usable with the platform keyboard/pickers.",
+        "Safe-area-aware fixed UI does not collide with device insets.",
+        "Touch interactions work without hover dependency.",
+        "Portrait and landscape remain usable."
+      ],
+      "requiredArtifacts": [
+        "Completed device/browser notes.",
+        "Portrait and landscape screenshots from at least three representative fixtures.",
+        "Screenshot or short recording showing native form control/virtual-keyboard behavior."
+      ],
+      "environmentFields": [
+        "deviceModel",
+        "osName",
+        "osVersion",
+        "browserName",
+        "browserVersion",
+        "orientation",
+        "displayScale",
+        "tester",
+        "deviceCloudProvider"
+      ]
+    },
+    {
+      "id": "assistive-technology/keyboard-manual",
+      "gateId": "assistive-technology",
+      "criterionId": "keyboard-manual",
+      "title": "Manual keyboard-only acceptance",
+      "kind": "assistive-technology",
+      "objective": "Confirm representative Reeris interactions are fully operable without a pointer.",
+      "prerequisites": [
+        "Use a desktop browser from the supported matrix",
+        "Do not use mouse/touch during the test",
+        "Enable visible browser focus indicators normally"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/browser-reflow.html"
+      ],
+      "steps": [
+        "Starting at the address bar, use Tab and Shift+Tab through each fixture and verify a visible focus indicator.",
+        "Use Enter/Space on buttons, links, checkboxes, switches, details and other native controls as appropriate.",
+        "Open and close dialogs/popovers/disclosures; verify Escape closes modal/top-layer UI where expected and focus returns logically.",
+        "Verify keyboard focus does not become trapped except while a modal interaction legitimately owns focus.",
+        "Check disabled/read-only states cannot be accidentally activated and remain understandable.",
+        "Record any component requiring a pointer-only interaction."
+      ],
+      "passCriteria": [
+        "Every interactive control is reachable or intentionally not focusable.",
+        "A visible focus indicator is present.",
+        "Native activation keys work as expected.",
+        "No unintended keyboard trap occurs.",
+        "Dialogs/disclosures preserve logical focus behavior."
+      ],
+      "requiredArtifacts": [
+        "Completed keyboard checklist with pass/fail by fixture.",
+        "Screenshots of representative focus-visible states and any exceptions."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "keyboardLayout",
+        "tester"
+      ]
+    },
+    {
+      "id": "assistive-technology/nvda-desktop",
+      "gateId": "assistive-technology",
+      "criterionId": "nvda-desktop",
+      "title": "NVDA desktop screen-reader acceptance",
+      "kind": "assistive-technology",
+      "objective": "Validate representative Reeris semantics with NVDA on Windows.",
+      "prerequisites": [
+        "Current supported NVDA version",
+        "Supported Chrome, Edge or Firefox version",
+        "Speech enabled; default browse/focus modes unless a deviation is documented"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Navigate by landmarks/headings and confirm page structure is announced coherently.",
+        "Review form labels, required/invalid states, help/error text and checkbox/switch state announcements.",
+        "Open dialog/disclosure/navigation examples and confirm role, name, state and focus changes are announced.",
+        "Review table headers/row relationships and selected/sort state where present.",
+        "Trigger or inspect status/alert/toast examples and confirm dynamic feedback uses appropriate live-region behavior without duplicate announcement.",
+        "Check disabled/read-only and current/selected navigation states."
+      ],
+      "passCriteria": [
+        "Controls expose meaningful accessible names, roles and states.",
+        "Focus and reading order match the visual/DOM structure.",
+        "Dialog/disclosure state changes are announced and operable.",
+        "Forms and tables convey required semantics.",
+        "Dynamic feedback is understandable without visual-only cues."
+      ],
+      "requiredArtifacts": [
+        "Completed screen-reader notes including exact speech/browser combination.",
+        "Short transcript or recording for representative forms, dialog and dynamic feedback flows.",
+        "Screenshots identifying the tested fixtures/states."
+      ],
+      "environmentFields": [
+        "screenReader",
+        "screenReaderVersion",
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "speechSettings",
+        "tester"
+      ]
+    },
+    {
+      "id": "assistive-technology/voiceover-safari",
+      "gateId": "assistive-technology",
+      "criterionId": "voiceover-safari",
+      "title": "VoiceOver + Safari acceptance",
+      "kind": "assistive-technology",
+      "objective": "Validate representative Reeris semantics with VoiceOver and Safari on macOS or iOS.",
+      "prerequisites": [
+        "Current VoiceOver/Safari combination on supported Apple OS",
+        "Record whether macOS or iOS is used",
+        "Use standard VoiceOver navigation unless a deviation is documented"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Navigate by landmarks/headings and confirm page structure is announced coherently.",
+        "Review form labels, required/invalid states, help/error text and checkbox/switch state announcements.",
+        "Open dialog/disclosure/navigation examples and confirm role, name, state and focus changes are announced.",
+        "Review table headers/row relationships and selected/sort state where present.",
+        "Trigger or inspect status/alert/toast examples and confirm dynamic feedback uses appropriate live-region behavior without duplicate announcement.",
+        "Check disabled/read-only and current/selected navigation states."
+      ],
+      "passCriteria": [
+        "Controls expose meaningful accessible names, roles and states.",
+        "Focus and reading order match the visual/DOM structure.",
+        "Dialog/disclosure state changes are announced and operable.",
+        "Forms and tables convey required semantics.",
+        "Dynamic feedback is understandable without visual-only cues."
+      ],
+      "requiredArtifacts": [
+        "Completed screen-reader notes including exact speech/browser combination.",
+        "Short transcript or recording for representative forms, dialog and dynamic feedback flows.",
+        "Screenshots identifying the tested fixtures/states."
+      ],
+      "environmentFields": [
+        "screenReader",
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "deviceModel",
+        "tester"
+      ]
+    },
+    {
+      "id": "assistive-technology/talkback-chrome",
+      "gateId": "assistive-technology",
+      "criterionId": "talkback-chrome",
+      "title": "TalkBack + Chrome acceptance",
+      "kind": "assistive-technology",
+      "objective": "Validate representative Reeris semantics with TalkBack and Chrome on Android.",
+      "prerequisites": [
+        "Real Android device or trusted real-device cloud",
+        "Current TalkBack and Chrome",
+        "Record gesture/navigation mode used"
+      ],
+      "fixtures": [
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/toast.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Navigate by landmarks/headings and confirm page structure is announced coherently.",
+        "Review form labels, required/invalid states, help/error text and checkbox/switch state announcements.",
+        "Open dialog/disclosure/navigation examples and confirm role, name, state and focus changes are announced.",
+        "Review table headers/row relationships and selected/sort state where present.",
+        "Trigger or inspect status/alert/toast examples and confirm dynamic feedback uses appropriate live-region behavior without duplicate announcement.",
+        "Check disabled/read-only and current/selected navigation states."
+      ],
+      "passCriteria": [
+        "Controls expose meaningful accessible names, roles and states.",
+        "Focus and reading order match the visual/DOM structure.",
+        "Dialog/disclosure state changes are announced and operable.",
+        "Forms and tables convey required semantics.",
+        "Dynamic feedback is understandable without visual-only cues."
+      ],
+      "requiredArtifacts": [
+        "Completed screen-reader notes including exact speech/browser combination.",
+        "Short transcript or recording for representative forms, dialog and dynamic feedback flows.",
+        "Screenshots identifying the tested fixtures/states."
+      ],
+      "environmentFields": [
+        "screenReader",
+        "screenReaderVersion",
+        "browserName",
+        "browserVersion",
+        "osVersion",
+        "deviceModel",
+        "tester"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/zoom-200-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "zoom-200-real",
+      "title": "Real-browser 200% zoom/reflow",
+      "kind": "zoom-reflow",
+      "objective": "Validate Reeris at actual browser zoom 200%, not CSS transform or viewport emulation.",
+      "prerequisites": [
+        "Use a current supported desktop browser",
+        "Set browser zoom using the browser UI/shortcut and verify the displayed zoom value",
+        "Start from a normal desktop viewport such as 1280\u00d7720 CSS pixels before zooming"
+      ],
+      "fixtures": [
+        "docs/browser-reflow.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/tables.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Set browser zoom to exactly 200%.",
+        "Open every listed fixture and move through the full page using keyboard and pointer.",
+        "Check headings, buttons, forms, app-shell navigation, tables and long translated strings for clipping or overlap.",
+        "Confirm content reflows into a single direction wherever WCAG reflow requires it; intentional two-dimensional table/data regions may scroll within their own container.",
+        "Confirm dialogs/top-layer UI remain reachable and dismissible.",
+        "Capture representative evidence at the browser-reported zoom level."
+      ],
+      "passCriteria": [
+        "No loss of information or controls caused by overlap/clipping.",
+        "No page-level two-dimensional scrolling is required for ordinary content.",
+        "Intentional data tables/regions contain their own overflow.",
+        "Interactive controls remain operable and focus-visible."
+      ],
+      "requiredArtifacts": [
+        "Screenshot showing browser zoom indicator plus browser-reflow fixture.",
+        "Additional screenshots for forms/navigation and a dense data/application fixture.",
+        "Completed notes describing any intentional horizontal-scroll regions."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "zoomLevel",
+        "viewport",
+        "displayScale",
+        "tester"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/zoom-400-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "zoom-400-real",
+      "title": "Real-browser 400% zoom/reflow",
+      "kind": "zoom-reflow",
+      "objective": "Validate Reeris at actual browser zoom 400%, not CSS transform or viewport emulation.",
+      "prerequisites": [
+        "Use a current supported desktop browser",
+        "Set browser zoom using the browser UI/shortcut and verify the displayed zoom value",
+        "Start from a normal desktop viewport such as 1280\u00d7720 CSS pixels before zooming"
+      ],
+      "fixtures": [
+        "docs/browser-reflow.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/tables.html",
+        "tests/i18n/index.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Set browser zoom to exactly 400%.",
+        "Open every listed fixture and move through the full page using keyboard and pointer.",
+        "Check headings, buttons, forms, app-shell navigation, tables and long translated strings for clipping or overlap.",
+        "Confirm content reflows into a single direction wherever WCAG reflow requires it; intentional two-dimensional table/data regions may scroll within their own container.",
+        "Confirm dialogs/top-layer UI remain reachable and dismissible.",
+        "Capture representative evidence at the browser-reported zoom level."
+      ],
+      "passCriteria": [
+        "No loss of information or controls caused by overlap/clipping.",
+        "No page-level two-dimensional scrolling is required for ordinary content.",
+        "Intentional data tables/regions contain their own overflow.",
+        "Interactive controls remain operable and focus-visible."
+      ],
+      "requiredArtifacts": [
+        "Screenshot showing browser zoom indicator plus browser-reflow fixture.",
+        "Additional screenshots for forms/navigation and a dense data/application fixture.",
+        "Completed notes describing any intentional horizontal-scroll regions."
+      ],
+      "environmentFields": [
+        "browserName",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "zoomLevel",
+        "viewport",
+        "displayScale",
+        "tester"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch/touch-targets-real",
+      "gateId": "zoom-reflow-touch",
+      "criterionId": "touch-targets-real",
+      "title": "Real-device touch-target acceptance",
+      "kind": "zoom-reflow",
+      "objective": "Confirm Reeris target sizing and pointer behavior on coarse-pointer hardware.",
+      "prerequisites": [
+        "Real touch hardware or trusted real-device cloud",
+        "Do not rely solely on browser touch emulation",
+        "Record device model and OS/browser versions"
+      ],
+      "fixtures": [
+        "docs/button.html",
+        "docs/forms-complete.html",
+        "docs/advanced-navigation.html",
+        "docs/overlays.html",
+        "docs/choice.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Use touch only to activate representative buttons, icon buttons, checkboxes, switches, navigation, disclosures, close controls and selectable choices.",
+        "Check compact-density examples as well as default density.",
+        "Attempt adjacent controls deliberately and confirm target separation does not cause frequent wrong-target activation.",
+        "Verify hover-only information is not required to complete an action.",
+        "Check fixed/bottom navigation near device safe areas."
+      ],
+      "passCriteria": [
+        "Critical controls meet the Reeris minimum-target contract or have equivalent target spacing.",
+        "No required interaction depends on hover.",
+        "Adjacent targets are practically distinguishable on real hardware.",
+        "Safe-area-fixed controls remain reachable."
+      ],
+      "requiredArtifacts": [
+        "Device/browser notes.",
+        "Screenshots or short recording of compact/default touch controls and fixed navigation."
+      ],
+      "environmentFields": [
+        "deviceModel",
+        "osName",
+        "osVersion",
+        "browserName",
+        "browserVersion",
+        "pointerType",
+        "tester"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast/windows-forced-colors-real",
+      "gateId": "forced-colors-high-contrast",
+      "criterionId": "windows-forced-colors-real",
+      "title": "Windows forced-colors / High Contrast",
+      "kind": "forced-colors",
+      "objective": "Validate Reeris with real Windows forced-colors/High Contrast enabled.",
+      "prerequisites": [
+        "Windows 11 or currently supported Windows release",
+        "Current supported Edge, Chrome or Firefox",
+        "Enable a Windows Contrast Theme / forced-colors mode at OS level"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/overlays.html",
+        "docs/tables.html",
+        "docs/content-states.html",
+        "examples/starters/dashboard.html"
+      ],
+      "steps": [
+        "Enable a Windows contrast theme and restart/reload the browser if required.",
+        "Verify focus rings, borders, selected/current/checked states and validation errors remain visible.",
+        "Check buttons, links, form controls, dialogs, tables, status indicators and content states.",
+        "Confirm meaning is not carried solely by background color, shadow or transparency.",
+        "Exercise keyboard focus while forced colors are active."
+      ],
+      "passCriteria": [
+        "Important boundaries and focus indicators remain perceivable.",
+        "Selected/checked/error/current states remain distinguishable.",
+        "Text remains readable and system colors are respected.",
+        "No essential meaning depends solely on suppressed color/shadow effects."
+      ],
+      "requiredArtifacts": [
+        "Screenshots from at least foundation, forms and dashboard while a Windows Contrast Theme is active.",
+        "Completed notes naming the Windows contrast theme and browser."
+      ],
+      "environmentFields": [
+        "osName",
+        "osVersion",
+        "contrastTheme",
+        "browserName",
+        "browserVersion",
+        "tester"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast/prefers-contrast-review",
+      "gateId": "forced-colors-high-contrast",
+      "criterionId": "prefers-contrast-review",
+      "title": "Increased-contrast preference review",
+      "kind": "forced-colors",
+      "objective": "Validate Reeris response to a real OS/browser increased-contrast preference where supported.",
+      "prerequisites": [
+        "Use an OS/browser combination that exposes `prefers-contrast: more` or document lack of support",
+        "Enable the operating-system accessibility setting rather than only DevTools emulation"
+      ],
+      "fixtures": [
+        "docs/foundation.html",
+        "docs/forms-complete.html",
+        "docs/navigation-completion.html",
+        "docs/content-states.html"
+      ],
+      "steps": [
+        "Enable the OS increased-contrast setting.",
+        "Confirm `matchMedia(\"(prefers-contrast: more)\")` reports the expected state where supported.",
+        "Review borders, focus, text/surface separation, form states and feedback patterns.",
+        "Disable the setting and confirm the normal theme returns without stale state."
+      ],
+      "passCriteria": [
+        "Where the preference is supported, Reeris visibly strengthens appropriate contrast/boundaries without breaking layout.",
+        "Where unsupported, the evidence explicitly records the platform limitation rather than claiming a pass from emulation alone."
+      ],
+      "requiredArtifacts": [
+        "Screenshot(s) with increased contrast enabled.",
+        "Tester note recording OS setting, browser support and `matchMedia` result."
+      ],
+      "environmentFields": [
+        "osName",
+        "osVersion",
+        "browserName",
+        "browserVersion",
+        "preferenceSetting",
+        "mediaQueryMatches",
+        "tester"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines/baseline-human-approved",
+      "gateId": "visual-regression-baselines",
+      "criterionId": "baseline-human-approved",
+      "title": "Human-approved canonical visual baseline",
+      "kind": "visual-review",
+      "objective": "Create and explicitly approve the canonical Reeris PNG baseline set after human visual review.",
+      "prerequisites": [
+        "Run in an approved browser/CI environment capable of stable screenshot capture",
+        "Use the canonical visual matrix from the current release",
+        "Do not update baselines as part of the normal compare command"
+      ],
+      "fixtures": [
+        "docs/visual-regression.html",
+        "examples/starters/dashboard.html",
+        "examples/starters/data-management.html",
+        "examples/starters/marketing.html",
+        "tests/i18n/index.html"
+      ],
+      "steps": [
+        "Run `npm run visual:capture` or the approved Playwright visual capture in a stable environment.",
+        "Review every canonical case for theme, density, RTL, radius/elevation, mobile/desktop and starter composition correctness.",
+        "Reject and fix any unexplained visual anomaly before approval.",
+        "Record the baseline file manifest and hashes.",
+        "Have a named reviewer explicitly approve the set."
+      ],
+      "passCriteria": [
+        "Every canonical visual case has a PNG baseline.",
+        "Human review finds no unexplained regression or fixture error.",
+        "The approved baseline manifest is hashed and tied to the current release."
+      ],
+      "requiredArtifacts": [
+        "Approved baseline directory or archive.",
+        "Baseline manifest with SHA-256 hashes.",
+        "Reviewer approval notes identifying reviewer and date."
+      ],
+      "environmentFields": [
+        "captureBrowser",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "viewportMatrix",
+        "reviewer"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines/baseline-compare-pass",
+      "gateId": "visual-regression-baselines",
+      "criterionId": "baseline-compare-pass",
+      "title": "Visual baseline comparison pass",
+      "kind": "visual-review",
+      "objective": "Demonstrate that the current release matches the approved canonical visual baseline set within the defined comparison policy.",
+      "prerequisites": [
+        "An approved baseline set already exists",
+        "Use the same supported comparison/capture environment or document accepted normalization"
+      ],
+      "fixtures": [
+        "docs/visual-regression.html"
+      ],
+      "steps": [
+        "Run `npm run visual:compare` or `npm run rc:visual:test` against the approved baselines.",
+        "Review the comparison report and every non-zero diff.",
+        "Do not accept a changed baseline merely to make the comparison pass.",
+        "Store the machine-readable comparison result and representative diff artifacts if any."
+      ],
+      "passCriteria": [
+        "Comparison command exits successfully.",
+        "No unexplained visual differences remain.",
+        "Comparison evidence references the approved baseline set."
+      ],
+      "requiredArtifacts": [
+        "Machine-readable visual comparison report.",
+        "Console/log export showing successful comparison.",
+        "Diff images if the tool generated any, including disposition notes."
+      ],
+      "environmentFields": [
+        "captureBrowser",
+        "browserVersion",
+        "osName",
+        "osVersion",
+        "baselineId",
+        "comparisonTool",
+        "tester"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance/project-name-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "project-name-clearance",
+      "title": "Reeris UI project-name clearance decision",
+      "kind": "name-clearance",
+      "objective": "Record the final project-name/trademark/conflict decision before public launch.",
+      "prerequisites": [
+        "This is a documented project decision, not legal advice",
+        "Record search date and sources consulted",
+        "Preserve screenshots/exports/decision memo as evidence"
+      ],
+      "fixtures": [],
+      "steps": [
+        "Search relevant trademark databases and major software/open-source repositories for confusingly similar Reeris/Reeris UI names.",
+        "Record material conflicts, jurisdictions/markets considered and whether specialist legal review is required.",
+        "Make and document the final use/rename/qualified-name decision."
+      ],
+      "passCriteria": [
+        "A dated decision memo exists.",
+        "Material conflicts and uncertainty are disclosed rather than omitted.",
+        "The final launch name decision is explicit."
+      ],
+      "requiredArtifacts": [
+        "Name-clearance decision memo.",
+        "Search screenshots/exports or counsel note where applicable."
+      ],
+      "environmentFields": [
+        "reviewDate",
+        "reviewer",
+        "jurisdictionsOrMarkets",
+        "sourcesConsulted",
+        "decision"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance/package-namespace-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "package-namespace-clearance",
+      "title": "Package namespace clearance decision",
+      "kind": "name-clearance",
+      "objective": "Confirm the public package scope/names that will be used for Reeris releases.",
+      "prerequisites": [
+        "This is a documented project decision, not legal advice",
+        "Record search date and sources consulted",
+        "Preserve screenshots/exports/decision memo as evidence"
+      ],
+      "fixtures": [],
+      "steps": [
+        "Check the intended npm scope and package names such as `@reeris/core` and `@reeris/js` immediately before publication.",
+        "Record ownership/availability or the chosen alternate scope.",
+        "Confirm package metadata and documentation use the approved namespace before publishing."
+      ],
+      "passCriteria": [
+        "A dated package-namespace decision exists.",
+        "Intended package names are available/owned or an alternate namespace is selected.",
+        "Repository metadata is aligned to the approved package namespace."
+      ],
+      "requiredArtifacts": [
+        "Package namespace availability/ownership evidence.",
+        "Decision memo naming the final package scope and package names."
+      ],
+      "environmentFields": [
+        "registry",
+        "reviewDate",
+        "reviewer",
+        "intendedScope",
+        "decision"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance/repository-domain-clearance",
+      "gateId": "public-name-namespace-clearance",
+      "criterionId": "repository-domain-clearance",
+      "title": "Repository and domain clearance decision",
+      "kind": "name-clearance",
+      "objective": "Record the public repository/org/domain naming decision before launch.",
+      "prerequisites": [
+        "This is a documented project decision, not legal advice",
+        "Record search date and sources consulted",
+        "Preserve screenshots/exports/decision memo as evidence"
+      ],
+      "fixtures": [],
+      "steps": [
+        "Check intended repository organization/name and desired documentation/domain naming immediately before public launch.",
+        "Record availability, ownership and any conflicts.",
+        "Document the final repository URL/domain plan and any redirects/alternates."
+      ],
+      "passCriteria": [
+        "A dated repository/domain decision exists.",
+        "Required repository namespace is available/owned or an alternate is selected.",
+        "Public documentation will point to the approved canonical locations."
+      ],
+      "requiredArtifacts": [
+        "Repository/domain availability evidence.",
+        "Decision memo naming canonical repository and domain/documentation locations."
+      ],
+      "environmentFields": [
+        "reviewDate",
+        "reviewer",
+        "repositoryHost",
+        "repositoryName",
+        "domain",
+        "decision"
+      ]
+    }
+  ]
+}

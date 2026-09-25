@@ -1,0 +1,19 @@
+@layer reeris.tokens {
+  :root { --reeris-component-radius: var(--reeris-radius-lg); --reeris-component-shadow: var(--reeris-shadow-sm); --reeris-density-factor: 1; }
+  [data-radius="sharp"] { --reeris-component-radius: var(--reeris-radius-sm); }
+  [data-radius="rounded"] { --reeris-component-radius: var(--reeris-radius-xl); }
+  [data-radius="soft"] { --reeris-component-radius: var(--reeris-radius-2xl); }
+  [data-elevation="flat"] { --reeris-component-shadow: none; }
+  [data-elevation="subtle"] { --reeris-component-shadow: var(--reeris-shadow-xs); }
+  [data-elevation="floating"] { --reeris-component-shadow: var(--reeris-shadow-lg); }
+  [data-density="compact"] { --reeris-density-factor: .85; }
+  [data-density="comfortable"] { --reeris-density-factor: 1.15; }
+  [data-motion="none"] { --reeris-duration-fast: 0ms; --reeris-duration-normal: 0ms; --reeris-duration-slow: 0ms; --reeris-duration-slower: 0ms; }
+  [data-motion="reduced"] { --reeris-duration-fast: 80ms; --reeris-duration-normal: 120ms; --reeris-duration-slow: 160ms; --reeris-duration-slower: 200ms; }
+  [data-motion="expressive"] { --reeris-duration-fast: 150ms; --reeris-duration-normal: 250ms; --reeris-duration-slow: 400ms; --reeris-duration-slower: 650ms; }
+}
+@layer reeris.tokens {
+  @media (prefers-reduced-motion: reduce) {
+    :root { --reeris-duration-fast: 0ms; --reeris-duration-normal: 0ms; --reeris-duration-slow: 0ms; --reeris-duration-slower: 0ms; }
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+coverage/
+*.log
+# Visual regression working output (baselines are committed intentionally)
+tests/visual/current/**/*.png
+tests/visual/diff/**/*.png

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Build Reproducibility & Source Maps 0.42</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="assets/docs.css">
+  <script type="module" src="assets/docs.js"></script>
+</head>
+<body class="docs-body">
+<header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a href="api-reference.html">API</a></nav></header>
+<main class="docs-home">
+  <section class="docs-hero">
+    <span class="badge primary">Reeris UI 0.42</span>
+    <h1>Build reproducibility & source maps</h1>
+    <p>Production artifacts are generated deterministically and can be traced from compiled CSS back to the individual Reeris source modules.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Deterministic build contract</h2>
+    <p><code>npm run audit:repro</code> performs two clean builds and compares the complete <code>@reeris/core</code> and <code>@reeris/js</code> distribution trees by SHA-256. The file list and every emitted byte must match.</p>
+    <p>Build artifacts contain no generated timestamps or machine-local absolute paths. Timestamped release reports are intentionally outside the deterministic distribution boundary.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Source maps</h2>
+    <p>Both <code>reeris.css</code> and <code>reeris.min.css</code> publish Source Map v3 files. The maps point to the actual CSS modules copied under <code>dist/sources/</code>, allowing DevTools to identify files such as <code>components/button.css</code> rather than only the compiled bundle.</p>
+    <div class="l-cluster"><span class="badge success">Full CSS map</span><span class="badge success">Minified CSS map</span><span class="badge success">36 published CSS sources</span></div>
+  </section>
+  <section class="docs-section">
+    <h2>Clean distribution</h2>
+    <p>The build removes the previous Core distribution before generation, rebuilds tokens from the canonical token source, emits CSS and JS in sorted deterministic order, then publishes only intentional package artifacts. Stale files therefore cannot silently survive from an earlier release.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Release verification</h2>
+    <pre><code>npm run build
+npm run audit:repro
+npm run release:check</code></pre>
+    <p>The normal release gate includes reproducibility verification before package dry-run checks and release-manifest generation.</p>
+  </section>
+</main>
+</body>
+</html>

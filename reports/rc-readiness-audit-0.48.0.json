@@ -1,0 +1,435 @@
+{
+  "version": "0.48.0",
+  "generatedAt": "2026-09-25T10:52:58.928Z",
+  "status": "ready-for-rc-validation",
+  "automatedReady": true,
+  "manualSummary": {
+    "total": 7,
+    "open": 7,
+    "blocks1_0": 6,
+    "blocksPublicPublication": 1
+  },
+  "summary": {
+    "passed": 83,
+    "total": 83,
+    "failed": 0
+  },
+  "failures": [],
+  "checks": [
+    {
+      "name": "RC version remains pre-1.0",
+      "pass": true,
+      "detail": "0.48.0"
+    },
+    {
+      "name": "Root version is synchronized with @reeris/core",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Root version is synchronized with @reeris/js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core remains feature-frozen in README",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Current version has changelog entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Formal deprecation policy exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deprecation lifecycle includes Supported",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deprecation lifecycle includes Deprecated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deprecation lifecycle includes migration period",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deprecation lifecycle reserves removal for next major",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Current deprecated-API registry is explicit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Generated public API manifest exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "RC public API freeze snapshot exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API manifest version matches release",
+      "pass": true,
+      "detail": "0.48.0 vs 0.48.0"
+    },
+    {
+      "name": "API freeze baseline is recorded",
+      "pass": true,
+      "detail": "0.46.0"
+    },
+    {
+      "name": "API freeze embedded digest is valid",
+      "pass": true,
+      "detail": "922fe1f1f74e301234b25ea3915004dd98f2f088801f7a648ce1b7e449569808 vs 922fe1f1f74e301234b25ea3915004dd98f2f088801f7a648ce1b7e449569808"
+    },
+    {
+      "name": "Current public API matches RC freeze snapshot",
+      "pass": true,
+      "detail": "922fe1f1f74e301234b25ea3915004dd98f2f088801f7a648ce1b7e449569808 vs 922fe1f1f74e301234b25ea3915004dd98f2f088801f7a648ce1b7e449569808"
+    },
+    {
+      "name": "RC API freeze covers public classes",
+      "pass": true,
+      "detail": "732"
+    },
+    {
+      "name": "RC API freeze covers public tokens/hooks",
+      "pass": true,
+      "detail": "518"
+    },
+    {
+      "name": "RC API freeze covers Reeris-owned data attributes",
+      "pass": true,
+      "detail": "11"
+    },
+    {
+      "name": "RC API freeze covers package exports",
+      "pass": true,
+      "detail": "14"
+    },
+    {
+      "name": "RC API freeze covers optional JS API",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "Current release evidence exists: core-scope",
+      "pass": true,
+      "detail": "reports/core-scope-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: core-scope",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "name": "Current release evidence exists: forms-audit",
+      "pass": true,
+      "detail": "reports/forms-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: forms-audit",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "name": "Current release evidence exists: content-states-audit",
+      "pass": true,
+      "detail": "reports/content-states-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: content-states-audit",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "name": "Current release evidence exists: accessibility-audit",
+      "pass": true,
+      "detail": "reports/accessibility-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: accessibility-audit",
+      "pass": true,
+      "detail": "{\"total\":51,\"passed\":51,\"failed\":0,\"docsChecked\":41}"
+    },
+    {
+      "name": "Current release evidence exists: browser-reflow-audit",
+      "pass": true,
+      "detail": "reports/browser-reflow-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: browser-reflow-audit",
+      "pass": true,
+      "detail": "{\"total\":41,\"passed\":41,\"failed\":0,\"docsChecked\":41,\"cssFiles\":36}"
+    },
+    {
+      "name": "Current release evidence exists: css-architecture-audit",
+      "pass": true,
+      "detail": "reports/css-architecture-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: css-architecture-audit",
+      "pass": true,
+      "detail": "{\"total\":14,\"passed\":14,\"failed\":0,\"qualifiedRules\":1440,\"individualSelectors\":1462,\"sourceCssModules\":35}"
+    },
+    {
+      "name": "Current release evidence exists: visual-regression-audit",
+      "pass": true,
+      "detail": "reports/visual-regression-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: visual-regression-audit",
+      "pass": true,
+      "detail": "{\"passed\":167,\"total\":167,\"failed\":0,\"cases\":14,\"htmlPages\":47}"
+    },
+    {
+      "name": "Current release evidence exists: i18n-audit",
+      "pass": true,
+      "detail": "reports/i18n-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: i18n-audit",
+      "pass": true,
+      "detail": "{\"passed\":22,\"total\":22,\"failed\":0}"
+    },
+    {
+      "name": "Current release evidence exists: theme-audit",
+      "pass": true,
+      "detail": "reports/theme-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: theme-audit",
+      "pass": true,
+      "detail": "{\"passed\":114,\"total\":114,\"failed\":0,\"officialContrastCases\":28,\"customContrastCases\":42}"
+    },
+    {
+      "name": "Current release evidence exists: build-reproducibility-audit",
+      "pass": true,
+      "detail": "reports/build-reproducibility-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: build-reproducibility-audit",
+      "pass": true,
+      "detail": "{\"passed\":286,\"total\":286,\"failed\":0,\"artifacts\":78,\"sourceModules\":36,\"treeHash\":\"1bc0bca3f1a23a5c5cd99c56864972f8683b170dd97bd8fceba8b216e4ad7b56\",\"fullMapSources\":36,\"fullMapSegments\":3129,\"minMapSources\":36,\"minMapSegments\":2783}"
+    },
+    {
+      "name": "Current release evidence exists: documentation-audit",
+      "pass": true,
+      "detail": "reports/documentation-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: documentation-audit",
+      "pass": true,
+      "detail": "{\"passed\":1534,\"total\":1534,\"failed\":0,\"sourceModules\":36,\"classes\":732,\"tokens\":518,\"definedTokens\":491,\"overrideHooks\":27,\"dataAttributes\":11,\"packageExports\":14,\"jsApi\":5}"
+    },
+    {
+      "name": "Current release evidence exists: starters-integration-audit",
+      "pass": true,
+      "detail": "reports/starters-integration-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: starters-integration-audit",
+      "pass": true,
+      "detail": "{\"passed\":104,\"total\":104,\"failed\":0,\"starters\":5,\"publicClassesAvailable\":732}"
+    },
+    {
+      "name": "Current release evidence exists: security-audit",
+      "pass": true,
+      "detail": "reports/security-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: security-audit",
+      "pass": true,
+      "detail": "{\"passed\":399,\"total\":399,\"failed\":0,\"jsFiles\":4,\"cssFiles\":108}"
+    },
+    {
+      "name": "Current release evidence exists: package-release-audit",
+      "pass": true,
+      "detail": "reports/package-release-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: package-release-audit",
+      "pass": true,
+      "detail": "{\"passed\":82,\"total\":82,\"failed\":0,\"packages\":2}"
+    },
+    {
+      "name": "Current release evidence exists: rc-browser-infrastructure-audit",
+      "pass": true,
+      "detail": "reports/rc-browser-infrastructure-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: rc-browser-infrastructure-audit",
+      "pass": true,
+      "detail": "{\"passed\":52,\"total\":52,\"failed\":0}"
+    },
+    {
+      "name": "Current release evidence exists: release-lab-audit",
+      "pass": true,
+      "detail": "reports/release-lab-audit-0.48.0.json"
+    },
+    {
+      "name": "Current release evidence has zero failures: release-lab-audit",
+      "pass": true,
+      "detail": "{\"passed\":13,\"total\":13,\"failed\":0}"
+    },
+    {
+      "name": "Manual release gates registry exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate registry version matches release",
+      "pass": true,
+      "detail": "0.48.0"
+    },
+    {
+      "name": "Manual gate registry contains gates",
+      "pass": true,
+      "detail": "7"
+    },
+    {
+      "name": "Manual gate has stable id: desktop-browser-matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: desktop-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: desktop-browser-matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: mobile-browser-matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: mobile-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: mobile-browser-matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: assistive-technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: assistive-technology",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: assistive-technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: zoom-reflow-touch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: zoom-reflow-touch",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: zoom-reflow-touch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: forced-colors-high-contrast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: forced-colors-high-contrast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: visual-regression-baselines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: visual-regression-baselines",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: visual-regression-baselines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has stable id: public-name-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gate has explicit status: public-name-namespace-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate has evidence requirement: public-name-namespace-clearance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Open manual gates are not falsely marked automated failures",
+      "pass": true,
+      "detail": "7 open; 6 block 1.0"
+    },
+    {
+      "name": "RC readiness documentation page exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "RC checklist report exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Release check does not publish to npm",
+      "pass": true,
+      "detail": "npm run build && npm run audit:all && npm run release:manifest"
+    },
+    {
+      "name": "RC audit is part of full audit gate",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

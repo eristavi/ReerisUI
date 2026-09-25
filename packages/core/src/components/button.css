@@ -1,0 +1,220 @@
+@layer reeris.components {
+  :root {
+    --reeris-button-bg: var(--reeris-color-surface);
+    --reeris-button-color: var(--reeris-color-text);
+    --reeris-button-border-color: var(--reeris-color-border);
+    --reeris-button-radius: var(--reeris-component-radius);
+    --reeris-button-shadow: var(--reeris-shadow-xs);
+    --reeris-button-font-weight: var(--reeris-font-weight-semibold);
+    --reeris-button-gap: var(--reeris-space-2);
+  }
+
+  :where(.btn) {
+    --_btn-height: var(--reeris-control-md);
+    --_btn-px: var(--reeris-space-4);
+    --_btn-bg: var(--reeris-button-bg);
+    --_btn-color: var(--reeris-button-color);
+    --_btn-border: var(--reeris-button-border-color);
+    --_btn-shadow: var(--reeris-button-shadow);
+    appearance: none;
+    display: inline-flex;
+    min-inline-size: 0;
+    min-block-size: var(--_btn-height);
+    align-items: center;
+    justify-content: center;
+    gap: var(--reeris-button-gap);
+    padding-block: 0;
+    padding-inline: calc(var(--_btn-px) * var(--reeris-density-factor));
+    border: 1px solid var(--_btn-border);
+    border-radius: var(--reeris-button-radius);
+    background: var(--_btn-bg);
+    color: var(--_btn-color);
+    box-shadow: var(--_btn-shadow);
+    font: inherit;
+    font-size: var(--reeris-font-size-sm);
+    font-weight: var(--reeris-button-font-weight);
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color var(--reeris-duration-fast) var(--reeris-ease-standard), border-color var(--reeris-duration-fast) var(--reeris-ease-standard), color var(--reeris-duration-fast) var(--reeris-ease-standard), box-shadow var(--reeris-duration-fast) var(--reeris-ease-standard), transform var(--reeris-duration-fast) var(--reeris-ease-standard);
+  }
+
+  :where(.btn:hover:not(:disabled):not([aria-disabled="true"])) {
+    background: color-mix(in oklch, var(--_btn-bg) 92%, var(--_btn-color));
+    border-color: color-mix(in oklch, var(--_btn-border) 80%, var(--_btn-color));
+  }
+  :where(.btn:active:not(:disabled):not([aria-disabled="true"])) { transform: translateY(1px); box-shadow: none; }
+  :where(.btn:disabled, .btn[aria-disabled="true"]) { opacity: .5; cursor: not-allowed; box-shadow: none; }
+
+  :where(.btn.primary) { --_btn-bg: var(--reeris-color-primary); --_btn-color: var(--reeris-color-on-primary); --_btn-border: var(--reeris-color-primary); }
+  :where(.btn.accent) { --_btn-bg: var(--reeris-color-accent); --_btn-color: var(--reeris-color-on-accent); --_btn-border: var(--reeris-color-accent); }
+  :where(.btn.success) { --_btn-bg: var(--reeris-color-success); --_btn-color: var(--reeris-color-on-success); --_btn-border: var(--reeris-color-success); }
+  :where(.btn.warning) { --_btn-bg: var(--reeris-color-warning); --_btn-color: var(--reeris-color-on-warning); --_btn-border: var(--reeris-color-warning); }
+  :where(.btn.danger) { --_btn-bg: var(--reeris-color-danger); --_btn-color: var(--reeris-color-on-danger); --_btn-border: var(--reeris-color-danger); }
+
+  :where(.btn.outline) { --_btn-bg: transparent; --_btn-color: var(--reeris-color-text); }
+  :where(.btn.primary.outline) { --_btn-color: var(--reeris-color-primary); }
+  :where(.btn.accent.outline) { --_btn-color: var(--reeris-color-accent); }
+  :where(.btn.success.outline) { --_btn-color: var(--reeris-color-success); }
+  :where(.btn.warning.outline) { --_btn-color: var(--reeris-color-warning); }
+  :where(.btn.danger.outline) { --_btn-color: var(--reeris-color-danger); }
+  :where(.btn.ghost) { --_btn-bg: transparent; --_btn-border: transparent; --_btn-shadow: none; }
+  :where(.btn.link) { --_btn-bg: transparent; --_btn-border: transparent; --_btn-shadow: none; --_btn-color: var(--reeris-color-primary); padding-inline: 0; min-block-size: auto; text-decoration: underline; text-underline-offset: .18em; }
+
+  :where(.btn.gradient) { background: var(--reeris-gradient-primary); border-color: transparent; color: var(--reeris-color-on-primary); }
+  :where(.btn.accent.gradient) { background: var(--reeris-gradient-accent); color: var(--reeris-color-on-accent); }
+  :where(.btn.success.gradient) { background: var(--reeris-gradient-success); color: var(--reeris-color-on-success); }
+  :where(.btn.warning.gradient) { background: var(--reeris-gradient-warning); color: var(--reeris-color-on-warning); }
+  :where(.btn.danger.gradient) { background: var(--reeris-gradient-danger); color: var(--reeris-color-on-danger); }
+  :where(.btn.gradient:hover:not(:disabled)) { filter: brightness(.96); }
+
+  :where(.btn.xs) { --_btn-height: var(--reeris-control-xs); --_btn-px: var(--reeris-space-2-5); font-size: var(--reeris-font-size-xs); }
+  :where(.btn.sm) { --_btn-height: var(--reeris-control-sm); --_btn-px: var(--reeris-space-3); font-size: var(--reeris-font-size-sm); }
+  :where(.btn.lg) { --_btn-height: var(--reeris-control-lg); --_btn-px: var(--reeris-space-5); font-size: var(--reeris-font-size-md); }
+  :where(.btn.xl) { --_btn-height: var(--reeris-control-xl); --_btn-px: var(--reeris-space-6); font-size: var(--reeris-font-size-lg); }
+
+  :where(.btn.icon) { inline-size: var(--_btn-height); padding-inline: 0; aspect-ratio: 1; }
+  :where(.btn > svg) { inline-size: 1em; block-size: 1em; flex: none; stroke-width: var(--reeris-icon-stroke, 1.75); }
+
+  :where(.btn[data-reeris-state="loading"], .btn[aria-busy="true"]) { cursor: wait; }
+  :where(.btn[data-reeris-state="loading"]::before, .btn[aria-busy="true"]::before) {
+    content: "";
+    inline-size: 1em;
+    block-size: 1em;
+    flex: none;
+    border: .125em solid currentColor;
+    border-inline-end-color: transparent;
+    border-radius: 50%;
+    animation: reeris-button-spin .7s linear infinite;
+  }
+
+  :where(.btn-group) { display: inline-flex; align-items: stretch; }
+  :where(.btn-group > .btn) { border-radius: 0; margin-inline-start: -1px; }
+  :where(.btn-group > .btn:first-child) { margin-inline-start: 0; border-start-start-radius: var(--reeris-button-radius); border-end-start-radius: var(--reeris-button-radius); }
+  :where(.btn-group > .btn:last-child) { border-start-end-radius: var(--reeris-button-radius); border-end-end-radius: var(--reeris-button-radius); }
+  :where(.btn-group > .btn:focus-visible) { position: relative; z-index: 1; }
+
+  @keyframes reeris-button-spin { to { transform: rotate(1turn); } }
+}
+
+@layer reeris.components {
+  @media (prefers-reduced-motion: reduce) {
+    :where(.btn[data-reeris-state="loading"]::before, .btn[aria-busy="true"]::before) { animation: none; border-inline-end-color: currentColor; opacity: .65; }
+  }
+
+  @media (forced-colors: active) {
+    :where(.btn) { border-color: ButtonBorder; background: ButtonFace; color: ButtonText; forced-color-adjust: auto; }
+    :where(.btn:disabled, .btn[aria-disabled="true"]) { color: GrayText; }
+  }
+}
+
+@layer reeris.components {
+  :root {
+    --reeris-fab-size: var(--reeris-control-lg);
+    --reeris-fab-size-lg: 3.5rem;
+    --reeris-fab-offset: var(--reeris-space-6);
+    --reeris-close-size: var(--reeris-control-sm);
+  }
+
+  /* Full-width actions */
+  :where(.btn.block) { display: flex; inline-size: 100%; }
+
+  /* Split actions: primary action + adjacent menu trigger. */
+  :where(.split-btn) { display: inline-flex; align-items: stretch; isolation: isolate; }
+  :where(.split-btn > .btn) { border-radius: 0; margin-inline-start: -1px; }
+  :where(.split-btn > .btn:first-child) {
+    margin-inline-start: 0;
+    border-start-start-radius: var(--reeris-button-radius);
+    border-end-start-radius: var(--reeris-button-radius);
+  }
+  :where(.split-btn > .btn:last-child) {
+    border-start-end-radius: var(--reeris-button-radius);
+    border-end-end-radius: var(--reeris-button-radius);
+  }
+  :where(.split-btn > .btn:focus-visible) { position: relative; z-index: 1; }
+  :where(.split-btn-trigger) { inline-size: var(--_btn-height, var(--reeris-control-md)); padding-inline: 0; }
+  :where(.split-btn-trigger)::after {
+    content: "";
+    inline-size: .45em;
+    block-size: .45em;
+    border-inline-end: .12em solid currentColor;
+    border-block-end: .12em solid currentColor;
+    transform: translateY(-.12em) rotate(45deg);
+  }
+
+  /* Compact dismiss/action control. Text remains available to assistive tech via aria-label. */
+  :where(.btn-close) {
+    appearance: none;
+    display: inline-grid;
+    inline-size: var(--reeris-close-size);
+    block-size: var(--reeris-close-size);
+    place-items: center;
+    flex: none;
+    padding: 0;
+    border: 0;
+    border-radius: var(--reeris-radius-full);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity var(--reeris-duration-fast) var(--reeris-ease-standard), background-color var(--reeris-duration-fast) var(--reeris-ease-standard);
+  }
+  :where(.btn-close:hover:not(:disabled)) { opacity: 1; background: color-mix(in oklch, currentColor 9%, transparent); }
+  :where(.btn-close:disabled) { opacity: .35; cursor: not-allowed; }
+  :where(.btn-close)::before,
+  :where(.btn-close)::after {
+    content: "";
+    position: absolute;
+    inline-size: .9em;
+    block-size: .1em;
+    border-radius: var(--reeris-radius-full);
+    background: currentColor;
+  }
+  :where(.btn-close) { position: relative; }
+  :where(.btn-close)::before { transform: rotate(45deg); }
+  :where(.btn-close)::after { transform: rotate(-45deg); }
+
+  /* Floating action button. Positioning is opt-in; the base FAB can live in normal flow. */
+  :where(.fab) {
+    --_btn-height: var(--reeris-fab-size);
+    --_btn-px: var(--reeris-space-4);
+    min-inline-size: var(--reeris-fab-size);
+    border-radius: var(--reeris-radius-full);
+    box-shadow: var(--reeris-shadow-lg);
+  }
+  :where(.fab.icon) { inline-size: var(--reeris-fab-size); }
+  :where(.fab.lg) { --_btn-height: var(--reeris-fab-size-lg); min-inline-size: var(--reeris-fab-size-lg); }
+  :where(.fab.lg.icon) { inline-size: var(--reeris-fab-size-lg); }
+  :where(.fab.fixed) {
+    position: fixed;
+    inset-inline-end: max(var(--reeris-fab-offset), var(--reeris-safe-inline-end));
+    inset-block-end: max(var(--reeris-fab-offset), var(--reeris-safe-bottom));
+    z-index: var(--reeris-z-fixed, 40);
+  }
+
+  /* Pressed/toggle actions use native ARIA state rather than a Reeris-only state class. */
+  :where(.btn[aria-pressed="true"]) {
+    --_btn-bg: var(--reeris-color-primary);
+    --_btn-color: var(--reeris-color-on-primary);
+    --_btn-border: var(--reeris-color-primary);
+  }
+}
+
+@layer reeris.components {
+  @media (prefers-reduced-motion: reduce) {
+    :where(.btn, .btn-close) { transition-duration: 0.01ms; }
+    :where(.btn:active:not(:disabled):not([aria-disabled="true"])) { transform: none; }
+  }
+
+  @media (forced-colors: active) {
+    :where(.btn-close) { color: ButtonText; }
+    :where(.btn[aria-pressed="true"]) { border-color: Highlight; background: Highlight; color: HighlightText; }
+  }
+}

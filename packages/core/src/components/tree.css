@@ -1,0 +1,87 @@
+@layer reeris.components {
+  :where(.tree) {
+    --reeris-tree-indent: var(--reeris-space-5);
+    --reeris-tree-row-min-height: var(--reeris-control-sm);
+    --reeris-tree-row-radius: var(--reeris-radius-md);
+    --reeris-tree-guide-color: var(--reeris-color-border-muted);
+    container-type: inline-size;
+    display: grid;
+    gap: var(--reeris-space-0-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  :where(.tree .tree) {
+    margin-inline-start: calc(var(--reeris-tree-indent) / 2);
+    padding-inline-start: calc(var(--reeris-tree-indent) / 2);
+    border-inline-start: var(--reeris-border-1) solid var(--reeris-tree-guide-color);
+  }
+
+  :where(.tree-item) { min-inline-size: 0; }
+
+  :where(.tree-row) {
+    display: flex;
+    align-items: center;
+    gap: var(--reeris-space-2);
+    min-block-size: var(--reeris-tree-row-min-height);
+    padding: var(--reeris-space-1) var(--reeris-space-2);
+    border-radius: var(--reeris-tree-row-radius);
+    color: var(--reeris-color-on-surface);
+    text-decoration: none;
+  }
+
+  :where(button.tree-row, a.tree-row) {
+    inline-size: 100%;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    text-align: start;
+    cursor: pointer;
+  }
+
+  :where(.tree-row:hover) { background: var(--reeris-color-surface-subtle); }
+  :where(.tree-row:focus-visible) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
+  :where(.tree-row[aria-selected="true"], .tree-row.current) { background: var(--reeris-color-primary-subtle); color: var(--reeris-color-primary); }
+  :where(.tree-row[aria-disabled="true"], .tree-row:disabled) { opacity: .55; cursor: not-allowed; }
+
+  :where(.tree-toggle) {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 1.25rem;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    border: 0;
+    background: transparent;
+    color: var(--reeris-color-on-surface-muted);
+  }
+  :where(.tree-toggle::before) { content: "›"; font-size: 1.15em; line-height: 1; transition: transform var(--reeris-duration-fast) var(--reeris-ease-standard); }
+  :where([aria-expanded="true"] > .tree-row .tree-toggle::before, .tree-toggle[aria-expanded="true"]::before) { transform: rotate(90deg); }
+  :where([dir="rtl"] .tree-toggle::before) { transform: scaleX(-1); }
+  :where([dir="rtl"] [aria-expanded="true"] > .tree-row .tree-toggle::before, [dir="rtl"] .tree-toggle[aria-expanded="true"]::before) { transform: scaleX(-1) rotate(90deg); }
+
+  :where(.tree-icon) { display: inline-grid; place-items: center; flex: 0 0 1.25rem; color: var(--reeris-color-on-surface-muted); }
+  :where(.tree-label) { min-inline-size: 0; flex: 1 1 auto; overflow-wrap: anywhere; }
+  :where(.tree-meta) { flex: 0 0 auto; color: var(--reeris-color-on-surface-muted); font-size: .875em; font-variant-numeric: tabular-nums; }
+
+  :where(.tree-children[hidden]) { display: none; }
+  :where(.tree.compact) { --reeris-tree-row-min-height: var(--reeris-control-xs); --reeris-tree-indent: var(--reeris-space-4); }
+  :where(.tree.comfortable) { --reeris-tree-row-min-height: var(--reeris-control-md); --reeris-tree-indent: var(--reeris-space-6); }
+  :where([data-density="compact"] .tree) { --reeris-tree-row-min-height: var(--reeris-control-xs); }
+  :where([data-density="comfortable"] .tree) { --reeris-tree-row-min-height: var(--reeris-control-md); }
+
+  :where(.hierarchy) { display: grid; gap: var(--reeris-space-4); }
+  :where(.hierarchy-level) { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--reeris-space-4); }
+  :where(.hierarchy-node) { min-inline-size: 10rem; padding: var(--reeris-space-3); border: var(--reeris-border-1) solid var(--reeris-color-border); border-radius: var(--reeris-radius-lg); background: var(--reeris-color-surface); text-align: center; }
+
+  @container (max-width: 20rem) {
+    :where(.tree-row) { align-items: flex-start; }
+    :where(.tree-meta) { white-space: normal; overflow-wrap: anywhere; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { :where(.tree-toggle::before) { transition: none; } }
+  @media (forced-colors: active) {
+    :where(.tree-row[aria-selected="true"], .tree-row.current) { outline: 2px solid Highlight; background: Highlight; color: HighlightText; }
+    :where(.tree .tree) { border-color: CanvasText; }
+  }
+}

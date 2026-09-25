@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "baselineEngine": "chromium-linux",
+  "fixture": "docs/visual-regression.html",
+  "cases": [
+    {
+      "id": "core-system-default-ltr",
+      "path": "docs/visual-regression.html?theme=system&density=default&dir=ltr&radius=default&elevation=default",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-default-ltr",
+      "path": "docs/visual-regression.html?theme=light&density=default&dir=ltr&radius=default&elevation=default",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-default-ltr",
+      "path": "docs/visual-regression.html?theme=dark&density=default&dir=ltr&radius=default&elevation=default",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-compact-ltr",
+      "path": "docs/visual-regression.html?theme=light&density=compact&dir=ltr&radius=default&elevation=subtle",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-comfortable-ltr",
+      "path": "docs/visual-regression.html?theme=dark&density=comfortable&dir=ltr&radius=rounded&elevation=floating",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-default-rtl",
+      "path": "docs/visual-regression.html?theme=light&density=default&dir=rtl&radius=default&elevation=default",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-soft-rtl",
+      "path": "docs/visual-regression.html?theme=dark&density=default&dir=rtl&radius=soft&elevation=subtle",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-mobile-system",
+      "path": "docs/visual-regression.html?theme=system&density=default&dir=ltr&radius=default&elevation=default",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "core-mobile-dark-compact",
+      "path": "docs/visual-regression.html?theme=dark&density=compact&dir=ltr&radius=default&elevation=flat",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "starter-dashboard-system",
+      "path": "examples/starters/dashboard.html",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "starter-data-system",
+      "path": "examples/starters/data-management.html",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "starter-marketing-system",
+      "path": "examples/starters/marketing.html",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "id": "i18n-rtl-desktop",
+      "path": "tests/i18n/index.html",
+      "width": 1280,
+      "height": 1600
+    },
+    {
+      "id": "i18n-rtl-mobile",
+      "path": "tests/i18n/index.html",
+      "width": 390,
+      "height": 1200
+    }
+  ]
+}

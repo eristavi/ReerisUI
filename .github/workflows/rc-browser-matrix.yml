@@ -1,0 +1,74 @@
+name: Reeris RC Browser Matrix
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      update_visual_baselines:
+        description: Generate Chromium visual baseline candidate artifact
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  playwright-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm run build
+      - run: npm run rc:browser:test -- --project=chromium --project=firefox --project=webkit --project=mobile-chromium --project=mobile-webkit
+      - run: node tooling/release-lab-evidence.mjs import-browser --latest
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rc-browser-evidence-linux
+          path: |
+            reports/rc-browser-evidence-*.json
+            tests/release/evidence/
+            test-results/
+
+  playwright-edge-windows:
+    runs-on: windows-latest
+    env:
+      REVA_INCLUDE_EDGE: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npm run build
+      - run: npm run rc:browser:test -- --project=edge
+      - run: node tooling/release-lab-evidence.mjs import-browser --latest
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rc-browser-evidence-edge
+          path: |
+            reports/rc-browser-evidence-*.json
+            tests/release/evidence/
+            test-results/
+
+  visual-baseline-candidate:
+    if: github.event_name == 'workflow_dispatch' && inputs.update_visual_baselines
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - run: npm run rc:visual:update
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rc-visual-baseline-candidate
+          path: tests/rc/snapshots/chromium/

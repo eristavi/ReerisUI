@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "assistive-technology-talkback-chrome-replace-me",
+  "releaseVersion": "0.52.0",
+  "gateId": "assistive-technology",
+  "kind": "assistive-technology",
+  "role": "closing",
+  "collectedAt": "REPLACE_WITH_ISO_TIMESTAMP",
+  "outcome": "pass",
+  "claims": [
+    "talkback-chrome"
+  ],
+  "environment": {
+    "notes": "Describe browser/device/assistive-tech/zoom/high-contrast/review environment."
+  },
+  "artifacts": [
+    {
+      "path": "REPLACE_WITH_REPOSITORY_RELATIVE_EVIDENCE_PATH",
+      "sha256": "REPLACE_WITH_SHA256",
+      "description": "Screenshot, notes, device-cloud export, decision memo, or other supporting evidence."
+    }
+  ],
+  "notes": "Describe what was tested, the result, and any limitations.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Approval must be deliberate and evidence-based."
+  }
+}

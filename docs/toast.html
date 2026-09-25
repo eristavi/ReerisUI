@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width">
+  <title>Reeris UI — Toast & Transient Feedback</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <style>
+    body{max-width:72rem;margin:auto;padding:2rem}.demo{display:grid;gap:1.5rem}.preview{position:relative;min-block-size:31rem;border:1px dashed var(--reeris-color-border);border-radius:var(--reeris-radius-lg);overflow:hidden}.preview .toast-region{position:absolute}.note{color:var(--reeris-color-text-muted)}
+  </style>
+</head>
+<body>
+<main class="demo">
+  <header><h1>Toast & Transient Feedback</h1><p class="note">Core provides presentation and accessibility structure. It does not impose auto-dismiss timers.</p></header>
+
+  <section class="preview" aria-label="Toast examples">
+    <div class="toast-region top end" aria-live="polite" aria-relevant="additions">
+      <div class="toast success" role="status">
+        <span class="toast-icon" aria-hidden="true">✓</span>
+        <div class="toast-content"><p class="toast-title">Changes saved</p><p class="toast-description">Your profile has been updated successfully.</p></div>
+        <button class="close-btn toast-close" type="button" aria-label="Dismiss">×</button>
+      </div>
+
+      <div class="toast primary" role="status">
+        <span class="toast-icon" aria-hidden="true">ⓘ</span>
+        <div class="toast-content"><p class="toast-title">Update available</p><p class="toast-description">A new version can be installed when convenient.</p><div class="toast-actions"><button class="btn primary sm" type="button">Update</button><button class="btn ghost sm" type="button">Later</button></div></div>
+        <button class="close-btn toast-close" type="button" aria-label="Dismiss">×</button>
+      </div>
+
+      <div class="toast warning" role="status">
+        <span class="toast-icon" aria-hidden="true">!</span>
+        <div class="toast-content"><p class="toast-title">Connection unstable</p><p class="toast-description">Some changes may take longer to synchronize.</p></div>
+        <button class="close-btn toast-close" type="button" aria-label="Dismiss">×</button>
+      </div>
+
+      <div class="toast danger" role="alert">
+        <span class="toast-icon" aria-hidden="true">×</span>
+        <div class="toast-content"><p class="toast-title">Upload failed</p><p class="toast-description">The file could not be uploaded. Try again.</p></div>
+        <button class="close-btn toast-close" type="button" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="callout primary">
+    <p class="callout-title">Accessibility contract</p>
+    <p>Use <code>role="status"</code> / a polite live region for ordinary confirmations and <code>role="alert"</code> only for genuinely urgent failures. Do not put focus into a toast merely because it appeared. Dismiss controls must be keyboard accessible. Applications decide whether and when a toast is removed.</p>
+  </section>
+</main>
+</body>
+</html>

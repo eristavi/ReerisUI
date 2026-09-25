@@ -1,0 +1,12 @@
+{
+  "fullRawBytes": 245760,
+  "minRawBytes": 220160,
+  "minGzipBytes": 32768,
+  "minBrotliBytes": 27648,
+  "largestModuleBytes": 26624,
+  "maxSelectorLength": 400,
+  "maxSpecificity": [0, 1, 1],
+  "maxUnlayeredQualifiedRules": 0,
+  "maxExactDuplicateRules": 0,
+  "maxIdSelectors": 0
+}

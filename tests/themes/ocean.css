@@ -1,0 +1,20 @@
+/* Partial custom theme fixture used by Reeris's theme validator. */
+[data-theme="ocean"] {
+  --reeris-color-primary: oklch(48% .16 235);
+  --reeris-color-on-primary: white;
+  --reeris-color-accent: oklch(46% .13 195);
+  --reeris-color-on-accent: white;
+  --reeris-gradient-primary: linear-gradient(135deg, oklch(48% .16 235), oklch(45% .13 195));
+  --reeris-gradient-accent: linear-gradient(135deg, oklch(46% .13 195), oklch(45% .15 250));
+}
+
+/* A nested theme can explicitly select a scheme, while all unmodified tokens inherit. */
+[data-theme="ocean-night"] {
+  color-scheme: dark;
+  --reeris-color-primary: oklch(72% .12 235);
+  --reeris-color-on-primary: var(--reeris-slate-950);
+  --reeris-color-accent: oklch(75% .11 195);
+  --reeris-color-on-accent: var(--reeris-slate-950);
+  --reeris-gradient-primary: linear-gradient(135deg, oklch(72% .12 235), oklch(75% .11 195));
+  --reeris-gradient-accent: linear-gradient(135deg, oklch(75% .11 195), oklch(72% .12 250));
+}

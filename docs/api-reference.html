@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reeris UI API Reference 0.52.0</title>
+<link rel="stylesheet" href="../packages/core/dist/reeris.css">
+<link rel="stylesheet" href="assets/docs.css">
+<script type="module" src="assets/docs.js"></script>
+</head>
+<body class="docs-body">
+<header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a aria-current="page" href="api-reference.html">API</a></nav></header>
+<main class="docs-shell">
+<aside class="docs-sidebar" aria-label="API sections"><a href="#summary">Summary</a><a href="#modules">Modules</a><a href="#classes">Classes</a><a href="#tokens">Tokens</a><a href="#data-attributes">Data attributes</a><a href="#package-exports">Package exports</a><a href="#javascript">JavaScript</a></aside>
+<article class="docs-content">
+<section id="summary" class="docs-hero"><span class="badge primary">Generated reference</span><h1>Public API reference</h1><p>Machine-derived inventory for Reeris UI 0.52.0. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports are listed here so API drift becomes auditable.</p><div class="docs-stat-grid"><div class="docs-stat"><strong>36</strong><span>source Modules</span></div><div class="docs-stat"><strong>732</strong><span>classes</span></div><div class="docs-stat"><strong>518</strong><span>tokens</span></div><div class="docs-stat"><strong>491</strong><span>defined Tokens</span></div><div class="docs-stat"><strong>27</strong><span>override Hooks</span></div><div class="docs-stat"><strong>11</strong><span>data Attributes</span></div><div class="docs-stat"><strong>14</strong><span>package Exports</span></div><div class="docs-stat"><strong>5</strong><span>js Api</span></div></div></section>
+<section id="modules" class="docs-section"><h2>Source module → documentation contract</h2><p>Every Core source module must map to a maintained documentation page.</p><div class="table-responsive"><table class="table"><thead><tr><th>Source module</th><th>Documentation</th></tr></thead><tbody><tr><td><code>components/advanced-navigation.css</code></td><td><a href="advanced-navigation.html">advanced-navigation.html</a></td></tr>
+<tr><td><code>components/app-shell.css</code></td><td><a href="app-shell.html">app-shell.html</a></td></tr>
+<tr><td><code>components/authentication.css</code></td><td><a href="authentication.html">authentication.html</a></td></tr>
+<tr><td><code>components/button.css</code></td><td><a href="button.html">button.html</a></td></tr>
+<tr><td><code>components/choice.css</code></td><td><a href="choice.html">choice.html</a></td></tr>
+<tr><td><code>components/commerce.css</code></td><td><a href="commerce.html">commerce.html</a></td></tr>
+<tr><td><code>components/data-display.css</code></td><td><a href="data-display.html">data-display.html</a></td></tr>
+<tr><td><code>components/feedback.css</code></td><td><a href="feedback.html">feedback.html</a></td></tr>
+<tr><td><code>components/files.css</code></td><td><a href="files.html">files.html</a></td></tr>
+<tr><td><code>components/identity.css</code></td><td><a href="identity.html">identity.html</a></td></tr>
+<tr><td><code>components/marketing.css</code></td><td><a href="marketing.html">marketing.html</a></td></tr>
+<tr><td><code>components/media.css</code></td><td><a href="media.html">media.html</a></td></tr>
+<tr><td><code>components/messaging.css</code></td><td><a href="messaging.html">messaging.html</a></td></tr>
+<tr><td><code>components/navigation-extended.css</code></td><td><a href="navigation-completion.html">navigation-completion.html</a></td></tr>
+<tr><td><code>components/navigation.css</code></td><td><a href="navigation.html">navigation.html</a></td></tr>
+<tr><td><code>components/overlays.css</code></td><td><a href="overlays.html">overlays.html</a></td></tr>
+<tr><td><code>components/search-command.css</code></td><td><a href="search-command.html">search-command.html</a></td></tr>
+<tr><td><code>components/settings.css</code></td><td><a href="settings.html">settings.html</a></td></tr>
+<tr><td><code>components/surfaces.css</code></td><td><a href="surfaces.html">surfaces.html</a></td></tr>
+<tr><td><code>components/tables.css</code></td><td><a href="tables.html">tables.html</a></td></tr>
+<tr><td><code>components/toast.css</code></td><td><a href="toast.html">toast.html</a></td></tr>
+<tr><td><code>components/toolbar-filters.css</code></td><td><a href="toolbar-filters.html">toolbar-filters.html</a></td></tr>
+<tr><td><code>components/tree.css</code></td><td><a href="tree.html">tree.html</a></td></tr>
+<tr><td><code>components/visualization.css</code></td><td><a href="visualization.html">visualization.html</a></td></tr>
+<tr><td><code>components/workflow.css</code></td><td><a href="workflow.html">workflow.html</a></td></tr>
+<tr><td><code>core/base.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>core/layers.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>core/personality.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>core/reset.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>core/theme.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>forms/forms.css</code></td><td><a href="forms-complete.html">forms-complete.html</a></td></tr>
+<tr><td><code>layout/primitives.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>reeris.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>tokens/generated.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>utilities/accessibility.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr>
+<tr><td><code>utilities/utilities.css</code></td><td><a href="foundation.html">foundation.html</a></td></tr></tbody></table></div></section>
+<section id="classes" class="docs-section"><div class="docs-section-head"><div><h2>Public class vocabulary</h2><p>Classes are contextual: a modifier such as <code>.primary</code> only has meaning where the owning component defines it.</p></div><label class="docs-search">Filter classes<input type="search" data-docs-filter="classes" placeholder="card, btn, primary…"></label></div><div class="table-responsive"><table class="table" data-docs-table="classes"><thead><tr><th>Class</th><th>Source</th></tr></thead><tbody><tr data-docs-row><td><code>.accent</code></td><td><code>components/button.css</code> <code>components/surfaces.css</code> <code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.accordion</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.accordion-body</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.accordion-item</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.account-menu</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.account-menu-footer</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.account-menu-header</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.actions</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.active</code></td><td><code>components/advanced-navigation.css</code> <code>components/navigation-extended.css</code> <code>components/navigation.css</code> <code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-body</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-content</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-feed</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-item</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-marker</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-meta</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.activity-title</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.alert</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-actions</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-close</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-content</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-description</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-icon</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.alert-title</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.app-main</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-shell</code></td><td><code>components/advanced-navigation.css</code> <code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-sidebar</code></td><td><code>components/advanced-navigation.css</code> <code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-sidebar-body</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-sidebar-footer</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-sidebar-header</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-sidebar-label</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-topbar</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-topbar-actions</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-topbar-title</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.app-workspace</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.attachment</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.attachment-list</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.attachment-name</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-brand</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-brand-content</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-brand-copy</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-brand-title</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-card</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-description</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-divider</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-footer</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-form</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-header</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-main</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-options</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-providers</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-shell</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-submit</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.auth-title</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.avatar</code></td><td><code>components/identity.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.avatar-group</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.away</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.badge</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.banner</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.block</code></td><td><code>components/button.css</code> <code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.border</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.bordered</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.borderless</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.bottom</code></td><td><code>components/overlays.css</code> <code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.breadcrumb</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.breadcrumb-item</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.btn</code></td><td><code>components/button.css</code> <code>components/commerce.css</code> <code>components/marketing.css</code> <code>components/overlays.css</code> <code>components/settings.css</code> <code>components/toolbar-filters.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.btn-close</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.btn-group</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.bulk-actions</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.bulk-actions-count</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.bulk-actions-group</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.busy</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.callout</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.callout-title</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.card</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-actions</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-body</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-footer</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-header</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-subtitle</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.card-title</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.cart-items</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.cart-layout</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.cell-actions</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.center</code></td><td><code>components/marketing.css</code> <code>components/media.css</code> <code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.chart</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.chart-body</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.chart-footer</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.chart-header</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.chart-legend</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.chart-title</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.check</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.checkout-layout</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.chip</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.chip-remove</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.choice</code></td><td><code>components/choice.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-content</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-description</code></td><td><code>components/choice.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-grid</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-group</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-group-label</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-meta</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.choice-title</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.circle</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.color-input</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.combobox</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.combobox-list</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.combobox-option</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.combobox-option-check</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.combobox-panel</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.comfortable</code></td><td><code>components/tables.css</code> <code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.command-bar</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.command-body</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-content</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-description</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-divider</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.command-empty</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-footer</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-group</code></td><td><code>components/search-command.css</code> <code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.command-group-title</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-icon</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-item</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-label</code></td><td><code>components/search-command.css</code> <code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.command-meta</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-palette</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.command-search</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.compact</code></td><td><code>components/choice.css</code> <code>components/marketing.css</code> <code>components/media.css</code> <code>components/surfaces.css</code> <code>components/tables.css</code> <code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.comparison</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.complete</code></td><td><code>components/authentication.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.composer</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.composer-actions</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.composer-input</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.contain</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.content-section</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.content-state</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.content-state-actions</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.content-state-description</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.content-state-icon</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.content-state-title</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.conversation</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.conversation-actions</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.conversation-body</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.conversation-header</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.cta</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.cta-actions</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.cta-copy</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.cta-description</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.cta-title</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.current</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.customizable</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.danger</code></td><td><code>components/button.css</code> <code>components/data-display.css</code> <code>components/feedback.css</code> <code>components/overlays.css</code> <code>components/surfaces.css</code> <code>components/toast.css</code> <code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.danger-zone</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.dashboard-grid</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.dashed</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.data-list</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.data-table</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.data-table-footer</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.data-table-meta</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.data-table-toolbar</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.desktop-sidebar</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.dialog</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.dialog-body</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.dialog-footer</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.dialog-header</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.dialog-title</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.divider</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.dot</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.dotted</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.down</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.drawer</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.drawer-body</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.drawer-footer</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.drawer-header</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.drawer-title</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.dropzone</code></td><td><code>components/files.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.dropzone-content</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.dropzone-description</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.dropzone-title</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.end</code></td><td><code>components/app-shell.css</code> <code>components/media.css</code> <code>components/navigation-extended.css</code> <code>components/overlays.css</code> <code>components/toast.css</code> <code>components/toolbar-filters.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.error</code></td><td><code>components/feedback.css</code> <code>components/surfaces.css</code> <code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.fab</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.feature</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.feature-copy</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.feature-grid</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.feature-icon</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.feature-list</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.feature-title</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.featured</code></td><td><code>components/choice.css</code> <code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.field</code></td><td><code>components/authentication.css</code> <code>components/search-command.css</code> <code>components/settings.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-control</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-error</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-help</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-label</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-status</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-success</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.field-warning</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.fieldset</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.figure</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.figure-caption</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.file</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.file-actions</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-browser</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-browser-footer</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-browser-header</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-card</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-card-preview</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-content</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-grid</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-icon</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-list</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-meta</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-name</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.file-row</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.filled</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-bar</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-chip</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-chip-count</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-chip-remove</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-chips</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-group</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.filter-label</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.fixed</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.flat</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.flex</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.flex-col</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.flex-row</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.flex-wrap</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.floating</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.flush</code></td><td><code>components/app-shell.css</code> <code>components/surfaces.css</code> <code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.font-bold</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.font-medium</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.font-normal</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.font-semibold</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.form-actions</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.form-grid</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.form-row</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.gallery</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.gallery-item</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-1</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-3</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-6</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.gap-8</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.ghost</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.glide</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.gradient</code></td><td><code>components/button.css</code> <code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.grid</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.has-end</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.has-start</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.hero</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hero-actions</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hero-content</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hero-copy</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hero-media</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hero-title</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.hidden</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.hierarchy</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.hierarchy-level</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.hierarchy-node</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.horizontal</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.hover</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.hover-card</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.hover-card-panel</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.icon</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.identity</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.identity-actions</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.identity-content</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.identity-meta</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.identity-name</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.image-card</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.image-card-content</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.inbox</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.indeterminate</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.info</code></td><td><code>components/feedback.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.inline</code></td><td><code>components/media.css</code> <code>forms/forms.css</code> <code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.inline-block</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.inline-flex</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.input</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input-action</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input-addon</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input-decor</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input-group</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input-wrap</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.interactive</code></td><td><code>components/data-display.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.invoice</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.invoice-header</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.invoice-items</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.invoice-meta</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.invoice-total</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.items-center</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.items-end</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.items-start</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.justify-between</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.justify-center</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.justify-end</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.justify-start</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.kbd</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.key-hint</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.l-center</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-cluster</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-cover</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-cover-center</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-grid</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-sidebar</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-split</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.l-stack</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.legend-item</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.legend-swatch</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.lg</code></td><td><code>components/button.css</code> <code>components/choice.css</code> <code>components/feedback.css</code> <code>components/media.css</code> <code>components/surfaces.css</code> <code>components/visualization.css</code> <code>forms/forms.css</code> <code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.lightbox</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.lightbox-bar</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.lightbox-caption</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.lightbox-stage</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.link</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.list-content</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-description</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-group</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-item</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-leading</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-title</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.list-trailing</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.loading-region</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.logo-cloud</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.loose</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.m-0</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.maintenance</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.max-w-full</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.mb-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.mb-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.md</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.me-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.me-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.media</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-body</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-frame</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-meta</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-placeholder</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-placeholder-icon</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.media-title</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-chevron</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-link</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-link-description</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-link-title</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-panel</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-section</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.mega-menu-title</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.member-card</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.member-card-actions</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.member-grid</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.menu</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.menu-item</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.menu-label</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.menu-separator</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.message</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-bubble</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-meta</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-preview</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-row</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-sender</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-subject</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-system</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.message-time</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.meter</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.meter-header</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.meter-native</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.meter-value</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.metric</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.metric-comparison</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.metric-footer</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.metric-header</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.metric-label</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.metric-value</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.mobile-nav</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.mobile-nav-icon</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.mobile-nav-label</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.mobile-nav-link</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.mobile-nav-list</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.money</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.ms-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.ms-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.mt-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.mt-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.mx-auto</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.nav</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.nav-item</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.nav-link</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.nav-rail</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-actions</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-brand</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-disclosure</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-nav</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-panel</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-toggle</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.navbar-toggle-icon</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.negative</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.neutral</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.no</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.no-print</code></td><td><code>components/commerce.css</code> <code>utilities/accessibility.css</code></td></tr>
+<tr data-docs-row><td><code>.no-results</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-actions</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-center</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-content</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-header</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-item</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-list</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-meta</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.notification-title</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.nowrap</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.numeric</code></td><td><code>components/commerce.css</code> <code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.offline</code></td><td><code>components/feedback.css</code> <code>components/identity.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-actions</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-choice</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-choices</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-header</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-panel</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.onboarding-progress</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.online</code></td><td><code>components/feedback.css</code> <code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.order-content</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-items</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-meta</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-row</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-summary</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-title</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.order-total</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.otp</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.outline</code></td><td><code>components/button.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.overflow-auto</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.overflow-hidden</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.overlay</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.own</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.p-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.p-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.p-6</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.page-description</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.page-header</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.page-header-actions</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.page-header-main</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.page-link</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.page-title</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.pagination</code></td><td><code>components/navigation.css</code> <code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.panel</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.payment-method</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.payment-method-icon</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.payment-summary</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.pe-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.pe-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.permission-required</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.pills</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.popover</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.positive</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.presence</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-actions</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-amount</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-card</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-card-badge</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-description</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-grid</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-name</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-period</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.pricing-price</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.primary</code></td><td><code>components/button.css</code> <code>components/feedback.css</code> <code>components/surfaces.css</code> <code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.print-only</code></td><td><code>utilities/accessibility.css</code></td></tr>
+<tr data-docs-row><td><code>.product-content</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.product-meta</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.product-price</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.product-row</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.product-thumb</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.product-title</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-actions</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-bio</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-content</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-header</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-name</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-card-role</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header-actions</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header-copy</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header-main</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header-subtitle</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-header-title</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-stat</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-stat-label</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-stat-value</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.profile-stats</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.progress</code></td><td><code>components/feedback.css</code> <code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.progress-bar</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.ps-2</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.ps-4</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.pulse</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.quantity-control</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.radio</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.raised</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.range</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.rating</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.rating-count</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.rating-star</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.rating-stars</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.rating-value</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.ratio-photo</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.ratio-portrait</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.ratio-square</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.ratio-video</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.ratio-wide</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.reaction</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.reaction-count</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.reaction-group</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.receipt</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.receipt-header</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.receipt-items</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.receipt-meta</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.receipt-total</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.recent-searches</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.reeris-container</code></td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>.relative</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.required</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.responsive</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.result-content</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-description</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-group</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-group-title</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-icon</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-item</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-list</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-meta</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-search</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.result-title</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.rounded</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.rounded-full</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.rounded-lg</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.search-empty</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.search-field</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.search-field-clear</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.search-field-icon</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.search-highlight</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.search-results</code></td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>.secondary-nav</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.secondary-nav-link</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.secondary-nav-list</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.section-copy</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.section-eyebrow</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.section-header</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.section-title</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.security-item</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.security-item-content</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.security-item-icon</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.security-item-meta</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.security-item-title</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.segment</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.segmented</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.select</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.selected</code></td><td><code>components/choice.css</code> <code>components/data-display.css</code> <code>components/surfaces.css</code> <code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.setting-control</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.setting-copy</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.setting-description</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.setting-label</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.setting-row</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-actions</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-content</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-group</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-layout</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-nav</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-section</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-section-description</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-section-header</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.settings-section-title</code></td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>.shadow-md</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.shadow-sm</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-chevron</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-group</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-icon</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-label</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-link</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-list</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-meta</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-nav</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-section</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-section-title</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sidebar-subnav</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.skeleton</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.sm</code></td><td><code>components/button.css</code> <code>components/choice.css</code> <code>components/feedback.css</code> <code>components/media.css</code> <code>components/surfaces.css</code> <code>components/visualization.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.sort-button</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.span-3</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.span-4</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.span-6</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.span-8</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.span-9</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.sparkline</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.spinner</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.split</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.split-btn</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.split-btn-trigger</code></td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>.square</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.sr-only</code></td><td><code>utilities/accessibility.css</code></td></tr>
+<tr data-docs-row><td><code>.sr-only-focusable</code></td><td><code>utilities/accessibility.css</code></td></tr>
+<tr data-docs-row><td><code>.stack</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.start</code></td><td><code>components/data-display.css</code> <code>components/toast.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.stat</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.stat-label</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.stat-meta</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.stat-value</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.stats</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.status</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.status-dot</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.status-flow</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.step</code></td><td><code>components/navigation.css</code> <code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.step-description</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.step-label</code></td><td><code>components/navigation.css</code> <code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.step-marker</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.stepper</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.steps</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.sticky</code></td><td><code>components/navigation.css</code> <code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.sticky-header</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.sticky-start</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.storage-meter</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.storage-meter-header</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.strength</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.strength-label</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.strength-track</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.striped</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.strong</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.subtle</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.success</code></td><td><code>components/button.css</code> <code>components/data-display.css</code> <code>components/feedback.css</code> <code>components/surfaces.css</code> <code>components/toast.css</code> <code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.summary-actions</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.summary-line</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.summary-lines</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.summary-title</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.switch</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.tab</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.table</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.table-wrap</code></td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>.tabs</code></td><td><code>components/navigation-extended.css</code> <code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.testimonial</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.testimonial-author</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.testimonial-grid</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.testimonial-quote</code></td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>.text</code></td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>.text-center</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.text-end</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.text-start</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.textarea</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.thumbnail</code></td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-body</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-content</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-item</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-marker</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-meta</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.timeline-title</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.toast</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-actions</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-close</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-content</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-description</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-icon</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-region</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toast-title</code></td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>.toolbar</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.toolbar-group</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.toolbar-title</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.tooltip</code></td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>.total</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-amount</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-content</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-list</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-meta</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-row</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.transaction-title</code></td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>.tree</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-children</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-icon</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-item</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-label</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-meta</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-row</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.tree-toggle</code></td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>.trend</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.typing-indicator</code></td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>.underline</code></td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>.up</code></td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>.upload-error</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.upload-item</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.upload-queue</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.upload-status</code></td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>.user-row</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.user-row-meta</code></td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>.verification-code</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.verification-meta</code></td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>.vertical</code></td><td><code>components/navigation.css</code> <code>components/settings.css</code> <code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.view-controls</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.view-switcher</code></td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar-fill</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar-label</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar-row</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar-track</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-bar-value</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-ring</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.viz-ring-value</code></td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>.vote</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.vote-button</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.vote-score</code></td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>.w-full</code></td><td><code>utilities/utilities.css</code></td></tr>
+<tr data-docs-row><td><code>.warning</code></td><td><code>components/button.css</code> <code>components/data-display.css</code> <code>components/feedback.css</code> <code>components/surfaces.css</code> <code>components/toast.css</code> <code>components/visualization.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.well</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.widget</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-actions</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-body</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-description</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-footer</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-header</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-heading</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.widget-title</code></td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard-body</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard-footer</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard-header</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard-progress</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.wizard-progress-meta</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow-content</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow-item</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow-marker</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow-meta</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.workflow-title</code></td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>.xl</code></td><td><code>components/button.css</code> <code>components/media.css</code> <code>components/surfaces.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.xs</code></td><td><code>components/button.css</code> <code>components/surfaces.css</code> <code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.yes</code></td><td><code>components/marketing.css</code></td></tr></tbody></table></div></section>
+<section id="tokens" class="docs-section"><div class="docs-section-head"><div><h2>Public CSS custom properties</h2><p>All <code>--reeris-*</code> names are public. “Override hook” means the variable is consumed with a fallback rather than declared globally, and can be set by an application at the relevant scope.</p></div><label class="docs-search">Filter tokens<input type="search" data-docs-filter="tokens" placeholder="color, space, button…"></label></div><div class="table-responsive"><table class="table" data-docs-table="tokens"><thead><tr><th>Token</th><th>Kind</th><th>Source</th></tr></thead><tbody><tr data-docs-row><td><code>--reeris-alert-border-width</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-alert-padding</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-alert-radius</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-amber-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-anchor</code></td><td>override hook (fallback-only)</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-anchor-name</code></td><td>override hook (fallback-only)</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-auth-gap</code></td><td>defined token</td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-auth-max-width</code></td><td>defined token</td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-auth-panel-padding</code></td><td>defined token</td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-avatar-bg</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-avatar-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-badge-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-blue-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-border-0</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-border-1</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-border-2</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-border-3</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-border-4</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-bg</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-border-color</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-color</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-font-weight</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-gap</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-radius</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-button-shadow</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-bg</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-border-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-padding</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-card-shadow</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-chip-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-choice-min</code></td><td>defined token</td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-close-size</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-accent</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-background</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-danger</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-muted</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-primary</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-strong</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-success</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-border-warning</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-canvas</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-danger</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-info</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-accent</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-danger</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-info</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-primary</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-success</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-surface</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-surface-muted</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-on-warning</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-primary</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-primary-subtle</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-success</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-surface</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-surface-muted</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-surface-raised</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-surface-strong</code></td><td>override hook (fallback-only)</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-surface-subtle</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-text</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-text-muted</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-color-warning</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-command-item-min-block-size</code></td><td>defined token</td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-command-max-block-size</code></td><td>defined token</td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-command-max-inline-size</code></td><td>defined token</td><td><code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-commerce-summary-inline-size</code></td><td>defined token</td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-commerce-thumb-size</code></td><td>defined token</td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-component-radius</code></td><td>defined token</td><td><code>core/personality.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-component-shadow</code></td><td>defined token</td><td><code>core/personality.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-gap</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-icon-bg</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-icon-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-icon-size</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-max-description</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-state-padding</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-content-width</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-control-lg</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-control-md</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-control-sm</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-control-xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-control-xs</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cover-size</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-cyan-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-density-factor</code></td><td>defined token</td><td><code>core/personality.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-dialog-inline-size</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-divider-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-drawer-inline-size</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-dropdown-shadow</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-dropzone-bg</code></td><td>defined token</td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-dropzone-min-height</code></td><td>defined token</td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-duration-fast</code></td><td>defined token</td><td><code>core/personality.css</code> <code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-duration-instant</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-duration-normal</code></td><td>defined token</td><td><code>core/personality.css</code> <code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-duration-slow</code></td><td>defined token</td><td><code>core/personality.css</code> <code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-duration-slower</code></td><td>defined token</td><td><code>core/personality.css</code> <code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-ease-bounce</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-ease-enter</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-ease-exit</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-ease-standard</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-emerald-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-fab-offset</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-fab-size</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-fab-size-lg</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-feature-min-inline-size</code></td><td>defined token</td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-bg</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-border-color</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-border-focus</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-border-hover</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-color</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-gap</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-placeholder</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-radius</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-field-shadow</code></td><td>defined token</td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-file-card-min</code></td><td>defined token</td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-file-icon-size</code></td><td>defined token</td><td><code>components/files.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-filter-bar-bg</code></td><td>defined token</td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-filter-bar-border</code></td><td>defined token</td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-filter-chip-active-bg</code></td><td>defined token</td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-filter-chip-bg</code></td><td>defined token</td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-focus-color</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-focus-offset</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-focus-style</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-focus-width</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-body</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-code</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-heading</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-sans</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-2xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-3xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-4xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-base</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-lg</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-md</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-sm</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-size-xs</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-ui</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-black</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-bold</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-extrabold</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-extralight</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-light</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-medium</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-normal</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-semibold</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-font-weight-thin</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gallery-cols</code></td><td>override hook (fallback-only)</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gallery-gap</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gallery-mobile-cols</code></td><td>override hook (fallback-only)</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-bg</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-color</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-duration</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-ease</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-radius</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-accent</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-brand</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-danger</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-primary</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-success</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-surface</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gradient-warning</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-gray-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-grid-min</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-hero-max-inline-size</code></td><td>defined token</td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-hover-card-width</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-icon-stroke</code></td><td>override hook (fallback-only)</td><td><code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-image-card-ratio</code></td><td>override hook (fallback-only)</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-indigo-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-layout-gap</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-layout-gutter</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-lime-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-line-height-normal</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-line-height-relaxed</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-line-height-snug</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-line-height-tight</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-list-bg</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-list-border</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-list-radius</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-marketing-copy-max-inline-size</code></td><td>defined token</td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-media-bg</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-media-border</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-media-gap</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-media-radius</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mega-menu-columns</code></td><td>override hook (fallback-only)</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mega-menu-gap</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mega-menu-padding</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mega-menu-width</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-message-max-width</code></td><td>defined token</td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-message-padding-block</code></td><td>defined token</td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-message-padding-inline</code></td><td>defined token</td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-message-radius</code></td><td>defined token</td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mobile-nav-bg</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mobile-nav-count</code></td><td>override hook (fallback-only)</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-mobile-nav-height</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-active-bg</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-active-color</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-gap</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-item-height</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-item-padding-inline</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-nav-radius</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-navbar-height</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-navbar-panel-bg</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-navbar-panel-border</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-navbar-panel-shadow</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-navbar-toggle-size</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-notification-unread-bg</code></td><td>defined token</td><td><code>components/messaging.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-onboarding-steps</code></td><td>override hook (fallback-only)</td><td><code>components/authentication.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-orange-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-overlay-bg</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-overlay-border</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-overlay-radius</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-overlay-shadow</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-overlay-surface</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-page-header-gap</code></td><td>defined token</td><td><code>components/toolbar-filters.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pagination-size</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-panel-bg</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-panel-border-color</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-panel-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pink-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-placeholder-ratio</code></td><td>override hook (fallback-only)</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-popover-inline-size</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-presence-size</code></td><td>defined token</td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-pricing-min-inline-size</code></td><td>defined token</td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-profile-bg</code></td><td>defined token</td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-profile-border-color</code></td><td>defined token</td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-profile-padding</code></td><td>defined token</td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-profile-radius</code></td><td>defined token</td><td><code>components/identity.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-progress-bg</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-progress-fill</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-progress-height</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-progress-radius</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-progress-value</code></td><td>override hook (fallback-only)</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-purple-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-2xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-3xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-full</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-lg</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-md</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-none</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-sm</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-radius-xs</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rating-color</code></td><td>defined token</td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rating-size</code></td><td>defined token</td><td><code>components/choice.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-receipt-max-inline-size</code></td><td>defined token</td><td><code>components/commerce.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-red-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-rose-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-bottom</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-inline-end</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-inline-start</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-left</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-right</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-safe-top</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-secondary-nav-width</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-section-padding-block</code></td><td>defined token</td><td><code>components/marketing.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-settings-gap</code></td><td>defined token</td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-settings-row-padding</code></td><td>defined token</td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-settings-sidebar-width</code></td><td>defined token</td><td><code>components/settings.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-2xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-lg</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-md</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-none</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-sm</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shadow-xs</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-bg</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-border</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-gap</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-sidebar-collapsed-width</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-sidebar-width</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-surface</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-shell-topbar-height</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-active-indicator</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-content-min</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-icon-size</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-item-height</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-section-gap</code></td><td>defined token</td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-sidebar-width</code></td><td>override hook (fallback-only)</td><td><code>layout/primitives.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-skeleton-radius</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-slate-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-0</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-0-5</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-1</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-1-5</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-10</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-12</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-16</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-2</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-2-5</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-20</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-24</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-3</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-32</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-4</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-5</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-6</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-8</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-fluid-lg</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-fluid-md</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-fluid-sm</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-space-fluid-xl</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-spinner-size</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-spinner-width</code></td><td>defined token</td><td><code>components/feedback.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-stat-bg</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-stat-border</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-stat-radius</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-step-count</code></td><td>override hook (fallback-only)</td><td><code>components/navigation.css</code> <code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-bg</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-border-color</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-cell-padding-block</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-cell-padding-inline</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-color</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-header-bg</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-radius</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-row-hover-bg</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-table-row-selected-bg</code></td><td>defined token</td><td><code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tabs-border</code></td><td>defined token</td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-target-min</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-teal-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-thumbnail-size</code></td><td>defined token</td><td><code>components/media.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-timeline-line</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-timeline-marker</code></td><td>defined token</td><td><code>components/data-display.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-bg</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-border-color</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-color</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-gap</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-offset</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-padding</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-radius</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-shadow</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-toast-width</code></td><td>defined token</td><td><code>components/toast.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tooltip-anchor</code></td><td>override hook (fallback-only)</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tooltip-bg</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tooltip-color</code></td><td>defined token</td><td><code>components/overlays.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tree-guide-color</code></td><td>defined token</td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tree-indent</code></td><td>defined token</td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tree-row-min-height</code></td><td>defined token</td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-tree-row-radius</code></td><td>defined token</td><td><code>components/tree.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-value</code></td><td>override hook (fallback-only)</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-100</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-200</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-300</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-400</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-50</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-500</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-600</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-700</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-800</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-900</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-violet-950</code></td><td>defined token</td><td><code>tokens/generated.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-accent</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-color</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-danger</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-grid</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-primary</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-radius</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-success</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-track</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-viz-warning</code></td><td>defined token</td><td><code>components/visualization.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-well-bg</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-widget-bg</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-widget-border</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-widget-radius</code></td><td>defined token</td><td><code>components/app-shell.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-complete</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-current</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-danger</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-gap</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-line</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-marker-size</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-workflow-pending</code></td><td>defined token</td><td><code>components/workflow.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-z-dropdown</code></td><td>override hook (fallback-only)</td><td><code>components/navigation-extended.css</code> <code>components/search-command.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-z-fixed</code></td><td>override hook (fallback-only)</td><td><code>components/advanced-navigation.css</code> <code>components/button.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-z-popover</code></td><td>override hook (fallback-only)</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-z-sticky</code></td><td>override hook (fallback-only)</td><td><code>components/app-shell.css</code> <code>components/navigation.css</code> <code>components/tables.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-z-toast</code></td><td>override hook (fallback-only)</td><td><code>components/toast.css</code></td></tr></tbody></table></div></section>
+<section id="data-attributes" class="docs-section"><h2>Reeris-owned data attributes</h2><p>Native attributes and ARIA remain preferred for native/semantic state. Reeris-specific state/configuration uses <code>data-reeris-*</code>.</p><div class="table-responsive"><table class="table"><thead><tr><th>Attribute</th><th>Known contract</th><th>Source</th></tr></thead><tbody><tr><td><code>data-reeris-active</code></td><td>value: true</td><td><code>components/search-command.css</code></td></tr>
+<tr><td><code>data-reeris-anchor</code></td><td>presence</td><td><code>components/overlays.css</code></td></tr>
+<tr><td><code>data-reeris-glide</code></td><td>configuration / state hook</td><td><code>@reeris/js/index.js</code></td></tr>
+<tr><td><code>data-reeris-glide-instant</code></td><td>presence</td><td><code>@reeris/js/glide-navigation.js</code> <code>components/navigation-extended.css</code></td></tr>
+<tr><td><code>data-reeris-glide-item</code></td><td>configuration / state hook</td><td><code>@reeris/js/glide-navigation.js</code></td></tr>
+<tr><td><code>data-reeris-glide-items</code></td><td>configuration / state hook</td><td><code>@reeris/js/glide-navigation.js</code></td></tr>
+<tr><td><code>data-reeris-glide-ready</code></td><td>presence</td><td><code>@reeris/js/glide-navigation.js</code> <code>components/navigation-extended.css</code></td></tr>
+<tr><td><code>data-reeris-position</code></td><td>value: anchor</td><td><code>components/overlays.css</code></td></tr>
+<tr><td><code>data-reeris-state</code></td><td>value: active, value: closing, value: collapsed, value: complete, value: current, value: dragover, value: error, value: loading, value: success, value: unread</td><td><code>components/advanced-navigation.css</code> <code>components/app-shell.css</code> <code>components/button.css</code> <code>components/files.css</code> <code>components/messaging.css</code> <code>components/toast.css</code> <code>components/toolbar-filters.css</code> <code>components/workflow.css</code> <code>forms/forms.css</code></td></tr>
+<tr><td><code>data-reeris-strength</code></td><td>value: fair, value: good, value: strong, value: weak</td><td><code>forms/forms.css</code></td></tr>
+<tr><td><code>data-reeris-tooltip-anchor</code></td><td>presence</td><td><code>components/overlays.css</code></td></tr></tbody></table></div></section>
+<section id="package-exports" class="docs-section"><h2>Package exports</h2><div class="table-responsive"><table class="table"><thead><tr><th>Package</th><th>Export</th><th>Target</th></tr></thead><tbody><tr><td><code>@reeris/core</code></td><td><code>.</code></td><td><code>./dist/reeris.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./reeris.css</code></td><td><code>./dist/reeris.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./components/*.css</code></td><td><code>./dist/components/*.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./forms/*.css</code></td><td><code>./dist/forms/*.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./layout/*.css</code></td><td><code>./dist/layout/*.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./utilities/*.css</code></td><td><code>./dist/utilities/*.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./tokens.json</code></td><td><code>./dist/tokens.json</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./tokens.js</code></td><td><code>./dist/tokens.js</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./reeris.min.css</code></td><td><code>./dist/reeris.min.css</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./reeris.css.map</code></td><td><code>./dist/reeris.css.map</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./reeris.min.css.map</code></td><td><code>./dist/reeris.min.css.map</code></td></tr>
+<tr><td><code>@reeris/core</code></td><td><code>./sources/*</code></td><td><code>./dist/sources/*</code></td></tr>
+<tr><td><code>@reeris/js</code></td><td><code>.</code></td><td><code>./dist/index.js</code></td></tr>
+<tr><td><code>@reeris/js</code></td><td><code>./glide-navigation</code></td><td><code>./dist/glide-navigation.js</code></td></tr></tbody></table></div></section>
+<section id="javascript" class="docs-section"><h2>Optional JavaScript API</h2><p>JavaScript enhances Reeris but is not required by Core when the browser already provides the necessary behavior.</p><div class="table-responsive"><table class="table"><thead><tr><th>Name</th><th>Kind</th><th>Source</th></tr></thead><tbody><tr><td><code>destroy</code></td><td>function</td><td><code>packages/js/src/index.js</code></td></tr>
+<tr><td><code>getInstance</code></td><td>function</td><td><code>packages/js/src/index.js</code></td></tr>
+<tr><td><code>GlideNavigation</code></td><td>class</td><td><code>packages/js/src/glide-navigation.js</code></td></tr>
+<tr><td><code>GlideNavigation</code></td><td>re-export</td><td><code>packages/js/src/index.js</code></td></tr>
+<tr><td><code>init</code></td><td>function</td><td><code>packages/js/src/index.js</code></td></tr></tbody></table></div><h3>GlideNavigation instance contract</h3><p><code>new GlideNavigation(element, options)</code> exposes <code>moveTo(item, animate)</code>, <code>restore(animate)</code>, <code>refresh()</code>, and <code>destroy()</code>. The package-level helpers are <code>init(container)</code>, <code>destroy(container)</code>, and <code>getInstance(element)</code>.</p></section>
+</article>
+</main>
+</body></html>

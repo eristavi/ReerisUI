@@ -1,0 +1,534 @@
+{
+  "version": "0.47.0",
+  "generatedAt": "2026-09-25T10:45:43.854Z",
+  "summary": {
+    "passed": 104,
+    "total": 104,
+    "failed": 0,
+    "starters": 5,
+    "publicClassesAvailable": 732
+  },
+  "failures": [],
+  "checks": [
+    {
+      "name": "Starter directory exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter README exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starters documentation page exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: language declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: viewport declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: title declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: main landmark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: Reeris Core stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: no embedded style block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: no runtime script required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: inline styles only use public Reeris custom properties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: only public Reeris classes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: only known Reeris data attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .app-shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .stats",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .dashboard-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .widget",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .viz-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard.html: composition anchor .activity-feed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: language declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: viewport declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: title declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: main landmark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: Reeris Core stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: no embedded style block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: no runtime script required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: inline styles only use public Reeris custom properties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: only public Reeris classes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: only known Reeris data attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .app-shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .filter-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .filter-chips",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .bulk-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .data-table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-management.html: composition anchor .pagination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: language declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: viewport declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: title declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: main landmark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: Reeris Core stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: no embedded style block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: no runtime script required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: inline styles only use public Reeris custom properties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: only public Reeris classes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: only known Reeris data attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: composition anchor .auth-shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: composition anchor .auth-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: composition anchor .auth-form",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: composition anchor .field",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authentication.html: composition anchor .auth-providers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: language declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: viewport declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: title declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: main landmark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: Reeris Core stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: no embedded style block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: no runtime script required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: inline styles only use public Reeris custom properties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: only public Reeris classes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: only known Reeris data attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .settings-layout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .settings-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .settings-section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .setting-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .switch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "settings.html: composition anchor .danger-zone",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: language declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: viewport declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: title declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: main landmark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: Reeris Core stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: no embedded style block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: no runtime script required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: inline styles only use public Reeris custom properties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: only public Reeris classes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: only known Reeris data attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .navbar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .hero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .feature-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .pricing-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .testimonial",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "marketing.html: composition anchor .cta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index links dashboard.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index links data-management.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index links authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index links settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Starter index links marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs link dashboard.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs link data-management.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs link authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs link settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs link marketing.html",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

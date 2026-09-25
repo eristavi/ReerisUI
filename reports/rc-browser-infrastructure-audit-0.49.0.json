@@ -1,0 +1,274 @@
+{
+  "version": "0.49.0",
+  "generatedAt": "2026-09-25T11:14:29.377Z",
+  "status": "infrastructure-ready",
+  "summary": {
+    "passed": 52,
+    "total": 52,
+    "failed": 0
+  },
+  "note": "This audit validates RC browser/visual infrastructure only. It does not claim real Safari/iOS/Android, assistive-technology, Windows High Contrast or approved screenshot-baseline evidence.",
+  "failures": [],
+  "checks": [
+    {
+      "name": "RC browser infrastructure exists: playwright.config.mjs",
+      "pass": true,
+      "detail": "playwright.config.mjs"
+    },
+    {
+      "name": "RC browser infrastructure exists: tooling/test-server.mjs",
+      "pass": true,
+      "detail": "tooling/test-server.mjs"
+    },
+    {
+      "name": "RC browser infrastructure exists: tooling/rc-playwright-reporter.mjs",
+      "pass": true,
+      "detail": "tooling/rc-playwright-reporter.mjs"
+    },
+    {
+      "name": "RC browser infrastructure exists: tests/rc/browser-matrix.spec.mjs",
+      "pass": true,
+      "detail": "tests/rc/browser-matrix.spec.mjs"
+    },
+    {
+      "name": "RC browser infrastructure exists: tests/rc/visual.spec.mjs",
+      "pass": true,
+      "detail": "tests/rc/visual.spec.mjs"
+    },
+    {
+      "name": "RC browser infrastructure exists: .github/workflows/rc-browser-matrix.yml",
+      "pass": true,
+      "detail": ".github/workflows/rc-browser-matrix.yml"
+    },
+    {
+      "name": "RC browser infrastructure exists: tests/release/browser-evidence-schema.json",
+      "pass": true,
+      "detail": "tests/release/browser-evidence-schema.json"
+    },
+    {
+      "name": "RC browser infrastructure exists: docs/rc-validation-0.47.md",
+      "pass": true,
+      "detail": "docs/rc-validation-0.47.md"
+    },
+    {
+      "name": "Playwright is pinned exactly",
+      "pass": true,
+      "detail": "1.63.0"
+    },
+    {
+      "name": "Browser test script exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual compare script exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual update is explicit and separate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Release check does not invoke browser tests",
+      "pass": true,
+      "detail": "npm run build && npm run audit:all && npm run release:manifest"
+    },
+    {
+      "name": "Playwright config covers chromium",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Playwright config covers firefox",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Playwright config covers webkit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Playwright config covers mobile-chromium",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Playwright config covers mobile-webkit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Playwright config covers edge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers forms-complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers navigation-completion",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers overlays",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers tables",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers browser-reflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers i18n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser matrix covers dashboard",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interaction flow covered: keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interaction flow covered: native dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interaction flow covered: native disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interaction flow covered: glide navigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Interaction flow covered: horizontal overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual spec consumes canonical case manifest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual spec uses screenshot assertions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Linux CI runs chromium",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Linux CI runs firefox",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Linux CI runs webkit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Windows CI opts into Edge project",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CI uploads RC evidence artifacts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CI visual baseline job is manual",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manual gates registry version matches",
+      "pass": true,
+      "detail": "0.49.0"
+    },
+    {
+      "name": "Manual gate has evidence-derived status: desktop-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: desktop-browser-matrix",
+      "pass": true,
+      "detail": "Playwright CI covers Chromium, Firefox and WebKit on Linux plus Microsoft Edge on Windows. Real Safari remains manual and Edge/Chrome branded-current validation remains an external release-lab check."
+    },
+    {
+      "name": "Manual gate has evidence-derived status: mobile-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: mobile-browser-matrix",
+      "pass": true,
+      "detail": "Playwright emulates mobile Chromium and mobile WebKit for layout/touch prerequisites. Real iOS/iPadOS Safari and Android Chrome remain device/manual evidence."
+    },
+    {
+      "name": "Manual gate has evidence-derived status: assistive-technology",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: assistive-technology",
+      "pass": true,
+      "detail": "Playwright keyboard flows verify focus order, native dialog/disclosure interaction and form controls; screen readers remain manual."
+    },
+    {
+      "name": "Manual gate has evidence-derived status: zoom-reflow-touch",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: zoom-reflow-touch",
+      "pass": true,
+      "detail": "Playwright runs desktop/mobile viewport and touch-emulation smoke flows; real 200%/400% browser zoom remains manual."
+    },
+    {
+      "name": "Manual gate has evidence-derived status: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "Static forced-colors and contrast audits remain automated; Windows High Contrast visual confirmation remains manual."
+    },
+    {
+      "name": "Manual gate has evidence-derived status: visual-regression-baselines",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Manual gate records automation boundary: visual-regression-baselines",
+      "pass": true,
+      "detail": "Playwright screenshot specs and snapshot update/compare commands are provided. Baselines require human approval before this gate can pass."
+    }
+  ]
+}

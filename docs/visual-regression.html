@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Visual Regression Fixture</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="assets/docs.css">
+  <style>
+    @layer reeris.overrides {
+      .visual-page { max-inline-size: 86rem; margin-inline: auto; padding: var(--reeris-space-fluid-md); }
+      .visual-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr)); gap:var(--reeris-space-5); }
+      .visual-stack { display:grid; gap:var(--reeris-space-3); }
+      .visual-swatch { min-block-size:4rem; display:grid; place-items:center; border-radius:var(--reeris-radius-lg); background:var(--reeris-gradient-primary); color:var(--reeris-color-on-primary); font-weight:var(--reeris-font-weight-semibold); }
+      .visual-section { padding-block:var(--reeris-space-6); border-block-start:1px solid var(--reeris-color-border); }
+      .visual-settings { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
+      .visual-table-wrap { max-inline-size:100%; overflow:auto; }
+    }
+  </style>
+  <script type="module" src="assets/visual-regression.js"></script>
+</head>
+<body class="docs-body">
+<main class="visual-page l-stack">
+  <header class="l-stack">
+    <span class="badge primary">Reeris Visual Fixture</span>
+    <h1>Core visual acceptance matrix</h1>
+    <p class="visual-settings" data-visual-settings>Loading fixture settings…</p>
+    <div class="visual-swatch">Graphite · Indigo · Cyan</div>
+  </header>
+
+  <section class="visual-section l-stack">
+    <h2>Actions &amp; navigation</h2>
+    <nav class="nav" aria-label="Fixture navigation"><a class="nav-link active" href="#">Overview</a><a class="nav-link" href="#">Bookings</a><a class="nav-link" href="#">Guests</a><a class="nav-link" href="#">Settings</a></nav>
+    <div class="l-cluster"><button class="btn primary">Primary action</button><button class="btn accent">Accent</button><button class="btn success">Success</button><button class="btn warning">Warning</button><button class="btn danger">Danger</button><button class="btn outline">Outline</button><button class="btn ghost">Ghost</button><button class="btn primary gradient">Gradient</button><button class="btn" disabled>Disabled</button></div>
+    <div class="l-cluster"><button class="btn xs">XS</button><button class="btn sm">SM</button><button class="btn">MD</button><button class="btn lg">LG</button><button class="btn xl">XL</button></div>
+  </section>
+
+  <section class="visual-section visual-grid">
+    <article class="card l-stack"><header class="card-header"><div><h2 class="card-title">Surface hierarchy</h2><p>Cards, badges and content spacing.</p></div><span class="badge success">Active</span></header><div class="card-body l-stack"><p>Reeris surfaces inherit semantic theme tokens and system color-scheme behavior.</p><div class="l-cluster"><span class="badge primary">Primary</span><span class="badge warning">Warning</span><span class="badge danger">Danger</span></div></div></article>
+    <div class="visual-stack"><div class="alert info"><strong>Information</strong><span>Informational feedback message.</span></div><div class="alert success"><strong>Success</strong><span>Operation completed successfully.</span></div><div class="alert warning"><strong>Warning</strong><span>Review before continuing.</span></div><div class="alert danger"><strong>Error</strong><span>Something needs attention.</span></div></div>
+  </section>
+
+  <section class="visual-section l-stack">
+    <h2>Forms</h2>
+    <div class="form-row">
+      <label class="field"><span class="field-label">Full name</span><input class="input" value="Alex Morgan"><span class="field-help">Default field help.</span></label>
+      <label class="field"><span class="field-label">Country</span><select class="select"><option>Cyprus</option><option>Greece</option><option>Belgium</option></select></label>
+      <label class="field"><span class="field-label">Invalid field</span><input class="input" value="Invalid value" aria-invalid="true"><span class="field-error">Please correct this value.</span></label>
+      <label class="field"><span class="field-label">Read only</span><input class="input" value="Reference #RV-043" readonly></label>
+    </div>
+    <fieldset class="fieldset"><legend>Preferences</legend><div class="choice-group inline"><label class="choice"><input type="checkbox" checked><span>Notifications</span></label><label class="choice"><input type="radio" name="fixture-plan" checked><span>Standard</span></label><label class="switch"><input type="checkbox" role="switch" checked><span>Automatic</span></label></div></fieldset>
+  </section>
+
+  <section class="visual-section l-stack">
+    <h2>Data</h2>
+    <div class="visual-table-wrap"><table class="table striped hover"><thead><tr><th>Name</th><th>Status</th><th class="numeric">Revenue</th></tr></thead><tbody><tr><td>Olympia</td><td><span class="badge success">Active</span></td><td class="numeric">€28,400</td></tr><tr aria-selected="true"><td>Asteria</td><td><span class="badge warning">Pending</span></td><td class="numeric">€17,950</td></tr><tr><td>Helios</td><td><span class="badge danger">Blocked</span></td><td class="numeric">€9,120</td></tr></tbody></table></div>
+    <div class="visual-grid"><article class="metric"><span class="metric-label">Revenue</span><strong class="metric-value">€284,900</strong><span class="trend up">+12.4%</span></article><article class="metric"><span class="metric-label">Occupancy</span><strong class="metric-value">85%</strong><div class="progress"><div class="progress-bar" style="--reeris-progress-value:85%"></div></div></article></div>
+  </section>
+
+  <section class="visual-section visual-grid">
+    <div class="content-state no-results"><div class="content-state-icon" aria-hidden="true">?</div><h2 class="content-state-title">No results</h2><p class="content-state-description">Try adjusting your filters or search terms.</p><div class="content-state-actions"><button class="btn outline">Clear filters</button></div></div>
+    <div class="content-state offline"><div class="content-state-icon" aria-hidden="true">!</div><h2 class="content-state-title">You’re offline</h2><p class="content-state-description">Reconnect to continue.</p><div class="content-state-actions"><button class="btn primary">Retry</button></div></div>
+  </section>
+
+  <section class="visual-section l-stack">
+    <h2>Disclosure &amp; feedback</h2>
+    <details class="accordion" open><summary>Native disclosure</summary><div class="accordion-body"><p>The fixture keeps browser-native interaction semantics visible in every theme.</p></div></details>
+    <div class="toast success" role="status"><div class="toast-content"><strong class="toast-title">Changes saved</strong><p class="toast-description">Your settings were updated.</p></div><button class="toast-close" aria-label="Dismiss">×</button></div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "version": "0.32.0",
+  "generatedAt": "2026-09-25T07:18:42.197Z",
+  "auditedCssFiles": 28,
+  "discoveredClassNames": 710,
+  "coverage": {
+    "button": {
+      "required": [
+        "btn",
+        "btn-group"
+      ],
+      "present": [
+        "btn",
+        "btn-group"
+      ],
+      "missing": []
+    },
+    "forms": {
+      "required": [
+        "field",
+        "switch"
+      ],
+      "present": [
+        "field",
+        "switch"
+      ],
+      "missing": []
+    },
+    "surfaces": {
+      "required": [
+        "card",
+        "badge",
+        "chip",
+        "avatar"
+      ],
+      "present": [
+        "card",
+        "badge",
+        "chip",
+        "avatar"
+      ],
+      "missing": []
+    },
+    "feedback": {
+      "required": [
+        "alert",
+        "progress",
+        "spinner",
+        "skeleton",
+        "toast"
+      ],
+      "present": [
+        "alert",
+        "progress",
+        "spinner",
+        "skeleton",
+        "toast"
+      ],
+      "missing": []
+    },
+    "navigation": {
+      "required": [
+        "navbar",
+        "tabs",
+        "pagination"
+      ],
+      "present": [
+        "navbar",
+        "tabs",
+        "pagination"
+      ],
+      "missing": []
+    },
+    "overlays": {
+      "required": [
+        "dialog",
+        "popover",
+        "accordion",
+        "tooltip"
+      ],
+      "present": [
+        "dialog",
+        "popover",
+        "accordion",
+        "tooltip"
+      ],
+      "missing": []
+    },
+    "data": {
+      "required": [
+        "table",
+        "data-table",
+        "list-group",
+        "timeline"
+      ],
+      "present": [
+        "table",
+        "data-table",
+        "list-group",
+        "timeline"
+      ],
+      "missing": []
+    },
+    "app": {
+      "required": [
+        "app-shell",
+        "toolbar",
+        "widget"
+      ],
+      "present": [
+        "app-shell",
+        "toolbar",
+        "widget"
+      ],
+      "missing": []
+    },
+    "workflow": {
+      "required": [
+        "stepper",
+        "wizard"
+      ],
+      "present": [
+        "stepper",
+        "wizard"
+      ],
+      "missing": []
+    },
+    "identity": {
+      "required": [
+        "identity",
+        "profile-card"
+      ],
+      "present": [
+        "identity",
+        "profile-card"
+      ],
+      "missing": []
+    },
+    "search": {
+      "required": [
+        "command-palette",
+        "combobox"
+      ],
+      "present": [
+        "command-palette",
+        "combobox"
+      ],
+      "missing": []
+    },
+    "hierarchy": {
+      "required": [
+        "tree"
+      ],
+      "present": [
+        "tree"
+      ],
+      "missing": []
+    },
+    "choice": {
+      "required": [
+        "choice",
+        "rating"
+      ],
+      "present": [
+        "choice",
+        "rating"
+      ],
+      "missing": []
+    }
+  }
+}

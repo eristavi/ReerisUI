@@ -1,0 +1,7720 @@
+{
+  "version": "0.50.0",
+  "generatedAt": "2026-09-25T11:24:49.704Z",
+  "summary": {
+    "passed": 1540,
+    "total": 1540,
+    "failed": 0,
+    "sourceModules": 36,
+    "classes": 732,
+    "tokens": 518,
+    "definedTokens": 491,
+    "overrideHooks": 27,
+    "dataAttributes": 11,
+    "packageExports": 14,
+    "jsApi": 5
+  },
+  "failures": [],
+  "checks": [
+    {
+      "name": "API manifest exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Generated API reference exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Documentation home exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Shared docs asset exists: docs/assets/docs.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Shared docs asset exists: docs/assets/docs.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Manifest version matches package version",
+      "pass": true,
+      "detail": "0.50.0 vs 0.50.0"
+    },
+    {
+      "name": "Source module mapped: reeris.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/base.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/layers.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/personality.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/reset.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/theme.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: tokens/generated.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: layout/primitives.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: utilities/accessibility.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: utilities/utilities.css",
+      "pass": true,
+      "detail": "foundation.html"
+    },
+    {
+      "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: forms/forms.css",
+      "pass": true,
+      "detail": "forms-complete.html"
+    },
+    {
+      "name": "Mapped doc exists: forms-complete.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/advanced-navigation.css",
+      "pass": true,
+      "detail": "advanced-navigation.html"
+    },
+    {
+      "name": "Mapped doc exists: advanced-navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/app-shell.css",
+      "pass": true,
+      "detail": "app-shell.html"
+    },
+    {
+      "name": "Mapped doc exists: app-shell.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/authentication.css",
+      "pass": true,
+      "detail": "authentication.html"
+    },
+    {
+      "name": "Mapped doc exists: authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/button.css",
+      "pass": true,
+      "detail": "button.html"
+    },
+    {
+      "name": "Mapped doc exists: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/choice.css",
+      "pass": true,
+      "detail": "choice.html"
+    },
+    {
+      "name": "Mapped doc exists: choice.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/commerce.css",
+      "pass": true,
+      "detail": "commerce.html"
+    },
+    {
+      "name": "Mapped doc exists: commerce.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/data-display.css",
+      "pass": true,
+      "detail": "data-display.html"
+    },
+    {
+      "name": "Mapped doc exists: data-display.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/feedback.css",
+      "pass": true,
+      "detail": "feedback.html"
+    },
+    {
+      "name": "Mapped doc exists: feedback.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/files.css",
+      "pass": true,
+      "detail": "files.html"
+    },
+    {
+      "name": "Mapped doc exists: files.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/identity.css",
+      "pass": true,
+      "detail": "identity.html"
+    },
+    {
+      "name": "Mapped doc exists: identity.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/marketing.css",
+      "pass": true,
+      "detail": "marketing.html"
+    },
+    {
+      "name": "Mapped doc exists: marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/media.css",
+      "pass": true,
+      "detail": "media.html"
+    },
+    {
+      "name": "Mapped doc exists: media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/messaging.css",
+      "pass": true,
+      "detail": "messaging.html"
+    },
+    {
+      "name": "Mapped doc exists: messaging.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/navigation-extended.css",
+      "pass": true,
+      "detail": "navigation-completion.html"
+    },
+    {
+      "name": "Mapped doc exists: navigation-completion.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/navigation.css",
+      "pass": true,
+      "detail": "navigation.html"
+    },
+    {
+      "name": "Mapped doc exists: navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/overlays.css",
+      "pass": true,
+      "detail": "overlays.html"
+    },
+    {
+      "name": "Mapped doc exists: overlays.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/search-command.css",
+      "pass": true,
+      "detail": "search-command.html"
+    },
+    {
+      "name": "Mapped doc exists: search-command.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/settings.css",
+      "pass": true,
+      "detail": "settings.html"
+    },
+    {
+      "name": "Mapped doc exists: settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/surfaces.css",
+      "pass": true,
+      "detail": "surfaces.html"
+    },
+    {
+      "name": "Mapped doc exists: surfaces.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/tables.css",
+      "pass": true,
+      "detail": "tables.html"
+    },
+    {
+      "name": "Mapped doc exists: tables.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/toast.css",
+      "pass": true,
+      "detail": "toast.html"
+    },
+    {
+      "name": "Mapped doc exists: toast.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/toolbar-filters.css",
+      "pass": true,
+      "detail": "toolbar-filters.html"
+    },
+    {
+      "name": "Mapped doc exists: toolbar-filters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/tree.css",
+      "pass": true,
+      "detail": "tree.html"
+    },
+    {
+      "name": "Mapped doc exists: tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/visualization.css",
+      "pass": true,
+      "detail": "visualization.html"
+    },
+    {
+      "name": "Mapped doc exists: visualization.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/workflow.css",
+      "pass": true,
+      "detail": "workflow.html"
+    },
+    {
+      "name": "Mapped doc exists: workflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: themes.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: themes.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: forms-complete.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: forms-complete.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: surfaces.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: surfaces.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: feedback.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: feedback.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: toast.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: toast.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: advanced-navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: advanced-navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: navigation-completion.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: navigation-completion.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: overlays.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: overlays.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: search-command.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: search-command.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: tables.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: tables.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: data-display.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: data-display.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: app-shell.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: app-shell.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: toolbar-filters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: toolbar-filters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: visualization.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: visualization.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: workflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: workflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: identity.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: identity.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: messaging.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: messaging.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: files.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: files.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: commerce.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: commerce.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: choice.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: choice.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: starters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: starters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: browser-reflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: browser-reflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: content-states.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: content-states.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: security-package-release.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: security-package-release.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: build-reproducibility.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: build-reproducibility.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: visual-regression.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: visual-regression.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: release-candidate-readiness.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: release-candidate-readiness.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: external-release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: external-release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: local-chromium-evidence-0.49.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: local-chromium-evidence-0.49.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links API reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .accordion",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .accordion-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .accordion-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .account-menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .account-menu-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .account-menu-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .active",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-feed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-marker",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .activity-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-close",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .alert-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-main",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-sidebar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-sidebar-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-sidebar-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-sidebar-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-sidebar-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-topbar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-topbar-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-topbar-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .app-workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .attachment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .attachment-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .attachment-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-brand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-brand-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-brand-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-brand-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-divider",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-form",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-main",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-options",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-providers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-shell",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-submit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .auth-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .avatar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .avatar-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .away",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .badge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .banner",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .bordered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .borderless",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .bottom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .breadcrumb",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .breadcrumb-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .btn",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .btn-close",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .btn-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .bulk-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .bulk-actions-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .bulk-actions-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .busy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .callout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .callout-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-subtitle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .card-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cart-items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cart-layout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cell-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart-legend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chart-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .check",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .checkout-layout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .chip-remove",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-group-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .choice-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .circle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .color-input",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .combobox",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .combobox-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .combobox-option",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .combobox-option-check",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .combobox-panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .comfortable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-divider",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-group-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-palette",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .command-search",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .compact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .composer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .composer-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .composer-input",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .contain",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-state-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-state-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-state-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .content-state-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .conversation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .conversation-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .conversation-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .conversation-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cta-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cta-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cta-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .cta-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .current",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .customizable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .danger-zone",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dashboard-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dashed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .data-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .data-table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .data-table-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .data-table-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .data-table-toolbar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .desktop-sidebar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dialog-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dialog-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dialog-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dialog-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .divider",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dotted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .down",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .drawer-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .drawer-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .drawer-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .drawer-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dropzone",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dropzone-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dropzone-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .dropzone-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .error",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .fab",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .feature-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .featured",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-error",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-help",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .field-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .fieldset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .figure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .figure-caption",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-browser",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-browser-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-browser-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-card-preview",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .file-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-chip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-chip-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-chip-remove",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-chips",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .filter-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .fixed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flex",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flex-col",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flex-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flex-wrap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .floating",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .flush",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .font-bold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .font-medium",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .font-normal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .font-semibold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .form-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .form-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .form-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gallery",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gallery-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gap-8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ghost",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .glide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .gradient",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .has-end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .has-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero-media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hero-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hidden",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hierarchy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hierarchy-level",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hierarchy-node",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .horizontal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hover-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .hover-card-panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .identity-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .identity-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .identity-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .identity-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .image-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .image-card-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .inbox",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .indeterminate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .info",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .inline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .inline-block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .inline-flex",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input-action",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input-addon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input-decor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .input-wrap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .interactive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .invoice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .invoice-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .invoice-items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .invoice-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .invoice-total",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .items-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .items-end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .items-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .justify-between",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .justify-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .justify-end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .justify-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .kbd",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .key-hint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-cluster",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-cover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-cover-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-sidebar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-split",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .l-stack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .legend-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .legend-swatch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .lightbox",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .lightbox-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .lightbox-caption",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .lightbox-stage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-leading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .list-trailing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .loading-region",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .logo-cloud",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .loose",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .m-0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .maintenance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .max-w-full",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mb-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mb-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .me-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .me-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-placeholder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-placeholder-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .media-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-chevron",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-link-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-link-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mega-menu-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .member-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .member-card-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .member-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .menu-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .menu-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .menu-separator",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-bubble",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-preview",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-sender",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-subject",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .message-time",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .meter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .meter-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .meter-native",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .meter-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric-comparison",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .metric-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mobile-nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mobile-nav-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mobile-nav-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mobile-nav-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mobile-nav-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .money",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ms-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ms-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mt-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mt-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .mx-auto",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .nav-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .nav-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .nav-rail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-brand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-toggle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .navbar-toggle-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .negative",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .neutral",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .no",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .no-print",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .no-results",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .notification-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .nowrap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .numeric",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .offline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-choice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-choices",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .onboarding-progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .online",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .order-total",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .otp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .outline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .overflow-auto",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .overflow-hidden",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .overlay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .own",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .p-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .p-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .p-6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-header-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-header-main",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .page-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pagination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .payment-method",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .payment-method-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .payment-summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pe-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pe-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .permission-required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pills",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .popover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .presence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-amount",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-card-badge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-period",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pricing-price",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .print-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-price",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-thumb",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .product-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-bio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-card-role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header-main",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header-subtitle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-header-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-stat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-stat-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-stat-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .profile-stats",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .progress-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ps-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ps-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .pulse",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .quantity-control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .radio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .raised",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .range",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rating",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rating-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rating-star",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rating-stars",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rating-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ratio-photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ratio-portrait",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ratio-square",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ratio-video",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .ratio-wide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .reaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .reaction-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .reaction-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .receipt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .receipt-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .receipt-items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .receipt-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .receipt-total",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .recent-searches",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .relative",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .responsive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-group-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-search",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .result-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .reeris-container",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rounded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rounded-full",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .rounded-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-field",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-field-clear",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-field-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-highlight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .search-results",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .secondary-nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .secondary-nav-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .secondary-nav-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .section-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .section-eyebrow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .section-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .section-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .security-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .security-item-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .security-item-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .security-item-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .security-item-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .segment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .segmented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .select",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .selected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .setting-control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .setting-copy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .setting-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .setting-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .setting-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-layout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-section-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-section-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .settings-section-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .shadow-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .shadow-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-chevron",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-nav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-section",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-section-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sidebar-subnav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .skeleton",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sort-button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .span-3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .span-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .span-6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .span-8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .span-9",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sparkline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .spinner",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .split",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .split-btn",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .split-btn-trigger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .square",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sr-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sr-only-focusable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stat-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stat-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stat-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stats",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .status-dot",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .status-flow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .step",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .step-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .step-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .step-marker",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .stepper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .steps",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sticky",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sticky-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .sticky-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .storage-meter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .storage-meter-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .strength",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .strength-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .strength-track",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .striped",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .strong",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .subtle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .summary-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .summary-line",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .summary-lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .summary-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .switch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tab",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .table-wrap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tabs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .testimonial",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .testimonial-author",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .testimonial-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .testimonial-quote",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .text-center",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .text-end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .text-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .textarea",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .thumbnail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-marker",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .timeline-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-close",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-region",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toast-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toolbar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toolbar-group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .toolbar-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tooltip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .total",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-amount",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .transaction-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-children",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-icon",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .tree-toggle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .trend",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .typing-indicator",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .underline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .up",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .upload-error",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .upload-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .upload-queue",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .upload-status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .user-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .user-row-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .verification-code",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .verification-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .vertical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .view-controls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .view-switcher",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar-fill",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar-label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar-row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar-track",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-bar-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .viz-ring-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .vote",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .vote-button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .vote-score",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .w-full",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .well",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-heading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .widget-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard-footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard-header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard-progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .wizard-progress-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow-marker",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow-meta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .workflow-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .xs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .yes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-alert-border-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-alert-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-alert-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-amber-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-anchor-name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-auth-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-auth-max-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-auth-panel-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-avatar-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-avatar-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-badge-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-blue-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-border-0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-border-1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-border-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-border-3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-border-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-font-weight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-button-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-card-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-chip-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-choice-min",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-close-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-background",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-strong",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-border-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-canvas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-info",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-info",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-surface-muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-on-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-primary-subtle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-surface-muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-surface-raised",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-surface-strong",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-surface-subtle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-text-muted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-color-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-command-item-min-block-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-command-max-block-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-command-max-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-commerce-summary-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-commerce-thumb-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-component-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-component-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-icon-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-icon-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-icon-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-max-description",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-state-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-content-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-control-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-control-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-control-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-control-xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-control-xs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cover-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-cyan-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-density-factor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-dialog-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-divider-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-drawer-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-dropdown-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-dropzone-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-dropzone-min-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-duration-fast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-duration-instant",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-duration-normal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-duration-slow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-duration-slower",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-ease-bounce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-ease-enter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-ease-exit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-ease-standard",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-emerald-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-fab-offset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-fab-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-fab-size-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-feature-min-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-border-focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-border-hover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-placeholder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-field-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-file-card-min",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-file-icon-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-filter-bar-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-filter-bar-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-filter-chip-active-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-filter-chip-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-focus-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-focus-offset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-focus-style",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-focus-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-code",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-heading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-sans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-2xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-3xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-4xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-base",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-xs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-ui",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-black",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-bold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-extrabold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-extralight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-light",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-medium",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-normal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-semibold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-weight-thin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gallery-cols",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gallery-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gallery-mobile-cols",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glide-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glide-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glide-duration",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glide-ease",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glide-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-brand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gradient-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-gray-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-grid-min",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-hero-max-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-hover-card-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-icon-stroke",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-image-card-ratio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-indigo-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-layout-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-layout-gutter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-lime-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-line-height-normal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-line-height-relaxed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-line-height-snug",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-line-height-tight",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-list-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-list-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-list-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-marketing-copy-max-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-media-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-media-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-media-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-media-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mega-menu-columns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mega-menu-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mega-menu-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mega-menu-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-message-max-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-message-padding-block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-message-padding-inline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-message-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mobile-nav-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mobile-nav-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-mobile-nav-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-active-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-active-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-item-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-item-padding-inline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-nav-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-navbar-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-navbar-panel-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-navbar-panel-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-navbar-panel-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-navbar-toggle-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-notification-unread-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-onboarding-steps",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-orange-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-overlay-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-overlay-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-overlay-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-overlay-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-overlay-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-page-header-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pagination-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-panel-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-panel-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-panel-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pink-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-placeholder-ratio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-popover-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-presence-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-pricing-min-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-profile-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-profile-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-profile-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-profile-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-progress-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-progress-fill",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-progress-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-progress-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-progress-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-purple-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-2xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-3xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-full",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-none",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-radius-xs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rating-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rating-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-receipt-max-inline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-red-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-rose-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-bottom",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-inline-end",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-inline-start",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-left",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-right",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-safe-top",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-secondary-nav-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-section-padding-block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-settings-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-settings-row-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-settings-sidebar-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-2xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-none",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shadow-xs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-sidebar-collapsed-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-sidebar-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-shell-topbar-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-active-indicator",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-content-min",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-icon-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-item-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-section-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-sidebar-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-skeleton-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-slate-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-0-5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-1-5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-12",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-16",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-2-5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-20",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-24",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-32",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-fluid-lg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-fluid-md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-fluid-sm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-space-fluid-xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-spinner-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-spinner-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-stat-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-stat-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-stat-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-step-count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-cell-padding-block",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-cell-padding-inline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-header-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-row-hover-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-table-row-selected-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tabs-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-target-min",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-teal-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-thumbnail-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-timeline-line",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-timeline-marker",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-border-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-offset",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-padding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-shadow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-toast-width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tooltip-anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tooltip-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tooltip-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tree-guide-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tree-indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tree-row-min-height",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-tree-row-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-300",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-400",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-500",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-600",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-700",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-800",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-900",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-violet-950",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-accent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-color",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-grid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-primary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-track",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-viz-warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-well-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-widget-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-widget-border",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-widget-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-current",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-danger",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-line",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-marker-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-workflow-pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-z-dropdown",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-z-fixed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-z-popover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-z-sticky",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-z-toast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-active",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-glide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-glide-instant",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-glide-item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-glide-items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-glide-ready",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-position",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-strength",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Data attribute documented: data-reeris-tooltip-anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core .",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./components/*.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./forms/*.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./layout/*.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./utilities/*.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./tokens.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./tokens.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./reeris.min.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./reeris.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./reeris.min.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/core ./sources/*",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/js .",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export documented: @reeris/js ./glide-navigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Package export target exists: @reeris/core .",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./reeris.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./components/*.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/components"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./forms/*.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/forms"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./layout/*.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/layout"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./utilities/*.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/utilities"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./tokens.json",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/tokens.json"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./tokens.js",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/tokens.js"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./reeris.min.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.min.css"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./reeris.css.map",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css.map"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./reeris.min.css.map",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.min.css.map"
+    },
+    {
+      "name": "Package export target exists: @reeris/core ./sources/*",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/sources"
+    },
+    {
+      "name": "Package export target exists: @reeris/js .",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/js/dist/index.js"
+    },
+    {
+      "name": "Package export target exists: @reeris/js ./glide-navigation",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-work/packages/js/dist/glide-navigation.js"
+    },
+    {
+      "name": "JS export documented: destroy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS export documented: getInstance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS export documented: GlideNavigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS export documented: GlideNavigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS export documented: init",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API reference explains contextual modifiers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API reference explains fallback-only token hooks",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API reference states native/ARIA priority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Glide instance lifecycle documented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: advanced-navigation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: advanced-navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: api-reference.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: api-reference.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: app-shell.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: app-shell.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: authentication.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: browser-reflow.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: browser-reflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: build-reproducibility.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: build-reproducibility.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: button.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: choice.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: choice.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: commerce.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: commerce.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: content-states.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: content-states.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: data-display.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: data-display.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: external-release-lab.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: external-release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: feedback.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: feedback.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: files.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: files.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: forms-advanced.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: forms-advanced.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: forms-complete.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: forms-complete.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: forms.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: forms.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: foundation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: identity.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: identity.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: index.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: marketing.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: media.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: messaging.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: messaging.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: navigation-completion.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: navigation-completion.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: navigation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: overlays.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: overlays.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: rc-validation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: rc-validation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: release-candidate-readiness.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: release-candidate-readiness.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: release-lab.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: release-lab.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: search-command.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: search-command.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: security-package-release.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: security-package-release.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: settings.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: starters.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: starters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: surfaces.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: surfaces.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: tables.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: tables.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: themes.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: themes.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: toast.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: toast.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: toolbar-filters.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: toolbar-filters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: tree.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: visual-regression.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: visual-regression.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: visualization.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: visualization.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: workflow.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: workflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome avoids hard-coded hex colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome avoids hard-coded rgb/hsl/oklch colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome consumes semantic Reeris color tokens",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

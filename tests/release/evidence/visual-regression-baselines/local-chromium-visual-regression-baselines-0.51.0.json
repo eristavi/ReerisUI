@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "local-chromium-visual-regression-baselines-0.51.0",
+  "releaseVersion": "0.51.0",
+  "gateId": "visual-regression-baselines",
+  "kind": "other",
+  "role": "supplemental",
+  "collectedAt": "2026-09-25T12:52:03.556Z",
+  "outcome": "pass",
+  "claims": [],
+  "coverage": [
+    "Canonical Chromium candidate screenshots captured and hashed"
+  ],
+  "environment": {
+    "runner": "Local Chromium via Chrome DevTools Protocol",
+    "browser": "Chrome/144.0.7559.96",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v22.16.0"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.51.0/local-chromium/local-chromium-report.json",
+      "sha256": "d313759dfe33028081dcd8b65053b6bb803d91950e2842d71a7ab9c76f0ef047",
+      "description": "Machine-readable local Chromium RC report with test results and screenshot hashes."
+    }
+  ],
+  "notes": "Candidate screenshots only; not human-approved baselines.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Supplemental automated evidence; intentionally not gate-closing."
+  }
+}

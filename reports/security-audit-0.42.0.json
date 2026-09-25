@@ -1,0 +1,2009 @@
+{
+  "version": "0.42.0",
+  "generatedAt": "2026-09-25T08:43:08.504Z",
+  "summary": {
+    "passed": 399,
+    "total": 399,
+    "failed": 0,
+    "jsFiles": 4,
+    "cssFiles": 108
+  },
+  "failures": [],
+  "checks": [
+    {
+      "name": "SECURITY.md exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Security policy includes private reporting guidance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Security policy documents supported versions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Security policy documents CSP architecture",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids eval()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids new Function",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids document.write",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids innerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids outerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids insertAdjacentHTML",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids setAttribute style sink",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids dynamic script creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids dynamic style creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids network fetch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids XMLHttpRequest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids WebSocket",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids localStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids sessionStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/glide-navigation.js avoids document.cookie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids eval()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids new Function",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids document.write",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids innerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids outerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids insertAdjacentHTML",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids setAttribute style sink",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids dynamic script creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids dynamic style creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids network fetch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids XMLHttpRequest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids WebSocket",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids localStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids sessionStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/src/index.js avoids document.cookie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids eval()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids new Function",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids document.write",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids innerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids outerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids insertAdjacentHTML",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids setAttribute style sink",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids dynamic script creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids dynamic style creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids network fetch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids XMLHttpRequest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids WebSocket",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids localStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids sessionStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/glide-navigation.js avoids document.cookie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids eval()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids new Function",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids document.write",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids innerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids outerHTML assignment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids insertAdjacentHTML",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids setAttribute style sink",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids dynamic script creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids dynamic style creation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids network fetch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids XMLHttpRequest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids WebSocket",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids localStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids sessionStorage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/dist/index.js avoids document.cookie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/advanced-navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/advanced-navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/advanced-navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/app-shell.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/app-shell.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/app-shell.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/authentication.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/authentication.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/authentication.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/button.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/button.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/button.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/choice.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/choice.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/choice.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/commerce.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/commerce.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/commerce.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/data-display.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/data-display.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/data-display.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/feedback.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/feedback.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/feedback.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/files.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/files.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/files.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/identity.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/identity.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/identity.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/marketing.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/marketing.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/marketing.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/media.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/media.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/media.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/messaging.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/messaging.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/messaging.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation-extended.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation-extended.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation-extended.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/overlays.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/overlays.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/overlays.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/search-command.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/search-command.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/search-command.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/settings.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/settings.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/settings.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/surfaces.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/surfaces.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/surfaces.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tables.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tables.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tables.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toast.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toast.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toast.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toolbar-filters.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toolbar-filters.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/toolbar-filters.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tree.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tree.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/tree.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/visualization.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/visualization.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/visualization.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/workflow.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/workflow.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/workflow.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/base.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/base.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/base.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/layers.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/layers.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/layers.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/personality.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/personality.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/personality.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/reset.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/reset.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/reset.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/theme.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/theme.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/core/theme.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/forms/forms.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/forms/forms.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/forms/forms.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/layout/primitives.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/layout/primitives.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/layout/primitives.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/reeris.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/reeris.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/reeris.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/tokens/generated.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/tokens/generated.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/tokens/generated.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/accessibility.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/accessibility.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/accessibility.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/utilities.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/utilities.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/utilities/utilities.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/advanced-navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/advanced-navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/advanced-navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/app-shell.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/app-shell.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/app-shell.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/authentication.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/authentication.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/authentication.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/button.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/button.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/button.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/choice.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/choice.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/choice.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/commerce.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/commerce.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/commerce.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/data-display.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/data-display.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/data-display.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/feedback.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/feedback.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/feedback.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/files.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/files.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/files.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/identity.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/identity.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/identity.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/marketing.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/marketing.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/marketing.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/media.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/media.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/media.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/messaging.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/messaging.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/messaging.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation-extended.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation-extended.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation-extended.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/overlays.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/overlays.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/overlays.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/search-command.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/search-command.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/search-command.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/settings.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/settings.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/settings.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/surfaces.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/surfaces.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/surfaces.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tables.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tables.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tables.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toast.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toast.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toast.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toolbar-filters.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toolbar-filters.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/toolbar-filters.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tree.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tree.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/tree.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/visualization.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/visualization.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/visualization.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/workflow.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/workflow.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/workflow.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/base.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/base.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/base.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/layers.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/layers.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/layers.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/personality.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/personality.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/personality.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/reset.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/reset.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/reset.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/theme.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/theme.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/core/theme.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/forms/forms.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/forms/forms.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/forms/forms.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/layout/primitives.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/layout/primitives.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/layout/primitives.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.min.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.min.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/reeris.min.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/advanced-navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/advanced-navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/advanced-navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/app-shell.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/app-shell.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/app-shell.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/authentication.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/authentication.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/authentication.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/button.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/button.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/button.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/choice.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/choice.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/choice.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/commerce.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/commerce.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/commerce.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/data-display.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/data-display.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/data-display.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/feedback.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/feedback.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/feedback.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/files.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/files.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/files.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/identity.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/identity.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/identity.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/marketing.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/marketing.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/marketing.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/media.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/media.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/media.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/messaging.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/messaging.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/messaging.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation-extended.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation-extended.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation-extended.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/navigation.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/overlays.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/overlays.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/overlays.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/search-command.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/search-command.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/search-command.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/settings.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/settings.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/settings.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/surfaces.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/surfaces.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/surfaces.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tables.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tables.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tables.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toast.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toast.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toast.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toolbar-filters.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toolbar-filters.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/toolbar-filters.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tree.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tree.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/tree.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/visualization.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/visualization.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/visualization.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/workflow.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/workflow.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/workflow.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/base.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/base.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/base.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/layers.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/layers.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/layers.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/personality.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/personality.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/personality.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/reset.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/reset.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/reset.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/theme.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/theme.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/core/theme.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/forms/forms.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/forms/forms.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/forms/forms.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/layout/primitives.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/layout/primitives.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/layout/primitives.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/reeris.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/reeris.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/reeris.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/tokens/generated.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/tokens/generated.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/tokens/generated.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/accessibility.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/accessibility.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/accessibility.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/utilities.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/utilities.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/utilities/utilities.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/accessibility.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/accessibility.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/accessibility.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/utilities.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/utilities.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/utilities/utilities.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "package.json has no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/package.json has no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/js/package.json has no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Strict CSP fixture exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture forbids default external loading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture does not require unsafe-inline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture does not require unsafe-eval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture has no inline style attributes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture has no inline event handlers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture scripts are external",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CSP fixture has no embedded style blocks",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

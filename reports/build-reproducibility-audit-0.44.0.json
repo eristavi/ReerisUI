@@ -1,0 +1,1451 @@
+{
+  "version": "0.44.0",
+  "generatedAt": "2026-09-25T09:07:01.751Z",
+  "summary": {
+    "passed": 286,
+    "total": 286,
+    "failed": 0,
+    "artifacts": 78,
+    "sourceModules": 36,
+    "treeHash": "a5d4339c5c7e132f2f68b2ce823d28c6865f6b9b3d06483ecb1743d2be422974",
+    "fullMapSources": 36,
+    "fullMapSegments": 3129,
+    "minMapSources": 36,
+    "minMapSegments": 2783
+  },
+  "firstTreeHash": "a5d4339c5c7e132f2f68b2ce823d28c6865f6b9b3d06483ecb1743d2be422974",
+  "secondTreeHash": "a5d4339c5c7e132f2f68b2ce823d28c6865f6b9b3d06483ecb1743d2be422974",
+  "failures": [],
+  "checks": [
+    {
+      "name": "First deterministic build succeeds",
+      "pass": true,
+      "detail": "> reeris-ui-monorepo@0.44.0 build\n> node tooling/build.mjs\n\nGenerated 243 public token variables.\nBuilt packages/core/dist/reeris.css (3132 mapped lines), reeris.min.css, source maps, source modules and modular CSS exports\nBuilt packages/js/dist (native ES modules)"
+    },
+    {
+      "name": "Second deterministic build succeeds",
+      "pass": true,
+      "detail": "> reeris-ui-monorepo@0.44.0 build\n> node tooling/build.mjs\n\nGenerated 243 public token variables.\nBuilt packages/core/dist/reeris.css (3132 mapped lines), reeris.min.css, source maps, source modules and modular CSS exports\nBuilt packages/js/dist (native ES modules)"
+    },
+    {
+      "name": "Repeated builds emit identical file lists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Repeated builds emit byte-identical artifacts",
+      "pass": true,
+      "detail": "a5d4339c5c7e132f2f68b2ce823d28c6865f6b9b3d06483ecb1743d2be422974 vs a5d4339c5c7e132f2f68b2ce823d28c6865f6b9b3d06483ecb1743d2be422974"
+    },
+    {
+      "name": "reeris.css exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.css.map exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.css references reeris.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.css.map is Source Map v3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.css.map targets reeris.css",
+      "pass": true,
+      "detail": "reeris.css"
+    },
+    {
+      "name": "reeris.css.map has individual module sources",
+      "pass": true,
+      "detail": "36 sources"
+    },
+    {
+      "name": "reeris.css.map has mappings",
+      "pass": true,
+      "detail": "3129 segments"
+    },
+    {
+      "name": "reeris.css.map contains no absolute source paths",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/advanced-navigation.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/advanced-navigation.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/app-shell.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/app-shell.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/authentication.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/authentication.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/button.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/button.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/choice.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/choice.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/commerce.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/commerce.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/data-display.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/data-display.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/feedback.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/feedback.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/files.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/files.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/identity.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/identity.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/marketing.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/marketing.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/media.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/media.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/messaging.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/messaging.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/navigation-extended.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/navigation-extended.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/navigation.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/navigation.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/overlays.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/overlays.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/search-command.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/search-command.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/settings.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/settings.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/surfaces.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/surfaces.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/tables.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/tables.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/toast.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/toast.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/toolbar-filters.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/toolbar-filters.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/tree.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/tree.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/visualization.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/visualization.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/components/workflow.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/workflow.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/core/base.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/base.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/core/layers.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/layers.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/core/personality.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/personality.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/core/reset.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/reset.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/core/theme.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/theme.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/forms/forms.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/forms/forms.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/layout/primitives.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/layout/primitives.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/reeris.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/reeris.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/tokens/generated.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/tokens/generated.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/utilities/accessibility.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/utilities/accessibility.css"
+    },
+    {
+      "name": "reeris.css.map source exists: sources/utilities/utilities.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/utilities/utilities.css"
+    },
+    {
+      "name": "reeris.min.css exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.min.css.map exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.min.css references reeris.min.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.min.css.map is Source Map v3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.min.css.map targets reeris.min.css",
+      "pass": true,
+      "detail": "reeris.min.css"
+    },
+    {
+      "name": "reeris.min.css.map has individual module sources",
+      "pass": true,
+      "detail": "36 sources"
+    },
+    {
+      "name": "reeris.min.css.map has mappings",
+      "pass": true,
+      "detail": "2783 segments"
+    },
+    {
+      "name": "reeris.min.css.map contains no absolute source paths",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/advanced-navigation.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/advanced-navigation.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/app-shell.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/app-shell.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/authentication.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/authentication.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/button.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/button.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/choice.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/choice.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/commerce.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/commerce.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/data-display.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/data-display.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/feedback.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/feedback.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/files.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/files.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/identity.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/identity.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/marketing.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/marketing.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/media.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/media.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/messaging.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/messaging.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/navigation-extended.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/navigation-extended.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/navigation.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/navigation.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/overlays.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/overlays.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/search-command.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/search-command.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/settings.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/settings.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/surfaces.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/surfaces.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/tables.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/tables.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/toast.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/toast.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/toolbar-filters.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/toolbar-filters.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/tree.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/tree.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/visualization.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/visualization.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/components/workflow.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/components/workflow.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/core/base.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/base.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/core/layers.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/layers.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/core/personality.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/personality.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/core/reset.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/reset.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/core/theme.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/core/theme.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/forms/forms.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/forms/forms.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/layout/primitives.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/layout/primitives.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/reeris.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/reeris.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/tokens/generated.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/tokens/generated.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/utilities/accessibility.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/utilities/accessibility.css"
+    },
+    {
+      "name": "reeris.min.css.map source exists: sources/utilities/utilities.css",
+      "pass": true,
+      "detail": "/mnt/data/reeris-ui-0.44-work/reeris-ui/packages/core/dist/sources/utilities/utilities.css"
+    },
+    {
+      "name": "Full and minified maps expose the same source-module set",
+      "pass": true,
+      "detail": "36 vs 36"
+    },
+    {
+      "name": "Published source-module count matches canonical CSS source count",
+      "pass": true,
+      "detail": "36 vs 36"
+    },
+    {
+      "name": "Published source is byte-identical: components/advanced-navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/app-shell.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/authentication.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/button.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/choice.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/commerce.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/data-display.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/feedback.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/files.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/identity.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/marketing.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/media.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/messaging.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/navigation-extended.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/overlays.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/search-command.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/settings.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/surfaces.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/tables.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/toast.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/toolbar-filters.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/tree.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/visualization.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: components/workflow.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: core/base.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: core/layers.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: core/personality.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: core/reset.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: core/theme.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: forms/forms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: layout/primitives.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: tokens/generated.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: utilities/accessibility.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Published source is byte-identical: utilities/utilities.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/advanced-navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/advanced-navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/app-shell.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/app-shell.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/authentication.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/authentication.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/button.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/button.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/choice.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/choice.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/commerce.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/commerce.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/data-display.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/data-display.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/feedback.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/feedback.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/files.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/files.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/identity.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/identity.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/marketing.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/marketing.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/media.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/media.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/messaging.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/messaging.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/navigation-extended.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/navigation-extended.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/overlays.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/overlays.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/search-command.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/search-command.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/settings.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/settings.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/surfaces.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/surfaces.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/tables.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/tables.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/toast.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/toast.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/toolbar-filters.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/toolbar-filters.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/tree.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/tree.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/visualization.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/visualization.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/components/workflow.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/components/workflow.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/core/base.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/core/base.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/core/layers.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/core/layers.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/core/personality.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/core/personality.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/core/reset.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/core/reset.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/core/theme.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/core/theme.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/forms/forms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/forms/forms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/layout/primitives.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/layout/primitives.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/reeris.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/reeris.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/reeris.min.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/reeris.min.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/reeris.min.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/reeris.min.css.map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/advanced-navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/advanced-navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/app-shell.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/app-shell.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/authentication.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/authentication.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/button.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/button.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/choice.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/choice.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/commerce.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/commerce.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/data-display.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/data-display.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/feedback.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/feedback.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/files.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/files.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/identity.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/identity.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/marketing.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/marketing.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/media.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/media.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/messaging.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/messaging.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/navigation-extended.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/navigation-extended.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/navigation.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/overlays.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/overlays.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/search-command.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/search-command.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/settings.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/settings.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/surfaces.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/surfaces.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/tables.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/tables.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/toast.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/toast.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/toolbar-filters.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/toolbar-filters.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/tree.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/tree.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/visualization.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/visualization.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/components/workflow.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/components/workflow.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/core/base.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/core/base.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/core/layers.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/core/layers.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/core/personality.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/core/personality.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/core/reset.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/core/reset.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/core/theme.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/core/theme.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/forms/forms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/forms/forms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/layout/primitives.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/layout/primitives.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/tokens/generated.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/tokens/generated.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/utilities/accessibility.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/utilities/accessibility.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/sources/utilities/utilities.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/sources/utilities/utilities.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/tokens.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/tokens.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/tokens.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/tokens.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/utilities/accessibility.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/utilities/accessibility.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/core/dist/utilities/utilities.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/core/dist/utilities/utilities.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/js/dist/glide-navigation.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/js/dist/glide-navigation.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no generated timestamp: packages/js/dist/index.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deterministic artifact has no machine-local absolute path: packages/js/dist/index.js",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

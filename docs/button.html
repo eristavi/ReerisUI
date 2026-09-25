@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-density="default">
+<head>
+<meta charset="utf-8"><meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reeris UI — Button & Actions 0.31</title>
+<link rel="stylesheet" href="../packages/core/dist/reeris.css">
+<style>
+main{max-width:72rem;margin:auto;padding:var(--reeris-space-fluid-md)}
+.demo{padding:var(--reeris-space-6);margin-block:var(--reeris-space-4);border:1px solid var(--reeris-color-border);border-radius:var(--reeris-radius-xl);background:var(--reeris-color-surface)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--reeris-space-3)}
+.demo h2{margin-block-start:0}.controls{display:flex;gap:.5rem;flex-wrap:wrap;margin-block-end:1rem}
+</style>
+</head>
+<body><main>
+<h1>Reeris Button & Actions 0.31</h1><p>Complete action family: variants, five sizes, native states, loading, toggle actions, icon buttons, groups, split buttons, close controls, FABs and gradients.</p>
+<div class="controls"><button class="btn sm" id="toggle-theme">Toggle theme</button><button class="btn sm" id="toggle-rtl">Toggle RTL</button></div>
+<section class="demo"><h2>Variants</h2><div class="row"><button class="btn">Default</button><button class="btn primary">Primary</button><button class="btn accent">Accent</button><button class="btn success">Success</button><button class="btn warning">Warning</button><button class="btn danger">Danger</button></div></section>
+<section class="demo"><h2>Styles & states</h2><div class="row"><button class="btn primary outline">Outline</button><button class="btn primary ghost">Ghost</button><button class="btn link">Link</button><button class="btn primary gradient">Gradient</button><button class="btn primary" aria-pressed="true">Pressed</button><button class="btn primary" aria-busy="true">Saving…</button><button class="btn primary" disabled>Disabled</button></div></section>
+<section class="demo"><h2>Sizes</h2><div class="row"><button class="btn primary xs">XS</button><button class="btn primary sm">Small</button><button class="btn primary">Medium</button><button class="btn primary lg">Large</button><button class="btn primary xl">XL</button></div></section>
+<section class="demo"><h2>Groups & split actions</h2><div class="row"><div class="btn-group" role="group" aria-label="View"><button class="btn">List</button><button class="btn primary">Grid</button><button class="btn">Detail</button></div><div class="split-btn"><button class="btn primary">Save</button><button class="btn primary split-btn-trigger" aria-label="More save options" popovertarget="save-menu"></button></div><div popover id="save-menu" class="popover"><p>Save draft</p><p>Save as template</p></div></div></section>
+<section class="demo"><h2>Icon, close & floating actions</h2><div class="row"><button class="btn primary icon" aria-label="Add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg></button><button class="btn-close" aria-label="Dismiss"></button><button class="btn primary fab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>New item</button><button class="btn accent fab icon" aria-label="Compose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg></button></div></section>
+<section class="demo"><h2>Block action</h2><button class="btn primary block">Continue</button></section>
+</main><script type="module" src="./button-demo.js"></script>
+</body></html>

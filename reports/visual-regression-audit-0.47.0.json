@@ -1,0 +1,840 @@
+{
+  "version": "0.47.0",
+  "generatedAt": "2026-09-25T10:45:38.188Z",
+  "summary": {
+    "passed": 165,
+    "total": 165,
+    "failed": 0,
+    "cases": 14,
+    "htmlPages": 46
+  },
+  "baselineStatus": "Infrastructure ready; browser-rendered PNG baselines require a functioning release-lab browser and are intentionally not synthesized by the static audit.",
+  "failures": [],
+  "checks": [
+    {
+      "name": "Visual case manifest exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual manifest schema version is 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Canonical baseline engine declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Primary visual fixture exists",
+      "pass": true,
+      "detail": "docs/visual-regression.html"
+    },
+    {
+      "name": "At least 10 visual cases defined",
+      "pass": true,
+      "detail": "14"
+    },
+    {
+      "name": "Unique visual id: core-system-default-ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-system-default-ltr",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=system&density=default&dir=ltr&radius=default&elevation=default"
+    },
+    {
+      "name": "Viewport valid: core-system-default-ltr",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-light-default-ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-light-default-ltr",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=light&density=default&dir=ltr&radius=default&elevation=default"
+    },
+    {
+      "name": "Viewport valid: core-light-default-ltr",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-dark-default-ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-dark-default-ltr",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=dark&density=default&dir=ltr&radius=default&elevation=default"
+    },
+    {
+      "name": "Viewport valid: core-dark-default-ltr",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-light-compact-ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-light-compact-ltr",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=light&density=compact&dir=ltr&radius=default&elevation=subtle"
+    },
+    {
+      "name": "Viewport valid: core-light-compact-ltr",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-dark-comfortable-ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-dark-comfortable-ltr",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=dark&density=comfortable&dir=ltr&radius=rounded&elevation=floating"
+    },
+    {
+      "name": "Viewport valid: core-dark-comfortable-ltr",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-light-default-rtl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-light-default-rtl",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=light&density=default&dir=rtl&radius=default&elevation=default"
+    },
+    {
+      "name": "Viewport valid: core-light-default-rtl",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-dark-soft-rtl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-dark-soft-rtl",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=dark&density=default&dir=rtl&radius=soft&elevation=subtle"
+    },
+    {
+      "name": "Viewport valid: core-dark-soft-rtl",
+      "pass": true,
+      "detail": "1280x1200"
+    },
+    {
+      "name": "Unique visual id: core-mobile-system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-mobile-system",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=system&density=default&dir=ltr&radius=default&elevation=default"
+    },
+    {
+      "name": "Viewport valid: core-mobile-system",
+      "pass": true,
+      "detail": "390x844"
+    },
+    {
+      "name": "Unique visual id: core-mobile-dark-compact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: core-mobile-dark-compact",
+      "pass": true,
+      "detail": "docs/visual-regression.html?theme=dark&density=compact&dir=ltr&radius=default&elevation=flat"
+    },
+    {
+      "name": "Viewport valid: core-mobile-dark-compact",
+      "pass": true,
+      "detail": "390x844"
+    },
+    {
+      "name": "Unique visual id: starter-dashboard-system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: starter-dashboard-system",
+      "pass": true,
+      "detail": "examples/starters/dashboard.html"
+    },
+    {
+      "name": "Viewport valid: starter-dashboard-system",
+      "pass": true,
+      "detail": "1440x900"
+    },
+    {
+      "name": "Unique visual id: starter-data-system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: starter-data-system",
+      "pass": true,
+      "detail": "examples/starters/data-management.html"
+    },
+    {
+      "name": "Viewport valid: starter-data-system",
+      "pass": true,
+      "detail": "1440x900"
+    },
+    {
+      "name": "Unique visual id: starter-marketing-system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: starter-marketing-system",
+      "pass": true,
+      "detail": "examples/starters/marketing.html"
+    },
+    {
+      "name": "Viewport valid: starter-marketing-system",
+      "pass": true,
+      "detail": "1440x1000"
+    },
+    {
+      "name": "Unique visual id: i18n-rtl-desktop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: i18n-rtl-desktop",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Viewport valid: i18n-rtl-desktop",
+      "pass": true,
+      "detail": "1280x1600"
+    },
+    {
+      "name": "Unique visual id: i18n-rtl-mobile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual path exists: i18n-rtl-mobile",
+      "pass": true,
+      "detail": "tests/i18n/index.html"
+    },
+    {
+      "name": "Viewport valid: i18n-rtl-mobile",
+      "pass": true,
+      "detail": "390x1200"
+    },
+    {
+      "name": "Theme represented: system",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme represented: light",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Theme represented: dark",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Density represented: compact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Density represented: default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Density represented: comfortable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Direction represented: ltr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Direction represented: rtl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile viewport represented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Radius personality variation represented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Elevation personality variation represented",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual tooling exists: tooling/visual-capture.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual tooling exists: tooling/visual-compare.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual tooling exists: tooling/visual-update.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual tooling exists: tests/visual/README.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual tooling exists: docs/assets/visual-regression.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual directory exists: tests/visual/baselines/chromium-linux",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual directory exists: tests/visual/current/chromium-linux",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual directory exists: tests/visual/diff/chromium-linux",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/advanced-navigation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/advanced-navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/api-reference.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/api-reference.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/app-shell.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/app-shell.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/authentication.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/browser-reflow.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/browser-reflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/build-reproducibility.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/build-reproducibility.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/button.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/choice.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/choice.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/commerce.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/commerce.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/content-states.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/content-states.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/data-display.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/data-display.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/feedback.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/feedback.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/files.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/files.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/forms-advanced.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/forms-advanced.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/forms-complete.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/forms-complete.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/forms.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/forms.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/foundation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/identity.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/identity.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/index.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/marketing.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/media.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/messaging.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/messaging.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/navigation-completion.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/navigation-completion.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/navigation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/navigation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/overlays.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/overlays.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/rc-validation.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/rc-validation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/release-candidate-readiness.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/release-candidate-readiness.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/search-command.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/search-command.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/security-package-release.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/security-package-release.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/settings.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/starters.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/starters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/surfaces.html",
+      "pass": true,
+      "detail": "<html lang=\"en\" data-density=\"default\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/surfaces.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/tables.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/tables.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/themes.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/themes.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/toast.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/toast.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/toolbar-filters.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/toolbar-filters.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/tree.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/visual-regression.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/visual-regression.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/visualization.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/visualization.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: docs/workflow.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: docs/workflow.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/authentication.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/authentication.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/dashboard.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/dashboard.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/data-management.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/data-management.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/index.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/marketing.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/marketing.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "System-native root theme: examples/starters/settings.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "UA color-scheme metadata: examples/starters/settings.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome uses no raw hex colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome uses no raw rgb/hsl/oklch colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs chrome uses semantic Reeris colors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core default advertises light and dark scheme",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core still supports explicit light override",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Core still supports explicit dark override",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Normal docs JS does not force a theme",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "version": "0.51.0",
+  "auditedAt": "2026-09-25",
+  "selectedName": "Reeris UI",
+  "shortBrand": "Reeris",
+  "canonicalRepository": "Eristavi/ReerisUI",
+  "intendedPackageScope": "@reeris",
+  "status": "selected-pending-live-reservation-and-formal-clearance",
+  "gateId": "public-name-namespace-clearance",
+  "criteria": {
+    "project-name-clearance": "open",
+    "package-namespace-clearance": "open",
+    "repository-domain-clearance": "open"
+  },
+  "researchSummary": {
+    "exactSoftwareFrameworkConflictFound": false,
+    "exactReerisUiTrademarkSurfaced": false,
+    "publicSearchRisk": "low-apparent-risk",
+    "legalClearance": "not-a-legal-opinion",
+    "npmAvailability": "not-authoritatively-verified",
+    "domainAvailability": "not-authoritatively-verified"
+  },
+  "materialFindings": [
+    {
+      "id": "no-material-exact-software-collision-found",
+      "severity": "positive",
+      "summary": "Public research did not surface a material exact-match Reeris UI / ReerisUI software framework, design system, developer tool, SaaS product or technology company conflict."
+    },
+    {
+      "id": "reeris-derived-founder-brand",
+      "severity": "positive",
+      "summary": "Reeris is a coined founder-derived brand combining Revaz and Eristavi, improving distinctiveness compared with the previous Reva UI working name."
+    },
+    {
+      "id": "npm-live-unverified",
+      "severity": "blocking",
+      "summary": "The intended @reeris npm scope and package names have not yet been successfully reserved or authoritatively verified live."
+    },
+    {
+      "id": "domains-live-unverified",
+      "severity": "blocking",
+      "summary": "The preferred Reeris/ReerisUI domains have not yet been successfully reserved or authoritatively verified with a registrar/RDAP source."
+    },
+    {
+      "id": "formal-trademark-clearance-pending",
+      "severity": "blocking",
+      "summary": "No material exact REERIS UI software trademark surfaced in public research, but formal similarity clearance in relevant software/technology classes remains pending and this research is not legal advice."
+    }
+  ],
+  "decision": "Proceed with the Reeris UI rename throughout the pre-1.0 codebase while keeping the public-publication gate open until npm/domain reservation and formal trademark clearance are completed.",
+  "historicalWorkingName": "Reva UI"
+}

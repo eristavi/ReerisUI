@@ -1,0 +1,302 @@
+{
+  "version": "0.51.0",
+  "generatedAt": "2026-09-25T12:54:17.880Z",
+  "summary": {
+    "passed": 13,
+    "total": 13,
+    "failed": 0
+  },
+  "evidenceSummary": {
+    "records": 6,
+    "invalid": 0,
+    "closing": 0,
+    "supplemental": 6
+  },
+  "gateSummary": {
+    "total": 7,
+    "passed": 0,
+    "open": 7,
+    "openBlocking1_0": 6,
+    "openBlockingPublication": 1,
+    "criteriaTotal": 21,
+    "criteriaPassed": 0
+  },
+  "invalid": [],
+  "gates": [
+    {
+      "id": "desktop-browser-matrix",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "chrome-desktop-real",
+          "description": "Current stable Google Chrome on a supported desktop OS.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "edge-desktop-real",
+          "description": "Current stable Microsoft Edge on a supported desktop OS.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "firefox-desktop-real",
+          "description": "Current stable Mozilla Firefox on a supported desktop OS.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "safari-desktop-real",
+          "description": "Current stable Safari on supported macOS hardware/OS.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "local-chromium-desktop-browser-matrix-0.51.0"
+      ]
+    },
+    {
+      "id": "mobile-browser-matrix",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "safari-ios-real",
+          "description": "Safari on a real/current iPhone or trusted real-device cloud.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "safari-ipados-real",
+          "description": "Safari on a real/current iPad or trusted real-device cloud.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "chrome-android-real",
+          "description": "Chrome on a real/current Android device or trusted real-device cloud.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": []
+    },
+    {
+      "id": "assistive-technology",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "keyboard-manual",
+          "description": "Manual keyboard-only review of representative interactive components.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "nvda-desktop",
+          "description": "NVDA with a supported desktop browser.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "voiceover-safari",
+          "description": "VoiceOver with Safari on macOS/iOS.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "talkback-chrome",
+          "description": "TalkBack with Chrome on Android.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "local-chromium-assistive-technology-0.51.0"
+      ]
+    },
+    {
+      "id": "zoom-reflow-touch",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "zoom-200-real",
+          "description": "Real-browser 200% zoom/reflow review.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "zoom-400-real",
+          "description": "Real-browser 400% zoom/reflow review.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "touch-targets-real",
+          "description": "Coarse-pointer/touch-target review on real hardware or trusted device cloud.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "local-chromium-zoom-reflow-touch-0.51.0"
+      ]
+    },
+    {
+      "id": "forced-colors-high-contrast",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "windows-forced-colors-real",
+          "description": "Windows forced-colors/high-contrast visual and interaction review.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "prefers-contrast-review",
+          "description": "prefers-contrast behavior reviewed where supported.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "local-chromium-forced-colors-high-contrast-0.51.0"
+      ]
+    },
+    {
+      "id": "visual-regression-baselines",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": true,
+      "blocksPublicPublication": false,
+      "criteria": [
+        {
+          "id": "baseline-human-approved",
+          "description": "Canonical PNG baseline set reviewed and explicitly approved by a human reviewer.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "baseline-compare-pass",
+          "description": "A comparison run against the approved baseline set passes.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "local-chromium-visual-regression-baselines-0.51.0"
+      ]
+    },
+    {
+      "id": "public-name-namespace-clearance",
+      "storedStatus": "open",
+      "effectiveStatus": "open",
+      "blocks1_0": false,
+      "blocksPublicPublication": true,
+      "criteria": [
+        {
+          "id": "project-name-clearance",
+          "description": "Recorded final Reeris UI naming/trademark/conflict decision.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "package-namespace-clearance",
+          "description": "Recorded npm/package namespace availability and decision.",
+          "passed": false,
+          "evidence": []
+        },
+        {
+          "id": "repository-domain-clearance",
+          "description": "Recorded repository/domain naming decision appropriate for public launch.",
+          "passed": false,
+          "evidence": []
+        }
+      ],
+      "supplementalEvidence": [
+        "naming-research-0.51.0"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Gate criteria version matches current release",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Manual gate registry version matches current release",
+      "pass": true,
+      "detail": "0.51.0 vs 0.51.0"
+    },
+    {
+      "name": "Every registry gate has closure criteria",
+      "pass": true,
+      "detail": "7 registry gates"
+    },
+    {
+      "name": "Criteria contains no unknown gates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Closure criterion IDs are unique",
+      "pass": true,
+      "detail": "21 criteria"
+    },
+    {
+      "name": "All evidence records validate",
+      "pass": true,
+      "detail": "0 invalid"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: desktop-browser-matrix",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: mobile-browser-matrix",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: assistive-technology",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: zoom-reflow-touch",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: visual-regression-baselines",
+      "pass": true,
+      "detail": "open vs open"
+    },
+    {
+      "name": "Stored gate status matches evidence-derived status: public-name-namespace-clearance",
+      "pass": true,
+      "detail": "open vs open"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "local-chromium-forced-colors-high-contrast-0.52.0",
+  "releaseVersion": "0.52.0",
+  "gateId": "forced-colors-high-contrast",
+  "kind": "other",
+  "role": "supplemental",
+  "collectedAt": "2026-09-25T13:08:33.105Z",
+  "outcome": "pass",
+  "claims": [],
+  "coverage": [
+    "Chromium forced-colors and prefers-contrast media emulation"
+  ],
+  "environment": {
+    "runner": "Local Chromium via Chrome DevTools Protocol",
+    "browser": "Chrome/144.0.7559.96",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v22.16.0"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.52.0/local-chromium/local-chromium-report.json",
+      "sha256": "ed6381d4581138184a36a3b6072d8af1568dcb6542039fc3c15817959f84d902",
+      "description": "Machine-readable local Chromium RC report with test results and screenshot hashes."
+    }
+  ],
+  "notes": "Automated media emulation only; not Windows High Contrast/manual review.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Supplemental automated evidence; intentionally not gate-closing."
+  }
+}

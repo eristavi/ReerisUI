@@ -1,0 +1,59 @@
+{
+  "name": "reeris-ui-monorepo",
+  "private": true,
+  "version": "0.52.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "node tooling/build.mjs",
+    "tokens": "node tooling/build-tokens.mjs",
+    "audit:scope": "node tooling/core-scope-audit.mjs",
+    "audit:forms": "node tooling/forms-audit.mjs",
+    "audit:content-states": "node tooling/content-states-audit.mjs",
+    "audit:a11y": "node tooling/accessibility-audit.mjs",
+    "audit:browser-reflow": "node tooling/browser-reflow-audit.mjs",
+    "audit:css": "node tooling/css-architecture-audit.mjs",
+    "audit:all": "npm run audit:scope && npm run audit:forms && npm run audit:content-states && npm run audit:a11y && npm run audit:browser-reflow && npm run audit:css && npm run audit:visual && npm run audit:i18n && npm run audit:theme && npm run audit:repro && npm run docs:api && npm run audit:docs && npm run audit:starters && npm run audit:security && npm run audit:packages && npm run audit:rc-browser && npm run audit:local-browser && npm run lab:generate && npm run audit:external-lab && npm run audit:evidence && npm run audit:naming && npm run audit:identity-reservation && npm run audit:rc",
+    "docs:api": "node tooling/generate-api-reference.mjs",
+    "audit:docs": "node tooling/documentation-audit.mjs",
+    "audit:starters": "node tooling/starters-integration-audit.mjs",
+    "audit:security": "node tooling/security-audit.mjs",
+    "audit:packages": "node tooling/package-release-audit.mjs",
+    "release:manifest": "node tooling/release-manifest.mjs",
+    "release:check": "npm run build && npm run audit:all && npm run release:manifest",
+    "audit:repro": "node tooling/reproducibility-audit.mjs",
+    "audit:visual": "node tooling/visual-regression-audit.mjs",
+    "visual:capture": "node tooling/visual-capture.mjs",
+    "visual:compare": "node tooling/visual-compare.mjs",
+    "visual:update": "node tooling/visual-update.mjs",
+    "visual:test": "npm run visual:capture && npm run visual:compare",
+    "audit:i18n": "node tooling/i18n-audit.mjs",
+    "audit:theme": "node tooling/theme-audit.mjs",
+    "audit:rc": "node tooling/rc-readiness-audit.mjs",
+    "audit:rc-browser": "node tooling/rc-browser-infrastructure-audit.mjs",
+    "rc:browser:test": "playwright test tests/rc/browser-matrix.spec.mjs",
+    "rc:browser:headed": "playwright test tests/rc/browser-matrix.spec.mjs --headed",
+    "rc:visual:test": "playwright test tests/rc/visual.spec.mjs --project=chromium",
+    "rc:visual:update": "playwright test tests/rc/visual.spec.mjs --project=chromium --update-snapshots",
+    "audit:evidence": "node tooling/release-lab-evidence.mjs audit",
+    "evidence:sync": "node tooling/release-lab-evidence.mjs sync",
+    "evidence:templates": "node tooling/release-lab-evidence.mjs template-all",
+    "evidence:import-browser": "node tooling/release-lab-evidence.mjs import-browser --latest",
+    "rc:local:chromium": "node tooling/local-chromium-rc.mjs",
+    "audit:local-browser": "node tooling/local-chromium-evidence-audit.mjs",
+    "lab:generate": "node tooling/external-release-lab.mjs generate",
+    "audit:external-lab": "node tooling/external-release-lab.mjs audit",
+    "lab:prepare": "npm run evidence:templates && npm run lab:generate",
+    "audit:naming": "node tooling/naming-clearance-audit.mjs",
+    "audit:identity-reservation": "node tooling/identity-reservation-audit.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Content States</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <style>
+    body { margin:0; }
+    .demo-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr)); gap:var(--reeris-space-5); }
+    .demo-grid > .panel { min-block-size:22rem; display:grid; }
+    code { font-family:var(--reeris-font-code); }
+  </style>
+</head>
+<body>
+<main class="l-center l-stack" style="--reeris-center-max:76rem;padding:var(--reeris-space-fluid-md)">
+  <header class="l-stack" style="--reeris-stack-gap:var(--reeris-space-2)">
+    <span class="badge primary">Reeris 0.35</span>
+    <h1>Content states</h1>
+    <p>One reusable content-state family for empty, no-results, error, success, offline, permission-required and maintenance situations.</p>
+  </header>
+
+  <section class="demo-grid" aria-label="Content state examples">
+    <article class="panel">
+      <div class="content-state">
+        <div class="content-state-icon" aria-hidden="true">＋</div>
+        <h2 class="content-state-title">No projects yet</h2>
+        <p class="content-state-description">Create your first project to start organizing work.</p>
+        <div class="content-state-actions"><button class="btn primary">Create project</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state no-results">
+        <div class="content-state-icon" aria-hidden="true">⌕</div>
+        <h2 class="content-state-title">No results</h2>
+        <p class="content-state-description">Nothing matched “Paphos”. Try another search or remove a filter.</p>
+        <div class="content-state-actions"><button class="btn outline">Clear filters</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state error" role="alert">
+        <div class="content-state-icon" aria-hidden="true">!</div>
+        <h2 class="content-state-title">Couldn’t load data</h2>
+        <p class="content-state-description">The request failed. Check the connection and try again.</p>
+        <div class="content-state-actions"><button class="btn danger">Retry</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state success" role="status">
+        <div class="content-state-icon" aria-hidden="true">✓</div>
+        <h2 class="content-state-title">Import complete</h2>
+        <p class="content-state-description">All 84 records were imported successfully.</p>
+        <div class="content-state-actions"><button class="btn primary">View records</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state offline" role="status">
+        <div class="content-state-icon" aria-hidden="true">↯</div>
+        <h2 class="content-state-title">You’re offline</h2>
+        <p class="content-state-description">Some information may be unavailable until the connection returns.</p>
+        <div class="content-state-actions"><button class="btn outline">Try again</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state permission-required">
+        <div class="content-state-icon" aria-hidden="true">⌾</div>
+        <h2 class="content-state-title">Permission required</h2>
+        <p class="content-state-description">You need additional access to view this workspace.</p>
+        <div class="content-state-actions"><button class="btn primary">Request access</button></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state maintenance">
+        <div class="content-state-icon" aria-hidden="true">◇</div>
+        <h2 class="content-state-title">Scheduled maintenance</h2>
+        <p class="content-state-description">This area is temporarily unavailable while maintenance is completed.</p>
+        <div class="content-state-actions"><a class="btn outline" href="#">Status page</a></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="content-state compact no-results">
+        <div class="content-state-icon" aria-hidden="true">⌕</div>
+        <h2 class="content-state-title">Nothing here</h2>
+        <p class="content-state-description">Compact presentation for smaller panels and embedded regions.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="card">
+    <div class="card-header"><h2 class="card-title">Accessibility contract</h2></div>
+    <div class="card-body l-stack">
+      <p>The visual modifier does not automatically assign a live-region role. Static empty/no-results/permission/maintenance content normally needs no announcement.</p>
+      <p>When a state appears dynamically, applications choose semantics that match urgency: <code>role="status"</code> for polite updates and <code>role="alert"</code> only for urgent errors requiring immediate announcement.</p>
+      <p>Meaning is carried by heading/body text and actions, not color or the icon alone. Decorative state icons should use <code>aria-hidden="true"</code>.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

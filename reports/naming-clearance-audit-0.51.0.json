@@ -1,0 +1,183 @@
+{
+  "version": "0.51.0",
+  "generatedAt": "2026-09-25T12:54:54.513Z",
+  "status": "pass",
+  "summary": {
+    "passed": 34,
+    "total": 34,
+    "failed": 0
+  },
+  "failures": [],
+  "checks": [
+    {
+      "name": "Naming clearance machine report exists",
+      "pass": true,
+      "detail": "tests/release/naming-clearance.json"
+    },
+    {
+      "name": "Naming clearance human report exists",
+      "pass": true,
+      "detail": "docs/naming-clearance-0.51.md"
+    },
+    {
+      "name": "Rename migration note exists",
+      "pass": true,
+      "detail": "docs/reva-to-reeris-migration-0.51.md"
+    },
+    {
+      "name": "Current-version naming research evidence exists",
+      "pass": true,
+      "detail": "tests/release/evidence/public-name-namespace-clearance/naming-research-0.51.0.json"
+    },
+    {
+      "name": "Naming report matches release version",
+      "pass": true,
+      "detail": "0.51.0"
+    },
+    {
+      "name": "Selected project name is Reeris UI",
+      "pass": true,
+      "detail": "Reeris UI"
+    },
+    {
+      "name": "Short brand is Reeris",
+      "pass": true,
+      "detail": "Reeris"
+    },
+    {
+      "name": "Canonical repository is Eristavi/ReerisUI",
+      "pass": true,
+      "detail": "Eristavi/ReerisUI"
+    },
+    {
+      "name": "Intended package scope is @reeris",
+      "pass": true,
+      "detail": "@reeris"
+    },
+    {
+      "name": "Rename may proceed while publication remains gated",
+      "pass": true,
+      "detail": "selected-pending-live-reservation-and-formal-clearance"
+    },
+    {
+      "name": "Public research records no material exact software-framework collision",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Research is explicitly not a legal opinion",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "npm availability remains unverified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Domain availability remains unverified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Publication criterion remains open: project-name-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Publication criterion remains open: package-namespace-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Publication criterion remains open: repository-domain-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Human report says publication gate remains open",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Human report warns research is not legal advice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Human report does not claim npm availability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Human report does not claim domain availability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Human report documents Reeris API prefixes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Publication naming gate exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Publication naming gate remains open",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Release Lab criterion remains open: project-name-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Release Lab criterion remains open: package-namespace-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Release Lab criterion remains open: repository-domain-clearance",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Core package uses @reeris scope",
+      "pass": true,
+      "detail": "@reeris/core"
+    },
+    {
+      "name": "JS package uses @reeris scope",
+      "pass": true,
+      "detail": "@reeris/js"
+    },
+    {
+      "name": "Core default stylesheet export is reeris.css",
+      "pass": true,
+      "detail": "./dist/reeris.css"
+    },
+    {
+      "name": "Root monorepo is renamed",
+      "pass": true,
+      "detail": "reeris-ui-monorepo"
+    },
+    {
+      "name": "Naming evidence is supplemental",
+      "pass": true,
+      "detail": "supplemental"
+    },
+    {
+      "name": "Naming evidence cannot close criteria",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Naming evidence references Reeris repository",
+      "pass": true,
+      "detail": "Eristavi/ReerisUI"
+    }
+  ]
+}

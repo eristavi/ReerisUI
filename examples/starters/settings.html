@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris Starter — Settings</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+</head>
+<body>
+<main class="l-center l-stack" style="--reeris-layout-gap:var(--reeris-space-8)">
+  <header class="page-header">
+    <div class="page-header-main"><span class="badge primary">Official starter</span><h1 class="page-title">Workspace settings</h1><p class="page-description">Account, preferences and security patterns composed from Reeris Core.</p></div>
+    <div class="page-header-actions"><button class="btn outline" type="button">Cancel</button><button class="btn primary" type="submit" form="settings-form">Save changes</button></div>
+  </header>
+
+  <div class="settings-layout">
+    <nav class="settings-nav" aria-label="Settings sections">
+      <a href="#profile" aria-current="page">Profile</a>
+      <a href="#preferences">Preferences</a>
+      <a href="#security">Security</a>
+      <a href="#danger">Danger zone</a>
+    </nav>
+
+    <form class="settings-content" id="settings-form">
+      <section class="settings-section" id="profile">
+        <header class="settings-section-header"><h2 class="settings-section-title">Profile</h2><p class="settings-section-description">Manage information shown across your workspace.</p></header>
+        <div class="settings-group">
+          <div class="setting-row"><div class="setting-copy"><label class="setting-label" for="display-name">Display name</label><span class="setting-description">Used in shared activity and collaboration.</span></div><div class="setting-control"><input class="field" id="display-name" name="display-name" value="Alex Kim"></div></div>
+          <div class="setting-row"><div class="setting-copy"><label class="setting-label" for="email">Email address</label><span class="setting-description">Used for account notifications.</span></div><div class="setting-control"><input class="field" id="email" name="email" type="email" value="alex@example.com"></div></div>
+          <div class="setting-row"><div class="setting-copy"><label class="setting-label" for="role">Role</label><span class="setting-description">Your default workspace role.</span></div><div class="setting-control"><select class="field" id="role" name="role"><option>Administrator</option><option>Manager</option><option>Member</option></select></div></div>
+        </div>
+      </section>
+
+      <section class="settings-section" id="preferences">
+        <header class="settings-section-header"><h2 class="settings-section-title">Preferences</h2><p class="settings-section-description">Control your interface and notifications.</p></header>
+        <div class="settings-group">
+          <div class="setting-row"><div class="setting-copy"><span class="setting-label">Weekly summary</span><span class="setting-description">Receive a concise weekly workspace summary.</span></div><div class="setting-control"><label class="switch"><input type="checkbox" role="switch" checked><span>Enabled</span></label></div></div>
+          <div class="setting-row"><div class="setting-copy"><span class="setting-label">Product updates</span><span class="setting-description">Occasional release and product information.</span></div><div class="setting-control"><label class="switch"><input type="checkbox" role="switch"><span>Disabled</span></label></div></div>
+          <div class="setting-row"><div class="setting-copy"><label class="setting-label" for="language">Language</label><span class="setting-description">Choose the workspace interface language.</span></div><div class="setting-control"><select class="field" id="language"><option>English</option><option>Deutsch</option><option>Français</option></select></div></div>
+        </div>
+      </section>
+
+      <section class="settings-section" id="security">
+        <header class="settings-section-header"><h2 class="settings-section-title">Security</h2><p class="settings-section-description">Protect your account and active sessions.</p></header>
+        <div class="settings-group">
+          <div class="setting-row"><div class="security-item"><span class="security-item-icon" aria-hidden="true">◇</span><div class="security-item-content"><p class="security-item-title">Password</p><p class="security-item-meta">Last changed 30 days ago</p></div></div><div class="setting-control"><button class="btn outline" type="button">Change</button></div></div>
+          <div class="setting-row"><div class="security-item"><span class="security-item-icon" aria-hidden="true">✓</span><div class="security-item-content"><p class="security-item-title">Two-factor authentication</p><p class="security-item-meta">Add another verification step.</p></div></div><div class="setting-control"><button class="btn primary" type="button">Enable</button></div></div>
+        </div>
+      </section>
+
+      <section class="settings-section danger-zone" id="danger">
+        <header class="settings-section-header"><h2 class="settings-section-title">Danger zone</h2><p class="settings-section-description">Irreversible workspace actions.</p></header>
+        <div class="settings-group"><div class="setting-row"><div class="setting-copy"><span class="setting-label">Delete workspace</span><span class="setting-description">Permanently remove this workspace and associated data.</span></div><div class="setting-control"><button class="btn danger outline" type="button">Delete workspace</button></div></div></div>
+      </section>
+
+      <div class="settings-actions"><button class="btn outline" type="reset">Reset</button><button class="btn primary" type="submit">Save changes</button></div>
+    </form>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,527 @@
+{
+  "version": "0.45.0",
+  "generatedAt": "2026-09-25T09:23:12.920Z",
+  "summary": {
+    "passed": 82,
+    "total": 82,
+    "failed": 0,
+    "packages": 2
+  },
+  "packs": [
+    {
+      "package": "@reeris/core",
+      "filename": "reeris-core-0.45.0.tgz",
+      "packageSize": 108895,
+      "unpackedSize": 924655,
+      "fileCount": 79,
+      "files": [
+        "LICENSE",
+        "README.md",
+        "dist/components/advanced-navigation.css",
+        "dist/components/app-shell.css",
+        "dist/components/authentication.css",
+        "dist/components/button.css",
+        "dist/components/choice.css",
+        "dist/components/commerce.css",
+        "dist/components/data-display.css",
+        "dist/components/feedback.css",
+        "dist/components/files.css",
+        "dist/components/identity.css",
+        "dist/components/marketing.css",
+        "dist/components/media.css",
+        "dist/components/messaging.css",
+        "dist/components/navigation-extended.css",
+        "dist/components/navigation.css",
+        "dist/components/overlays.css",
+        "dist/components/search-command.css",
+        "dist/components/settings.css",
+        "dist/components/surfaces.css",
+        "dist/components/tables.css",
+        "dist/components/toast.css",
+        "dist/components/toolbar-filters.css",
+        "dist/components/tree.css",
+        "dist/components/visualization.css",
+        "dist/components/workflow.css",
+        "dist/core/base.css",
+        "dist/core/layers.css",
+        "dist/core/personality.css",
+        "dist/core/reset.css",
+        "dist/core/theme.css",
+        "dist/forms/forms.css",
+        "dist/layout/primitives.css",
+        "dist/reeris.css",
+        "dist/reeris.css.map",
+        "dist/reeris.min.css",
+        "dist/reeris.min.css.map",
+        "dist/sources/components/advanced-navigation.css",
+        "dist/sources/components/app-shell.css",
+        "dist/sources/components/authentication.css",
+        "dist/sources/components/button.css",
+        "dist/sources/components/choice.css",
+        "dist/sources/components/commerce.css",
+        "dist/sources/components/data-display.css",
+        "dist/sources/components/feedback.css",
+        "dist/sources/components/files.css",
+        "dist/sources/components/identity.css",
+        "dist/sources/components/marketing.css",
+        "dist/sources/components/media.css",
+        "dist/sources/components/messaging.css",
+        "dist/sources/components/navigation-extended.css",
+        "dist/sources/components/navigation.css",
+        "dist/sources/components/overlays.css",
+        "dist/sources/components/search-command.css",
+        "dist/sources/components/settings.css",
+        "dist/sources/components/surfaces.css",
+        "dist/sources/components/tables.css",
+        "dist/sources/components/toast.css",
+        "dist/sources/components/toolbar-filters.css",
+        "dist/sources/components/tree.css",
+        "dist/sources/components/visualization.css",
+        "dist/sources/components/workflow.css",
+        "dist/sources/core/base.css",
+        "dist/sources/core/layers.css",
+        "dist/sources/core/personality.css",
+        "dist/sources/core/reset.css",
+        "dist/sources/core/theme.css",
+        "dist/sources/forms/forms.css",
+        "dist/sources/layout/primitives.css",
+        "dist/sources/reeris.css",
+        "dist/sources/tokens/generated.css",
+        "dist/sources/utilities/accessibility.css",
+        "dist/sources/utilities/utilities.css",
+        "dist/tokens.js",
+        "dist/tokens.json",
+        "dist/utilities/accessibility.css",
+        "dist/utilities/utilities.css",
+        "package.json"
+      ]
+    },
+    {
+      "package": "@reeris/js",
+      "filename": "reeris-js-0.45.0.tgz",
+      "packageSize": 2741,
+      "unpackedSize": 7213,
+      "fileCount": 5,
+      "files": [
+        "LICENSE",
+        "README.md",
+        "dist/glide-navigation.js",
+        "dist/index.js",
+        "package.json"
+      ]
+    }
+  ],
+  "failures": [],
+  "checks": [
+    {
+      "name": "Root monorepo remains private",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Root license is MIT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Root has no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CHANGELOG includes current version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Root LICENSE exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Root README exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core name",
+      "pass": true,
+      "detail": "@reeris/core"
+    },
+    {
+      "name": "@reeris/core version synchronized",
+      "pass": true,
+      "detail": "0.45.0 vs 0.45.0"
+    },
+    {
+      "name": "@reeris/core MIT license",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core public scoped publish config",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core package files restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core local README exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core local LICENSE exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core license matches root",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core export avoids src/: .",
+      "pass": true,
+      "detail": "./dist/reeris.css"
+    },
+    {
+      "name": "@reeris/core export target exists: .",
+      "pass": true,
+      "detail": "dist/reeris.css"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./reeris.css",
+      "pass": true,
+      "detail": "./dist/reeris.css"
+    },
+    {
+      "name": "@reeris/core export target exists: ./reeris.css",
+      "pass": true,
+      "detail": "dist/reeris.css"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./components/*.css",
+      "pass": true,
+      "detail": "./dist/components/*.css"
+    },
+    {
+      "name": "@reeris/core export prefix exists: ./components/*.css",
+      "pass": true,
+      "detail": "dist/components/"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./forms/*.css",
+      "pass": true,
+      "detail": "./dist/forms/*.css"
+    },
+    {
+      "name": "@reeris/core export prefix exists: ./forms/*.css",
+      "pass": true,
+      "detail": "dist/forms/"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./layout/*.css",
+      "pass": true,
+      "detail": "./dist/layout/*.css"
+    },
+    {
+      "name": "@reeris/core export prefix exists: ./layout/*.css",
+      "pass": true,
+      "detail": "dist/layout/"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./utilities/*.css",
+      "pass": true,
+      "detail": "./dist/utilities/*.css"
+    },
+    {
+      "name": "@reeris/core export prefix exists: ./utilities/*.css",
+      "pass": true,
+      "detail": "dist/utilities/"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./tokens.json",
+      "pass": true,
+      "detail": "./dist/tokens.json"
+    },
+    {
+      "name": "@reeris/core export target exists: ./tokens.json",
+      "pass": true,
+      "detail": "dist/tokens.json"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./tokens.js",
+      "pass": true,
+      "detail": "./dist/tokens.js"
+    },
+    {
+      "name": "@reeris/core export target exists: ./tokens.js",
+      "pass": true,
+      "detail": "dist/tokens.js"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./reeris.min.css",
+      "pass": true,
+      "detail": "./dist/reeris.min.css"
+    },
+    {
+      "name": "@reeris/core export target exists: ./reeris.min.css",
+      "pass": true,
+      "detail": "dist/reeris.min.css"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./reeris.css.map",
+      "pass": true,
+      "detail": "./dist/reeris.css.map"
+    },
+    {
+      "name": "@reeris/core export target exists: ./reeris.css.map",
+      "pass": true,
+      "detail": "dist/reeris.css.map"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./reeris.min.css.map",
+      "pass": true,
+      "detail": "./dist/reeris.min.css.map"
+    },
+    {
+      "name": "@reeris/core export target exists: ./reeris.min.css.map",
+      "pass": true,
+      "detail": "dist/reeris.min.css.map"
+    },
+    {
+      "name": "@reeris/core export avoids src/: ./sources/*",
+      "pass": true,
+      "detail": "./dist/sources/*"
+    },
+    {
+      "name": "@reeris/core export prefix exists: ./sources/*",
+      "pass": true,
+      "detail": "dist/sources/"
+    },
+    {
+      "name": "@reeris/core npm pack dry-run succeeds",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core has package budget",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core packed size within budget",
+      "pass": true,
+      "detail": "108895 / 150000 B"
+    },
+    {
+      "name": "@reeris/core unpacked size within budget",
+      "pass": true,
+      "detail": "924655 / 1100000 B"
+    },
+    {
+      "name": "@reeris/core file count within budget",
+      "pass": true,
+      "detail": "79 / 90"
+    },
+    {
+      "name": "@reeris/core pack includes package.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes README",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes dist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes full CSS source map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes minified CSS source map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack includes published CSS sources",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack excludes src",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core pack excludes reports/tooling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js name",
+      "pass": true,
+      "detail": "@reeris/js"
+    },
+    {
+      "name": "@reeris/js version synchronized",
+      "pass": true,
+      "detail": "0.45.0 vs 0.45.0"
+    },
+    {
+      "name": "@reeris/js MIT license",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js public scoped publish config",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js package files restricted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js no production dependencies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js local README exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js local LICENSE exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js license matches root",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js export avoids src/: .",
+      "pass": true,
+      "detail": "./dist/index.js"
+    },
+    {
+      "name": "@reeris/js export target exists: .",
+      "pass": true,
+      "detail": "dist/index.js"
+    },
+    {
+      "name": "@reeris/js export avoids src/: ./glide-navigation",
+      "pass": true,
+      "detail": "./dist/glide-navigation.js"
+    },
+    {
+      "name": "@reeris/js export target exists: ./glide-navigation",
+      "pass": true,
+      "detail": "dist/glide-navigation.js"
+    },
+    {
+      "name": "@reeris/js npm pack dry-run succeeds",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js has package budget",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js packed size within budget",
+      "pass": true,
+      "detail": "2741 / 20000 B"
+    },
+    {
+      "name": "@reeris/js unpacked size within budget",
+      "pass": true,
+      "detail": "7213 / 50000 B"
+    },
+    {
+      "name": "@reeris/js file count within budget",
+      "pass": true,
+      "detail": "5 / 12"
+    },
+    {
+      "name": "@reeris/js pack includes package.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js pack includes README",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js pack includes LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js pack includes dist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js pack excludes src",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js pack excludes reports/tooling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core style entry points to reeris.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core unpkg entry points to minified CSS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core jsDelivr entry points to minified CSS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/core CSS side effects declared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "@reeris/js marked side-effect free",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

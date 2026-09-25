@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Browser, Keyboard & Reflow Acceptance Fixture</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+</head>
+<body>
+  <main class="l-center l-stack">
+    <header class="page-header">
+      <div class="page-header-main">
+        <span class="badge primary">0.37 acceptance fixture</span>
+        <h1 class="page-title">Browser, keyboard and 400% reflow stress fixture</h1>
+        <p class="page-description">Use this page with keyboard-only navigation, 200% and 400% browser zoom, narrow viewports, RTL, forced colors and reduced motion. Long labels are intentional.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="card-header"><h2 class="card-title">Keyboard navigation</h2></div>
+      <div class="card-body l-stack">
+        <nav class="nav glide" data-reeris-glide aria-label="Acceptance navigation">
+          <a class="nav-link active" aria-current="page" href="#keyboard">Overview</a>
+          <a class="nav-link" href="#forms">Very long translated navigation destination label</a>
+          <a class="nav-link" href="#reflow">Reflow and magnification</a>
+        </nav>
+        <details class="accordion-item">
+          <summary>Native disclosure: open with Enter or Space</summary>
+          <div class="accordion-body"><p>The disclosure must remain operable without Reeris JavaScript.</p></div>
+        </details>
+        <div class="l-cluster">
+          <button class="btn primary" id="open-test-dialog">Open keyboard test dialog with a deliberately long action label</button>
+          <a class="btn outline" href="#forms">Move to form controls</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="forms">
+      <div class="card-header"><h2 class="card-title">Form and translation stress</h2></div>
+      <div class="card-body l-stack">
+        <div class="field">
+          <label class="field-label" for="long-name">Long content</label>
+          <div class="input-group">
+            <span class="input-addon">International customer reference identifier</span>
+            <input class="input" id="long-name" value="ReerisUIExtremelyLongUnbrokenReferenceValue0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+          </div>
+          <p class="field-help">At 400% zoom the addon and value must not force page-level horizontal scrolling.</p>
+        </div>
+        <fieldset class="choice-group">
+          <legend>Notification preference</legend>
+          <label class="choice"><input type="radio" name="notify" checked> <span>Email notifications with a deliberately long translated description that needs to wrap naturally</span></label>
+          <label class="choice"><input type="radio" name="notify"> <span>In-application notifications</span></label>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="card" id="reflow">
+      <div class="card-header"><h2 class="card-title">Reflow stress components</h2></div>
+      <div class="card-body l-stack">
+        <div class="identity">
+          <span class="avatar">RE</span>
+          <div class="identity-content">
+            <p class="identity-name">Alexandria-Cassandra-Very-Long-Unbroken-Internationalized-Display-Name</p>
+            <p class="identity-meta">SeniorInternationalOperationsAndAccessibilityProgramCoordinator@example-very-long-domain.test</p>
+          </div>
+        </div>
+
+        <div class="file-browser">
+          <ul class="file-list">
+            <li class="file-row">
+              <span class="file-icon" aria-hidden="true">F</span>
+              <div class="file-content">
+                <p class="file-name">2026-International-Accessibility-Compliance-Evidence-Archive-With-An-Extremely-Long-Filename.pdf</p>
+                <div class="file-meta"><span>2.4 MB</span><span>PDF document</span></div>
+              </div>
+              <div class="file-actions"><button class="btn sm">Download document with long label</button></div>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="tree" aria-label="Long hierarchy example">
+          <li class="tree-item">
+            <a class="tree-row" href="#reflow">
+              <span class="tree-icon" aria-hidden="true">›</span>
+              <span class="tree-label">ExtremelyLongDepartmentAndSubdepartmentNameDesignedToStressReflowAtFourHundredPercentZoom</span>
+              <span class="tree-meta">128 members</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Reference</th><th scope="col">Description</th><th scope="col">Amount</th></tr></thead>
+            <tbody><tr><td>RV-037-000001</td><td>Semantic tables may use horizontal scrolling rather than destroying their table semantics.</td><td class="numeric">€12,345.67</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-state maintenance" aria-labelledby="manual-title">
+      <div class="content-state-content">
+        <h2 class="content-state-title" id="manual-title">Manual release gate</h2>
+        <p class="content-state-description">A static audit cannot prove cross-browser keyboard, screen-reader, touch or 400% zoom behavior. This fixture is the canonical page for those manual checks.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="dialog" id="test-dialog" aria-labelledby="test-dialog-title">
+    <div class="dialog-header">
+      <h2 class="dialog-title" id="test-dialog-title">Keyboard focus test dialog</h2>
+      <button class="btn-close" type="button" data-close-dialog aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Tab through the controls and verify focus remains visible. Escape should close this native dialog.</p>
+      <label class="field"><span class="field-label">Test field</span><input class="input" autocomplete="off"></label>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn" type="button" data-close-dialog>Cancel</button>
+      <button class="btn primary" type="button">Primary action with long translated text</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="./browser-reflow-demo.js"></script>
+</body>
+</html>

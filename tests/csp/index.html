@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'">
+  <title>Reeris strict CSP fixture</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="./fixture.css">
+</head>
+<body>
+  <main class="l-center l-stack">
+    <h1>Strict CSP fixture</h1>
+    <nav class="nav glide" data-reeris-glide aria-label="CSP navigation">
+      <a class="nav-link active" aria-current="page" href="#one">One</a>
+      <a class="nav-link" href="#two">Two</a>
+      <a class="nav-link" href="#three">Three</a>
+    </nav>
+    <section class="card" id="one">
+      <div class="card-body l-stack">
+        <label class="field">
+          <span class="field-label">Name</span>
+          <input class="input" name="name" autocomplete="name">
+        </label>
+        <button class="btn primary" type="button">Action</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="../../packages/js/dist/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris 0.33 — Navigation Completion</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <style>
+    body{margin:0}.demo{max-width:72rem;margin:auto;padding:2rem;display:grid;gap:2rem}.demo-box{container-type:inline-size;border:1px solid var(--reeris-color-border);border-radius:var(--reeris-radius-xl);padding:1rem}.narrow{max-width:38rem}.row{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+  </style>
+</head>
+<body>
+<main class="demo">
+  <header>
+    <span class="badge primary">Reeris 0.33</span>
+    <h1>Navigation completion</h1>
+    <p>Responsive navigation, mega menus, hover cards, and optional glide enhancement.</p>
+  </header>
+
+  <section>
+    <h2>Glide navigation</h2>
+    <nav class="nav glide" data-reeris-glide aria-label="Primary demo">
+      <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+      <a class="nav-link" href="#">Bookings</a>
+      <a class="nav-link" href="#">Guests</a>
+      <a class="nav-link" href="#">Reports</a>
+      <a class="nav-link" href="#">Settings</a>
+    </nav>
+    <p class="field-help">Disable JavaScript and this remains a normal Reeris navigation. With @reeris/js, the indicator travels between hovered/focused items.</p>
+  </section>
+
+  <section>
+    <h2>Underline glide</h2>
+    <nav class="nav glide underline" data-reeris-glide aria-label="Section demo">
+      <a class="nav-link active" aria-current="page" href="#">Overview</a>
+      <a class="nav-link" href="#">Revenue</a>
+      <a class="nav-link" href="#">Occupancy</a>
+      <a class="nav-link" href="#">Operations</a>
+    </nav>
+  </section>
+
+  <section class="demo-box narrow">
+    <h2>Responsive navbar</h2>
+    <header class="navbar responsive">
+      <a href="#" class="navbar-brand">Reeris</a>
+      <details class="navbar-disclosure">
+        <summary class="navbar-toggle"><span aria-hidden="true">☰</span><span>Menu</span></summary>
+        <div class="navbar-panel">
+          <nav class="navbar-nav" aria-label="Example navbar">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="#">Pricing</a>
+          </nav>
+          <div class="navbar-actions"><button class="btn primary sm">Sign in</button></div>
+        </div>
+      </details>
+    </header>
+  </section>
+
+  <section>
+    <h2>Mega menu</h2>
+    <nav class="nav" aria-label="Mega menu demo">
+      <a class="nav-link" href="#">Home</a>
+      <details class="mega-menu">
+        <summary class="nav-link">Products <span class="mega-menu-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="mega-menu-panel" style="--reeris-mega-menu-columns:2">
+          <section class="mega-menu-section">
+            <h3 class="mega-menu-title">Manage</h3>
+            <a class="mega-menu-link" href="#"><span class="mega-menu-link-title">Operations</span><span class="mega-menu-link-description">Workflows, tasks and daily operations.</span></a>
+            <a class="mega-menu-link" href="#"><span class="mega-menu-link-title">Customers</span><span class="mega-menu-link-description">CRM and guest records.</span></a>
+          </section>
+          <section class="mega-menu-section">
+            <h3 class="mega-menu-title">Analyze</h3>
+            <a class="mega-menu-link" href="#"><span class="mega-menu-link-title">Reports</span><span class="mega-menu-link-description">Metrics, trends and performance.</span></a>
+            <a class="mega-menu-link" href="#"><span class="mega-menu-link-title">Data</span><span class="mega-menu-link-description">Tables and structured views.</span></a>
+          </section>
+        </div>
+      </details>
+    </nav>
+  </section>
+
+  <section>
+    <h2>Hover/focus card</h2>
+    <div class="row">
+      <details class="hover-card">
+        <summary class="btn outline">Revaz Eristavi</summary>
+        <div class="hover-card-panel">
+          <div class="identity">
+            <div class="avatar">RE</div>
+            <div><strong>Revaz Eristavi</strong><div class="field-help">Project lead · Reeris UI</div></div>
+          </div>
+        </div>
+      </details>
+      <span class="field-help">Hover/focus previews on pointer devices; click/tap can persist the native details disclosure.</span>
+    </div>
+  </section>
+</main>
+<script type="module" src="../packages/js/dist/index.js"></script>
+</body>
+</html>

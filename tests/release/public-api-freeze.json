@@ -1,0 +1,3020 @@
+{
+  "baselineVersion": "0.51.0",
+  "sha256": "4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336",
+  "api": {
+    "sourceModules": [
+      "components/advanced-navigation.css",
+      "components/app-shell.css",
+      "components/authentication.css",
+      "components/button.css",
+      "components/choice.css",
+      "components/commerce.css",
+      "components/data-display.css",
+      "components/feedback.css",
+      "components/files.css",
+      "components/identity.css",
+      "components/marketing.css",
+      "components/media.css",
+      "components/messaging.css",
+      "components/navigation-extended.css",
+      "components/navigation.css",
+      "components/overlays.css",
+      "components/search-command.css",
+      "components/settings.css",
+      "components/surfaces.css",
+      "components/tables.css",
+      "components/toast.css",
+      "components/toolbar-filters.css",
+      "components/tree.css",
+      "components/visualization.css",
+      "components/workflow.css",
+      "core/base.css",
+      "core/layers.css",
+      "core/personality.css",
+      "core/reset.css",
+      "core/theme.css",
+      "forms/forms.css",
+      "layout/primitives.css",
+      "reeris.css",
+      "tokens/generated.css",
+      "utilities/accessibility.css",
+      "utilities/utilities.css"
+    ],
+    "classes": [
+      "accent",
+      "accordion",
+      "accordion-body",
+      "accordion-item",
+      "account-menu",
+      "account-menu-footer",
+      "account-menu-header",
+      "actions",
+      "active",
+      "activity-body",
+      "activity-content",
+      "activity-feed",
+      "activity-item",
+      "activity-marker",
+      "activity-meta",
+      "activity-title",
+      "alert",
+      "alert-actions",
+      "alert-close",
+      "alert-content",
+      "alert-description",
+      "alert-icon",
+      "alert-title",
+      "app-main",
+      "app-shell",
+      "app-sidebar",
+      "app-sidebar-body",
+      "app-sidebar-footer",
+      "app-sidebar-header",
+      "app-sidebar-label",
+      "app-topbar",
+      "app-topbar-actions",
+      "app-topbar-title",
+      "app-workspace",
+      "attachment",
+      "attachment-list",
+      "attachment-name",
+      "auth-brand",
+      "auth-brand-content",
+      "auth-brand-copy",
+      "auth-brand-title",
+      "auth-card",
+      "auth-description",
+      "auth-divider",
+      "auth-footer",
+      "auth-form",
+      "auth-header",
+      "auth-main",
+      "auth-options",
+      "auth-providers",
+      "auth-shell",
+      "auth-submit",
+      "auth-title",
+      "avatar",
+      "avatar-group",
+      "away",
+      "badge",
+      "banner",
+      "block",
+      "border",
+      "bordered",
+      "borderless",
+      "bottom",
+      "breadcrumb",
+      "breadcrumb-item",
+      "btn",
+      "btn-close",
+      "btn-group",
+      "bulk-actions",
+      "bulk-actions-count",
+      "bulk-actions-group",
+      "busy",
+      "callout",
+      "callout-title",
+      "card",
+      "card-actions",
+      "card-body",
+      "card-footer",
+      "card-header",
+      "card-subtitle",
+      "card-title",
+      "cart-items",
+      "cart-layout",
+      "cell-actions",
+      "center",
+      "chart",
+      "chart-body",
+      "chart-footer",
+      "chart-header",
+      "chart-legend",
+      "chart-title",
+      "check",
+      "checkout-layout",
+      "chip",
+      "chip-remove",
+      "choice",
+      "choice-content",
+      "choice-description",
+      "choice-grid",
+      "choice-group",
+      "choice-group-label",
+      "choice-meta",
+      "choice-title",
+      "circle",
+      "color-input",
+      "combobox",
+      "combobox-list",
+      "combobox-option",
+      "combobox-option-check",
+      "combobox-panel",
+      "comfortable",
+      "command-bar",
+      "command-body",
+      "command-content",
+      "command-description",
+      "command-divider",
+      "command-empty",
+      "command-footer",
+      "command-group",
+      "command-group-title",
+      "command-icon",
+      "command-item",
+      "command-label",
+      "command-meta",
+      "command-palette",
+      "command-search",
+      "compact",
+      "comparison",
+      "complete",
+      "composer",
+      "composer-actions",
+      "composer-input",
+      "contain",
+      "content-section",
+      "content-state",
+      "content-state-actions",
+      "content-state-description",
+      "content-state-icon",
+      "content-state-title",
+      "conversation",
+      "conversation-actions",
+      "conversation-body",
+      "conversation-header",
+      "cta",
+      "cta-actions",
+      "cta-copy",
+      "cta-description",
+      "cta-title",
+      "current",
+      "customizable",
+      "danger",
+      "danger-zone",
+      "dashboard-grid",
+      "dashed",
+      "data-list",
+      "data-table",
+      "data-table-footer",
+      "data-table-meta",
+      "data-table-toolbar",
+      "desktop-sidebar",
+      "dialog",
+      "dialog-body",
+      "dialog-footer",
+      "dialog-header",
+      "dialog-title",
+      "divider",
+      "dot",
+      "dotted",
+      "down",
+      "drawer",
+      "drawer-body",
+      "drawer-footer",
+      "drawer-header",
+      "drawer-title",
+      "dropzone",
+      "dropzone-content",
+      "dropzone-description",
+      "dropzone-title",
+      "end",
+      "error",
+      "fab",
+      "feature",
+      "feature-copy",
+      "feature-grid",
+      "feature-icon",
+      "feature-list",
+      "feature-title",
+      "featured",
+      "field",
+      "field-control",
+      "field-error",
+      "field-help",
+      "field-label",
+      "field-status",
+      "field-success",
+      "field-warning",
+      "fieldset",
+      "figure",
+      "figure-caption",
+      "file",
+      "file-actions",
+      "file-browser",
+      "file-browser-footer",
+      "file-browser-header",
+      "file-card",
+      "file-card-preview",
+      "file-content",
+      "file-grid",
+      "file-icon",
+      "file-list",
+      "file-meta",
+      "file-name",
+      "file-row",
+      "filled",
+      "filter-bar",
+      "filter-chip",
+      "filter-chip-count",
+      "filter-chip-remove",
+      "filter-chips",
+      "filter-group",
+      "filter-label",
+      "fixed",
+      "flat",
+      "flex",
+      "flex-col",
+      "flex-row",
+      "flex-wrap",
+      "floating",
+      "flush",
+      "font-bold",
+      "font-medium",
+      "font-normal",
+      "font-semibold",
+      "form-actions",
+      "form-grid",
+      "form-row",
+      "gallery",
+      "gallery-item",
+      "gap-1",
+      "gap-2",
+      "gap-3",
+      "gap-4",
+      "gap-6",
+      "gap-8",
+      "ghost",
+      "glide",
+      "gradient",
+      "grid",
+      "has-end",
+      "has-start",
+      "hero",
+      "hero-actions",
+      "hero-content",
+      "hero-copy",
+      "hero-media",
+      "hero-title",
+      "hidden",
+      "hierarchy",
+      "hierarchy-level",
+      "hierarchy-node",
+      "horizontal",
+      "hover",
+      "hover-card",
+      "hover-card-panel",
+      "icon",
+      "identity",
+      "identity-actions",
+      "identity-content",
+      "identity-meta",
+      "identity-name",
+      "image-card",
+      "image-card-content",
+      "inbox",
+      "indeterminate",
+      "info",
+      "inline",
+      "inline-block",
+      "inline-flex",
+      "input",
+      "input-action",
+      "input-addon",
+      "input-decor",
+      "input-group",
+      "input-wrap",
+      "interactive",
+      "invoice",
+      "invoice-header",
+      "invoice-items",
+      "invoice-meta",
+      "invoice-total",
+      "items-center",
+      "items-end",
+      "items-start",
+      "justify-between",
+      "justify-center",
+      "justify-end",
+      "justify-start",
+      "kbd",
+      "key-hint",
+      "l-center",
+      "l-cluster",
+      "l-cover",
+      "l-cover-center",
+      "l-grid",
+      "l-sidebar",
+      "l-split",
+      "l-stack",
+      "legend-item",
+      "legend-swatch",
+      "lg",
+      "lightbox",
+      "lightbox-bar",
+      "lightbox-caption",
+      "lightbox-stage",
+      "link",
+      "list-content",
+      "list-description",
+      "list-group",
+      "list-item",
+      "list-leading",
+      "list-title",
+      "list-trailing",
+      "loading-region",
+      "logo-cloud",
+      "loose",
+      "m-0",
+      "maintenance",
+      "max-w-full",
+      "mb-2",
+      "mb-4",
+      "md",
+      "me-2",
+      "me-4",
+      "media",
+      "media-body",
+      "media-frame",
+      "media-meta",
+      "media-placeholder",
+      "media-placeholder-icon",
+      "media-title",
+      "mega-menu",
+      "mega-menu-chevron",
+      "mega-menu-link",
+      "mega-menu-link-description",
+      "mega-menu-link-title",
+      "mega-menu-panel",
+      "mega-menu-section",
+      "mega-menu-title",
+      "member-card",
+      "member-card-actions",
+      "member-grid",
+      "menu",
+      "menu-item",
+      "menu-label",
+      "menu-separator",
+      "message",
+      "message-bubble",
+      "message-meta",
+      "message-preview",
+      "message-row",
+      "message-sender",
+      "message-subject",
+      "message-system",
+      "message-time",
+      "meter",
+      "meter-header",
+      "meter-native",
+      "meter-value",
+      "metric",
+      "metric-comparison",
+      "metric-footer",
+      "metric-header",
+      "metric-label",
+      "metric-value",
+      "mobile-nav",
+      "mobile-nav-icon",
+      "mobile-nav-label",
+      "mobile-nav-link",
+      "mobile-nav-list",
+      "money",
+      "ms-2",
+      "ms-4",
+      "mt-2",
+      "mt-4",
+      "mx-auto",
+      "nav",
+      "nav-item",
+      "nav-link",
+      "nav-rail",
+      "navbar",
+      "navbar-actions",
+      "navbar-brand",
+      "navbar-disclosure",
+      "navbar-nav",
+      "navbar-panel",
+      "navbar-toggle",
+      "navbar-toggle-icon",
+      "negative",
+      "neutral",
+      "no",
+      "no-print",
+      "no-results",
+      "notification-actions",
+      "notification-center",
+      "notification-content",
+      "notification-header",
+      "notification-item",
+      "notification-list",
+      "notification-meta",
+      "notification-title",
+      "nowrap",
+      "numeric",
+      "offline",
+      "onboarding",
+      "onboarding-actions",
+      "onboarding-choice",
+      "onboarding-choices",
+      "onboarding-header",
+      "onboarding-panel",
+      "onboarding-progress",
+      "online",
+      "order-content",
+      "order-items",
+      "order-meta",
+      "order-row",
+      "order-summary",
+      "order-title",
+      "order-total",
+      "otp",
+      "outline",
+      "overflow-auto",
+      "overflow-hidden",
+      "overlay",
+      "own",
+      "p-2",
+      "p-4",
+      "p-6",
+      "page-description",
+      "page-header",
+      "page-header-actions",
+      "page-header-main",
+      "page-link",
+      "page-title",
+      "pagination",
+      "panel",
+      "payment-method",
+      "payment-method-icon",
+      "payment-summary",
+      "pe-2",
+      "pe-4",
+      "permission-required",
+      "pills",
+      "popover",
+      "positive",
+      "presence",
+      "pricing-actions",
+      "pricing-amount",
+      "pricing-card",
+      "pricing-card-badge",
+      "pricing-description",
+      "pricing-grid",
+      "pricing-name",
+      "pricing-period",
+      "pricing-price",
+      "primary",
+      "print-only",
+      "product-content",
+      "product-meta",
+      "product-price",
+      "product-row",
+      "product-thumb",
+      "product-title",
+      "profile-card",
+      "profile-card-actions",
+      "profile-card-bio",
+      "profile-card-content",
+      "profile-card-header",
+      "profile-card-name",
+      "profile-card-role",
+      "profile-header",
+      "profile-header-actions",
+      "profile-header-copy",
+      "profile-header-main",
+      "profile-header-subtitle",
+      "profile-header-title",
+      "profile-stat",
+      "profile-stat-label",
+      "profile-stat-value",
+      "profile-stats",
+      "progress",
+      "progress-bar",
+      "ps-2",
+      "ps-4",
+      "pulse",
+      "quantity-control",
+      "radio",
+      "raised",
+      "range",
+      "rating",
+      "rating-count",
+      "rating-star",
+      "rating-stars",
+      "rating-value",
+      "ratio-photo",
+      "ratio-portrait",
+      "ratio-square",
+      "ratio-video",
+      "ratio-wide",
+      "reaction",
+      "reaction-count",
+      "reaction-group",
+      "receipt",
+      "receipt-header",
+      "receipt-items",
+      "receipt-meta",
+      "receipt-total",
+      "recent-searches",
+      "reeris-container",
+      "relative",
+      "required",
+      "responsive",
+      "result-content",
+      "result-description",
+      "result-group",
+      "result-group-title",
+      "result-icon",
+      "result-item",
+      "result-list",
+      "result-meta",
+      "result-search",
+      "result-title",
+      "rounded",
+      "rounded-full",
+      "rounded-lg",
+      "search-empty",
+      "search-field",
+      "search-field-clear",
+      "search-field-icon",
+      "search-highlight",
+      "search-results",
+      "secondary-nav",
+      "secondary-nav-link",
+      "secondary-nav-list",
+      "section-copy",
+      "section-eyebrow",
+      "section-header",
+      "section-title",
+      "security-item",
+      "security-item-content",
+      "security-item-icon",
+      "security-item-meta",
+      "security-item-title",
+      "segment",
+      "segmented",
+      "select",
+      "selected",
+      "setting-control",
+      "setting-copy",
+      "setting-description",
+      "setting-label",
+      "setting-row",
+      "settings-actions",
+      "settings-content",
+      "settings-group",
+      "settings-layout",
+      "settings-nav",
+      "settings-section",
+      "settings-section-description",
+      "settings-section-header",
+      "settings-section-title",
+      "shadow-md",
+      "shadow-sm",
+      "sidebar-chevron",
+      "sidebar-group",
+      "sidebar-icon",
+      "sidebar-label",
+      "sidebar-link",
+      "sidebar-list",
+      "sidebar-meta",
+      "sidebar-nav",
+      "sidebar-section",
+      "sidebar-section-title",
+      "sidebar-subnav",
+      "skeleton",
+      "sm",
+      "sort-button",
+      "span-3",
+      "span-4",
+      "span-6",
+      "span-8",
+      "span-9",
+      "sparkline",
+      "spinner",
+      "split",
+      "split-btn",
+      "split-btn-trigger",
+      "square",
+      "sr-only",
+      "sr-only-focusable",
+      "stack",
+      "start",
+      "stat",
+      "stat-label",
+      "stat-meta",
+      "stat-value",
+      "stats",
+      "status",
+      "status-dot",
+      "status-flow",
+      "step",
+      "step-description",
+      "step-label",
+      "step-marker",
+      "stepper",
+      "steps",
+      "sticky",
+      "sticky-header",
+      "sticky-start",
+      "storage-meter",
+      "storage-meter-header",
+      "strength",
+      "strength-label",
+      "strength-track",
+      "striped",
+      "strong",
+      "subtle",
+      "success",
+      "summary-actions",
+      "summary-line",
+      "summary-lines",
+      "summary-title",
+      "switch",
+      "tab",
+      "table",
+      "table-wrap",
+      "tabs",
+      "testimonial",
+      "testimonial-author",
+      "testimonial-grid",
+      "testimonial-quote",
+      "text",
+      "text-center",
+      "text-end",
+      "text-start",
+      "textarea",
+      "thumbnail",
+      "timeline",
+      "timeline-body",
+      "timeline-content",
+      "timeline-item",
+      "timeline-marker",
+      "timeline-meta",
+      "timeline-title",
+      "toast",
+      "toast-actions",
+      "toast-close",
+      "toast-content",
+      "toast-description",
+      "toast-icon",
+      "toast-region",
+      "toast-title",
+      "toolbar",
+      "toolbar-group",
+      "toolbar-title",
+      "tooltip",
+      "total",
+      "transaction-amount",
+      "transaction-content",
+      "transaction-list",
+      "transaction-meta",
+      "transaction-row",
+      "transaction-title",
+      "tree",
+      "tree-children",
+      "tree-icon",
+      "tree-item",
+      "tree-label",
+      "tree-meta",
+      "tree-row",
+      "tree-toggle",
+      "trend",
+      "typing-indicator",
+      "underline",
+      "up",
+      "upload-error",
+      "upload-item",
+      "upload-queue",
+      "upload-status",
+      "user-row",
+      "user-row-meta",
+      "verification-code",
+      "verification-meta",
+      "vertical",
+      "view-controls",
+      "view-switcher",
+      "viz-bar",
+      "viz-bar-fill",
+      "viz-bar-label",
+      "viz-bar-row",
+      "viz-bar-track",
+      "viz-bar-value",
+      "viz-ring",
+      "viz-ring-value",
+      "vote",
+      "vote-button",
+      "vote-score",
+      "w-full",
+      "warning",
+      "well",
+      "widget",
+      "widget-actions",
+      "widget-body",
+      "widget-description",
+      "widget-footer",
+      "widget-header",
+      "widget-heading",
+      "widget-title",
+      "wizard",
+      "wizard-body",
+      "wizard-footer",
+      "wizard-header",
+      "wizard-progress",
+      "wizard-progress-meta",
+      "workflow",
+      "workflow-content",
+      "workflow-item",
+      "workflow-marker",
+      "workflow-meta",
+      "workflow-title",
+      "xl",
+      "xs",
+      "yes"
+    ],
+    "tokens": [
+      {
+        "name": "--reeris-alert-border-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-alert-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-alert-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-amber-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-anchor",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-anchor-name",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-auth-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-auth-max-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-auth-panel-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-avatar-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-avatar-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-badge-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-blue-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-border-0",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-border-1",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-border-2",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-border-3",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-border-4",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-font-weight",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-button-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-card-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-chip-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-choice-min",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-close-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-accent",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-background",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-muted",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-primary",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-strong",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-success",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-border-warning",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-canvas",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-info",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-accent",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-info",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-primary",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-success",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-surface",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-surface-muted",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-on-warning",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-primary",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-primary-subtle",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-success",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-surface",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-surface-muted",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-surface-raised",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-surface-strong",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-color-surface-subtle",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-text",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-text-muted",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-color-warning",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-command-item-min-block-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-command-max-block-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-command-max-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-commerce-summary-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-commerce-thumb-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-component-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-component-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-icon-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-icon-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-icon-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-max-description",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-state-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-content-width",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-control-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-control-md",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-control-sm",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-control-xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-control-xs",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cover-size",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-cyan-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-cyan-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-density-factor",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-dialog-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-divider-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-drawer-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-dropdown-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-dropzone-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-dropzone-min-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-duration-fast",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-duration-instant",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-duration-normal",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-duration-slow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-duration-slower",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-ease-bounce",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-ease-enter",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-ease-exit",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-ease-standard",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-emerald-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-fab-offset",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-fab-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-fab-size-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-feature-min-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-border-focus",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-border-hover",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-placeholder",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-field-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-file-card-min",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-file-icon-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-filter-bar-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-filter-bar-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-filter-chip-active-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-filter-chip-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-focus-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-focus-offset",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-focus-style",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-focus-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-body",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-code",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-heading",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-sans",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-2xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-3xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-4xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-base",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-md",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-sm",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-size-xs",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-ui",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-black",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-bold",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-extrabold",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-extralight",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-light",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-medium",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-normal",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-semibold",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-font-weight-thin",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gallery-cols",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-gallery-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gallery-mobile-cols",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-glide-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-glide-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-glide-duration",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-glide-ease",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-glide-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-accent",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-brand",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-primary",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-success",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-surface",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gradient-warning",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-gray-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-grid-min",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-hero-max-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-hover-card-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-icon-stroke",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-image-card-ratio",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-indigo-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-indigo-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-layout-gap",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-layout-gutter",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-lime-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-lime-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-line-height-normal",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-line-height-relaxed",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-line-height-snug",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-line-height-tight",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-list-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-list-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-list-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-marketing-copy-max-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-media-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-media-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-media-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-media-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-mega-menu-columns",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-mega-menu-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-mega-menu-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-mega-menu-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-message-max-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-message-padding-block",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-message-padding-inline",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-message-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-mobile-nav-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-mobile-nav-count",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-mobile-nav-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-active-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-active-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-item-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-item-padding-inline",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-nav-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-navbar-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-navbar-panel-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-navbar-panel-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-navbar-panel-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-navbar-toggle-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-notification-unread-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-onboarding-steps",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-orange-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-orange-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-overlay-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-overlay-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-overlay-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-overlay-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-overlay-surface",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-page-header-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pagination-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-panel-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-panel-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-panel-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pink-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-placeholder-ratio",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-popover-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-presence-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-pricing-min-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-profile-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-profile-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-profile-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-profile-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-progress-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-progress-fill",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-progress-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-progress-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-progress-value",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-purple-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-purple-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-2xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-3xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-full",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-md",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-none",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-sm",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-radius-xs",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rating-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rating-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-receipt-max-inline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-red-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-rose-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-bottom",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-inline-end",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-inline-start",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-left",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-right",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-safe-top",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-secondary-nav-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-section-padding-block",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-settings-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-settings-row-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-settings-sidebar-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-2xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-md",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-none",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-sm",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shadow-xs",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-sidebar-collapsed-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-sidebar-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-surface",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-shell-topbar-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-sidebar-active-indicator",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-sidebar-content-min",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-sidebar-icon-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-sidebar-item-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-sidebar-section-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-sidebar-width",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-skeleton-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-slate-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-0",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-0-5",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-1",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-1-5",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-10",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-12",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-16",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-2",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-2-5",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-20",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-24",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-3",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-32",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-4",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-5",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-6",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-8",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-fluid-lg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-fluid-md",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-fluid-sm",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-space-fluid-xl",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-spinner-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-spinner-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-stat-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-stat-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-stat-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-step-count",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-table-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-cell-padding-block",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-cell-padding-inline",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-header-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-row-hover-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-table-row-selected-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tabs-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-target-min",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-teal-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-thumbnail-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-timeline-line",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-timeline-marker",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-border-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-offset",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-padding",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-toast-width",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tooltip-anchor",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-tooltip-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tooltip-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tree-guide-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tree-indent",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tree-row-min-height",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-tree-row-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-value",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-violet-100",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-200",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-300",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-400",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-50",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-500",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-600",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-700",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-800",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-900",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-violet-950",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-accent",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-color",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-grid",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-primary",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-success",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-track",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-viz-warning",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-well-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-widget-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-widget-border",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-widget-radius",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-complete",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-current",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-danger",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-line",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-marker-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-workflow-pending",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-z-dropdown",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-z-fixed",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-z-popover",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-z-sticky",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-z-toast",
+        "kind": "override hook (fallback-only)"
+      }
+    ],
+    "dataAttributes": [
+      {
+        "name": "data-reeris-active",
+        "details": [
+          "value: true"
+        ]
+      },
+      {
+        "name": "data-reeris-anchor",
+        "details": [
+          "presence"
+        ]
+      },
+      {
+        "name": "data-reeris-glide",
+        "details": []
+      },
+      {
+        "name": "data-reeris-glide-instant",
+        "details": [
+          "presence"
+        ]
+      },
+      {
+        "name": "data-reeris-glide-item",
+        "details": []
+      },
+      {
+        "name": "data-reeris-glide-items",
+        "details": []
+      },
+      {
+        "name": "data-reeris-glide-ready",
+        "details": [
+          "presence"
+        ]
+      },
+      {
+        "name": "data-reeris-position",
+        "details": [
+          "value: anchor"
+        ]
+      },
+      {
+        "name": "data-reeris-state",
+        "details": [
+          "value: active",
+          "value: closing",
+          "value: collapsed",
+          "value: complete",
+          "value: current",
+          "value: dragover",
+          "value: error",
+          "value: loading",
+          "value: success",
+          "value: unread"
+        ]
+      },
+      {
+        "name": "data-reeris-strength",
+        "details": [
+          "value: fair",
+          "value: good",
+          "value: strong",
+          "value: weak"
+        ]
+      },
+      {
+        "name": "data-reeris-tooltip-anchor",
+        "details": [
+          "presence"
+        ]
+      }
+    ],
+    "packageExports": [
+      {
+        "package": "@reeris/core",
+        "name": ".",
+        "target": "./dist/reeris.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./components/*.css",
+        "target": "./dist/components/*.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./forms/*.css",
+        "target": "./dist/forms/*.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./layout/*.css",
+        "target": "./dist/layout/*.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./reeris.css",
+        "target": "./dist/reeris.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./reeris.css.map",
+        "target": "./dist/reeris.css.map"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./reeris.min.css",
+        "target": "./dist/reeris.min.css"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./reeris.min.css.map",
+        "target": "./dist/reeris.min.css.map"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./sources/*",
+        "target": "./dist/sources/*"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./tokens.js",
+        "target": "./dist/tokens.js"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./tokens.json",
+        "target": "./dist/tokens.json"
+      },
+      {
+        "package": "@reeris/core",
+        "name": "./utilities/*.css",
+        "target": "./dist/utilities/*.css"
+      },
+      {
+        "package": "@reeris/js",
+        "name": ".",
+        "target": "./dist/index.js"
+      },
+      {
+        "package": "@reeris/js",
+        "name": "./glide-navigation",
+        "target": "./dist/glide-navigation.js"
+      }
+    ],
+    "jsApi": [
+      {
+        "name": "destroy",
+        "kind": "function"
+      },
+      {
+        "name": "getInstance",
+        "kind": "function"
+      },
+      {
+        "name": "GlideNavigation",
+        "kind": "class"
+      },
+      {
+        "name": "GlideNavigation",
+        "kind": "re-export"
+      },
+      {
+        "name": "init",
+        "kind": "function"
+      }
+    ]
+  }
+}

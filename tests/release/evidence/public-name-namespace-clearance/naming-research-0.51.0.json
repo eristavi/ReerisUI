@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "naming-research-0.51.0",
+  "releaseVersion": "0.51.0",
+  "gateId": "public-name-namespace-clearance",
+  "kind": "name-clearance",
+  "role": "supplemental",
+  "collectedAt": "2026-09-25T12:31:00.000Z",
+  "outcome": "inconclusive",
+  "claims": [],
+  "coverage": [
+    "project-name-clearance",
+    "package-namespace-clearance",
+    "repository-domain-clearance"
+  ],
+  "environment": {
+    "method": "public web exact/near-exact software, company, package, domain-index and trademark research",
+    "selectedName": "Reeris UI",
+    "canonicalRepository": "Eristavi/ReerisUI",
+    "intendedPackageScope": "@reeris",
+    "limitations": [
+      "The npm scope/package names have not yet been successfully reserved through npm itself.",
+      "Authoritative registrar/RDAP reservation has not yet been completed for preferred domains.",
+      "Public trademark research is not a legal opinion or formal similarity clearance."
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "docs/naming-clearance-0.51.md",
+      "sha256": "f625a5deb1561838eb94b9346c3b4249462ef1023b4069141e20e984eeb774bb",
+      "description": "Human-readable Reeris UI naming selection and publication-clearance report."
+    },
+    {
+      "path": "tests/release/history/naming-clearance-0.51.0.json",
+      "sha256": "e26126c81294f040037eb4d202036b5d92f0d8bb0af9281e8dc13009cc86c9aa",
+      "description": "Immutable machine-readable Reeris UI 0.51 naming selection and open publication-gate snapshot."
+    },
+    {
+      "path": "docs/reva-to-reeris-migration-0.51.md",
+      "sha256": "53bb83f99a22500df57b540404c027c5e06f5029cae08f55c8038b956a2418f2",
+      "description": "Pre-1.0 public API rename migration note."
+    }
+  ],
+  "notes": "Reeris UI is selected for the pre-1.0 source rename. Public research found no material exact software-framework collision, but this supplemental evidence intentionally does not close npm/domain/trademark publication criteria.",
+  "review": {
+    "status": "approved",
+    "reviewedBy": "OpenAI research pass",
+    "reviewedAt": "2026-09-25T12:31:00.000Z",
+    "notes": "Approved as supplemental research evidence only; no legal clearance or live namespace/domain availability claim is made."
+  }
+}

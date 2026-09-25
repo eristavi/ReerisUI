@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "naming-research-0.52.0",
+  "releaseVersion": "0.52.0",
+  "gateId": "public-name-namespace-clearance",
+  "kind": "name-clearance",
+  "role": "supplemental",
+  "collectedAt": "2026-09-25T15:40:00.000Z",
+  "outcome": "inconclusive",
+  "claims": [],
+  "coverage": [
+    "project-name-clearance",
+    "package-namespace-clearance",
+    "repository-domain-clearance"
+  ],
+  "environment": {
+    "method": "public web exact/near-exact software, package-index, repository, domain-index/DNS and trademark research",
+    "selectedName": "Reeris UI",
+    "canonicalRepository": "Eristavi/ReerisUI",
+    "intendedPackageScope": "@reeris",
+    "limitations": [
+      "npm package pages returned HTTP 403 to anonymous verification in this environment.",
+      "The canonical GitHub repository URL returned HTTP 404 publicly at check time.",
+      "Candidate domains had no observed DNS records or material indexed use, but registrar availability was not authoritative.",
+      "Public trademark research is not a legal opinion or formal similarity clearance."
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "docs/identity-reservation-0.52.md",
+      "sha256": "63e313c754990bfe6acfc8b29dcc51b2ac26633e90591a3add3bb22aead49f8a",
+      "description": "Human-readable Reeris UI identity reservation and publication clearance report."
+    },
+    {
+      "path": "tests/release/identity-reservation.json",
+      "sha256": "f23311c89a0b12f063a00dfaaedd59f5991eda0e2ff080bb145886c233724a0e",
+      "description": "Machine-readable Reeris identity reservation matrix."
+    },
+    {
+      "path": "tests/release/naming-clearance.json",
+      "sha256": "2a5bb15f928a3dd1277904b3d16a9d8df604c1b03e334fb80d70ac516c824891",
+      "description": "Current Reeris naming-selection and open-gate status."
+    }
+  ],
+  "notes": "Public research remains encouraging but intentionally does not close npm, domain/repository, or formal trademark criteria.",
+  "review": {
+    "status": "approved",
+    "reviewedBy": "OpenAI research pass",
+    "reviewedAt": "2026-09-25T15:40:00.000Z",
+    "notes": "Approved as supplemental evidence only; account-level reservation and formal legal clearance remain required."
+  }
+}

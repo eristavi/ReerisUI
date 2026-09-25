@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris Starter — Data Management</title>
+  <link rel="stylesheet" href="../../packages/core/dist/reeris.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="app-sidebar">
+    <div class="app-sidebar-header"><strong>Reeris</strong></div>
+    <div class="app-sidebar-body">
+      <nav class="nav vertical" aria-label="Workspace navigation">
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link active" aria-current="page" href="#customers">Customers</a>
+        <a class="nav-link" href="#segments">Segments</a>
+        <a class="nav-link" href="#imports">Imports</a>
+      </nav>
+    </div>
+    <div class="app-sidebar-footer"><span class="app-sidebar-label">Data workspace</span></div>
+  </aside>
+
+  <header class="app-topbar">
+    <h1 class="app-topbar-title">Customers</h1>
+    <div class="app-topbar-actions"><button class="btn primary sm" type="button">Add customer</button></div>
+  </header>
+
+  <main class="app-main" id="customers">
+    <div class="app-workspace l-stack" style="--reeris-stack-gap:var(--reeris-space-5)">
+      <header class="page-header">
+        <div class="page-header-main"><span class="badge primary">Official starter</span><h2 class="page-title">Customer management</h2><p class="page-description">Search, filter, review and act on structured data without a custom application stylesheet.</p></div>
+        <div class="page-header-actions"><button class="btn outline" type="button">Import</button><button class="btn primary" type="button">New customer</button></div>
+      </header>
+
+      <section class="filter-bar" aria-label="Customer filters">
+        <label class="search-field"><span class="sr-only">Search customers</span><span class="search-field-icon" aria-hidden="true">⌕</span><input type="search" placeholder="Search customers"></label>
+        <div class="filter-group"><button class="btn outline sm" type="button">Status</button><button class="btn outline sm" type="button">Segment</button><button class="btn outline sm" type="button">Owner</button></div>
+        <div class="view-controls end"><span class="command-label">View</span><div class="view-switcher"><button class="btn ghost sm" type="button" aria-pressed="true">Table</button><button class="btn ghost sm" type="button" aria-pressed="false">Cards</button></div></div>
+      </section>
+
+      <ul class="filter-chips" aria-label="Active filters">
+        <li><span class="filter-chip active">Active <span class="filter-chip-count">128</span><button class="filter-chip-remove" type="button" aria-label="Remove Active filter">×</button></span></li>
+        <li><span class="filter-chip">Enterprise <button class="filter-chip-remove" type="button" aria-label="Remove Enterprise filter">×</button></span></li>
+      </ul>
+
+      <div class="bulk-actions" data-reeris-state="active">
+        <span class="bulk-actions-count">2 selected</span>
+        <div class="bulk-actions-group"><button class="btn outline sm" type="button">Assign owner</button><button class="btn outline sm" type="button">Export</button><button class="btn danger outline sm" type="button">Archive</button></div>
+      </div>
+
+      <section class="data-table" aria-labelledby="customer-table-title">
+        <div class="data-table-toolbar"><strong id="customer-table-title">Customer directory</strong><div class="actions"><button class="btn ghost sm" type="button">Columns</button></div></div>
+        <div class="table-wrap">
+          <table class="table striped hover sticky-header">
+            <caption class="sr-only">Customer accounts</caption>
+            <thead><tr><th scope="col"><span class="sr-only">Select</span></th><th scope="col" aria-sort="ascending"><button class="sort-button" type="button">Customer</button></th><th scope="col">Segment</th><th scope="col">Status</th><th scope="col">Owner</th><th scope="col" class="numeric">Revenue</th></tr></thead>
+            <tbody>
+              <tr aria-selected="true"><td><input type="checkbox" checked aria-label="Select Northstar Labs"></td><th scope="row">Northstar Labs</th><td>Enterprise</td><td><span class="badge success">Active</span></td><td>Mira Chen</td><td class="numeric">€84,400</td></tr>
+              <tr aria-selected="true"><td><input type="checkbox" checked aria-label="Select Meridian Group"></td><th scope="row">Meridian Group</th><td>Enterprise</td><td><span class="badge success">Active</span></td><td>Alex Kim</td><td class="numeric">€62,750</td></tr>
+              <tr><td><input type="checkbox" aria-label="Select Cobalt Studio"></td><th scope="row">Cobalt Studio</th><td>Growth</td><td><span class="badge warning">Review</span></td><td>Sam Lee</td><td class="numeric">€19,900</td></tr>
+              <tr><td><input type="checkbox" aria-label="Select Atlas Works"></td><th scope="row">Atlas Works</th><td>Starter</td><td><span class="badge">Trial</span></td><td>Unassigned</td><td class="numeric">€4,250</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="data-table-footer"><span class="data-table-meta">Showing 4 of 128 customers</span><nav class="pagination" aria-label="Customer pages"><a class="page-link" href="#" aria-label="Previous page">‹</a><a class="page-link active" href="#" aria-current="page">1</a><a class="page-link" href="#">2</a><a class="page-link" href="#">3</a><a class="page-link" href="#" aria-label="Next page">›</a></nav></div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

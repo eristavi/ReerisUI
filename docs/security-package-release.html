@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — Security, CSP & Package Release 0.41</title>
+  <link rel="stylesheet" href="../packages/core/dist/reeris.css">
+  <link rel="stylesheet" href="assets/docs.css">
+  <script type="module" src="assets/docs.js"></script>
+</head>
+<body class="docs-body">
+<header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a href="api-reference.html">API</a></nav></header>
+<main class="docs-home">
+  <section class="docs-hero">
+    <span class="badge primary">Reeris UI 0.41</span>
+    <h1>Security, CSP & package release hardening</h1>
+    <p>Release security is treated as an auditable contract rather than a publishing-time checklist.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Strict CSP boundary</h2>
+    <p>Normal Core operation requires no JavaScript. Optional <code>@reeris/js</code> is audited against dynamic-code, unsafe-HTML, storage, network and script/style-injection sinks. A strict-CSP fixture runs with external CSS/JS only and does not request <code>unsafe-inline</code> or <code>unsafe-eval</code>.</p>
+    <p>The glide enhancement sets constrained CSS custom properties through the CSSOM for measured geometry; it does not generate stylesheet text or insert application HTML.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Package boundary</h2>
+    <p><code>@reeris/core</code> and <code>@reeris/js</code> publish only their <code>dist/</code> artifacts plus npm-required metadata, README and MIT license. The private repository <code>src/</code> tree, reports and internal tooling are excluded from the package payload. Reeris 0.42 intentionally publishes mapped CSS source copies under <code>dist/sources/</code> for DevTools source-map resolution.</p>
+    <div class="l-cluster"><span class="badge success">0 production dependencies</span><span class="badge success">MIT</span><span class="badge success">Public scoped packages</span></div>
+  </section>
+  <section class="docs-section">
+    <h2>Release gate</h2>
+    <pre><code>npm run release:check</code></pre>
+    <p>The command rebuilds Reeris, regenerates the API reference, runs every Core acceptance gate including security and package integrity, then writes a SHA-256 release manifest. It deliberately does not publish to npm.</p>
+  </section>
+  <section class="docs-section">
+    <h2>Disclosure policy</h2>
+    <p>The repository root <code>SECURITY.md</code> defines private vulnerability reporting, supported-version policy, coordinated disclosure and security-release handling. <code>CHANGELOG.md</code> records notable release changes.</p>
+  </section>
+</main>
+</body>
+</html>
