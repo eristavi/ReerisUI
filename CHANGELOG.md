@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Added a CSS-only parallax marketing pattern for decorative images, backgrounds, and videos, with subtle (4%), standard (8%), and strong (12%) depth presets plus optional gentle easing.
+- Added static fallback behavior for browsers without scroll-driven animations and reduced-motion handling; decorative video examples use a still poster for reduced-motion viewing.
+- Documented the HTML pattern, custom travel property, video playback limitation, and browser support fallback on the marketing page.
+- Corrected the marketing documentation example to wrap at narrow widths; post-merge browser and documentation CI checks passed.
+
 ## 0.52.0 — Identity Reservation & Publication Clearance
 
 - Added a current Reeris identity-reservation report covering the `@reeris` npm scope/package targets, `Eristavi/ReerisUI`, candidate domains, and trademark-clearance boundary.
