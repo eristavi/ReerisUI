@@ -117,3 +117,41 @@ test('form addons and native date/time inputs fit phone cards', async ({page}) =
     expect(layout.nativeValues).toEqual(['2026-09-26','09:30']);
   }
 });
+
+test('steps keep markers, labels, and connectors aligned on phones', async ({page}) => {
+  for (const width of [320,390]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/navigation.html');
+    const layout=await page.locator('.steps').first().evaluate(steps=>({
+      overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+      items:[...steps.querySelectorAll('.step')].map(step=>{
+        const marker=getComputedStyle(step,'::before');
+        const connector=getComputedStyle(step,'::after');
+        const box=step.getBoundingClientRect();
+        const label=step.querySelector('.step-label').getBoundingClientRect();
+        return {
+          markerColumn:marker.gridColumnStart,
+          markerRow:marker.gridRowStart,
+          labelColumn:getComputedStyle(step.querySelector('.step-label')).gridColumnStart,
+          labelOffset:label.left-box.left,
+          labelFits:label.right<=box.right+1,
+          connectorOffset:parseFloat(connector.left),
+          connectorWidth:parseFloat(connector.width)
+        };
+      })
+    }));
+    expect(layout.overflow, `${width}px navigation overflow`).toBeLessThanOrEqual(1);
+    expect(layout.items).toHaveLength(4);
+    for (const item of layout.items) {
+      expect(item.markerColumn, `${width}px marker column`).toBe('1');
+      expect(item.markerRow, `${width}px marker row`).toBe('1');
+      expect(item.labelColumn, `${width}px label column`).toBe('2');
+      expect(item.labelOffset, `${width}px label offset`).toBeGreaterThanOrEqual(40);
+      expect(item.labelFits, `${width}px label fits`).toBe(true);
+    }
+    for (const item of layout.items.slice(0,-1)) {
+      expect(item.connectorOffset, `${width}px connector center`).toBe(16);
+      expect(item.connectorWidth, `${width}px connector width`).toBe(1);
+    }
+  }
+});
