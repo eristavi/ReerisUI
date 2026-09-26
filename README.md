@@ -2,6 +2,8 @@
 
 A modern, native-web UI framework. HTML and CSS first. No JavaScript required by the core and no consumer build step required.
 
+**Documentation:** [Browse the Reeris UI docs](https://eristavi.github.io/ReerisUI/docs/index.html)
+
 ## Status
 
 Reeris UI 0.51 — Naming & Publication Clearance Research. Core remains feature-frozen and the public Core/JS API remains under the RC freeze baseline. The public-name gate remains open: current research found material conflicts around the Reeris identity, including active software products/projects using Reeris and prior exact Reeris UI use. A rename review is recommended before public publication; no package namespace has been changed yet.
