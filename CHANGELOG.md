@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Centered the selected text vertically inside customizable native selects.
 - Replaced the doubled form focus border/outline with one soft focus halo and a high-contrast outline fallback; removed the duplicate arrow from customizable selects and refined native multi-select option spacing and scrollbar controls.
 - Added a CSS scroll progress indicator driven by the root scroll timeline, with unsupported-browser and reduced-motion fallbacks.
 - Added an image card that stacks or splits according to a named container query, and used native CSS nesting for its variant rules.

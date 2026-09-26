@@ -333,10 +333,12 @@ test('form focus has one halo and selects keep native controls aligned', async (
   const select=await page.locator('select.select.customizable').evaluate(element=>({
     supported:CSS.supports('appearance','base-select'),
     appearance:getComputedStyle(element).appearance,
+    alignItems:getComputedStyle(element).alignItems,
     image:getComputedStyle(element).backgroundImage
   }));
   if (select.supported) {
     expect(select.appearance).toBe('base-select');
+    expect(select.alignItems).toBe('center');
     expect(select.image).toBe('none');
   }
   const multiple=await page.locator('select.select[multiple]').evaluate(element=>({

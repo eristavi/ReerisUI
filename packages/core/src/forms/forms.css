@@ -207,7 +207,7 @@
 
   /* Progressive customizable native select. Browsers without base-select keep the normal native select. */
   @supports (appearance: base-select) {
-    :where(.select.customizable) { appearance: base-select; padding-inline-end: var(--_field-px); background-image: none; }
+    :where(.select.customizable) { appearance: base-select; align-items: center; padding-inline-end: var(--_field-px); background-image: none; }
     :where(.select.customizable)::picker(select) { appearance: base-select; max-block-size: min(22rem,70dvh); margin-block-start: var(--reeris-space-1); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-component-radius); background: var(--reeris-color-surface-raised); color: var(--reeris-color-text); box-shadow: var(--reeris-shadow-lg); }
     :where(.select.customizable option) { padding: var(--reeris-space-2) var(--reeris-space-3); }
     :where(.select.customizable option:checked) { background: color-mix(in oklch,var(--reeris-color-primary) 14%,var(--reeris-color-surface)); color: var(--reeris-color-text); }
