@@ -20,8 +20,12 @@ fs.copyFileSync(builtCss, path.join(docsOut, 'assets/reeris.css'));
 for (const name of fs.readdirSync(docsOut)) {
   if (!name.endsWith('.html')) continue;
   const file = path.join(docsOut, name);
-  const html = fs.readFileSync(file, 'utf8')
+  let html = fs.readFileSync(file, 'utf8')
     .replaceAll('../packages/core/src/reeris.css', 'assets/reeris.css');
+  if (name !== 'index.html' && name !== 'api-reference.html') {
+    if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
+    html = html.replace(/<body([^>]*)>/i, '<body$1><a class="docs-back-link" href="index.html">← Reeris docs</a>');
+  }
   fs.writeFileSync(file, html);
 }
 
@@ -31,6 +35,10 @@ if (fs.existsSync(path.join(root, 'examples'))) {
 
 fs.mkdirSync(path.join(out, 'packages/core/dist'), { recursive: true });
 fs.copyFileSync(builtCss, path.join(out, 'packages/core/dist/reeris.css'));
+fs.cpSync(path.join(root, 'packages/js/dist'), path.join(out, 'packages/js/dist'), { recursive: true });
+for (const fixture of ['i18n', 'themes']) {
+  fs.cpSync(path.join(root, 'tests', fixture), path.join(out, 'tests', fixture), { recursive: true });
+}
 
 const redirect = '<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=docs/index.html"><title>Reeris UI Docs</title></head><body><a href="docs/index.html">Open Reeris UI documentation</a></body></html>\n';
 fs.writeFileSync(path.join(out, 'index.html'), redirect);
