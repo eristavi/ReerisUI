@@ -81,7 +81,7 @@ test('narrow viewport has no document-level horizontal overflow', async ({page})
       offenders:[...document.querySelectorAll('body *')].filter(el=>{
         const box=el.getBoundingClientRect();
         return box.width && (box.right>document.documentElement.clientWidth+1 || box.left<-1);
-      }).slice(0,8).map(el=>`${el.tagName.toLowerCase()}${el.className && typeof el.className==='string' ? '.'+el.className.trim().replace(/\s+/g,'.') : ''} (${Math.round(el.getBoundingClientRect().left)}–${Math.round(el.getBoundingClientRect().right)})`)
+      }).slice(0,8).map(el=>`${el.tagName.toLowerCase()}${el.className && typeof el.className==='string' ? '.'+el.className.trim().replace(/\s+/g,'.') : ''} (${Math.round(el.getBoundingClientRect().left)}–${Math.round(el.getBoundingClientRect().right)}; ${el.textContent.trim().slice(0,40)})`)
     }));
     expect(layout.overflow, `${pathname} overflows at 320px: ${layout.offenders.join(', ')}`).toBeLessThanOrEqual(1);
     if (layout.shellColumns !== null) expect(layout.shellColumns, `${pathname} docs shell`).toBe(1);
