@@ -2977,10 +2977,11 @@
   @keyframes reeris-typing { 0% { inline-size:0; } 100% { inline-size:1.2em; } }
 
   @container (max-width: 38rem) {
-    :where(.message-sender,.message-subject,.message-preview,.message-time) { overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; }
-    :where(.message-row) { grid-template-columns:auto minmax(0,1fr) auto; }
-    :where(.message-subject) { grid-column:2; }
-    :where(.message-preview) { grid-column:2 / -1; }
+    :where(.message-row) { grid-template-columns:auto minmax(0,1fr) auto; align-items:start; }
+    :where(.message-row > .message-sender) { grid-column:2; grid-row:1; min-inline-size:0; }
+    :where(.message-row > .message-time) { grid-column:3; grid-row:1; }
+    :where(.message-row > :nth-child(3)) { grid-column:2 / -1; grid-row:2; min-inline-size:0; overflow-wrap:anywhere; }
+    :where(.message-subject,.message-preview) { white-space:normal; }
     :where(.notification-item) { grid-template-columns:auto minmax(0,1fr); }
     :where(.notification-actions) { grid-column:2; }
   }

@@ -112,6 +112,34 @@ test('conversation header keeps the contact name and status readable', async ({p
   }
 });
 
+test('inbox sender and preview use separate rows on phones', async ({page}) => {
+  for (const width of [320, 390]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/.reeris-docs-site/docs/messaging.html');
+    for (const row of await page.locator('.message-row').all()) {
+      const layout=await row.evaluate(element=>{
+        const sender=element.querySelector('.message-sender');
+        const content=element.children[2];
+        const time=element.querySelector('.message-time');
+        const lineHeight=parseFloat(getComputedStyle(sender).lineHeight);
+        return {
+          senderHeight:sender.getBoundingClientRect().height,
+          lineHeight,
+          senderWidth:sender.getBoundingClientRect().width,
+          contentTop:content.getBoundingClientRect().top,
+          senderBottom:sender.getBoundingClientRect().bottom,
+          timeBottom:time.getBoundingClientRect().bottom,
+          overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+        };
+      });
+      expect(layout.senderHeight, `${width}px sender wraps`).toBeLessThanOrEqual(layout.lineHeight+1);
+      expect(layout.senderWidth, `${width}px sender has no room`).toBeGreaterThan(60);
+      expect(layout.contentTop, `${width}px preview overlaps sender`).toBeGreaterThanOrEqual(Math.max(layout.senderBottom,layout.timeBottom));
+      expect(layout.overflow).toBeLessThanOrEqual(1);
+    }
+  }
+});
+
 test('sticky navbar keeps a readable fallback and responds to scroll state', async ({page}) => {
   for (const width of [320, 1024]) {
     await page.setViewportSize({width,height:800});

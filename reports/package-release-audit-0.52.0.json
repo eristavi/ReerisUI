@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T16:19:29.692Z",
+  "generatedAt": "2026-09-26T16:34:31.158Z",
   "summary": {
     "passed": 82,
     "total": 82,
@@ -11,8 +11,8 @@
     {
       "package": "@reeris/core",
       "filename": "reeris-core-0.52.0.tgz",
-      "packageSize": 117532,
-      "unpackedSize": 1010951,
+      "packageSize": 117600,
+      "unpackedSize": 1011393,
       "fileCount": 81,
       "files": [
         "LICENSE",
@@ -323,12 +323,12 @@
     {
       "name": "@reeris/core packed size within budget",
       "pass": true,
-      "detail": "117532 / 150000 B"
+      "detail": "117600 / 150000 B"
     },
     {
       "name": "@reeris/core unpacked size within budget",
       "pass": true,
-      "detail": "1010951 / 1100000 B"
+      "detail": "1011393 / 1100000 B"
     },
     {
       "name": "@reeris/core file count within budget",
