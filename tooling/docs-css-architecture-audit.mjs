@@ -27,7 +27,7 @@ if (!generator.includes('../packages/core/src/reeris.css')) {
 const siteBuilder = fs.readFileSync('tooling/build-docs-site.mjs', 'utf8');
 for (const required of [
   'packages/core/dist/reeris.css',
-  'docs/assets/reeris.css',
+  "path.join(docsOut, 'assets/reeris.css')",
   "replaceAll('../packages/core/src/reeris.css', 'assets/reeris.css')"
 ]) {
   if (!siteBuilder.includes(required)) failures.push(`build-docs-site.mjs missing contract: ${required}`);
