@@ -527,6 +527,10 @@
   :where(input[type="search"].input)::-webkit-search-cancel-button { appearance: none; }
 
   :where(input[type="date"].input,input[type="time"].input,input[type="datetime-local"].input,input[type="month"].input,input[type="week"].input) { appearance: auto; color-scheme: inherit; }
+  /* iOS WebKit includes inline padding beyond a native date/time input's 100% width (WebKit 301648). */
+  @supports (-webkit-touch-callout: none) {
+    :where(input[type="date"].input,input[type="time"].input,input[type="datetime-local"].input,input[type="month"].input,input[type="week"].input) { padding-inline: 0; }
+  }
 
   :where(.file) { display: block; inline-size: 100%; color: var(--reeris-color-text); font-size: var(--reeris-font-size-sm); }
   :where(.file)::file-selector-button { min-block-size: var(--reeris-control-sm); margin-inline-end: var(--reeris-space-3); padding-inline: var(--reeris-space-3); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-field-radius); background: var(--reeris-color-surface-muted); color: var(--reeris-color-text); font: inherit; font-weight: var(--reeris-font-weight-medium); cursor: pointer; }
