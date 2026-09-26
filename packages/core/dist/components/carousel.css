@@ -8,10 +8,10 @@
   /* The scrollport is the component. Native scrolling remains available without the newer controls. */
   :where(.carousel) { position:relative; container-type:inline-size; min-inline-size:0; }
   :where(.carousel-track) {
-    --reeris-carousel-visible:3;
+    --reeris-carousel-slide-size:calc((100% - var(--reeris-carousel-gap) - var(--reeris-carousel-gap)) / 3);
     display:grid;
     grid-auto-flow:column;
-    grid-auto-columns:minmax(0,calc((100% - (var(--reeris-carousel-visible) - 1) * var(--reeris-carousel-gap)) / var(--reeris-carousel-visible)));
+    grid-auto-columns:minmax(0,var(--reeris-carousel-slide-size));
     gap:var(--reeris-carousel-gap);
     overflow-x:auto;
     overscroll-behavior-inline:contain;
@@ -80,9 +80,9 @@
     :where(.carousel.single .carousel-slide)::scroll-marker:focus-visible { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
   }
 
-  @container (max-width:48rem) { :where(.carousel-track) { --reeris-carousel-visible:2; } }
-  @container (max-width:34rem) { :where(.carousel-track) { --reeris-carousel-visible:1; } }
-  :where(.carousel.single .carousel-track) { --reeris-carousel-visible:1; }
+  @container (max-width:48rem) { :where(.carousel-track) { --reeris-carousel-slide-size:calc((100% - var(--reeris-carousel-gap)) / 2); } }
+  @container (max-width:34rem) { :where(.carousel-track) { --reeris-carousel-slide-size:100%; } }
+  :where(.carousel.single .carousel-track) { --reeris-carousel-slide-size:100%; }
   @media (prefers-reduced-motion:reduce) { :where(.carousel-track) { scroll-behavior:auto; } }
   @media (forced-colors:active) {
     :where(.carousel-track)::scroll-button(*) { border-color:ButtonText; background:ButtonFace; color:ButtonText; box-shadow:none; }
