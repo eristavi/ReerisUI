@@ -3,6 +3,9 @@
 <body class="docs-body"><header class="docs-topbar"><a class="docs-brand" href="index.html">Reeris UI</a><nav class="docs-topnav" aria-label="Documentation"><a href="index.html">Docs</a><a href="api-reference.html">API</a></nav></header>
 <main class="docs-home"><section class="docs-hero"><span class="badge primary">Theme contract</span><h1>Themes & token validation</h1><p>CSS custom properties are Reeris's universal runtime theme format. Themes may be partial, nested, and inherited; no JavaScript theme engine or recompilation is required.</p></section>
 <section class="docs-section"><h2>System scheme by default</h2><p>With no theme attribute, Reeris follows the browser/OS color preference. Use <code>data-theme="light"</code> or <code>data-theme="dark"</code> only when an application deliberately overrides that preference.</p></section>
+<section class="docs-section"><h2>Glass style</h2><p>Set <code>data-theme="glass"</code> on the root element to use translucent semantic surfaces over a soft canvas. It selects the light color scheme for native controls, and falls back to opaque surfaces when reduced transparency is requested. The Core style uses CSS only.</p><pre><code>&lt;html lang="en" data-theme="glass"&gt;
+  &lt;!-- Include Reeris Core CSS and use its regular components. --&gt;
+&lt;/html&gt;</code></pre><div class="docs-card-grid"><article class="card"><div class="card-body"><span class="badge primary">Glass</span><h3>Same components, new surface</h3><p>The theme changes inherited colors and surface treatment without changing component markup.</p><button class="btn primary">Primary action</button></div></article></div></section>
 <section class="docs-section"><h2>Partial custom themes</h2><p>A custom theme overrides only the semantic relationships it needs. Everything else continues through normal CSS inheritance.</p><pre><code>[data-theme="ocean"] {
   --reeris-color-primary: oklch(48% .16 235);
   --reeris-color-on-primary: white;

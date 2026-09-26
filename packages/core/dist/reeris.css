@@ -328,6 +328,51 @@
 
   [data-theme="light"] { color-scheme: light; }
   [data-theme="dark"] { color-scheme: dark; }
+  :where(:root)[data-theme="glass"] {
+    color-scheme: light;
+    --reeris-color-canvas: #e8effb;
+    --reeris-color-surface: rgb(255 255 255 / .68);
+    --reeris-color-surface-muted: rgb(239 245 255 / .82);
+    --reeris-color-surface-subtle: rgb(255 255 255 / .52);
+    --reeris-color-surface-raised: rgb(255 255 255 / .88);
+    --reeris-color-text: #17263f;
+    --reeris-color-text-muted: #46566e;
+    --reeris-color-border: rgb(255 255 255 / .82);
+    --reeris-color-border-muted: rgb(255 255 255 / .6);
+    --reeris-color-border-strong: rgb(73 95 128 / .5);
+    --reeris-glass-canvas: radial-gradient(circle at 15% 15%, #bfd8ff 0, transparent 35%), radial-gradient(circle at 85% 55%, #d2c8ff 0, transparent 36%), linear-gradient(140deg, #e8effb, #f7eaf3);
+  }
+}
+
+@layer reeris.base {
+  :where(:root)[data-theme="glass"] body { background: var(--reeris-glass-canvas); }
+}
+
+@layer reeris.components {
+  :where(:root)[data-theme="glass"] :where(.card, .panel, .well, .navbar, .widget, .feature, .pricing-card, .testimonial, .notification-center, .conversation) {
+    -webkit-backdrop-filter: blur(16px) saturate(1.15);
+    backdrop-filter: blur(16px) saturate(1.15);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (forced-colors: active) {
+  @layer reeris.tokens {
+    :where(:root)[data-theme="glass"] {
+      --reeris-color-surface: #fff;
+      --reeris-color-surface-muted: #eef3fb;
+      --reeris-color-surface-subtle: #f7f9fd;
+      --reeris-color-surface-raised: #fff;
+      --reeris-color-border: #a9b6c8;
+      --reeris-color-border-muted: #bdc9d8;
+      --reeris-glass-canvas: var(--reeris-color-canvas);
+    }
+  }
+  @layer reeris.components {
+    :where(:root)[data-theme="glass"] :where(.card, .panel, .well, .navbar, .widget, .feature, .pricing-card, .testimonial, .notification-center, .conversation) {
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
 }
 
 @layer reeris.tokens {

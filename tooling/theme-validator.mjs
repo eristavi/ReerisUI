@@ -34,7 +34,11 @@ function blocks(css) {
 
 function allCustomProperties(css) {
   const vars = {};
-  for (const m of css.matchAll(/(--reeris-[\w-]+)\s*:\s*([^;{}]+);/g)) vars[m[1]] = m[2].trim();
+  // Only inherited root defaults belong in the baseline; conditional theme and
+  // preference declarations must not overwrite values used for other schemes.
+  for (const block of css.matchAll(/(?:^|[{}\s]):root\s*\{([^{}]*)\}/g)) {
+    for (const m of block[1].matchAll(/(--reeris-[\w-]+)\s*:\s*([^;{}]+);/g)) vars[m[1]] = m[2].trim();
+  }
   return vars;
 }
 

@@ -1,14 +1,14 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T13:20:49.024Z",
+  "generatedAt": "2026-09-26T16:19:06.388Z",
   "summary": {
-    "passed": 1564,
-    "total": 1564,
+    "passed": 1565,
+    "total": 1565,
     "failed": 0,
     "sourceModules": 37,
     "classes": 742,
-    "tokens": 526,
-    "definedTokens": 497,
+    "tokens": 527,
+    "definedTokens": 498,
     "overrideHooks": 29,
     "dataAttributes": 11,
     "packageExports": 14,
@@ -5498,6 +5498,11 @@
     },
     {
       "name": "Token documented: --reeris-gallery-mobile-cols",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-glass-canvas",
       "pass": true,
       "detail": ""
     },

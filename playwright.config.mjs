@@ -30,7 +30,7 @@ export default defineConfig({
     reducedMotion: 'no-preference'
   },
   webServer: {
-    command: 'node tooling/test-server.mjs',
+    command: 'npm run docs:site && node tooling/test-server.mjs',
     url: 'http://127.0.0.1:4173/docs/index.html',
     reuseExistingServer: !process.env.CI,
     timeout: 20_000

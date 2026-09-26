@@ -1,12 +1,12 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:43.595Z",
+  "generatedAt": "2026-09-26T16:19:29.883Z",
   "summary": {
-    "passed": 399,
-    "total": 399,
+    "passed": 408,
+    "total": 408,
     "failed": 0,
     "jsFiles": 4,
-    "cssFiles": 108
+    "cssFiles": 111
   },
   "failures": [],
   "checks": [
@@ -387,6 +387,21 @@
     },
     {
       "name": "packages/core/src/components/button.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/carousel.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/carousel.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/src/components/carousel.css has no javascript: URL",
       "pass": true,
       "detail": ""
     },
@@ -931,6 +946,21 @@
       "detail": ""
     },
     {
+      "name": "packages/core/dist/components/carousel.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/carousel.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/components/carousel.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "packages/core/dist/components/choice.css has no remote @import",
       "pass": true,
       "detail": ""
@@ -1437,6 +1467,21 @@
     },
     {
       "name": "packages/core/dist/sources/components/button.css has no javascript: URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/carousel.css has no remote @import",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/carousel.css has no remote url()",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "packages/core/dist/sources/components/carousel.css has no javascript: URL",
       "pass": true,
       "detail": ""
     },

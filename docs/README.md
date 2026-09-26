@@ -12,7 +12,7 @@ The published documentation site is built with:
 
 The site is published to GitHub Pages on pushes to `main` through `.github/workflows/docs-pages.yml`. Configure the repository's **Settings → Pages → Build and deployment → Source** as **GitHub Actions**. The project URL is `https://eristavi.github.io/ReerisUI/`.
 
-The home page offers a three-step introduction and a page finder. Search is an optional enhancement; every category and link remains browsable without JavaScript. The published component demos include a return link to the docs home.
+The home page offers a three-step introduction and a page finder. Search is an optional enhancement; every category and link remains browsable without JavaScript. The published component demos have a shared top menu with a docs link and a System / Light / Dark / Glass selector. The selector stores the choice for the documentation site, while System follows the browser or operating-system preference. Glass applies translucent surfaces with an opaque reduced-transparency fallback. The menu's script belongs to documentation only; Reeris Core remains CSS-only.
 
 That command first builds Reeris, then creates `.reeris-docs-site/`. During that build, documentation pages are rewritten to use a self-contained `docs/assets/reeris.css` copied from the production `packages/core/dist/reeris.css`.
 

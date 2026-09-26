@@ -1,10 +1,16 @@
 @layer reeris.overrides {
   .docs-body { margin: 0; background: var(--reeris-color-background); color: var(--reeris-color-text); }
+  :where(:root[data-theme="glass"]) .docs-body { background: var(--reeris-glass-canvas); }
   .docs-topbar { position: sticky; inset-block-start: 0; z-index: var(--reeris-z-sticky, 30); display: flex; align-items: center; justify-content: space-between; gap: var(--reeris-space-4); min-block-size: 3.5rem; padding-inline: clamp(var(--reeris-space-4), 4vi, var(--reeris-space-8)); border-block-end: 1px solid var(--reeris-color-border); background: color-mix(in oklch, var(--reeris-color-surface) 94%, transparent); backdrop-filter: blur(.75rem); }
   .docs-brand { color: var(--reeris-color-text); font-size: var(--reeris-font-size-lg); font-weight: var(--reeris-font-weight-bold); text-decoration: none; }
-  .docs-back-link { display: inline-block; margin: var(--reeris-space-3); padding: var(--reeris-space-2) var(--reeris-space-3); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface); color: var(--reeris-color-text); text-decoration: none; }
-  .docs-back-link:hover { color: var(--reeris-color-primary); }
-  .docs-topnav { display: flex; gap: var(--reeris-space-1); }
+  .docs-demo-topbar { position: sticky; inset-block-start: 0; z-index: var(--reeris-z-sticky, 30); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--reeris-space-2); max-inline-size: 100%; margin-block-end: var(--reeris-space-4); padding: var(--reeris-space-2) var(--reeris-space-3); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface); }
+  .docs-demo-topbar a { color: var(--reeris-color-text); text-decoration: none; }
+  .docs-demo-topbar a:hover { color: var(--reeris-color-primary); }
+  .docs-topnav { display: flex; flex-wrap: wrap; align-items: center; gap: var(--reeris-space-1); }
+  .docs-theme-control { display: inline-flex; align-items: center; gap: var(--reeris-space-2); color: var(--reeris-color-text); font-size: var(--reeris-font-size-sm); white-space: nowrap; }
+  .docs-theme-control[hidden] { display: none; }
+  .docs-theme-control select { inline-size: auto; min-inline-size: 6.5rem; padding: var(--reeris-space-2); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface); color: var(--reeris-color-text); font: inherit; }
+  .docs-theme-control select:focus-visible { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
   .docs-topnav a, .docs-sidebar a { border-radius: var(--reeris-radius-md); color: var(--reeris-color-text-muted); text-decoration: none; }
   .docs-topnav a { padding: var(--reeris-space-2) var(--reeris-space-3); }
   .docs-topnav a:hover, .docs-topnav a[aria-current="page"], .docs-sidebar a:hover { background: var(--reeris-color-surface-muted); color: var(--reeris-color-text); }

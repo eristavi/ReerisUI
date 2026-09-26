@@ -1,3 +1,22 @@
+const themeSelect = document.querySelector('[data-docs-theme]');
+if (themeSelect) {
+  themeSelect.closest('.docs-theme-control').hidden = false;
+  themeSelect.value = ['light', 'dark', 'glass'].includes(document.documentElement.dataset.theme)
+    ? document.documentElement.dataset.theme
+    : 'system';
+  themeSelect.addEventListener('change', () => {
+    const theme = themeSelect.value;
+    if (theme === 'system') delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = theme;
+    try {
+      if (theme === 'system') localStorage.removeItem('reeris-docs-theme');
+      else localStorage.setItem('reeris-docs-theme', theme);
+    } catch {
+      // The selector still works for the current page when storage is unavailable.
+    }
+  });
+}
+
 for (const input of document.querySelectorAll('[data-docs-filter]')) {
   const name = input.dataset.docsFilter;
   const table = document.querySelector(`[data-docs-table="${CSS.escape(name)}"]`);

@@ -16,6 +16,8 @@ for(const item of official.results) check(`Official ${item.scheme} ${item.type} 
 check('Official theme uses browser-native light/dark negotiation',/:root\s*\{[\s\S]*color-scheme:\s*light\s+dark/.test(themeCss));
 check('Explicit light override sets color-scheme only',/\[data-theme="light"\]\s*\{\s*color-scheme:\s*light;?\s*\}/.test(themeCss));
 check('Explicit dark override sets color-scheme only',/\[data-theme="dark"\]\s*\{\s*color-scheme:\s*dark;?\s*\}/.test(themeCss));
+check('Glass theme selects light native controls and translucent surfaces',/\[data-theme="glass"\]\s*\{\s*color-scheme:\s*light;/.test(themeCss) && /--reeris-color-surface:\s*rgb\([^)]*\//.test(themeCss));
+check('Glass respects reduced transparency',themeCss.includes('(prefers-reduced-transparency: reduce)') && themeCss.includes('backdrop-filter: none;'));
 check('Semantic theme uses light-dark()',themeCss.includes('light-dark('));
 
 const pairs=['primary','accent','success','warning','danger','info'];

@@ -18,18 +18,30 @@ if (!fs.existsSync(builtCss)) {
 
 fs.copyFileSync(builtCss, path.join(docsOut, 'assets/reeris.css'));
 
+const themeControl = '<label class="docs-theme-control" hidden>Theme <select data-docs-theme><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="glass">Glass</option></select></label>';
+const demoMenu = `<nav class="docs-demo-topbar" aria-label="Demo menu"><a href="index.html">← Reeris docs</a>${themeControl}</nav>`;
+
 for (const name of fs.readdirSync(docsOut)) {
   if (!name.endsWith('.html')) continue;
   const file = path.join(docsOut, name);
   let html = fs.readFileSync(file, 'utf8')
     .replaceAll('../packages/core/src/reeris.css', 'assets/reeris.css');
-  if (name !== 'index.html' && name !== 'api-reference.html') {
-    if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
-    html = html.replace(/<body([^>]*)>/i, '<body$1><a class="docs-back-link" href="index.html">← Reeris docs</a>');
+  if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
+  if (!html.includes('assets/docs.js')) html = html.replace('</head>', '<script type="module" src="assets/docs.js"></script></head>');
+  html = html.replace(/(<link\b[^>]*href="assets\/reeris\.css"[^>]*>)/, '<script src="assets/theme-init.js"></script>$1');
+  if (html.includes('class="docs-topbar"')) {
+    if (html.includes('class="docs-topnav"')) {
+      html = html.replace(/(<header class="docs-topbar">[\s\S]*?<nav class="docs-topnav"[^>]*>[\s\S]*?)(<\/nav>)/, `$1${themeControl}$2`);
+    } else {
+      html = html.replace(/(<header class="docs-topbar">[\s\S]*?)(<\/header>)/, `$1${themeControl}$2`);
+    }
+  } else {
+    html = html.replace(/<body([^>]*)>/i, `<body$1>${demoMenu}`);
   }
   html = html.replaceAll('href="assets/reeris.css"', `href="assets/reeris.css?v=${revision}"`)
     .replaceAll('href="assets/docs.css"', `href="assets/docs.css?v=${revision}"`)
-    .replaceAll('src="assets/docs.js"', `src="assets/docs.js?v=${revision}"`);
+    .replaceAll('src="assets/docs.js"', `src="assets/docs.js?v=${revision}"`)
+    .replaceAll('src="assets/theme-init.js"', `src="assets/theme-init.js?v=${revision}"`);
   fs.writeFileSync(file, html);
 }
 

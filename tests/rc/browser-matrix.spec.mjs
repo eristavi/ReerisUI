@@ -201,6 +201,39 @@ test('carousel scrolls and snaps with JavaScript disabled at desktop and phone w
   }
 });
 
+test('published demo theme selector persists across pages and resets to system', async ({page}) => {
+  await page.goto('/.reeris-docs-site/docs/carousel.html');
+  const demoTheme=page.getByLabel('Theme');
+  await expect(demoTheme).toBeVisible();
+  await demoTheme.selectOption('dark');
+  await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+  expect(await page.evaluate(()=>getComputedStyle(document.documentElement).colorScheme)).toBe('dark');
+  await page.goto('/.reeris-docs-site/docs/navigation.html');
+  await expect(page.getByLabel('Theme')).toHaveValue('dark');
+  await page.getByLabel('Theme').selectOption('glass');
+  await expect(page.locator('html')).toHaveAttribute('data-theme','glass');
+  const glass=await page.evaluate(()=>({
+    scheme:getComputedStyle(document.documentElement).colorScheme,
+    surface:getComputedStyle(document.querySelector('.docs-demo-topbar')).backgroundColor,
+    canvas:getComputedStyle(document.body).backgroundImage
+  }));
+  expect(glass.scheme).toBe('light');
+  expect(glass.surface).toMatch(/rgba?\(/);
+  expect(glass.canvas).toContain('gradient');
+  await page.goto('/.reeris-docs-site/docs/index.html');
+  const homeTheme=page.getByLabel('Theme');
+  await expect(homeTheme).toBeVisible();
+  await expect(homeTheme).toHaveValue('glass');
+  await homeTheme.selectOption('light');
+  expect(await page.evaluate(()=>getComputedStyle(document.documentElement).colorScheme)).toBe('light');
+  await homeTheme.selectOption('system');
+  await expect(page.locator('html')).not.toHaveAttribute('data-theme');
+  expect(await page.evaluate(()=>localStorage.getItem('reeris-docs-theme'))).toBeNull();
+  await page.setViewportSize({width:320,height:700});
+  await page.goto('/.reeris-docs-site/docs/carousel.html');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
+});
+
 test('form addons and native date/time inputs fit phone cards', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:800});

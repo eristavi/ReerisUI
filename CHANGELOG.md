@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added a shared theme selector to published demo and documentation headers, with System, Light, Dark, and Glass choices saved across pages by docs-only JavaScript.
+- Added a CSS-only Glass theme with translucent semantic surfaces, backdrop blur, a soft canvas, and an opaque reduced-transparency fallback.
+
 - Added CSS-first carousels with scroll snap, responsive card and single-slide layouts, browser-native arrows and slide markers, and a no-JavaScript demo.
 
 - Added an opt-in CSS scroll-state navbar that gains elevation when it sticks, with an unchanged readable surface in browsers without scroll-state queries.
