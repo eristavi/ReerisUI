@@ -4,6 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const out = path.join(root, '.reeris-docs-site');
 const docsOut = path.join(out, 'docs');
+const revision = (process.env.GITHUB_SHA || JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8')).version).slice(0, 12);
 
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(out, { recursive: true });
@@ -26,6 +27,8 @@ for (const name of fs.readdirSync(docsOut)) {
     if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
     html = html.replace(/<body([^>]*)>/i, '<body$1><a class="docs-back-link" href="index.html">← Reeris docs</a>');
   }
+  html = html.replaceAll('href="assets/docs.css"', `href="assets/docs.css?v=${revision}"`)
+    .replaceAll('src="assets/docs.js"', `src="assets/docs.js?v=${revision}"`);
   fs.writeFileSync(file, html);
 }
 
