@@ -1,12 +1,12 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:42.783Z",
+  "generatedAt": "2026-09-26T11:07:24.409Z",
   "counts": {
     "sourceModules": 36,
-    "classes": 732,
-    "tokens": 518,
-    "definedTokens": 491,
-    "overrideHooks": 27,
+    "classes": 736,
+    "tokens": 521,
+    "definedTokens": 493,
+    "overrideHooks": 28,
     "dataAttributes": 11,
     "packageExports": 14,
     "jsApi": 5
@@ -1673,6 +1673,12 @@
       ]
     },
     {
+      "name": "gentle",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
       "name": "ghost",
       "sources": [
         "components/button.css"
@@ -2903,6 +2909,24 @@
       ]
     },
     {
+      "name": "parallax",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
+      "name": "parallax-content",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
+      "name": "parallax-media",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
       "name": "payment-method",
       "sources": [
         "components/commerce.css"
@@ -3359,7 +3383,8 @@
     {
       "name": "responsive",
       "sources": [
-        "components/navigation-extended.css"
+        "components/navigation-extended.css",
+        "components/navigation.css"
       ]
     },
     {
@@ -3997,12 +4022,14 @@
     {
       "name": "strong",
       "sources": [
+        "components/marketing.css",
         "components/surfaces.css"
       ]
     },
     {
       "name": "subtle",
       "sources": [
+        "components/marketing.css",
         "components/surfaces.css"
       ]
     },
@@ -6773,6 +6800,27 @@
       "kind": "defined token",
       "sources": [
         "components/surfaces.css"
+      ]
+    },
+    {
+      "name": "--reeris-parallax",
+      "kind": "override hook (fallback-only)",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
+      "name": "--reeris-parallax-easing",
+      "kind": "defined token",
+      "sources": [
+        "components/marketing.css"
+      ]
+    },
+    {
+      "name": "--reeris-parallax-travel",
+      "kind": "defined token",
+      "sources": [
+        "components/marketing.css"
       ]
     },
     {

@@ -2523,6 +2523,21 @@
   :where(.hero-copy) { margin:0; max-inline-size:38rem; color:var(--reeris-color-text-muted); font-size:clamp(1rem,2.5cqi,1.25rem); line-height:1.6; text-wrap:pretty; }
   :where(.hero-actions) { display:flex; flex-wrap:wrap; gap:var(--reeris-space-3); }
   :where(.hero-media) { min-inline-size:0; overflow:hidden; border:1px solid var(--reeris-color-border); border-radius:var(--reeris-radius-2xl); background:var(--reeris-color-surface-muted); box-shadow:var(--reeris-shadow-lg); }
+  /* The media is decorative; headings and controls stay in the normal document flow. */
+  :where(.parallax) { --reeris-parallax-travel:8%; --reeris-parallax-easing:linear; position:relative; isolation:isolate; display:grid; align-items:center; min-block-size:clamp(20rem,55svh,38rem); overflow:hidden; border-radius:var(--reeris-radius-2xl); background:var(--reeris-color-surface-muted); view-timeline-name:--reeris-parallax; view-timeline-axis:block; }
+  :where(.parallax.subtle) { --reeris-parallax-travel:4%; }
+  :where(.parallax.strong) { --reeris-parallax-travel:12%; }
+  :where(.parallax.gentle) { --reeris-parallax-easing:ease-in-out; }
+  :where(.parallax-media) { position:absolute; z-index:-1; inset:-20% 0; inline-size:100%; block-size:140%; object-fit:cover; pointer-events:none; }
+  :where(.parallax-media > video,.parallax-media > img) { display:block; inline-size:100%; block-size:100%; object-fit:cover; }
+  :where(.parallax-content) { inline-size:min(100%,52rem); padding:var(--reeris-space-fluid-lg); }
+  @keyframes reeris-parallax-shift { from { transform:translate3d(0,calc(-1 * var(--reeris-parallax-travel)),0); } to { transform:translate3d(0,var(--reeris-parallax-travel),0); } }
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      :where(.parallax-media) { animation:reeris-parallax-shift var(--reeris-parallax-easing) both; animation-timeline:--reeris-parallax; animation-range:cover; animation-duration:auto; }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) { :where(.parallax-media > video) { display:none; } }
   @container (max-width: 48rem) { :where(.hero.split) { grid-template-columns:1fr; } }
   @media (max-width: 48rem) { :where(.hero.split) { grid-template-columns:minmax(0,1fr); } }
 
