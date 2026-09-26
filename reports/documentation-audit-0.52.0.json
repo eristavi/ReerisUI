@@ -1,15 +1,15 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:43.130Z",
+  "generatedAt": "2026-09-26T13:12:30.353Z",
   "summary": {
-    "passed": 1540,
-    "total": 1540,
+    "passed": 1564,
+    "total": 1564,
     "failed": 0,
-    "sourceModules": 36,
-    "classes": 732,
-    "tokens": 518,
-    "definedTokens": 491,
-    "overrideHooks": 27,
+    "sourceModules": 37,
+    "classes": 742,
+    "tokens": 526,
+    "definedTokens": 497,
+    "overrideHooks": 29,
     "dataAttributes": 11,
     "packageExports": 14,
     "jsApi": 5
@@ -193,6 +193,16 @@
     },
     {
       "name": "Mapped doc exists: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: components/carousel.css",
+      "pass": true,
+      "detail": "carousel.html"
+    },
+    {
+      "name": "Mapped doc exists: carousel.html",
       "pass": true,
       "detail": ""
     },
@@ -613,6 +623,16 @@
     },
     {
       "name": "Configured page exists: media.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: carousel.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: carousel.html",
       "pass": true,
       "detail": ""
     },
@@ -1193,6 +1213,21 @@
     },
     {
       "name": "Class documented: .card-title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .carousel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .carousel-slide",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .carousel-track",
       "pass": true,
       "detail": ""
     },
@@ -2012,6 +2047,11 @@
       "detail": ""
     },
     {
+      "name": "Class documented: .gentle",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Class documented: .ghost",
       "pass": true,
       "detail": ""
@@ -2767,6 +2807,11 @@
       "detail": ""
     },
     {
+      "name": "Class documented: .navbar-surface",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Class documented: .navbar-toggle",
       "pass": true,
       "detail": ""
@@ -3013,6 +3058,21 @@
     },
     {
       "name": "Class documented: .panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .parallax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .parallax-content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .parallax-media",
       "pass": true,
       "detail": ""
     },
@@ -3462,6 +3522,11 @@
       "detail": ""
     },
     {
+      "name": "Class documented: .scroll-state",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Class documented: .search-empty",
       "pass": true,
       "detail": ""
@@ -3703,6 +3768,11 @@
     },
     {
       "name": "Class documented: .sidebar-subnav",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .single",
       "pass": true,
       "detail": ""
     },
@@ -4707,6 +4777,26 @@
       "detail": ""
     },
     {
+      "name": "Token documented: --reeris-carousel-control-bg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-carousel-control-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-carousel-gap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-carousel-visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Token documented: --reeris-chip-radius",
       "pass": true,
       "detail": ""
@@ -5437,6 +5527,11 @@
       "detail": ""
     },
     {
+      "name": "Token documented: --reeris-glide-target",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Token documented: --reeris-gradient-accent",
       "pass": true,
       "detail": ""
@@ -5953,6 +6048,21 @@
     },
     {
       "name": "Token documented: --reeris-panel-radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-parallax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-parallax-easing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-parallax-travel",
       "pass": true,
       "detail": ""
     },
@@ -7169,72 +7279,72 @@
     {
       "name": "Package export target exists: @reeris/core .",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/reeris.css"
     },
     {
       "name": "Package export target exists: @reeris/core ./reeris.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/reeris.css"
     },
     {
       "name": "Package export target exists: @reeris/core ./components/*.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/components"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/components"
     },
     {
       "name": "Package export target exists: @reeris/core ./forms/*.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/forms"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/forms"
     },
     {
       "name": "Package export target exists: @reeris/core ./layout/*.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/layout"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/layout"
     },
     {
       "name": "Package export target exists: @reeris/core ./utilities/*.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/utilities"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/utilities"
     },
     {
       "name": "Package export target exists: @reeris/core ./tokens.json",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/tokens.json"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/tokens.json"
     },
     {
       "name": "Package export target exists: @reeris/core ./tokens.js",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/tokens.js"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/tokens.js"
     },
     {
       "name": "Package export target exists: @reeris/core ./reeris.min.css",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.min.css"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/reeris.min.css"
     },
     {
       "name": "Package export target exists: @reeris/core ./reeris.css.map",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.css.map"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/reeris.css.map"
     },
     {
       "name": "Package export target exists: @reeris/core ./reeris.min.css.map",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/reeris.min.css.map"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/reeris.min.css.map"
     },
     {
       "name": "Package export target exists: @reeris/core ./sources/*",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/core/dist/sources"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/core/dist/sources"
     },
     {
       "name": "Package export target exists: @reeris/js .",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/js/dist/index.js"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/js/dist/index.js"
     },
     {
       "name": "Package export target exists: @reeris/js ./glide-navigation",
       "pass": true,
-      "detail": "/mnt/data/reeris-ui-work/packages/js/dist/glide-navigation.js"
+      "detail": "/workspace/scratch/59ee83984b66/reeris-ui/packages/js/dist/glide-navigation.js"
     },
     {
       "name": "JS export documented: destroy",
@@ -7348,6 +7458,16 @@
     },
     {
       "name": "Docs page declares UA light/dark support: button.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: carousel.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: carousel.html",
       "pass": true,
       "detail": ""
     },

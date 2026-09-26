@@ -65,6 +65,10 @@ Adds responsive steppers, vertical process workflows, wizard composition, and co
 ### 0.18.0 — Media & Content Presentation
 Adds responsive media objects, aspect-ratio frames, semantic figures, galleries, thumbnails, image cards, media placeholders, and native `<dialog>` lightbox presentation. Reeris owns presentation; application content and media behavior remain application-controlled.
 
+### CSS carousels
+
+Add `.carousel` around a focusable `.carousel-track` list whose children use `.carousel-slide`. Scroll snap handles touch, trackpad, scrollbar, and keyboard movement with no JavaScript. CSS `::scroll-button()` adds previous/next controls where supported; `.carousel.single` adds named `::scroll-marker` navigation. The rail adapts from three visible cards to two and then one as its container narrows. It also accepts images and videos, with playback controlled by the user. See [the carousel demo](https://eristavi.github.io/ReerisUI/docs/carousel.html) and [`docs/carousel.html`](docs/carousel.html).
+
 ### 0.20.0 — Profile, User & Identity Patterns
 Adds presence-aware avatars, identity blocks, user rows, profile cards/headers, profile statistics, team/member cards, and account-menu composition. Patterns use semantic/ARIA state where applicable and remain density-, RTL-, container-, and forced-colors-aware.
 

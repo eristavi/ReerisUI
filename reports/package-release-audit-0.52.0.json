@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:44.615Z",
+  "generatedAt": "2026-09-26T13:12:58.543Z",
   "summary": {
     "passed": 82,
     "total": 82,
@@ -11,9 +11,9 @@
     {
       "package": "@reeris/core",
       "filename": "reeris-core-0.52.0.tgz",
-      "packageSize": 109686,
-      "unpackedSize": 948961,
-      "fileCount": 79,
+      "packageSize": 115937,
+      "unpackedSize": 1003105,
+      "fileCount": 81,
       "files": [
         "LICENSE",
         "README.md",
@@ -21,6 +21,7 @@
         "dist/components/app-shell.css",
         "dist/components/authentication.css",
         "dist/components/button.css",
+        "dist/components/carousel.css",
         "dist/components/choice.css",
         "dist/components/commerce.css",
         "dist/components/data-display.css",
@@ -57,6 +58,7 @@
         "dist/sources/components/app-shell.css",
         "dist/sources/components/authentication.css",
         "dist/sources/components/button.css",
+        "dist/sources/components/carousel.css",
         "dist/sources/components/choice.css",
         "dist/sources/components/commerce.css",
         "dist/sources/components/data-display.css",
@@ -99,8 +101,8 @@
     {
       "package": "@reeris/js",
       "filename": "reeris-js-0.52.0.tgz",
-      "packageSize": 2744,
-      "unpackedSize": 7271,
+      "packageSize": 2741,
+      "unpackedSize": 7263,
       "fileCount": 5,
       "files": [
         "LICENSE",
@@ -311,7 +313,7 @@
     {
       "name": "@reeris/core npm pack dry-run succeeds",
       "pass": true,
-      "detail": ""
+      "detail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm."
     },
     {
       "name": "@reeris/core has package budget",
@@ -321,17 +323,17 @@
     {
       "name": "@reeris/core packed size within budget",
       "pass": true,
-      "detail": "109686 / 150000 B"
+      "detail": "115937 / 150000 B"
     },
     {
       "name": "@reeris/core unpacked size within budget",
       "pass": true,
-      "detail": "948961 / 1100000 B"
+      "detail": "1003105 / 1100000 B"
     },
     {
       "name": "@reeris/core file count within budget",
       "pass": true,
-      "detail": "79 / 90"
+      "detail": "81 / 90"
     },
     {
       "name": "@reeris/core pack includes package.json",
@@ -446,7 +448,7 @@
     {
       "name": "@reeris/js npm pack dry-run succeeds",
       "pass": true,
-      "detail": ""
+      "detail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm."
     },
     {
       "name": "@reeris/js has package budget",
@@ -456,12 +458,12 @@
     {
       "name": "@reeris/js packed size within budget",
       "pass": true,
-      "detail": "2744 / 20000 B"
+      "detail": "2741 / 20000 B"
     },
     {
       "name": "@reeris/js unpacked size within budget",
       "pass": true,
-      "detail": "7271 / 50000 B"
+      "detail": "7263 / 50000 B"
     },
     {
       "name": "@reeris/js file count within budget",

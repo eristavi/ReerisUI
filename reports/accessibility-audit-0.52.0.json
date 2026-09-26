@@ -1,13 +1,13 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:36.191Z",
+  "generatedAt": "2026-09-26T13:12:58.910Z",
   "scope": "Static accessibility acceptance audit for Reeris Core and documentation examples",
   "note": "Passing this audit does not by itself establish full WCAG 2.2 AA conformance. Manual/browser checks remain required for keyboard behavior, screen readers, zoom/reflow, touch behavior, native-control rendering, and visual regression.",
   "summary": {
     "total": 51,
     "passed": 51,
     "failed": 0,
-    "docsChecked": 42
+    "docsChecked": 43
   },
   "contrastResults": [
     {
@@ -405,7 +405,7 @@
       "id": "docs-accessible-names",
       "category": "docs",
       "pass": true,
-      "detail": "42 HTML demos checked; 0 accessible-name issues found."
+      "detail": "43 HTML demos checked; 0 accessible-name issues found."
     },
     {
       "id": "js-no-eval",

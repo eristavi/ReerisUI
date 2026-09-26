@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris UI — CSS Carousels</title>
+  <link rel="stylesheet" href="../packages/core/src/reeris.css">
+  <style>
+    main{max-inline-size:76rem;margin-inline:auto;padding:var(--reeris-space-fluid-md)}
+    section{margin-block:var(--reeris-space-8)}
+    .sample{min-block-size:13rem;display:grid;align-content:end;gap:var(--reeris-space-2);padding:var(--reeris-space-5);border:1px solid var(--reeris-color-border);border-radius:var(--reeris-radius-xl);background:var(--reeris-color-surface-muted)}
+    .sample h3,.sample p{margin:0}
+    .sample .badge{justify-self:start}
+    .sample.violet{background:color-mix(in oklch,var(--reeris-color-primary) 17%,var(--reeris-color-surface))}
+    .sample.blue{background:color-mix(in oklch,var(--reeris-color-info) 17%,var(--reeris-color-surface))}
+    .sample.green{background:color-mix(in oklch,var(--reeris-color-success) 17%,var(--reeris-color-surface))}
+    .sample.gold{background:color-mix(in oklch,var(--reeris-color-warning) 17%,var(--reeris-color-surface))}
+    .carousel.single .sample{min-block-size:19rem}
+    pre{overflow:auto;padding:var(--reeris-space-4);border-radius:var(--reeris-radius-md);background:var(--reeris-color-surface-muted)}
+  </style>
+</head>
+<body>
+<main>
+  <h1>CSS carousels</h1>
+  <p>Swipe, scroll, or focus the track and use the arrow keys. Browsers with CSS carousel controls also show previous/next buttons; the single-slide layout adds named slide markers. No script runs on this page.</p>
+
+  <section>
+    <h2>Responsive card rail</h2>
+    <p>Three cards fit in a wide container, two at medium widths, and one on a phone. The list stays scrollable even when generated controls are unavailable.</p>
+    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Featured topics">
+      <ul class="carousel-track" tabindex="0" aria-label="Featured topics, scroll horizontally">
+        <li class="carousel-slide"><article class="sample violet"><span class="badge primary">01</span><h3>Foundation</h3><p>Tokens and layout primitives.</p></article></li>
+        <li class="carousel-slide"><article class="sample blue"><span class="badge info">02</span><h3>Navigation</h3><p>Clear journeys through content.</p></article></li>
+        <li class="carousel-slide"><article class="sample green"><span class="badge success">03</span><h3>Media</h3><p>Images, video, and captions.</p></article></li>
+        <li class="carousel-slide"><article class="sample gold"><span class="badge warning">04</span><h3>Patterns</h3><p>Compose pages from native parts.</p></article></li>
+        <li class="carousel-slide"><article class="sample violet"><span class="badge primary">05</span><h3>Accessibility</h3><p>Keyboard and motion preferences.</p></article></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Single-slide gallery</h2>
+    <p>Use <code>.single</code> for one slide at a time. The <code>data-label</code> on each item gives its generated marker a useful name.</p>
+    <div class="carousel single" role="region" aria-roledescription="carousel" aria-label="Design principles">
+      <ul class="carousel-track" tabindex="0" aria-label="Design principles, scroll horizontally">
+        <li class="carousel-slide" data-label="Native first"><article class="sample violet"><span class="badge primary">1 of 3</span><h3>Native first</h3><p>Start with browser scrolling, then add presentation.</p></article></li>
+        <li class="carousel-slide" data-label="Works without scripts"><article class="sample blue"><span class="badge info">2 of 3</span><h3>Works without scripts</h3><p>The track keeps its keyboard and touch behavior.</p></article></li>
+        <li class="carousel-slide" data-label="Motion by choice"><article class="sample green"><span class="badge success">3 of 3</span><h3>Motion by choice</h3><p>Reduced motion turns smooth programmatic scrolling off.</p></article></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Use it with your content</h2>
+    <p>The track can hold cards, figures, images, or videos. Keep video playback under user control; the carousel does not autoplay or loop. Give each carousel an accessible name, add <code>tabindex="0"</code> to the track for keyboard scrolling, and label slides when using markers.</p>
+    <pre><code>&lt;div class="carousel single" role="region" aria-roledescription="carousel" aria-label="Project gallery"&gt;
+  &lt;ul class="carousel-track" tabindex="0" aria-label="Project gallery, scroll horizontally"&gt;
+    &lt;li class="carousel-slide" data-label="Project photograph"&gt;
+      &lt;img src="photo.jpg" alt="Exterior of the project"&gt;
+    &lt;/li&gt;
+    &lt;li class="carousel-slide" data-label="Project video"&gt;
+      &lt;video controls preload="none" poster="video-poster.jpg"&gt;
+        &lt;source src="tour.mp4" type="video/mp4"&gt;
+      &lt;/video&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+    <p>Generated buttons and markers depend on CSS Overflow 5 support. In other browsers, the native scrollbar, swipe, trackpad, and focused track remain available. This version deliberately has no automatic playback or infinite wrap.</p>
+  </section>
+</main>
+</body>
+</html>

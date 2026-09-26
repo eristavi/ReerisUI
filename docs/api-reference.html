@@ -14,11 +14,12 @@
 <main class="docs-shell">
 <aside class="docs-sidebar" aria-label="API sections"><a href="#summary">Summary</a><a href="#modules">Modules</a><a href="#classes">Classes</a><a href="#tokens">Tokens</a><a href="#data-attributes">Data attributes</a><a href="#package-exports">Package exports</a><a href="#javascript">JavaScript</a></aside>
 <article class="docs-content">
-<section id="summary" class="docs-hero"><span class="badge primary">Generated reference</span><h1>Public API reference</h1><p>Machine-derived inventory for Reeris UI 0.52.0. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports are listed here so API drift becomes auditable.</p><div class="docs-stat-grid"><div class="docs-stat"><strong>36</strong><span>source Modules</span></div><div class="docs-stat"><strong>738</strong><span>classes</span></div><div class="docs-stat"><strong>521</strong><span>tokens</span></div><div class="docs-stat"><strong>493</strong><span>defined Tokens</span></div><div class="docs-stat"><strong>28</strong><span>override Hooks</span></div><div class="docs-stat"><strong>11</strong><span>data Attributes</span></div><div class="docs-stat"><strong>14</strong><span>package Exports</span></div><div class="docs-stat"><strong>5</strong><span>js Api</span></div></div></section>
+<section id="summary" class="docs-hero"><span class="badge primary">Generated reference</span><h1>Public API reference</h1><p>Machine-derived inventory for Reeris UI 0.52.0. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports are listed here so API drift becomes auditable.</p><div class="docs-stat-grid"><div class="docs-stat"><strong>37</strong><span>source Modules</span></div><div class="docs-stat"><strong>742</strong><span>classes</span></div><div class="docs-stat"><strong>526</strong><span>tokens</span></div><div class="docs-stat"><strong>497</strong><span>defined Tokens</span></div><div class="docs-stat"><strong>29</strong><span>override Hooks</span></div><div class="docs-stat"><strong>11</strong><span>data Attributes</span></div><div class="docs-stat"><strong>14</strong><span>package Exports</span></div><div class="docs-stat"><strong>5</strong><span>js Api</span></div></div></section>
 <section id="modules" class="docs-section"><h2>Source module → documentation contract</h2><p>Every Core source module must map to a maintained documentation page.</p><div class="table-responsive"><table class="table"><thead><tr><th>Source module</th><th>Documentation</th></tr></thead><tbody><tr><td><code>components/advanced-navigation.css</code></td><td><a href="advanced-navigation.html">advanced-navigation.html</a></td></tr>
 <tr><td><code>components/app-shell.css</code></td><td><a href="app-shell.html">app-shell.html</a></td></tr>
 <tr><td><code>components/authentication.css</code></td><td><a href="authentication.html">authentication.html</a></td></tr>
 <tr><td><code>components/button.css</code></td><td><a href="button.html">button.html</a></td></tr>
+<tr><td><code>components/carousel.css</code></td><td><a href="carousel.html">carousel.html</a></td></tr>
 <tr><td><code>components/choice.css</code></td><td><a href="choice.html">choice.html</a></td></tr>
 <tr><td><code>components/commerce.css</code></td><td><a href="commerce.html">commerce.html</a></td></tr>
 <tr><td><code>components/data-display.css</code></td><td><a href="data-display.html">data-display.html</a></td></tr>
@@ -132,6 +133,9 @@
 <tr data-docs-row><td><code>.card-header</code></td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.card-subtitle</code></td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.card-title</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.carousel</code></td><td><code>components/carousel.css</code></td></tr>
+<tr data-docs-row><td><code>.carousel-slide</code></td><td><code>components/carousel.css</code></td></tr>
+<tr data-docs-row><td><code>.carousel-track</code></td><td><code>components/carousel.css</code></td></tr>
 <tr data-docs-row><td><code>.cart-items</code></td><td><code>components/commerce.css</code></td></tr>
 <tr data-docs-row><td><code>.cart-layout</code></td><td><code>components/commerce.css</code></td></tr>
 <tr data-docs-row><td><code>.cell-actions</code></td><td><code>components/tables.css</code></td></tr>
@@ -640,6 +644,7 @@
 <tr data-docs-row><td><code>.sidebar-section</code></td><td><code>components/advanced-navigation.css</code></td></tr>
 <tr data-docs-row><td><code>.sidebar-section-title</code></td><td><code>components/advanced-navigation.css</code></td></tr>
 <tr data-docs-row><td><code>.sidebar-subnav</code></td><td><code>components/advanced-navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.single</code></td><td><code>components/carousel.css</code></td></tr>
 <tr data-docs-row><td><code>.skeleton</code></td><td><code>components/feedback.css</code></td></tr>
 <tr data-docs-row><td><code>.sm</code></td><td><code>components/button.css</code> <code>components/choice.css</code> <code>components/feedback.css</code> <code>components/media.css</code> <code>components/surfaces.css</code> <code>components/visualization.css</code> <code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.sort-button</code></td><td><code>components/tables.css</code></td></tr>
@@ -840,6 +845,10 @@
 <tr data-docs-row><td><code>--reeris-card-padding</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-card-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-card-shadow</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-carousel-control-bg</code></td><td>defined token</td><td><code>components/carousel.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-carousel-control-size</code></td><td>defined token</td><td><code>components/carousel.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-carousel-gap</code></td><td>defined token</td><td><code>components/carousel.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-carousel-visible</code></td><td>defined token</td><td><code>components/carousel.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-chip-radius</code></td><td>defined token</td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-choice-min</code></td><td>defined token</td><td><code>components/choice.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-close-size</code></td><td>defined token</td><td><code>components/button.css</code></td></tr>
@@ -986,6 +995,7 @@
 <tr data-docs-row><td><code>--reeris-glide-duration</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-glide-ease</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-glide-radius</code></td><td>defined token</td><td><code>components/navigation-extended.css</code></td></tr>
+<tr data-docs-row><td><code>--reeris-glide-target</code></td><td>override hook (fallback-only)</td><td><code>components/navigation-extended.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-gradient-accent</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-gradient-brand</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
 <tr data-docs-row><td><code>--reeris-gradient-danger</code></td><td>defined token</td><td><code>core/theme.css</code></td></tr>
@@ -1312,9 +1322,9 @@
 <tr data-docs-row><td><code>--reeris-z-toast</code></td><td>override hook (fallback-only)</td><td><code>components/toast.css</code></td></tr></tbody></table></div></section>
 <section id="data-attributes" class="docs-section"><h2>Reeris-owned data attributes</h2><p>Native attributes and ARIA remain preferred for native/semantic state. Reeris-specific state/configuration uses <code>data-reeris-*</code>.</p><div class="table-responsive"><table class="table"><thead><tr><th>Attribute</th><th>Known contract</th><th>Source</th></tr></thead><tbody><tr><td><code>data-reeris-active</code></td><td>value: true</td><td><code>components/search-command.css</code></td></tr>
 <tr><td><code>data-reeris-anchor</code></td><td>presence</td><td><code>components/overlays.css</code></td></tr>
-<tr><td><code>data-reeris-glide</code></td><td>configuration / state hook</td><td><code>@reeris/js/index.js</code></td></tr>
+<tr><td><code>data-reeris-glide</code></td><td>presence</td><td><code>@reeris/js/index.js</code> <code>components/navigation-extended.css</code></td></tr>
 <tr><td><code>data-reeris-glide-instant</code></td><td>presence</td><td><code>@reeris/js/glide-navigation.js</code> <code>components/navigation-extended.css</code></td></tr>
-<tr><td><code>data-reeris-glide-item</code></td><td>configuration / state hook</td><td><code>@reeris/js/glide-navigation.js</code></td></tr>
+<tr><td><code>data-reeris-glide-item</code></td><td>presence</td><td><code>@reeris/js/glide-navigation.js</code> <code>components/navigation-extended.css</code></td></tr>
 <tr><td><code>data-reeris-glide-items</code></td><td>configuration / state hook</td><td><code>@reeris/js/glide-navigation.js</code></td></tr>
 <tr><td><code>data-reeris-glide-ready</code></td><td>presence</td><td><code>@reeris/js/glide-navigation.js</code> <code>components/navigation-extended.css</code></td></tr>
 <tr><td><code>data-reeris-position</code></td><td>value: anchor</td><td><code>components/overlays.css</code></td></tr>

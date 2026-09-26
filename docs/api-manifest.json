@@ -1,12 +1,12 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T12:35:28.963Z",
+  "generatedAt": "2026-09-26T13:12:30.138Z",
   "counts": {
-    "sourceModules": 36,
-    "classes": 738,
-    "tokens": 521,
-    "definedTokens": 493,
-    "overrideHooks": 28,
+    "sourceModules": 37,
+    "classes": 742,
+    "tokens": 526,
+    "definedTokens": 497,
+    "overrideHooks": 29,
     "dataAttributes": 11,
     "packageExports": 14,
     "jsApi": 5
@@ -27,6 +27,10 @@
     {
       "source": "components/button.css",
       "documentation": "button.html"
+    },
+    {
+      "source": "components/carousel.css",
+      "documentation": "carousel.html"
     },
     {
       "source": "components/choice.css",
@@ -658,6 +662,24 @@
       "name": "card-title",
       "sources": [
         "components/surfaces.css"
+      ]
+    },
+    {
+      "name": "carousel",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
+      "name": "carousel-slide",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
+      "name": "carousel-track",
+      "sources": [
+        "components/carousel.css"
       ]
     },
     {
@@ -3776,6 +3798,12 @@
       ]
     },
     {
+      "name": "single",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
       "name": "skeleton",
       "sources": [
         "components/feedback.css"
@@ -5062,6 +5090,34 @@
       ]
     },
     {
+      "name": "--reeris-carousel-control-bg",
+      "kind": "defined token",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
+      "name": "--reeris-carousel-control-size",
+      "kind": "defined token",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
+      "name": "--reeris-carousel-gap",
+      "kind": "defined token",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
+      "name": "--reeris-carousel-visible",
+      "kind": "defined token",
+      "sources": [
+        "components/carousel.css"
+      ]
+    },
+    {
       "name": "--reeris-chip-radius",
       "kind": "defined token",
       "sources": [
@@ -6083,6 +6139,13 @@
     {
       "name": "--reeris-glide-radius",
       "kind": "defined token",
+      "sources": [
+        "components/navigation-extended.css"
+      ]
+    },
+    {
+      "name": "--reeris-glide-target",
+      "kind": "override hook (fallback-only)",
       "sources": [
         "components/navigation-extended.css"
       ]
@@ -8383,9 +8446,12 @@
     {
       "name": "data-reeris-glide",
       "sources": [
-        "@reeris/js/index.js"
+        "@reeris/js/index.js",
+        "components/navigation-extended.css"
       ],
-      "details": []
+      "details": [
+        "presence"
+      ]
     },
     {
       "name": "data-reeris-glide-instant",
@@ -8400,9 +8466,12 @@
     {
       "name": "data-reeris-glide-item",
       "sources": [
-        "@reeris/js/glide-navigation.js"
+        "@reeris/js/glide-navigation.js",
+        "components/navigation-extended.css"
       ],
-      "details": []
+      "details": [
+        "presence"
+      ]
     },
     {
       "name": "data-reeris-glide-items",

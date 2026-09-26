@@ -2119,7 +2119,7 @@
       translate:none;
       transition:inset-inline-start var(--reeris-glide-duration) var(--reeris-glide-ease), inset-block-start var(--reeris-glide-duration) var(--reeris-glide-ease), inline-size var(--reeris-glide-duration) var(--reeris-glide-ease), block-size var(--reeris-glide-duration) var(--reeris-glide-ease), opacity var(--reeris-duration-fast) var(--reeris-ease-standard);
     }
-    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible,[aria-current="page"],[aria-selected="true"],.active))::before {
+    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):where(:has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible,[aria-current="page"],[aria-selected="true"],.active)))::before {
       opacity:1;
     }
     :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide])) .nav-link:hover) { background:transparent; }
@@ -2456,6 +2456,99 @@
     :where(button.thumbnail,a.thumbnail)[aria-current="true"],:where(button.thumbnail,a.thumbnail)[aria-selected="true"] { border-color:Highlight; box-shadow:none; }
     :where(.image-card.overlay .image-card-content) { background:Canvas; color:CanvasText; }
     :where(.lightbox) { border:1px solid CanvasText; }
+  }
+}
+
+@layer reeris.components {
+  :root {
+    --reeris-carousel-gap: var(--reeris-space-4);
+    --reeris-carousel-control-size: 2.75rem;
+    --reeris-carousel-control-bg: var(--reeris-color-surface);
+  }
+
+  /* The scrollport is the component. Native scrolling remains available without the newer controls. */
+  :where(.carousel) { position:relative; container-type:inline-size; min-inline-size:0; }
+  :where(.carousel-track) {
+    --reeris-carousel-visible:3;
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns:minmax(0,calc((100% - (var(--reeris-carousel-visible) - 1) * var(--reeris-carousel-gap)) / var(--reeris-carousel-visible)));
+    gap:var(--reeris-carousel-gap);
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    scroll-snap-type:x mandatory;
+    scroll-snap-type:inline mandatory;
+    scroll-padding-inline:var(--reeris-space-1);
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+    scrollbar-color:var(--reeris-color-border-strong) transparent;
+    min-inline-size:0;
+    margin:0;
+    padding:var(--reeris-space-1) var(--reeris-space-1) var(--reeris-space-3);
+    list-style:none;
+  }
+  :where(.carousel-track:focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
+  :where(.carousel-slide) { min-inline-size:0; scroll-snap-align:start; scroll-snap-stop:always; }
+  :where(.carousel-slide > img,.carousel-slide > video,.carousel-slide > picture,.carousel-slide > picture > img) { display:block; inline-size:100%; block-size:auto; }
+  /* Generated controls participate in native focus order and disable at scroll boundaries. */
+  :where(.carousel-track)::scroll-button(*) {
+    position:absolute;
+    z-index:2;
+    inset-block-start:calc(50% - var(--reeris-carousel-control-size) / 2);
+    display:grid;
+    place-items:center;
+    inline-size:var(--reeris-carousel-control-size);
+    block-size:var(--reeris-carousel-control-size);
+    border:1px solid var(--reeris-color-border);
+    border-radius:var(--reeris-radius-full);
+    background:var(--reeris-carousel-control-bg);
+    color:var(--reeris-color-text);
+    box-shadow:var(--reeris-shadow-sm);
+    font:inherit;
+    font-size:1.5rem;
+    cursor:pointer;
+  }
+  :where(.carousel-track)::scroll-button(inline-start) { content:"‹" / "Previous slides"; inset-inline-start:var(--reeris-space-2); }
+  :where(.carousel-track)::scroll-button(inline-end) { content:"›" / "Next slides"; inset-inline-end:var(--reeris-space-2); }
+  :where(.carousel-track)::scroll-button(*):hover { background:var(--reeris-color-surface-muted); }
+  :where(.carousel-track)::scroll-button(*):disabled { opacity:.4; cursor:default; }
+  :where(.carousel-track)::scroll-button(*):focus-visible { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
+
+  /* Dots are opt-in with .single; the slide label supplies each marker's accessible name. */
+  @supports selector(::scroll-marker) {
+    :where(.carousel.single) { padding-block-end:var(--reeris-space-6); }
+    :where(.carousel.single .carousel-track) { scroll-marker-group:after; }
+    :where(.carousel.single .carousel-track)::scroll-marker-group {
+      position:absolute;
+      inset-inline:0;
+      inset-block-end:0;
+      display:flex;
+      justify-content:center;
+      gap:var(--reeris-space-2);
+    }
+    :where(.carousel.single .carousel-slide)::scroll-marker {
+      content:attr(data-label);
+      inline-size:.75rem;
+      block-size:.75rem;
+      overflow:hidden;
+      border:1px solid var(--reeris-color-border-strong);
+      border-radius:var(--reeris-radius-full);
+      background:var(--reeris-color-surface);
+      white-space:nowrap;
+      text-indent:2rem;
+    }
+    :where(.carousel.single .carousel-slide)::scroll-marker:target-current { background:var(--reeris-color-primary); border-color:var(--reeris-color-primary); }
+    :where(.carousel.single .carousel-slide)::scroll-marker:focus-visible { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
+  }
+
+  @container (max-width:48rem) { :where(.carousel-track) { --reeris-carousel-visible:2; } }
+  @container (max-width:34rem) { :where(.carousel-track) { --reeris-carousel-visible:1; } }
+  :where(.carousel.single .carousel-track) { --reeris-carousel-visible:1; }
+  @media (prefers-reduced-motion:reduce) { :where(.carousel-track) { scroll-behavior:auto; } }
+  @media (forced-colors:active) {
+    :where(.carousel-track)::scroll-button(*) { border-color:ButtonText; background:ButtonFace; color:ButtonText; box-shadow:none; }
+    :where(.carousel.single .carousel-slide)::scroll-marker { border-color:CanvasText; }
+    :where(.carousel.single .carousel-slide)::scroll-marker:target-current { background:Highlight; }
   }
 }
 

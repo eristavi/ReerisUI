@@ -188,7 +188,7 @@
       translate:none;
       transition:inset-inline-start var(--reeris-glide-duration) var(--reeris-glide-ease), inset-block-start var(--reeris-glide-duration) var(--reeris-glide-ease), inline-size var(--reeris-glide-duration) var(--reeris-glide-ease), block-size var(--reeris-glide-duration) var(--reeris-glide-ease), opacity var(--reeris-duration-fast) var(--reeris-ease-standard);
     }
-    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible,[aria-current="page"],[aria-selected="true"],.active))::before {
+    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):where(:has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible,[aria-current="page"],[aria-selected="true"],.active)))::before {
       opacity:1;
     }
     :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide])) .nav-link:hover) { background:transparent; }

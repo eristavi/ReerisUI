@@ -42,6 +42,7 @@ export const documentationSections = [
     description: 'Content-heavy and product-oriented compositions built from Core.',
     pages: [
       ['media.html', 'Media', 'Figures, media objects, galleries and lightbox presentation.'],
+      ['carousel.html', 'Carousels', 'CSS scroll-snap carousels with native buttons and slide markers.'],
       ['identity.html', 'Identity', 'Profiles, users, teams and presence.'],
       ['marketing.html', 'Marketing', 'Hero, feature, pricing, testimonial and CTA patterns.'],
       ['authentication.html', 'Authentication', 'Authentication and onboarding compositions.'],
@@ -102,6 +103,7 @@ export const sourceDocumentation = {
   'components/visualization.css': 'visualization.html',
   'components/workflow.css': 'workflow.html',
   'components/media.css': 'media.html',
+  'components/carousel.css': 'carousel.html',
   'components/identity.css': 'identity.html',
   'components/marketing.css': 'marketing.html',
   'components/settings.css': 'settings.html',

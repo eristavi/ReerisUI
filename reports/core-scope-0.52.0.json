@@ -1,8 +1,8 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:35.661Z",
-  "auditedCssFiles": 29,
-  "discoveredClassNames": 732,
+  "generatedAt": "2026-09-26T13:12:58.720Z",
+  "auditedCssFiles": 30,
+  "discoveredClassNames": 742,
   "coverage": {
     "button": {
       "required": [

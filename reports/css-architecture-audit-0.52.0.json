@@ -1,10 +1,10 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:37.419Z",
+  "generatedAt": "2026-09-26T13:12:29.940Z",
   "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
   "budgets": {
-    "fullRawBytes": 245760,
-    "minRawBytes": 220160,
+    "fullRawBytes": 261120,
+    "minRawBytes": 230400,
     "minGzipBytes": 32768,
     "minBrotliBytes": 27648,
     "largestModuleBytes": 26624,
@@ -12,7 +12,7 @@
     "maxSpecificity": [
       0,
       1,
-      1
+      2
     ],
     "maxUnlayeredQualifiedRules": 0,
     "maxExactDuplicateRules": 0,
@@ -22,20 +22,20 @@
     "total": 14,
     "passed": 14,
     "failed": 0,
-    "qualifiedRules": 1440,
-    "individualSelectors": 1462,
-    "sourceCssModules": 35
+    "qualifiedRules": 1504,
+    "individualSelectors": 1527,
+    "sourceCssModules": 36
   },
   "bundle": {
     "full": {
-      "raw": 230730,
-      "gzip": 32325,
-      "brotli": 26619
+      "raw": 244218,
+      "gzip": 34352,
+      "brotli": 28199
     },
     "minified": {
-      "raw": 210518,
-      "gzip": 29805,
-      "brotli": 24853
+      "raw": 222189,
+      "gzip": 31295,
+      "brotli": 26091
     },
     "optionalJsAllModules": {
       "raw": 5497,
@@ -45,14 +45,14 @@
   },
   "architecture": {
     "maxSpecificity": {
-      "selector": ":dir(rtl) :where(.status-flow > li:not(:last-child))::after",
+      "selector": ":where(.carousel-track)::scroll-button(*):hover",
       "context": [
         "layer:reeris.components"
       ],
       "specificity": [
         0,
         1,
-        1
+        2
       ]
     },
     "longestSelector": {
@@ -178,14 +178,14 @@
     "physicalDirectionUses": [
       {
         "file": "components/navigation-extended.css",
-        "line": 128,
+        "line": 129,
         "text": "left:0;"
       }
     ],
     "physicalDirectionExceptions": [
       {
         "file": "components/navigation-extended.css",
-        "line": 128,
+        "line": 129,
         "text": "left:0;"
       }
     ]
@@ -194,7 +194,7 @@
     "note": "Repeated declaration blocks are informational because semantic components may intentionally share declarations. Exact duplicate rules are a release-gating error.",
     "repeatedDeclarationBlocks": [
       {
-        "occurrences": 8,
+        "occurrences": 11,
         "bytes": 129,
         "selectors": [
           ":where(.nav-link:focus-visible)",
@@ -235,6 +235,14 @@
         ]
       },
       {
+        "occurrences": 2,
+        "bytes": 244,
+        "selectors": [
+          ":where(.navbar)",
+          ":where(.navbar.scroll-state > .navbar-surface)"
+        ]
+      },
+      {
         "occurrences": 4,
         "bytes": 95,
         "selectors": [
@@ -259,7 +267,7 @@
         "selectors": [
           ":where(.chip[aria-pressed=\"true\"], .chip.selected)",
           ":where(.page-link[aria-current=\"page\"],.page-link.active)",
-          ":where(.step[aria-current=\"step\"])::before"
+          ":where(.steps > .step[aria-current=\"step\"])::before"
         ]
       },
       {
@@ -321,16 +329,6 @@
           ":where(.btn-group > .btn:first-child)",
           ":where(.split-btn > .btn:first-child)"
         ]
-      },
-      {
-        "occurrences": 4,
-        "bytes": 65,
-        "selectors": [
-          ":where(.profile-card-bio)",
-          ":where(.feature-copy)",
-          ":where(.cta-description)",
-          ":where(.auth-description)"
-        ]
       }
     ]
   },
@@ -338,15 +336,19 @@
     "largest": [
       {
         "file": "forms/forms.css",
-        "bytes": 23653
+        "bytes": 24097
+      },
+      {
+        "file": "components/navigation-extended.css",
+        "bytes": 14951
+      },
+      {
+        "file": "components/navigation.css",
+        "bytes": 11691
       },
       {
         "file": "components/surfaces.css",
         "bytes": 11382
-      },
-      {
-        "file": "components/navigation-extended.css",
-        "bytes": 11248
       },
       {
         "file": "components/button.css",
@@ -357,8 +359,8 @@
         "bytes": 10095
       },
       {
-        "file": "components/navigation.css",
-        "bytes": 9817
+        "file": "components/marketing.css",
+        "bytes": 9973
       },
       {
         "file": "components/overlays.css",
@@ -366,19 +368,15 @@
       },
       {
         "file": "components/advanced-navigation.css",
-        "bytes": 8309
-      },
-      {
-        "file": "components/marketing.css",
-        "bytes": 8215
+        "bytes": 8515
       },
       {
         "file": "components/messaging.css",
-        "bytes": 7723
+        "bytes": 7789
       },
       {
         "file": "components/workflow.css",
-        "bytes": 7368
+        "bytes": 7618
       },
       {
         "file": "components/feedback.css",
@@ -393,8 +391,8 @@
         "bytes": 6853
       },
       {
-        "file": "components/app-shell.css",
-        "bytes": 6671
+        "file": "components/data-display.css",
+        "bytes": 6837
       }
     ],
     "orphanModules": [],
@@ -412,7 +410,7 @@
       "id": "specificity-budget",
       "category": "specificity",
       "pass": true,
-      "detail": "Maximum approximate specificity is 0,1,1 (:dir(rtl) :where(.status-flow > li:not(:last-child))::after)."
+      "detail": "Maximum approximate specificity is 0,1,2 (:where(.carousel-track)::scroll-button(*):hover)."
     },
     {
       "id": "no-id-selectors",
@@ -460,31 +458,31 @@
       "id": "full-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.css raw 230730 / 245760 bytes."
+      "detail": "reeris.css raw 244218 / 261120 bytes."
     },
     {
       "id": "min-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css raw 210518 / 220160 bytes."
+      "detail": "reeris.min.css raw 222189 / 230400 bytes."
     },
     {
       "id": "min-gzip-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css gzip 29805 / 32768 bytes."
+      "detail": "reeris.min.css gzip 31295 / 32768 bytes."
     },
     {
       "id": "min-brotli-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css brotli 24853 / 27648 bytes."
+      "detail": "reeris.min.css brotli 26091 / 27648 bytes."
     },
     {
       "id": "module-size-budget",
       "category": "size",
       "pass": true,
-      "detail": "Largest CSS source module is forms/forms.css at 23653 / 26624 bytes."
+      "detail": "Largest CSS source module is forms/forms.css at 24097 / 26624 bytes."
     }
   ]
 }

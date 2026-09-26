@@ -4,6 +4,7 @@ const pages=[
   '/docs/foundation.html',
   '/docs/forms-complete.html',
   '/docs/navigation-completion.html',
+  '/docs/carousel.html',
   '/docs/overlays.html',
   '/docs/tables.html',
   '/docs/browser-reflow.html',
@@ -165,6 +166,36 @@ test('sticky navbar glide follows links with JavaScript disabled', async ({brows
     await nav.getByRole('link',{name:'Overview'}).focus();
     await page.keyboard.press('Tab');
     await expect(details).toBeFocused();
+  } finally {
+    await context.close();
+  }
+});
+
+test('carousel scrolls and snaps with JavaScript disabled at desktop and phone widths', async ({browser}) => {
+  const context=await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce'});
+  try {
+    const page=await context.newPage();
+    for (const width of [1100,320]) {
+      await page.setViewportSize({width,height:800});
+      await page.goto('/docs/carousel.html');
+      const track=page.locator('.carousel:not(.single) .carousel-track');
+      const initial=await track.evaluate(element=>({
+        scrollWidth:element.scrollWidth,
+        clientWidth:element.clientWidth,
+        snap:getComputedStyle(element).scrollSnapType,
+        itemWidth:element.querySelector('.carousel-slide').getBoundingClientRect().width
+      }));
+      expect(initial.scrollWidth).toBeGreaterThan(initial.clientWidth);
+      expect(initial.snap).toMatch(/mandatory/);
+      expect(initial.itemWidth / initial.clientWidth).toBeGreaterThan(width===320 ? .8 : .25);
+      await track.focus();
+      await page.keyboard.press('ArrowRight');
+      await expect.poll(()=>track.evaluate(element=>element.scrollLeft)).toBeGreaterThan(0);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
+    }
+    const single=page.locator('.carousel.single .carousel-track');
+    expect(await single.locator('.carousel-slide').count()).toBe(3);
+    expect(await single.evaluate(element=>getComputedStyle(element).scrollSnapType)).toMatch(/mandatory/);
   } finally {
     await context.close();
   }

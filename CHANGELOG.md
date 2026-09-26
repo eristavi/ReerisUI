@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added CSS-first carousels with scroll snap, responsive card and single-slide layouts, browser-native arrows and slide markers, and a no-JavaScript demo.
+
 - Added an opt-in CSS scroll-state navbar that gains elevation when it sticks, with an unchanged readable surface in browsers without scroll-state queries.
 - Made Glide CSS-first with native anchor positioning for hover and keyboard focus; the sticky navbar demo works with JavaScript disabled and retains a hover fallback for older browsers. The existing JavaScript module remains opt-in.
 - Added a CSS-only parallax marketing pattern for decorative images, backgrounds, and videos, with subtle (4%), standard (8%), and strong (12%) depth presets plus optional gentle easing.
