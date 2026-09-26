@@ -47,12 +47,14 @@
     :where(.command-bar > .search-field,.filter-bar > .search-field) { flex-basis:100%; }
   }
   @container (max-width: 30rem) {
-    :where(.page-header) { display:grid; }
     :where(.page-header-actions,.command-group,.filter-group,.view-controls,.bulk-actions,.bulk-actions-group) { inline-size:100%; }
-    :where(.command-bar,.filter-bar) { align-items:stretch; }
     :where(.command-divider) { display:none; }
     :where(.bulk-actions[data-reeris-state="active"],.bulk-actions.active) { align-items:flex-start; flex-direction:column; }
     :where(.bulk-actions-group) { margin-inline-start:0; }
+  }
+  @media (max-width: 30rem) {
+    :where(.page-header) { display:grid; }
+    :where(.command-bar,.filter-bar) { align-items:stretch; }
   }
 
   @media (prefers-reduced-motion: reduce) { :where(.filter-chip) { scroll-behavior:auto; } }

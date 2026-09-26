@@ -66,12 +66,12 @@
   :where(.step-label) { max-inline-size:12rem; }
 
   @container (max-width: 30rem) {
-    :where(.navbar) { align-items:flex-start; flex-wrap:wrap; padding-block:var(--reeris-space-3); }
     :where(.navbar-nav) { order:3; inline-size:100%; overflow-x:auto; flex-wrap:nowrap; }
     :where(.steps) { grid-template-columns:1fr; gap:var(--reeris-space-3); }
     :where(.step) { grid-template-columns:auto 1fr; justify-items:start; align-items:center; text-align:start; }
     :where(.step:not(:last-child))::after { inset-block-start:2rem; inset-inline-start:1rem; inline-size:1px; block-size:calc(100% + var(--reeris-space-3)); }
   }
+  @media (max-width: 30rem) { :where(.navbar:not(.responsive)) { align-items:flex-start; flex-wrap:wrap; padding-block:var(--reeris-space-3); } }
 
   @media (prefers-reduced-motion: reduce) { :where(.nav-link) { transition:none; } }
   @media (forced-colors: active) {

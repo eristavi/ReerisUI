@@ -90,11 +90,13 @@
     :where(.dashboard-grid > .span-8,.dashboard-grid > .span-9) { grid-column:span 12; }
   }
   @container (max-width: 48rem) {
-    :where(.app-shell) { grid-template-columns:1fr; grid-template-rows:auto auto minmax(0,1fr); grid-template-areas:"topbar" "sidebar" "main"; }
     :where(.app-sidebar) { position:relative; block-size:auto; max-block-size:none; border-inline-end:0; border-block-end:1px solid var(--reeris-shell-border); }
     :where(.app-sidebar-body) { flex-direction:row; overflow-x:auto; padding-block:var(--reeris-space-2); }
     :where(.app-sidebar-footer) { display:none; }
     :where(.dashboard-grid > .span-3,.dashboard-grid > .span-4,.dashboard-grid > .span-6) { grid-column:span 12; }
+  }
+  @media (max-width: 48rem) {
+    :where(.app-shell) { grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto minmax(0,1fr); grid-template-areas:"topbar" "sidebar" "main"; }
   }
   @container (max-width: 30rem) {
     :where(.app-main) { padding:var(--reeris-space-3); }

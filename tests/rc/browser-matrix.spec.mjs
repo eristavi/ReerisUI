@@ -36,7 +36,7 @@ test('keyboard focus is visible and native controls remain operable', async ({pa
 
 test('native dialog opens, traps interaction surface, and closes with Escape', async ({page}) => {
   await page.goto('/docs/browser-reflow.html');
-  await page.getByRole('button',{name:/open focus test dialog/i}).click();
+  await page.getByRole('button',{name:/open keyboard test dialog/i}).click();
   const dialog=page.getByRole('dialog',{name:/keyboard focus test dialog/i});
   await expect(dialog).toBeVisible();
   await page.keyboard.press('Escape');
@@ -64,7 +64,27 @@ test('glide navigation initializes without breaking links', async ({page}) => {
 
 test('narrow viewport has no document-level horizontal overflow', async ({page}) => {
   await page.setViewportSize({width:320,height:800});
-  await page.goto('/docs/browser-reflow.html');
-  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
-  expect(overflow).toBeLessThanOrEqual(1);
+  for (const pathname of [
+    '/docs/index.html',
+    '/docs/foundation.html',
+    '/docs/tables.html',
+    '/docs/app-shell.html',
+    '/docs/marketing.html',
+    '/docs/browser-reflow.html',
+    '/examples/starters/dashboard.html'
+  ]) {
+    await page.goto(pathname);
+    const layout=await page.evaluate(()=>({
+      overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+      shellColumns:document.querySelector('.docs-shell') && getComputedStyle(document.querySelector('.docs-shell')).gridTemplateColumns.split(' ').length,
+      sidebarDisplay:document.querySelector('.docs-sidebar') && getComputedStyle(document.querySelector('.docs-sidebar')).display,
+      offenders:[...document.querySelectorAll('body *')].filter(el=>{
+        const box=el.getBoundingClientRect();
+        return box.width && (box.right>document.documentElement.clientWidth+1 || box.left<-1);
+      }).slice(0,8).map(el=>`${el.tagName.toLowerCase()}${el.className && typeof el.className==='string' ? '.'+el.className.trim().replace(/\s+/g,'.') : ''} (${Math.round(el.getBoundingClientRect().left)}–${Math.round(el.getBoundingClientRect().right)}; ${el.textContent.trim().slice(0,40)})`)
+    }));
+    expect(layout.overflow, `${pathname} overflows at 320px: ${layout.offenders.join(', ')}`).toBeLessThanOrEqual(1);
+    if (layout.shellColumns !== null) expect(layout.shellColumns, `${pathname} docs shell`).toBe(1);
+    if (layout.sidebarDisplay !== null) expect(layout.sidebarDisplay, `${pathname} mobile sections`).toBe('flex');
+  }
 });
