@@ -27,7 +27,8 @@ for (const name of fs.readdirSync(docsOut)) {
     if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
     html = html.replace(/<body([^>]*)>/i, '<body$1><a class="docs-back-link" href="index.html">← Reeris docs</a>');
   }
-  html = html.replaceAll('href="assets/docs.css"', `href="assets/docs.css?v=${revision}"`)
+  html = html.replaceAll('href="assets/reeris.css"', `href="assets/reeris.css?v=${revision}"`)
+    .replaceAll('href="assets/docs.css"', `href="assets/docs.css?v=${revision}"`)
     .replaceAll('src="assets/docs.js"', `src="assets/docs.js?v=${revision}"`);
   fs.writeFileSync(file, html);
 }

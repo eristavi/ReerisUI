@@ -7,6 +7,7 @@
 - Documented the HTML pattern, custom travel property, video playback limitation, and browser support fallback on the marketing page.
 - Corrected the marketing documentation example to wrap at narrow widths; post-merge browser and documentation CI checks passed.
 - Kept conversation contact names and status on readable lines by allowing the header identity to grow; added a browser regression check at phone and desktop widths.
+- Versioned the Core stylesheet URL in the hosted documentation so a deployment loads updated component CSS instead of a cached copy.
 
 ## 0.52.0 — Identity Reservation & Publication Clearance
 
