@@ -26,6 +26,7 @@
     appearance: none;
     inline-size: 100%;
     min-inline-size: 0;
+    max-inline-size: 100%;
     min-block-size: var(--_field-height);
     padding-block: var(--reeris-space-2);
     padding-inline: calc(var(--_field-px) * var(--reeris-density-factor));
@@ -101,8 +102,8 @@
   :where(.input-group > .input,.input-group > .select,.input-group > .btn,.input-group > .input-addon) { border-radius: 0; margin-inline-start: -1px; }
   :where(.input-group > :first-child) { margin-inline-start: 0; border-start-start-radius: var(--reeris-field-radius); border-end-start-radius: var(--reeris-field-radius); }
   :where(.input-group > :last-child) { border-start-end-radius: var(--reeris-field-radius); border-end-end-radius: var(--reeris-field-radius); }
-  :where(.input-group > .input,.input-group > .select) { flex: 1 1 auto; }
-  :where(.input-addon) { display: inline-flex; min-inline-size: 0; max-inline-size: 50%; align-items: center; padding-inline: var(--reeris-space-3); border: 1px solid var(--reeris-color-border); background: var(--reeris-color-surface-muted); color: var(--reeris-color-text-muted); font-size: var(--reeris-font-size-sm); overflow-wrap: anywhere; }
+  :where(.input-group > .input,.input-group > .select) { flex: 1 1 0; inline-size: 0; }
+  :where(.input-addon) { display: inline-flex; flex: none; min-inline-size: 0; max-inline-size: 50%; align-items: center; padding-inline: var(--reeris-space-3); border: 1px solid var(--reeris-color-border); background: var(--reeris-color-surface-muted); color: var(--reeris-color-text-muted); font-size: var(--reeris-font-size-sm); overflow-wrap: anywhere; }
   :where(.input-group > :focus-visible) { position: relative; z-index: 1; }
 
   :where(.field.floating) { position: relative; display: block; }
@@ -116,7 +117,8 @@
   :where(.field.horizontal) { grid-template-columns: minmax(8rem,12rem) minmax(0,1fr); align-items: start; column-gap: var(--reeris-space-4); }
   :where(.field.horizontal > .field-label) { padding-block-start: .6rem; }
   :where(.field-control) { display: grid; gap: var(--reeris-field-gap); min-inline-size: 0; }
-  :where(.form-row) { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr)); gap: var(--reeris-space-4); }
+  :where(.form-row) { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr)); gap: var(--reeris-space-4); min-inline-size: 0; }
+  :where(.form-row > *) { min-inline-size: 0; }
   :where(.form-actions) { display: flex; flex-wrap: wrap; align-items: center; gap: var(--reeris-space-3); }
   :where(fieldset) { min-inline-size: 0; }
   :where(.fieldset) { display: grid; gap: var(--reeris-space-4); padding: var(--reeris-space-4); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-component-radius); }

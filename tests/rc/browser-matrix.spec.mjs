@@ -88,3 +88,32 @@ test('narrow viewport has no document-level horizontal overflow', async ({page})
     if (layout.sidebarDisplay !== null) expect(layout.sidebarDisplay, `${pathname} mobile sections`).toBe('flex');
   }
 });
+
+test('form addons and native date/time inputs fit phone cards', async ({page}) => {
+  for (const width of [320,390]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/forms-complete.html');
+    const layout=await page.evaluate(()=>{
+      const budget=[...document.querySelectorAll('.field.horizontal')].find(el=>el.textContent.includes('Monthly budget'));
+      const group=budget.querySelector('.input-group');
+      const suffix=group.querySelector('.input-addon:last-child');
+      const field=group.querySelector('input');
+      const native=[...document.querySelectorAll('input[type="date"],input[type="time"]')];
+      const fits=(inner,outer)=>inner.getBoundingClientRect().right<=outer.getBoundingClientRect().right+1;
+      return {
+        overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+        groupFits:fits(group,budget),
+        suffixFits:fits(suffix,group),
+        suffixOneLine:suffix.getBoundingClientRect().height<=field.getBoundingClientRect().height+2,
+        nativeFit:native.map(input=>fits(input,input.closest('.panel'))),
+        nativeValues:native.map(input=>input.value)
+      };
+    });
+    expect(layout.overflow, `${width}px document overflow`).toBeLessThanOrEqual(1);
+    expect(layout.groupFits, `${width}px budget group`).toBe(true);
+    expect(layout.suffixFits, `${width}px budget suffix`).toBe(true);
+    expect(layout.suffixOneLine, `${width}px budget suffix wrap`).toBe(true);
+    expect(layout.nativeFit, `${width}px native controls`).toEqual([true,true]);
+    expect(layout.nativeValues).toEqual(['2026-09-26','09:30']);
+  }
+});
