@@ -10,19 +10,19 @@
   }
 
   :where(.stepper) { container-type:inline-size; margin:0; padding:0; list-style:none; display:grid; grid-template-columns:repeat(var(--reeris-step-count,4),minmax(0,1fr)); }
-  :where(.step) { position:relative; display:grid; justify-items:center; gap:var(--reeris-space-2); min-inline-size:0; color:var(--reeris-workflow-pending); text-align:center; }
-  :where(.step)::before { content:""; position:absolute; z-index:0; inset-block-start:calc(var(--reeris-workflow-marker-size) / 2); inset-inline-start:-50%; inline-size:100%; block-size:2px; background:var(--reeris-workflow-line); }
-  :where(.step:first-child)::before { display:none; }
-  :where(.step-marker) { position:relative; z-index:1; display:grid; place-items:center; inline-size:var(--reeris-workflow-marker-size); aspect-ratio:1; border:2px solid var(--reeris-workflow-line); border-radius:50%; background:var(--reeris-color-surface); color:inherit; font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-semibold); font-variant-numeric:tabular-nums; }
-  :where(.step-label) { font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-medium); }
-  :where(.step-description) { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); }
-  :where(.step[data-reeris-state="complete"]) { color:var(--reeris-workflow-complete); }
-  :where(.step[data-reeris-state="complete"])::before { background:var(--reeris-workflow-complete); }
-  :where(.step[data-reeris-state="complete"] .step-marker) { border-color:var(--reeris-workflow-complete); background:var(--reeris-workflow-complete); color:var(--reeris-color-on-success); }
-  :where(.step[aria-current="step"],.step[data-reeris-state="current"]) { color:var(--reeris-workflow-current); }
-  :where(.step[aria-current="step"] .step-marker,.step[data-reeris-state="current"] .step-marker) { border-color:var(--reeris-workflow-current); box-shadow:0 0 0 var(--reeris-focus-offset) color-mix(in oklch,var(--reeris-workflow-current) 22%,transparent); }
-  :where(.step[data-reeris-state="error"]) { color:var(--reeris-workflow-danger); }
-  :where(.step[data-reeris-state="error"] .step-marker) { border-color:var(--reeris-workflow-danger); }
+  :where(.stepper > .step) { position:relative; display:grid; justify-items:center; gap:var(--reeris-space-2); min-inline-size:0; color:var(--reeris-workflow-pending); text-align:center; }
+  :where(.stepper > .step)::before { content:""; position:absolute; z-index:0; inset-block-start:calc(var(--reeris-workflow-marker-size) / 2); inset-inline-start:-50%; inline-size:100%; block-size:2px; background:var(--reeris-workflow-line); }
+  :where(.stepper > .step:first-child)::before { display:none; }
+  :where(.stepper .step-marker) { position:relative; z-index:1; display:grid; place-items:center; inline-size:var(--reeris-workflow-marker-size); aspect-ratio:1; border:2px solid var(--reeris-workflow-line); border-radius:50%; background:var(--reeris-color-surface); color:inherit; font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-semibold); font-variant-numeric:tabular-nums; }
+  :where(.stepper .step-label) { font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-medium); }
+  :where(.stepper .step-description) { color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-xs); }
+  :where(.stepper > .step[data-reeris-state="complete"]) { color:var(--reeris-workflow-complete); }
+  :where(.stepper > .step[data-reeris-state="complete"])::before { background:var(--reeris-workflow-complete); }
+  :where(.stepper > .step[data-reeris-state="complete"] .step-marker) { border-color:var(--reeris-workflow-complete); background:var(--reeris-workflow-complete); color:var(--reeris-color-on-success); }
+  :where(.stepper > .step[aria-current="step"],.stepper > .step[data-reeris-state="current"]) { color:var(--reeris-workflow-current); }
+  :where(.stepper > .step[aria-current="step"] .step-marker,.stepper > .step[data-reeris-state="current"] .step-marker) { border-color:var(--reeris-workflow-current); box-shadow:0 0 0 var(--reeris-focus-offset) color-mix(in oklch,var(--reeris-workflow-current) 22%,transparent); }
+  :where(.stepper > .step[data-reeris-state="error"]) { color:var(--reeris-workflow-danger); }
+  :where(.stepper > .step[data-reeris-state="error"] .step-marker) { border-color:var(--reeris-workflow-danger); }
 
   :where(.workflow) { display:grid; gap:0; margin:0; padding:0; list-style:none; }
   :where(.workflow-item) { position:relative; display:grid; grid-template-columns:auto minmax(0,1fr); gap:var(--reeris-workflow-gap); padding-block-end:var(--reeris-space-6); }
@@ -54,15 +54,15 @@
 
   @container (max-width: 34rem) {
     :where(.stepper) { grid-template-columns:1fr; gap:0; }
-    :where(.step) { grid-template-columns:auto minmax(0,1fr); justify-items:start; align-items:start; gap:var(--reeris-space-3); padding-block-end:var(--reeris-space-4); text-align:start; }
-    :where(.step)::before { inset-block-start:var(--reeris-workflow-marker-size); inset-block-end:0; inset-inline-start:calc(var(--reeris-workflow-marker-size) / 2 - 1px); inline-size:2px; block-size:auto; }
-    :where(.step-label,.step-description) { grid-column:2; }
-    :where(.step-description) { margin-block-start:calc(var(--reeris-space-2) * -1); }
+    :where(.stepper > .step) { grid-template-columns:auto minmax(0,1fr); justify-items:start; align-items:start; gap:var(--reeris-space-3); padding-block-end:var(--reeris-space-4); text-align:start; }
+    :where(.stepper > .step)::before { inset-block-start:var(--reeris-workflow-marker-size); inset-block-end:0; inset-inline-start:calc(var(--reeris-workflow-marker-size) / 2 - 1px); inline-size:2px; block-size:auto; }
+    :where(.stepper .step-label,.stepper .step-description) { grid-column:2; }
+    :where(.stepper .step-description) { margin-block-start:calc(var(--reeris-space-2) * -1); }
   }
 
   @media (forced-colors: active) {
-    :where(.step-marker,.workflow-marker) { border-color:CanvasText; }
-    :where(.step[aria-current="step"] .step-marker,.step[data-reeris-state="current"] .step-marker,.workflow-item[aria-current="step"] .workflow-marker,.workflow-item[data-reeris-state="current"] .workflow-marker) { border-color:Highlight; color:Highlight; box-shadow:none; }
-    :where(.step[data-reeris-state="complete"] .step-marker,.workflow-item[data-reeris-state="complete"] .workflow-marker) { border-color:Highlight; background:Highlight; color:HighlightText; forced-color-adjust:none; }
+    :where(.stepper .step-marker,.workflow-marker) { border-color:CanvasText; }
+    :where(.stepper > .step[aria-current="step"] .step-marker,.stepper > .step[data-reeris-state="current"] .step-marker,.workflow-item[aria-current="step"] .workflow-marker,.workflow-item[data-reeris-state="current"] .workflow-marker) { border-color:Highlight; color:Highlight; box-shadow:none; }
+    :where(.stepper > .step[data-reeris-state="complete"] .step-marker,.workflow-item[data-reeris-state="complete"] .workflow-marker) { border-color:Highlight; background:Highlight; color:HighlightText; forced-color-adjust:none; }
   }
 }

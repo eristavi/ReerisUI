@@ -155,3 +155,18 @@ test('steps keep markers, labels, and connectors aligned on phones', async ({pag
     }
   }
 });
+
+test('workflow stepper retains its distinct markers on phones', async ({page}) => {
+  await page.setViewportSize({width:320,height:800});
+  await page.goto('/docs/workflow.html');
+  const layout=await page.locator('.stepper > .step').first().evaluate(step=>({
+    markerVisible:getComputedStyle(step.querySelector('.step-marker')).display,
+    navigationConnector:getComputedStyle(step,'::after').content,
+    labelColumn:getComputedStyle(step.querySelector('.step-label')).gridColumnStart,
+    lineWidth:getComputedStyle(step.nextElementSibling,'::before').width
+  }));
+  expect(layout.markerVisible).toBe('grid');
+  expect(layout.navigationConnector).toBe('none');
+  expect(layout.labelColumn).toBe('2');
+  expect(parseFloat(layout.lineWidth)).toBe(2);
+});
