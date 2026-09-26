@@ -137,6 +137,23 @@ test('sticky navbar keeps a readable fallback and responds to scroll state', asy
   }
 });
 
+test('sticky navbar composes with the optional glide indicator', async ({page}) => {
+  await page.goto('/docs/navigation.html');
+  const nav=page.locator('.scroll-state-demo [data-reeris-glide]');
+  await expect(nav).toHaveAttribute('data-reeris-glide-ready','');
+  const initial=await nav.evaluate(element=>[
+    element.style.getPropertyValue('--_reeris-glide-x'),
+    element.style.getPropertyValue('--_reeris-glide-y')
+  ].join(','));
+  await nav.getByRole('link',{name:'Details'}).focus();
+  const focused=await nav.evaluate(element=>[
+    element.style.getPropertyValue('--_reeris-glide-x'),
+    element.style.getPropertyValue('--_reeris-glide-y')
+  ].join(','));
+  expect(focused).not.toBe(initial);
+  expect(await nav.evaluate(element=>parseFloat(element.style.getPropertyValue('--_reeris-glide-width')))).toBeGreaterThan(0);
+});
+
 test('form addons and native date/time inputs fit phone cards', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:800});
