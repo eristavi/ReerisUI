@@ -46,6 +46,19 @@
   :where(.image-card-content) { display:grid; gap:var(--reeris-space-2); padding:var(--reeris-space-4); }
   :where(.image-card.overlay) { color:white; }
   :where(.image-card.overlay .image-card-content) { position:absolute; inset:auto 0 0; padding-block-start:var(--reeris-space-10); background:linear-gradient(to bottom,transparent,color-mix(in oklch,black 78%,transparent)); }
+  :where(.image-card-container) { container:reeris-image-card / inline-size; min-inline-size:0; }
+  /* Native nesting keeps the adaptive variant and its image treatment together. */
+  :where(.image-card.adaptive) {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    & > :where(img,picture) { min-inline-size:0; }
+    & > :where(img,picture > img) { inline-size:100%; block-size:100%; object-fit:cover; }
+    & > :where(.image-card-content) { min-inline-size:0; align-content:center; }
+  }
+  @container reeris-image-card (min-width: 36rem) {
+    :where(.image-card.adaptive) { grid-template-columns:minmax(0,.8fr) minmax(0,1fr); }
+    :where(.image-card.adaptive > img,.image-card.adaptive > picture > img) { aspect-ratio:auto; }
+  }
 
   :where(.media-placeholder) { display:grid; place-items:center; min-block-size:8rem; aspect-ratio:var(--reeris-placeholder-ratio,16 / 9); padding:var(--reeris-space-4); border:1px dashed var(--reeris-media-border); border-radius:var(--reeris-media-radius); background:var(--reeris-media-bg); color:var(--reeris-color-text-muted); text-align:center; }
   :where(.media-placeholder-icon) { font-size:2rem; line-height:1; }

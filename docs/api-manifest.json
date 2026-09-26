@@ -1,12 +1,12 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T16:19:06.171Z",
+  "generatedAt": "2026-09-26T17:11:02.262Z",
   "counts": {
     "sourceModules": 37,
-    "classes": 742,
-    "tokens": 527,
+    "classes": 745,
+    "tokens": 528,
     "definedTokens": 498,
-    "overrideHooks": 29,
+    "overrideHooks": 30,
     "dataAttributes": 11,
     "packageExports": 14,
     "jsApi": 5
@@ -261,6 +261,12 @@
       "name": "activity-title",
       "sources": [
         "components/data-display.css"
+      ]
+    },
+    {
+      "name": "adaptive",
+      "sources": [
+        "components/media.css"
       ]
     },
     {
@@ -1863,6 +1869,12 @@
     },
     {
       "name": "image-card",
+      "sources": [
+        "components/media.css"
+      ]
+    },
+    {
+      "name": "image-card-container",
       "sources": [
         "components/media.css"
       ]
@@ -3499,6 +3511,12 @@
       "name": "rounded-lg",
       "sources": [
         "utilities/utilities.css"
+      ]
+    },
+    {
+      "name": "scroll-progress",
+      "sources": [
+        "components/feedback.css"
       ]
     },
     {
@@ -7442,6 +7460,13 @@
       ]
     },
     {
+      "name": "--reeris-scroll-progress-size",
+      "kind": "override hook (fallback-only)",
+      "sources": [
+        "components/feedback.css"
+      ]
+    },
+    {
       "name": "--reeris-secondary-nav-width",
       "kind": "defined token",
       "sources": [
@@ -8414,7 +8439,8 @@
       "kind": "override hook (fallback-only)",
       "sources": [
         "components/advanced-navigation.css",
-        "components/button.css"
+        "components/button.css",
+        "components/feedback.css"
       ]
     },
     {

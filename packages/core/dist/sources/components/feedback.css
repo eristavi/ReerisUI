@@ -1,4 +1,11 @@
 @layer reeris.components {
+  :where(.scroll-progress) { display:none; position:fixed; z-index:var(--reeris-z-fixed,30); inset-block-start:0; inset-inline-start:0; inline-size:100%; block-size:var(--reeris-scroll-progress-size,.25rem); transform-origin:left center; background:var(--reeris-color-primary); pointer-events:none; }
+  :where(:root:dir(rtl) .scroll-progress) { transform-origin:right center; }
+  @supports (animation-timeline: scroll(root block)) {
+    :where(.scroll-progress) { display:block; transform:scaleX(0); animation:reeris-scroll-progress 1s linear both; animation-timeline:scroll(root block); }
+    @keyframes reeris-scroll-progress { to { transform:scaleX(1); } }
+  }
+  @media (prefers-reduced-motion: reduce) { :where(.scroll-progress) { display:none; animation:none; } }
   :root {
     --reeris-alert-radius: var(--reeris-component-radius);
     --reeris-alert-border-width: 1px;

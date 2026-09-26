@@ -140,6 +140,35 @@ test('inbox sender and preview use separate rows on phones', async ({page}) => {
   }
 });
 
+test('image card adapts to its container independently of viewport', async ({page}) => {
+  await page.setViewportSize({width:1000,height:800});
+  await page.goto('/.reeris-docs-site/docs/media.html');
+  const cards=page.locator('.image-card.adaptive');
+  const columns=async card=>card.evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length);
+  expect(await columns(cards.nth(0))).toBe(1);
+  expect(await columns(cards.nth(1))).toBe(2);
+  await cards.nth(1).locator('..').evaluate(wrapper=>wrapper.style.inlineSize='280px');
+  expect(await columns(cards.nth(1))).toBe(1);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
+});
+
+test('CSS scroll progress follows root scroll and respects reduced motion', async ({page}) => {
+  await page.goto('/.reeris-docs-site/docs/feedback.html');
+  const supported=await page.evaluate(()=>CSS.supports('animation-timeline','scroll(root block)'));
+  const bar=page.locator('.scroll-progress');
+  if (supported) {
+    await expect(bar).toBeVisible();
+    const scale=()=>bar.evaluate(element=>new DOMMatrix(getComputedStyle(element).transform).a);
+    const before=await scale();
+    await page.evaluate(async()=>{window.scrollTo(0,document.scrollingElement.scrollHeight);await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});
+    await expect.poll(scale).toBeGreaterThan(before+.2);
+  } else {
+    await expect(bar).toBeHidden();
+  }
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await expect(bar).toBeHidden();
+});
+
 test('sticky navbar keeps a readable fallback and responds to scroll state', async ({page}) => {
   for (const width of [320, 1024]) {
     await page.setViewportSize({width,height:800});

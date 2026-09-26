@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Abstract landscape</title>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#93c5fd"/><stop offset="1" stop-color="#e0e7ff"/></linearGradient></defs>
+  <rect width="640" height="480" fill="url(#sky)"/>
+  <circle cx="470" cy="125" r="55" fill="#fef3c7"/>
+  <path d="M0 340 165 165l155 175 85-95 235 235H0" fill="#536eaa"/>
+  <path d="M0 390 185 275l190 150 115-115 150 100v70H0" fill="#314e7a"/>
+</svg>

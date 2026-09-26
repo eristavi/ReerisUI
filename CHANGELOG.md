@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added a CSS scroll progress indicator driven by the root scroll timeline, with unsupported-browser and reduced-motion fallbacks.
+- Added an image card that stacks or splits according to a named container query, and used native CSS nesting for its variant rules.
+- Added selective CSS motion: subtle dialog/popover entry scale and disclosure marker/content movement using `@starting-style`, with reduced-motion behavior.
 - Fixed inbox sender names and previews collapsing into narrow columns on mobile screens.
 - Added a shared theme selector to published demo and documentation headers, with System, Light, Dark, and Glass choices saved across pages by docs-only JavaScript.
 - Added a CSS-only Glass theme with translucent semantic surfaces, backdrop blur, a soft canvas, and an opaque reduced-transparency fallback.
