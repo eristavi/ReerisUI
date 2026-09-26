@@ -1,11 +1,11 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T17:11:02.262Z",
+  "generatedAt": "2026-09-26T17:29:09.875Z",
   "counts": {
     "sourceModules": 37,
     "classes": 745,
-    "tokens": 528,
-    "definedTokens": 498,
+    "tokens": 529,
+    "definedTokens": 499,
     "overrideHooks": 30,
     "dataAttributes": 11,
     "packageExports": 14,
@@ -5851,6 +5851,13 @@
     },
     {
       "name": "--reeris-field-color",
+      "kind": "defined token",
+      "sources": [
+        "forms/forms.css"
+      ]
+    },
+    {
+      "name": "--reeris-field-focus-halo",
       "kind": "defined token",
       "sources": [
         "forms/forms.css"

@@ -431,6 +431,7 @@
     --reeris-field-border-color: var(--reeris-color-border);
     --reeris-field-border-hover: var(--reeris-color-border-strong);
     --reeris-field-border-focus: var(--reeris-color-primary);
+    --reeris-field-focus-halo: color-mix(in oklch, var(--reeris-field-border-focus) 22%, transparent);
     --reeris-field-radius: var(--reeris-component-radius);
     --reeris-field-shadow: var(--reeris-shadow-xs);
     --reeris-field-gap: var(--reeris-space-2);
@@ -469,7 +470,7 @@
   :where(.textarea) { min-block-size: calc(var(--reeris-control-md) * 2.5); resize: vertical; field-sizing: content; }
   :where(.input,.textarea)::placeholder { color: var(--reeris-field-placeholder); opacity: 1; }
   :where(.input:hover:not(:disabled):not(:read-only),.select:hover:not(:disabled),.textarea:hover:not(:disabled):not(:read-only)) { border-color: var(--reeris-field-border-hover); }
-  :where(.input:focus,.select:focus,.textarea:focus) { border-color: var(--reeris-field-border-focus); outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
+  :where(.input:focus,.select:focus,.textarea:focus) { border-color: var(--reeris-field-border-focus); outline: none; box-shadow: 0 0 0 3px var(--reeris-field-focus-halo); }
   :where(.input:disabled,.select:disabled,.textarea:disabled) { opacity: .55; cursor: not-allowed; background: var(--reeris-color-surface-muted); box-shadow: none; }
   :where(.input:read-only,.textarea:read-only) { background: var(--reeris-color-surface-muted); box-shadow: none; }
 
@@ -490,7 +491,10 @@
     background-repeat: no-repeat;
   }
   :where([dir="rtl"] .select) { background-position: 1rem 50%,.7rem 50%; }
-  :where(.select[multiple]) { block-size: auto; min-block-size: calc(var(--reeris-control-md) * 3); padding-block: var(--reeris-space-2); background-image: none; }
+  :where(.select[multiple]) { block-size: auto; min-block-size: calc(var(--reeris-control-md) * 3); padding-block: var(--reeris-space-2); padding-inline: var(--reeris-space-2); background-image: none; scrollbar-width: thin; scrollbar-color: var(--reeris-color-border-strong) transparent; }
+  :where(.select[multiple] option) { padding: var(--reeris-space-2) var(--reeris-space-3); border-radius: var(--reeris-radius-sm); color: var(--reeris-field-color); font: inherit; }
+  :where(.select[multiple] option:checked) { background: var(--reeris-color-primary-subtle); color: var(--reeris-field-color); }
+  :where(.select[multiple])::-webkit-scrollbar-button { display: none; block-size: 0; }
 
   :where(.field:has(:user-invalid),.field[aria-invalid="true"]) :where(.input,.select,.textarea),
   :where(.input[aria-invalid="true"],.select[aria-invalid="true"],.textarea[aria-invalid="true"]) { border-color: var(--reeris-color-danger); }
@@ -553,6 +557,8 @@
 @layer reeris.forms {
   @media (forced-colors: active) {
     :where(.input,.select,.textarea,.choice > input,.switch > input,.input-addon) { border-color: FieldText; forced-color-adjust: auto; }
+    :where(.input:focus,.select:focus,.textarea:focus) { border-color: Highlight; outline: 2px solid Highlight; outline-offset: 2px; box-shadow: none; }
+    :where(.select[multiple] option:checked) { background: Highlight; color: HighlightText; }
   }
 }
 
@@ -626,7 +632,7 @@
 
   /* Progressive customizable native select. Browsers without base-select keep the normal native select. */
   @supports (appearance: base-select) {
-    :where(.select.customizable) { appearance: base-select; padding-inline-end: var(--_field-px); }
+    :where(.select.customizable) { appearance: base-select; padding-inline-end: var(--_field-px); background-image: none; }
     :where(.select.customizable)::picker(select) { appearance: base-select; max-block-size: min(22rem,70dvh); margin-block-start: var(--reeris-space-1); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-component-radius); background: var(--reeris-color-surface-raised); color: var(--reeris-color-text); box-shadow: var(--reeris-shadow-lg); }
     :where(.select.customizable option) { padding: var(--reeris-space-2) var(--reeris-space-3); }
     :where(.select.customizable option:checked) { background: color-mix(in oklch,var(--reeris-color-primary) 14%,var(--reeris-color-surface)); color: var(--reeris-color-text); }

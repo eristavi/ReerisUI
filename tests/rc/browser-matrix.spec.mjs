@@ -320,6 +320,40 @@ test('form addons and native date/time inputs fit phone cards', async ({page}) =
   }
 });
 
+test('form focus has one halo and selects keep native controls aligned', async ({page},testInfo) => {
+  await page.goto('/.reeris-docs-site/docs/forms-complete.html');
+  const textarea=page.locator('textarea.textarea.xl');
+  await textarea.focus();
+  const focus=await textarea.evaluate(element=>({
+    outline:getComputedStyle(element).outlineStyle,
+    shadow:getComputedStyle(element).boxShadow
+  }));
+  expect(focus.outline).toBe('none');
+  expect(focus.shadow).not.toBe('none');
+  const select=await page.locator('select.select.customizable').evaluate(element=>({
+    supported:CSS.supports('appearance','base-select'),
+    appearance:getComputedStyle(element).appearance,
+    image:getComputedStyle(element).backgroundImage
+  }));
+  if (select.supported) {
+    expect(select.appearance).toBe('base-select');
+    expect(select.image).toBe('none');
+  }
+  const multiple=await page.locator('select.select[multiple]').evaluate(element=>({
+    image:getComputedStyle(element).backgroundImage,
+    padding:parseFloat(getComputedStyle(element.options[0]).paddingInlineStart),
+    overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+  }));
+  expect(multiple.image).toBe('none');
+  expect(multiple.padding).toBeGreaterThan(0);
+  expect(multiple.overflow).toBeLessThanOrEqual(1);
+  if (testInfo.project.name==='edge') {
+    await testInfo.attach('textarea-focus', {body:await textarea.screenshot(),contentType:'image/png'});
+    const panel=page.locator('.panel').filter({hasText:'Native select + progressive customization'});
+    await testInfo.attach('select-panel', {body:await panel.screenshot(),contentType:'image/png'});
+  }
+});
+
 test('steps keep markers, labels, and connectors aligned on phones', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:800});
