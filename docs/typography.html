@@ -19,6 +19,18 @@
     .specs :where(th,td) { padding: var(--reeris-space-3); border-block-end: 1px solid var(--reeris-color-border); text-align: start; }
     .specs code { overflow-wrap: anywhere; }
     pre { max-inline-size: 100%; overflow: auto; padding: var(--reeris-space-4); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface-muted); }
+    @media (max-width: 48rem) {
+      .specs, .specs tbody, .specs tr { display: block; inline-size: 100%; }
+      .specs thead { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+      .specs tr { padding-block: var(--reeris-space-4); border-block-end: 1px solid var(--reeris-color-border); }
+      .specs tr:last-child { border-block-end: 0; }
+      .specs :where(th,td) { display: block; inline-size: 100%; padding: 0; border: 0; overflow-wrap: anywhere; }
+      .specs th[scope="row"] { margin-block-end: var(--reeris-space-2); font-weight: var(--reeris-font-weight-semibold); }
+      .specs td + td { margin-block-start: var(--reeris-space-2); }
+      .specs td::before { display: block; color: var(--reeris-color-text-muted); font-size: var(--reeris-font-size-sm); }
+      .specs td:nth-child(2)::before { content: "Token"; }
+      .specs td:nth-child(3)::before { content: "Default scale"; }
+    }
   </style>
 </head>
 <body>
