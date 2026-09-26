@@ -44,6 +44,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npx playwright install ffmpeg
       - run: npm run build
       - run: npm run rc:browser:test -- --project=edge
       - run: node tooling/release-lab-evidence.mjs import-browser --latest
