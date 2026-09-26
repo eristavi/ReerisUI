@@ -2041,7 +2041,8 @@
     transition-delay:0s;
   }
 
-  /* Glide navigation. CSS is the fallback; @reeris/js sets the geometry variables. */
+  /* Glide navigation. Native anchor positioning drives the default indicator;
+     data-reeris-glide opts into the legacy JS geometry enhancement. */
   :where(.nav.glide,.navbar-nav.glide,.tabs.glide) {
     --_reeris-glide-x:0px;
     --_reeris-glide-y:0px;
@@ -2094,6 +2095,44 @@
   }
   :where(.glide.underline[data-reeris-glide-ready] .nav-link[aria-current="page"],.glide.underline[data-reeris-glide-ready] .nav-link.active) { background:transparent; }
 
+  @supports (anchor-name: --reeris-glide-target) and (inset-inline-start: anchor(--reeris-glide-target start)) and (inline-size: anchor-size(--reeris-glide-target width)) {
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide]))) {
+      anchor-scope:--reeris-glide-target;
+    }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])) > :is(.nav-link,.tab,[data-reeris-glide-item]):is([aria-current="page"],[aria-selected="true"],.active)) {
+      anchor-name:--reeris-glide-target;
+    }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible)) > :is(.nav-link,.tab,[data-reeris-glide-item]):is([aria-current="page"],[aria-selected="true"],.active):not(:hover,:focus-visible)) {
+      anchor-name:none;
+    }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])) > :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible)) {
+      anchor-name:--reeris-glide-target;
+    }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):has(> :is(.nav-link,.tab,[data-reeris-glide-item]):focus-visible) > :is(.nav-link,.tab,[data-reeris-glide-item]):hover:not(:focus-visible)) {
+      anchor-name:none;
+    }
+    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide]))::before {
+      inset-inline-start:anchor(--reeris-glide-target start);
+      inset-block-start:anchor(--reeris-glide-target top);
+      inline-size:anchor-size(--reeris-glide-target width);
+      block-size:anchor-size(--reeris-glide-target height);
+      translate:none;
+      transition:inset-inline-start var(--reeris-glide-duration) var(--reeris-glide-ease), inset-block-start var(--reeris-glide-duration) var(--reeris-glide-ease), inline-size var(--reeris-glide-duration) var(--reeris-glide-ease), block-size var(--reeris-glide-duration) var(--reeris-glide-ease), opacity var(--reeris-duration-fast) var(--reeris-ease-standard);
+    }
+    :where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide]),.tabs.glide:not([data-reeris-glide])):has(> :is(.nav-link,.tab,[data-reeris-glide-item]):is(:hover,:focus-visible,[aria-current="page"],[aria-selected="true"],.active))::before {
+      opacity:1;
+    }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide])) .nav-link:hover) { background:transparent; }
+    :where(:where(.nav.glide:not([data-reeris-glide]),.navbar-nav.glide:not([data-reeris-glide])) .nav-link:is([aria-current="page"],.active)) { background:transparent; color:var(--reeris-glide-color); }
+    :where(:where(.tabs.glide:not([data-reeris-glide])) .tab) { border-block-end-color:transparent; }
+    :where(.tabs.glide:not([data-reeris-glide]))::before,
+    :where(.glide.underline:not([data-reeris-glide]))::before {
+      inset-block-start:auto;
+      inset-block-end:anchor(--reeris-glide-target bottom);
+      block-size:2px;
+      transition:inset-inline-start var(--reeris-glide-duration) var(--reeris-glide-ease), inline-size var(--reeris-glide-duration) var(--reeris-glide-ease), inset-block-end var(--reeris-glide-duration) var(--reeris-glide-ease), opacity var(--reeris-duration-fast) var(--reeris-ease-standard);
+    }
+  }
   @container (max-width: 48rem) {
     :where(.navbar.responsive .navbar-disclosure) { display:block; margin-inline-start:auto; }
     :where(.navbar.responsive .navbar-toggle) { display:inline-flex; }

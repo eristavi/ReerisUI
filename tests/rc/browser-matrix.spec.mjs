@@ -137,21 +137,37 @@ test('sticky navbar keeps a readable fallback and responds to scroll state', asy
   }
 });
 
-test('sticky navbar composes with the optional glide indicator', async ({page}) => {
-  await page.goto('/docs/navigation.html');
-  const nav=page.locator('.scroll-state-demo [data-reeris-glide]');
-  await expect(nav).toHaveAttribute('data-reeris-glide-ready','');
-  const initial=await nav.evaluate(element=>[
-    element.style.getPropertyValue('--_reeris-glide-x'),
-    element.style.getPropertyValue('--_reeris-glide-y')
-  ].join(','));
-  await nav.getByRole('link',{name:'Details'}).focus();
-  const focused=await nav.evaluate(element=>[
-    element.style.getPropertyValue('--_reeris-glide-x'),
-    element.style.getPropertyValue('--_reeris-glide-y')
-  ].join(','));
-  expect(focused).not.toBe(initial);
-  expect(await nav.evaluate(element=>parseFloat(element.style.getPropertyValue('--_reeris-glide-width')))).toBeGreaterThan(0);
+test('sticky navbar glide follows links with JavaScript disabled', async ({browser}) => {
+  const context=await browser.newContext({javaScriptEnabled:false});
+  try {
+    const page=await context.newPage();
+    await page.goto('/docs/navigation.html');
+    const nav=page.locator('.scroll-state-demo .navbar-nav.glide');
+    await expect(nav).not.toHaveAttribute('data-reeris-glide','');
+    const geometry=()=>nav.evaluate(element=>{
+      const indicator=getComputedStyle(element,'::before');
+      return {
+        supported:CSS.supports('anchor-name','--reeris-glide-target') && CSS.supports('inset-inline-start','anchor(--reeris-glide-target start)') && CSS.supports('inline-size','anchor-size(--reeris-glide-target width)'),
+        left:parseFloat(indicator.left), width:parseFloat(indicator.width), opacity:indicator.opacity
+      };
+    });
+    const initial=await geometry();
+    const details=nav.getByRole('link',{name:'Details'});
+    await details.hover();
+    if (initial.supported) {
+      await expect.poll(async ()=>(await geometry()).left).not.toBe(initial.left);
+      const hovered=await geometry();
+      expect(hovered.width).toBeGreaterThan(0);
+      expect(hovered.opacity).toBe('1');
+    } else {
+      await expect(details).toHaveCSS('background-color',/rgba?\(/);
+    }
+    await nav.getByRole('link',{name:'Overview'}).focus();
+    await page.keyboard.press('Tab');
+    await expect(details).toBeFocused();
+  } finally {
+    await context.close();
+  }
 });
 
 test('form addons and native date/time inputs fit phone cards', async ({page}) => {

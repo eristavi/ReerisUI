@@ -106,7 +106,7 @@ Core expansion is now bounded against the frozen v1 architecture. The remaining 
 Adds safe-area-aware toast regions, semantic success/info/warning/error toast presentation, actions and dismiss controls, density integration, reduced-motion/reduced-transparency behavior, and forced-colors support. Core deliberately does not implement automatic dismissal timers; applications own toast lifecycle and choose appropriate live-region semantics.
 
 ### 0.33 — Navigation Completion
-Adds native-details responsive navbar composition, mega-menu and hover/focus-card patterns, plus `glide` navigation. Glide has a CSS-only fallback; the optional `@reeris/js` `GlideNavigation` enhancement moves one indicator between hovered/focused items and restores it to the active item. Reduced motion removes travel animation.
+Adds native-details responsive navbar composition, mega-menu and hover/focus-card patterns, plus `glide` navigation. Glide uses native CSS anchor positioning to move the indicator between hovered or keyboard-focused items and return it to the active item. Older browsers keep a readable hover style. Add `data-reeris-glide` and the optional `@reeris/js` module when a JavaScript enhancement is desired. Reduced motion removes travel animation.
 
 
 ### 0.34 — Forms Completeness Audit & Completion
