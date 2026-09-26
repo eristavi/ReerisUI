@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added an opt-in CSS scroll-state navbar that gains elevation when it sticks, with an unchanged readable surface in browsers without scroll-state queries.
 - Added a CSS-only parallax marketing pattern for decorative images, backgrounds, and videos, with subtle (4%), standard (8%), and strong (12%) depth presets plus optional gentle easing.
 - Added static fallback behavior for browsers without scroll-driven animations and reduced-motion handling; decorative video examples use a still poster for reduced-motion viewing.
 - Documented the HTML pattern, custom travel property, video playback limitation, and browser support fallback on the marketing page.

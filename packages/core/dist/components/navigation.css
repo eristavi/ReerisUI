@@ -26,6 +26,12 @@
   :where(.navbar-nav) { display:flex; flex-wrap:wrap; align-items:center; gap:var(--reeris-space-1); }
   :where(.navbar-actions) { display:flex; align-items:center; gap:var(--reeris-space-2); margin-inline-start:auto; }
   :where(.navbar.sticky) { position:sticky; inset-block-start:0; z-index:var(--reeris-z-sticky,20); }
+  /* An opt-in inner surface lets a scroll-state query style the sticky navbar's descendant. */
+  :where(.navbar.sticky.scroll-state) { display:block; min-block-size:0; padding:0; border:0; background:transparent; container-type:scroll-state; container-name:reeris-sticky-nav; }
+  :where(.navbar.scroll-state > .navbar-surface) { display:flex; min-block-size:var(--reeris-navbar-height); align-items:center; gap:var(--reeris-space-4); padding-inline:var(--reeris-space-fluid-sm); border-block-end:1px solid var(--reeris-color-border); background:var(--reeris-color-surface); }
+  @container reeris-sticky-nav scroll-state(stuck: top) {
+    :where(.navbar-surface) { border-block-end-color:var(--reeris-color-border-strong); box-shadow:var(--reeris-shadow-md); }
+  }
 
   :where(.breadcrumb) { display:flex; flex-wrap:wrap; align-items:center; gap:var(--reeris-space-1-5); margin:0; padding:0; list-style:none; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }
   :where(.breadcrumb-item) { display:inline-flex; align-items:center; gap:var(--reeris-space-1-5); }
@@ -75,6 +81,7 @@
   }
   @media (max-width: 30rem) {
     :where(.navbar:not(.responsive)) { align-items:flex-start; flex-wrap:wrap; padding-block:var(--reeris-space-3); }
+    :where(.navbar.scroll-state:not(.responsive) > .navbar-surface) { align-items:flex-start; flex-wrap:wrap; padding-block:var(--reeris-space-3); }
     :where(.steps) { grid-template-columns:minmax(0,1fr); gap:var(--reeris-space-3); }
     :where(.steps > .step) { grid-template-columns:2rem minmax(0,1fr); gap:var(--reeris-space-3); justify-items:start; align-items:center; text-align:start; }
     :where(.steps > .step)::before { grid-column:1; grid-row:1; place-self:center; }

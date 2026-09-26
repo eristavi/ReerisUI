@@ -1,9 +1,9 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T11:07:24.409Z",
+  "generatedAt": "2026-09-26T12:35:28.963Z",
   "counts": {
     "sourceModules": 36,
-    "classes": 736,
+    "classes": 738,
     "tokens": 521,
     "definedTokens": 493,
     "overrideHooks": 28,
@@ -1808,7 +1808,8 @@
     {
       "name": "identity",
       "sources": [
-        "components/identity.css"
+        "components/identity.css",
+        "components/messaging.css"
       ]
     },
     {
@@ -2599,6 +2600,12 @@
       "name": "navbar-panel",
       "sources": [
         "components/navigation-extended.css"
+      ]
+    },
+    {
+      "name": "navbar-surface",
+      "sources": [
+        "components/navigation.css"
       ]
     },
     {
@@ -3463,6 +3470,12 @@
       "name": "rounded-lg",
       "sources": [
         "utilities/utilities.css"
+      ]
+    },
+    {
+      "name": "scroll-state",
+      "sources": [
+        "components/navigation.css"
       ]
     },
     {

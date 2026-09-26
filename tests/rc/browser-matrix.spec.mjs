@@ -111,6 +111,32 @@ test('conversation header keeps the contact name and status readable', async ({p
   }
 });
 
+test('sticky navbar keeps a readable fallback and responds to scroll state', async ({page}) => {
+  for (const width of [320, 1024]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/navigation.html');
+    const result=await page.locator('.scroll-state-demo').evaluate(async scroller=>{
+      const surface=scroller.querySelector('.navbar-surface');
+      const initial=getComputedStyle(surface).boxShadow;
+      scroller.scrollTop=120;
+      await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+      return {
+        supported:CSS.supports('container-type','scroll-state'),
+        scrolled:scroller.scrollTop,
+        shadow:getComputedStyle(surface).boxShadow,
+        background:getComputedStyle(surface).backgroundColor,
+        overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+        initial
+      };
+    });
+    expect(result.scrolled).toBeGreaterThan(0);
+    expect(result.background).not.toBe('rgba(0, 0, 0, 0)');
+    expect(result.overflow).toBeLessThanOrEqual(1);
+    if (result.supported) expect(result.shadow, `${width}px stuck navbar`).not.toBe(result.initial);
+    else expect(result.shadow, `${width}px fallback navbar`).toBe(result.initial);
+  }
+});
+
 test('form addons and native date/time inputs fit phone cards', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:800});
