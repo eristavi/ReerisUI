@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T13:16:33.707Z",
+  "generatedAt": "2026-09-26T13:20:48.804Z",
   "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
   "budgets": {
     "fullRawBytes": 261120,
@@ -28,14 +28,14 @@
   },
   "bundle": {
     "full": {
-      "raw": 244273,
-      "gzip": 34356,
-      "brotli": 28219
+      "raw": 244223,
+      "gzip": 34352,
+      "brotli": 28190
     },
     "minified": {
-      "raw": 222244,
-      "gzip": 31291,
-      "brotli": 26095
+      "raw": 222203,
+      "gzip": 31295,
+      "brotli": 26084
     },
     "optionalJsAllModules": {
       "raw": 5497,
@@ -458,25 +458,25 @@
       "id": "full-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.css raw 244273 / 261120 bytes."
+      "detail": "reeris.css raw 244223 / 261120 bytes."
     },
     {
       "id": "min-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css raw 222244 / 230400 bytes."
+      "detail": "reeris.min.css raw 222203 / 230400 bytes."
     },
     {
       "id": "min-gzip-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css gzip 31291 / 32768 bytes."
+      "detail": "reeris.min.css gzip 31295 / 32768 bytes."
     },
     {
       "id": "min-brotli-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css brotli 26095 / 27648 bytes."
+      "detail": "reeris.min.css brotli 26084 / 27648 bytes."
     },
     {
       "id": "module-size-budget",

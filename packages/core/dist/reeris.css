@@ -2470,9 +2470,7 @@
   :where(.carousel) { position:relative; container-type:inline-size; min-inline-size:0; }
   :where(.carousel-track) {
     --reeris-carousel-slide-size:calc((100% - var(--reeris-carousel-gap) - var(--reeris-carousel-gap)) / 3);
-    display:grid;
-    grid-auto-flow:column;
-    grid-auto-columns:minmax(0,var(--reeris-carousel-slide-size));
+    display:flex;
     gap:var(--reeris-carousel-gap);
     overflow-x:auto;
     overscroll-behavior-inline:contain;
@@ -2488,7 +2486,7 @@
     list-style:none;
   }
   :where(.carousel-track:focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
-  :where(.carousel-slide) { min-inline-size:0; scroll-snap-align:start; scroll-snap-stop:always; }
+  :where(.carousel-slide) { flex:0 0 var(--reeris-carousel-slide-size); min-inline-size:0; scroll-snap-align:start; scroll-snap-stop:always; }
   :where(.carousel-slide > img,.carousel-slide > video,.carousel-slide > picture,.carousel-slide > picture > img) { display:block; inline-size:100%; block-size:auto; }
   /* Generated controls participate in native focus order and disable at scroll boundaries. */
   :where(.carousel-track)::scroll-button(*) {
