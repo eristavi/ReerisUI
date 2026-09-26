@@ -157,7 +157,7 @@ test('CSS scroll progress follows root scroll and respects reduced motion', asyn
   const supported=await page.evaluate(()=>CSS.supports('animation-timeline','scroll(root block)'));
   const bar=page.locator('.scroll-progress');
   if (supported) {
-    await expect(bar).toBeVisible();
+    expect(await bar.evaluate(element=>getComputedStyle(element).display)).toBe('block');
     const scale=()=>bar.evaluate(element=>new DOMMatrix(getComputedStyle(element).transform).a);
     const before=await scale();
     await page.evaluate(async()=>{window.scrollTo(0,document.scrollingElement.scrollHeight);await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});
