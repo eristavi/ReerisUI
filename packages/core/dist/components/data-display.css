@@ -55,7 +55,11 @@
   :where(.list-item.interactive:focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:calc(var(--reeris-focus-offset) * -1); }
 
   @container (max-width: 30rem) {
-    :where(.data-list) { grid-template-columns:1fr; }
+    :where(.data-list dt) { padding-block-end:var(--reeris-space-1); border-block-end:0; }
+    :where(.data-list dd) { padding-block-start:0; text-align:start; }
+  }
+  @media (max-width: 30rem) {
+    :where(.data-list) { grid-template-columns:minmax(0,1fr); }
     :where(.data-list dt) { padding-block-end:var(--reeris-space-1); border-block-end:0; }
     :where(.data-list dd) { padding-block-start:0; text-align:start; }
   }

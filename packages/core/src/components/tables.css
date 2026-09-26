@@ -11,7 +11,7 @@
     --reeris-table-radius: var(--reeris-radius-lg);
   }
 
-  :where(.table-wrap) { max-inline-size:100%; overflow:auto; border:1px solid var(--reeris-table-border-color); border-radius:var(--reeris-table-radius); background:var(--reeris-table-bg); }
+  :where(.table-wrap) { container-type:inline-size; max-inline-size:100%; overflow:auto; border:1px solid var(--reeris-table-border-color); border-radius:var(--reeris-table-radius); background:var(--reeris-table-bg); }
   :where(.table) { inline-size:100%; border-collapse:separate; border-spacing:0; background:var(--reeris-table-bg); color:var(--reeris-table-color); font-variant-numeric:normal; }
   :where(.table caption) { padding:var(--reeris-space-3) var(--reeris-space-4); color:var(--reeris-color-text-muted); text-align:start; font-size:var(--reeris-font-size-sm); }
   :where(.table th,.table td) { padding-block:calc(var(--reeris-table-cell-padding-block) * var(--reeris-density-factor)); padding-inline:var(--reeris-table-cell-padding-inline); border-block-end:1px solid var(--reeris-table-border-color); text-align:start; vertical-align:middle; }
@@ -36,8 +36,8 @@
 
   :where(.sort-button) { display:inline-flex; align-items:center; gap:var(--reeris-space-1-5); margin:calc(var(--reeris-space-2) * -1); padding:var(--reeris-space-2); border:0; border-radius:var(--reeris-radius-sm); background:transparent; color:inherit; font:inherit; font-weight:inherit; cursor:pointer; }
   :where(.sort-button)::after { content:"↕"; opacity:.55; font-size:.85em; }
-  :where(th[aria-sort="ascending"] .sort-button)::after) { content:"↑"; opacity:1; }
-  :where(th[aria-sort="descending"] .sort-button)::after) { content:"↓"; opacity:1; }
+  :where(th[aria-sort="ascending"] .sort-button)::after { content:"↑"; opacity:1; }
+  :where(th[aria-sort="descending"] .sort-button)::after { content:"↓"; opacity:1; }
   :where(.sort-button:hover) { background:var(--reeris-color-surface); color:var(--reeris-color-text); }
   :where(.sort-button:focus-visible,.table :is(a,button,input,select):focus-visible) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:var(--reeris-focus-offset); }
 

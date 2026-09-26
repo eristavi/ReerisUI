@@ -67,6 +67,10 @@
     :where(.secondary-nav-link) { flex:none; border-inline-start:0; border-block-end:2px solid transparent; }
     :where(.secondary-nav-link[aria-current="page"],.secondary-nav-link.active) { border-block-end-color:var(--reeris-color-primary); }
   }
+  @media (max-width: 48rem) {
+    :where(.app-shell:has(.mobile-nav)) { padding-block-end:calc(var(--reeris-mobile-nav-height) + var(--reeris-safe-bottom)); }
+    :where(.mobile-nav) { display:block; }
+  }
 
   @media (prefers-reduced-motion: reduce) { :where(.sidebar-link,.sidebar-chevron) { transition:none; } }
   @media (prefers-reduced-transparency: reduce) { :where(.mobile-nav) { background:var(--reeris-mobile-nav-bg); backdrop-filter:none; } }
