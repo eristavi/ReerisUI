@@ -275,7 +275,7 @@ test('published demo theme selector persists across pages and resets to system',
     canvas:getComputedStyle(document.body).backgroundImage
   }));
   expect(glass.scheme).toBe('light');
-  expect(glass.surface).toMatch(/rgba?\(/);
+  expect(glass.surface).not.toBe('rgba(255, 255, 255, 0.68)');
   expect(glass.canvas).toContain('gradient');
   await page.goto('/.reeris-docs-site/docs/index.html');
   const homeTheme=page.getByLabel('Theme');
@@ -323,7 +323,7 @@ test('form addons and native date/time inputs fit phone cards', async ({page}) =
 test('typography roles preserve hierarchy and fit narrow screens', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:700});
-    await page.goto('/docs/typography.html');
+    await page.goto('/.reeris-docs-site/docs/typography.html');
     await page.getByLabel('Theme').selectOption('glass');
     const type=await page.evaluate(()=>{
       const size=selector=>parseFloat(getComputedStyle(document.querySelector(selector)).fontSize);
