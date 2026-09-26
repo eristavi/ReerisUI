@@ -2534,7 +2534,7 @@
   @keyframes reeris-parallax-shift { from { transform:translate3d(0,calc(-1 * var(--reeris-parallax-travel)),0); } to { transform:translate3d(0,var(--reeris-parallax-travel),0); } }
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: view()) {
-      :where(.parallax-media) { animation:reeris-parallax-shift var(--reeris-parallax-easing) both; animation-timeline:--reeris-parallax; animation-range:cover; animation-duration:auto; }
+      :where(.parallax-media) { animation:reeris-parallax-shift 1ms var(--reeris-parallax-easing) both; animation-timeline:--reeris-parallax; animation-range:cover; }
     }
   }
   @media (prefers-reduced-motion: reduce) { :where(.parallax-media > video) { display:none; } }
