@@ -1,31 +1,59 @@
 # Reeris UI
 
-A modern, native-web UI framework. HTML and CSS first. No JavaScript required by the core and no consumer build step required.
+**Current source version: 0.52.0**
 
-**Documentation:** [Browse the Reeris UI docs](https://eristavi.github.io/ReerisUI/docs/index.html)
+Reeris UI is a native-web UI framework built around semantic HTML and CSS. The Core stylesheet requires no JavaScript and no consumer build step. Optional JavaScript adds behavior only where an application needs it.
 
-**Typography standards:** [View the heading scale and text roles](https://eristavi.github.io/ReerisUI/docs/typography.html)
+[Documentation](https://eristavi.github.io/ReerisUI/docs/index.html) · [API reference](https://eristavi.github.io/ReerisUI/docs/api-reference.html) · [Examples and starters](https://eristavi.github.io/ReerisUI/docs/starters.html) · [Changelog](CHANGELOG.md)
 
-## Status
+## Philosophy
 
-Reeris UI 0.51 — Naming & Publication Clearance Research. Core remains feature-frozen and the public Core/JS API remains under the RC freeze baseline. The public-name gate remains open: current research found material conflicts around the Reeris identity, including active software products/projects using Reeris and prior exact Reeris UI use. A rename review is recommended before public publication; no package namespace has been changed yet.
+- **Start with the platform.** Use native controls, semantic markup, CSS layout, container queries, scroll snap, and progressive CSS features before adding script.
+- **Keep behavior in the right place.** Core provides presentation and state styling; applications control data, media playback, persistence, and business logic. `@reeris/js` is optional.
+- **Adapt to context.** Components respond to their containers, system color preference, density, direction, and user motion or contrast preferences.
+- **Make access part of the design.** Keyboard focus, reduced motion, forced colors, reflow, and readable content are built into the component contracts. WCAG 2.2 AA is the acceptance target; full conformance is not yet claimed.
+- **Keep the public surface deliberate.** Design tokens, documented classes, source maps, and reproducible builds support customization and review.
 
-## Principles
+## Current features
 
-- Native HTML/CSS first
-- Progressive enhancement
-- WCAG 2.2 AA acceptance target
-- Container-first responsive components
-- Direction-independent LTR/RTL core
-- Zero production dependencies for Reeris Core
-- MIT licensed
+| Area | Included today | Explore |
+| --- | --- | --- |
+| Foundations | Semantic tokens, system/light/dark/Glass themes, density, layout primitives, RTL support, typography roles and heading scale | [Foundation](https://eristavi.github.io/ReerisUI/docs/foundation.html) · [Typography](https://eristavi.github.io/ReerisUI/docs/typography.html) · [Themes](https://eristavi.github.io/ReerisUI/docs/themes.html) |
+| Controls and feedback | Buttons, native-first forms, select styling, focus states, alerts, progress, toasts, dialogs, and content states | [Forms](https://eristavi.github.io/ReerisUI/docs/forms-complete.html) · [Feedback](https://eristavi.github.io/ReerisUI/docs/feedback.html) · [Content states](https://eristavi.github.io/ReerisUI/docs/content-states.html) |
+| Application patterns | Navigation, app shells, sidebars, tables, dashboards, messaging, notifications, files, settings, and commerce presentation | [Navigation](https://eristavi.github.io/ReerisUI/docs/navigation.html) · [Tables](https://eristavi.github.io/ReerisUI/docs/tables.html) · [Messaging](https://eristavi.github.io/ReerisUI/docs/messaging.html) |
+| CSS motion and media | CSS-first Glide navigation, scroll-state styling, scroll progress, image/video parallax presentation, scroll-snap carousels, and selective entry transitions | [Navigation](https://eristavi.github.io/ReerisUI/docs/navigation-completion.html) · [Marketing and parallax](https://eristavi.github.io/ReerisUI/docs/marketing.html) · [Carousel](https://eristavi.github.io/ReerisUI/docs/carousel.html) |
+| Integration | Modular Core CSS, optional vanilla-JS enhancements, public API reference, and five Core-only starters | [API reference](https://eristavi.github.io/ReerisUI/docs/api-reference.html) · [Starters](https://eristavi.github.io/ReerisUI/docs/starters.html) |
 
-## Monorepo
+New CSS features use readable fallbacks in browsers without support. Parallax moves the media presentation with scroll; it does not seek video frames. Carousels use native scrolling, while video playback stays under the user's control.
+
+## Get started
+
+Download the [built Core stylesheet](https://eristavi.github.io/ReerisUI/docs/assets/reeris.css) and include it in a page:
+
+```html
+<link rel="stylesheet" href="reeris.css">
+<button class="btn primary">Continue</button>
+```
+
+The documentation includes [live component examples](https://eristavi.github.io/ReerisUI/docs/index.html) and [five starter compositions](https://eristavi.github.io/ReerisUI/docs/starters.html). The `@reeris/core` and `@reeris/js` package sources are in this repository; npm publication is pending identity and namespace clearance. Do not assume these packages are available in the registry yet.
+
+For local development, use Node.js 20 or later:
+
+```sh
+npm install
+npm run build
+npm run audit:all
+```
+
+## Repository map
 
 - `packages/core` — canonical CSS framework
-- `packages/icons` — SVG icon system
 - `packages/js` — optional vanilla-JS enhancements
-- `packages/react`, `vue`, `svelte` — framework adapters
-- `tokens` — typed, standards-compatible design-token source
-- `docs`, `examples`, `tests`, `tooling`, `labs`
+- `tokens` — typed design-token source
+- `docs`, `examples`, `tests`, `tooling` — documentation, examples, acceptance fixtures, and release tooling
 
+## Release status
+
+Version 0.52.0 is the current source version. Core is feature-frozen against its release-candidate API baseline. Public package publication remains gated on identity and namespace clearance, and the remaining real-browser, device, assistive-technology, and human visual acceptance work is tracked in the [release-candidate guide](https://eristavi.github.io/ReerisUI/docs/release-candidate-readiness.html). See the [changelog](CHANGELOG.md) for the version history and newer unreleased work.
+
+MIT licensed. See [LICENSE](LICENSE).
