@@ -2774,7 +2774,8 @@
 
   :where(.conversation) { container-type:inline-size; display:grid; grid-template-rows:auto minmax(0,1fr) auto; min-block-size:24rem; max-block-size:min(48rem,85dvh); background:var(--reeris-color-surface); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-component-radius); overflow:hidden; }
   :where(.conversation-header) { display:flex; align-items:center; gap:var(--reeris-space-3); padding:calc(var(--reeris-space-3) * var(--reeris-density-factor)); border-block-end:1px solid var(--reeris-color-border-muted); }
-  :where(.conversation-actions) { display:flex; align-items:center; gap:var(--reeris-space-1); margin-inline-start:auto; }
+  :where(.conversation-header > .identity) { flex:1; }
+  :where(.conversation-actions) { display:flex; flex:none; align-items:center; gap:var(--reeris-space-1); margin-inline-start:auto; }
   :where(.conversation-body) { display:flex; flex-direction:column; gap:var(--reeris-space-3); min-block-size:0; padding:var(--reeris-space-4); overflow:auto; overscroll-behavior:contain; scroll-padding-block:var(--reeris-space-4); }
   :where(.message) { display:flex; align-items:flex-end; gap:var(--reeris-space-2); max-inline-size:min(100%,var(--reeris-message-max-width)); }
   :where(.message.own) { align-self:flex-end; flex-direction:row-reverse; }

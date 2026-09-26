@@ -89,6 +89,28 @@ test('narrow viewport has no document-level horizontal overflow', async ({page})
   }
 });
 
+test('conversation header keeps the contact name and status readable', async ({page}) => {
+  for (const width of [320, 390, 1024]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/messaging.html');
+    const layout=await page.locator('.conversation-header').evaluate(header=>{
+      const name=header.querySelector('.identity-name');
+      const meta=header.querySelector('.identity-meta');
+      const lineHeight=element=>parseFloat(getComputedStyle(element).lineHeight);
+      return {
+        nameHeight:name.getBoundingClientRect().height,
+        nameLineHeight:lineHeight(name),
+        metaHeight:meta.getBoundingClientRect().height,
+        metaLineHeight:lineHeight(meta),
+        overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+      };
+    });
+    expect(layout.nameHeight, `${width}px contact name wraps`).toBeLessThanOrEqual(layout.nameLineHeight+1);
+    expect(layout.metaHeight, `${width}px contact status wraps`).toBeLessThanOrEqual(layout.metaLineHeight+1);
+    expect(layout.overflow, `${width}px document overflow`).toBeLessThanOrEqual(1);
+  }
+});
+
 test('form addons and native date/time inputs fit phone cards', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:800});

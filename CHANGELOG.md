@@ -6,6 +6,7 @@
 - Added static fallback behavior for browsers without scroll-driven animations and reduced-motion handling; decorative video examples use a still poster for reduced-motion viewing.
 - Documented the HTML pattern, custom travel property, video playback limitation, and browser support fallback on the marketing page.
 - Corrected the marketing documentation example to wrap at narrow widths; post-merge browser and documentation CI checks passed.
+- Kept conversation contact names and status on readable lines by allowing the header identity to grow; added a browser regression check at phone and desktop widths.
 
 ## 0.52.0 — Identity Reservation & Publication Clearance
 
