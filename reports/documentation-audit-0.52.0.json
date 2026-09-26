@@ -1,14 +1,14 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T17:39:25.134Z",
+  "generatedAt": "2026-09-26T19:28:45.887Z",
   "summary": {
-    "passed": 1570,
-    "total": 1570,
+    "passed": 1605,
+    "total": 1605,
     "failed": 0,
-    "sourceModules": 37,
-    "classes": 745,
-    "tokens": 529,
-    "definedTokens": 499,
+    "sourceModules": 38,
+    "classes": 759,
+    "tokens": 544,
+    "definedTokens": 514,
     "overrideHooks": 30,
     "dataAttributes": 11,
     "packageExports": 14,
@@ -103,6 +103,16 @@
     },
     {
       "name": "Mapped doc exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source module mapped: core/typography.css",
+      "pass": true,
+      "detail": "typography.html"
+    },
+    {
+      "name": "Mapped doc exists: typography.html",
       "pass": true,
       "detail": ""
     },
@@ -423,6 +433,16 @@
     },
     {
       "name": "Configured page exists: foundation.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs index links: typography.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Configured page exists: typography.html",
       "pass": true,
       "detail": ""
     },
@@ -4282,6 +4302,76 @@
       "detail": ""
     },
     {
+      "name": "Class documented: .type-body",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-caption",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-code",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-display",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-h6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-lead",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-measure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-overline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Class documented: .type-small",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Class documented: .typing-indicator",
       "pass": true,
       "detail": ""
@@ -5423,6 +5513,11 @@
     },
     {
       "name": "Token documented: --reeris-font-size-4xl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-font-size-5xl",
       "pass": true,
       "detail": ""
     },
@@ -6997,6 +7092,76 @@
       "detail": ""
     },
     {
+      "name": "Token documented: --reeris-type-body-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-caption-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-display-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h1-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h2-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h3-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h4-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h5-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-h6-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-heading-tracking",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-lead-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-measure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-overline-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Token documented: --reeris-type-small-size",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "Token documented: --reeris-value",
       "pass": true,
       "detail": ""
@@ -7818,6 +7983,16 @@
     },
     {
       "name": "Docs page declares UA light/dark support: tree.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Docs page follows system scheme: typography.html",
+      "pass": true,
+      "detail": "<html lang=\"en\">"
+    },
+    {
+      "name": "Docs page declares UA light/dark support: typography.html",
       "pass": true,
       "detail": ""
     },

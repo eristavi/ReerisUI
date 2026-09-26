@@ -4,6 +4,7 @@
 @import "./core/theme.css";
 @import "./core/personality.css";
 @import "./core/base.css";
+@import "./core/typography.css";
 
 @import "./forms/forms.css";
 

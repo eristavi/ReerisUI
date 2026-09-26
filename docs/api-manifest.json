@@ -1,11 +1,11 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T17:29:09.875Z",
+  "generatedAt": "2026-09-26T19:28:45.645Z",
   "counts": {
-    "sourceModules": 37,
-    "classes": 745,
-    "tokens": 529,
-    "definedTokens": 499,
+    "sourceModules": 38,
+    "classes": 759,
+    "tokens": 544,
+    "definedTokens": 514,
     "overrideHooks": 30,
     "dataAttributes": 11,
     "packageExports": 14,
@@ -135,6 +135,10 @@
     {
       "source": "core/theme.css",
       "documentation": "foundation.html"
+    },
+    {
+      "source": "core/typography.css",
+      "documentation": "typography.html"
     },
     {
       "source": "forms/forms.css",
@@ -4438,6 +4442,90 @@
       ]
     },
     {
+      "name": "type-body",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-caption",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-code",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-display",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h1",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h2",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h3",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h4",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h5",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-h6",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-lead",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-measure",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-overline",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
+      "name": "type-small",
+      "sources": [
+        "core/typography.css"
+      ]
+    },
+    {
       "name": "typing-indicator",
       "sources": [
         "components/messaging.css"
@@ -6005,6 +6093,13 @@
     },
     {
       "name": "--reeris-font-size-4xl",
+      "kind": "defined token",
+      "sources": [
+        "tokens/generated.css"
+      ]
+    },
+    {
+      "name": "--reeris-font-size-5xl",
       "kind": "defined token",
       "sources": [
         "tokens/generated.css"
@@ -8207,6 +8302,104 @@
       "kind": "defined token",
       "sources": [
         "components/tree.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-body-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-caption-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-display-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h1-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h2-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h3-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h4-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h5-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-h6-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-heading-tracking",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-lead-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-measure",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-overline-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
+      ]
+    },
+    {
+      "name": "--reeris-type-small-size",
+      "kind": "defined token",
+      "sources": [
+        "core/theme.css"
       ]
     },
     {

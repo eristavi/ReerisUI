@@ -1,6 +1,6 @@
 @layer reeris.base {
   html { background: var(--reeris-color-canvas); color: var(--reeris-color-text); font-family: var(--reeris-font-body); line-height: var(--reeris-line-height-normal); }
-  body { min-block-size: 100dvh; background: var(--reeris-color-canvas); color: var(--reeris-color-text); }
+  body { min-block-size: 100dvh; background: var(--reeris-color-canvas); color: var(--reeris-color-text); font-size: var(--reeris-font-size-base); }
   :where(h1,h2,h3,h4,h5,h6) { color: var(--reeris-color-text); font-family: var(--reeris-font-heading); line-height: var(--reeris-line-height-tight); text-wrap: balance; }
   :where(p,li,dd) { text-wrap: pretty; }
   :where(p,li,dd,dt,td,th,figcaption) { overflow-wrap: anywhere; }

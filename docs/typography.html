@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reeris Typography</title>
+  <link rel="stylesheet" href="../packages/core/src/reeris.css">
+  <style>
+    main { max-inline-size: 76rem; margin-inline: auto; padding: clamp(1rem,4vi,3rem); }
+    .intro { max-inline-size: 60rem; }
+    .samples { display: grid; gap: var(--reeris-space-4); }
+    .sample { min-inline-size: 0; padding: clamp(1rem,3vi,2rem); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-radius-xl); background: var(--reeris-color-surface); }
+    .sample > :first-child { margin-block-start: 0; }
+    .sample > :last-child { margin-block-end: 0; }
+    .sample-label { display: block; margin-block-end: var(--reeris-space-3); color: var(--reeris-color-text-muted); font: 500 var(--reeris-font-size-sm)/1.5 var(--reeris-font-ui); }
+    .columns { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,22rem),1fr)); gap: var(--reeris-space-4); }
+    .specs { inline-size: 100%; border-collapse: collapse; }
+    .specs :where(th,td) { padding: var(--reeris-space-3); border-block-end: 1px solid var(--reeris-color-border); text-align: start; }
+    .specs code { overflow-wrap: anywhere; }
+    pre { max-inline-size: 100%; overflow: auto; padding: var(--reeris-space-4); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface-muted); }
+  </style>
+</head>
+<body>
+<main>
+  <header class="intro">
+    <p class="type-overline">Foundation / typography</p>
+    <h1 class="type-display">Words need a clear hierarchy.</h1>
+    <p class="type-lead type-measure">Reeris uses the system font by default, a seven-step heading scale, readable body copy, and semantic text roles. Everything is CSS and works without loading a font or running JavaScript.</p>
+  </header>
+
+  <section aria-labelledby="scale-title">
+    <h2 id="scale-title">Heading scale</h2>
+    <p class="type-measure">Use the correct HTML heading level for the document structure. The matching <code>.type-h1</code> through <code>.type-h6</code> classes are visual roles when a different size is needed. <code>.type-display</code> is an optional hero treatment, not a heading level.</p>
+    <div class="samples">
+      <div class="sample"><span class="sample-label">Display · optional hero</span><p class="type-display">Build with confidence.</p></div>
+      <div class="sample"><span class="sample-label">H1 · page title</span><p class="type-h1">A considered first impression</p></div>
+      <div class="sample"><span class="sample-label">H2 · section title</span><p class="type-h2">A coherent section</p></div>
+      <div class="sample"><span class="sample-label">H3 · subsection</span><p class="type-h3">Details worth finding</p></div>
+      <div class="sample"><span class="sample-label">H4 · group</span><p class="type-h4">A useful group</p></div>
+      <div class="sample"><span class="sample-label">H5 · item</span><p class="type-h5">Item heading</p></div>
+      <div class="sample"><span class="sample-label">H6 · compact heading</span><p class="type-h6">Compact heading</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="body-title">
+    <h2 id="body-title">Reading and interface text</h2>
+    <div class="columns">
+      <div class="sample"><span class="sample-label">Lead · introduction</span><p class="type-lead type-measure">A larger opening paragraph gives readers the context they need without competing with the headline.</p></div>
+      <div class="sample"><span class="sample-label">Body · 1rem / 1.5 line height</span><p class="type-body type-measure">Body copy is comfortable to read at normal browser zoom. The optional measure limits long lines to about 68 characters.</p></div>
+      <div class="sample"><span class="sample-label">Small · supporting UI copy</span><p class="type-small">Use this for secondary information. Keep important instructions and long passages at body size.</p></div>
+      <figure class="sample"><span class="sample-label">Caption · image or data description</span><figcaption class="type-caption">The caption uses the muted semantic text color and remains readable in light, dark, and glass themes.</figcaption></figure>
+      <div class="sample"><span class="sample-label">Overline · short category</span><p class="type-overline">Featured collection</p></div>
+      <div class="sample"><span class="sample-label">Code · inline technical text</span><p>Set <code class="type-code">--reeris-type-measure</code> to adjust the line length.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tokens-title">
+    <h2 id="tokens-title">Public typography tokens</h2>
+    <p class="type-measure">The roles resolve through themeable <code>--reeris-type-*</code> aliases. The size scale, font families, weights, and line heights remain public tokens. Large headings respond to available container width; text remains in <code>rem</code> so browser text sizing still works.</p>
+    <div class="sample"><table class="specs"><thead><tr><th scope="col">Role</th><th scope="col">Token</th><th scope="col">Default scale</th></tr></thead><tbody>
+      <tr><th scope="row">Display</th><td><code>--reeris-type-display-size</code></td><td><code>5xl</code></td></tr>
+      <tr><th scope="row">H1–H6</th><td><code>--reeris-type-h1-size</code> through <code>--reeris-type-h6-size</code></td><td><code>4xl</code> through <code>md</code></td></tr>
+      <tr><th scope="row">Lead / body / small</th><td><code>--reeris-type-lead-size</code>, <code>--reeris-type-body-size</code>, <code>--reeris-type-small-size</code></td><td><code>lg</code> / <code>md</code> / <code>sm</code></td></tr>
+      <tr><th scope="row">Caption / overline</th><td><code>--reeris-type-caption-size</code>, <code>--reeris-type-overline-size</code></td><td><code>sm</code> / <code>xs</code></td></tr>
+      <tr><th scope="row">Line length</th><td><code>--reeris-type-measure</code></td><td><code>68ch</code></td></tr>
+    </tbody></table></div>
+    <pre><code>&lt;article&gt;
+  &lt;h2&gt;Semantic section heading&lt;/h2&gt;
+  &lt;p class="type-lead type-measure"&gt;A short introduction.&lt;/p&gt;
+  &lt;p class="type-measure"&gt;Readable body copy.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+    <p class="type-small">Choose colors from semantic tokens and preserve text contrast in custom themes. Avoid using overlines and captions for essential long-form content.</p>
+  </section>
+</main>
+</body>
+</html>

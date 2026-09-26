@@ -320,6 +320,27 @@ test('form addons and native date/time inputs fit phone cards', async ({page}) =
   }
 });
 
+test('typography roles preserve hierarchy and fit narrow screens', async ({page}) => {
+  await page.setViewportSize({width:320,height:700});
+  await page.goto('/docs/typography.html');
+  const type=await page.evaluate(()=>{
+    const size=selector=>parseFloat(getComputedStyle(document.querySelector(selector)).fontSize);
+    return {
+      display:size('.type-display'),
+      heading:size('.type-h1'),
+      body:size('.type-body'),
+      small:size('.type-small'),
+      measure:getComputedStyle(document.documentElement).getPropertyValue('--reeris-type-measure').trim(),
+      overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+    };
+  });
+  expect(type.display).toBeGreaterThan(type.heading);
+  expect(type.heading).toBeGreaterThan(type.body);
+  expect(type.body).toBeGreaterThan(type.small);
+  expect(type.measure).toBe('68ch');
+  expect(type.overflow).toBeLessThanOrEqual(1);
+});
+
 test('form focus has one halo and selects keep native controls aligned', async ({page},testInfo) => {
   await page.goto('/.reeris-docs-site/docs/forms-complete.html');
   const textarea=page.locator('textarea.textarea.xl');

@@ -49,6 +49,20 @@
 
     --reeris-dropdown-shadow: var(--reeris-shadow-lg);
     --reeris-font-size-base: var(--reeris-font-size-md);
+    --reeris-type-display-size: var(--reeris-font-size-5xl);
+    --reeris-type-h1-size: var(--reeris-font-size-4xl);
+    --reeris-type-h2-size: var(--reeris-font-size-3xl);
+    --reeris-type-h3-size: var(--reeris-font-size-2xl);
+    --reeris-type-h4-size: var(--reeris-font-size-xl);
+    --reeris-type-h5-size: var(--reeris-font-size-lg);
+    --reeris-type-h6-size: var(--reeris-font-size-md);
+    --reeris-type-body-size: var(--reeris-font-size-md);
+    --reeris-type-lead-size: var(--reeris-font-size-lg);
+    --reeris-type-small-size: var(--reeris-font-size-sm);
+    --reeris-type-caption-size: var(--reeris-font-size-sm);
+    --reeris-type-overline-size: var(--reeris-font-size-xs);
+    --reeris-type-measure: 68ch;
+    --reeris-type-heading-tracking: -.02em;
     --reeris-focus-color: var(--reeris-color-primary);
     --reeris-focus-width: 2px;
     --reeris-focus-offset: 2px;

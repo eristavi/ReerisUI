@@ -4,6 +4,7 @@ export const documentationSections = [
     description: 'Tokens, themes, layout, utilities and platform contracts.',
     pages: [
       ['foundation.html', 'Foundation', 'Design tokens, themes, typography, spacing and layout primitives.'],
+      ['typography.html', 'Typography', 'Heading scale, text roles, readable measure and themeable type tokens.'],
       ['themes.html', 'Themes & validation', 'Partial/nested themes, semantic contrast pairs and the custom-theme validator.'],
       ['button.html', 'Buttons & actions', 'Buttons, groups, split actions, close controls and FABs.'],
       ['forms-complete.html', 'Forms', 'Complete native-first form system and validation patterns.'],
@@ -81,6 +82,7 @@ export const sourceDocumentation = {
   'core/layers.css': 'foundation.html',
   'core/reset.css': 'foundation.html',
   'core/base.css': 'foundation.html',
+  'core/typography.css': 'typography.html',
   'core/theme.css': 'foundation.html',
   'core/personality.css': 'foundation.html',
   'tokens/generated.css': 'foundation.html',

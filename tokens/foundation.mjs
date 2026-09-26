@@ -13,7 +13,7 @@ export const tokens = {
  duration:{instant:'0ms',fast:'120ms',normal:'200ms',slow:'320ms',slower:'500ms'},
  ease:{standard:'cubic-bezier(.2, 0, 0, 1)',enter:'cubic-bezier(0, 0, .2, 1)',exit:'cubic-bezier(.4, 0, 1, 1)',bounce:'cubic-bezier(.2, .8, .2, 1.15)'},
  fontWeight:{thin:100,extralight:200,light:300,normal:400,medium:500,semibold:600,bold:700,extrabold:800,black:900},
- fontSize:{xs:'.75rem',sm:'.875rem',md:'1rem',lg:'1.125rem',xl:'1.25rem','2xl':'clamp(1.5rem, 1.35rem + .75cqi, 1.875rem)','3xl':'clamp(1.875rem, 1.6rem + 1.2cqi, 2.5rem)','4xl':'clamp(2.25rem, 1.8rem + 2cqi, 3.5rem)'},
+ fontSize:{xs:'.75rem',sm:'.875rem',md:'1rem',lg:'1.125rem',xl:'1.25rem','2xl':'clamp(1.5rem, 1.35rem + .75cqi, 1.875rem)','3xl':'clamp(1.875rem, 1.6rem + 1.2cqi, 2.5rem)','4xl':'clamp(2.25rem, 1.8rem + 2cqi, 3.5rem)','5xl':'clamp(3rem, 2.4rem + 3cqi, 4.75rem)'},
  lineHeight:{tight:'1.2',snug:'1.35',normal:'1.5',relaxed:'1.65'},
  shadow:{none:'none',xs:'0 1px 2px rgb(0 0 0 / .05)',sm:'0 1px 3px rgb(0 0 0 / .10), 0 1px 2px rgb(0 0 0 / .06)',md:'0 4px 10px rgb(0 0 0 / .10)',lg:'0 10px 24px rgb(0 0 0 / .13)',xl:'0 20px 40px rgb(0 0 0 / .16)','2xl':'0 28px 64px rgb(0 0 0 / .20)'}
 };

@@ -80,6 +80,7 @@
   --reeris-font-size-2xl: clamp(1.5rem, 1.35rem + .75cqi, 1.875rem);
   --reeris-font-size-3xl: clamp(1.875rem, 1.6rem + 1.2cqi, 2.5rem);
   --reeris-font-size-4xl: clamp(2.25rem, 1.8rem + 2cqi, 3.5rem);
+  --reeris-font-size-5xl: clamp(3rem, 2.4rem + 3cqi, 4.75rem);
   --reeris-line-height-tight: 1.2;
   --reeris-line-height-snug: 1.35;
   --reeris-line-height-normal: 1.5;
@@ -310,6 +311,20 @@
 
     --reeris-dropdown-shadow: var(--reeris-shadow-lg);
     --reeris-font-size-base: var(--reeris-font-size-md);
+    --reeris-type-display-size: var(--reeris-font-size-5xl);
+    --reeris-type-h1-size: var(--reeris-font-size-4xl);
+    --reeris-type-h2-size: var(--reeris-font-size-3xl);
+    --reeris-type-h3-size: var(--reeris-font-size-2xl);
+    --reeris-type-h4-size: var(--reeris-font-size-xl);
+    --reeris-type-h5-size: var(--reeris-font-size-lg);
+    --reeris-type-h6-size: var(--reeris-font-size-md);
+    --reeris-type-body-size: var(--reeris-font-size-md);
+    --reeris-type-lead-size: var(--reeris-font-size-lg);
+    --reeris-type-small-size: var(--reeris-font-size-sm);
+    --reeris-type-caption-size: var(--reeris-font-size-sm);
+    --reeris-type-overline-size: var(--reeris-font-size-xs);
+    --reeris-type-measure: 68ch;
+    --reeris-type-heading-tracking: -.02em;
     --reeris-focus-color: var(--reeris-color-primary);
     --reeris-focus-width: 2px;
     --reeris-focus-offset: 2px;
@@ -409,7 +424,7 @@
 
 @layer reeris.base {
   html { background: var(--reeris-color-canvas); color: var(--reeris-color-text); font-family: var(--reeris-font-body); line-height: var(--reeris-line-height-normal); }
-  body { min-block-size: 100dvh; background: var(--reeris-color-canvas); color: var(--reeris-color-text); }
+  body { min-block-size: 100dvh; background: var(--reeris-color-canvas); color: var(--reeris-color-text); font-size: var(--reeris-font-size-base); }
   :where(h1,h2,h3,h4,h5,h6) { color: var(--reeris-color-text); font-family: var(--reeris-font-heading); line-height: var(--reeris-line-height-tight); text-wrap: balance; }
   :where(p,li,dd) { text-wrap: pretty; }
   :where(p,li,dd,dt,td,th,figcaption) { overflow-wrap: anywhere; }
@@ -420,6 +435,26 @@
 }
 @layer reeris.base {
   @media (forced-colors: active) { :focus-visible { outline-color: Highlight; } }
+}
+
+@layer reeris.base {
+  /* Semantic HTML receives a predictable scale; roles can also be used on other elements. */
+  :where(.type-h1,.type-h2,.type-h3,.type-h4,.type-h5,.type-h6) { font-family: var(--reeris-font-heading); text-wrap: balance; }
+  :where(h1,.type-h1) { font-size: var(--reeris-type-h1-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-tight); letter-spacing: var(--reeris-type-heading-tracking); }
+  :where(h2,.type-h2) { font-size: var(--reeris-type-h2-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-tight); letter-spacing: var(--reeris-type-heading-tracking); }
+  :where(h3,.type-h3) { font-size: var(--reeris-type-h3-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-tight); }
+  :where(h4,.type-h4) { font-size: var(--reeris-type-h4-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+  :where(h5,.type-h5) { font-size: var(--reeris-type-h5-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+  :where(h6,.type-h6) { font-size: var(--reeris-type-h6-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+
+  :where(.type-display) { font-family: var(--reeris-font-heading); font-size: var(--reeris-type-display-size); font-weight: var(--reeris-font-weight-bold); line-height: 1.1; letter-spacing: var(--reeris-type-heading-tracking); text-wrap: balance; }
+  :where(.type-lead) { font-size: var(--reeris-type-lead-size); line-height: var(--reeris-line-height-relaxed); }
+  :where(.type-body) { font-size: var(--reeris-type-body-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-small) { font-size: var(--reeris-type-small-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-caption) { color: var(--reeris-color-text-muted); font-size: var(--reeris-type-caption-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-overline) { color: var(--reeris-color-text-muted); font-size: var(--reeris-type-overline-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-snug); letter-spacing: .08em; text-transform: uppercase; }
+  :where(.type-code) { font-family: var(--reeris-font-code); font-size: .875em; }
+  :where(.type-measure) { max-inline-size: var(--reeris-type-measure); }
 }
 
 

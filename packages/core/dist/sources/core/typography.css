@@ -1,0 +1,19 @@
+@layer reeris.base {
+  /* Semantic HTML receives a predictable scale; roles can also be used on other elements. */
+  :where(.type-h1,.type-h2,.type-h3,.type-h4,.type-h5,.type-h6) { font-family: var(--reeris-font-heading); text-wrap: balance; }
+  :where(h1,.type-h1) { font-size: var(--reeris-type-h1-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-tight); letter-spacing: var(--reeris-type-heading-tracking); }
+  :where(h2,.type-h2) { font-size: var(--reeris-type-h2-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-tight); letter-spacing: var(--reeris-type-heading-tracking); }
+  :where(h3,.type-h3) { font-size: var(--reeris-type-h3-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-tight); }
+  :where(h4,.type-h4) { font-size: var(--reeris-type-h4-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+  :where(h5,.type-h5) { font-size: var(--reeris-type-h5-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+  :where(h6,.type-h6) { font-size: var(--reeris-type-h6-size); font-weight: var(--reeris-font-weight-semibold); line-height: var(--reeris-line-height-snug); }
+
+  :where(.type-display) { font-family: var(--reeris-font-heading); font-size: var(--reeris-type-display-size); font-weight: var(--reeris-font-weight-bold); line-height: 1.1; letter-spacing: var(--reeris-type-heading-tracking); text-wrap: balance; }
+  :where(.type-lead) { font-size: var(--reeris-type-lead-size); line-height: var(--reeris-line-height-relaxed); }
+  :where(.type-body) { font-size: var(--reeris-type-body-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-small) { font-size: var(--reeris-type-small-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-caption) { color: var(--reeris-color-text-muted); font-size: var(--reeris-type-caption-size); line-height: var(--reeris-line-height-normal); }
+  :where(.type-overline) { color: var(--reeris-color-text-muted); font-size: var(--reeris-type-overline-size); font-weight: var(--reeris-font-weight-bold); line-height: var(--reeris-line-height-snug); letter-spacing: .08em; text-transform: uppercase; }
+  :where(.type-code) { font-family: var(--reeris-font-code); font-size: .875em; }
+  :where(.type-measure) { max-inline-size: var(--reeris-type-measure); }
+}

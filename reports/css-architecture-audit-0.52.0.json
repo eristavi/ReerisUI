@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T17:29:09.654Z",
+  "generatedAt": "2026-09-26T19:28:21.106Z",
   "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
   "budgets": {
     "fullRawBytes": 261120,
@@ -22,20 +22,20 @@
     "total": 14,
     "passed": 14,
     "failed": 0,
-    "qualifiedRules": 1530,
-    "individualSelectors": 1553,
-    "sourceCssModules": 36
+    "qualifiedRules": 1545,
+    "individualSelectors": 1568,
+    "sourceCssModules": 37
   },
   "bundle": {
     "full": {
-      "raw": 249610,
-      "gzip": 35355,
-      "brotli": 28990
+      "raw": 252959,
+      "gzip": 35816,
+      "brotli": 29346
     },
     "minified": {
-      "raw": 226975,
-      "gzip": 32203,
-      "brotli": 26783
+      "raw": 230012,
+      "gzip": 32591,
+      "brotli": 27110
     },
     "optionalJsAllModules": {
       "raw": 5497,
@@ -336,7 +336,7 @@
     "largest": [
       {
         "file": "forms/forms.css",
-        "bytes": 24933
+        "bytes": 24954
       },
       {
         "file": "components/navigation-extended.css",
@@ -356,7 +356,7 @@
       },
       {
         "file": "tokens/generated.css",
-        "bytes": 10095
+        "bytes": 10158
       },
       {
         "file": "components/marketing.css",
@@ -369,6 +369,10 @@
       {
         "file": "components/advanced-navigation.css",
         "bytes": 8515
+      },
+      {
+        "file": "core/theme.css",
+        "bytes": 8038
       },
       {
         "file": "components/feedback.css",
@@ -385,10 +389,6 @@
       {
         "file": "components/media.css",
         "bytes": 7598
-      },
-      {
-        "file": "core/theme.css",
-        "bytes": 7274
       },
       {
         "file": "components/commerce.css",
@@ -458,31 +458,31 @@
       "id": "full-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.css raw 249610 / 261120 bytes."
+      "detail": "reeris.css raw 252959 / 261120 bytes."
     },
     {
       "id": "min-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css raw 226975 / 230400 bytes."
+      "detail": "reeris.min.css raw 230012 / 230400 bytes."
     },
     {
       "id": "min-gzip-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css gzip 32203 / 32768 bytes."
+      "detail": "reeris.min.css gzip 32591 / 32768 bytes."
     },
     {
       "id": "min-brotli-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css brotli 26783 / 27648 bytes."
+      "detail": "reeris.min.css brotli 27110 / 27648 bytes."
     },
     {
       "id": "module-size-budget",
       "category": "size",
       "pass": true,
-      "detail": "Largest CSS source module is forms/forms.css at 24933 / 26624 bytes."
+      "detail": "Largest CSS source module is forms/forms.css at 24954 / 26624 bytes."
     }
   ]
 }
