@@ -47,6 +47,19 @@ for (const name of fs.readdirSync(docsOut)) {
 
 if (fs.existsSync(path.join(root, 'examples'))) {
   fs.cpSync(path.join(root, 'examples'), path.join(out, 'examples'), { recursive: true });
+  const starterOut = path.join(out, 'examples', 'starters');
+  for (const name of fs.readdirSync(starterOut)) {
+    if (!name.endsWith('.html')) continue;
+    const file = path.join(starterOut, name);
+    let html = fs.readFileSync(file, 'utf8');
+    html = html.replace(
+      /(<link\b[^>]*href="\.\.\/\.\.\/packages\/core\/dist\/reeris\.css"[^>]*>)/,
+      `<script src="../../docs/assets/theme-init.js?v=${revision}"></script>$1<link rel="stylesheet" href="../../docs/assets/docs.css?v=${revision}"><script type="module" src="../../docs/assets/docs.js?v=${revision}"></script>`
+    );
+    const starterMenu = `<nav class="docs-demo-topbar docs-starter-topbar" aria-label="Demo menu"><a href="../../docs/starters.html">← Official starters</a>${themeControl}</nav>`;
+    html = html.replace(/<body([^>]*)>/i, `<body$1>${starterMenu}`);
+    fs.writeFileSync(file, html);
+  }
 }
 
 fs.mkdirSync(path.join(out, 'packages/core/dist'), { recursive: true });

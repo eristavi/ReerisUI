@@ -4,6 +4,7 @@
   .docs-topbar { position: sticky; inset-block-start: 0; z-index: var(--reeris-z-sticky, 30); display: flex; align-items: center; justify-content: space-between; gap: var(--reeris-space-4); min-block-size: 3.5rem; padding-inline: clamp(var(--reeris-space-4), 4vi, var(--reeris-space-8)); border-block-end: 1px solid var(--reeris-color-border); background: color-mix(in oklch, var(--reeris-color-surface) 94%, transparent); backdrop-filter: blur(.75rem); }
   .docs-brand { color: var(--reeris-color-text); font-size: var(--reeris-font-size-lg); font-weight: var(--reeris-font-weight-bold); text-decoration: none; }
   .docs-demo-topbar { position: sticky; inset-block-start: 0; z-index: var(--reeris-z-sticky, 30); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--reeris-space-2); max-inline-size: 100%; margin-block-end: var(--reeris-space-4); padding: var(--reeris-space-2) var(--reeris-space-3); border: 1px solid var(--reeris-color-border); border-radius: var(--reeris-radius-md); background: var(--reeris-color-surface); }
+  .docs-starter-topbar { margin-block-end: 0; border-inline: 0; border-block-start: 0; border-radius: 0; }
   :root[data-theme="glass"] :is(.docs-topbar,.docs-demo-topbar) { background: color-mix(in oklch, var(--reeris-color-canvas) 30%, white); backdrop-filter: none; }
   .docs-demo-topbar a { color: var(--reeris-color-text); text-decoration: none; }
   .docs-demo-topbar a:hover { color: var(--reeris-color-primary); }
