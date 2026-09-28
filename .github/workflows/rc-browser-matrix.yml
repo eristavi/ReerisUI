@@ -13,6 +13,31 @@ on:
         type: boolean
 
 jobs:
+  local-chromium-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --ignore-scripts --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - name: Capture version-specific local Chromium evidence
+        run: |
+          REVA_CHROMIUM_PATH="$(node -p "require('playwright').chromium.executablePath()")" npm run rc:local:chromium
+          npm run audit:local-browser
+          npm run audit:evidence
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-chromium-evidence
+          path: |
+            tests/release/evidence-artifacts/*/local-chromium/
+            tests/release/evidence/*/local-chromium-*.json
+            reports/local-chromium-evidence-audit-*.json
+            reports/release-lab-audit-*.json
+
   playwright-linux:
     runs-on: ubuntu-latest
     steps:
