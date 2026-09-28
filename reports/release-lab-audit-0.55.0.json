@@ -1,16 +1,16 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:34:24.597Z",
+  "generatedAt": "2026-09-28T19:54:14.138Z",
   "summary": {
     "passed": 13,
     "total": 13,
     "failed": 0
   },
   "evidenceSummary": {
-    "records": 12,
+    "records": 17,
     "invalid": 0,
     "closing": 0,
-    "supplemental": 12
+    "supplemental": 17
   },
   "gateSummary": {
     "total": 7,
@@ -57,7 +57,8 @@
       ],
       "supplementalEvidence": [
         "local-chromium-desktop-browser-matrix-0.51.0",
-        "local-chromium-desktop-browser-matrix-0.52.0"
+        "local-chromium-desktop-browser-matrix-0.52.0",
+        "local-chromium-desktop-browser-matrix-0.55.0"
       ]
     },
     {
@@ -122,7 +123,8 @@
       ],
       "supplementalEvidence": [
         "local-chromium-assistive-technology-0.51.0",
-        "local-chromium-assistive-technology-0.52.0"
+        "local-chromium-assistive-technology-0.52.0",
+        "local-chromium-assistive-technology-0.55.0"
       ]
     },
     {
@@ -153,7 +155,8 @@
       ],
       "supplementalEvidence": [
         "local-chromium-zoom-reflow-touch-0.51.0",
-        "local-chromium-zoom-reflow-touch-0.52.0"
+        "local-chromium-zoom-reflow-touch-0.52.0",
+        "local-chromium-zoom-reflow-touch-0.55.0"
       ]
     },
     {
@@ -178,7 +181,8 @@
       ],
       "supplementalEvidence": [
         "local-chromium-forced-colors-high-contrast-0.51.0",
-        "local-chromium-forced-colors-high-contrast-0.52.0"
+        "local-chromium-forced-colors-high-contrast-0.52.0",
+        "local-chromium-forced-colors-high-contrast-0.55.0"
       ]
     },
     {
@@ -203,7 +207,8 @@
       ],
       "supplementalEvidence": [
         "local-chromium-visual-regression-baselines-0.51.0",
-        "local-chromium-visual-regression-baselines-0.52.0"
+        "local-chromium-visual-regression-baselines-0.52.0",
+        "local-chromium-visual-regression-baselines-0.55.0"
       ]
     },
     {

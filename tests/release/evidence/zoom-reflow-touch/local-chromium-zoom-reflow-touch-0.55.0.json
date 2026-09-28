@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "local-chromium-zoom-reflow-touch-0.55.0",
+  "releaseVersion": "0.55.0",
+  "gateId": "zoom-reflow-touch",
+  "kind": "other",
+  "role": "supplemental",
+  "collectedAt": "2026-09-28T19:51:34.021Z",
+  "outcome": "pass",
+  "claims": [],
+  "coverage": [
+    "320px document-overflow check and mobile-size render candidates"
+  ],
+  "environment": {
+    "runner": "Local Chromium via Chrome DevTools Protocol",
+    "browser": "Chrome/153.0.8010.12",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v22.23.2"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",
+      "sha256": "028ca6c96e3aadbabeb343f011a63d3fbda8e71f1fd2ee875d984aa7a1ec368c",
+      "description": "Machine-readable local Chromium RC report with test results and screenshot hashes."
+    }
+  ],
+  "notes": "Viewport/reflow prerequisite evidence only; not real 200%/400% browser zoom or real touch hardware.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Supplemental automated evidence; intentionally not gate-closing."
+  }
+}

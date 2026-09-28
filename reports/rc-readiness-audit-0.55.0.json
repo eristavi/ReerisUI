@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:35:33.137Z",
+  "generatedAt": "2026-09-28T19:54:56.653Z",
   "status": "not-ready",
   "automatedReady": false,
   "manualSummary": {
@@ -10,15 +10,11 @@
     "blocksPublicPublication": 1
   },
   "summary": {
-    "passed": 87,
+    "passed": 88,
     "total": 89,
-    "failed": 2
+    "failed": 1
   },
   "failures": [
-    {
-      "name": "Current release evidence has zero failures: local-chromium-evidence-audit",
-      "detail": "{\"passed\":5,\"total\":11,\"failed\":6}"
-    },
     {
       "name": "Current release evidence has zero failures: naming-clearance-audit",
       "detail": "{\"passed\":29,\"total\":31,\"failed\":2}"
@@ -292,8 +288,8 @@
     },
     {
       "name": "Current release evidence has zero failures: local-chromium-evidence-audit",
-      "pass": false,
-      "detail": "{\"passed\":5,\"total\":11,\"failed\":6}"
+      "pass": true,
+      "detail": "{\"passed\":66,\"total\":66,\"failed\":0}"
     },
     {
       "name": "Current release evidence exists: external-release-lab-audit",

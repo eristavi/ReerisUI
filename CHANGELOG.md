@@ -6,6 +6,7 @@
 
 - Completed the full automated 0.52 source audit before locking 0.55.0; fixed mobile inbox sender wrapping and updated stale focus, carousel, and documentation-theme audit expectations.
 - Locked the public API snapshot for the 0.55.0 source version. Browser, assistive-technology, visual-approval, and publication-clearance gates remain open for fresh release-specific validation.
+- Captured 0.55.0 Chromium RC evidence in GitHub Actions: 15 passing browser checks, 14 visual candidates, and five hashed supplemental records. The local-browser and evidence audits pass; the manual release gates remain open.
 - Added Preview / HTML radio switchers to 54 component examples across 14 hosted documentation pages. The static docs build derives escaped HTML snippets from each example, so the code and preview stay aligned without runtime tab logic.
 - Added a CSS-only, tab-styled content switcher using native radio selection and adjacent panels, with a keyboard-accessible navigation demo and an explicit radio-versus-ARIA-tabs distinction.
 - Intentionally amended the RC public API freeze snapshot for the new switcher classes.
