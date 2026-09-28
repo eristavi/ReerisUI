@@ -2875,8 +2875,8 @@
   :where(.setting-copy) { min-inline-size:0; }
   :where(.setting-label) { display:block; color:var(--reeris-color-text); font-weight:var(--reeris-font-weight-medium); line-height:1.4; }
   :where(.setting-description) { display:block; margin-block-start:.2rem; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); line-height:1.45; text-wrap:pretty; }
-  :where(.setting-control) { display:flex; min-inline-size:0; align-items:center; justify-content:flex-end; gap:var(--reeris-space-2); }
-  :where(.setting-control > :is(.field, .input, .select)) { inline-size:min(100%,16rem); min-inline-size:0; }
+  :where(.setting-control) { display:flex; inline-size:16rem; max-inline-size:100%; min-inline-size:0; align-items:center; justify-content:flex-end; gap:var(--reeris-space-2); }
+  :where(.setting-control > :is(.field, .input, .select)) { inline-size:100%; min-inline-size:0; }
   :where(.setting-row.vertical) { grid-template-columns:1fr; align-items:start; }
   :where(.setting-row.vertical .setting-control) { justify-content:flex-start; inline-size:100%; }
 
