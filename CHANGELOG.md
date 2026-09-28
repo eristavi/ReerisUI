@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Versioned the built Core CSS URL in hosted starter previews so deployed control fixes do not remain hidden by cached stylesheets.
 - Styled Settings starter and documentation controls with the Reeris input/select classes and aligned text inputs and dropdowns to a shared desktop width, with full-width controls on mobile.
 - Added the shared System/Light/Dark/Glass preview menu to hosted official starter pages, while keeping the reusable starter sources Core-only and script-free.
 - Corrected authentication demo and starter form markup so email/password controls use the full-width native-first Reeris input styling; kept the brand badge at its content width.

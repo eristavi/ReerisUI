@@ -56,6 +56,7 @@ if (fs.existsSync(path.join(root, 'examples'))) {
       /(<link\b[^>]*href="\.\.\/\.\.\/packages\/core\/dist\/reeris\.css"[^>]*>)/,
       `<script src="../../docs/assets/theme-init.js?v=${revision}"></script>$1<link rel="stylesheet" href="../../docs/assets/docs.css?v=${revision}"><script type="module" src="../../docs/assets/docs.js?v=${revision}"></script>`
     );
+    html = html.replaceAll('href="../../packages/core/dist/reeris.css"', `href="../../packages/core/dist/reeris.css?v=${revision}"`);
     const starterMenu = `<nav class="docs-demo-topbar docs-starter-topbar" aria-label="Demo menu"><a href="../../docs/starters.html">← Official starters</a>${themeControl}</nav>`;
     html = html.replace(/<body([^>]*)>/i, `<body$1>${starterMenu}`);
     fs.writeFileSync(file, html);
