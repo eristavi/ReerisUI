@@ -1,12 +1,14 @@
 {
-  "baselineVersion": "0.51.0",
-  "sha256": "4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336",
+  "baselineVersion": "0.52.0",
+  "amendment": "Reviewed CSS-only radio content switcher; see CHANGELOG.md Unreleased.",
+  "sha256": "72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95",
   "api": {
     "sourceModules": [
       "components/advanced-navigation.css",
       "components/app-shell.css",
       "components/authentication.css",
       "components/button.css",
+      "components/carousel.css",
       "components/choice.css",
       "components/commerce.css",
       "components/data-display.css",
@@ -33,6 +35,7 @@
       "core/personality.css",
       "core/reset.css",
       "core/theme.css",
+      "core/typography.css",
       "forms/forms.css",
       "layout/primitives.css",
       "reeris.css",
@@ -57,6 +60,7 @@
       "activity-marker",
       "activity-meta",
       "activity-title",
+      "adaptive",
       "alert",
       "alert-actions",
       "alert-close",
@@ -122,6 +126,9 @@
       "card-header",
       "card-subtitle",
       "card-title",
+      "carousel",
+      "carousel-slide",
+      "carousel-track",
       "cart-items",
       "cart-layout",
       "cell-actions",
@@ -285,6 +292,7 @@
       "gap-4",
       "gap-6",
       "gap-8",
+      "gentle",
       "ghost",
       "glide",
       "gradient",
@@ -312,6 +320,7 @@
       "identity-meta",
       "identity-name",
       "image-card",
+      "image-card-container",
       "image-card-content",
       "inbox",
       "indeterminate",
@@ -436,6 +445,7 @@
       "navbar-disclosure",
       "navbar-nav",
       "navbar-panel",
+      "navbar-surface",
       "navbar-toggle",
       "navbar-toggle-icon",
       "negative",
@@ -486,6 +496,9 @@
       "page-title",
       "pagination",
       "panel",
+      "parallax",
+      "parallax-content",
+      "parallax-media",
       "payment-method",
       "payment-method-icon",
       "payment-summary",
@@ -537,6 +550,9 @@
       "pulse",
       "quantity-control",
       "radio",
+      "radio-tab-input",
+      "radio-tab-panel",
+      "radio-tabs",
       "raised",
       "range",
       "rating",
@@ -575,6 +591,8 @@
       "rounded",
       "rounded-full",
       "rounded-lg",
+      "scroll-progress",
+      "scroll-state",
       "search-empty",
       "search-field",
       "search-field-clear",
@@ -624,6 +642,7 @@
       "sidebar-section",
       "sidebar-section-title",
       "sidebar-subnav",
+      "single",
       "skeleton",
       "sm",
       "sort-button",
@@ -722,6 +741,20 @@
       "tree-row",
       "tree-toggle",
       "trend",
+      "type-body",
+      "type-caption",
+      "type-code",
+      "type-display",
+      "type-h1",
+      "type-h2",
+      "type-h3",
+      "type-h4",
+      "type-h5",
+      "type-h6",
+      "type-lead",
+      "type-measure",
+      "type-overline",
+      "type-small",
       "typing-indicator",
       "underline",
       "up",
@@ -977,6 +1010,22 @@
       },
       {
         "name": "--reeris-card-shadow",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-carousel-control-bg",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-carousel-control-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-carousel-gap",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-carousel-slide-size",
         "kind": "defined token"
       },
       {
@@ -1384,6 +1433,10 @@
         "kind": "defined token"
       },
       {
+        "name": "--reeris-field-focus-halo",
+        "kind": "defined token"
+      },
+      {
         "name": "--reeris-field-gap",
         "kind": "defined token"
       },
@@ -1468,6 +1521,10 @@
         "kind": "defined token"
       },
       {
+        "name": "--reeris-font-size-5xl",
+        "kind": "defined token"
+      },
+      {
         "name": "--reeris-font-size-base",
         "kind": "defined token"
       },
@@ -1544,6 +1601,10 @@
         "kind": "override hook (fallback-only)"
       },
       {
+        "name": "--reeris-glass-canvas",
+        "kind": "defined token"
+      },
+      {
         "name": "--reeris-glide-bg",
         "kind": "defined token"
       },
@@ -1562,6 +1623,10 @@
       {
         "name": "--reeris-glide-radius",
         "kind": "defined token"
+      },
+      {
+        "name": "--reeris-glide-target",
+        "kind": "override hook (fallback-only)"
       },
       {
         "name": "--reeris-gradient-accent",
@@ -1980,6 +2045,18 @@
         "kind": "defined token"
       },
       {
+        "name": "--reeris-parallax",
+        "kind": "override hook (fallback-only)"
+      },
+      {
+        "name": "--reeris-parallax-easing",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-parallax-travel",
+        "kind": "defined token"
+      },
+      {
         "name": "--reeris-pink-100",
         "kind": "defined token"
       },
@@ -2278,6 +2355,10 @@
       {
         "name": "--reeris-safe-top",
         "kind": "defined token"
+      },
+      {
+        "name": "--reeris-scroll-progress-size",
+        "kind": "override hook (fallback-only)"
       },
       {
         "name": "--reeris-secondary-nav-width",
@@ -2700,6 +2781,62 @@
         "kind": "defined token"
       },
       {
+        "name": "--reeris-type-body-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-caption-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-display-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h1-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h2-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h3-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h4-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h5-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-h6-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-heading-tracking",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-lead-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-measure",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-overline-size",
+        "kind": "defined token"
+      },
+      {
+        "name": "--reeris-type-small-size",
+        "kind": "defined token"
+      },
+      {
         "name": "--reeris-value",
         "kind": "override hook (fallback-only)"
       },
@@ -2863,7 +3000,9 @@
       },
       {
         "name": "data-reeris-glide",
-        "details": []
+        "details": [
+          "presence"
+        ]
       },
       {
         "name": "data-reeris-glide-instant",
@@ -2873,7 +3012,9 @@
       },
       {
         "name": "data-reeris-glide-item",
-        "details": []
+        "details": [
+          "presence"
+        ]
       },
       {
         "name": "data-reeris-glide-items",

@@ -14,7 +14,7 @@
 <main class="docs-shell">
 <aside class="docs-sidebar" aria-label="API sections"><a href="#summary">Summary</a><a href="#modules">Modules</a><a href="#classes">Classes</a><a href="#tokens">Tokens</a><a href="#data-attributes">Data attributes</a><a href="#package-exports">Package exports</a><a href="#javascript">JavaScript</a></aside>
 <article class="docs-content">
-<section id="summary" class="docs-hero"><span class="badge primary">Generated reference</span><h1>Public API reference</h1><p>Machine-derived inventory for Reeris UI 0.52.0. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports are listed here so API drift becomes auditable.</p><div class="docs-stat-grid"><div class="docs-stat"><strong>38</strong><span>source Modules</span></div><div class="docs-stat"><strong>759</strong><span>classes</span></div><div class="docs-stat"><strong>544</strong><span>tokens</span></div><div class="docs-stat"><strong>514</strong><span>defined Tokens</span></div><div class="docs-stat"><strong>30</strong><span>override Hooks</span></div><div class="docs-stat"><strong>11</strong><span>data Attributes</span></div><div class="docs-stat"><strong>14</strong><span>package Exports</span></div><div class="docs-stat"><strong>5</strong><span>js Api</span></div></div></section>
+<section id="summary" class="docs-hero"><span class="badge primary">Generated reference</span><h1>Public API reference</h1><p>Machine-derived inventory for Reeris UI 0.52.0. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports are listed here so API drift becomes auditable.</p><div class="docs-stat-grid"><div class="docs-stat"><strong>38</strong><span>source Modules</span></div><div class="docs-stat"><strong>762</strong><span>classes</span></div><div class="docs-stat"><strong>544</strong><span>tokens</span></div><div class="docs-stat"><strong>514</strong><span>defined Tokens</span></div><div class="docs-stat"><strong>30</strong><span>override Hooks</span></div><div class="docs-stat"><strong>11</strong><span>data Attributes</span></div><div class="docs-stat"><strong>14</strong><span>package Exports</span></div><div class="docs-stat"><strong>5</strong><span>js Api</span></div></div></section>
 <section id="modules" class="docs-section"><h2>Source module → documentation contract</h2><p>Every Core source module must map to a maintained documentation page.</p><div class="table-responsive"><table class="table"><thead><tr><th>Source module</th><th>Documentation</th></tr></thead><tbody><tr><td><code>components/advanced-navigation.css</code></td><td><a href="advanced-navigation.html">advanced-navigation.html</a></td></tr>
 <tr><td><code>components/app-shell.css</code></td><td><a href="app-shell.html">app-shell.html</a></td></tr>
 <tr><td><code>components/authentication.css</code></td><td><a href="authentication.html">authentication.html</a></td></tr>
@@ -110,7 +110,7 @@
 <tr data-docs-row><td><code>.avatar</code></td><td><code>components/identity.css</code> <code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.avatar-group</code></td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.away</code></td><td><code>components/identity.css</code></td></tr>
-<tr data-docs-row><td><code>.badge</code></td><td><code>components/surfaces.css</code></td></tr>
+<tr data-docs-row><td><code>.badge</code></td><td><code>components/authentication.css</code> <code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.banner</code></td><td><code>components/feedback.css</code></td></tr>
 <tr data-docs-row><td><code>.block</code></td><td><code>components/button.css</code> <code>utilities/utilities.css</code></td></tr>
 <tr data-docs-row><td><code>.border</code></td><td><code>utilities/utilities.css</code></td></tr>
@@ -337,7 +337,7 @@
 <tr data-docs-row><td><code>.inline</code></td><td><code>components/media.css</code> <code>forms/forms.css</code> <code>utilities/utilities.css</code></td></tr>
 <tr data-docs-row><td><code>.inline-block</code></td><td><code>utilities/utilities.css</code></td></tr>
 <tr data-docs-row><td><code>.inline-flex</code></td><td><code>utilities/utilities.css</code></td></tr>
-<tr data-docs-row><td><code>.input</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.input</code></td><td><code>components/settings.css</code> <code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.input-action</code></td><td><code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.input-addon</code></td><td><code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.input-decor</code></td><td><code>forms/forms.css</code></td></tr>
@@ -559,6 +559,9 @@
 <tr data-docs-row><td><code>.pulse</code></td><td><code>components/feedback.css</code></td></tr>
 <tr data-docs-row><td><code>.quantity-control</code></td><td><code>components/commerce.css</code></td></tr>
 <tr data-docs-row><td><code>.radio</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.radio-tab-input</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.radio-tab-panel</code></td><td><code>components/navigation.css</code></td></tr>
+<tr data-docs-row><td><code>.radio-tabs</code></td><td><code>components/navigation.css</code></td></tr>
 <tr data-docs-row><td><code>.raised</code></td><td><code>components/surfaces.css</code></td></tr>
 <tr data-docs-row><td><code>.range</code></td><td><code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.rating</code></td><td><code>components/choice.css</code></td></tr>
@@ -619,7 +622,7 @@
 <tr data-docs-row><td><code>.security-item-title</code></td><td><code>components/settings.css</code></td></tr>
 <tr data-docs-row><td><code>.segment</code></td><td><code>components/navigation.css</code></td></tr>
 <tr data-docs-row><td><code>.segmented</code></td><td><code>components/navigation.css</code></td></tr>
-<tr data-docs-row><td><code>.select</code></td><td><code>forms/forms.css</code></td></tr>
+<tr data-docs-row><td><code>.select</code></td><td><code>components/settings.css</code> <code>forms/forms.css</code></td></tr>
 <tr data-docs-row><td><code>.selected</code></td><td><code>components/choice.css</code> <code>components/data-display.css</code> <code>components/surfaces.css</code> <code>components/tables.css</code></td></tr>
 <tr data-docs-row><td><code>.setting-control</code></td><td><code>components/settings.css</code></td></tr>
 <tr data-docs-row><td><code>.setting-copy</code></td><td><code>components/settings.css</code></td></tr>

@@ -6,7 +6,7 @@ Reeris Core remains feature-frozen. Version 0.38 audits the CSS architecture its
 
 The automated CSS architecture gate passes **14/14 checks**.
 
-| Metric | 0.38 result | Release budget |
+| Metric | 0.38 result | 0.38 budget |
 | --- | ---: | ---: |
 | `reeris.css` raw | 224,194 B | 245,760 B |
 | `reeris.min.css` raw | 204,024 B | 220,160 B |
@@ -72,7 +72,7 @@ packages/core/dist/reeris.min.css
 
 ## Performance budgets
 
-Budgets are stored in `tooling/performance-budgets.json` and enforced by:
+Current budgets are stored in `tooling/performance-budgets.json` and enforced by:
 
 ```bash
 npm run audit:css

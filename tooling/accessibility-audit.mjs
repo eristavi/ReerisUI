@@ -24,6 +24,7 @@ const buttonCss = fs.readFileSync(path.join(coreSrc, 'components/button.css'), '
 const surfacesCss = fs.readFileSync(path.join(coreSrc, 'components/surfaces.css'), 'utf8');
 const toolbarCss = fs.readFileSync(path.join(coreSrc, 'components/toolbar-filters.css'), 'utf8');
 const choiceCss = fs.readFileSync(path.join(coreSrc, 'components/choice.css'), 'utf8');
+const formsCss = fs.readFileSync(path.join(coreSrc, 'forms/forms.css'), 'utf8');
 const navCss = fs.readFileSync(path.join(coreSrc, 'components/navigation.css'), 'utf8');
 const advNavCss = fs.readFileSync(path.join(coreSrc, 'components/advanced-navigation.css'), 'utf8');
 const overlaysCss = fs.readFileSync(path.join(coreSrc, 'components/overlays.css'), 'utf8');
@@ -39,7 +40,8 @@ add('prefers-contrast', /@media\s*\(prefers-contrast:\s*more\)/.test(css), 'Expl
 add('reduced-motion', /@media\s*\(prefers-reduced-motion:\s*reduce\)/.test(css), 'Reduced-motion handling is present.');
 add('reduced-transparency', /@media\s*\(prefers-reduced-transparency:\s*reduce\)/.test(css), 'Reduced-transparency fallbacks are present.');
 add('screen-reader-utility', /\.sr-only/.test(css) && /\.sr-only-focusable/.test(css), 'Screen-reader-only utilities are present.');
-add('no-outline-removal', !/(?:outline\s*:\s*(?:0|none))/.test(css), 'No outline: 0/none declarations found in Core CSS.');
+const outlineRemovals = [...css.matchAll(/outline\s*:\s*(?:0|none)\b/g)];
+add('no-outline-removal', outlineRemovals.length === 1 && /:where\(\.input:focus,\.select:focus,\.textarea:focus\)[^}]*outline:\s*none;[^}]*box-shadow:\s*0 0 0 3px var\(--reeris-field-focus-halo\)/.test(formsCss) && /@media \(forced-colors: active\)[\s\S]*?:where\(\.input:focus,\.select:focus,\.textarea:focus\)[^}]*outline:\s*2px solid Highlight/.test(formsCss), 'Only the form focus halo replaces a native outline, with a forced-colors outline fallback.');
 add('logical-properties', /inset-inline|margin-inline|padding-inline|border-inline|inline-size/.test(css), 'Logical properties are used throughout Core.');
 add('target-token', /--reeris-target-min:\s*1\.5rem/.test(generated), '24px minimum-target token exists.');
 add('xs-control-target', /--reeris-control-xs:\s*1\.75rem/.test(generated), 'Smallest standard control is 28px, above WCAG 2.2 AA 24px target minimum.');

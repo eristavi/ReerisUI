@@ -1,7 +1,7 @@
 {
   "fullRawBytes": 261120,
-  "minRawBytes": 230400,
-  "minGzipBytes": 32768,
+  "minRawBytes": 232448,
+  "minGzipBytes": 33792,
   "minBrotliBytes": 27648,
   "largestModuleBytes": 26624,
   "maxSelectorLength": 400,

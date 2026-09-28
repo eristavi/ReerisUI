@@ -1,13 +1,13 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T13:12:58.910Z",
+  "generatedAt": "2026-09-28T17:35:29.562Z",
   "scope": "Static accessibility acceptance audit for Reeris Core and documentation examples",
   "note": "Passing this audit does not by itself establish full WCAG 2.2 AA conformance. Manual/browser checks remain required for keyboard behavior, screen readers, zoom/reflow, touch behavior, native-control rendering, and visual regression.",
   "summary": {
     "total": 51,
     "passed": 51,
     "failed": 0,
-    "docsChecked": 43
+    "docsChecked": 44
   },
   "contrastResults": [
     {
@@ -159,7 +159,7 @@
       "id": "no-outline-removal",
       "category": "static",
       "pass": true,
-      "detail": "No outline: 0/none declarations found in Core CSS."
+      "detail": "Only the form focus halo replaces a native outline, with a forced-colors outline fallback."
     },
     {
       "id": "logical-properties",
@@ -405,7 +405,7 @@
       "id": "docs-accessible-names",
       "category": "docs",
       "pass": true,
-      "detail": "43 HTML demos checked; 0 accessible-name issues found."
+      "detail": "44 HTML demos checked; 0 accessible-name issues found."
     },
     {
       "id": "js-no-eval",

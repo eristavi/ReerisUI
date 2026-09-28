@@ -49,6 +49,16 @@
   :where(.tabs.pills .tab) { border:0; border-radius:var(--reeris-radius-md); }
   :where(.tabs.pills .tab[aria-selected="true"],.tabs.pills .tab.active) { background:var(--reeris-color-surface); color:var(--reeris-color-text); box-shadow:var(--reeris-shadow-sm); }
 
+  /* Radio-group semantics; the existing tab styles provide presentation. */
+  :where(.tabs.radio-tabs) { flex-wrap:wrap; overflow:visible; gap:0; min-inline-size:0; margin:0; padding:0; border:0; }
+  :where(.radio-tabs > .radio-tab-input) { position:absolute; inline-size:1px; block-size:1px; clip-path:inset(50%); }
+  :where(.radio-tabs > .tab) { order:1; flex:1 1 0; min-inline-size:min(100%,6rem); overflow-wrap:anywhere; }
+  :where(.radio-tabs > .radio-tab-input:checked + .tab) { color:var(--reeris-color-primary); border-block-end-color:var(--reeris-color-primary); }
+  :where(.radio-tabs > .radio-tab-input:focus-visible + .tab) { outline:var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset:calc(var(--reeris-focus-offset) * -1); }
+  :where(.radio-tabs > .radio-tab-panel) { display:none; order:2; flex:0 0 100%; min-inline-size:0; padding:var(--reeris-space-5); border:1px solid var(--reeris-tabs-border); background:var(--reeris-color-surface); }
+  :where(.radio-tabs > .radio-tab-input:checked + .tab + .radio-tab-panel) { display:block; }
+  @media (forced-colors: active) { :where(.radio-tabs > .radio-tab-input:checked + .tab) { border-block-end-color:Highlight; color:Highlight; } }
+
   :where(.segmented) { display:inline-flex; max-inline-size:100%; padding:var(--reeris-space-1); gap:var(--reeris-space-1); border:1px solid var(--reeris-color-border); border-radius:var(--reeris-radius-lg); background:var(--reeris-color-surface-muted); }
   :where(.segment) { display:inline-flex; min-block-size:calc(var(--reeris-control-sm) * var(--reeris-density-factor)); align-items:center; justify-content:center; padding-inline:var(--reeris-space-3); border:0; border-radius:var(--reeris-radius-md); background:transparent; color:var(--reeris-color-text-muted); font:inherit; font-size:var(--reeris-font-size-sm); font-weight:var(--reeris-font-weight-medium); cursor:pointer; }
   :where(.segment[aria-pressed="true"],.segment[aria-selected="true"],.segment.active) { background:var(--reeris-color-surface); color:var(--reeris-color-text); box-shadow:var(--reeris-shadow-sm); }

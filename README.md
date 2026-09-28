@@ -54,6 +54,6 @@ npm run audit:all
 
 ## Release status
 
-Version 0.52.0 is the current source version. Core is feature-frozen against its release-candidate API baseline. Public package publication remains gated on identity and namespace clearance, and the remaining real-browser, device, assistive-technology, and human visual acceptance work is tracked in the [release-candidate guide](https://eristavi.github.io/ReerisUI/docs/release-candidate-readiness.html). See the [changelog](CHANGELOG.md) for the version history and newer unreleased work.
+Version 0.52.0 is the current source version. Core remains feature-frozen against its release-candidate API baseline, with the reviewed CSS radio content switcher recorded as an explicit amendment. Public package publication remains gated on identity and namespace clearance, and the remaining real-browser, device, assistive-technology, and human visual acceptance work is tracked in the [release-candidate guide](https://eristavi.github.io/ReerisUI/docs/release-candidate-readiness.html). See the [changelog](CHANGELOG.md) for the version history and newer unreleased work.
 
 MIT licensed. See [LICENSE](LICENSE).

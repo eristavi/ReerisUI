@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:09:18.239Z",
+  "generatedAt": "2026-09-28T17:35:29.832Z",
   "status": "ready-for-rc-validation",
   "automatedReady": true,
   "manualSummary": {
@@ -89,27 +89,27 @@
     {
       "name": "API freeze baseline is recorded",
       "pass": true,
-      "detail": "0.51.0"
+      "detail": "0.52.0"
     },
     {
       "name": "API freeze embedded digest is valid",
       "pass": true,
-      "detail": "4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336 vs 4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336"
+      "detail": "72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95 vs 72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95"
     },
     {
       "name": "Current public API matches RC freeze snapshot",
       "pass": true,
-      "detail": "4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336 vs 4f3ad97e54a93699c3e7e0e4dbc67384664cc8ade16a4bde0fec18cb65366336"
+      "detail": "72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95 vs 72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95"
     },
     {
       "name": "RC API freeze covers public classes",
       "pass": true,
-      "detail": "732"
+      "detail": "762"
     },
     {
       "name": "RC API freeze covers public tokens/hooks",
       "pass": true,
-      "detail": "518"
+      "detail": "544"
     },
     {
       "name": "RC API freeze covers Reeris-owned data attributes",
@@ -164,7 +164,7 @@
     {
       "name": "Current release evidence has zero failures: accessibility-audit",
       "pass": true,
-      "detail": "{\"total\":51,\"passed\":51,\"failed\":0,\"docsChecked\":42}"
+      "detail": "{\"total\":51,\"passed\":51,\"failed\":0,\"docsChecked\":44}"
     },
     {
       "name": "Current release evidence exists: browser-reflow-audit",
@@ -184,7 +184,7 @@
     {
       "name": "Current release evidence has zero failures: css-architecture-audit",
       "pass": true,
-      "detail": "{\"total\":14,\"passed\":14,\"failed\":0,\"qualifiedRules\":1440,\"individualSelectors\":1462,\"sourceCssModules\":35}"
+      "detail": "{\"total\":14,\"passed\":14,\"failed\":0,\"qualifiedRules\":1555,\"individualSelectors\":1578,\"sourceCssModules\":37}"
     },
     {
       "name": "Current release evidence exists: visual-regression-audit",
@@ -214,7 +214,7 @@
     {
       "name": "Current release evidence has zero failures: theme-audit",
       "pass": true,
-      "detail": "{\"passed\":114,\"total\":114,\"failed\":0,\"officialContrastCases\":28,\"customContrastCases\":42}"
+      "detail": "{\"passed\":116,\"total\":116,\"failed\":0,\"officialContrastCases\":28,\"customContrastCases\":42}"
     },
     {
       "name": "Current release evidence exists: build-reproducibility-audit",
@@ -234,7 +234,7 @@
     {
       "name": "Current release evidence has zero failures: documentation-audit",
       "pass": true,
-      "detail": "{\"passed\":1540,\"total\":1540,\"failed\":0,\"sourceModules\":36,\"classes\":732,\"tokens\":518,\"definedTokens\":491,\"overrideHooks\":27,\"dataAttributes\":11,\"packageExports\":14,\"jsApi\":5}"
+      "detail": "{\"passed\":1608,\"total\":1608,\"failed\":0,\"sourceModules\":38,\"classes\":762,\"tokens\":544,\"definedTokens\":514,\"overrideHooks\":30,\"dataAttributes\":11,\"packageExports\":14,\"jsApi\":5}"
     },
     {
       "name": "Current release evidence exists: starters-integration-audit",
@@ -244,7 +244,7 @@
     {
       "name": "Current release evidence has zero failures: starters-integration-audit",
       "pass": true,
-      "detail": "{\"passed\":104,\"total\":104,\"failed\":0,\"starters\":5,\"publicClassesAvailable\":732}"
+      "detail": "{\"passed\":109,\"total\":109,\"failed\":0,\"starters\":5,\"publicClassesAvailable\":759}"
     },
     {
       "name": "Current release evidence exists: security-audit",
@@ -254,7 +254,7 @@
     {
       "name": "Current release evidence has zero failures: security-audit",
       "pass": true,
-      "detail": "{\"passed\":399,\"total\":399,\"failed\":0,\"jsFiles\":4,\"cssFiles\":108}"
+      "detail": "{\"passed\":408,\"total\":408,\"failed\":0,\"jsFiles\":4,\"cssFiles\":111}"
     },
     {
       "name": "Current release evidence exists: package-release-audit",

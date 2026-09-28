@@ -1,11 +1,11 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T19:28:21.106Z",
+  "generatedAt": "2026-09-28T17:34:05.190Z",
   "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
   "budgets": {
     "fullRawBytes": 261120,
-    "minRawBytes": 230400,
-    "minGzipBytes": 32768,
+    "minRawBytes": 232448,
+    "minGzipBytes": 33792,
     "minBrotliBytes": 27648,
     "largestModuleBytes": 26624,
     "maxSelectorLength": 400,
@@ -22,20 +22,20 @@
     "total": 14,
     "passed": 14,
     "failed": 0,
-    "qualifiedRules": 1545,
-    "individualSelectors": 1568,
+    "qualifiedRules": 1555,
+    "individualSelectors": 1578,
     "sourceCssModules": 37
   },
   "bundle": {
     "full": {
-      "raw": 252959,
-      "gzip": 35816,
-      "brotli": 29346
+      "raw": 254309,
+      "gzip": 36005,
+      "brotli": 29529
     },
     "minified": {
-      "raw": 230012,
-      "gzip": 32591,
-      "brotli": 27110
+      "raw": 231189,
+      "gzip": 32748,
+      "brotli": 27290
     },
     "optionalJsAllModules": {
       "raw": 5497,
@@ -243,6 +243,15 @@
         ]
       },
       {
+        "occurrences": 3,
+        "bytes": 140,
+        "selectors": [
+          ":where(.tab:focus-visible)",
+          ":where(.radio-tabs > .radio-tab-input:focus-visible + .tab)",
+          ":where(.list-item.interactive:focus-visible)"
+        ]
+      },
+      {
         "occurrences": 4,
         "bytes": 95,
         "selectors": [
@@ -308,14 +317,6 @@
       },
       {
         "occurrences": 2,
-        "bytes": 140,
-        "selectors": [
-          ":where(.tab:focus-visible)",
-          ":where(.list-item.interactive:focus-visible)"
-        ]
-      },
-      {
-        "occurrences": 2,
         "bytes": 136,
         "selectors": [
           ":where(.content-state.offline)",
@@ -344,7 +345,7 @@
       },
       {
         "file": "components/navigation.css",
-        "bytes": 11691
+        "bytes": 12931
       },
       {
         "file": "components/surfaces.css",
@@ -372,7 +373,7 @@
       },
       {
         "file": "core/theme.css",
-        "bytes": 8038
+        "bytes": 8103
       },
       {
         "file": "components/feedback.css",
@@ -458,25 +459,25 @@
       "id": "full-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.css raw 252959 / 261120 bytes."
+      "detail": "reeris.css raw 254309 / 261120 bytes."
     },
     {
       "id": "min-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css raw 230012 / 230400 bytes."
+      "detail": "reeris.min.css raw 231189 / 232448 bytes."
     },
     {
       "id": "min-gzip-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css gzip 32591 / 32768 bytes."
+      "detail": "reeris.min.css gzip 32748 / 33792 bytes."
     },
     {
       "id": "min-brotli-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css brotli 27110 / 27648 bytes."
+      "detail": "reeris.min.css brotli 27290 / 27648 bytes."
     },
     {
       "id": "module-size-budget",

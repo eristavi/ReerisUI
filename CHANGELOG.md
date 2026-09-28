@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added a CSS-only, tab-styled content switcher using native radio selection and adjacent panels, with a keyboard-accessible navigation demo and an explicit radio-versus-ARIA-tabs distinction.
+- Intentionally amended the RC public API freeze snapshot for the new switcher classes.
+- Raised the minified Core CSS raw and gzip budgets by 2 KiB and 1 KiB respectively for the new component; the built bundle remains below both revised limits.
 - Painted the Glass canvas on the document root and kept the body transparent, so centered demo bodies no longer cut the gradient off at their max-width edges.
 - Versioned the built Core CSS URL in hosted starter previews so deployed control fixes do not remain hidden by cached stylesheets.
 - Styled Settings starter and documentation controls with the Reeris input/select classes and aligned text inputs and dropdowns to a shared desktop width, with full-width controls on mobile.

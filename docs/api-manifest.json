@@ -1,9 +1,9 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-26T22:51:12.383Z",
+  "generatedAt": "2026-09-28T17:34:25.382Z",
   "counts": {
     "sourceModules": 38,
-    "classes": 759,
+    "classes": 762,
     "tokens": 544,
     "definedTokens": 514,
     "overrideHooks": 30,
@@ -519,6 +519,7 @@
     {
       "name": "badge",
       "sources": [
+        "components/authentication.css",
         "components/surfaces.css"
       ]
     },
@@ -1931,6 +1932,7 @@
     {
       "name": "input",
       "sources": [
+        "components/settings.css",
         "forms/forms.css"
       ]
     },
@@ -3289,6 +3291,24 @@
       ]
     },
     {
+      "name": "radio-tab-input",
+      "sources": [
+        "components/navigation.css"
+      ]
+    },
+    {
+      "name": "radio-tab-panel",
+      "sources": [
+        "components/navigation.css"
+      ]
+    },
+    {
+      "name": "radio-tabs",
+      "sources": [
+        "components/navigation.css"
+      ]
+    },
+    {
       "name": "raised",
       "sources": [
         "components/surfaces.css"
@@ -3652,6 +3672,7 @@
     {
       "name": "select",
       "sources": [
+        "components/settings.css",
         "forms/forms.css"
       ]
     },
