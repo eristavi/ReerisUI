@@ -98,7 +98,8 @@
 }
 
 @layer reeris.base {
-  :where(:root)[data-theme="glass"] body { background: var(--reeris-glass-canvas); }
+  :where(:root)[data-theme="glass"] { background: var(--reeris-glass-canvas); }
+  :where(:root)[data-theme="glass"] body { background: transparent; }
 }
 
 @layer reeris.components {
