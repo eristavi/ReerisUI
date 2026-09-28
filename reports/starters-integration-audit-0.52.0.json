@@ -1,9 +1,9 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-28T16:34:06.769Z",
+  "generatedAt": "2026-09-28T16:59:37.596Z",
   "summary": {
-    "passed": 104,
-    "total": 104,
+    "passed": 109,
+    "total": 109,
     "failed": 0,
     "starters": 5,
     "publicClassesAvailable": 759
@@ -74,6 +74,11 @@
       "name": "dashboard.html: no runtime script required",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "dashboard.html: field class is reserved for wrappers",
+      "pass": true,
+      "detail": "0 controls use .field"
     },
     {
       "name": "dashboard.html: inline styles only use public Reeris custom properties",
@@ -164,6 +169,11 @@
       "name": "data-management.html: no runtime script required",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "data-management.html: field class is reserved for wrappers",
+      "pass": true,
+      "detail": "0 controls use .field"
     },
     {
       "name": "data-management.html: inline styles only use public Reeris custom properties",
@@ -261,6 +271,11 @@
       "detail": ""
     },
     {
+      "name": "authentication.html: field class is reserved for wrappers",
+      "pass": true,
+      "detail": "0 controls use .field"
+    },
+    {
       "name": "authentication.html: inline styles only use public Reeris custom properties",
       "pass": true,
       "detail": ""
@@ -344,6 +359,11 @@
       "name": "settings.html: no runtime script required",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "settings.html: field class is reserved for wrappers",
+      "pass": true,
+      "detail": "0 controls use .field"
     },
     {
       "name": "settings.html: inline styles only use public Reeris custom properties",
@@ -434,6 +454,11 @@
       "name": "marketing.html: no runtime script required",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "marketing.html: field class is reserved for wrappers",
+      "pass": true,
+      "detail": "0 controls use .field"
     },
     {
       "name": "marketing.html: inline styles only use public Reeris custom properties",

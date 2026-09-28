@@ -47,6 +47,8 @@ for (const [file, anchors] of Object.entries(starters)) {
   const dataAttrs = [...dataAttrsFrom(html)];
   const unknownAttrs = dataAttrs.filter(name => !knownDataAttributes.has(name));
   const badStyles = stylesFrom(html).filter(value => value.split(';').map(x => x.trim()).filter(Boolean).some(decl => !decl.startsWith('--reeris-')));
+  const misclassifiedControls = [...html.matchAll(/<(?:input|select|textarea)\b[^>]*\bclass\s*=\s*["']([^"']+)["']/gi)]
+    .filter(match => match[1].split(/\s+/).includes('field'));
 
   check(`${file}: language declared`, /<html\b[^>]*\blang=["'][^"']+["']/i.test(html));
   check(`${file}: viewport declared`, /<meta\b[^>]*name=["']viewport["']/i.test(html));
@@ -56,6 +58,7 @@ for (const [file, anchors] of Object.entries(starters)) {
   check(`${file}: no embedded style block`, !/<style\b/i.test(html));
   check(`${file}: no inline event handlers`, !/\son[a-z]+\s*=/i.test(html));
   check(`${file}: no runtime script required`, !/<script\b/i.test(html));
+  check(`${file}: field class is reserved for wrappers`, misclassifiedControls.length === 0, `${misclassifiedControls.length} controls use .field`);
   check(`${file}: inline styles only use public Reeris custom properties`, badStyles.length === 0, badStyles.join(' | '));
   check(`${file}: only public Reeris classes`, unknown.length === 0, unknown.join(', '));
   check(`${file}: only known Reeris data attributes`, unknownAttrs.length === 0, unknownAttrs.join(', '));
