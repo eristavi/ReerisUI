@@ -1,16 +1,16 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T19:54:14.138Z",
+  "generatedAt": "2026-09-28T20:10:36.484Z",
   "summary": {
     "passed": 13,
     "total": 13,
     "failed": 0
   },
   "evidenceSummary": {
-    "records": 17,
+    "records": 18,
     "invalid": 0,
     "closing": 0,
-    "supplemental": 17
+    "supplemental": 18
   },
   "gateSummary": {
     "total": 7,
@@ -239,7 +239,8 @@
       ],
       "supplementalEvidence": [
         "naming-research-0.51.0",
-        "naming-research-0.52.0"
+        "naming-research-0.52.0",
+        "naming-research-0.55.0"
       ]
     }
   ],

@@ -1,8 +1,8 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T19:54:56.653Z",
-  "status": "not-ready",
-  "automatedReady": false,
+  "generatedAt": "2026-09-28T20:10:37.016Z",
+  "status": "ready-for-rc-validation",
+  "automatedReady": true,
   "manualSummary": {
     "total": 7,
     "open": 7,
@@ -10,16 +10,11 @@
     "blocksPublicPublication": 1
   },
   "summary": {
-    "passed": 88,
+    "passed": 89,
     "total": 89,
-    "failed": 1
+    "failed": 0
   },
-  "failures": [
-    {
-      "name": "Current release evidence has zero failures: naming-clearance-audit",
-      "detail": "{\"passed\":29,\"total\":31,\"failed\":2}"
-    }
-  ],
+  "failures": [],
   "checks": [
     {
       "name": "RC version remains pre-1.0",
@@ -318,8 +313,8 @@
     },
     {
       "name": "Current release evidence has zero failures: naming-clearance-audit",
-      "pass": false,
-      "detail": "{\"passed\":29,\"total\":31,\"failed\":2}"
+      "pass": true,
+      "detail": "{\"passed\":34,\"total\":34,\"failed\":0}"
     },
     {
       "name": "Manual release gates registry exists",

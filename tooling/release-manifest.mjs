@@ -28,7 +28,10 @@ const evidence=[
   'tests/release/external-lab/test-catalog.json', 'tests/release/external-lab/manifest.json',
   `tests/release/evidence-artifacts/${pkg.version}/local-chromium/local-chromium-report.json`,
   'tests/release/manual-gates.json', 'tests/release/gate-criteria.json', 'tests/release/evidence-schema.json', 'tests/release/browser-evidence-schema.json', 'playwright.config.mjs', '.github/workflows/rc-browser-matrix.yml',
-  'DEPRECATIONS.md', 'tests/release/naming-clearance.json', 'docs/naming-clearance-0.51.md'
+  'DEPRECATIONS.md', 'tests/release/naming-clearance.json', 'tests/release/identity-reservation.json',
+  `docs/identity-reservation-${pkg.version}.md`,
+  `tests/release/evidence/public-name-namespace-clearance/naming-research-${pkg.version}.json`,
+  'docs/naming-clearance-0.51.md'
 ].filter(fs.existsSync);
 const manifest={
   name:'Reeris UI',version:pkg.version,generatedAt:new Date().toISOString(),license:'MIT',

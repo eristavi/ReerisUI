@@ -1,22 +1,13 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:34:24.837Z",
-  "status": "fail",
+  "generatedAt": "2026-09-28T20:10:36.657Z",
+  "status": "pass",
   "summary": {
-    "passed": 29,
-    "total": 31,
-    "failed": 2
+    "passed": 34,
+    "total": 34,
+    "failed": 0
   },
-  "failures": [
-    {
-      "name": "Current-version naming research evidence exists",
-      "detail": "tests/release/evidence/public-name-namespace-clearance/naming-research-0.55.0.json"
-    },
-    {
-      "name": "Naming report matches release version",
-      "detail": "0.52.0"
-    }
-  ],
+  "failures": [],
   "checks": [
     {
       "name": "Naming clearance machine report exists",
@@ -26,7 +17,7 @@
     {
       "name": "Naming clearance human report exists",
       "pass": true,
-      "detail": "docs/identity-reservation-0.52.md"
+      "detail": "docs/identity-reservation-0.55.0.md"
     },
     {
       "name": "Rename migration note exists",
@@ -35,13 +26,13 @@
     },
     {
       "name": "Current-version naming research evidence exists",
-      "pass": false,
+      "pass": true,
       "detail": "tests/release/evidence/public-name-namespace-clearance/naming-research-0.55.0.json"
     },
     {
       "name": "Naming report matches release version",
-      "pass": false,
-      "detail": "0.52.0"
+      "pass": true,
+      "detail": "0.55.0"
     },
     {
       "name": "Selected project name is Reeris UI",
@@ -172,6 +163,21 @@
       "name": "Root monorepo is renamed",
       "pass": true,
       "detail": "reeris-ui-monorepo"
+    },
+    {
+      "name": "Naming evidence is supplemental",
+      "pass": true,
+      "detail": "supplemental"
+    },
+    {
+      "name": "Naming evidence cannot close criteria",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Naming evidence references Reeris repository",
+      "pass": true,
+      "detail": "Eristavi/ReerisUI"
     }
   ]
 }

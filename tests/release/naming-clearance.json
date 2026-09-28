@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "version": "0.52.0",
-  "auditedAt": "2026-09-25",
+  "version": "0.55.0",
+  "auditedAt": "2026-09-28",
   "selectedName": "Reeris UI",
   "shortBrand": "Reeris",
   "canonicalRepository": "Eristavi/ReerisUI",
@@ -16,38 +16,38 @@
   "researchSummary": {
     "exactSoftwareFrameworkConflictFound": false,
     "exactReerisUiTrademarkSurfaced": false,
-    "publicSearchRisk": "low-apparent-risk",
+    "publicSearchRisk": "inconclusive-limited-public-search",
     "legalClearance": "not-a-legal-opinion",
-    "npmAvailability": "public-search-promising-registry-reservation-pending",
-    "domainAvailability": "no-indexed-use-or-dns-records-registrar-reservation-pending"
+    "npmAvailability": "six-public-registry-endpoints-404-account-reservation-pending",
+    "domainAvailability": "com-rdap-404-dev-rdap-502-registrar-reservation-pending"
   },
   "materialFindings": [
     {
-      "id": "no-material-exact-software-collision-found",
+      "id": "public-exact-name-search-limited",
+      "severity": "context",
+      "summary": "Limited public exact-name searches did not establish a material exact Reeris UI software-framework collision; this is not a comprehensive conflict search."
+    },
+    {
+      "id": "github-repository-verified",
       "severity": "positive",
-      "summary": "Public research did not surface a material exact-match Reeris UI / ReerisUI software framework, design system, developer tool, SaaS product or technology company conflict."
+      "summary": "The public Eristavi/ReerisUI repository is accessible under the intended owner and name."
     },
     {
-      "id": "reeris-derived-founder-brand",
-      "severity": "positive",
-      "summary": "Reeris is a coined founder-derived brand combining Revaz and Eristavi, improving distinctiveness compared with the previous Reva UI working name."
-    },
-    {
-      "id": "npm-live-unverified",
+      "id": "npm-live-unreserved",
       "severity": "blocking",
-      "summary": "The intended @reeris npm scope and package names have not yet been successfully reserved or authoritatively verified live."
+      "summary": "All six target public npm metadata endpoints returned 404 on 28 September 2026; this does not prove scope ownership or reserve package names."
     },
     {
-      "id": "domains-live-unverified",
+      "id": "domains-live-unreserved",
       "severity": "blocking",
-      "summary": "The preferred Reeris/ReerisUI domains have not yet been successfully reserved or authoritatively verified with a registrar/RDAP source."
+      "summary": "The reeris.com and reerisui.com RDAP endpoints returned 404, while .dev requests returned 502; none of the domains was registered or authoritatively confirmed available."
     },
     {
       "id": "formal-trademark-clearance-pending",
       "severity": "blocking",
-      "summary": "No material exact REERIS UI software trademark surfaced in public research, but formal similarity clearance in relevant software/technology classes remains pending and this research is not legal advice."
+      "summary": "A formal trademark similarity search and legal decision remain pending; public exact-name search is not legal advice."
     }
   ],
-  "decision": "Proceed with the Reeris UI rename throughout the pre-1.0 codebase while keeping the public-publication gate open until npm/domain reservation and formal trademark clearance are completed.",
+  "decision": "Continue development under Reeris UI. Keep the public-publication gate open pending npm account control, domain registration, and formal trademark/similarity clearance.",
   "historicalWorkingName": "Reva UI"
 }

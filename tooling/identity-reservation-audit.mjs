@@ -6,7 +6,7 @@ const check=(name,condition,detail='')=>{const pass=Boolean(condition);checks.pu
 const exists=p=>fs.existsSync(p);
 const readJson=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const report='tests/release/identity-reservation.json';
-const doc='docs/identity-reservation-0.52.md';
+const doc=`docs/identity-reservation-${version}.md`;
 check('Identity reservation machine report exists',exists(report),report);
 check('Identity reservation human report exists',exists(doc),doc);
 if(exists(report)){
@@ -16,7 +16,7 @@ if(exists(report)){
  check('Canonical repository is Eristavi/ReerisUI',d.canonicalRepository==='Eristavi/ReerisUI',d.canonicalRepository);
  check('npm scope is @reeris',d.npmScope==='@reeris',d.npmScope);
  check('npm reservation is still required',d.npm?.reservationRequired===true);
- check('GitHub reservation/rename verification still required',d.github?.reservationRequired===true);
+ check('Canonical GitHub repository is publicly verified',d.github?.publicRepositoryVerified===true&&d.github?.reservationRequired===false);
  check('Domain registrar availability is not overclaimed',d.domains?.registrarAvailabilityVerified===false);
  check('Formal trademark similarity search remains pending',d.trademark?.formalSimilaritySearchCompleted===false);
  check('Research is explicitly not a legal opinion',d.trademark?.legalOpinion===false);

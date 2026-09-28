@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "naming-research-0.55.0",
+  "releaseVersion": "0.55.0",
+  "gateId": "public-name-namespace-clearance",
+  "kind": "name-clearance",
+  "role": "supplemental",
+  "collectedAt": "2026-09-28T20:08:38.078Z",
+  "outcome": "inconclusive",
+  "claims": [],
+  "coverage": [
+    "project-name-clearance",
+    "package-namespace-clearance",
+    "repository-domain-clearance"
+  ],
+  "environment": {
+    "method": "Public registry metadata, GitHub repository API, Verisign RDAP, limited public exact-name search",
+    "selectedName": "Reeris UI",
+    "canonicalRepository": "Eristavi/ReerisUI",
+    "intendedPackageScope": "@reeris",
+    "sources": [
+      "https://registry.npmjs.org/",
+      "https://github.com/Eristavi/ReerisUI",
+      "https://rdap.verisign.com/com/v1/",
+      "https://www.euipo.europa.eu/en/trade-marks/before-applying/availability"
+    ],
+    "limitations": [
+      "Six npm package endpoint 404 responses do not establish account control or reservation.",
+      ".com RDAP 404 responses do not guarantee registrar availability; .dev RDAP returned 502, and .io/.org were not checked.",
+      "Public exact-name queries are not a formal trademark similarity search."
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "docs/identity-reservation-0.55.0.md",
+      "sha256": "4df4b59653451dbb2fd4e8391bbfad609bff89580e19c4fc60a52be304e1d09f",
+      "description": "Current human-readable public-source identity research."
+    },
+    {
+      "path": "tests/release/identity-reservation.json",
+      "sha256": "3e2531f8be2a0278b5f86bcf017904de310f6d96e165ce08444241c32124af19",
+      "description": "Current machine-readable identity observations and open reservations."
+    },
+    {
+      "path": "tests/release/naming-clearance.json",
+      "sha256": "7a0e5df5249b1211f254eddb10907c58911df41bf854de4a20c15266c755e3f4",
+      "description": "Current selected-name research and open gate state."
+    }
+  ],
+  "notes": "Current public-source research only. The repository is verified, while npm scope control, domain registration and formal trademark clearance remain open. No closure criterion is claimed.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Supplemental automated/public research; no owner or legal approval has been recorded."
+  }
+}

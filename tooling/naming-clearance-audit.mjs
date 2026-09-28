@@ -8,7 +8,7 @@ const exists=p=>fs.existsSync(p);
 const readJson=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 
 const reportPath='tests/release/naming-clearance.json';
-const docPath='docs/identity-reservation-0.52.md';
+const docPath=`docs/identity-reservation-${version}.md`;
 const migrationPath='docs/reva-to-reeris-migration-0.51.md';
 const evidencePath=`tests/release/evidence/public-name-namespace-clearance/naming-research-${version}.json`;
 

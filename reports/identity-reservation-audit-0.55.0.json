@@ -1,18 +1,13 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:34:25.120Z",
-  "status": "fail",
+  "generatedAt": "2026-09-28T20:10:36.826Z",
+  "status": "pass",
   "summary": {
-    "passed": 29,
+    "passed": 30,
     "total": 30,
-    "failed": 1
+    "failed": 0
   },
-  "failures": [
-    {
-      "name": "Report matches release version",
-      "detail": "0.52.0"
-    }
-  ],
+  "failures": [],
   "checks": [
     {
       "name": "Identity reservation machine report exists",
@@ -22,12 +17,12 @@
     {
       "name": "Identity reservation human report exists",
       "pass": true,
-      "detail": "docs/identity-reservation-0.52.md"
+      "detail": "docs/identity-reservation-0.55.0.md"
     },
     {
       "name": "Report matches release version",
-      "pass": false,
-      "detail": "0.52.0"
+      "pass": true,
+      "detail": "0.55.0"
     },
     {
       "name": "Brand is Reeris UI",
@@ -50,7 +45,7 @@
       "detail": ""
     },
     {
-      "name": "GitHub reservation/rename verification still required",
+      "name": "Canonical GitHub repository is publicly verified",
       "pass": true,
       "detail": ""
     },

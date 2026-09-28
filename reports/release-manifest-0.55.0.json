@@ -1,7 +1,7 @@
 {
   "name": "Reeris UI",
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:34:25.650Z",
+  "generatedAt": "2026-09-28T20:11:19.857Z",
   "license": "MIT",
   "artifacts": [
     {
@@ -62,9 +62,14 @@
       "sha256": "f4b07f44932004c29de706f4b3742baa7db369c5df444f68da46bea2b25b65b6"
     },
     {
+      "file": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",
+      "bytes": 14579,
+      "sha256": "028ca6c96e3aadbabeb343f011a63d3fbda8e71f1fd2ee875d984aa7a1ec368c"
+    },
+    {
       "file": "tests/release/manual-gates.json",
-      "bytes": 7078,
-      "sha256": "a851928b267c3d023b0ba2817218e823cb93428d005a9463cf4e268fffdde0ec"
+      "bytes": 7112,
+      "sha256": "7e3cbb01b49af265c9b7b7055f70a59ea55cbb2ae30abdfaa3834c15419aa352"
     },
     {
       "file": "tests/release/gate-criteria.json",
@@ -88,8 +93,8 @@
     },
     {
       "file": ".github/workflows/rc-browser-matrix.yml",
-      "bytes": 2403,
-      "sha256": "8281aff23ff224ff9cc72fdd19eb5e4a0277c94cb7b6c1980676d1453403b31c"
+      "bytes": 3352,
+      "sha256": "ed409b0fa78e00281cf9807203279faa8a931ecff5f82cb8db4d1f2d96cf3922"
     },
     {
       "file": "DEPRECATIONS.md",
@@ -98,8 +103,23 @@
     },
     {
       "file": "tests/release/naming-clearance.json",
-      "bytes": 2445,
-      "sha256": "2a5bb15f928a3dd1277904b3d16a9d8df604c1b03e334fb80d70ac516c824891"
+      "bytes": 2329,
+      "sha256": "7a0e5df5249b1211f254eddb10907c58911df41bf854de4a20c15266c755e3f4"
+    },
+    {
+      "file": "tests/release/identity-reservation.json",
+      "bytes": 2033,
+      "sha256": "3e2531f8be2a0278b5f86bcf017904de310f6d96e165ce08444241c32124af19"
+    },
+    {
+      "file": "docs/identity-reservation-0.55.0.md",
+      "bytes": 3492,
+      "sha256": "4df4b59653451dbb2fd4e8391bbfad609bff89580e19c4fc60a52be304e1d09f"
+    },
+    {
+      "file": "tests/release/evidence/public-name-namespace-clearance/naming-research-0.55.0.json",
+      "bytes": 2345,
+      "sha256": "a185da863845628cd5b72e1adb92984a1ebde5ebde7b1c6623bfa06a16955e66"
     },
     {
       "file": "docs/naming-clearance-0.51.md",
@@ -246,9 +266,9 @@
     "local-chromium-evidence-audit": {
       "file": "reports/local-chromium-evidence-audit-0.55.0.json",
       "summary": {
-        "passed": 5,
-        "total": 11,
-        "failed": 6
+        "passed": 66,
+        "total": 66,
+        "failed": 0
       }
     },
     "external-release-lab-audit": {
@@ -270,21 +290,21 @@
     "naming-clearance-audit": {
       "file": "reports/naming-clearance-audit-0.55.0.json",
       "summary": {
-        "passed": 29,
-        "total": 31,
-        "failed": 2
+        "passed": 34,
+        "total": 34,
+        "failed": 0
       }
     },
     "rc-readiness-audit": {
       "file": "reports/rc-readiness-audit-0.55.0.json",
       "summary": {
-        "passed": 86,
+        "passed": 89,
         "total": 89,
-        "failed": 3
+        "failed": 0
       }
     }
   },
   "securityPolicy": "SECURITY.md",
   "changelog": "CHANGELOG.md",
-  "rcStatus": "not-ready"
+  "rcStatus": "ready-for-rc-validation"
 }

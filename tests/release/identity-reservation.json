@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "version": "0.52.0",
-  "auditedAt": "2026-09-25",
+  "version": "0.55.0",
+  "auditedAt": "2026-09-28",
   "brand": "Reeris UI",
   "shortBrand": "Reeris",
   "canonicalRepository": "Eristavi/ReerisUI",
   "npmScope": "@reeris",
-  "status": "promising-pending-account-level-reservation-and-formal-clearance",
+  "status": "github-verified-npm-domain-and-formal-clearance-pending",
   "npm": {
-    "registryVerification": "blocked-by-anonymous-403-in-research-environment",
-    "indexedExactPackagesFound": false,
+    "registryVerification": "six-exact-public-package-metadata-endpoints-returned-404-2026-09-28",
+    "indexedExactPackagesFound": null,
     "targets": [
       "@reeris/core",
       "@reeris/icons",
@@ -22,13 +22,16 @@
   },
   "github": {
     "target": "Eristavi/ReerisUI",
-    "publicFetchStatus": 404,
-    "interpretation": "not-publicly-resolvable-at-check-time",
-    "reservationRequired": true
+    "publicFetchStatus": 200,
+    "publicRepositoryVerified": true,
+    "visibility": "public",
+    "owner": "eristavi",
+    "defaultBranch": "main",
+    "reservationRequired": false
   },
   "domains": {
-    "indexedMaterialUseFound": false,
-    "dnsRecordsObserved": false,
+    "indexedMaterialUseFound": null,
+    "dnsRecordsObserved": null,
     "registrarAvailabilityVerified": false,
     "preferred": [
       "reeris.dev",
@@ -38,13 +41,24 @@
       "reeris.io",
       "reeris.org"
     ],
-    "reservationRequired": true
+    "reservationRequired": true,
+    "rdapObservations": {
+      "reeris.com": "404-no-record-returned",
+      "reerisui.com": "404-no-record-returned",
+      "reeris.dev": "502-unavailable",
+      "reerisui.dev": "502-unavailable",
+      "reeris.io": "not-checked",
+      "reeris.org": "not-checked"
+    }
   },
   "trademark": {
     "materialExactReerisUiSoftwareMarkSurfaced": false,
     "formalSimilaritySearchCompleted": false,
     "legalOpinion": false,
-    "recommendedClasses": [9, 42],
+    "recommendedClasses": [
+      9,
+      42
+    ],
     "formalClearanceRequired": true
   },
   "criteria": {
@@ -52,5 +66,5 @@
     "package-namespace-clearance": "open",
     "repository-domain-clearance": "open"
   },
-  "decision": "Continue development under Reeris UI, but do not publicly publish packages or claim final trademark/domain clearance until the account-level reservations and formal trademark review are completed."
+  "decision": "The GitHub repository is publicly verified. Do not publish packages or claim final name/domain clearance until npm account control, domain registration, and formal trademark review are completed."
 }
