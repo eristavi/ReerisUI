@@ -272,11 +272,13 @@ test('published demo theme selector persists across pages and resets to system',
   const glass=await page.evaluate(()=>({
     scheme:getComputedStyle(document.documentElement).colorScheme,
     surface:getComputedStyle(document.querySelector('.docs-demo-topbar')).backgroundColor,
-    canvas:getComputedStyle(document.body).backgroundImage
+    canvas:getComputedStyle(document.documentElement).backgroundImage,
+    body:getComputedStyle(document.body).backgroundColor
   }));
   expect(glass.scheme).toBe('light');
   expect(glass.surface).not.toBe('rgba(255, 255, 255, 0.68)');
   expect(glass.canvas).toContain('gradient');
+  expect(glass.body).toBe('rgba(0, 0, 0, 0)');
   await page.goto('/.reeris-docs-site/docs/index.html');
   const homeTheme=page.getByLabel('Theme');
   await expect(homeTheme).toBeVisible();
