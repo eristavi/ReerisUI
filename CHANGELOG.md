@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added Preview / HTML radio switchers to 54 component examples across 14 hosted documentation pages. The static docs build derives escaped HTML snippets from each example, so the code and preview stay aligned without runtime tab logic.
 - Added a CSS-only, tab-styled content switcher using native radio selection and adjacent panels, with a keyboard-accessible navigation demo and an explicit radio-versus-ARIA-tabs distinction.
 - Intentionally amended the RC public API freeze snapshot for the new switcher classes.
 - Raised the minified Core CSS raw and gzip budgets by 2 KiB and 1 KiB respectively for the new component; the built bundle remains below both revised limits.

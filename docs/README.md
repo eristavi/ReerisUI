@@ -12,6 +12,8 @@ The published documentation site is built with:
 
 The site is published to GitHub Pages on pushes to `main` through `.github/workflows/docs-pages.yml`. Configure the repository's **Settings → Pages → Build and deployment → Source** as **GitHub Actions**. The project URL is `https://eristavi.github.io/ReerisUI/`.
 
+Component sections marked `data-docs-example` receive Preview and HTML radio views in the published site. `tooling/demo-code-tabs.mjs` takes the HTML view directly from the section's example markup during `npm run docs:site`; edit the preview once, then rebuild. The checked Preview radio preserves the existing demonstration, and CSS controls switching. Source pages keep their plain examples if opened without a build. Give marked sections an `h2` as their first child and keep each example's radio names and IDs distinct from the generated `docs-example-*` names.
+
 The home page offers a three-step introduction and a page finder. Search is an optional enhancement; every category and link remains browsable without JavaScript. The published component demos have a shared top menu with a docs link and a System / Light / Dark / Glass selector. The selector stores the choice for the documentation site, while System follows the browser or operating-system preference. Glass applies translucent surfaces with an opaque reduced-transparency fallback. The menu's script belongs to documentation only; Reeris Core remains CSS-only.
 
 That command first builds Reeris, then creates `.reeris-docs-site/`. During that build, documentation pages are rewritten to use a self-contained `docs/assets/reeris.css` copied from the production `packages/core/dist/reeris.css`.

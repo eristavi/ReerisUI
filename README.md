@@ -35,7 +35,7 @@ Download the [built Core stylesheet](https://eristavi.github.io/ReerisUI/docs/as
 <button class="btn primary">Continue</button>
 ```
 
-The documentation includes [live component examples](https://eristavi.github.io/ReerisUI/docs/index.html) and [five starter compositions](https://eristavi.github.io/ReerisUI/docs/starters.html). The `@reeris/core` and `@reeris/js` package sources are in this repository; npm publication is pending identity and namespace clearance. Do not assume these packages are available in the registry yet.
+The documentation includes [live component examples with Preview and HTML views](https://eristavi.github.io/ReerisUI/docs/index.html) and [five starter compositions](https://eristavi.github.io/ReerisUI/docs/starters.html). The `@reeris/core` and `@reeris/js` package sources are in this repository; npm publication is pending identity and namespace clearance. Do not assume these packages are available in the registry yet.
 
 For local development, use Node.js 20 or later:
 

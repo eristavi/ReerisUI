@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { addDemoCodeTabs } from './demo-code-tabs.mjs';
 
 const root = process.cwd();
 const out = path.join(root, '.reeris-docs-site');
@@ -26,6 +27,7 @@ for (const name of fs.readdirSync(docsOut)) {
   const file = path.join(docsOut, name);
   let html = fs.readFileSync(file, 'utf8')
     .replaceAll('../packages/core/src/reeris.css', 'assets/reeris.css');
+  html = addDemoCodeTabs(html, name);
   if (!html.includes('assets/docs.css')) html = html.replace('</head>', '<link rel="stylesheet" href="assets/docs.css"></head>');
   if (!html.includes('assets/docs.js')) html = html.replace('</head>', '<script type="module" src="assets/docs.js"></script></head>');
   html = html.replace(/(<link\b[^>]*href="assets\/reeris\.css"[^>]*>)/, '<script src="assets/theme-init.js"></script>$1');

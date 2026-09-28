@@ -1,6 +1,6 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-28T17:35:29.832Z",
+  "generatedAt": "2026-09-28T18:15:20.977Z",
   "status": "ready-for-rc-validation",
   "automatedReady": true,
   "manualSummary": {
@@ -244,7 +244,7 @@
     {
       "name": "Current release evidence has zero failures: starters-integration-audit",
       "pass": true,
-      "detail": "{\"passed\":109,\"total\":109,\"failed\":0,\"starters\":5,\"publicClassesAvailable\":759}"
+      "detail": "{\"passed\":109,\"total\":109,\"failed\":0,\"starters\":5,\"publicClassesAvailable\":762}"
     },
     {
       "name": "Current release evidence exists: security-audit",
