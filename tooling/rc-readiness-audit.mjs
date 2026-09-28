@@ -43,7 +43,7 @@ if(exists('docs/api-manifest.json')&&exists('tests/release/public-api-freeze.jso
   const current=normalizedApi(manifest);
   const currentDigest=digest(current);
   check('API manifest version matches release', manifest.version===version, `${manifest.version} vs ${version}`);
-  check('API freeze baseline is recorded', /^0\.52\./.test(freeze.baselineVersion||'') && /radio content switcher/i.test(freeze.amendment||''), freeze.baselineVersion);
+  check('API freeze baseline is recorded', /^0\.55\./.test(freeze.baselineVersion||'') && /0\.55\.0 API lock/i.test(freeze.amendment||''), freeze.baselineVersion);
   check('API freeze embedded digest is valid', freeze.sha256===digest(freeze.api), `${freeze.sha256} vs ${digest(freeze.api)}`);
   check('Current public API matches RC freeze snapshot', JSON.stringify(current)===JSON.stringify(freeze.api), `${currentDigest} vs ${freeze.sha256}`);
   check('RC API freeze covers public classes', current.classes.length>0, `${current.classes.length}`);

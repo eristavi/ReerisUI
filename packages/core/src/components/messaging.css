@@ -53,7 +53,7 @@
 
   @container (max-width: 38rem) {
     :where(.message-row) { grid-template-columns:auto minmax(0,1fr) auto; align-items:start; }
-    :where(.message-row > .message-sender) { grid-column:2; grid-row:1; min-inline-size:0; }
+    :where(.message-row > .message-sender) { grid-column:2; grid-row:1; min-inline-size:0; white-space:normal; overflow-wrap:anywhere; }
     :where(.message-row > .message-time) { grid-column:3; grid-row:1; }
     :where(.message-row > :nth-child(3)) { grid-column:2 / -1; grid-row:2; min-inline-size:0; overflow-wrap:anywhere; }
     :where(.message-subject,.message-preview) { white-space:normal; }

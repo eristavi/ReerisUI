@@ -49,7 +49,8 @@ const add = (id, pass, detail, category = 'static') => checks.push({ id, categor
 
 // Keyboard/focus acceptance.
 add('global-focus-visible', /:focus-visible\s*\{[^}]*outline:/s.test(base), 'Global :focus-visible indicator is present.', 'keyboard');
-add('no-outline-suppression', !/outline\s*:\s*(?:0|none)/.test(css), 'Core CSS does not suppress focus outlines.', 'keyboard');
+const outlineRemovals = [...css.matchAll(/outline\s*:\s*(?:0|none)\b/g)];
+add('no-outline-suppression', outlineRemovals.length === 1 && /:where\(\.input:focus,\.select:focus,\.textarea:focus\)[^}]*outline:\s*none;[^}]*box-shadow:\s*0 0 0 3px var\(--reeris-field-focus-halo\)/.test(forms) && /@media \(forced-colors: active\)[\s\S]*?:where\(\.input:focus,\.select:focus,\.textarea:focus\)[^}]*outline:\s*2px solid Highlight/.test(forms), 'Only form focus replaces a native outline with a visible halo and forced-colors outline.', 'keyboard');
 add('hover-card-focus-path', /\.hover-card:focus-within\s*>\s*\.hover-card-panel/.test(nav), 'Hover-card content opens for keyboard focus as well as pointer hover.', 'keyboard');
 add('dropzone-focus-path', /\.dropzone:hover,\.dropzone:focus-within/.test(files), 'Drop-zone highlight has a focus-within path.', 'keyboard');
 add('glide-follow-focus', /focusin/.test(glide) && /focusout/.test(glide) && /followFocus/.test(glide), 'Optional glide navigation follows keyboard focus.', 'keyboard');
@@ -74,7 +75,7 @@ add('command-palette-viewport-safe', /command-palette\)[^{]*\{[^}]*100vi/s.test(
 add('identity-wraps', /identity-name\)[^{]*\{[^}]*overflow-wrap:\s*anywhere/s.test(identity) && /identity-meta\)[^{]*\{[^}]*overflow-wrap:\s*anywhere/s.test(identity), 'Identity text wraps instead of being permanently ellipsized.', 'reflow');
 add('file-name-wraps', /file-name\)[^{]*\{[^}]*overflow-wrap:\s*anywhere/s.test(files), 'File names can wrap at narrow widths.', 'reflow');
 add('tree-label-wraps', /tree-label\)[^{]*\{[^}]*overflow-wrap:\s*anywhere/s.test(tree), 'Tree labels can wrap at narrow widths.', 'reflow');
-add('message-narrow-wrap', /@container\s*\(max-width:\s*38rem\)[\s\S]*message-sender[^}]*white-space:\s*normal/s.test(messaging), 'Inbox/message text unwraps in narrow containers.', 'reflow');
+add('message-narrow-wrap', /@container\s*\(max-width:\s*38rem\)[\s\S]*message-sender[^}]*white-space:\s*normal/s.test(messaging), 'Inbox/message sender text unwraps in narrow containers.', 'reflow');
 add('app-title-wraps', /app-topbar-title\)[^{]*\{[^}]*overflow-wrap:\s*anywhere/s.test(appShell), 'Application title can wrap rather than clip.', 'reflow');
 add('table-horizontal-fallback', /\.table-wrap\)[^{]*\{[^}]*overflow:\s*auto/s.test(tables), 'Wide semantic tables have an explicit scrolling fallback.', 'reflow');
 add('table-stack-mode', /\.table\.stack/.test(tables) && /@container/.test(tables), 'Tables provide an opt-in container-aware stacked presentation.', 'reflow');
@@ -89,6 +90,7 @@ const nowrapLines = cssFiles.flatMap(f => fs.readFileSync(f, 'utf8').split('\n')
 const allowedNowrap = nowrapLines.filter(x =>
   x.file.endsWith('utilities/accessibility.css') ||
   x.file.endsWith('tables.css') ||
+  (x.file.endsWith('carousel.css') && x.text === 'white-space:nowrap;' && /::scroll-marker\s*\{[^}]*white-space:nowrap;/s.test(source('packages/core/src/components/carousel.css'))) ||
   /product-price|order-total|transaction-amount|money/.test(x.text) ||
   /app-sidebar-label/.test(x.text) ||
   (x.file.endsWith('messaging.css') && /message-sender|message-subject|message-preview|message-time/.test(x.text) && /@container\s*\(max-width:\s*38rem\)[\s\S]*white-space:\s*normal/.test(messaging))

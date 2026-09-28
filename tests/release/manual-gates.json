@@ -1,5 +1,5 @@
 {
-  "version": "0.52.0",
+  "version": "0.55.0",
   "policy": "All automated gates must pass for an RC source/tarball build. Gates marked blocks1_0 must be completed with recorded evidence before Reeris 1.0. Gates marked blocksPublicPublication must be completed before publishing the corresponding public registry/repository artifacts.",
   "gates": [
     {

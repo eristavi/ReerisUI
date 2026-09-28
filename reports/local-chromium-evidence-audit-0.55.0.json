@@ -1,0 +1,94 @@
+{
+  "version": "0.55.0",
+  "generatedAt": "2026-09-28T18:33:29.015Z",
+  "status": "invalid",
+  "summary": {
+    "passed": 5,
+    "total": 11,
+    "failed": 6
+  },
+  "boundary": "Validates local Chromium supplemental evidence only. It intentionally does not close real branded-browser, real-device, assistive-technology, zoom/touch, Windows High Contrast, or human-approved visual gates.",
+  "failures": [
+    {
+      "name": "Local Chromium report exists",
+      "detail": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json"
+    },
+    {
+      "name": "Supplemental evidence exists: desktop-browser-matrix",
+      "detail": "tests/release/evidence/desktop-browser-matrix/local-chromium-desktop-browser-matrix-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: assistive-technology",
+      "detail": "tests/release/evidence/assistive-technology/local-chromium-assistive-technology-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: zoom-reflow-touch",
+      "detail": "tests/release/evidence/zoom-reflow-touch/local-chromium-zoom-reflow-touch-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: forced-colors-high-contrast",
+      "detail": "tests/release/evidence/forced-colors-high-contrast/local-chromium-forced-colors-high-contrast-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: visual-regression-baselines",
+      "detail": "tests/release/evidence/visual-regression-baselines/local-chromium-visual-regression-baselines-0.55.0.json"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Local Chromium report exists",
+      "pass": false,
+      "detail": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json"
+    },
+    {
+      "name": "Supplemental evidence exists: desktop-browser-matrix",
+      "pass": false,
+      "detail": "tests/release/evidence/desktop-browser-matrix/local-chromium-desktop-browser-matrix-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: assistive-technology",
+      "pass": false,
+      "detail": "tests/release/evidence/assistive-technology/local-chromium-assistive-technology-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: zoom-reflow-touch",
+      "pass": false,
+      "detail": "tests/release/evidence/zoom-reflow-touch/local-chromium-zoom-reflow-touch-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: forced-colors-high-contrast",
+      "pass": false,
+      "detail": "tests/release/evidence/forced-colors-high-contrast/local-chromium-forced-colors-high-contrast-0.55.0.json"
+    },
+    {
+      "name": "Supplemental evidence exists: visual-regression-baselines",
+      "pass": false,
+      "detail": "tests/release/evidence/visual-regression-baselines/local-chromium-visual-regression-baselines-0.55.0.json"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: desktop-browser-matrix",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: assistive-technology",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: zoom-reflow-touch",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: forced-colors-high-contrast",
+      "pass": true,
+      "detail": "open"
+    },
+    {
+      "name": "Local automated evidence did not close manual gate: visual-regression-baselines",
+      "pass": true,
+      "detail": "open"
+    }
+  ]
+}

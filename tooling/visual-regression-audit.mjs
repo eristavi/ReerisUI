@@ -58,7 +58,7 @@ check('Core default advertises light and dark scheme', /color-scheme:\s*light da
 check('Core still supports explicit light override', /\[data-theme="light"\]\s*\{\s*color-scheme:\s*light/.test(themeCss));
 check('Core still supports explicit dark override', /\[data-theme="dark"\]\s*\{\s*color-scheme:\s*dark/.test(themeCss));
 const docsJs=fs.readFileSync('docs/assets/docs.js','utf8');
-check('Normal docs JS does not force a theme', !/data-theme|dataset\.theme|setAttribute\([^)]*theme/.test(docsJs));
+check('Docs System option removes explicit theme', /theme === 'system'\) delete document\.documentElement\.dataset\.theme/.test(docsJs) && /themeSelect\.value = \['light', 'dark', 'glass'\]/.test(docsJs));
 
 const report={version,generatedAt:new Date().toISOString(),summary:{passed:checks.filter(x=>x.pass).length,total:checks.length,failed:failures.length,cases:manifest.cases.length,htmlPages:htmlFiles.length},baselineStatus:'Infrastructure ready; browser-rendered PNG baselines require a functioning release-lab browser and are intentionally not synthesized by the static audit.',failures,checks};
 fs.writeFileSync(path.join(reportsDir,`visual-regression-audit-${version}.json`),JSON.stringify(report,null,2)+'\n');

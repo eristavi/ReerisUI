@@ -1,6 +1,6 @@
 {
-  "baselineVersion": "0.52.0",
-  "amendment": "Reviewed CSS-only radio content switcher; see CHANGELOG.md Unreleased.",
+  "baselineVersion": "0.55.0",
+  "amendment": "Reviewed 0.55.0 API lock after full source audit; see CHANGELOG.md 0.55.0.",
   "sha256": "72fb14c41ad9923201244c8c43d191064ebcf84966002f482e047212c40a5b95",
   "api": {
     "sourceModules": [

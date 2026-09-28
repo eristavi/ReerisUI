@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.52.0",
+  "version": "0.55.0",
   "purpose": "Criterion-specific external Release Lab test catalog. Each entry maps one-to-one to a closing criterion in tests/release/gate-criteria.json.",
   "items": [
     {

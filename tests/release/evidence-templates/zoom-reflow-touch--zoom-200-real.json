@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "evidenceId": "zoom-reflow-touch-zoom-200-real-replace-me",
-  "releaseVersion": "0.52.0",
+  "releaseVersion": "0.55.0",
   "gateId": "zoom-reflow-touch",
   "kind": "zoom-reflow",
   "role": "closing",

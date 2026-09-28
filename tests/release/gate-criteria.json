@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.52.0",
+  "version": "0.55.0",
   "policy": "A gate passes only when every required criterion has approved closing evidence with a passing outcome. Unless persistentAcrossVersions is true, evidence must target the current release.",
   "gates": {
     "desktop-browser-matrix": {

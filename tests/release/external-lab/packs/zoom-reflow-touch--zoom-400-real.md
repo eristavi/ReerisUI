@@ -1,6 +1,6 @@
 # Real-browser 400% zoom/reflow
 
-**Release:** Reeris UI 0.52.0
+**Release:** Reeris UI 0.55.0
 
 **Gate:** `zoom-reflow-touch`
 

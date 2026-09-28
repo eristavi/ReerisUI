@@ -1,0 +1,290 @@
+{
+  "name": "Reeris UI",
+  "version": "0.55.0",
+  "generatedAt": "2026-09-28T18:34:25.650Z",
+  "license": "MIT",
+  "artifacts": [
+    {
+      "file": "packages/core/dist/reeris.css",
+      "bytes": 254353,
+      "sha256": "f95ca4a8e7d1cd92cf711b7915a94a34d48097fac66bbdff14b0b6a63a872865"
+    },
+    {
+      "file": "packages/core/dist/reeris.min.css",
+      "bytes": 231231,
+      "sha256": "c814e48bed821ba167e659b549f02cb5f6dc6ee0d19b7b2d42ef93061837c2ba"
+    },
+    {
+      "file": "packages/core/dist/reeris.css.map",
+      "bytes": 18609,
+      "sha256": "783d2fefd744c5432ee51cc2b04eb4bb405981f51ba6fdbe9f5d314fbd700ad6"
+    },
+    {
+      "file": "packages/core/dist/reeris.min.css.map",
+      "bytes": 19426,
+      "sha256": "83b478fd8cb318e4437193dc30179415f4c2179345c3d7f438a306a7a68031d7"
+    },
+    {
+      "file": "packages/core/dist/tokens.json",
+      "bytes": 9009,
+      "sha256": "a7b25112086825a18bc3f3ecf207a07782edff1e0572abed198e55687d59b1a3"
+    },
+    {
+      "file": "packages/core/dist/tokens.js",
+      "bytes": 9032,
+      "sha256": "32ead826c64bda0e6ebf59dbb1686044a2a8a205fbd505cba47e6f0fe3aa4bc2"
+    },
+    {
+      "file": "packages/js/dist/index.js",
+      "bytes": 1216,
+      "sha256": "2cd08f319cf283e229aa01401b2cfe6229a857d3a8efc2728720ecfc0f106514"
+    },
+    {
+      "file": "packages/js/dist/glide-navigation.js",
+      "bytes": 4281,
+      "sha256": "1eecdecae1914309b932f831f6c899ce2c5316f500663fd916650fa663b38e8c"
+    }
+  ],
+  "releaseEvidence": [
+    {
+      "file": "tests/release/public-api-freeze.json",
+      "bytes": 71004,
+      "sha256": "5737c2fa2f29380e5f09f678c8b7b6dccf9535620c16bb8fdf28fae52ed83505"
+    },
+    {
+      "file": "tests/release/external-lab/test-catalog.json",
+      "bytes": 46839,
+      "sha256": "654897ad72f4a9c790ffecf7d0f71870aeabf6e89818b182266db4142ebf478b"
+    },
+    {
+      "file": "tests/release/external-lab/manifest.json",
+      "bytes": 13042,
+      "sha256": "f4b07f44932004c29de706f4b3742baa7db369c5df444f68da46bea2b25b65b6"
+    },
+    {
+      "file": "tests/release/manual-gates.json",
+      "bytes": 7078,
+      "sha256": "a851928b267c3d023b0ba2817218e823cb93428d005a9463cf4e268fffdde0ec"
+    },
+    {
+      "file": "tests/release/gate-criteria.json",
+      "bytes": 5568,
+      "sha256": "24f128d24bfc6e3fdb305de39d9207bcfea987f7fe66119b0e1f6468e67f1e8c"
+    },
+    {
+      "file": "tests/release/evidence-schema.json",
+      "bytes": 1785,
+      "sha256": "22eeaa133f0c56e9e7a6be4b9b63d164aaa15e2c6a7a5bbfdebab1117e00f66f"
+    },
+    {
+      "file": "tests/release/browser-evidence-schema.json",
+      "bytes": 812,
+      "sha256": "bf801ce013e11a8d0aa67584ada0a94dfa282396d17155125a00e76b8da3c843"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "bytes": 1529,
+      "sha256": "9f39e53e1de318bec302eb8c695e7da523c6d75b92d1903d6ce1deb88ef4c530"
+    },
+    {
+      "file": ".github/workflows/rc-browser-matrix.yml",
+      "bytes": 2403,
+      "sha256": "8281aff23ff224ff9cc72fdd19eb5e4a0277c94cb7b6c1980676d1453403b31c"
+    },
+    {
+      "file": "DEPRECATIONS.md",
+      "bytes": 1768,
+      "sha256": "f9df3c4cee4df367648eeb2945b88e91397d2d2cc52a44e7c9ebcc47bebe4245"
+    },
+    {
+      "file": "tests/release/naming-clearance.json",
+      "bytes": 2445,
+      "sha256": "2a5bb15f928a3dd1277904b3d16a9d8df604c1b03e334fb80d70ac516c824891"
+    },
+    {
+      "file": "docs/naming-clearance-0.51.md",
+      "bytes": 3057,
+      "sha256": "f625a5deb1561838eb94b9346c3b4249462ef1023b4069141e20e984eeb774bb"
+    }
+  ],
+  "audits": {
+    "core-scope": {
+      "file": "reports/core-scope-0.55.0.json"
+    },
+    "forms-audit": {
+      "file": "reports/forms-audit-0.55.0.json"
+    },
+    "content-states-audit": {
+      "file": "reports/content-states-audit-0.55.0.json"
+    },
+    "accessibility-audit": {
+      "file": "reports/accessibility-audit-0.55.0.json",
+      "summary": {
+        "total": 51,
+        "passed": 51,
+        "failed": 0,
+        "docsChecked": 44
+      }
+    },
+    "browser-reflow-audit": {
+      "file": "reports/browser-reflow-audit-0.55.0.json",
+      "summary": {
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "docsChecked": 44,
+        "cssFiles": 38
+      }
+    },
+    "css-architecture-audit": {
+      "file": "reports/css-architecture-audit-0.55.0.json",
+      "summary": {
+        "total": 14,
+        "passed": 14,
+        "failed": 0,
+        "qualifiedRules": 1555,
+        "individualSelectors": 1578,
+        "sourceCssModules": 37
+      }
+    },
+    "documentation-audit": {
+      "file": "reports/documentation-audit-0.55.0.json",
+      "summary": {
+        "passed": 1608,
+        "total": 1608,
+        "failed": 0,
+        "sourceModules": 38,
+        "classes": 762,
+        "tokens": 544,
+        "definedTokens": 514,
+        "overrideHooks": 30,
+        "dataAttributes": 11,
+        "packageExports": 14,
+        "jsApi": 5
+      }
+    },
+    "starters-integration-audit": {
+      "file": "reports/starters-integration-audit-0.55.0.json",
+      "summary": {
+        "passed": 109,
+        "total": 109,
+        "failed": 0,
+        "starters": 5,
+        "publicClassesAvailable": 762
+      }
+    },
+    "security-audit": {
+      "file": "reports/security-audit-0.55.0.json",
+      "summary": {
+        "passed": 417,
+        "total": 417,
+        "failed": 0,
+        "jsFiles": 4,
+        "cssFiles": 114
+      }
+    },
+    "package-release-audit": {
+      "file": "reports/package-release-audit-0.55.0.json",
+      "summary": {
+        "passed": 82,
+        "total": 82,
+        "failed": 0,
+        "packages": 2
+      }
+    },
+    "build-reproducibility-audit": {
+      "file": "reports/build-reproducibility-audit-0.55.0.json",
+      "summary": {
+        "passed": 300,
+        "total": 300,
+        "failed": 0,
+        "artifacts": 82,
+        "sourceModules": 38,
+        "treeHash": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c",
+        "fullMapSources": 38,
+        "fullMapSegments": 3438,
+        "minMapSources": 38,
+        "minMapSegments": 3072
+      }
+    },
+    "visual-regression-audit": {
+      "file": "reports/visual-regression-audit-0.55.0.json",
+      "summary": {
+        "passed": 173,
+        "total": 173,
+        "failed": 0,
+        "cases": 14,
+        "htmlPages": 50
+      }
+    },
+    "i18n-audit": {
+      "file": "reports/i18n-audit-0.55.0.json",
+      "summary": {
+        "passed": 22,
+        "total": 22,
+        "failed": 0
+      }
+    },
+    "theme-audit": {
+      "file": "reports/theme-audit-0.55.0.json",
+      "summary": {
+        "passed": 116,
+        "total": 116,
+        "failed": 0,
+        "officialContrastCases": 28,
+        "customContrastCases": 42
+      }
+    },
+    "rc-browser-infrastructure-audit": {
+      "file": "reports/rc-browser-infrastructure-audit-0.55.0.json",
+      "summary": {
+        "passed": 52,
+        "total": 52,
+        "failed": 0
+      }
+    },
+    "local-chromium-evidence-audit": {
+      "file": "reports/local-chromium-evidence-audit-0.55.0.json",
+      "summary": {
+        "passed": 5,
+        "total": 11,
+        "failed": 6
+      }
+    },
+    "external-release-lab-audit": {
+      "file": "reports/external-release-lab-audit-0.55.0.json",
+      "summary": {
+        "passed": 482,
+        "total": 482,
+        "failed": 0
+      }
+    },
+    "release-lab-audit": {
+      "file": "reports/release-lab-audit-0.55.0.json",
+      "summary": {
+        "passed": 13,
+        "total": 13,
+        "failed": 0
+      }
+    },
+    "naming-clearance-audit": {
+      "file": "reports/naming-clearance-audit-0.55.0.json",
+      "summary": {
+        "passed": 29,
+        "total": 31,
+        "failed": 2
+      }
+    },
+    "rc-readiness-audit": {
+      "file": "reports/rc-readiness-audit-0.55.0.json",
+      "summary": {
+        "passed": 86,
+        "total": 89,
+        "failed": 3
+      }
+    }
+  },
+  "securityPolicy": "SECURITY.md",
+  "changelog": "CHANGELOG.md",
+  "rcStatus": "not-ready"
+}

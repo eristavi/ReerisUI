@@ -1,6 +1,6 @@
 # Visual baseline comparison pass
 
-**Release:** Reeris UI 0.52.0
+**Release:** Reeris UI 0.55.0
 
 **Gate:** `visual-regression-baselines`
 
