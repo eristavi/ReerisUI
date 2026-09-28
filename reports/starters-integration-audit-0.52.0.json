@@ -1,12 +1,12 @@
 {
   "version": "0.52.0",
-  "generatedAt": "2026-09-25T13:08:43.395Z",
+  "generatedAt": "2026-09-28T16:34:06.769Z",
   "summary": {
     "passed": 104,
     "total": 104,
     "failed": 0,
     "starters": 5,
-    "publicClassesAvailable": 732
+    "publicClassesAvailable": 759
   },
   "failures": [],
   "checks": [

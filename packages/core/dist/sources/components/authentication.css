@@ -19,6 +19,7 @@
     color: var(--reeris-color-on-primary);
   }
   :where(.auth-brand-content) { max-inline-size: 38rem; display:grid; gap:var(--reeris-space-3); }
+  :where(.auth-brand-content > .badge) { justify-self: start; }
   :where(.auth-brand-title) { margin:0; font-size:clamp(2rem,5cqi,4.5rem); line-height:1.02; letter-spacing:-.035em; text-wrap:balance; }
   :where(.auth-brand-copy) { margin:0; max-inline-size:50ch; opacity:.88; text-wrap:pretty; }
 

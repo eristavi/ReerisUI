@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Corrected authentication demo and starter form markup so email/password controls use the full-width native-first Reeris input styling; kept the brand badge at its content width.
 - Reflowed the typography token table into readable rows on narrow screens and gave sticky documentation headers an opaque surface in Glass mode.
 - Established CSS typography standards with a semantic H1–H6 scale, optional display and text roles, themeable role tokens, readable line measure, and a dedicated live reference page.
 - Added a second CSS parallax demo using a local placeholder image, with a direct image example and reduced-motion fallback.
