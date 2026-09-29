@@ -54,6 +54,6 @@ npm run audit:all
 
 ## Release status
 
-Version 0.55.0 is the current source version. Core remains feature-frozen against its release-candidate API baseline, with its 0.55.0 public API snapshot locked after the source audit. The [0.55 audit status](docs/release-candidate-readiness-0.55.0.md) records the missing current browser evidence and open manual gates. Public package publication remains gated on identity and namespace clearance. See the [changelog](CHANGELOG.md) for the version history and newer unreleased work.
+Version 0.55.0 is the current source version. Core remains feature-frozen against its release-candidate API baseline, with its 0.55.0 public API snapshot locked after the source audit. The [0.55 audit status](docs/release-candidate-readiness-0.55.0.md) records current automated browser evidence and the open manual gates. Public package publication remains gated on identity and namespace clearance. See the [changelog](CHANGELOG.md) for the version history and newer unreleased work.
 
 MIT licensed. See [LICENSE](LICENSE).

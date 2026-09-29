@@ -47,8 +47,7 @@
 
   :where(.toast) {
     --_tone: var(--reeris-color-info);
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    display: flex;
     align-items: start;
     gap: var(--reeris-space-3);
     min-inline-size: 0;
@@ -69,13 +68,14 @@
 
   :where(.toast-icon) {
     display: grid;
+    flex: none;
     place-items: center;
     inline-size: 1.5rem;
     block-size: 1.5rem;
     color: var(--_tone);
   }
 
-  :where(.toast-content) { min-inline-size: 0; }
+  :where(.toast-content) { flex: 1; min-inline-size: 0; }
   :where(.toast-title) {
     margin: 0;
     color: var(--reeris-color-text);
@@ -94,7 +94,22 @@
     gap: var(--reeris-space-2);
     margin-block-start: var(--reeris-space-3);
   }
-  :where(.toast-close) { align-self: start; }
+  :where(.toast-close) {
+    display: grid;
+    flex: none;
+    place-items: center;
+    inline-size: var(--reeris-target-min);
+    block-size: var(--reeris-target-min);
+    padding: 0;
+    border: 0;
+    border-radius: var(--reeris-radius-sm);
+    background: transparent;
+    color: var(--reeris-color-text-muted);
+    font: inherit;
+    cursor: pointer;
+  }
+  :where(.toast-close:hover) { background: var(--reeris-color-surface-muted); color: var(--reeris-color-text); }
+  :where(.toast-close:focus-visible) { outline: var(--reeris-focus-width) var(--reeris-focus-style) var(--reeris-focus-color); outline-offset: var(--reeris-focus-offset); }
 
   :where(.toast[data-reeris-state="closing"]) {
     animation: reeris-toast-exit var(--reeris-duration-fast) var(--reeris-ease-exit) both;

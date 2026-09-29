@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:33:18.935Z",
+  "generatedAt": "2026-09-29T08:22:32.445Z",
   "scope": "Feature-frozen Reeris Core CSS architecture, cascade, selector, duplication, modularity and bundle-size audit",
   "budgets": {
     "fullRawBytes": 261120,
@@ -22,20 +22,20 @@
     "total": 14,
     "passed": 14,
     "failed": 0,
-    "qualifiedRules": 1555,
-    "individualSelectors": 1578,
+    "qualifiedRules": 1559,
+    "individualSelectors": 1582,
     "sourceCssModules": 37
   },
   "bundle": {
     "full": {
-      "raw": 254353,
-      "gzip": 36009,
-      "brotli": 29535
+      "raw": 255027,
+      "gzip": 36081,
+      "brotli": 29586
     },
     "minified": {
-      "raw": 231231,
-      "gzip": 32755,
-      "brotli": 27280
+      "raw": 231814,
+      "gzip": 32826,
+      "brotli": 27345
     },
     "optionalJsAllModules": {
       "raw": 5497,
@@ -206,15 +206,15 @@
         ]
       },
       {
-        "occurrences": 6,
+        "occurrences": 7,
         "bytes": 131,
         "selectors": [
           ":focus-visible",
           ":where(.file:focus-visible)::file-selector-button",
+          ":where(.toast-close:focus-visible)",
           ":where(.tree-row:focus-visible)",
           ":where(.choice:has(:focus-visible))",
-          ":where(.reaction:focus-visible)",
-          ":where(.vote-button:focus-visible)"
+          ":where(.reaction:focus-visible)"
         ]
       },
       {
@@ -349,7 +349,7 @@
       },
       {
         "file": "components/surfaces.css",
-        "bytes": 11382
+        "bytes": 11429
       },
       {
         "file": "components/button.css",
@@ -361,7 +361,7 @@
       },
       {
         "file": "components/marketing.css",
-        "bytes": 9973
+        "bytes": 10027
       },
       {
         "file": "components/overlays.css",
@@ -459,25 +459,25 @@
       "id": "full-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.css raw 254353 / 261120 bytes."
+      "detail": "reeris.css raw 255027 / 261120 bytes."
     },
     {
       "id": "min-raw-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css raw 231231 / 232448 bytes."
+      "detail": "reeris.min.css raw 231814 / 232448 bytes."
     },
     {
       "id": "min-gzip-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css gzip 32755 / 33792 bytes."
+      "detail": "reeris.min.css gzip 32826 / 33792 bytes."
     },
     {
       "id": "min-brotli-budget",
       "category": "size",
       "pass": true,
-      "detail": "reeris.min.css brotli 27280 / 27648 bytes."
+      "detail": "reeris.min.css brotli 27345 / 27648 bytes."
     },
     {
       "id": "module-size-budget",

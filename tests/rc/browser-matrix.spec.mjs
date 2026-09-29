@@ -112,6 +112,26 @@ test('conversation header keeps the contact name and status readable', async ({p
   }
 });
 
+test('card status and iconless toast stay readable at phone widths', async ({page}) => {
+  for (const width of [320, 390]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/visual-regression.html');
+    const layout=await page.evaluate(()=>{
+      const badge=document.querySelector('.card-header > .badge');
+      const close=document.querySelector('.toast-close');
+      const toast=document.querySelector('.toast');
+      const text=document.createRange();
+      text.selectNodeContents(badge);
+      const closeBox=close.getBoundingClientRect();
+      const toastBox=toast.getBoundingClientRect();
+      return {badgeLines:text.getClientRects().length,closeWidth:closeBox.width,closeRight:closeBox.right,toastRight:toastBox.right};
+    });
+    expect(layout.badgeLines, `${width}px card badge wraps`).toBe(1);
+    expect(layout.closeWidth, `${width}px toast dismiss control stretches`).toBeLessThanOrEqual(48);
+    expect(layout.closeRight, `${width}px toast dismiss control escapes`).toBeLessThanOrEqual(layout.toastRight);
+  }
+});
+
 test('inbox sender and preview use separate rows on phones', async ({page}) => {
   for (const width of [320, 390]) {
     await page.setViewportSize({width,height:800});
@@ -138,6 +158,27 @@ test('inbox sender and preview use separate rows on phones', async ({page}) => {
       expect(layout.overflow).toBeLessThanOrEqual(1);
     }
   }
+});
+
+test('mixed direction table keeps labels readable and scrolls inside its card', async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/tests/i18n/index.html');
+  const layout=await page.locator('.table-wrap').evaluate(wrapper=>{
+    const headings=[...wrapper.querySelectorAll('thead th')];
+    const lines=headings.map(heading=>{
+      const range=document.createRange();
+      range.selectNodeContents(heading);
+      return range.getClientRects().length;
+    });
+    return {
+      lines,
+      overflow:wrapper.scrollWidth-wrapper.clientWidth,
+      documentOverflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+    };
+  });
+  expect(layout.lines).toEqual([1,1,1,1]);
+  expect(layout.overflow).toBeGreaterThan(0);
+  expect(layout.documentOverflow).toBeLessThanOrEqual(1);
 });
 
 test('image card adapts to its container independently of viewport', async ({page}) => {
