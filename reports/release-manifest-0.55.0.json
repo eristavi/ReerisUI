@@ -1,28 +1,28 @@
 {
   "name": "Reeris UI",
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T20:11:19.857Z",
+  "generatedAt": "2026-09-29T08:22:40.458Z",
   "license": "MIT",
   "artifacts": [
     {
       "file": "packages/core/dist/reeris.css",
-      "bytes": 254353,
-      "sha256": "f95ca4a8e7d1cd92cf711b7915a94a34d48097fac66bbdff14b0b6a63a872865"
+      "bytes": 255027,
+      "sha256": "52a41f4f30f0fad7ed23b1ace9e0a8bb02a19cbc17ecaff4588694e0a2b0ccaa"
     },
     {
       "file": "packages/core/dist/reeris.min.css",
-      "bytes": 231231,
-      "sha256": "c814e48bed821ba167e659b549f02cb5f6dc6ee0d19b7b2d42ef93061837c2ba"
+      "bytes": 231814,
+      "sha256": "d87f558ca11b9440252f04cc5414abdb6385b7d48a42dbd0eba5cbcf6fee67c4"
     },
     {
       "file": "packages/core/dist/reeris.css.map",
-      "bytes": 18609,
-      "sha256": "783d2fefd744c5432ee51cc2b04eb4bb405981f51ba6fdbe9f5d314fbd700ad6"
+      "bytes": 18694,
+      "sha256": "637e96ff68d3a5c5f031ba550897be07c58ccb34c9e67f78e54891222791bfaa"
     },
     {
       "file": "packages/core/dist/reeris.min.css.map",
-      "bytes": 19426,
-      "sha256": "83b478fd8cb318e4437193dc30179415f4c2179345c3d7f438a306a7a68031d7"
+      "bytes": 19521,
+      "sha256": "f14024dc42cdf407d3af9aa36f4fd41ddeab6c8a8e08b538374bc92ff2091257"
     },
     {
       "file": "packages/core/dist/tokens.json",
@@ -59,12 +59,12 @@
     {
       "file": "tests/release/external-lab/manifest.json",
       "bytes": 13042,
-      "sha256": "f4b07f44932004c29de706f4b3742baa7db369c5df444f68da46bea2b25b65b6"
+      "sha256": "7a33af976dffb739bab91347e1d799f79706f6198d2f0880531dadc1ea669505"
     },
     {
       "file": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",
       "bytes": 14579,
-      "sha256": "028ca6c96e3aadbabeb343f011a63d3fbda8e71f1fd2ee875d984aa7a1ec368c"
+      "sha256": "7f47f391d07fb76c6c2d198385c77f2c566afa94d5a12d8b1e50793d52f51218"
     },
     {
       "file": "tests/release/manual-gates.json",
@@ -162,8 +162,8 @@
         "total": 14,
         "passed": 14,
         "failed": 0,
-        "qualifiedRules": 1555,
-        "individualSelectors": 1578,
+        "qualifiedRules": 1559,
+        "individualSelectors": 1582,
         "sourceCssModules": 37
       }
     },
@@ -220,11 +220,11 @@
         "failed": 0,
         "artifacts": 82,
         "sourceModules": 38,
-        "treeHash": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c",
+        "treeHash": "31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086",
         "fullMapSources": 38,
-        "fullMapSegments": 3438,
+        "fullMapSegments": 3455,
         "minMapSources": 38,
-        "minMapSegments": 3072
+        "minMapSegments": 3089
       }
     },
     "visual-regression-audit": {

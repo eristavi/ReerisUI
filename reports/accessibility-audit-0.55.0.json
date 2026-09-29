@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:33:17.570Z",
+  "generatedAt": "2026-09-29T08:22:31.493Z",
   "scope": "Static accessibility acceptance audit for Reeris Core and documentation examples",
   "note": "Passing this audit does not by itself establish full WCAG 2.2 AA conformance. Manual/browser checks remain required for keyboard behavior, screen readers, zoom/reflow, touch behavior, native-control rendering, and visual regression.",
   "summary": {

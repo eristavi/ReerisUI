@@ -1,20 +1,20 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T18:33:25.579Z",
+  "generatedAt": "2026-09-29T08:22:36.969Z",
   "summary": {
     "passed": 300,
     "total": 300,
     "failed": 0,
     "artifacts": 82,
     "sourceModules": 38,
-    "treeHash": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c",
+    "treeHash": "31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086",
     "fullMapSources": 38,
-    "fullMapSegments": 3438,
+    "fullMapSegments": 3455,
     "minMapSources": 38,
-    "minMapSegments": 3072
+    "minMapSegments": 3089
   },
-  "firstTreeHash": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c",
-  "secondTreeHash": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c",
+  "firstTreeHash": "31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086",
+  "secondTreeHash": "31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086",
   "failures": [],
   "checks": [
     {
@@ -35,7 +35,7 @@
     {
       "name": "Repeated builds emit byte-identical artifacts",
       "pass": true,
-      "detail": "bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c vs bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c"
+      "detail": "31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086 vs 31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086"
     },
     {
       "name": "reeris.css exists",
@@ -70,7 +70,7 @@
     {
       "name": "reeris.css.map has mappings",
       "pass": true,
-      "detail": "3438 segments"
+      "detail": "3455 segments"
     },
     {
       "name": "reeris.css.map contains no absolute source paths",
@@ -300,7 +300,7 @@
     {
       "name": "reeris.min.css.map has mappings",
       "pass": true,
-      "detail": "3072 segments"
+      "detail": "3089 segments"
     },
     {
       "name": "reeris.min.css.map contains no absolute source paths",

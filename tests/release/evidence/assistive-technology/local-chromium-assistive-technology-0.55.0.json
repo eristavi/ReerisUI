@@ -5,7 +5,7 @@
   "gateId": "assistive-technology",
   "kind": "other",
   "role": "supplemental",
-  "collectedAt": "2026-09-28T19:51:34.021Z",
+  "collectedAt": "2026-09-29T08:20:56.976Z",
   "outcome": "pass",
   "claims": [],
   "coverage": [
@@ -22,7 +22,7 @@
   "artifacts": [
     {
       "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",
-      "sha256": "028ca6c96e3aadbabeb343f011a63d3fbda8e71f1fd2ee875d984aa7a1ec368c",
+      "sha256": "7f47f391d07fb76c6c2d198385c77f2c566afa94d5a12d8b1e50793d52f51218",
       "description": "Machine-readable local Chromium RC report with test results and screenshot hashes."
     }
   ],

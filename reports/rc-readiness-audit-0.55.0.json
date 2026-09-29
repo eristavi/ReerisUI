@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T20:10:37.016Z",
+  "generatedAt": "2026-09-29T08:22:40.264Z",
   "status": "ready-for-rc-validation",
   "automatedReady": true,
   "manualSummary": {
@@ -184,7 +184,7 @@
     {
       "name": "Current release evidence has zero failures: css-architecture-audit",
       "pass": true,
-      "detail": "{\"total\":14,\"passed\":14,\"failed\":0,\"qualifiedRules\":1555,\"individualSelectors\":1578,\"sourceCssModules\":37}"
+      "detail": "{\"total\":14,\"passed\":14,\"failed\":0,\"qualifiedRules\":1559,\"individualSelectors\":1582,\"sourceCssModules\":37}"
     },
     {
       "name": "Current release evidence exists: visual-regression-audit",
@@ -224,7 +224,7 @@
     {
       "name": "Current release evidence has zero failures: build-reproducibility-audit",
       "pass": true,
-      "detail": "{\"passed\":300,\"total\":300,\"failed\":0,\"artifacts\":82,\"sourceModules\":38,\"treeHash\":\"bf0940f1da0fb30d9947152d83d95d1ad51a558b6ae96efd257aa9377a065f7c\",\"fullMapSources\":38,\"fullMapSegments\":3438,\"minMapSources\":38,\"minMapSegments\":3072}"
+      "detail": "{\"passed\":300,\"total\":300,\"failed\":0,\"artifacts\":82,\"sourceModules\":38,\"treeHash\":\"31cb6339a63f8616eb9bdce14cf60e6870778f8ffc32034e761a426faffb5086\",\"fullMapSources\":38,\"fullMapSegments\":3455,\"minMapSources\":38,\"minMapSegments\":3089}"
     },
     {
       "name": "Current release evidence exists: documentation-audit",

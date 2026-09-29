@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "0.55.0",
-  "generatedAt": "2026-09-28T19:51:34.021Z",
+  "generatedAt": "2026-09-29T08:20:56.976Z",
   "browser": {
     "product": "Chrome/153.0.8010.12",
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
@@ -356,8 +356,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-system-default-ltr.png",
-        "bytes": 244972,
-        "sha256": "f38aaae6064105522f1b9fc7c7a216eed44b5c6bc3d3c5b31672b4e16d4e16c6"
+        "bytes": 244800,
+        "sha256": "f13885314cc491e92a6acf7bea03cd47bd40e1b5d8a4703674195505067522d9"
       }
     },
     {
@@ -370,8 +370,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-light-default-ltr.png",
-        "bytes": 244517,
-        "sha256": "f9367a53d53ae3153a886ed0f1c023a382ed592c9a5c8bf181359225c12997c5"
+        "bytes": 244344,
+        "sha256": "5284bc52a624e81e37d3a7e89fd1882dca1a84cbfc086f202de459991a68aa9a"
       }
     },
     {
@@ -384,8 +384,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-dark-default-ltr.png",
-        "bytes": 254711,
-        "sha256": "2976908423c038c6929ed6919e1fa39eee733f401333c2d3c83fdaf93cafc0f8"
+        "bytes": 254547,
+        "sha256": "adf0cf75c6b949ab242c82ebfee3d91b4d7a13f5df87a4383a5c37b6f4b60c21"
       }
     },
     {
@@ -398,8 +398,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-light-compact-ltr.png",
-        "bytes": 246347,
-        "sha256": "f1f61bd32bbe1c3af529588434d38c69f4910b42f42c0bbd2987333bb8177633"
+        "bytes": 246175,
+        "sha256": "3b24f5ce77724f0d197aa1cb356bb0877305583e9b85ee1981dddc9663a4514a"
       }
     },
     {
@@ -412,8 +412,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-dark-comfortable-ltr.png",
-        "bytes": 261263,
-        "sha256": "45f4088d269514ce29f035d97b55cba565a4b0c7c930343691e46d3753da8f3b"
+        "bytes": 261114,
+        "sha256": "7085cb6f340a47328712819cf369551ce6faef6d647e24331fbf3adce29852de"
       }
     },
     {
@@ -426,8 +426,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-light-default-rtl.png",
-        "bytes": 247695,
-        "sha256": "25dcb26ff5ad2f3d41d32334e6463535e803bf7b3da27c55f45260cbc0d1c71a"
+        "bytes": 247519,
+        "sha256": "cdda9335cc85cea4110ca00509d3ee68fb4bd549ef949ed2b6dfbd408ec97539"
       }
     },
     {
@@ -440,8 +440,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-dark-soft-rtl.png",
-        "bytes": 269357,
-        "sha256": "009cf6d4665bf8ef51ed886880b0b9d1ca5839978b236abd9baa5b88182fa286"
+        "bytes": 269210,
+        "sha256": "45e0c103fc68a34676a020298a5d48081cbc05fd29b95f2963f5ffba492069be"
       }
     },
     {
@@ -454,8 +454,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-mobile-system.png",
-        "bytes": 212434,
-        "sha256": "87119d83f73629db805ba247b54c3a542f57944ca08b49aaedad031ec2784e9e"
+        "bytes": 212204,
+        "sha256": "46deb71f304d0ffc7185b034e67d388eef4664817164bd1581d653d2d6b624cc"
       }
     },
     {
@@ -468,8 +468,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/core-mobile-dark-compact.png",
-        "bytes": 217242,
-        "sha256": "7c267996336b049214d8bfe71c9d07b4df84b8b744bcaa77949edd67aed0b223"
+        "bytes": 216951,
+        "sha256": "fa842567f8e7d5a72d53b3b3092da1bce1200543a2532d7f54610f23cb41c9c8"
       }
     },
     {
@@ -510,8 +510,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/starter-marketing-system.png",
-        "bytes": 344465,
-        "sha256": "a60caaab7a8c8b54e3ec6c71b407f8b7f0a6aa5bc84f9453a52e26cd7f5af2d7"
+        "bytes": 345036,
+        "sha256": "06636762b82b496258955a12c7910be005aa23e44478b45aeafb63eed55b8613"
       }
     },
     {
@@ -524,8 +524,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/i18n-rtl-desktop.png",
-        "bytes": 170683,
-        "sha256": "3c841282647f2738af70ff81f8d9fcf7236eb8c6d4598222119beee58e4b7559"
+        "bytes": 171082,
+        "sha256": "b817a7585f151157547a6c2d695e048240b388ac626d9b17ac9353f47b217760"
       }
     },
     {
@@ -538,8 +538,8 @@
       "overflow": 0,
       "image": {
         "path": "tests/release/evidence-artifacts/0.55.0/local-chromium/visual/i18n-rtl-mobile.png",
-        "bytes": 158517,
-        "sha256": "a38a9829fb06f8d8813ad92fc2e48f1bc1addd6a4a8c301b17e5c447f44c75e0"
+        "bytes": 150799,
+        "sha256": "952af20da2dd9ad3011c6ebb81d02e55c349f353a7153c8f9d141248d8932b88"
       }
     }
   ],
