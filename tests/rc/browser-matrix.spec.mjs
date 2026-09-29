@@ -160,6 +160,27 @@ test('inbox sender and preview use separate rows on phones', async ({page}) => {
   }
 });
 
+test('mixed direction table keeps labels readable and scrolls inside its card', async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/tests/i18n/index.html');
+  const layout=await page.locator('.table-wrap').evaluate(wrapper=>{
+    const headings=[...wrapper.querySelectorAll('thead th')];
+    const lines=headings.map(heading=>{
+      const range=document.createRange();
+      range.selectNodeContents(heading);
+      return range.getClientRects().length;
+    });
+    return {
+      lines,
+      overflow:wrapper.scrollWidth-wrapper.clientWidth,
+      documentOverflow:document.documentElement.scrollWidth-document.documentElement.clientWidth
+    };
+  });
+  expect(layout.lines).toEqual([1,1,1,1]);
+  expect(layout.overflow).toBeGreaterThan(0);
+  expect(layout.documentOverflow).toBeLessThanOrEqual(1);
+});
+
 test('image card adapts to its container independently of viewport', async ({page}) => {
   await page.setViewportSize({width:1000,height:800});
   await page.goto('/.reeris-docs-site/docs/media.html');
