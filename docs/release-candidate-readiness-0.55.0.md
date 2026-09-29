@@ -12,6 +12,10 @@ The [RC browser matrix](https://github.com/Eristavi/ReerisUI/actions/runs/365420
 
 The automated 0.55 audit sequence passes, but this is **not publication approval**. The seven manual/external gates remain open, with zero of 21 closure criteria approved. The generated 0.55 release manifest is informational and does not override these gates.
 
+A focused [cloud Chrome keyboard spot-check](../tests/release/evidence-artifacts/0.55.0/manual-keyboard/cloud-chrome-review.md) on the deployed 0.55 stylesheet covered forms, example switches, dialogs, popovers, disclosure, navigation and a table header control. It is supplemental evidence: the full assistive-technology procedure, exact branded-browser version, screen readers and real-device checks remain outstanding.
+
+The [visual review packet](visual-review-0.55.0.md) links every current candidate screenshot for named human review. It does not mark the baseline set approved.
+
 ## Next validation
 
 Collect the required real-browser evidence, confirm npm account control, and obtain formal name/similarity clearance before package publication. Complete the assistive-technology, real-device, visual-approval, and other manual gate procedures in the [External Release Lab](external-release-lab.html). Retain historical 0.52 artifacts under their original version and hashes.

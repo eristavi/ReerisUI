@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "cloud-chrome-keyboard-spot-check-0.55.0",
+  "releaseVersion": "0.55.0",
+  "gateId": "assistive-technology",
+  "kind": "assistive-technology",
+  "role": "supplemental",
+  "collectedAt": "2026-09-29T11:24:23Z",
+  "outcome": "pass",
+  "claims": [],
+  "coverage": [
+    "Keyboard focus and CSS-only example switching on forms",
+    "Native switch, dialog, popover, disclosure and navigation keyboard operation",
+    "Table header control keyboard focus"
+  ],
+  "environment": {
+    "browser": "Cloud Chrome browser; exact version and OS not exposed",
+    "site": "https://eristavi.github.io/ReerisUI/",
+    "stylesheetRevision": "1d923b6dba0a",
+    "interaction": "Direct keyboard input and accessibility-tree observations"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/manual-keyboard/cloud-chrome-review.md",
+      "sha256": "aae23dcfcf5802bfbe2a1561f1a0d22eca83850f7c0c62ffdae07e35fd037f06",
+      "description": "Observed keyboard actions, focus transitions, and limitations."
+    }
+  ],
+  "notes": "Focused cloud-browser spot-check only; no screen reader or real device was exercised. Does not close the manual keyboard criterion without the full release-lab procedure and review.",
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "notes": "Supplemental observations; no gate-closing approval claimed."
+  }
+}

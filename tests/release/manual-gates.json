@@ -29,8 +29,9 @@
         }
       },
       "supplementalEvidence": [
-        "local-chromium-desktop-browser-matrix-0.49.0",
-        "local-chromium-desktop-browser-matrix-0.50.0"
+        "local-chromium-desktop-browser-matrix-0.51.0",
+        "local-chromium-desktop-browser-matrix-0.52.0",
+        "local-chromium-desktop-browser-matrix-0.55.0"
       ]
     },
     {
@@ -84,8 +85,10 @@
         }
       },
       "supplementalEvidence": [
-        "local-chromium-assistive-technology-0.49.0",
-        "local-chromium-assistive-technology-0.50.0"
+        "cloud-chrome-keyboard-spot-check-0.55.0",
+        "local-chromium-assistive-technology-0.51.0",
+        "local-chromium-assistive-technology-0.52.0",
+        "local-chromium-assistive-technology-0.55.0"
       ]
     },
     {
@@ -111,8 +114,9 @@
         }
       },
       "supplementalEvidence": [
-        "local-chromium-zoom-reflow-touch-0.49.0",
-        "local-chromium-zoom-reflow-touch-0.50.0"
+        "local-chromium-zoom-reflow-touch-0.51.0",
+        "local-chromium-zoom-reflow-touch-0.52.0",
+        "local-chromium-zoom-reflow-touch-0.55.0"
       ]
     },
     {
@@ -134,8 +138,9 @@
         }
       },
       "supplementalEvidence": [
-        "local-chromium-forced-colors-high-contrast-0.49.0",
-        "local-chromium-forced-colors-high-contrast-0.50.0"
+        "local-chromium-forced-colors-high-contrast-0.51.0",
+        "local-chromium-forced-colors-high-contrast-0.52.0",
+        "local-chromium-forced-colors-high-contrast-0.55.0"
       ]
     },
     {
@@ -157,8 +162,9 @@
         }
       },
       "supplementalEvidence": [
-        "local-chromium-visual-regression-baselines-0.49.0",
-        "local-chromium-visual-regression-baselines-0.50.0"
+        "local-chromium-visual-regression-baselines-0.51.0",
+        "local-chromium-visual-regression-baselines-0.52.0",
+        "local-chromium-visual-regression-baselines-0.55.0"
       ]
     },
     {

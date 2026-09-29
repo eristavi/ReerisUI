@@ -5,6 +5,7 @@
 ## 0.55.0 — Documentation Source Views & Audit Lock
 
 - Reviewed the 0.55 Chromium visual candidates and corrected the card status badge, toast dismiss control, RTL phone table, and gradient CTA heading. Added narrow-layout browser regressions and refreshed versioned Chromium screenshots; the human visual approval and other manual gates remain open.
+- Recorded a focused keyboard spot-check against the deployed 0.55 documentation as supplemental evidence; screen-reader and real-device release criteria remain open.
 - Completed the full automated 0.52 source audit before locking 0.55.0; fixed mobile inbox sender wrapping and updated stale focus, carousel, and documentation-theme audit expectations.
 - Locked the public API snapshot for the 0.55.0 source version. Browser, assistive-technology, visual-approval, and publication-clearance gates remain open for fresh release-specific validation.
 - Captured 0.55.0 Chromium RC evidence in GitHub Actions: 15 passing browser checks, 14 visual candidates, and five hashed supplemental records. The local-browser and evidence audits pass; the manual release gates remain open.
