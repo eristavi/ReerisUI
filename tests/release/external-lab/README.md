@@ -1,6 +1,6 @@
 # Reeris UI 0.55.0 — External Release Lab
 
-This kit converts every open Release Lab closure criterion into an executable field checklist. It does not change any gate status.
+This kit converts each Release Lab closure criterion into an executable field checklist. It does not change any gate status.
 
 ## Start the local fixture server
 

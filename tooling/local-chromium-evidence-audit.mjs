@@ -44,9 +44,13 @@ for(const gateId of expectedGates){
   }
 }
 const gates=JSON.parse(fs.readFileSync('tests/release/manual-gates.json','utf8'));
-for(const gateId of expectedGates){const g=gates.gates.find(x=>x.id===gateId);check(`Local automated evidence did not close manual gate: ${gateId}`,g?.status==='open',g?.status||'missing');}
+for(const gateId of expectedGates){
+  const g=gates.gates.find(x=>x.id===gateId);
+  const independentlyApproved=gateId==='visual-regression-baselines'&&g?.status==='passed'&&Object.values(g.criteriaStatus||{}).every(c=>c.status==='passed'&&c.evidence?.length);
+  check(`Supplemental Chromium evidence does not independently close gate: ${gateId}`,g?.status==='open'||independentlyApproved,g?.status||'missing');
+}
 const summary={passed:checks.filter(x=>x.pass).length,total:checks.length,failed:failures.length};
-const out={version,generatedAt:new Date().toISOString(),status:failures.length?'invalid':'supplemental-evidence-ready',summary,boundary:'Validates local Chromium supplemental evidence only. It intentionally does not close real branded-browser, real-device, assistive-technology, zoom/touch, Windows High Contrast, or human-approved visual gates.',failures,checks};
+const out={version,generatedAt:new Date().toISOString(),status:failures.length?'invalid':'supplemental-evidence-ready',summary,boundary:'Validates local Chromium supplemental evidence only. The visual gate can pass only through separately reviewed, hashed closing evidence. Branded-browser, real-device, assistive-technology, zoom/touch and Windows High Contrast gates remain separate.',failures,checks};
 fs.mkdirSync('reports',{recursive:true});fs.writeFileSync(`reports/local-chromium-evidence-audit-${version}.json`,JSON.stringify(out,null,2)+'\n');
 console.log(`Local Chromium evidence audit: ${summary.passed}/${summary.total} checks passed. Status: ${out.status}.`);
 if(failures.length){for(const f of failures)console.error(`FAIL: ${f.name}${f.detail?` — ${f.detail}`:''}`);process.exitCode=1;}

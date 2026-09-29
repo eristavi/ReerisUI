@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "baselineId": "reeris-0.55.0-chromium-linux-run-65",
+  "releaseVersion": "0.55.0",
+  "sourceRevision": "1d923b6dba0a017030c3e893dc93bcc319116d37",
+  "reviewPacket": "docs/visual-review-0.55.0.md",
+  "sourceRun": "https://github.com/eristavi/ReerisUI/actions/runs/36542076637",
+  "environment": {
+    "captureBrowser": "Headless Chrome/153.0.8010.12 (Playwright Chromium 1243 executable)",
+    "osName": "Linux",
+    "osVersion": "GitHub Actions ubuntu-latest at capture",
+    "navigationMode": "local HTTP",
+    "viewportMatrix": "tests/visual/cases.json"
+  },
+  "files": [
+    {
+      "id": "core-system-default-ltr",
+      "path": "tests/visual/baselines/chromium-linux/core-system-default-ltr.png",
+      "sha256": "f13885314cc491e92a6acf7bea03cd47bd40e1b5d8a4703674195505067522d9",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-default-ltr",
+      "path": "tests/visual/baselines/chromium-linux/core-light-default-ltr.png",
+      "sha256": "5284bc52a624e81e37d3a7e89fd1882dca1a84cbfc086f202de459991a68aa9a",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-default-ltr",
+      "path": "tests/visual/baselines/chromium-linux/core-dark-default-ltr.png",
+      "sha256": "adf0cf75c6b949ab242c82ebfee3d91b4d7a13f5df87a4383a5c37b6f4b60c21",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-compact-ltr",
+      "path": "tests/visual/baselines/chromium-linux/core-light-compact-ltr.png",
+      "sha256": "3b24f5ce77724f0d197aa1cb356bb0877305583e9b85ee1981dddc9663a4514a",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-comfortable-ltr",
+      "path": "tests/visual/baselines/chromium-linux/core-dark-comfortable-ltr.png",
+      "sha256": "7085cb6f340a47328712819cf369551ce6faef6d647e24331fbf3adce29852de",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-light-default-rtl",
+      "path": "tests/visual/baselines/chromium-linux/core-light-default-rtl.png",
+      "sha256": "cdda9335cc85cea4110ca00509d3ee68fb4bd549ef949ed2b6dfbd408ec97539",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-dark-soft-rtl",
+      "path": "tests/visual/baselines/chromium-linux/core-dark-soft-rtl.png",
+      "sha256": "45e0c103fc68a34676a020298a5d48081cbc05fd29b95f2963f5ffba492069be",
+      "width": 1280,
+      "height": 1200
+    },
+    {
+      "id": "core-mobile-system",
+      "path": "tests/visual/baselines/chromium-linux/core-mobile-system.png",
+      "sha256": "46deb71f304d0ffc7185b034e67d388eef4664817164bd1581d653d2d6b624cc",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "core-mobile-dark-compact",
+      "path": "tests/visual/baselines/chromium-linux/core-mobile-dark-compact.png",
+      "sha256": "fa842567f8e7d5a72d53b3b3092da1bce1200543a2532d7f54610f23cb41c9c8",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "starter-dashboard-system",
+      "path": "tests/visual/baselines/chromium-linux/starter-dashboard-system.png",
+      "sha256": "558a795a3e348290c819d2590dcc163712233e1db08c8d5ab7cd697f3992155f",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "starter-data-system",
+      "path": "tests/visual/baselines/chromium-linux/starter-data-system.png",
+      "sha256": "2f70190af6753f0b06820956cd2ec256e639f634dd440eda198dfdbed1c5d61e",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "starter-marketing-system",
+      "path": "tests/visual/baselines/chromium-linux/starter-marketing-system.png",
+      "sha256": "06636762b82b496258955a12c7910be005aa23e44478b45aeafb63eed55b8613",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "id": "i18n-rtl-desktop",
+      "path": "tests/visual/baselines/chromium-linux/i18n-rtl-desktop.png",
+      "sha256": "b817a7585f151157547a6c2d695e048240b388ac626d9b17ac9353f47b217760",
+      "width": 1280,
+      "height": 1600
+    },
+    {
+      "id": "i18n-rtl-mobile",
+      "path": "tests/visual/baselines/chromium-linux/i18n-rtl-mobile.png",
+      "sha256": "952af20da2dd9ad3011c6ebb81d02e55c349f353a7153c8f9d141248d8932b88",
+      "width": 390,
+      "height": 1200
+    }
+  ]
+}

@@ -4,11 +4,12 @@
 
 ## 0.55.0 — Documentation Source Views & Audit Lock
 
-- Reviewed the 0.55 Chromium visual candidates and corrected the card status badge, toast dismiss control, RTL phone table, and gradient CTA heading. Added narrow-layout browser regressions and refreshed versioned Chromium screenshots; the human visual approval and other manual gates remain open.
+- Reviewed the 0.55 Chromium visual candidates and corrected the card status badge, toast dismiss control, RTL phone table, and gradient CTA heading. Added narrow-layout browser regressions and refreshed versioned Chromium screenshots.
+- Approved and hashed all 14 Chromium/Linux baselines after owner review, verified an independent CI capture matched every file with zero changed pixels, and added baseline comparison to the RC workflow. The visual gate passes; six other manual/external gates remain open.
 - Recorded a focused keyboard spot-check against the deployed 0.55 documentation as supplemental evidence; screen-reader and real-device release criteria remain open.
 - Completed the full automated 0.52 source audit before locking 0.55.0; fixed mobile inbox sender wrapping and updated stale focus, carousel, and documentation-theme audit expectations.
-- Locked the public API snapshot for the 0.55.0 source version. Browser, assistive-technology, visual-approval, and publication-clearance gates remain open for fresh release-specific validation.
-- Captured 0.55.0 Chromium RC evidence in GitHub Actions: 15 passing browser checks, 14 visual candidates, and five hashed supplemental records. The local-browser and evidence audits pass; the manual release gates remain open.
+- Locked the public API snapshot for the 0.55.0 source version. Browser, assistive-technology, and publication-clearance gates remain open for fresh release-specific validation.
+- Captured 0.55.0 Chromium RC evidence in GitHub Actions: 15 passing browser checks, 14 visual cases, and five hashed supplemental records. The local-browser and evidence audits pass.
 - Refreshed 0.55.0 naming and identity research against the npm registry, the public GitHub repository, and `.com` RDAP records; recorded the limits in supplemental evidence. Updated the browser matrix Glass assertion to follow the root canvas, and Linux/Edge CI passed. Publication clearance remains open.
 - Added Preview / HTML radio switchers to 54 component examples across 14 hosted documentation pages. The static docs build derives escaped HTML snippets from each example, so the code and preview stay aligned without runtime tab logic.
 - Added a CSS-only, tab-styled content switcher using native radio selection and adjacent panels, with a keyboard-accessible navigation demo and an explicit radio-versus-ARIA-tabs distinction.

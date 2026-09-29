@@ -1,7 +1,7 @@
 {
   "name": "Reeris UI",
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T11:26:21.391Z",
+  "generatedAt": "2026-09-29T12:35:19.446Z",
   "license": "MIT",
   "artifacts": [
     {
@@ -59,7 +59,7 @@
     {
       "file": "tests/release/external-lab/manifest.json",
       "bytes": 13042,
-      "sha256": "b2a3a3db4ca4fb5c95c849652262574c4a50ca1af8233fd86c1f1bbd818b29a9"
+      "sha256": "d233cc327fce4aac864224b557520004857767445c1b85dad9c042dbc924c8b2"
     },
     {
       "file": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",
@@ -68,8 +68,8 @@
     },
     {
       "file": "tests/release/manual-gates.json",
-      "bytes": 7446,
-      "sha256": "5460e662df80a11934eda4670a859e60485a3f98220afde0c2e63eb3e5506a2b"
+      "bytes": 7576,
+      "sha256": "fcc6c3b555593af9151781f202beacf383fe44e9f93a2db3deab6bbe973cde71"
     },
     {
       "file": "tests/release/gate-criteria.json",
@@ -93,8 +93,8 @@
     },
     {
       "file": ".github/workflows/rc-browser-matrix.yml",
-      "bytes": 3352,
-      "sha256": "ed409b0fa78e00281cf9807203279faa8a931ecff5f82cb8db4d1f2d96cf3922"
+      "bytes": 3562,
+      "sha256": "b8d95bf8fc4a8f3768950bd43d0ca3e2c177ae7c2377b564df06c50e8799f6eb"
     },
     {
       "file": "DEPRECATIONS.md",

@@ -4,7 +4,7 @@ import { spawnSync } from 'node:child_process';
 const manifest=JSON.parse(fs.readFileSync('tests/visual/cases.json','utf8'));
 const platform=process.env.REVA_VISUAL_PLATFORM || manifest.baselineEngine || 'chromium-linux';
 const baselineDir=path.resolve('tests/visual/baselines',platform);
-const currentDir=path.resolve('tests/visual/current',platform);
+const currentDir=path.resolve(process.env.REVA_VISUAL_CURRENT_DIR || path.join('tests/visual/current',platform));
 const diffDir=path.resolve('tests/visual/diff',platform); fs.mkdirSync(diffDir,{recursive:true});
 const maxPixels=Number(process.env.REVA_VISUAL_MAX_PIXELS||0);
 const magick=spawnSync('magick',['-version'],{stdio:'ignore'}).status===0?'magick':(spawnSync('compare',['-version'],{stdio:'ignore'}).status===0?'compare':null);

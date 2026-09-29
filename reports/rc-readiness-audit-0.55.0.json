@@ -1,12 +1,12 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T11:26:21.219Z",
+  "generatedAt": "2026-09-29T12:35:19.257Z",
   "status": "ready-for-rc-validation",
   "automatedReady": true,
   "manualSummary": {
     "total": 7,
-    "open": 7,
-    "blocks1_0": 6,
+    "open": 6,
+    "blocks1_0": 5,
     "blocksPublicPublication": 1
   },
   "summary": {
@@ -414,7 +414,7 @@
     {
       "name": "Manual gate has explicit status: visual-regression-baselines",
       "pass": true,
-      "detail": "open"
+      "detail": "passed"
     },
     {
       "name": "Manual gate has evidence requirement: visual-regression-baselines",
@@ -439,7 +439,7 @@
     {
       "name": "Open manual gates are not falsely marked automated failures",
       "pass": true,
-      "detail": "7 open; 6 block 1.0"
+      "detail": "6 open; 5 block 1.0"
     },
     {
       "name": "RC readiness documentation page exists",

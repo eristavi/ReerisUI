@@ -1,0 +1,20 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> reeris-ui-monorepo@0.55.0 visual:compare
+> node tooling/visual-compare.mjs
+
+PASS core-system-default-ltr: 0 pixels
+PASS core-light-default-ltr: 0 pixels
+PASS core-dark-default-ltr: 0 pixels
+PASS core-light-compact-ltr: 0 pixels
+PASS core-dark-comfortable-ltr: 0 pixels
+PASS core-light-default-rtl: 0 pixels
+PASS core-dark-soft-rtl: 0 pixels
+PASS core-mobile-system: 0 pixels
+PASS core-mobile-dark-compact: 0 pixels
+PASS starter-dashboard-system: 0 pixels
+PASS starter-data-system: 0 pixels
+PASS starter-marketing-system: 0 pixels
+PASS i18n-rtl-desktop: 0 pixels
+PASS i18n-rtl-mobile: 0 pixels
+Visual comparison passed for 14 cases.

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "visual-baseline-human-approved-0.55.0",
+  "releaseVersion": "0.55.0",
+  "gateId": "visual-regression-baselines",
+  "kind": "visual-review",
+  "role": "closing",
+  "collectedAt": "2026-09-29T12:32:27Z",
+  "outcome": "pass",
+  "claims": [
+    "baseline-human-approved"
+  ],
+  "environment": {
+    "captureBrowser": "Headless Chrome/153.0.8010.12 (Playwright Chromium 1243 executable)",
+    "browserVersion": "153.0.8010.12",
+    "osName": "Linux",
+    "osVersion": "GitHub Actions ubuntu-latest (run 65)",
+    "viewportMatrix": "tests/visual/cases.json",
+    "reviewer": "Revaz Eristavi"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/visual-baseline/baseline-manifest.json",
+      "sha256": "ddc2b39296a8064ea56b03c930599d61720b7bec1ad075d1aeabd379306a2115",
+      "description": "SHA-256 manifest for all 14 approved PNG baselines."
+    },
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/visual-baseline/review-approval.md",
+      "sha256": "ccd0947622b80e8b0bb0ed178a4773d8be028889ab79d88f49417422ccb3859b",
+      "description": "Named owner approval note and scope."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-system-default-ltr.png",
+      "sha256": "f13885314cc491e92a6acf7bea03cd47bd40e1b5d8a4703674195505067522d9",
+      "description": "Approved baseline core-system-default-ltr."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-light-default-ltr.png",
+      "sha256": "5284bc52a624e81e37d3a7e89fd1882dca1a84cbfc086f202de459991a68aa9a",
+      "description": "Approved baseline core-light-default-ltr."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-dark-default-ltr.png",
+      "sha256": "adf0cf75c6b949ab242c82ebfee3d91b4d7a13f5df87a4383a5c37b6f4b60c21",
+      "description": "Approved baseline core-dark-default-ltr."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-light-compact-ltr.png",
+      "sha256": "3b24f5ce77724f0d197aa1cb356bb0877305583e9b85ee1981dddc9663a4514a",
+      "description": "Approved baseline core-light-compact-ltr."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-dark-comfortable-ltr.png",
+      "sha256": "7085cb6f340a47328712819cf369551ce6faef6d647e24331fbf3adce29852de",
+      "description": "Approved baseline core-dark-comfortable-ltr."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-light-default-rtl.png",
+      "sha256": "cdda9335cc85cea4110ca00509d3ee68fb4bd549ef949ed2b6dfbd408ec97539",
+      "description": "Approved baseline core-light-default-rtl."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-dark-soft-rtl.png",
+      "sha256": "45e0c103fc68a34676a020298a5d48081cbc05fd29b95f2963f5ffba492069be",
+      "description": "Approved baseline core-dark-soft-rtl."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-mobile-system.png",
+      "sha256": "46deb71f304d0ffc7185b034e67d388eef4664817164bd1581d653d2d6b624cc",
+      "description": "Approved baseline core-mobile-system."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/core-mobile-dark-compact.png",
+      "sha256": "fa842567f8e7d5a72d53b3b3092da1bce1200543a2532d7f54610f23cb41c9c8",
+      "description": "Approved baseline core-mobile-dark-compact."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/starter-dashboard-system.png",
+      "sha256": "558a795a3e348290c819d2590dcc163712233e1db08c8d5ab7cd697f3992155f",
+      "description": "Approved baseline starter-dashboard-system."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/starter-data-system.png",
+      "sha256": "2f70190af6753f0b06820956cd2ec256e639f634dd440eda198dfdbed1c5d61e",
+      "description": "Approved baseline starter-data-system."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/starter-marketing-system.png",
+      "sha256": "06636762b82b496258955a12c7910be005aa23e44478b45aeafb63eed55b8613",
+      "description": "Approved baseline starter-marketing-system."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/i18n-rtl-desktop.png",
+      "sha256": "b817a7585f151157547a6c2d695e048240b388ac626d9b17ac9353f47b217760",
+      "description": "Approved baseline i18n-rtl-desktop."
+    },
+    {
+      "path": "tests/visual/baselines/chromium-linux/i18n-rtl-mobile.png",
+      "sha256": "952af20da2dd9ad3011c6ebb81d02e55c349f353a7153c8f9d141248d8932b88",
+      "description": "Approved baseline i18n-rtl-mobile."
+    }
+  ],
+  "notes": "User approved the exact 14-image review packet on 2026-09-29 with \u201cgo ahead\u201d after an explicit request to approve all 14 images or identify changes. Baselines copied from reviewed candidate files without re-encoding; run 68 reproduced identical bytes.",
+  "review": {
+    "status": "approved",
+    "reviewedBy": "Revaz Eristavi",
+    "reviewedAt": "2026-09-29T12:25:57Z",
+    "notes": "Human approval in this conversation of the linked 14-image visual review packet."
+  }
+}

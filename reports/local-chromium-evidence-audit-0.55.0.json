@@ -1,13 +1,13 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T11:26:20.110Z",
+  "generatedAt": "2026-09-29T12:35:18.126Z",
   "status": "supplemental-evidence-ready",
   "summary": {
     "passed": 66,
     "total": 66,
     "failed": 0
   },
-  "boundary": "Validates local Chromium supplemental evidence only. It intentionally does not close real branded-browser, real-device, assistive-technology, zoom/touch, Windows High Contrast, or human-approved visual gates.",
+  "boundary": "Validates local Chromium supplemental evidence only. The visual gate can pass only through separately reviewed, hashed closing evidence. Branded-browser, real-device, assistive-technology, zoom/touch and Windows High Contrast gates remain separate.",
   "failures": [],
   "checks": [
     {
@@ -316,29 +316,29 @@
       "detail": "pass"
     },
     {
-      "name": "Local automated evidence did not close manual gate: desktop-browser-matrix",
+      "name": "Supplemental Chromium evidence does not independently close gate: desktop-browser-matrix",
       "pass": true,
       "detail": "open"
     },
     {
-      "name": "Local automated evidence did not close manual gate: assistive-technology",
+      "name": "Supplemental Chromium evidence does not independently close gate: assistive-technology",
       "pass": true,
       "detail": "open"
     },
     {
-      "name": "Local automated evidence did not close manual gate: zoom-reflow-touch",
+      "name": "Supplemental Chromium evidence does not independently close gate: zoom-reflow-touch",
       "pass": true,
       "detail": "open"
     },
     {
-      "name": "Local automated evidence did not close manual gate: forced-colors-high-contrast",
+      "name": "Supplemental Chromium evidence does not independently close gate: forced-colors-high-contrast",
       "pass": true,
       "detail": "open"
     },
     {
-      "name": "Local automated evidence did not close manual gate: visual-regression-baselines",
+      "name": "Supplemental Chromium evidence does not independently close gate: visual-regression-baselines",
       "pass": true,
-      "detail": "open"
+      "detail": "passed"
     }
   ]
 }

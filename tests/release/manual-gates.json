@@ -145,7 +145,7 @@
     },
     {
       "id": "visual-regression-baselines",
-      "status": "open",
+      "status": "passed",
       "blocks1_0": true,
       "blocksPublicPublication": false,
       "scope": "Capture and approve the canonical visual matrix in a functioning browser/CI environment.",
@@ -153,12 +153,16 @@
       "automation": "Playwright screenshot specs and snapshot update/compare commands are provided. Baselines require human approval before this gate can pass.",
       "criteriaStatus": {
         "baseline-human-approved": {
-          "status": "open",
-          "evidence": []
+          "status": "passed",
+          "evidence": [
+            "visual-baseline-human-approved-0.55.0"
+          ]
         },
         "baseline-compare-pass": {
-          "status": "open",
-          "evidence": []
+          "status": "passed",
+          "evidence": [
+            "visual-baseline-compare-pass-0.55.0"
+          ]
         }
       },
       "supplementalEvidence": [

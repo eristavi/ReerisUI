@@ -22,10 +22,12 @@ jobs:
           node-version: 22
       - run: npm install --ignore-scripts --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
+      - run: sudo apt-get install -y imagemagick
       - run: npm run build
       - name: Capture version-specific local Chromium evidence
         run: |
           REVA_CHROMIUM_PATH="$(node -p "require('playwright').chromium.executablePath()")" npm run rc:local:chromium
+          REVA_VISUAL_CURRENT_DIR="tests/release/evidence-artifacts/$(node -p "require('./package.json').version")/local-chromium/visual" npm run visual:compare
           npm run audit:local-browser
           npm run audit:evidence
       - uses: actions/upload-artifact@v4

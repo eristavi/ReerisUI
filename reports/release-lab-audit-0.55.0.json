@@ -1,25 +1,25 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T11:26:20.657Z",
+  "generatedAt": "2026-09-29T12:35:18.699Z",
   "summary": {
     "passed": 13,
     "total": 13,
     "failed": 0
   },
   "evidenceSummary": {
-    "records": 19,
+    "records": 21,
     "invalid": 0,
-    "closing": 0,
+    "closing": 2,
     "supplemental": 19
   },
   "gateSummary": {
     "total": 7,
-    "passed": 0,
-    "open": 7,
-    "openBlocking1_0": 6,
+    "passed": 1,
+    "open": 6,
+    "openBlocking1_0": 5,
     "openBlockingPublication": 1,
     "criteriaTotal": 21,
-    "criteriaPassed": 0
+    "criteriaPassed": 2
   },
   "invalid": [],
   "gates": [
@@ -188,22 +188,26 @@
     },
     {
       "id": "visual-regression-baselines",
-      "storedStatus": "open",
-      "effectiveStatus": "open",
+      "storedStatus": "passed",
+      "effectiveStatus": "passed",
       "blocks1_0": true,
       "blocksPublicPublication": false,
       "criteria": [
         {
           "id": "baseline-human-approved",
           "description": "Canonical PNG baseline set reviewed and explicitly approved by a human reviewer.",
-          "passed": false,
-          "evidence": []
+          "passed": true,
+          "evidence": [
+            "visual-baseline-human-approved-0.55.0"
+          ]
         },
         {
           "id": "baseline-compare-pass",
           "description": "A comparison run against the approved baseline set passes.",
-          "passed": false,
-          "evidence": []
+          "passed": true,
+          "evidence": [
+            "visual-baseline-compare-pass-0.55.0"
+          ]
         }
       ],
       "supplementalEvidence": [
@@ -304,7 +308,7 @@
     {
       "name": "Stored gate status matches evidence-derived status: visual-regression-baselines",
       "pass": true,
-      "detail": "open vs open"
+      "detail": "passed vs passed"
     },
     {
       "name": "Stored gate status matches evidence-derived status: public-name-namespace-clearance",

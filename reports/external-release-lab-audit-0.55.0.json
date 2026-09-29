@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T11:26:20.456Z",
+  "generatedAt": "2026-09-29T12:35:18.515Z",
   "summary": {
     "passed": 482,
     "total": 482,
@@ -2418,9 +2418,9 @@
       "detail": ""
     },
     {
-      "name": "External Lab generation does not close gates",
+      "name": "Passed gates have approved closing evidence",
       "pass": true,
-      "detail": "0 passed"
+      "detail": "1 passed"
     }
   ]
 }

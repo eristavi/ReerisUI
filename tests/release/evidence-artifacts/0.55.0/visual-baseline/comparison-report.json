@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "0.55.0",
+  "baselineId": "reeris-0.55.0-chromium-linux-run-65",
+  "comparedAt": "2026-09-29T12:32:27Z",
+  "baselineManifestSha256": "ddc2b39296a8064ea56b03c930599d61720b7bec1ad075d1aeabd379306a2115",
+  "currentRun": "https://github.com/eristavi/ReerisUI/actions/runs/36561882722",
+  "currentRevision": "da30a8aa33aef1b1e1f959e3067c3851f47e7fc4",
+  "comparisonTool": "ImageMagick compare -metric AE, zero allowed pixels",
+  "command": "npm run visual:compare",
+  "result": "pass",
+  "cases": [
+    {
+      "id": "core-system-default-ltr",
+      "baselineSha256": "f13885314cc491e92a6acf7bea03cd47bd40e1b5d8a4703674195505067522d9",
+      "currentSha256": "f13885314cc491e92a6acf7bea03cd47bd40e1b5d8a4703674195505067522d9",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-light-default-ltr",
+      "baselineSha256": "5284bc52a624e81e37d3a7e89fd1882dca1a84cbfc086f202de459991a68aa9a",
+      "currentSha256": "5284bc52a624e81e37d3a7e89fd1882dca1a84cbfc086f202de459991a68aa9a",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-dark-default-ltr",
+      "baselineSha256": "adf0cf75c6b949ab242c82ebfee3d91b4d7a13f5df87a4383a5c37b6f4b60c21",
+      "currentSha256": "adf0cf75c6b949ab242c82ebfee3d91b4d7a13f5df87a4383a5c37b6f4b60c21",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-light-compact-ltr",
+      "baselineSha256": "3b24f5ce77724f0d197aa1cb356bb0877305583e9b85ee1981dddc9663a4514a",
+      "currentSha256": "3b24f5ce77724f0d197aa1cb356bb0877305583e9b85ee1981dddc9663a4514a",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-dark-comfortable-ltr",
+      "baselineSha256": "7085cb6f340a47328712819cf369551ce6faef6d647e24331fbf3adce29852de",
+      "currentSha256": "7085cb6f340a47328712819cf369551ce6faef6d647e24331fbf3adce29852de",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-light-default-rtl",
+      "baselineSha256": "cdda9335cc85cea4110ca00509d3ee68fb4bd549ef949ed2b6dfbd408ec97539",
+      "currentSha256": "cdda9335cc85cea4110ca00509d3ee68fb4bd549ef949ed2b6dfbd408ec97539",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-dark-soft-rtl",
+      "baselineSha256": "45e0c103fc68a34676a020298a5d48081cbc05fd29b95f2963f5ffba492069be",
+      "currentSha256": "45e0c103fc68a34676a020298a5d48081cbc05fd29b95f2963f5ffba492069be",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-mobile-system",
+      "baselineSha256": "46deb71f304d0ffc7185b034e67d388eef4664817164bd1581d653d2d6b624cc",
+      "currentSha256": "46deb71f304d0ffc7185b034e67d388eef4664817164bd1581d653d2d6b624cc",
+      "differentPixels": 0
+    },
+    {
+      "id": "core-mobile-dark-compact",
+      "baselineSha256": "fa842567f8e7d5a72d53b3b3092da1bce1200543a2532d7f54610f23cb41c9c8",
+      "currentSha256": "fa842567f8e7d5a72d53b3b3092da1bce1200543a2532d7f54610f23cb41c9c8",
+      "differentPixels": 0
+    },
+    {
+      "id": "starter-dashboard-system",
+      "baselineSha256": "558a795a3e348290c819d2590dcc163712233e1db08c8d5ab7cd697f3992155f",
+      "currentSha256": "558a795a3e348290c819d2590dcc163712233e1db08c8d5ab7cd697f3992155f",
+      "differentPixels": 0
+    },
+    {
+      "id": "starter-data-system",
+      "baselineSha256": "2f70190af6753f0b06820956cd2ec256e639f634dd440eda198dfdbed1c5d61e",
+      "currentSha256": "2f70190af6753f0b06820956cd2ec256e639f634dd440eda198dfdbed1c5d61e",
+      "differentPixels": 0
+    },
+    {
+      "id": "starter-marketing-system",
+      "baselineSha256": "06636762b82b496258955a12c7910be005aa23e44478b45aeafb63eed55b8613",
+      "currentSha256": "06636762b82b496258955a12c7910be005aa23e44478b45aeafb63eed55b8613",
+      "differentPixels": 0
+    },
+    {
+      "id": "i18n-rtl-desktop",
+      "baselineSha256": "b817a7585f151157547a6c2d695e048240b388ac626d9b17ac9353f47b217760",
+      "currentSha256": "b817a7585f151157547a6c2d695e048240b388ac626d9b17ac9353f47b217760",
+      "differentPixels": 0
+    },
+    {
+      "id": "i18n-rtl-mobile",
+      "baselineSha256": "952af20da2dd9ad3011c6ebb81d02e55c349f353a7153c8f9d141248d8932b88",
+      "currentSha256": "952af20da2dd9ad3011c6ebb81d02e55c349f353a7153c8f9d141248d8932b88",
+      "differentPixels": 0
+    }
+  ]
+}

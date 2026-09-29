@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "0.55.0",
+  "gateId": "visual-regression-baselines",
+  "kind": "visual-review",
+  "role": "closing",
+  "outcome": "pass",
+  "evidenceId": "visual-baseline-compare-pass-0.55.0",
+  "collectedAt": "2026-09-29T12:32:27Z",
+  "claims": [
+    "baseline-compare-pass"
+  ],
+  "environment": {
+    "captureBrowser": "Headless Chrome/153.0.8010.12",
+    "browserVersion": "153.0.8010.12",
+    "osName": "Linux",
+    "osVersion": "GitHub Actions ubuntu-latest (capture run 68); local Linux compare",
+    "baselineId": "reeris-0.55.0-chromium-linux-run-65",
+    "comparisonTool": "ImageMagick compare -metric AE, zero allowed pixels",
+    "tester": "Codex"
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/visual-baseline/comparison-report.json",
+      "sha256": "ba15c2664e0b441527d04a15c70eaf12583bb8c4d1c55d35e485bf6fdf04d93d",
+      "description": "Machine-readable 14-case zero-diff comparison."
+    },
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/visual-baseline/compare.log",
+      "sha256": "337db5e2942e1e4a07f90a6c6845f5353d20045f0533e32d46c3ce8b2b4d1980",
+      "description": "Successful ImageMagick comparison log."
+    },
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/visual-baseline/baseline-manifest.json",
+      "sha256": "ddc2b39296a8064ea56b03c930599d61720b7bec1ad075d1aeabd379306a2115",
+      "description": "Approved baseline ID and SHA-256 manifest."
+    }
+  ],
+  "notes": "Independent run 68 capture of all 14 canonical cases matched the approved run 65 files byte-for-byte. ImageMagick AE comparison returned 0 changed pixels for every case. No diff images were generated.",
+  "review": {
+    "status": "approved",
+    "reviewedBy": "Codex (comparison evidence review)",
+    "reviewedAt": "2026-09-29T12:32:27Z",
+    "notes": "Examined every file hash, machine-readable comparison and 14 zero-diff log lines; no unexplained differences."
+  }
+}

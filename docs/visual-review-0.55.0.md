@@ -1,6 +1,6 @@
 # Reeris UI 0.55.0 — Visual review packet
 
-These are the 14 Chromium candidate screenshots captured from the 0.55 source in [GitHub Actions run 65](https://github.com/Eristavi/ReerisUI/actions/runs/36542076637). The machine-readable report and image hashes are in [`local-chromium-report.json`](../tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json). They are candidates, not approved baselines.
+These are the 14 Chromium screenshots captured from the 0.55 source in [GitHub Actions run 65](https://github.com/Eristavi/ReerisUI/actions/runs/36542076637). The machine-readable report and image hashes are in [`local-chromium-report.json`](../tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json). The project owner approved this exact set on 2026-09-29. The [approved baseline manifest](../tests/release/evidence-artifacts/0.55.0/visual-baseline/baseline-manifest.json) lists the SHA-256 hash of each committed PNG.
 
 | Case | Screenshot | Check |
 | --- | --- | --- |
@@ -19,4 +19,4 @@ These are the 14 Chromium candidate screenshots captured from the 0.55 source in
 | i18n desktop | [View PNG](../tests/release/evidence-artifacts/0.55.0/local-chromium/visual/i18n-rtl-desktop.png) | Mixed direction and long text |
 | i18n phone | [View PNG](../tests/release/evidence-artifacts/0.55.0/local-chromium/visual/i18n-rtl-mobile.png) | Scrollable table and readable headings |
 
-Agent inspection found the card badge, toast dismiss control, RTL phone table, and gradient CTA issue and verified their corrected captures. A named human reviewer must inspect all 14 cases and explicitly approve the set before the `baseline-human-approved` criterion can pass. The normal comparison command should run only after that approved baseline set is stored and hashed. Real device, screen reader, and other manual release gates are separate.
+Agent inspection found the card badge, toast dismiss control, RTL phone table, and gradient CTA issue and verified their corrected captures. Revaz Eristavi approved this 14-image packet in the conversation after being asked to approve all images or identify changes. The committed baselines are byte-for-byte copies of these PNGs. Independent [run 68](https://github.com/eristavi/ReerisUI/actions/runs/36561882722) reproduced all 14 hashes; the [comparison report](../tests/release/evidence-artifacts/0.55.0/visual-baseline/comparison-report.json) and [log](../tests/release/evidence-artifacts/0.55.0/visual-baseline/compare.log) show zero changed pixels. Real device, screen reader, and other manual release gates are separate.
