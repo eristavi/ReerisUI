@@ -31,6 +31,7 @@
   }
   :where(.card-header, .card-body, .card-footer) { padding: calc(var(--reeris-card-padding) * var(--reeris-density-factor)); }
   :where(.card-header) { display:flex; align-items:flex-start; justify-content:space-between; gap:var(--reeris-space-4); border-block-end:1px solid var(--reeris-color-border-muted); }
+  :where(.card-header > .badge) { flex:none; }
   :where(.card-footer) { display:flex; align-items:center; gap:var(--reeris-space-3); border-block-start:1px solid var(--reeris-color-border-muted); }
   :where(.card-title) { margin:0; color:var(--reeris-color-text); font-size:var(--reeris-font-size-lg); font-weight:var(--reeris-font-weight-semibold); line-height:1.3; text-wrap:balance; }
   :where(.card-subtitle) { margin:.25rem 0 0; color:var(--reeris-color-text-muted); font-size:var(--reeris-font-size-sm); }

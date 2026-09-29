@@ -112,6 +112,26 @@ test('conversation header keeps the contact name and status readable', async ({p
   }
 });
 
+test('card status and iconless toast stay readable at phone widths', async ({page}) => {
+  for (const width of [320, 390]) {
+    await page.setViewportSize({width,height:800});
+    await page.goto('/docs/visual-regression.html');
+    const layout=await page.evaluate(()=>{
+      const badge=document.querySelector('.card-header > .badge');
+      const close=document.querySelector('.toast-close');
+      const toast=document.querySelector('.toast');
+      const text=document.createRange();
+      text.selectNodeContents(badge);
+      const closeBox=close.getBoundingClientRect();
+      const toastBox=toast.getBoundingClientRect();
+      return {badgeLines:text.getClientRects().length,closeWidth:closeBox.width,closeRight:closeBox.right,toastRight:toastBox.right};
+    });
+    expect(layout.badgeLines, `${width}px card badge wraps`).toBe(1);
+    expect(layout.closeWidth, `${width}px toast dismiss control stretches`).toBeLessThanOrEqual(48);
+    expect(layout.closeRight, `${width}px toast dismiss control escapes`).toBeLessThanOrEqual(layout.toastRight);
+  }
+});
+
 test('inbox sender and preview use separate rows on phones', async ({page}) => {
   for (const width of [320, 390]) {
     await page.setViewportSize({width,height:800});
