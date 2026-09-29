@@ -1,0 +1,18 @@
+# Reeris UI 0.55.0 — Remaining release validation
+
+Status on 2026-09-29: **3 of 21 criteria passed**, **1 of 7 gates passed**. The approved visual baseline and repository/documentation location criteria have closing evidence. The remaining 18 criteria below require the specified real environment or owner decision. CI emulation and public search results are useful preparation but cannot close them.
+
+The exact procedures, fixtures, evidence requirements and JSON templates are in the [External Release Lab](external-release-lab.html) and `tests/release/external-lab/packs/`. Run against the 0.55 source with `node tooling/test-server.mjs`, or use the published Pages fixtures while recording the deployed revision. Record browser and OS versions, results by fixture, screenshots/notes, and a named reviewer. Import hashed evidence with `node tooling/release-lab-evidence.mjs import <record.json>`, review it, then run `npm run evidence:sync` and `npm run release:check`.
+
+| Gate | Remaining criteria | Required environment or decision |
+| --- | --- | --- |
+| Desktop browser matrix | Chrome, Edge, Firefox, Safari desktop (4) | Current stable branded browsers; Safari on macOS. Complete every fixture in each [desktop pack](../tests/release/external-lab/packs/desktop-browser-matrix--chrome-desktop-real.md), with screenshots and console notes. The cloud Chrome spot-check and Playwright/WebKit runs remain supplemental. |
+| Mobile browser matrix | iPhone Safari, iPad Safari, Android Chrome (3) | Real devices or trusted real-device cloud; capture touch, native controls, safe areas, RTL and narrow layouts with exact device/OS/browser versions. |
+| Assistive technology | Full keyboard review, NVDA, VoiceOver, TalkBack (4) | Complete the [keyboard pack](../tests/release/external-lab/packs/assistive-technology--keyboard-manual.md) with focus screenshots on all six fixtures; then use NVDA on desktop, VoiceOver with Safari, and TalkBack with Android Chrome. The existing cloud keyboard note is a partial spot-check. |
+| Zoom, reflow and touch | Real 200% zoom, real 400% zoom, physical touch targets (3) | Browser zoom controls and real touch hardware/device cloud; record screenshots, viewport, clipping/overflow, and target operation. Viewport emulation alone does not establish zoom behavior. |
+| Forced colors and contrast | Windows High Contrast, OS `prefers-contrast` review (2) | Enable actual OS accessibility settings, inspect component boundaries/focus/errors and record `matchMedia` outcome; DevTools emulation remains supplemental. |
+| Public name and namespace | Project name decision, npm namespace (2) | Date and disclose a similarity/trademark decision for Reeris UI in intended markets. Sign in to the owner's npm account, verify control of `@reeris` and intended packages immediately before publication, and preserve account-level evidence. Public 404 responses do not prove ownership. |
+
+The canonical source is `Eristavi/ReerisUI`; documentation stays at `eristavi.github.io/ReerisUI` for 0.55. A future subdomain under `eristavi.org` is deferred by the owner. The older domain-candidate list in `identity-reservation-0.55.0.md` is historical research, not the current domain plan. Do not change DNS or register a `reeris.*` domain as part of this validation.
+
+No npm publication or 1.0 release is authorized by the passing automated checks. Once the remaining evidence is collected and reviewed, the gate registry derives closure from records rather than a manual status edit.

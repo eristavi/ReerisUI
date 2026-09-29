@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-29T12:46:00Z",
+  "source": "GitHub repository connector: get_repo(Eristavi/ReerisUI)",
+  "repository": "eristavi/ReerisUI",
+  "owner": "eristavi",
+  "visibility": "public",
+  "defaultBranch": "main",
+  "signedInAccountPermissions": {
+    "admin": true,
+    "push": true
+  },
+  "documentation": "https://eristavi.github.io/ReerisUI/docs/index.html"
+}

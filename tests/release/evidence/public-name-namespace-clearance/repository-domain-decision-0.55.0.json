@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "repository-domain-decision-0.55.0",
+  "releaseVersion": "0.55.0",
+  "gateId": "public-name-namespace-clearance",
+  "kind": "name-clearance",
+  "role": "closing",
+  "collectedAt": "2026-09-29T12:47:57Z",
+  "outcome": "pass",
+  "claims": [
+    "repository-domain-clearance"
+  ],
+  "environment": {
+    "reviewDate": "2026-09-29",
+    "reviewer": "Codex",
+    "repositoryHost": "GitHub",
+    "repositoryName": "Eristavi/ReerisUI",
+    "domain": "eristavi.github.io/ReerisUI (current); future eristavi.org subdomain deferred",
+    "decision": "Keep canonical GitHub repository and GitHub Pages documentation for 0.55; no DNS/domain changes."
+  },
+  "artifacts": [
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/repository-domain/repository-domain-decision.md",
+      "sha256": "7a517508d73e9be6b65fffd2ab90b0b4b004fa3e0d6cf5724f999fb3559d1206",
+      "description": "Dated canonical repository and documentation decision."
+    },
+    {
+      "path": "tests/release/evidence-artifacts/0.55.0/repository-domain/repository-metadata.json",
+      "sha256": "d31b5cd086c229c037d675765a784a5662b0def90fe6b4cd97a6c75201b9db4e",
+      "description": "Repository ownership and signed-in account permission snapshot."
+    },
+    {
+      "path": "README.md",
+      "sha256": "195f9c625a994c5302fe75688247675558ac4aa38bd13c0d89a34459d52cf4c4",
+      "description": "Published documentation links in project README."
+    }
+  ],
+  "notes": "Repository ownership and canonical documentation locations are confirmed. The user directed use of eristavi.org subdomain later and explicitly deferred setup. Does not claim npm scope or trademark clearance.",
+  "review": {
+    "status": "approved",
+    "reviewedBy": "Codex (repository/domain evidence review)",
+    "reviewedAt": "2026-09-29T12:47:57Z",
+    "notes": "Reviewed GitHub connector owner/admin fields, README links, deployed documentation in prior browser validation, and owner domain instructions."
+  }
+}

@@ -188,8 +188,10 @@
           "evidence": []
         },
         "repository-domain-clearance": {
-          "status": "open",
-          "evidence": []
+          "status": "passed",
+          "evidence": [
+            "repository-domain-decision-0.55.0"
+          ]
         }
       },
       "supplementalEvidence": [

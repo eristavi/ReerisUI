@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T12:35:19.080Z",
+  "generatedAt": "2026-09-29T12:50:08.921Z",
   "status": "pass",
   "summary": {
     "passed": 30,
@@ -155,9 +155,9 @@
       "detail": "open"
     },
     {
-      "name": "Release Lab remains open: repository-domain-clearance",
+      "name": "Current repository/domain location has reviewed evidence",
       "pass": true,
-      "detail": "open"
+      "detail": "passed"
     }
   ]
 }

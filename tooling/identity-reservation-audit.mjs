@@ -36,7 +36,8 @@ if(exists(doc)){
 const gates=readJson('tests/release/manual-gates.json');
 const g=(gates.gates||[]).find(x=>x.id==='public-name-namespace-clearance');
 check('Publication naming gate remains open',g?.status==='open',g?.status);
-for(const id of ['project-name-clearance','package-namespace-clearance','repository-domain-clearance']) check(`Release Lab remains open: ${id}`,g?.criteriaStatus?.[id]?.status==='open',g?.criteriaStatus?.[id]?.status);
+for(const id of ['project-name-clearance','package-namespace-clearance']) check(`Release Lab remains open: ${id}`,g?.criteriaStatus?.[id]?.status==='open',g?.criteriaStatus?.[id]?.status);
+check('Current repository/domain location has reviewed evidence',g?.criteriaStatus?.['repository-domain-clearance']?.status==='passed'&&g.criteriaStatus['repository-domain-clearance'].evidence?.length>0,g?.criteriaStatus?.['repository-domain-clearance']?.status);
 const result={version,generatedAt:new Date().toISOString(),status:failures.length?'fail':'pass',summary:{passed:checks.filter(x=>x.pass).length,total:checks.length,failed:failures.length},failures,checks};
 fs.mkdirSync('reports',{recursive:true});
 fs.writeFileSync(`reports/identity-reservation-audit-${version}.json`,JSON.stringify(result,null,2)+'\n');

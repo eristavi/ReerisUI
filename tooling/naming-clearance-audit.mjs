@@ -47,9 +47,10 @@ const gates=readJson('tests/release/manual-gates.json');
 const nameGate=(gates.gates||[]).find(g=>g.id==='public-name-namespace-clearance');
 check('Publication naming gate exists', Boolean(nameGate));
 check('Publication naming gate remains open', nameGate?.status==='open', nameGate?.status||'missing');
-for(const id of ['project-name-clearance','package-namespace-clearance','repository-domain-clearance']){
+for(const id of ['project-name-clearance','package-namespace-clearance']){
   check(`Release Lab criterion remains open: ${id}`, nameGate?.criteriaStatus?.[id]?.status==='open', nameGate?.criteriaStatus?.[id]?.status||'missing');
 }
+check('Repository/domain decision has closing evidence',nameGate?.criteriaStatus?.['repository-domain-clearance']?.status==='passed'&&nameGate.criteriaStatus['repository-domain-clearance'].evidence?.length>0,nameGate?.criteriaStatus?.['repository-domain-clearance']?.status||'missing');
 
 const core=readJson('packages/core/package.json');
 const js=readJson('packages/js/package.json');

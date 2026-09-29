@@ -1,6 +1,6 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T12:35:18.886Z",
+  "generatedAt": "2026-09-29T12:50:08.740Z",
   "status": "pass",
   "summary": {
     "passed": 34,
@@ -140,9 +140,9 @@
       "detail": "open"
     },
     {
-      "name": "Release Lab criterion remains open: repository-domain-clearance",
+      "name": "Repository/domain decision has closing evidence",
       "pass": true,
-      "detail": "open"
+      "detail": "passed"
     },
     {
       "name": "Core package uses @reeris scope",

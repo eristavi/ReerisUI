@@ -1,15 +1,15 @@
 {
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T12:35:18.699Z",
+  "generatedAt": "2026-09-29T12:50:08.548Z",
   "summary": {
     "passed": 13,
     "total": 13,
     "failed": 0
   },
   "evidenceSummary": {
-    "records": 21,
+    "records": 22,
     "invalid": 0,
-    "closing": 2,
+    "closing": 3,
     "supplemental": 19
   },
   "gateSummary": {
@@ -19,7 +19,7 @@
     "openBlocking1_0": 5,
     "openBlockingPublication": 1,
     "criteriaTotal": 21,
-    "criteriaPassed": 2
+    "criteriaPassed": 3
   },
   "invalid": [],
   "gates": [
@@ -238,8 +238,10 @@
         {
           "id": "repository-domain-clearance",
           "description": "Recorded repository/domain naming decision appropriate for public launch.",
-          "passed": false,
-          "evidence": []
+          "passed": true,
+          "evidence": [
+            "repository-domain-decision-0.55.0"
+          ]
         }
       ],
       "supplementalEvidence": [
