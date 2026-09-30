@@ -135,7 +135,7 @@ test('card status and iconless toast stay readable at phone widths', async ({pag
 test('inbox sender and preview use separate rows on phones', async ({page}) => {
   for (const width of [320, 390]) {
     await page.setViewportSize({width,height:800});
-    await page.goto('/.reeris-docs-site/docs/messaging.html');
+    await page.goto('/ReerisUI/docs/messaging.html');
     for (const row of await page.locator('.message-row').all()) {
       const layout=await row.evaluate(element=>{
         const sender=element.querySelector('.message-sender');
@@ -183,7 +183,7 @@ test('mixed direction table keeps labels readable and scrolls inside its card', 
 
 test('image card adapts to its container independently of viewport', async ({page}) => {
   await page.setViewportSize({width:1000,height:800});
-  await page.goto('/.reeris-docs-site/docs/media.html');
+  await page.goto('/ReerisUI/docs/media.html');
   const cards=page.locator('.image-card.adaptive');
   const columns=async card=>card.evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length);
   expect(await columns(cards.nth(0))).toBe(1);
@@ -194,7 +194,7 @@ test('image card adapts to its container independently of viewport', async ({pag
 });
 
 test('CSS scroll progress follows root scroll and respects reduced motion', async ({page}) => {
-  await page.goto('/.reeris-docs-site/docs/feedback.html');
+  await page.goto('/ReerisUI/docs/feedback.html');
   const supported=await page.evaluate(()=>CSS.supports('animation-timeline','scroll(root block)'));
   const bar=page.locator('.scroll-progress');
   if (supported) {
@@ -300,13 +300,13 @@ test('carousel scrolls and snaps with JavaScript disabled at desktop and phone w
 });
 
 test('published demo theme selector persists across pages and resets to system', async ({page}) => {
-  await page.goto('/.reeris-docs-site/docs/carousel.html');
+  await page.goto('/ReerisUI/docs/carousel.html');
   const demoTheme=page.getByLabel('Theme');
   await expect(demoTheme).toBeVisible();
   await demoTheme.selectOption('dark');
   await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
   expect(await page.evaluate(()=>getComputedStyle(document.documentElement).colorScheme)).toBe('dark');
-  await page.goto('/.reeris-docs-site/docs/navigation.html');
+  await page.goto('/ReerisUI/docs/navigation.html');
   await expect(page.getByLabel('Theme')).toHaveValue('dark');
   await page.getByLabel('Theme').selectOption('glass');
   await expect(page.locator('html')).toHaveAttribute('data-theme','glass');
@@ -320,7 +320,7 @@ test('published demo theme selector persists across pages and resets to system',
   expect(glass.surface).not.toBe('rgba(255, 255, 255, 0.68)');
   expect(glass.canvas).toContain('gradient');
   expect(glass.body).toBe('rgba(0, 0, 0, 0)');
-  await page.goto('/.reeris-docs-site/docs/index.html');
+  await page.goto('/ReerisUI/docs/index.html');
   const homeTheme=page.getByLabel('Theme');
   await expect(homeTheme).toBeVisible();
   await expect(homeTheme).toHaveValue('glass');
@@ -330,7 +330,7 @@ test('published demo theme selector persists across pages and resets to system',
   await expect(page.locator('html')).not.toHaveAttribute('data-theme');
   expect(await page.evaluate(()=>localStorage.getItem('reeris-docs-theme'))).toBeNull();
   await page.setViewportSize({width:320,height:700});
-  await page.goto('/.reeris-docs-site/docs/carousel.html');
+  await page.goto('/ReerisUI/docs/carousel.html');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
 });
 
@@ -366,7 +366,7 @@ test('form addons and native date/time inputs fit phone cards', async ({page}) =
 test('typography roles preserve hierarchy and fit narrow screens', async ({page}) => {
   for (const width of [320,390]) {
     await page.setViewportSize({width,height:700});
-    await page.goto('/.reeris-docs-site/docs/typography.html');
+    await page.goto('/ReerisUI/docs/typography.html');
     await page.getByLabel('Theme').selectOption('glass');
     const type=await page.evaluate(()=>{
       const size=selector=>parseFloat(getComputedStyle(document.querySelector(selector)).fontSize);
@@ -395,7 +395,7 @@ test('typography roles preserve hierarchy and fit narrow screens', async ({page}
 });
 
 test('form focus has one halo and selects keep native controls aligned', async ({page},testInfo) => {
-  await page.goto('/.reeris-docs-site/docs/forms-complete.html');
+  await page.goto('/ReerisUI/docs/forms-complete.html');
   const textarea=page.locator('textarea.textarea.xl');
   await textarea.focus();
   const focus=await textarea.evaluate(element=>({

@@ -3,7 +3,8 @@ import { fileURLToPath } from 'node:url';
 import { addDemoCodeTabs } from '../../../tooling/demo-code-tabs.mjs';
 
 export const repositoryRoot = fileURLToPath(new URL('../../../', import.meta.url));
-export const revision = (process.env.GITHUB_SHA || '0.55.0').slice(0, 12);
+const version = JSON.parse(fs.readFileSync(`${repositoryRoot}package.json`, 'utf8')).version;
+export const revision = (process.env.GITHUB_SHA || version).slice(0, 12);
 export const siteUrl = (path = '') => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 export const assetUrl = path => `${siteUrl(path)}?v=${revision}`;
 
