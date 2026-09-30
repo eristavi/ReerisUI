@@ -6,3 +6,5 @@ coverage/
 tests/visual/current/**/*.png
 tests/visual/diff/**/*.png
 .reeris-docs-site/
+.reeris-docs-public/
+site/.astro/

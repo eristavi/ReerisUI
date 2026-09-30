@@ -10,7 +10,21 @@ on:
       - 'packages/core/**'
       - 'tokens/**'
       - 'tooling/**'
+      - 'site/**'
       - 'package.json'
+      - 'package-lock.json'
+      - 'tests/docs/**'
+  pull_request:
+    paths:
+      - '.github/workflows/docs-pages.yml'
+      - 'docs/**'
+      - 'examples/**'
+      - 'packages/**'
+      - 'tokens/**'
+      - 'tooling/**'
+      - 'site/**'
+      - 'package*.json'
+      - 'tests/docs/**'
   workflow_dispatch:
 
 permissions:
@@ -29,13 +43,25 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - run: npm run docs:api && npm run docs:site && npm run audit:docs
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run docs:site && npm run audit:docs
+      - run: npx playwright install --with-deps chromium
+      - run: npm run docs:test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: astro-docs-browser-review
+          path: test-results/docs/
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
         with:
           path: .reeris-docs-site
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

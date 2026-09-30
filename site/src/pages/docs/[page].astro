@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Topbar from '../../components/Topbar.astro';
+import DocumentationHome from '../../components/DocumentationHome.astro';
+import { demoPages, readDemo } from '../../lib/site.mjs';
+export function getStaticPaths() {
+  return [{ params: { page: 'index' }, props: { home: true } }, ...demoPages('docs').map(name => ({ params: { page: name.slice(0, -5) }, props: { page: readDemo(`docs/${name}`) } }))];
+}
+const { page, home } = Astro.props;
+---
+{home ? <DocumentationHome /> : <BaseLayout {...page}>
+  <Topbar current="demo" demo />
+  <Fragment set:html={page.body} />
+</BaseLayout>}

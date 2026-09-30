@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Topbar from '../../components/Topbar.astro';
+import SourceList from '../../components/SourceList.astro';
+import manifest from '../../../../docs/api-manifest.json';
+const sections = [['summary', 'Summary'], ['modules', 'Modules'], ['classes', 'Classes'], ['tokens', 'Tokens'], ['data-attributes', 'Data attributes'], ['package-exports', 'Package exports'], ['javascript', 'JavaScript']];
+---
+<BaseLayout title={`Reeris UI API Reference ${manifest.version}`} description={`Public classes, CSS custom properties, data attributes and package exports generated from Reeris UI ${manifest.version} source.`}>
+  <Topbar current="api" />
+  <main id="docs-main" class="docs-shell">
+    <aside class="docs-sidebar" aria-label="API sections">
+      {sections.map(([id, title]) => <a href={`#${id}`}>{title}</a>)}
+    </aside>
+    <article class="docs-content">
+      <section id="summary" class="docs-hero">
+        <span class="badge primary">Generated reference</span>
+        <h1>Public API reference</h1>
+        <p>Machine-derived inventory for Reeris UI {manifest.version}. Public <code>--reeris-*</code> names, component classes, Reeris-owned data attributes and package/JavaScript exports make API drift auditable.</p>
+        <div class="docs-stat-grid">
+          {Object.entries(manifest.counts).map(([key, value]) => <div class="docs-stat"><strong>{value}</strong><span>{key.replace(/([A-Z])/g, ' $1')}</span></div>)}
+        </div>
+        <a href="api-manifest.json">Download the API inventory (JSON)</a>
+      </section>
+      <section id="modules" class="docs-section">
+        <h2>Source module → documentation contract</h2>
+        <p>Every Core source module maps to a maintained documentation page.</p>
+        <div class="table-responsive"><table class="table"><thead><tr><th scope="col">Source module</th><th scope="col">Documentation</th></tr></thead><tbody>
+          {manifest.sourceModules.map(item => <tr><td><code>{item.source}</code></td><td><a href={item.documentation}>{item.documentation}</a></td></tr>)}
+        </tbody></table></div>
+      </section>
+      <section id="classes" class="docs-section">
+        <div class="docs-section-head"><div><h2>Public class vocabulary</h2><p>Classes are contextual: modifiers such as <code>.primary</code> have meaning where their owning component defines them.</p></div><label class="docs-search">Filter classes<input type="search" data-docs-filter="classes" placeholder="card, btn, primary…" /></label></div>
+        <div class="table-responsive"><table class="table" data-docs-table="classes"><thead><tr><th scope="col">Class</th><th scope="col">Source</th></tr></thead><tbody>
+          {manifest.classes.map(item => <tr data-docs-row><td><code>.{item.name}</code></td><td><SourceList sources={item.sources} /></td></tr>)}
+        </tbody></table></div>
+      </section>
+      <section id="tokens" class="docs-section">
+        <div class="docs-section-head"><div><h2>Public CSS custom properties</h2><p>All <code>--reeris-*</code> names are public. “Override hook” means the variable is consumed with a fallback rather than declared globally; set it at the relevant application scope.</p></div><label class="docs-search">Filter tokens<input type="search" data-docs-filter="tokens" placeholder="color, space, button…" /></label></div>
+        <div class="table-responsive"><table class="table" data-docs-table="tokens"><thead><tr><th scope="col">Token</th><th scope="col">Kind</th><th scope="col">Source</th></tr></thead><tbody>
+          {manifest.tokens.map(item => <tr data-docs-row><td><code>{item.name}</code></td><td>{item.kind}</td><td><SourceList sources={item.sources} /></td></tr>)}
+        </tbody></table></div>
+      </section>
+      <section id="data-attributes" class="docs-section">
+        <h2>Reeris-owned data attributes</h2>
+        <p>Native attributes and ARIA remain preferred for native/semantic state. Reeris-specific configuration uses <code>data-reeris-*</code>.</p>
+        <div class="table-responsive"><table class="table"><thead><tr><th scope="col">Attribute</th><th scope="col">Known contract</th><th scope="col">Source</th></tr></thead><tbody>
+          {manifest.dataAttributes.map(item => <tr><td><code>{item.name}</code></td><td>{item.details.join(', ') || 'configuration / state hook'}</td><td><SourceList sources={item.sources} /></td></tr>)}
+        </tbody></table></div>
+      </section>
+      <section id="package-exports" class="docs-section">
+        <h2>Package exports</h2>
+        <div class="table-responsive"><table class="table"><thead><tr><th scope="col">Package</th><th scope="col">Export</th><th scope="col">Target</th></tr></thead><tbody>
+          {manifest.packageExports.map(item => <tr><td><code>{item.package}</code></td><td><code>{item.name}</code></td><td><code>{item.target}</code></td></tr>)}
+        </tbody></table></div>
+      </section>
+      <section id="javascript" class="docs-section">
+        <h2>Optional JavaScript API</h2>
+        <p>JavaScript enhances Reeris; Core uses native browser behavior.</p>
+        <div class="table-responsive"><table class="table"><thead><tr><th scope="col">Name</th><th scope="col">Kind</th><th scope="col">Source</th></tr></thead><tbody>
+          {manifest.jsApi.map(item => <tr><td><code>{item.name}</code></td><td>{item.kind}</td><td><code>{item.source}</code></td></tr>)}
+        </tbody></table></div>
+        <h3>GlideNavigation instance contract</h3>
+        <p><code>new GlideNavigation(element, options)</code> exposes <code>moveTo(item, animate)</code>, <code>restore(animate)</code>, <code>refresh()</code> and <code>destroy()</code>. The package helpers are <code>init(container)</code>, <code>destroy(container)</code> and <code>getInstance(element)</code>.</p>
+      </section>
+    </article>
+  </main>
+</BaseLayout>

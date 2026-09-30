@@ -1,0 +1,29 @@
+---
+import { assetUrl } from '../lib/site.mjs';
+const {
+  title, description = 'Native HTML and CSS components, design tokens, examples and public API for Reeris UI.',
+  htmlAttributes = {}, bodyAttributes = { class: 'docs-body' }, extraHead = '', mainId = 'docs-main'
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html {...{ lang: 'en', ...htmlAttributes }}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+    <script is:inline src={assetUrl('docs/assets/theme-init.js')}></script>
+    <link rel="stylesheet" href={assetUrl('docs/assets/reeris.css')} />
+    <Fragment set:html={extraHead} />
+    <link rel="stylesheet" href={assetUrl('docs/assets/docs.css')} />
+    <script is:inline type="module" src={assetUrl('docs/assets/docs.js')}></script>
+  </head>
+  <body {...bodyAttributes}>
+    <a class="docs-skip-link" href={`#${mainId}`}>Skip to content</a>
+    <slot />
+  </body>
+</html>

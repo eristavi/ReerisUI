@@ -48,14 +48,20 @@
     "lab:prepare": "npm run evidence:templates && npm run lab:generate",
     "audit:naming": "node tooling/naming-clearance-audit.mjs",
     "audit:identity-reservation": "node tooling/identity-reservation-audit.mjs",
-    "docs:site": "npm run build && node tooling/build-docs-site.mjs",
-    "audit:docs-css": "node tooling/docs-css-architecture-audit.mjs"
+    "docs:site": "npm run build && npm run docs:api && node tooling/build-docs-site.mjs && npm run audit:docs-site",
+    "audit:docs-css": "node tooling/docs-css-architecture-audit.mjs",
+    "docs:dev": "npm run build && npm run docs:api && node tooling/prepare-docs-site.mjs && astro dev --root site",
+    "docs:preview": "astro preview --root site",
+    "audit:docs-site": "node tooling/astro-docs-audit.mjs",
+    "docs:test": "playwright test --config tests/docs/playwright.config.mjs"
   },
   "license": "MIT",
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
-    "@playwright/test": "1.63.0"
+    "@playwright/test": "1.63.0",
+    "astro": "7.3.5",
+    "parse5": "8.0.1"
   }
 }

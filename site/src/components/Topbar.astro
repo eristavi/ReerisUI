@@ -1,0 +1,15 @@
+---
+import ThemeControl from './ThemeControl.astro';
+import { siteUrl } from '../lib/site.mjs';
+const { current = 'docs', demo = false, starter = false } = Astro.props;
+---
+<header class:list={{ 'docs-topbar': !demo, 'docs-demo-topbar': demo, 'docs-starter-topbar': starter }}>
+  <a class="docs-brand" href={siteUrl('docs/index.html')}>Reeris UI</a>
+  <nav class="docs-topnav" aria-label="Documentation">
+    <a href={siteUrl('docs/index.html')} aria-current={current === 'docs' ? 'page' : undefined}>Docs</a>
+    <a href={siteUrl('docs/api-reference.html')} aria-current={current === 'api' ? 'page' : undefined}>API</a>
+    <a href={siteUrl('docs/starters.html')}>Starters</a>
+    <a href="https://github.com/Eristavi/ReerisUI">GitHub</a>
+    <ThemeControl />
+  </nav>
+</header>
