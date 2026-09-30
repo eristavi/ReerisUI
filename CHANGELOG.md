@@ -4,6 +4,8 @@
 
 ## 0.55.0 — Documentation Source Views & Audit Lock
 
+- Migrated the published documentation and generated public API reference to Astro with shared navigation, theme controls, canonical metadata and static GitHub Pages deployment. Preserved existing component/starter URLs and CSS Preview/HTML tabs; added production-site link/API audits and desktop/phone browser checks.
+
 - Recorded the owner's canonical GitHub repository and Pages documentation location as approved for 0.55, with the `eristavi.org` subdomain deferred. The repository/domain criterion passes; trademark/name and npm scope clearance remain open. Added a worklist for the 18 remaining closure criteria.
 - Reviewed the 0.55 Chromium visual candidates and corrected the card status badge, toast dismiss control, RTL phone table, and gradient CTA heading. Added narrow-layout browser regressions and refreshed versioned Chromium screenshots.
 - Approved and hashed all 14 Chromium/Linux baselines after owner review, verified an independent CI capture matched every file with zero changed pixels, and added baseline comparison to the RC workflow. The visual gate passes; six other manual/external gates remain open.

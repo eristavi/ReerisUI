@@ -24,14 +24,15 @@ if (!generator.includes('../packages/core/src/reeris.css')) {
   failures.push('generate-api-reference.mjs does not emit source CSS links');
 }
 
-const siteBuilder = fs.readFileSync('tooling/build-docs-site.mjs', 'utf8');
+const siteBuilder = fs.readFileSync('tooling/prepare-docs-site.mjs', 'utf8');
 for (const required of [
   'packages/core/dist/reeris.css',
-  "path.join(docsOut, 'assets/reeris.css')",
-  "replaceAll('../packages/core/src/reeris.css', 'assets/reeris.css')"
+  "path.join(docsOut, 'assets/reeris.css')"
 ]) {
-  if (!siteBuilder.includes(required)) failures.push(`build-docs-site.mjs missing contract: ${required}`);
+  if (!siteBuilder.includes(required)) failures.push(`prepare-docs-site.mjs missing contract: ${required}`);
 }
+const layout = fs.readFileSync('site/src/layouts/BaseLayout.astro', 'utf8');
+if (!layout.includes("assetUrl('docs/assets/reeris.css')")) failures.push('Astro layout does not consume production CSS');
 
 if (failures.length) {
   for (const failure of failures) console.error(`FAIL: ${failure}`);

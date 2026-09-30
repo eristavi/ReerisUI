@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Topbar from '../../../components/Topbar.astro';
+import { demoPages, readDemo } from '../../../lib/site.mjs';
+export function getStaticPaths() {
+  return demoPages('examples/starters').map(name => ({ params: { page: name.slice(0, -5) }, props: { page: readDemo(`examples/starters/${name}`, false) } }));
+}
+const { page } = Astro.props;
+---
+<BaseLayout {...page}>
+  <Topbar current="starter" demo starter />
+  <Fragment set:html={page.body} />
+</BaseLayout>

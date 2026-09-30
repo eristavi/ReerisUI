@@ -1,7 +1,7 @@
 {
   "name": "Reeris UI",
   "version": "0.55.0",
-  "generatedAt": "2026-09-29T12:50:09.315Z",
+  "generatedAt": "2026-09-30T12:57:29.380Z",
   "license": "MIT",
   "artifacts": [
     {
@@ -59,7 +59,7 @@
     {
       "file": "tests/release/external-lab/manifest.json",
       "bytes": 13042,
-      "sha256": "fb10dbbeb2a7caa9fff1523105991e3c8f5d985c2c614daf91523b4cca7507f1"
+      "sha256": "64632c7cb6765a8577c91598cbb2aafde83dd1d8db407e627bb1c58693486f75"
     },
     {
       "file": "tests/release/evidence-artifacts/0.55.0/local-chromium/local-chromium-report.json",

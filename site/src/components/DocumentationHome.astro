@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Topbar from './Topbar.astro';
+import { documentationSections } from '../../../tooling/documentation-config.mjs';
+import manifest from '../../../docs/api-manifest.json';
+---
+<BaseLayout title={`Reeris UI Documentation ${manifest.version}`}>
+  <Topbar />
+  <main id="docs-main" class="docs-home">
+    <section class="docs-hero">
+      <span class="badge primary">Reeris UI {manifest.version}</span>
+      <h1>Build with the native web.</h1>
+      <p>Accessible, adaptable UI built with HTML and CSS. Core needs no JavaScript or build step.</p>
+      <div class="l-cluster">
+        <a class="btn primary" href="#get-started">Get started</a>
+        <a class="btn outline" href="#browse">Explore components</a>
+        <a class="btn outline" href="api-reference.html">API reference</a>
+      </div>
+    </section>
+    <section class="docs-section" id="get-started">
+      <h2>Start in three steps</h2>
+      <div class="docs-steps">
+        <div>
+          <strong>1. Add the stylesheet</strong>
+          <p>Download <a href="assets/reeris.css">the built CSS</a> from this site, or install <code>@reeris/core</code> when published.</p>
+          <pre><code>&lt;link rel="stylesheet" href="reeris.css"&gt;</code></pre>
+        </div>
+        <div>
+          <strong>2. Use semantic HTML</strong>
+          <p>Keep native controls and add Reeris classes where you need them.</p>
+          <pre><code>&lt;button class="btn primary"&gt;Continue&lt;/button&gt;</code></pre>
+        </div>
+        <div>
+          <strong>3. Explore examples</strong>
+          <p>Open a component page for Preview and HTML views, patterns and accessibility guidance.</p>
+          <a href="button.html">See buttons →</a>
+        </div>
+      </div>
+    </section>
+    <section class="docs-section" id="browse">
+      <h2>Find what you need</h2>
+      <p>Browse by topic or filter the pages below.</p>
+      <label class="docs-directory-search">Find a page<input type="search" data-docs-directory-search placeholder="Try forms, navigation, tables…" autocomplete="off" aria-controls="docs-directory" /></label>
+      <p data-docs-directory-empty hidden>No matching pages. Try another term or browse the <a href="api-reference.html">API reference</a>.</p>
+      <div id="docs-directory">
+        {documentationSections.map((section, index) => (
+          <section class="docs-section" id={`section-${index}`} data-docs-directory-section>
+            <h2>{section.title}</h2><p>{section.description}</p>
+            <div class="docs-card-grid">
+              {section.pages.map(([href, title, description]) => (
+                <a class="docs-card" data-docs-directory-card href={href}><strong>{title}</strong><span>{description}</span></a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </section>
+    <section class="docs-section">
+      <h2>Release evidence</h2>
+      <p>Validation reports and the remaining RC gates are available in the <a href="release-candidate-readiness.html">release candidate guide</a>.</p>
+    </section>
+  </main>
+</BaseLayout>
